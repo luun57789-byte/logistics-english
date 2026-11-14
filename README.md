@@ -8,3 +8,8 @@ Mở app: https://luun57789-byte.github.io/logistics-english/
 - Chấm phát âm chạy trên Chrome, Edge và Safari (iPhone), cần có mạng.
 
 Mã nguồn nội dung nằm trong `source/`: sửa `source/vocab/*.txt` hoặc `source/src.html`, chạy `build.py`, `make_pdf.py`, `make_standalone.py`, rồi chép `dist/` ra thư mục gốc.
+
+## Cài lên điện thoại
+
+- Android (Chrome): mở link → menu ⋮ → "Thêm vào màn hình chính" / "Cài đặt ứng dụng".
+- iPhone (Safari): mở link → nút Chia sẻ → "Thêm vào MH chính".
