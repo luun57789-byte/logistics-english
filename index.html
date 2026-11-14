@@ -1,0 +1,1692 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#173a5e">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head><body>
+<title>Logistics English Dock</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: harbour-yard app. Sticky gate bar with tabs, content set like cargo manifests; containers = cards only where they carry a unit of study. */
+:root{
+  --bg:#eef1f4; --surface:#ffffff; --ink:#152232; --muted:#55657a; --line:#cfd7e1;
+  --navy:#173a5e; --accent:#e8a317; --accent-ink:#3d2a00; --steel:#2f6f8f;
+  --ok:#1f7a4d; --ok-bg:#e0f2e8; --bad:#b3362c; --bad-bg:#fbe5e2; --chip:#e3e9f0;
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+  --r:6px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0e1620; --surface:#16212e; --ink:#e4ebf2; --muted:#9aabbd; --line:#2a3a4c;
+  --navy:#9cc3e6; --accent:#f0b43a; --accent-ink:#2b1d00; --steel:#6fb1d1;
+  --ok:#5fcf95; --ok-bg:#15342a; --bad:#f08a80; --bad-bg:#3a1d1b; --chip:#223142; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1620; --surface:#16212e; --ink:#e4ebf2; --muted:#9aabbd; --line:#2a3a4c;
+  --navy:#9cc3e6; --accent:#f0b43a; --accent-ink:#2b1d00; --steel:#6fb1d1;
+  --ok:#5fcf95; --ok-bg:#15342a; --bad:#f08a80; --bad-bg:#3a1d1b; --chip:#223142; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;line-height:1.15;margin:0}
+h2{font-size:1.6rem;font-weight:800}
+h3{font-size:1.1rem;font-weight:700}
+p{margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+a{color:var(--steel)}
+
+/* header */
+.gate{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+.gate-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:12px 6px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-mark{width:34px;height:24px;border-radius:3px;background:repeating-linear-gradient(90deg,var(--accent) 0 4px,#c98a0c 4px 6px);position:relative;flex:none}
+.brand h1{font-size:1.15rem;font-weight:800;letter-spacing:.01em}
+.brand small{display:block;font-family:var(--f-mono);font-size:.7rem;color:var(--muted);letter-spacing:.08em}
+.stats{display:flex;gap:14px;font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums;flex-wrap:wrap}
+.stats b{color:var(--ink);font-family:var(--f-mono)}
+nav.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs a{flex:none;text-decoration:none;color:var(--muted);font-weight:600;font-size:.9rem;padding:10px 12px;border-bottom:3px solid transparent}
+nav.tabs a[aria-current="page"]{color:var(--ink);border-bottom-color:var(--accent)}
+main{padding-block:24px 64px}
+.view-head{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.eyebrow{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--steel)}
+.lead{color:var(--muted);max-width:65ch}
+
+/* controls */
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
+.pill{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:.85rem;font-weight:500}
+.pill[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.search{flex:1 1 220px;min-width:0;border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:8px 12px}
+.btn{border:1px solid var(--navy);background:var(--navy);color:var(--surface);border-radius:var(--r);padding:8px 14px;font-weight:600;font-size:.9rem}
+.btn.ghost{background:transparent;color:var(--navy)}
+.btn.warn{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:disabled{opacity:.45;cursor:default}
+.icon-btn{border:1px solid var(--line);background:var(--surface);border-radius:var(--r);width:34px;height:34px;display:inline-grid;place-items:center;flex:none}
+.icon-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+.icon-btn[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.lvl{font-family:var(--f-mono);font-size:.7rem;padding:1px 6px;border-radius:3px;background:var(--chip);color:var(--muted);font-weight:500}
+.lvl.A2{background:var(--ok-bg);color:var(--ok)}
+.lvl.B2{background:var(--bad-bg);color:var(--bad)}
+.note{font-size:.85rem;color:var(--muted)}
+
+/* vocab */
+.topic{margin-bottom:28px}
+.topic-head{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:6px;margin-bottom:4px;flex-wrap:wrap}
+.topic-head .code{font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
+.vrow{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:4px 16px;padding:10px 0;border-bottom:1px solid var(--line);align-items:start}
+.vterm{font-weight:600;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.vvi{color:var(--ink)}
+.vex{grid-column:1 / 3;font-size:.88rem;color:var(--muted);font-style:italic}
+.vact{grid-row:1 / 3;grid-column:3;display:flex;gap:6px}
+@media (max-width:560px){.vrow{grid-template-columns:minmax(0,1fr) auto}.vvi{grid-column:1}.vex{grid-column:1 / 3}.vact{grid-row:1 / 3;grid-column:2}}
+
+/* lesson cards (listening/reading/writing) */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:8px;text-align:left;min-width:0}
+button.card:hover{border-color:var(--steel)}
+.card .meta{display:flex;gap:8px;align-items:center;font-size:.8rem;color:var(--muted);flex-wrap:wrap}
+.done-tag{font-family:var(--f-mono);font-size:.7rem;color:var(--ok)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:20px;display:flex;flex-direction:column;gap:16px}
+.back{background:none;border:0;color:var(--steel);font-weight:600;padding:0;align-self:flex-start}
+.player{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:12px;border-radius:var(--r);background:var(--chip)}
+.player select{border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:6px 8px}
+.transcript{display:flex;flex-direction:column;gap:6px;max-width:70ch}
+.transcript .sp{font-family:var(--f-mono);font-size:.75rem;color:var(--steel);margin-right:6px}
+.transcript p.on{background:color-mix(in srgb,var(--accent) 22%,transparent);border-radius:3px}
+.q{display:flex;flex-direction:column;gap:6px;padding-top:10px;border-top:1px solid var(--line)}
+.q > p{font-weight:600}
+.opts{display:flex;flex-direction:column;gap:6px}
+.opt{border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:8px 12px;text-align:left}
+.opt.right{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.opt.wrong{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+.score{font-family:var(--f-display);font-weight:800;font-size:1.2rem}
+.reading{max-width:68ch;display:flex;flex-direction:column;gap:12px;font-size:1rem}
+.gl{display:flex;flex-wrap:wrap;gap:6px}
+.gl span{background:var(--chip);border-radius:3px;padding:2px 8px;font-size:.85rem}
+.gl b{font-weight:600}
+textarea{width:100%;min-height:220px;border:1px solid var(--line);background:var(--bg);border-radius:var(--r);padding:12px;line-height:1.5;resize:vertical}
+.checks{display:flex;flex-direction:column;gap:4px;font-size:.9rem}
+.checks .hit{color:var(--ok)} .checks .miss{color:var(--muted)}
+details summary{cursor:pointer;font-weight:600;color:var(--steel)}
+.model{white-space:pre-wrap;background:var(--bg);border-left:3px solid var(--steel);padding:12px;margin-top:8px;font-size:.93rem}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+@media (max-width:720px){.two{grid-template-columns:minmax(0,1fr)}}
+
+/* review */
+.modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:20px}
+.flash{perspective:1000px;max-width:520px;width:100%;margin:0 auto}
+.flash-inner{position:relative;min-height:220px;border-radius:10px;background:var(--surface);border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;cursor:pointer;
+  background-image:repeating-linear-gradient(90deg,transparent 0 22px,color-mix(in srgb,var(--line) 45%,transparent) 22px 24px)}
+.flash-term{font-family:var(--f-display);font-size:1.7rem;font-weight:800}
+.flash-sub{color:var(--muted);font-size:.9rem}
+.flash-code{position:absolute;top:10px;left:12px;font-family:var(--f-mono);font-size:.7rem;color:var(--muted)}
+.flash-actions{display:flex;justify-content:center;gap:8px;margin-top:12px;flex-wrap:wrap}
+.boxes{display:flex;gap:6px;justify-content:center;margin-top:10px;font-family:var(--f-mono);font-size:.75rem;color:var(--muted);flex-wrap:wrap}
+.boxes span{padding:2px 8px;border:1px solid var(--line);border-radius:3px}
+.fill-in{display:flex;gap:8px;flex-wrap:wrap}
+.fill-in input{flex:1 1 200px;min-width:0;border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:8px 12px}
+.progress-track{height:6px;background:var(--chip);border-radius:3px;overflow:hidden}
+.progress-track i{display:block;height:100%;background:var(--accent)}
+
+/* video */
+.vid{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.vid-top{background:var(--navy);color:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:4px;
+  background-image:repeating-linear-gradient(90deg,transparent 0 14px,rgba(255,255,255,.07) 14px 17px)}
+.vid-top .ch{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;opacity:.85}
+.vid-top h3{font-size:1.05rem;color:var(--surface)}
+.vid-body{padding:14px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.vid-body ol{margin:0;padding-left:20px;font-size:.9rem;display:flex;flex-direction:column;gap:4px}
+.vid-body .btn{align-self:flex-start;text-decoration:none}
+.pron-target{font-family:var(--f-display);font-size:1.6rem;font-weight:800;line-height:1.25}
+.heard{font-size:.9rem;color:var(--steel);min-height:1.4em}
+.btn.mic.on{background:var(--bad);border-color:var(--bad);color:var(--surface)}
+.pron-score{display:flex;align-items:baseline;gap:8px}
+.pron-score b{font-family:var(--f-display);font-size:2.4rem;font-variant-numeric:tabular-nums}
+.pron-score.good b{color:var(--ok)} .pron-score.mid b{color:var(--accent)} .pron-score.low b{color:var(--bad)}
+.pron-words{display:flex;flex-wrap:wrap;gap:6px}
+.pron-words span{padding:2px 8px;border-radius:3px;font-weight:600}
+.pron-words .ok{background:var(--ok-bg);color:var(--ok)} .pron-words .near{background:var(--chip);color:var(--ink)} .pron-words .miss{background:var(--bad-bg);color:var(--bad)}
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom,0px));max-width:min(520px,calc(100% - 32px));background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:var(--r);font-size:.9rem;z-index:20}
+footer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="gate">
+  <div class="wrap">
+    <div class="gate-top">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><div><h1>Logistics English Dock</h1><small>TIẾNG ANH NGÀNH LOGISTICS · A2 → B2</small></div></div>
+      <div class="stats" id="stats"></div>
+    </div>
+    <nav class="tabs" aria-label="Mục học">
+      <a href="#tu-vung">Từ vựng</a>
+      <a href="#nghe">Nghe</a>
+      <a href="#doc">Đọc</a>
+      <a href="#viet">Viết</a>
+      <a href="#phat-am">Phát âm</a>
+      <a href="#on-tap">Ôn tập</a>
+      <a href="#video">Video</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="app"></main>
+<footer class="wrap">Âm thanh dùng giọng tiếng Anh có sẵn trên máy bạn; nếu không nghe thấy, hãy kiểm tra âm lượng và chế độ im lặng. Chấm phát âm dựa trên việc máy nhận ra đúng từ bạn đọc, nên đọc chậm, rõ ở nơi yên tĩnh. Tiến độ học lưu trên trình duyệt này. Video mở trên YouTube ở tab mới.</footer>
+
+<script>
+const ICON={
+  speak:'<svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6"/></svg>',
+  star:'<svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>'
+};
+
+/* ============ VOCABULARY ============ */
+const TOPICS=[
+ {id:"sc",code:"SC-01",name:"Chuỗi cung ứng cơ bản",en:"Supply chain basics"},
+ {id:"wh",code:"WH-02",name:"Kho bãi",en:"Warehousing"},
+ {id:"tr",code:"TR-03",name:"Phương thức vận tải",en:"Transport modes"},
+ {id:"oc",code:"OC-04",name:"Vận tải biển & container",en:"Ocean shipping & containers"},
+ {id:"dc",code:"DC-05",name:"Chứng từ",en:"Shipping documents"},
+ {id:"cu",code:"CU-06",name:"Hải quan & thương mại",en:"Customs & trade"},
+ {id:"in",code:"IN-07",name:"Incoterms & chi phí",en:"Incoterms & costs"},
+ {id:"op",code:"OP-08",name:"Vận hành & xử lý sự cố",en:"Operations & problem solving"},
+ {id:"af",code:"AF-09",name:"Vận tải hàng không",en:"Air freight"},
+ {id:"td",code:"TD-10",name:"Xe tải & giao hàng",en:"Trucking & delivery"},
+ {id:"fi",code:"FI-11",name:"Tài chính, hóa đơn, phí",en:"Billing & payment"},
+ {id:"mt",code:"MT-12",name:"Đo lường & đóng gói",en:"Measurements & packing"},
+ {id:"em",code:"EM-13",name:"Email, điện thoại, họp",en:"Emails, calls & meetings"},
+ {id:"pe",code:"PE-14",name:"Vị trí & con người",en:"Jobs & people"},
+ {id:"pu",code:"PU-15",name:"Mua hàng & đơn hàng",en:"Purchasing & orders"},
+ {id:"it",code:"IT-16",name:"Hệ thống & theo dõi",en:"Systems & tracking"},
+ {id:"ec",code:"EC-17",name:"Thương mại điện tử",en:"E-commerce"},
+ {id:"cc",code:"CC-18",name:"Hàng lạnh & hàng nguy hiểm",en:"Cold chain & dangerous goods"},
+ {id:"hs",code:"HS-19",name:"An toàn & chất lượng",en:"Safety & quality"}
+];
+// term | vietnamese | example | level | topic
+const RAW=`supply chain|chuỗi cung ứng|A strong supply chain gets products to customers on time.|A2|sc
+logistics|hậu cần, logistics|She works in logistics for an electronics company.|A2|sc
+supplier|nhà cung cấp|We buy all our packaging from one supplier.|A2|sc
+manufacturer|nhà sản xuất|The manufacturer ships the goods every Monday.|A2|sc
+distributor|nhà phân phối|The distributor sells our products to small shops.|B1|sc
+retailer|nhà bán lẻ|The retailer ordered 500 units for the holiday season.|A2|sc
+purchase order (PO)|đơn đặt hàng|Please send me the PO number so I can book the shipment.|A2|sc
+lead time|thời gian chờ (từ lúc đặt đến lúc nhận)|The lead time for this part is six weeks.|B1|sc
+procurement|thu mua, mua hàng|Procurement chose a new supplier in Vietnam.|B1|sc
+demand forecasting|dự báo nhu cầu|Better demand forecasting reduces extra stock.|B2|sc
+inventory|hàng tồn kho|We check inventory levels every morning.|A2|sc
+bottleneck|điểm nghẽn|The loading dock is the main bottleneck in our process.|B2|sc
+reverse logistics|logistics ngược (hàng trả về)|Reverse logistics handles returned and damaged goods.|B2|sc
+warehouse|nhà kho|The warehouse is open 24 hours a day.|A2|wh
+distribution center|trung tâm phân phối|Orders are sent from our distribution center in Binh Duong.|B1|wh
+SKU (stock keeping unit)|mã hàng hóa lưu kho|This warehouse stores more than 8,000 SKUs.|B1|wh
+pallet|pallet, tấm kê hàng|Each pallet holds 40 cartons.|A2|wh
+forklift|xe nâng|Only trained staff may drive the forklift.|A2|wh
+picking|lấy hàng (theo đơn)|Picking takes most of the warehouse team's time.|B1|wh
+packing|đóng gói|After picking, the items go to the packing area.|A2|wh
+put-away|cất hàng vào vị trí|Put-away must be finished before the next truck arrives.|B1|wh
+loading dock|cửa/bến bốc xếp hàng|The truck is waiting at loading dock 3.|A2|wh
+cycle count|kiểm kê luân phiên|We do a cycle count on high-value items every week.|B2|wh
+FIFO (first in, first out)|nhập trước xuất trước|Food products must follow FIFO.|B1|wh
+cross-docking|chuyển hàng thẳng (không lưu kho)|With cross-docking, goods leave the site within hours.|B2|wh
+safety stock|tồn kho an toàn|We keep two weeks of safety stock for key parts.|B2|wh
+reorder point|điểm đặt hàng lại|When stock falls to the reorder point, the system creates an order.|B2|wh
+stock-out|hết hàng|A stock-out means lost sales.|B1|wh
+freight|hàng hóa vận chuyển; cước|The freight is ready for collection.|A2|tr
+carrier|hãng vận chuyển|The carrier confirmed the pickup time.|B1|tr
+shipper|người gửi hàng|The shipper must prepare the export documents.|B1|tr
+consignee|người nhận hàng|Please write the consignee's address clearly.|B1|tr
+ocean freight|vận tải đường biển|Ocean freight is cheaper but slower than air freight.|A2|tr
+air freight|vận tải hàng không|We used air freight because the parts were urgent.|A2|tr
+trucking|vận tải xe tải, kéo container|Our trucking company will pick up the container at the port.|A2|tr
+freight forwarder|công ty giao nhận (forwarder)|Our freight forwarder booked space on the vessel for us.|A2|tr
+door-to-door|giao tận nơi (từ kho đến kho)|We offer door-to-door service from Hanoi to Osaka.|B1|tr
+last-mile delivery|giao hàng chặng cuối|Last-mile delivery is often the most expensive part.|B1|tr
+transit time|thời gian vận chuyển|The transit time from Hai Phong to Rotterdam is about 30 days.|B1|tr
+truckload (FTL / LTL)|hàng nguyên xe / hàng lẻ xe|This order is too small for a full truckload, so we will ship LTL.|B2|tr
+container|công-te-nơ|The container was sealed at the factory.|A2|oc
+TEU|đơn vị tương đương container 20 feet|The vessel can carry 20,000 TEU.|B1|oc
+FCL (full container load)|hàng nguyên container|We ship FCL when we have enough cargo.|B1|oc
+LCL (less than container load)|hàng lẻ (ghép container)|LCL is good for small shipments.|B1|oc
+vessel|tàu|The vessel arrived at the port this morning.|A2|oc
+port of loading (POL)|cảng xếp hàng|The port of loading is Cat Lai.|B1|oc
+port of discharge (POD)|cảng dỡ hàng|The port of discharge is Los Angeles.|B1|oc
+terminal|bến cảng, cảng container|The container is still at the terminal.|B1|oc
+seal number|số chì container|Please check that the seal number matches the bill of lading.|B1|oc
+transshipment|chuyển tải|There is a transshipment in Singapore.|B2|oc
+ETD / ETA|ngày dự kiến khởi hành / đến|ETD is 12 March and ETA is 2 April.|A2|oc
+demurrage|phí lưu container tại cảng|Pick up the container quickly to avoid demurrage.|B2|oc
+detention|phí lưu container ngoài cảng|We paid detention because the empty container was returned late.|B2|oc
+reefer container|container lạnh|Frozen seafood is shipped in a reefer container.|B1|oc
+cut-off time|giờ cắt máng (hạn chót nhận hàng)|The cut-off time for this vessel is Thursday at noon.|B1|oc
+bill of lading (B/L)|vận đơn đường biển|The bill of lading is proof that the carrier received the goods.|B1|dc
+air waybill (AWB)|vận đơn hàng không|Please send me the air waybill number.|B1|dc
+commercial invoice|hóa đơn thương mại|The commercial invoice shows the value of the goods.|B1|dc
+packing list|phiếu đóng gói|The packing list shows the weight of each carton.|A2|dc
+certificate of origin (C/O)|giấy chứng nhận xuất xứ|With a certificate of origin, the buyer pays lower duty.|B1|dc
+booking confirmation|xác nhận đặt chỗ|The carrier sent the booking confirmation yesterday.|B1|dc
+shipping instructions (SI)|hướng dẫn gửi hàng|Please submit the shipping instructions before Friday.|B2|dc
+delivery order (D/O)|lệnh giao hàng|You need the delivery order to collect the container.|B2|dc
+arrival notice|thông báo hàng đến|We received the arrival notice from the shipping line.|B1|dc
+letter of credit (L/C)|thư tín dụng|Payment is by letter of credit.|B2|dc
+proof of delivery (POD)|bằng chứng giao hàng|The driver uploads the proof of delivery with a photo.|B1|dc
+customs clearance|thông quan|Customs clearance usually takes one or two days.|B1|cu
+customs broker|đại lý hải quan|Our customs broker prepares the declaration.|B1|cu
+customs declaration|tờ khai hải quan|Every import needs a customs declaration.|B1|cu
+HS code|mã HS (mã phân loại hàng hóa)|The wrong HS code can lead to a fine.|B1|cu
+import duty|thuế nhập khẩu|The import duty on this product is 5%.|B1|cu
+tariff|biểu thuế, thuế quan|New tariffs increased the cost of steel.|B2|cu
+inspection|kiểm tra, kiểm hóa|Customs selected the container for physical inspection.|B1|cu
+bonded warehouse|kho ngoại quan|Goods in a bonded warehouse have not paid duty yet.|B2|cu
+free trade agreement (FTA)|hiệp định thương mại tự do|Under the free trade agreement, duty is zero.|B2|cu
+telex release|điện giao hàng (không cần B/L gốc)|The shipper has paid, so we can do a telex release.|B2|cu
+THC (terminal handling charge)|phí xếp dỡ tại cảng|THC is paid at both the port of loading and the port of discharge.|B1|cu
+Incoterms|điều kiện giao hàng quốc tế|Incoterms tell buyer and seller who pays for what.|B1|in
+EXW (Ex Works)|giao tại xưởng|Under EXW, the buyer arranges almost everything.|B1|in
+FOB (Free On Board)|giao lên tàu|With FOB, risk passes when the goods are on board the vessel.|B1|in
+CIF (Cost, Insurance and Freight)|tiền hàng, bảo hiểm và cước|Under CIF, the seller pays freight and insurance to the destination port.|B2|in
+DAP (Delivered At Place)|giao tại nơi đến|With DAP, the buyer pays import duty.|B2|in
+DDP (Delivered Duty Paid)|giao đã nộp thuế|DDP puts the most responsibility on the seller.|B2|in
+freight rate|giá cước|Freight rates went up sharply this month.|B1|in
+surcharge|phụ phí|There is a fuel surcharge of $150 per container.|B2|in
+quotation|báo giá|Could you send us a quotation for 2 x 40HC?|A2|in
+cargo insurance|bảo hiểm hàng hóa|Cargo insurance covers loss or damage during transit.|B1|in
+local charges|phí địa phương (local charge)|Please send us the local charges at destination.|B1|in
+shipment|lô hàng|The shipment left the warehouse at 6 a.m.|A2|op
+track and trace|theo dõi hành trình|You can track and trace your parcel online.|A2|op
+delay|sự chậm trễ; trì hoãn|The storm caused a two-day delay.|A2|op
+damage|hư hỏng|Please take photos of any damage.|A2|op
+claim|khiếu nại, yêu cầu bồi thường|We filed a claim for the broken cartons.|B1|op
+dispatch|xuất hàng, gửi đi|The order will be dispatched tomorrow.|B1|op
+expedite|đẩy nhanh|Can you expedite this order? The customer is waiting.|B2|op
+backlog|lượng việc tồn đọng|After the holiday, we have a backlog of 300 orders.|B2|op
+KPI|chỉ số hiệu suất chính|Our main KPI is on-time delivery.|B1|op
+on-time delivery|giao hàng đúng hạn|On-time delivery rose to 96% this quarter.|B1|op
+fill rate|tỷ lệ đáp ứng đơn hàng|A low fill rate means customers did not get everything they ordered.|B2|op
+consolidate|gom hàng|We consolidate small orders into one container.|B2|op
+confirm|xác nhận|Please confirm the delivery address.|A2|op
+shipping line|hãng tàu|The shipping line released the booking this morning.|A2|oc
+booking number|số booking|Please quote the booking number in all emails.|A2|oc
+booking request|yêu cầu đặt chỗ|I have sent the booking request to Maersk.|B1|oc
+space|chỗ (trên tàu)|There is no space on this vessel; can we roll to next week?|B1|oc
+roll over|bị rớt tàu, chuyển sang chuyến sau|Our container was rolled over to the next vessel.|B1|oc
+vessel schedule|lịch tàu|Please check the vessel schedule for December.|A2|oc
+voyage number|số chuyến|The vessel name is ONE Apus, voyage number 045E.|B1|oc
+feeder vessel|tàu gom/tàu feeder|A feeder vessel takes the container to Singapore.|B1|oc
+mother vessel|tàu mẹ|The cargo is transferred to the mother vessel in Singapore.|B1|oc
+direct service|tuyến đi thẳng|Is this a direct service or via Busan?|B1|oc
+via|qua (cảng chuyển tải)|The routing is Hai Phong to Long Beach via Kaohsiung.|A2|oc
+routing|tuyến đường vận chuyển|Please confirm the routing before booking.|B1|oc
+SI cut-off|hạn nộp chi tiết làm B/L|SI cut-off is Wednesday 5 p.m.|B1|oc
+CY cut-off|hạn hạ container tại bãi|The CY cut-off is Thursday at noon.|B1|oc
+VGM (verified gross mass)|khối lượng tổng đã xác nhận|Please submit the VGM before the cut-off.|B1|oc
+VGM cut-off|hạn nộp VGM|We missed the VGM cut-off, so the container was not loaded.|B2|oc
+empty container|container rỗng|Pick up the empty container from the depot tomorrow.|A2|oc
+container depot|bãi container rỗng|The empty container is at the Phuoc Long depot.|B1|oc
+gate in|hạ container vào cảng|The container gated in at Cat Lai at 2 p.m.|B1|oc
+gate out|lấy container ra khỏi cảng|The full container gated out this morning.|B1|oc
+loaded on board|đã xếp lên tàu|The container is loaded on board.|B1|oc
+discharged|đã dỡ khỏi tàu|The container was discharged at Long Beach yesterday.|B1|oc
+stuffing|đóng hàng vào container|Stuffing will start at 8 a.m. at the factory.|B1|oc
+unstuffing / devanning|rút hàng khỏi container|Unstuffing takes about two hours.|B2|oc
+20GP|container 20 feet thường|We need one 20GP for this order.|A2|oc
+40GP|container 40 feet thường|A 40GP holds about 67 CBM.|A2|oc
+40HC (high cube)|container 40 feet cao|Please book two 40HC for furniture.|A2|oc
+open top|container hở mái|Large machines are shipped in an open top container.|B1|oc
+flat rack|container mặt bằng|The excavator needs a flat rack.|B1|oc
+out of gauge (OOG)|hàng quá khổ|OOG cargo has extra charges.|B2|oc
+container number|số container|Please send me the container number and seal number.|A2|oc
+tare weight|trọng lượng vỏ container|The tare weight of a 40HC is about 3,900 kg.|B1|oc
+payload|tải trọng hàng tối đa|The maximum payload of this container is 26 tonnes.|B1|oc
+overweight|quá tải|The container is overweight and cannot be loaded.|B1|oc
+free time|thời gian miễn phí lưu cont/bãi|We have 7 days free time at destination.|B1|oc
+storage charge|phí lưu bãi|Storage charges started on day 5.|B1|oc
+port congestion|ùn tắc cảng|Port congestion caused a three-day delay.|B1|oc
+blank sailing|chuyến tàu bị hủy|The carrier announced a blank sailing next week.|B2|oc
+peak season|mùa cao điểm|Rates are high during peak season.|A2|oc
+off-peak|mùa thấp điểm|Off-peak rates are much lower.|B1|oc
+PSS (peak season surcharge)|phụ phí mùa cao điểm|A PSS of USD 300 applies from 1 August.|B2|oc
+BAF (bunker adjustment factor)|phụ phí nhiên liệu đường biển|BAF changes every month.|B2|oc
+CIC (container imbalance charge)|phụ phí mất cân bằng container|CIC is charged on imports from Asia.|B2|oc
+EBS (emergency bunker surcharge)|phụ phí nhiên liệu khẩn cấp|The carrier added an EBS of USD 100.|B2|oc
+GRI (general rate increase)|tăng giá cước chung|There is a GRI on the Asia–Europe route next month.|B2|oc
+all-in rate|giá trọn gói|Is this an all-in rate or are there extra surcharges?|B1|oc
+ocean carrier|hãng vận tải biển|The ocean carrier confirmed the space.|B1|oc
+NVOCC|người vận chuyển không tàu|As an NVOCC, we issue our own house bill.|B2|oc
+co-loader|đơn vị gom hàng lẻ|We send LCL cargo through a co-loader.|B2|oc
+CFS (container freight station)|kho hàng lẻ|LCL cargo must be delivered to the CFS.|B1|oc
+CFS charge|phí kho hàng lẻ|The CFS charge is USD 15 per CBM.|B1|oc
+port of transshipment|cảng chuyển tải|The port of transshipment is Singapore.|B1|oc
+final destination|nơi đến cuối cùng|The final destination is Chicago.|A2|oc
+place of receipt|nơi nhận hàng|The place of receipt is our factory in Bac Ninh.|B1|oc
+place of delivery|nơi giao hàng|The place of delivery is the buyer's warehouse.|B1|oc
+ATD / ATA|ngày đi / đến thực tế|ATD was 3 May, two days later than ETD.|B1|oc
+departure|khởi hành|Departure is scheduled for Friday.|A2|oc
+arrival|việc đến nơi|Please inform the consignee before arrival.|A2|oc
+sailing|chuyến tàu|There are two sailings per week.|B1|oc
+weekly service|tuyến hàng tuần|This is a weekly service with fixed day.|B1|oc
+lashing|chằng buộc hàng|Proper lashing prevents cargo from moving.|B2|oc
+dunnage|vật chèn lót|Use dunnage to fill the empty space in the container.|B2|oc
+shipping mark|ký mã hiệu|Each carton must show the shipping mark.|B1|oc
+container seal|kẹp chì container|The container seal was broken on arrival.|B1|oc
+inland haulage|vận chuyển nội địa (kéo cont)|Inland haulage from the port to Binh Duong costs USD 180.|B2|oc
+pre-carriage|vận chuyển chặng đầu|Pre-carriage is by truck from the factory to the port.|B2|oc
+on-carriage|vận chuyển chặng sau|On-carriage is by rail to Chicago.|B2|oc
+shipper's load and count|chủ hàng tự đóng và đếm|The B/L says "shipper's load and count".|B2|oc
+SOC (shipper-owned container)|container của chủ hàng|We use SOC containers for this route.|B2|oc
+COC (carrier-owned container)|container của hãng tàu|Most shipments use COC containers.|B2|oc
+reefer plug|ổ cắm điện container lạnh|The reefer must be connected to a reefer plug at the terminal.|B2|oc
+pre-trip inspection (PTI)|kiểm tra container lạnh trước khi đi|The depot completed the PTI on the reefer.|B2|oc
+genset|máy phát điện cho container lạnh|A genset is used while the reefer is on the truck.|B2|oc
+airline|hãng hàng không|The airline confirmed space on tomorrow's flight.|A2|af
+flight number|số chuyến bay|The flight number is VN 0300.|A2|af
+MAWB (master air waybill)|vận đơn hàng không chủ|The airline issues the MAWB to the forwarder.|B1|af
+HAWB (house air waybill)|vận đơn hàng không của forwarder|We issue a HAWB to each shipper.|B1|af
+chargeable weight|trọng lượng tính cước|The chargeable weight is the higher of actual and volumetric weight.|B1|af
+volumetric weight|trọng lượng thể tích|Volumetric weight = L x W x H (cm) / 6000.|B1|af
+actual weight|trọng lượng thực tế|The actual weight is 120 kg.|A2|af
+rate per kg|giá theo kg|The rate per kg is USD 3.20 for 100 kg+.|A2|af
+minimum charge|phí tối thiểu|Small shipments pay the minimum charge.|B1|af
+FSC (fuel surcharge)|phụ phí nhiên liệu|The FSC is USD 0.85 per kg.|B1|af
+SSC (security surcharge)|phụ phí an ninh|SSC is charged on all air shipments.|B2|af
+screening|soi chiếu an ninh|All cargo must pass X-ray screening.|B1|af
+ULD (unit load device)|thiết bị chất xếp hàng không|The cargo is built up on a ULD.|B2|af
+airport of departure|sân bay đi|The airport of departure is Noi Bai.|A2|af
+airport of destination|sân bay đến|The airport of destination is Frankfurt.|A2|af
+cargo terminal|nhà ga hàng hóa|Deliver the goods to the TCS cargo terminal.|B1|af
+air cargo|hàng không (hàng hóa)|Air cargo is fast but expensive.|A2|af
+express courier|chuyển phát nhanh|Send the samples by express courier.|A2|af
+courier|dịch vụ chuyển phát|The original documents were sent by courier.|A2|af
+offload|bị bỏ lại (không lên máy bay)|Our cargo was offloaded because the flight was full.|B2|af
+connecting flight|chuyến bay nối|The cargo will move on a connecting flight via Dubai.|B1|af
+freighter|máy bay chở hàng|Heavy cargo goes on a freighter.|B1|af
+belly cargo|hàng chở trong bụng máy bay khách|Most air cargo travels as belly cargo.|B2|af
+consolidation (air)|gom hàng lẻ hàng không|We run a weekly consolidation to Tokyo.|B1|af
+backload|hàng chiều về|We are looking for a backload to reduce cost.|B2|af
+sea-air|vận chuyển kết hợp biển–hàng không|Sea-air via Dubai is cheaper than direct air.|B2|af
+hand carry|xách tay|The spare part was sent by hand carry.|B1|af
+time-critical|cần gấp, nhạy cảm thời gian|This is a time-critical shipment for a broken machine.|B2|af
+shipping documents|bộ chứng từ gửi hàng|Please send the full set of shipping documents.|A2|dc
+original B/L|vận đơn gốc|The consignee needs the original B/L to collect the cargo.|B1|dc
+draft B/L|vận đơn nháp|Please check the draft B/L and confirm.|A2|dc
+B/L amendment|sửa vận đơn|A B/L amendment costs USD 50.|B1|dc
+MBL (master bill of lading)|vận đơn chủ (hãng tàu cấp)|The shipping line issues the MBL.|B1|dc
+HBL (house bill of lading)|vận đơn nhà (forwarder cấp)|We issue the HBL to our customer.|B1|dc
+surrendered B/L|vận đơn đã nộp lại (điện giao hàng)|The B/L is surrendered, so no original is needed.|B2|dc
+seaway bill|giấy gửi hàng đường biển|A seaway bill is not a document of title.|B2|dc
+on board date|ngày xếp hàng lên tàu|The L/C requires an on board date before 30 June.|B2|dc
+notify party|bên được thông báo|The notify party is the buyer's customs broker.|B1|dc
+proforma invoice (PI)|hóa đơn chiếu lệ|The supplier sent a proforma invoice for payment.|B1|dc
+invoice number|số hóa đơn|Please write the invoice number on the transfer.|A2|dc
+fumigation certificate|chứng thư hun trùng|Wooden pallets need a fumigation certificate.|B1|dc
+phytosanitary certificate|giấy kiểm dịch thực vật|Fresh fruit needs a phytosanitary certificate.|B2|dc
+health certificate|giấy chứng nhận vệ sinh|The seafood shipment needs a health certificate.|B1|dc
+certificate of analysis (COA)|giấy chứng nhận phân tích|The buyer asked for a COA for each batch.|B2|dc
+MSDS / SDS|bảng dữ liệu an toàn hóa chất|Please provide the MSDS for this chemical.|B1|dc
+insurance certificate|giấy chứng nhận bảo hiểm|Under CIF, the seller provides an insurance certificate.|B1|dc
+sales contract|hợp đồng mua bán|The payment terms are in the sales contract.|A2|dc
+bill of exchange|hối phiếu|The bank needs a bill of exchange with the L/C documents.|B2|dc
+discrepancy|sai sót chứng từ|The bank found a discrepancy in the invoice.|B2|dc
+manifest|bản lược khai hàng hóa|The cargo manifest must be sent before arrival.|B1|dc
+e-manifest|lược khai điện tử|Submit the e-manifest 24 hours before loading.|B2|dc
+weight certificate|giấy chứng nhận trọng lượng|The buyer asked for a weight certificate.|B1|dc
+inspection certificate|chứng thư giám định|SGS issued the inspection certificate.|B2|dc
+copy|bản sao|Please email us a scanned copy first.|A2|dc
+signed and stamped|có ký tên và đóng dấu|The invoice must be signed and stamped.|A2|dc
+soft copy / hard copy|bản mềm / bản cứng|Send a soft copy now and the hard copy by courier.|A2|dc
+attached|đính kèm|Please find the packing list attached.|A2|dc
+customs office|chi cục hải quan|The declaration was submitted to the Cat Lai customs office.|A2|cu
+customs officer|cán bộ hải quan|The customs officer asked for the catalogue.|A2|cu
+import declaration|tờ khai nhập khẩu|The import declaration was registered today.|B1|cu
+export declaration|tờ khai xuất khẩu|We need the export declaration number.|B1|cu
+green channel|luồng xanh|The declaration went to the green channel, so no inspection.|B1|cu
+yellow channel|luồng vàng|Yellow channel means documents are checked.|B1|cu
+red channel|luồng đỏ|Red channel means physical inspection.|B1|cu
+customs release|thông quan, giải phóng hàng|We got customs release this afternoon.|B1|cu
+duty and tax|thuế|Duty and tax must be paid before release.|A2|cu
+VAT (value-added tax)|thuế giá trị gia tăng|Import VAT is 10%.|A2|cu
+customs value|trị giá hải quan|The customs value is based on the CIF value.|B2|cu
+tariff classification|phân loại mã số hàng hóa|Tariff classification decides the duty rate.|B2|cu
+preferential rate|thuế suất ưu đãi|With Form D, we can use the preferential rate.|B2|cu
+Form E / Form D|C/O mẫu E / mẫu D|We need Form E for exports to China.|B2|cu
+quarantine|kiểm dịch|The plants are held for quarantine inspection.|B1|cu
+customs fine|phạt hải quan|A wrong declaration can lead to a customs fine.|B1|cu
+re-export|tái xuất|The goods were rejected and must be re-exported.|B2|cu
+temporary import|tạm nhập|The exhibition goods are under temporary import.|B2|cu
+ECUS|phần mềm khai hải quan ECUS|We submit declarations through ECUS.|B1|cu
+post-clearance audit|kiểm tra sau thông quan|Customs will do a post-clearance audit next month.|B2|cu
+restricted goods|hàng hạn chế|Restricted goods need a license.|B1|cu
+prohibited goods|hàng cấm|Batteries are not prohibited, but they are restricted.|B1|cu
+import license|giấy phép nhập khẩu|Medical equipment needs an import license.|B1|cu
+customs procedures|thủ tục hải quan|Customs procedures take about two days.|A2|cu
+document check|kiểm tra hồ sơ|The shipment only needs a document check.|B1|cu
+physical inspection|kiểm tra thực tế hàng hóa|Physical inspection is scheduled for tomorrow morning.|B1|cu
+customs bond|bảo lãnh hải quan|The importer has a customs bond in the US.|B2|cu
+ISF (importer security filing)|khai báo an ninh nhập khẩu Mỹ|ISF must be filed 24 hours before loading for US shipments.|B2|cu
+AMS / ENS|khai báo lược khai Mỹ / EU|The carrier charges USD 35 for AMS filing.|B2|cu
+de minimis|ngưỡng miễn thuế|Parcels under the de minimis value pay no duty.|B2|cu
+receiving|nhận hàng (nhập kho)|Receiving starts at 7 a.m.|A2|wh
+goods receipt|phiếu nhập kho|Create the goods receipt in the system after counting.|B1|wh
+goods issue|phiếu xuất kho|The goods issue is printed for each order.|B1|wh
+inbound|hàng nhập (vào kho)|We have 12 inbound trucks today.|A2|wh
+outbound|hàng xuất (ra khỏi kho)|Outbound orders must leave by 4 p.m.|A2|wh
+stock|hàng trong kho|We have 300 units in stock.|A2|wh
+in stock / out of stock|còn hàng / hết hàng|This item is out of stock until next week.|A2|wh
+stock level|mức tồn kho|Check the stock level before you confirm the order.|A2|wh
+stocktake|kiểm kê|The annual stocktake is on 31 December.|B1|wh
+discrepancy (stock)|chênh lệch tồn kho|There is a discrepancy of 5 cartons.|B1|wh
+shortage|thiếu hàng|We found a shortage of 2 pallets.|A2|wh
+overage|thừa hàng|There is an overage of 10 units.|B1|wh
+location|vị trí kho|Put the pallet in location A-03-02.|A2|wh
+racking|giá kệ|The racking is five levels high.|B1|wh
+shelf|kệ|Small items are kept on the shelf.|A2|wh
+aisle|lối đi giữa các kệ|Aisle 4 is blocked by a pallet.|A2|wh
+bin|ô chứa hàng|Each bin has a barcode label.|B1|wh
+staging area|khu tập kết hàng|Put the orders in the staging area before loading.|B1|wh
+pick list|danh sách lấy hàng|Print the pick list for wave 2.|A2|wh
+picker|nhân viên lấy hàng|We need three more pickers tonight.|A2|wh
+order picking|lấy hàng theo đơn|Order picking takes about 60% of labour time.|B1|wh
+wave picking|lấy hàng theo đợt|We use wave picking for e-commerce orders.|B2|wh
+batch picking|lấy hàng gộp nhiều đơn|Batch picking saves walking time.|B2|wh
+replenishment|bổ sung hàng (lên vị trí lấy)|Replenishment must happen before the next shift.|B2|wh
+pallet jack|xe nâng tay|Use the pallet jack for short distances.|A2|wh
+reach truck|xe nâng tầm cao|The reach truck can lift to 10 metres.|B1|wh
+stretch wrap|màng quấn pallet|Wrap each pallet with stretch wrap.|A2|wh
+shrink wrap|màng co|The products are packed in shrink wrap.|B1|wh
+carton|thùng carton|Each carton contains 24 bottles.|A2|wh
+label|nhãn|The label is missing on carton 15.|A2|wh
+barcode|mã vạch|Scan the barcode on each carton.|A2|wh
+scanner|máy quét|The scanner battery is low.|A2|wh
+labelling|dán nhãn|Labelling must be done before dispatch.|B1|wh
+kitting|đóng bộ (gom nhiều món thành bộ)|We do kitting for gift sets.|B2|wh
+value-added services (VAS)|dịch vụ giá trị gia tăng|VAS includes labelling and repacking.|B2|wh
+repacking|đóng gói lại|The damaged cartons need repacking.|B1|wh
+quarantine area|khu cách ly hàng|Damaged goods go to the quarantine area.|B1|wh
+returns|hàng trả về|We process 200 returns a day.|A2|wh
+storage|lưu kho|Storage costs USD 5 per pallet per week.|A2|wh
+storage capacity|sức chứa kho|The warehouse is at 90% of storage capacity.|B1|wh
+pallet position|vị trí pallet|We rent 500 pallet positions.|B1|wh
+handling fee|phí bốc xếp|The handling fee is USD 3 per pallet in and out.|B1|wh
+loading|bốc hàng lên xe|Loading starts at 2 p.m.|A2|wh
+unloading|dỡ hàng|Unloading took one hour.|A2|wh
+floor-loaded|xếp rời dưới sàn (không pallet)|The container is floor-loaded, so unloading will take longer.|B2|wh
+palletised|đã xếp pallet|Palletised cargo is faster to unload.|B1|wh
+dock door|cửa dock|Truck 3 is at dock door 5.|A2|wh
+dock appointment|lịch hẹn vào dock|Please book a dock appointment 24 hours in advance.|B1|wh
+yard|bãi xe|The trailer is waiting in the yard.|A2|wh
+3PL (third-party logistics)|nhà cung cấp dịch vụ logistics bên thứ ba|We outsource our warehouse to a 3PL.|B1|wh
+expiry date|hạn sử dụng|Check the expiry date before shipping.|A2|wh
+batch number / lot number|số lô|Record the lot number for every pallet.|B1|wh
+FEFO (first expired, first out)|hết hạn trước xuất trước|Medicines follow FEFO.|B1|wh
+slow-moving|hàng chậm luân chuyển|We have too many slow-moving items.|B1|wh
+fast-moving|hàng bán chạy|Fast-moving items are near the dock.|B1|wh
+dead stock|hàng tồn chết|We need to clear the dead stock.|B1|wh
+stock transfer|chuyển kho|Create a stock transfer from Hanoi to HCMC.|B1|wh
+inventory accuracy|độ chính xác tồn kho|Our inventory accuracy is 99.5%.|B1|wh
+shift|ca làm việc|The night shift starts at 10 p.m.|A2|wh
+truck|xe tải|The truck will arrive at 9 a.m.|A2|td
+trailer|rơ-moóc|The trailer is 13.6 metres long.|A2|td
+tractor / prime mover|đầu kéo|The tractor will pick up the container at the port.|B1|td
+container truck|xe container|We need a container truck for a 40HC.|A2|td
+box truck|xe tải thùng|A 5-tonne box truck is enough for this order.|A2|td
+driver|tài xế|The driver's phone number is 0912 345 678.|A2|td
+license plate|biển số xe|Please send the driver's name and license plate.|A2|td
+pickup|việc lấy hàng|Pickup is confirmed for 8 a.m.|A2|td
+drop-off|việc giao/hạ hàng|The drop-off is at the customer's warehouse.|A2|td
+delivery note|phiếu giao hàng|Ask the receiver to sign the delivery note.|A2|td
+POD signed|POD đã ký|We have the signed POD for all deliveries.|B1|td
+waiting time|thời gian chờ|Waiting time over 2 hours is charged.|B1|td
+trip|chuyến xe|The truck can make two trips a day.|A2|td
+round trip|chuyến khứ hồi|The round trip takes 6 hours.|A2|td
+one-way|một chiều|The one-way price is 3 million dong.|A2|td
+empty return|trả rỗng|The empty return must be at the depot by Friday.|B1|td
+milk run|tuyến gom hàng nhiều điểm|The milk run collects parts from five suppliers.|B2|td
+route planning|lập kế hoạch tuyến|Route planning saves fuel.|B1|td
+GPS tracking|định vị GPS|All trucks have GPS tracking.|A2|td
+fuel cost|chi phí nhiên liệu|Fuel cost increased this month.|A2|td
+toll|phí cầu đường|The price includes tolls.|A2|td
+weight limit|giới hạn tải trọng|This bridge has a 10-tonne weight limit.|B1|td
+restricted hours|giờ cấm|Trucks cannot enter the city during restricted hours.|B1|td
+night delivery|giao hàng ban đêm|We do night delivery to avoid traffic.|A2|td
+delivery window|khung giờ giao hàng|The delivery window is 8–10 a.m.|B1|td
+failed delivery|giao hàng không thành công|A failed delivery costs us money.|B1|td
+redelivery|giao lại|Redelivery is free for the first time.|B1|td
+COD (cash on delivery)|thu tiền khi giao hàng|60% of our orders are COD.|A2|td
+fleet|đội xe|Our fleet has 50 trucks.|B1|td
+subcontractor|nhà thầu phụ|We use a subcontractor for long-haul routes.|B1|td
+long-haul|tuyến dài|Long-haul drivers need rest stops.|B1|td
+short-haul|tuyến ngắn|Short-haul trips are inside the city.|B1|td
+FTL (full truckload)|hàng nguyên xe|This order is an FTL.|B1|td
+LTL (less than truckload)|hàng lẻ xe|Small orders go LTL.|B1|td
+cross-border trucking|vận tải đường bộ qua biên giới|Cross-border trucking to China takes 2 days.|B2|td
+border gate|cửa khẩu|The truck is waiting at Huu Nghi border gate.|B1|td
+transit cargo|hàng quá cảnh|Transit cargo to Laos is sealed by customs.|B2|td
+breakdown|hỏng xe|The truck had a breakdown on the highway.|A2|td
+accident|tai nạn|Report any accident to the dispatcher immediately.|A2|td
+dispatcher|điều phối viên|The dispatcher assigned truck 12 to your order.|B1|td
+debit note|giấy báo nợ|Please find our debit note for the local charges.|B1|fi
+credit note|giấy báo có|We will issue a credit note for the overcharge.|B1|fi
+payment terms|điều kiện thanh toán|Our payment terms are 30 days after invoice.|B1|fi
+due date|hạn thanh toán|The due date for this invoice is 15 May.|A2|fi
+overdue|quá hạn|This invoice is 20 days overdue.|B1|fi
+outstanding balance|số dư còn nợ|Your outstanding balance is USD 4,500.|B1|fi
+bank transfer|chuyển khoản|Payment is by bank transfer.|A2|fi
+T/T (telegraphic transfer)|chuyển tiền bằng điện|Terms: 30% T/T in advance, 70% against B/L copy.|B1|fi
+deposit|tiền đặt cọc|We need a 30% deposit before production.|A2|fi
+advance payment|thanh toán trước|Advance payment is required for new customers.|B1|fi
+balance payment|thanh toán phần còn lại|The balance payment is due before release.|B1|fi
+remittance|giấy báo chuyển tiền|Please send us the bank remittance.|B1|fi
+bank charges|phí ngân hàng|Bank charges are for the buyer's account.|B1|fi
+exchange rate|tỷ giá|The exchange rate is fixed on the invoice date.|A2|fi
+currency|tiền tệ|The invoice currency is USD.|A2|fi
+billing|lập hóa đơn|Billing is done at the end of each month.|B1|fi
+statement of account (SOA)|bảng đối chiếu công nợ|Please check the statement of account and confirm.|B1|fi
+reconciliation|đối chiếu|We do a monthly reconciliation with each carrier.|B2|fi
+cost breakdown|bảng chi tiết chi phí|Could you send a cost breakdown?|B1|fi
+selling rate|giá bán|Our selling rate to the customer is USD 1,350.|B1|fi
+buying rate|giá mua|The buying rate from the carrier is USD 1,200.|B1|fi
+profit margin|tỷ suất lợi nhuận|The profit margin on this shipment is low.|B1|fi
+budget|ngân sách|The freight budget for Q4 is 2 billion dong.|A2|fi
+cost saving|tiết kiệm chi phí|Consolidation gave us a 15% cost saving.|B1|fi
+extra charge|phí phát sinh|There is an extra charge for waiting time.|A2|fi
+quote validity|hiệu lực báo giá|This quote is valid until 30 November.|B1|fi
+rate sheet|bảng giá|Please send me your latest rate sheet.|B1|fi
+tender|đấu thầu|We will run a freight tender next month.|B2|fi
+contract rate|giá hợp đồng|The contract rate is fixed for 12 months.|B1|fi
+spot rate|giá thị trường (theo thời điểm)|Spot rates are higher than contract rates now.|B2|fi
+D/O fee|phí lệnh giao hàng|The D/O fee is 1 million dong.|B1|fi
+THC at destination|phí THC tại cảng đến|THC at destination is paid by the consignee.|B1|fi
+documentation fee|phí chứng từ|The documentation fee is USD 40 per B/L.|B1|fi
+seal fee|phí kẹp chì|The seal fee is USD 10.|B1|fi
+handling charge|phí làm hàng|The forwarder adds a handling charge of USD 25.|B1|fi
+cleaning fee|phí vệ sinh container|A cleaning fee applies if the container is dirty.|B1|fi
+freight prepaid|cước trả trước|The B/L shows "freight prepaid".|B1|fi
+freight collect|cước trả sau|The consignee pays because it is freight collect.|B1|fi
+payable at|thanh toán tại|Freight payable at destination.|B2|fi
+refund|hoàn tiền|We will refund the deposit within 7 days.|A2|fi
+compensation|bồi thường|The carrier offered compensation of USD 500.|B1|fi
+penalty|tiền phạt|There is a penalty for late delivery.|B1|fi
+CBM (cubic meter)|mét khối|The shipment is 12 CBM.|A2|mt
+gross weight (GW)|trọng lượng cả bì|Gross weight: 8,450 kg.|A2|mt
+net weight (NW)|trọng lượng tịnh|Net weight: 8,100 kg.|A2|mt
+volume|thể tích|What is the total volume?|A2|mt
+dimensions|kích thước|Please send the dimensions of each pallet.|A2|mt
+length x width x height|dài x rộng x cao|The carton is 60 x 40 x 35 cm.|A2|mt
+measurement|số đo|Please check the measurement on the packing list.|A2|mt
+quantity|số lượng|The quantity is 1,200 pieces.|A2|mt
+pieces (pcs)|cái, chiếc|Each carton has 50 pcs.|A2|mt
+packages (pkgs)|kiện|Total: 45 pkgs.|A2|mt
+unit|đơn vị|The price per unit is USD 2.50.|A2|mt
+tonne / metric ton|tấn|The cargo weighs 18 tonnes.|A2|mt
+kilogram (kg)|ki-lô-gam|The parcel is 2.5 kg.|A2|mt
+stackable|có thể xếp chồng|These pallets are stackable.|B1|mt
+non-stackable|không thể xếp chồng|Fragile items are non-stackable.|B1|mt
+fragile|dễ vỡ|Fragile – handle with care.|A2|mt
+handle with care|xử lý cẩn thận|Write "handle with care" on the carton.|A2|mt
+this side up|đặt mặt này lên trên|The arrow shows this side up.|A2|mt
+keep dry|giữ khô|Keep dry: the goods are paper products.|A2|mt
+packaging|bao bì|The packaging must be strong enough for sea freight.|A2|mt
+export packing|đóng gói xuất khẩu|Export packing costs extra.|B1|mt
+wooden crate|thùng gỗ|The machine is packed in a wooden crate.|B1|mt
+ISPM 15|tiêu chuẩn xử lý gỗ đóng gói|Wooden pallets must meet ISPM 15.|B2|mt
+bag / sack|bao|The rice is packed in 50 kg bags.|A2|mt
+drum|thùng phuy|The chemical is shipped in steel drums.|B1|mt
+IBC (intermediate bulk container)|bồn IBC|Liquid cargo is packed in IBCs.|B2|mt
+jumbo bag|bao jumbo|Plastic pellets come in jumbo bags.|B1|mt
+pallet size|kích thước pallet|The pallet size is 1.2 x 1.0 m.|A2|mt
+euro pallet|pallet chuẩn châu Âu|The customer requires euro pallets.|B1|mt
+loading plan|sơ đồ xếp hàng|Please share the container loading plan.|B1|mt
+load capacity|tải trọng|The load capacity of the truck is 15 tonnes.|B1|mt
+over-dimensional|quá khổ|Over-dimensional cargo needs a special permit.|B2|mt
+heavy lift|hàng siêu trọng|The transformer is heavy lift cargo.|B2|mt
+bulk cargo|hàng rời|Coal is shipped as bulk cargo.|B1|mt
+break bulk|hàng rời đóng kiện|Steel coils are often shipped break bulk.|B2|mt
+general cargo|hàng bách hóa|This is general cargo, not dangerous goods.|B1|mt
+loose cargo|hàng rời lẻ|Loose cargo takes longer to load.|B1|mt
+carton marking|ký hiệu trên thùng|Carton marking must match the packing list.|B1|mt
+please be advised that|xin lưu ý rằng / xin thông báo|Please be advised that the vessel is delayed.|B1|em
+kindly|vui lòng (lịch sự)|Kindly confirm receipt of this email.|B1|em
+as per|theo như|As per your request, we attach the invoice.|B1|em
+please find attached|vui lòng xem file đính kèm|Please find attached the draft B/L.|A2|em
+for your reference|để bạn tham khảo|I attach last month's report for your reference.|A2|em
+for your approval|để bạn phê duyệt|Please see the quotation for your approval.|B1|em
+for your information (FYI)|để bạn biết|FYI, the customer has paid.|A2|em
+as soon as possible (ASAP)|càng sớm càng tốt|Please send the VGM ASAP.|A2|em
+at your earliest convenience|sớm nhất khi bạn có thể|Please reply at your earliest convenience.|B2|em
+follow up|theo dõi, nhắc lại|I am following up on my email from Monday.|B1|em
+reminder|lời nhắc|This is a friendly reminder about the SI cut-off.|A2|em
+urgent|khẩn|URGENT: container on hold at customs.|A2|em
+update|cập nhật|Any update on the shipment?|A2|em
+noted with thanks|đã ghi nhận, cảm ơn|Noted with thanks. We will proceed.|B1|em
+well received|đã nhận được|Your documents are well received.|B1|em
+acknowledge receipt|xác nhận đã nhận|Please acknowledge receipt of the booking.|B2|em
+proceed|tiến hành|Please proceed with the booking.|B1|em
+on hold|tạm giữ, tạm dừng|The shipment is on hold until payment is received.|A2|em
+go ahead|cứ tiến hành|You can go ahead with the pickup.|A2|em
+revert|phản hồi lại|I will revert to you by tomorrow.|B2|em
+get back to you|trả lời lại bạn|I will get back to you this afternoon.|A2|em
+look forward to|mong đợi|We look forward to your reply.|A2|em
+apologise for the inconvenience|xin lỗi vì sự bất tiện|We apologise for the inconvenience caused.|B1|em
+in advance|trước|Thank you in advance for your help.|A2|em
+cc|đồng gửi (cc)|I cc'd the sales team on this email.|A2|em
+subject line|tiêu đề email|Please put the booking number in the subject line.|A2|em
+regarding (Re:)|về việc|Regarding your shipment to Busan, the ETA is 5 June.|A2|em
+with reference to|liên quan đến|With reference to our call, I attach the quote.|B2|em
+at the moment|hiện tại|At the moment, there is no space.|A2|em
+in the meantime|trong khi chờ đợi|In the meantime, please prepare the documents.|B1|em
+as discussed|như đã trao đổi|As discussed, we will ship by air.|B1|em
+please note|xin lưu ý|Please note that the rates do not include duty.|A2|em
+subject to|tùy thuộc vào|Rates are subject to space availability.|B2|em
+TBC (to be confirmed)|sẽ xác nhận sau|ETD: 12 May (TBC).|A2|em
+TBA (to be advised)|sẽ thông báo sau|Vessel name: TBA.|B1|em
+N/A (not applicable)|không áp dụng|Insurance: N/A.|A2|em
+w/c (week commencing)|tuần bắt đầu từ|Cargo ready w/c 10 June.|B1|em
+EOD (end of day)|cuối ngày|I will send the invoice by EOD.|A2|em
+OOO (out of office)|vắng mặt|I will be OOO on Friday.|A2|em
+escalate|chuyển lên cấp cao hơn|If there is no reply, I will escalate the case.|B2|em
+conference call|cuộc họp qua điện thoại|We have a conference call with the client at 3 p.m.|B1|em
+hold the line|vui lòng giữ máy|Please hold the line, I will check.|A2|em
+call back|gọi lại|Can I call you back in 10 minutes?|A2|em
+leave a message|để lại lời nhắn|Can I leave a message for Ms Lan?|A2|em
+speak up|nói to hơn|Sorry, could you speak up a little?|A2|em
+spell|đánh vần|Could you spell the consignee's name, please?|A2|em
+customer service (CS)|dịch vụ khách hàng|Our CS team will update you daily.|A2|pe
+sales executive|nhân viên kinh doanh|Our sales executive will send the quote.|A2|pe
+operations (ops)|bộ phận hiện trường/điều phối|Ops will arrange the trucking.|A2|pe
+documentation staff|nhân viên chứng từ|Our documentation staff will check the B/L.|B1|pe
+pricing team|bộ phận báo giá|The pricing team is checking the rates.|B1|pe
+account manager|người quản lý khách hàng|Your account manager is Mr Hai.|B1|pe
+warehouse supervisor|giám sát kho|The warehouse supervisor approved the overtime.|B1|pe
+logistics coordinator|điều phối viên logistics|The logistics coordinator handles all bookings.|B1|pe
+import-export staff|nhân viên xuất nhập khẩu|Our import-export staff will prepare the declaration.|A2|pe
+purchasing staff / buyer|nhân viên mua hàng|The buyer placed the PO yesterday.|A2|pe
+agent|đại lý|Our agent in Rotterdam will handle delivery.|A2|pe
+overseas agent|đại lý nước ngoài|We will send the pre-alert to our overseas agent.|B1|pe
+counterpart|người phụ trách phía bên kia|I will contact my counterpart in Japan.|B2|pe
+vendor|nhà cung cấp|The vendor must deliver by Friday.|A2|pe
+client|khách hàng|The client wants weekly reports.|A2|pe
+person in charge (PIC)|người phụ trách|Who is the PIC for this shipment?|A2|pe
+contact person|người liên hệ|The contact person at the warehouse is Ms Mai.|A2|pe
+team leader|trưởng nhóm|The team leader assigns the tasks each morning.|A2|pe
+trainee|thực tập sinh|The trainee will help with data entry.|A2|pe
+colleague|đồng nghiệp|My colleague will take over while I am away.|A2|pe
+take over|tiếp quản công việc|Linh will take over this account from Monday.|B1|pe
+in charge of|phụ trách|I am in charge of import shipments.|A2|pe
+report to|báo cáo cho|I report to the logistics manager.|A2|pe
+handover|bàn giao|Please prepare a handover note before your leave.|B1|pe
+overtime|làm thêm giờ|We need overtime to clear the backlog.|A2|pe
+workload|khối lượng công việc|The workload is heavy in December.|B1|pe
+deadline|hạn chót|The deadline for the report is Friday.|A2|pe
+meeting|cuộc họp|We have a daily meeting at 8:30.|A2|pe
+pre-alert|thông báo trước hàng đến|Please send the pre-alert with the B/L copy.|B1|em
+shipping advice|thông báo giao hàng|The seller sent the shipping advice after loading.|B1|em
+booking amendment|sửa booking|We need a booking amendment: 2 x 40HC instead of 1.|B1|em
+cancellation|hủy|The cancellation fee is USD 100.|A2|em
+confirmation|sự xác nhận|We are waiting for confirmation from the carrier.|A2|em
+request|yêu cầu|We received your request for a quote.|A2|em
+inquiry / enquiry|yêu cầu thông tin, hỏi giá|Thank you for your inquiry.|A2|em
+feedback|phản hồi|Please give us your feedback on our service.|A2|em
+complaint|khiếu nại|We take every complaint seriously.|A2|em
+order|đơn hàng|We received the order this morning.|A2|pu
+place an order|đặt hàng|We placed an order for 5,000 units.|A2|pu
+order confirmation|xác nhận đơn hàng|Please send the order confirmation.|A2|pu
+sales order (SO)|đơn bán hàng|Create a sales order in the system.|B1|pu
+order quantity|số lượng đặt|The minimum order quantity is 500 pcs.|A2|pu
+MOQ (minimum order quantity)|số lượng đặt hàng tối thiểu|The MOQ for this product is 1,000 pcs.|B1|pu
+unit price|đơn giá|The unit price is USD 1.20.|A2|pu
+price list|bảng giá|Here is our price list for 2027.|A2|pu
+discount|chiết khấu|We can offer a 5% discount for large orders.|A2|pu
+sample|hàng mẫu|We will send the sample by courier.|A2|pu
+production|sản xuất|Production will finish on 20 May.|A2|pu
+cargo ready date (CRD)|ngày hàng sẵn sàng|The cargo ready date is 15 June.|B1|pu
+ex-factory date|ngày xuất xưởng|The ex-factory date has moved to next week.|B1|pu
+delivery date|ngày giao hàng|The customer wants a delivery date of 1 July.|A2|pu
+partial shipment|giao hàng từng phần|Partial shipment is allowed under this L/C.|B1|pu
+backorder|đơn hàng chờ (chưa đủ hàng)|The rest of the order is on backorder.|B1|pu
+split shipment|chia lô giao hàng|We will split the shipment into two containers.|B1|pu
+buyer|người mua|The buyer is in Germany.|A2|pu
+seller|người bán|The seller is responsible for export clearance.|A2|pu
+exporter|nhà xuất khẩu|Vietnam is a big exporter of coffee.|A2|pu
+importer|nhà nhập khẩu|The importer pays the import duty.|A2|pu
+importer of record|người nhập khẩu đứng tên|Who is the importer of record?|B2|pu
+trading company|công ty thương mại|We buy through a trading company in Hong Kong.|B1|pu
+factory|nhà máy|The factory is in Bac Ninh.|A2|pu
+raw materials|nguyên vật liệu|Raw materials come from Korea.|A2|pu
+components|linh kiện|We import electronic components from Japan.|A2|pu
+spare parts|phụ tùng|Spare parts are sent by air.|A2|pu
+finished goods|thành phẩm|Finished goods are stored in warehouse B.|B1|pu
+work in progress (WIP)|bán thành phẩm|WIP is not counted as finished goods.|B2|pu
+quality check (QC)|kiểm tra chất lượng|QC will check the goods before loading.|A2|pu
+pre-shipment inspection|giám định trước khi giao|The buyer requires a pre-shipment inspection.|B1|pu
+defect|lỗi sản phẩm|We found defects in 3% of the goods.|B1|pu
+rejection|từ chối (hàng)|The customer rejection rate is too high.|B1|pu
+specifications (specs)|thông số kỹ thuật|Please send the product specs.|A2|pu
+negotiate|đàm phán|We negotiated a better rate with the carrier.|B1|pu
+supply|cung cấp; nguồn cung|There is a supply shortage of chips.|A2|sc
+demand|nhu cầu|Demand is high before Tet.|A2|sc
+forecast|dự báo|The sales forecast for next month is 20,000 units.|B1|sc
+planning|lập kế hoạch|Good planning reduces urgent air shipments.|A2|sc
+visibility|khả năng theo dõi toàn chuỗi|We need better visibility of our shipments.|B2|sc
+end-to-end|toàn trình|We offer end-to-end logistics solutions.|B1|sc
+flow|dòng chảy (hàng, thông tin)|We want a smooth flow of goods.|B1|sc
+sourcing|tìm nguồn hàng|We are sourcing new suppliers in Thailand.|B1|sc
+outsourcing|thuê ngoài|Outsourcing transport saves us money.|B1|sc
+just-in-time (JIT)|đúng lúc|The car factory works on a JIT basis.|B2|sc
+lean|tinh gọn|Lean warehouses reduce waste.|B2|sc
+disruption|gián đoạn|The storm caused a supply chain disruption.|B1|sc
+risk|rủi ro|Single sourcing increases risk.|A2|sc
+contingency plan|kế hoạch dự phòng|We need a contingency plan for port strikes.|B2|sc
+cost-effective|hiệu quả về chi phí|Sea freight is more cost-effective.|B1|sc
+efficiency|hiệu quả|The new layout improved efficiency.|B1|sc
+service level|mức dịch vụ|Our target service level is 98%.|B1|sc
+SLA (service level agreement)|thỏa thuận mức dịch vụ|The SLA says orders are shipped within 24 hours.|B2|sc
+customer requirement|yêu cầu khách hàng|Check the customer requirements before packing.|A2|sc
+lead time reduction|giảm thời gian chờ|Lead time reduction is our main goal.|B2|sc
+order cycle|chu kỳ đơn hàng|The order cycle is 10 days.|B2|sc
+sustainability|tính bền vững|Customers care about sustainability.|B1|sc
+carbon emissions|lượng khí thải carbon|Rail has lower carbon emissions than road.|B1|sc
+WMS (warehouse management system)|hệ thống quản lý kho|The WMS shows real-time stock.|B1|it
+TMS (transport management system)|hệ thống quản lý vận tải|We plan routes in the TMS.|B1|it
+ERP|hệ thống hoạch định nguồn lực doanh nghiệp|Orders come from the ERP system.|B1|it
+EDI (electronic data interchange)|trao đổi dữ liệu điện tử|The customer sends orders by EDI.|B2|it
+system|hệ thống|The system is down this morning.|A2|it
+data entry|nhập liệu|Data entry must be accurate.|A2|it
+input|nhập vào (hệ thống)|Please input the container number in the system.|A2|it
+real-time|thời gian thực|We can see real-time location of the trucks.|B1|it
+dashboard|bảng điều khiển số liệu|The dashboard shows today's KPIs.|B1|it
+report|báo cáo|Please send the weekly report on Monday.|A2|it
+spreadsheet|bảng tính|I keep the shipment list in a spreadsheet.|A2|it
+tracking number|mã vận đơn, mã theo dõi|Here is the tracking number for your parcel.|A2|it
+tracking link|đường dẫn theo dõi|Click the tracking link to see the status.|A2|it
+status|trạng thái|The status shows "in transit".|A2|it
+in transit|đang vận chuyển|The goods are in transit.|A2|it
+RFID|nhận dạng bằng sóng vô tuyến|RFID tags help count inventory quickly.|B2|it
+handheld|máy cầm tay|Pickers use a handheld to scan items.|B1|it
+portal|cổng thông tin trực tuyến|Book your shipment on our customer portal.|B1|it
+upload|tải lên|Upload the invoice to the portal.|A2|it
+download|tải xuống|You can download the B/L from the website.|A2|it
+automation|tự động hóa|Automation reduces picking errors.|B1|it
+e-commerce|thương mại điện tử|E-commerce orders are small but many.|A2|ec
+online order|đơn hàng trực tuyến|We ship 3,000 online orders a day.|A2|ec
+marketplace|sàn thương mại điện tử|We sell on Shopee and Lazada marketplaces.|A2|ec
+fulfilment|xử lý đơn hàng (lấy, đóng, giao)|We outsource fulfilment to a 3PL.|B1|ec
+fulfilment center|trung tâm xử lý đơn hàng|The fulfilment center runs 24/7.|B1|ec
+parcel|bưu kiện|The parcel was delivered at 2 p.m.|A2|ec
+same-day delivery|giao trong ngày|Same-day delivery is available in Hanoi.|A2|ec
+next-day delivery|giao ngày hôm sau|Next-day delivery costs extra.|A2|ec
+express delivery|giao nhanh|Choose express delivery at checkout.|A2|ec
+standard delivery|giao tiêu chuẩn|Standard delivery takes 3–5 days.|A2|ec
+shipping fee|phí vận chuyển|Free shipping fee for orders over 300,000 dong.|A2|ec
+return policy|chính sách đổi trả|Our return policy allows returns within 7 days.|A2|ec
+return rate|tỷ lệ hoàn hàng|The return rate for fashion is high.|B1|ec
+pick-up point|điểm nhận hàng|You can collect your parcel at a pick-up point.|A2|ec
+parcel locker|tủ nhận hàng|Parcel lockers reduce failed deliveries.|B1|ec
+sorting|phân loại hàng|Parcels go through sorting at the hub.|A2|ec
+sorting center|trung tâm phân loại|The parcel is at the sorting center.|A2|ec
+hub|trung tâm trung chuyển|All parcels go through the main hub.|A2|ec
+shipper (delivery rider)|nhân viên giao hàng|The shipper will call you before delivery.|A2|ec
+order status|trạng thái đơn hàng|You can check the order status online.|A2|ec
+out for delivery|đang giao hàng|Your parcel is out for delivery.|A2|ec
+delivered|đã giao|Status: delivered.|A2|ec
+seller center|trung tâm người bán|Print the label from the seller center.|B1|ec
+flash sale|đợt giảm giá chớp nhoáng|Order volume triples during a flash sale.|A2|ec
+peak day|ngày cao điểm|11.11 is our biggest peak day.|B1|ec
+cross-border e-commerce|thương mại điện tử xuyên biên giới|Cross-border e-commerce parcels need simple customs procedures.|B2|ec
+cold chain|chuỗi cung ứng lạnh|Vaccines need an unbroken cold chain.|B1|cc
+temperature-controlled|kiểm soát nhiệt độ|We offer temperature-controlled storage.|B1|cc
+chilled|ướp lạnh (0–5°C)|Chilled goods are kept at 2–4°C.|A2|cc
+frozen|đông lạnh|Frozen shrimp must stay at -18°C.|A2|cc
+set temperature|nhiệt độ cài đặt|The set temperature is -20°C.|B1|cc
+temperature log|nhật ký nhiệt độ|Please send the temperature log for the trip.|B1|cc
+data logger|thiết bị ghi nhiệt độ|Put a data logger in each container.|B1|cc
+ventilation|thông gió|Set the ventilation to 25 CBM per hour.|B2|cc
+humidity|độ ẩm|Humidity must be below 60%.|B1|cc
+cold storage|kho lạnh|We rent cold storage near the port.|A2|cc
+blast freezer|tủ cấp đông nhanh|Fresh fish goes into the blast freezer first.|B2|cc
+perishable goods|hàng dễ hư hỏng|Perishable goods have priority at the terminal.|B1|cc
+shelf life|thời hạn sử dụng|The shelf life of this product is 6 months.|B1|cc
+temperature excursion|sai lệch nhiệt độ ngoài ngưỡng|There was a temperature excursion during transit.|B2|cc
+pharma|dược phẩm|Pharma shipments need GDP-certified warehouses.|B1|cc
+insulated box|thùng giữ nhiệt|Samples are packed in an insulated box with dry ice.|B1|cc
+dry ice|đá khô|Dry ice is classed as dangerous goods for air.|B1|cc
+ice pack / gel pack|túi đá gel|Add four gel packs to each box.|A2|cc
+fresh produce|nông sản tươi|Fresh produce is shipped in reefers.|B1|cc
+dangerous goods (DG)|hàng nguy hiểm|DG must be declared to the carrier.|B1|cc
+hazardous materials (hazmat)|vật liệu nguy hiểm|Hazmat drivers need special training.|B1|cc
+DG declaration|tờ khai hàng nguy hiểm|Please submit the DG declaration with the booking.|B2|cc
+UN number|số UN|Lithium batteries have UN number 3480 or 3481.|B2|cc
+IMO class|nhóm hàng nguy hiểm IMO|This paint is IMO class 3.|B2|cc
+IMDG code|bộ luật hàng nguy hiểm đường biển|The cargo must follow the IMDG code.|B2|cc
+flammable|dễ cháy|Flammable liquids need special labels.|B1|cc
+lithium battery|pin lithium|Lithium batteries have strict air rules.|B1|cc
+DG surcharge|phụ phí hàng nguy hiểm|There is a DG surcharge of USD 250.|B2|cc
+non-DG|hàng không nguy hiểm|Please confirm the cargo is non-DG.|B1|cc
+leakage|rò rỉ|We found leakage from two drums.|B1|cc
+spill|tràn đổ|Clean up the spill immediately.|A2|cc
+safety|an toàn|Safety comes first in the warehouse.|A2|hs
+PPE (personal protective equipment)|đồ bảo hộ cá nhân|Wear your PPE at all times.|A2|hs
+hard hat|mũ bảo hộ|Wear a hard hat in the yard.|A2|hs
+safety shoes|giày bảo hộ|Safety shoes are required on the warehouse floor.|A2|hs
+hi-vis vest|áo phản quang|Visitors must wear a hi-vis vest.|A2|hs
+gloves|găng tay|Wear gloves when handling chemicals.|A2|hs
+fire extinguisher|bình chữa cháy|The fire extinguisher is next to the door.|A2|hs
+fire exit|lối thoát hiểm|Keep the fire exit clear.|A2|hs
+emergency|tình huống khẩn cấp|In an emergency, call 114.|A2|hs
+first aid|sơ cứu|The first aid kit is in the office.|A2|hs
+injury|chấn thương|Report every injury, even small ones.|A2|hs
+near miss|sự cố suýt xảy ra|We had a near miss with a forklift today.|B2|hs
+hazard|mối nguy|A wet floor is a hazard.|B1|hs
+risk assessment|đánh giá rủi ro|Do a risk assessment before the job.|B1|hs
+training|đào tạo|Forklift training takes three days.|A2|hs
+certificate|chứng chỉ|Only drivers with a certificate can use the forklift.|A2|hs
+inspection checklist|danh sách kiểm tra|Complete the inspection checklist every morning.|B1|hs
+5S|phương pháp 5S|We use 5S to keep the warehouse tidy.|B1|hs
+housekeeping|giữ gìn ngăn nắp|Good housekeeping prevents accidents.|B1|hs
+audit|đánh giá, kiểm toán|The customer will audit our warehouse next week.|B1|hs
+ISO certification|chứng nhận ISO|We have ISO 9001 certification.|B1|hs
+quality control|kiểm soát chất lượng|Quality control checks 10% of the cartons.|A2|hs
+SOP (standard operating procedure)|quy trình thao tác chuẩn|Follow the SOP for receiving.|B1|hs
+non-conformance|sự không phù hợp|Record any non-conformance in the system.|B2|hs
+corrective action|hành động khắc phục|What corrective action will you take?|B2|hs
+root cause|nguyên nhân gốc rễ|We need to find the root cause of the errors.|B2|hs
+security|an ninh|Security checks every truck at the gate.|A2|hs
+CCTV|camera giám sát|The loading area has CCTV.|A2|hs
+theft|trộm cắp|Seals help prevent theft.|B1|hs
+pilferage|mất cắp vặt (một phần hàng)|Pilferage was found in three cartons.|B2|hs
+loss|tổn thất, mất mát|The loss was covered by insurance.|A2|op
+missing|bị thiếu, bị mất|Two cartons are missing.|A2|op
+wet damage|hư hỏng do ướt|The cartons have wet damage.|B1|op
+crushed|bị đè bẹp|Several cartons were crushed.|B1|op
+dented|bị móp|The container is dented on one side.|B1|op
+torn|bị rách|The bags are torn.|A2|op
+broken|bị vỡ|Three bottles are broken.|A2|op
+survey|giám định tổn thất|We have asked for a survey of the damaged cargo.|B2|op
+surveyor|giám định viên|The surveyor will inspect the cargo tomorrow.|B2|op
+survey report|biên bản giám định|The survey report confirms water damage.|B2|op
+claim form|mẫu đơn khiếu nại|Please fill in the claim form.|B1|op
+notice of claim|thông báo khiếu nại|Send a notice of claim within 3 days of delivery.|B2|op
+time bar|thời hiệu khiếu nại|The time bar for this claim is one year.|B2|op
+exception|ngoại lệ, sự cố|The delivery has an exception: address not found.|B1|op
+issue|vấn đề|We have an issue with the booking.|A2|op
+problem|vấn đề, trục trặc|What is the problem with the shipment?|A2|op
+solution|giải pháp|We need a solution by tomorrow.|A2|op
+workaround|giải pháp tạm thời|As a workaround, we will truck the cargo to Hai Phong.|B2|op
+priority|ưu tiên|This order has top priority.|A2|op
+rush order|đơn gấp|We have a rush order for Monday.|B1|op
+urgent shipment|lô hàng gấp|Urgent shipments go by air.|A2|op
+deadline missed|trễ hạn|The deadline was missed because of the storm.|B1|op
+on schedule|đúng lịch|The shipment is on schedule.|A2|op
+behind schedule|chậm lịch|We are two days behind schedule.|B1|op
+ahead of schedule|sớm hơn lịch|The vessel arrived ahead of schedule.|B1|op
+reschedule|dời lịch|Can we reschedule the pickup to Friday?|A2|op
+postpone|hoãn|The inspection was postponed to next week.|B1|op
+cancel|hủy|The customer cancelled the order.|A2|op
+arrange|sắp xếp, bố trí|We will arrange a truck for tomorrow.|A2|op
+handle|xử lý|Who handles this shipment?|A2|op
+check|kiểm tra|Please check the packing list again.|A2|op
+double-check|kiểm tra lại|Please double-check the container number.|A2|op
+verify|xác minh|Verify the address before dispatch.|B1|op
+notify|thông báo|Please notify the consignee.|B1|op
+inform|cho biết, thông báo|We will inform you when the cargo arrives.|A2|op
+submit|nộp|Submit the SI before the cut-off.|A2|op
+issue (a document)|phát hành (chứng từ)|The carrier will issue the B/L after departure.|B1|op
+release|giải phóng, phát hành|The cargo will be released after payment.|B1|op
+collect|lấy, nhận|You can collect the container tomorrow.|A2|op
+deliver|giao hàng|We deliver to all provinces.|A2|op
+load|xếp hàng lên|Load the heavy cartons first.|A2|op
+unload|dỡ hàng xuống|Unload the truck at dock 2.|A2|op
+ship|gửi hàng|We ship every Tuesday.|A2|op
+book|đặt (chỗ, xe)|I need to book a 40HC for next week.|A2|op
+track|theo dõi|You can track the container online.|A2|op
+trace|truy tìm|We are trying to trace the missing pallet.|B1|op
+allocate|phân bổ|The carrier allocated 10 containers to us.|B2|op
+assign|giao (việc), phân công|I assigned the order to Nam.|B1|op
+coordinate|phối hợp|I coordinate with the forwarder every day.|B1|op
+monitor|giám sát|We monitor the temperature during transit.|B1|op
+resolve|giải quyết|The issue was resolved quickly.|B1|op
+approve|phê duyệt|The manager approved the extra cost.|A2|op
+reject|từ chối|Customs rejected the declaration.|A2|op
+store|lưu trữ|We store the goods for 30 days.|A2|op
+transfer|chuyển|Transfer the stock to the new warehouse.|A2|op
+return|trả lại|The customer returned five items.|A2|op
+replace|thay thế|We will replace the damaged items.|A2|op
+improve|cải thiện|We want to improve on-time delivery.|A2|op
+reduce|giảm|Reduce empty miles to save fuel.|A2|op
+increase|tăng|Volumes increased by 20%.|A2|op
+performance|hiệu suất|Carrier performance improved this month.|B1|op
+target|mục tiêu|Our target is 98% accuracy.|A2|op
+lead time variance|độ lệch thời gian chờ|Lead time variance makes planning hard.|B2|op
+order accuracy|độ chính xác đơn hàng|Order accuracy reached 99.8%.|B1|op
+throughput|năng suất xử lý|Warehouse throughput is 5,000 cartons a day.|B2|op
+productivity|năng suất|Picking productivity is 120 lines per hour.|B1|op
+utilisation|hiệu suất sử dụng|Truck utilisation is only 70%.|B2|op
+capacity|năng lực, công suất|We don't have enough capacity in December.|B1|op
+shipping volume|sản lượng|Our volume is 300 TEU a month.|A2|op
+FCA (Free Carrier)|giao cho người chuyên chở|FCA is common for air freight and containers.|B1|in
+CFR (Cost and Freight)|tiền hàng và cước|Under CFR, the buyer arranges insurance.|B1|in
+CPT (Carriage Paid To)|cước trả tới|With CPT, the seller pays carriage to the named place.|B2|in
+CIP (Carriage and Insurance Paid To)|cước và bảo hiểm trả tới|CIP requires higher insurance cover than CIF.|B2|in
+FAS (Free Alongside Ship)|giao dọc mạn tàu|FAS is used for bulk cargo.|B2|in
+DPU (Delivered at Place Unloaded)|giao tại nơi đến đã dỡ xuống|Under DPU, the seller unloads the goods.|B2|in
+named place|địa điểm chỉ định|Always write the named place: FOB Hai Phong.|B1|in
+transfer of risk|chuyển giao rủi ro|Transfer of risk happens at different points for each Incoterm.|B2|in
+responsibility|trách nhiệm|Export clearance is the seller's responsibility under FOB.|B1|in
+buyer's account|do người mua chịu|Destination charges are for the buyer's account.|B1|in
+seller's account|do người bán chịu|Origin charges are for the seller's account.|B1|in
+origin charges|phí đầu xuất|Origin charges include THC and documentation fee.|B1|in
+destination charges|phí đầu nhập|Destination charges are paid by the consignee.|B1|in
+insured value|giá trị được bảo hiểm|The insured value is 110% of the CIF value.|B2|in
+premium|phí bảo hiểm|The insurance premium is 0.15% of the value.|B2|in
+all risks|bảo hiểm mọi rủi ro|We insure on all risks terms.|B2|in
+insurance policy|hợp đồng bảo hiểm|Check the insurance policy for exclusions.|B1|in
+insurer|công ty bảo hiểm|The insurer asked for the survey report.|B1|in
+coverage|phạm vi bảo hiểm|Does the coverage include theft?|B1|in
+deductible|mức khấu trừ|There is a deductible of USD 200.|B2|in
+general average|tổn thất chung|The carrier declared general average after the fire.|B2|in
+cost|chi phí|The total cost is USD 2,300.|A2|in
+price|giá|The price includes delivery.|A2|in
+rate|giá, cước|What is your rate to Tokyo?|A2|in
+fee|phí|There is no fee for the first change.|A2|in
+charge|phí, tính phí|We charge USD 20 per pallet.|A2|in
+total|tổng cộng|The total is 45 cartons.|A2|in
+include / exclude|bao gồm / không bao gồm|The rate excludes duty and tax.|A2|in
+valid until|có hiệu lực đến|The price is valid until the end of the month.|A2|in
+competitive rate|giá cạnh tranh|We offer competitive rates to Europe.|B1|in
+best rate|giá tốt nhất|Can you give me your best rate?|A2|in
+rate increase|tăng giá|There is a rate increase from 1 January.|A2|in
+port|cảng|Which port do you use?|A2|tr
+airport|sân bay|The cargo is at the airport.|A2|tr
+ICD (inland container depot)|cảng cạn|We clear customs at Song Than ICD.|B1|tr
+dry port|cảng cạn|The dry port reduces traffic at the seaport.|B1|tr
+barge|sà lan|Containers go by barge from Binh Duong to Cai Mep.|B1|tr
+inland waterway|đường thủy nội địa|Inland waterway transport is cheap.|B2|tr
+multimodal|đa phương thức|We provide multimodal solutions to Central Asia.|B2|tr
+rail|đường sắt|Rail to China takes about 5 days.|A2|tr
+railway station|ga đường sắt|The containers are loaded at Yen Vien station.|A2|tr
+lorry|xe tải (Anh-Anh)|The lorry is parked at the gate.|A2|tr
+van|xe tải nhỏ|A van is enough for these 10 boxes.|A2|tr
+motorbike delivery|giao hàng bằng xe máy|Most last-mile deliveries use motorbikes.|A2|tr
+mode of transport|phương thức vận tải|Which mode of transport is cheapest?|B1|tr
+transport cost|chi phí vận tải|Transport cost is 8% of sales.|A2|tr
+transport plan|kế hoạch vận chuyển|Please share the transport plan for next week.|B1|tr
+logistics provider|nhà cung cấp dịch vụ logistics|We work with three logistics providers.|B1|tr
+forwarding agent|đại lý giao nhận|The forwarding agent will collect the cargo.|B1|tr
+shipping agent|đại lý hãng tàu|The shipping agent issues the D/O.|B1|tr
+haulier / haulage company|công ty vận tải đường bộ|The haulier will deliver the container.|B2|tr
+logistics solution|giải pháp logistics|We need a logistics solution for Cambodia.|B1|tr
+route|tuyến đường|This route avoids the city center.|A2|tr
+destination|nơi đến|What is the destination?|A2|tr
+origin|nơi đi, xuất xứ|Origin: Ho Chi Minh City.|A2|tr
+door delivery|giao tận cửa|Is door delivery included in the price?|A2|tr
+port-to-port|từ cảng đến cảng|This is a port-to-port rate.|B1|tr
+door-to-port|từ kho đến cảng|We quote door-to-port from your factory.|B1|tr
+hand over|bàn giao (hàng)|The goods were handed over to the carrier.|B1|tr
+transit|quá cảnh, đang vận chuyển|The transit through Laos takes one day.|B1|tr
+could you confirm|bạn có thể xác nhận|Could you confirm the pickup time?|A2|em
+could you advise|bạn có thể cho biết|Could you advise the ETA, please?|B1|em
+I'd like to check|tôi muốn kiểm tra|I'd like to check the status of my shipment.|A2|em
+let me check|để tôi kiểm tra|Let me check and get back to you.|A2|em
+I'm afraid|tôi e rằng (báo tin xấu)|I'm afraid the vessel is full.|A2|em
+unfortunately|thật không may|Unfortunately, the container is damaged.|A2|em
+we regret to inform you|chúng tôi rất tiếc thông báo|We regret to inform you that the flight was cancelled.|B2|em
+we are pleased to|chúng tôi vui mừng|We are pleased to confirm your booking.|B1|em
+thank you for your patience|cảm ơn sự kiên nhẫn của bạn|Thank you for your patience during the delay.|B1|em
+sorry for the late reply|xin lỗi vì trả lời muộn|Sorry for the late reply.|A2|em
+I'm calling about|tôi gọi về việc|I'm calling about booking 4512.|A2|em
+is it possible to|có thể … không|Is it possible to change the delivery address?|A2|em
+would it be possible|liệu có thể|Would it be possible to extend the free time?|B1|em
+I suggest that|tôi đề xuất rằng|I suggest that we ship by air.|B1|em
+how about|thế còn … thì sao|How about delivering on Saturday?|A2|em
+that works for us|như vậy được với chúng tôi|Friday morning works for us.|A2|em
+agreed|đồng ý|Agreed. Please go ahead.|A2|em
+let's keep in touch|giữ liên lạc nhé|Let's keep in touch about the next order.|A2|em
+best regards|trân trọng|Best regards, Nam|A2|em
+dear Sir or Madam|kính gửi ông/bà|Dear Sir or Madam, I am writing to request a quote.|A2|em
+I look forward to working with you|mong được hợp tác|I look forward to working with you.|A2|em
+confirm receipt|xác nhận đã nhận|Please confirm receipt of the payment.|B1|em
+action required|cần xử lý|Action required: missing VGM.|B1|em
+asap reply needed|cần trả lời gấp|Please reply ASAP; the cut-off is today.|A2|em
+on behalf of|thay mặt|I am writing on behalf of ABC Logistics.|B1|em
+agenda|chương trình họp|Here is the agenda for tomorrow's meeting.|B1|em
+minutes|biên bản họp|I will send the minutes after the meeting.|B1|em
+action items|việc cần làm|Here are the action items from today's call.|B1|em
+point of contact|đầu mối liên lạc|I will be your point of contact.|B1|em
+customs broker fee|phí dịch vụ hải quan|The customs broker fee is 1.5 million dong per declaration.|B1|cu
+customs inspection fee|phí kiểm hóa|The customs inspection fee is charged per container.|B1|cu
+customs hold|bị hải quan giữ|The container is on customs hold.|B1|cu
+duty-free|miễn thuế|These goods are duty-free under the FTA.|B1|cu
+tax code|mã số thuế|Please send the consignee's tax code.|A2|cu
+HS code check|kiểm tra mã HS|We need an HS code check before declaring.|B1|cu
+customs valuation|xác định trị giá hải quan|Customs valuation is based on the transaction value.|B2|cu
+anti-dumping duty|thuế chống bán phá giá|Steel from some countries pays anti-dumping duty.|B2|cu
+specialised inspection|kiểm tra chuyên ngành|Food needs specialised inspection before clearance.|B2|cu
+origin criteria|tiêu chí xuất xứ|The product meets the origin criteria for Form E.|B2|cu
+self-certification|tự chứng nhận xuất xứ|Under EVFTA, approved exporters can use self-certification.|B2|cu
+REX (registered exporter)|nhà xuất khẩu đăng ký|We registered in the REX system.|B2|cu
+customs clearance time|thời gian thông quan|Customs clearance time is about 24 hours.|B1|cu
+clearance documents|chứng từ thông quan|Please send the clearance documents today.|A2|cu
+import permit|giấy phép nhập khẩu|An import permit is needed for this chemical.|B1|cu
+cargo|hàng hóa|The cargo is ready.|A2|oc
+consignment|lô hàng gửi|The consignment arrived in good condition.|B1|oc
+in good condition|trong tình trạng tốt|All cartons were received in good condition.|A2|oc
+in bad order|trong tình trạng xấu|Two pallets arrived in bad order.|B2|oc
+clean B/L|vận đơn sạch|The bank requires a clean B/L.|B2|dc
+claused B/L|vận đơn có ghi chú xấu|A claused B/L says the goods were damaged.|B2|dc
+LOI (letter of indemnity)|thư bảo đảm|The carrier will release the cargo against an LOI.|B2|dc
+release order|lệnh giải phóng hàng|We received the release order from the shipping line.|B1|dc
+EIR (equipment interchange receipt)|phiếu giao nhận container|Check the EIR for container damage.|B2|dc
+container release order|lệnh cấp container rỗng|Show the container release order at the depot.|B1|dc
+gate pass|phiếu ra vào cổng|The driver needs a gate pass to enter the port.|B1|dc
+customs declaration number|số tờ khai|Please send me the customs declaration number.|A2|dc
+cargo receipt|biên nhận hàng|The warehouse issued a cargo receipt.|B1|dc
+booking note|giấy xác nhận lưu khoang|The booking note shows the cut-off times.|B1|dc
+VAT invoice|hóa đơn VAT|Please issue a VAT invoice for the local charges.|A2|dc
+e-invoice|hóa đơn điện tử|We only issue e-invoices.|A2|dc
+contract of carriage|hợp đồng vận chuyển|The B/L is evidence of the contract of carriage.|B2|dc
+terms and conditions|điều khoản và điều kiện|See our terms and conditions on page 2.|B1|dc
+air freight rate|giá cước hàng không|Air freight rates rise before Christmas.|A2|af
+cargo acceptance|tiếp nhận hàng (tại sân bay)|Cargo acceptance closes 6 hours before departure.|B1|af
+airline cut-off|giờ cắt hàng của hãng bay|The airline cut-off is 10 p.m.|B1|af
+known shipper|người gửi hàng được chứng nhận an ninh|As a known shipper, our cargo needs less screening.|B2|af
+dimension check|kiểm tra kích thước|The terminal did a dimension check on each piece.|B1|af
+oversize|quá cỡ|This box is oversize for the passenger aircraft.|B1|af
+cargo-only aircraft (CAO)|chỉ được chở trên máy bay hàng|The label says "cargo aircraft only".|B2|af
+priority service|dịch vụ ưu tiên|Priority service guarantees the first flight.|B1|af
+deferred service|dịch vụ tiết kiệm (chậm hơn)|Deferred service is cheaper but slower.|B2|af
+customs at the airport|hải quan sân bay|Customs at the airport cleared the cargo in 4 hours.|A2|af
+flight delay|chậm chuyến bay|A flight delay pushed the arrival to Saturday.|A2|af
+airport transfer|chuyển hàng giữa các sân bay|An airport transfer is needed from Hanoi to Ho Chi Minh City.|B1|af
+air cargo manifest|lược khai hàng không|The air cargo manifest lists every HAWB.|B2|af
+pallet label|nhãn pallet|Print a pallet label for each pallet.|A2|wh
+cartons per pallet|số thùng mỗi pallet|There are 48 cartons per pallet.|A2|wh
+layer|lớp (xếp hàng)|Stack the cartons six layers high.|A2|wh
+mixed pallet|pallet hỗn hợp|A mixed pallet has more than one SKU.|B1|wh
+full pallet|pallet nguyên|We ship full pallets to the distributors.|A2|wh
+pick face|vị trí lấy hàng|Refill the pick face when it is empty.|B2|wh
+mezzanine|tầng lửng|Small items are stored on the mezzanine.|B2|wh
+conveyor|băng chuyền|The conveyor moves cartons to the packing area.|A2|wh
+sorter|máy phân loại|The sorter handles 10,000 parcels per hour.|B1|wh
+packing station|bàn đóng gói|Each packing station has a printer and scale.|A2|wh
+weighing scale|cân|Weigh each carton on the weighing scale.|A2|wh
+filler / void fill|vật liệu chèn|Use void fill to protect the items.|B1|wh
+bubble wrap|màng xốp hơi|Wrap the glass in bubble wrap.|A2|wh
+tape|băng keo|Seal the box with brown tape.|A2|wh
+seal (a box)|dán kín (thùng)|Seal the box after checking the items.|A2|wh
+temperature zone|vùng nhiệt độ|The warehouse has three temperature zones.|B1|wh
+bonded storage|lưu kho ngoại quan|Bonded storage lets you delay paying duty.|B2|wh
+warehouse layout|bố trí mặt bằng kho|The new warehouse layout reduces travel time.|B1|wh
+occupancy|tỷ lệ lấp đầy kho|Warehouse occupancy is 85%.|B2|wh
+inventory turnover|vòng quay hàng tồn kho|Inventory turnover is 8 times a year.|B2|wh
+days of inventory|số ngày tồn kho|We hold 30 days of inventory.|B2|wh
+warehouse receipt|phiếu lưu kho|The warehouse receipt shows the storage date.|B1|wh
+security seal|niêm phong an ninh|Check the security seal before opening.|B1|hs
+gate check|kiểm tra tại cổng|Every truck has a gate check.|A2|hs
+visitor badge|thẻ khách|All visitors must wear a visitor badge.|A2|hs
+no smoking|cấm hút thuốc|No smoking in the warehouse.|A2|hs
+speed limit|giới hạn tốc độ|The forklift speed limit is 10 km/h.|A2|hs
+pedestrian walkway|lối đi bộ|Stay on the pedestrian walkway.|A2|hs
+load securing|cố định hàng|Load securing prevents accidents on the road.|B1|hs
+overloading|chở quá tải|Overloading is illegal and dangerous.|B1|hs
+incident report|báo cáo sự cố|Write an incident report within 24 hours.|B1|hs
+driver's license|bằng lái xe|The driver showed his license at the gate.|A2|td
+driving hours|giờ lái xe|Drivers must not exceed the legal driving hours.|B1|td
+rest stop|điểm dừng nghỉ|The driver took a rest stop after 4 hours.|A2|td
+traffic jam|kẹt xe|The truck is stuck in a traffic jam.|A2|td
+detour|đường vòng|The truck took a detour because of the flood.|B1|td
+loading time|thời gian bốc hàng|Loading time is about 45 minutes.|A2|td
+truck booking|đặt xe|Truck booking must be made by 3 p.m. the day before.|A2|td
+trucking rate|giá cước xe|The trucking rate is based on distance.|A2|td
+fuel surcharge (road)|phụ phí xăng dầu (đường bộ)|A fuel surcharge applies when diesel prices rise.|B1|td
+backhaul|chiều về có hàng|We look for backhaul loads to reduce empty trips.|B2|td
+empty run|chạy rỗng|Empty runs waste fuel and money.|B1|td
+delivery route|tuyến giao hàng|The delivery route has 25 stops.|A2|td
+stop|điểm giao|This is the third stop today.|A2|td
+receiver|người nhận|The receiver was not at home.|A2|td
+signature|chữ ký|Please get the receiver's signature.|A2|td
+e-POD|bằng chứng giao hàng điện tử|Drivers upload an e-POD with a photo.|B1|td
+EDI message|thông điệp EDI|The carrier sends status updates by EDI message.|B2|it
+API|giao diện kết nối phần mềm|We connect to the carrier's tracking API.|B2|it
+login|đăng nhập|Please send me the portal login.|A2|it
+password|mật khẩu|Do not share your password.|A2|it
+error message|thông báo lỗi|The system shows an error message.|A2|it
+backup|sao lưu|We back up the WMS data every night.|B1|it
+label printer|máy in nhãn|The label printer is out of paper.|A2|it
+data accuracy|độ chính xác dữ liệu|Data accuracy is important for customs.|B1|it
+digitalisation|số hóa|Digitalisation reduces paperwork.|B2|it
+paperless|không giấy tờ|We aim for paperless customs clearance.|B1|it
+track and trace system|hệ thống theo dõi hành trình|Our track and trace system updates every hour.|B1|it
+proof of identity|giấy tờ tùy thân|The driver must show proof of identity.|B1|it
+order management|quản lý đơn hàng|Order management is done in the ERP.|B1|it
+shipment status|trạng thái lô hàng|Shipment status: arrived at destination port.|A2|it
+milestone|mốc (hành trình)|The next milestone is customs release.|B1|it
+COD reconciliation|đối soát COD|COD reconciliation is done every week.|B1|ec
+packaging cost|chi phí bao bì|Smaller boxes reduce packaging cost.|A2|ec
+unboxing|mở hộp|Good packaging gives a good unboxing experience.|B1|ec
+SKU count|số lượng mã hàng|Our SKU count doubled this year.|B1|ec
+order cut-off|giờ chốt đơn|The order cut-off for same-day delivery is 11 a.m.|B1|ec
+customer review|đánh giá của khách|Late delivery leads to bad customer reviews.|A2|ec
+delivery attempt|lần giao hàng|We make three delivery attempts.|B1|ec
+refund request|yêu cầu hoàn tiền|The customer sent a refund request.|A2|ec
+exchange|đổi hàng|The customer wants an exchange for a bigger size.|A2|ec
+last-mile carrier|đơn vị giao chặng cuối|We use two last-mile carriers in Hanoi.|B1|ec
+dropshipping|bán hàng không giữ kho|With dropshipping, the supplier ships directly to the customer.|B2|ec
+pick, pack and ship|lấy, đóng, giao|Our 3PL handles pick, pack and ship.|B1|ec
+general manager|tổng giám đốc|The general manager approved the new contract.|A2|pe
+logistics manager|trưởng phòng logistics|The logistics manager reviews carrier performance.|A2|pe
+supply chain manager|quản lý chuỗi cung ứng|The supply chain manager sets inventory targets.|B1|pe
+planner|nhân viên kế hoạch|The planner updates the forecast every week.|B1|pe
+forklift driver|tài xế xe nâng|We are hiring two forklift drivers.|A2|pe
+storekeeper|thủ kho|The storekeeper checks every receipt.|A2|pe
+customs declarant|nhân viên khai báo hải quan|Our customs declarant has a certificate.|B1|pe
+freight forwarder staff|nhân viên forwarder|The forwarder staff sent the arrival notice.|A2|pe
+shipping clerk|nhân viên giao nhận|The shipping clerk prepares the documents.|A2|pe
+key account|khách hàng lớn|Samsung is our key account.|B1|pe
+supplier evaluation|đánh giá nhà cung cấp|We do a supplier evaluation every year.|B1|pu
+purchase request (PR)|đề nghị mua hàng|Create a PR before you order.|B1|pu
+lead time (supplier)|thời gian giao của nhà cung cấp|Supplier lead time is 45 days.|B1|pu
+quotation comparison|so sánh báo giá|Prepare a quotation comparison of three suppliers.|B1|pu
+long-term contract|hợp đồng dài hạn|We signed a long-term contract with the carrier.|B1|pu
+order volume|lượng đơn hàng|Order volume is lower in February.|A2|pu
+re-order|đặt hàng lại|We re-order every two weeks.|A2|pu
+safety stock level|mức tồn kho an toàn|Set the safety stock level for each SKU.|B2|sc
+stock coverage|số ngày đủ hàng|Stock coverage is 3 weeks.|B2|sc
+demand planning|hoạch định nhu cầu|Demand planning uses sales history.|B2|sc
+supply planning|hoạch định cung ứng|Supply planning matches orders with capacity.|B2|sc
+network design|thiết kế mạng lưới|Network design decides where to build warehouses.|B2|sc
+nearshoring|dịch chuyển sản xuất gần thị trường|Nearshoring is growing in Mexico.|B2|sc
+dual sourcing|mua từ hai nguồn|Dual sourcing reduces supply risk.|B2|sc
+supplier lead time|thời gian giao hàng của nhà cung cấp|We track supplier lead time every month.|B1|sc
+shortage of supply|thiếu nguồn cung|A shortage of supply delayed production.|B1|sc
+on-time in-full (OTIF)|giao đúng hạn, đủ hàng|Our OTIF is 94%.|B2|op
+perfect order|đơn hàng hoàn hảo|A perfect order is on time, in full and without damage.|B2|op
+cost per unit|chi phí trên mỗi đơn vị|Cost per unit fell by 5%.|B1|op
+cost per order|chi phí trên mỗi đơn hàng|Our cost per order is 18,000 dong.|B1|op
+error rate|tỷ lệ lỗi|The picking error rate is 0.2%.|B1|op
+lessons learned|bài học rút ra|Let's write down the lessons learned.|B1|op
+continuous improvement|cải tiến liên tục|Continuous improvement is part of our culture.|B1|op
+weekly report|báo cáo tuần|The weekly report is due on Monday.|A2|op`;
+const VOCAB=RAW.trim().split("\n").map((l,i)=>{const [term,vi,ex,level,topic]=l.split("|");return{id:"w"+i,term,vi,ex,level,topic}});
+
+/* ============ LISTENING ============ */
+const LISTEN=[
+ {id:"l1",level:"A2",title:"Receiving goods at the warehouse",vi:"Nhận hàng tại kho",
+  lines:[["Driver","Good morning. I have a delivery for Sunrise Electronics."],["Clerk","Good morning. Which dock are you at?"],["Driver","Dock number four. There are twelve pallets."],["Clerk","OK. Can I see the delivery note, please?"],["Driver","Here you are."],["Clerk","Thank you. The packing list says twelve pallets, but I can only count eleven."],["Driver","Really? Let me check the truck again."],["Driver","Sorry, you are right. One pallet is still at the back. I will bring it now."],["Clerk","Great. I will sign the delivery note when everything is unloaded."]],
+  qs:[["How many pallets are on the packing list?",["Eleven","Twelve","Four"],1],["Where is the truck?",["At dock four","At the port","At the office"],0],["When will the clerk sign the delivery note?",["Right now","Tomorrow","When everything is unloaded"],2]]},
+ {id:"l2",level:"A2",title:"Booking a truck",vi:"Đặt xe tải",
+  lines:[["Agent","Hello, Fast Road Transport. How can I help you?"],["Customer","Hi. I need a truck to collect goods from our factory on Friday."],["Agent","Sure. What time and how much cargo?"],["Customer","At nine in the morning. We have eight pallets, about four tonnes."],["Agent","No problem. Where is the delivery address?"],["Customer","Cat Lai port. The cut-off time is three p.m."],["Agent","OK. The price is two million five hundred thousand dong. I will email you the booking confirmation."],["Customer","Perfect. Thank you."]],
+  qs:[["When is the pickup?",["Friday at 9 a.m.","Friday at 3 p.m.","Thursday at 9 a.m."],0],["How heavy is the cargo?",["About eight tonnes","About four tonnes","About two tonnes"],1],["What will the agent send by email?",["An invoice","A booking confirmation","A packing list"],1]]},
+ {id:"l3",level:"A2",title:"Where is my order?",vi:"Đơn hàng của tôi đâu?",
+  lines:[["Customer","Hi, my order has not arrived. The order number is 5 5 2 0."],["Support","Let me check. Your parcel left our warehouse yesterday."],["Customer","When will it arrive?"],["Support","It is out for delivery today. The driver will call you before he arrives."],["Customer","Can I track it online?"],["Support","Yes. I will send you a tracking link by text message."]],
+  qs:[["When did the parcel leave the warehouse?",["Today","Yesterday","Last week"],1],["What will the driver do?",["Call before arriving","Leave it at the door","Return it"],0],["How will the customer get the tracking link?",["By email","By text message","By post"],1]]},
+ {id:"l4",level:"B1",title:"A delay at the port",vi:"Chậm trễ tại cảng",
+  lines:[["Forwarder","Hi Linh, it's Mark from Global Freight. I'm calling about your shipment to Hamburg."],["Client","Hi Mark. Is there a problem?"],["Forwarder","I'm afraid so. The vessel was delayed in Singapore because of port congestion, so the ETA has moved from the fifth to the ninth of May."],["Client","Four days late? Our customer needs the goods for a promotion on the eighth."],["Forwarder","I understand. One option is to move part of the cargo to air freight. It's faster, but it would cost about three times more."],["Client","How many cartons could you send by air?"],["Forwarder","If we send forty cartons, they could arrive on the sixth."],["Client","OK. Please send me a quotation for that, and I'll check with my manager."],["Forwarder","Will do. I'll email it within an hour."]],
+  qs:[["Why was the vessel delayed?",["Bad weather","Port congestion in Singapore","A customs inspection"],1],["What is the new ETA?",["5 May","8 May","9 May"],2],["What solution does Mark suggest?",["Send part of the cargo by air","Cancel the order","Use a different port"],0],["What will Mark send within an hour?",["A bill of lading","A quotation","An invoice"],1]]},
+ {id:"l5",level:"B1",title:"FCL or LCL?",vi:"Hàng nguyên hay hàng lẻ?",
+  lines:[["Client","We need to ship furniture to Sydney. It's about fifteen cubic meters. Should we use FCL or LCL?"],["Forwarder","A twenty-foot container holds around thirty-three cubic meters, so you would only fill half of it."],["Client","So LCL is cheaper?"],["Forwarder","Per cubic meter, LCL is more expensive, but you only pay for the space you use. For fifteen cubic meters, LCL would be about eleven hundred dollars, and a full container about fourteen hundred."],["Client","What about transit time?"],["Forwarder","LCL takes longer, about five days more, because the cargo must be consolidated and then unpacked at a warehouse in Sydney. There's also more handling, so more risk of damage."],["Client","Our furniture is fragile. Maybe FCL is worth the extra three hundred dollars."],["Forwarder","I think that's a good decision."]],
+  qs:[["How much space does the furniture need?",["About 15 cubic meters","About 33 cubic meters","About 20 cubic meters"],0],["Why does LCL take longer?",["The ship is slower","Cargo must be consolidated and unpacked","Customs is stricter"],1],["What does the client decide?",["LCL to save money","Air freight","FCL because the goods are fragile"],2]]},
+ {id:"l6",level:"B1",title:"Warehouse safety briefing",vi:"Phổ biến an toàn kho",
+  lines:[["Supervisor","Good morning, everyone, and welcome to your first day. Before you start, here are the safety rules."],["Supervisor","First, always wear your safety shoes and high-visibility vest on the warehouse floor."],["Supervisor","Second, walk only in the green pedestrian lanes. Forklifts have priority in the yellow lanes."],["Supervisor","Third, never stand under a raised load, and never climb the racking. If you need something from a high shelf, ask a forklift driver."],["Supervisor","If you see a spill or damaged pallet, report it to me immediately. Don't try to fix it yourself."],["Supervisor","Finally, the emergency assembly point is in the car park next to gate two. Any questions?"]],
+  qs:[["Where should pedestrians walk?",["In the yellow lanes","In the green lanes","Anywhere"],1],["What should you do if you need an item from a high shelf?",["Climb the racking","Use a ladder","Ask a forklift driver"],2],["Where is the assembly point?",["In the car park next to gate two","At the loading dock","In the office"],0]]},
+ {id:"l7",level:"B2",title:"Held by customs",vi:"Hàng bị hải quan giữ",
+  lines:[["Broker","Good afternoon, Ms Tran. I'm afraid your container has been held by customs at Hai Phong."],["Importer","Held? What's the reason?"],["Broker","Two things. The HS code on the commercial invoice doesn't match the declaration, and we haven't received the original certificate of origin, so customs can't apply the preferential duty rate under the free trade agreement."],["Importer","The supplier told me they sent the C/O by courier last week."],["Broker","It may still be in transit. In the meantime, the container is accumulating storage charges, and demurrage will start after five free days."],["Importer","What do you recommend?"],["Broker","Ask the supplier for the courier tracking number and a scanned copy today. I'll submit an amended declaration with the correct HS code. If the original doesn't arrive by Thursday, you could pay the standard duty now and apply for a refund later."],["Importer","That's a good fallback. I'll contact the supplier right away."]],
+  qs:[["What two problems are mentioned?",["Wrong weight and missing invoice","HS code mismatch and missing certificate of origin","Damaged cargo and late payment"],1],["When will demurrage start?",["Immediately","After five free days","After Thursday"],1],["What is the fallback plan?",["Return the goods","Pay standard duty and claim a refund later","Change the supplier"],1],["What will the broker submit?",["An amended declaration","A new bill of lading","An insurance claim"],0]]},
+ {id:"l8",level:"B2",title:"Supply chain risk update",vi:"Báo cáo rủi ro chuỗi cung ứng",
+  lines:[["Manager","Thanks for joining. I want to give a quick update on supply risk for the next quarter."],["Manager","Right now, around seventy percent of our components come from a single supplier. When their factory closed for two weeks last year, our fill rate dropped to sixty-eight percent."],["Manager","To reduce that dependency, we're proposing a dual-sourcing strategy, adding a second supplier in Thailand for our top twenty components."],["Manager","We also plan to increase safety stock from two to four weeks for those parts. That will raise inventory holding costs by about twelve percent, but it should protect our on-time delivery target of ninety-five percent."],["Manager","Finally, we'll review our demand forecasting model every month instead of every quarter. I'd welcome your comments before we finalise the budget on Friday."]],
+  qs:[["What happened when the supplier's factory closed?",["Fill rate fell to 68%","Costs fell by 12%","Sales increased"],0],["What is dual sourcing?",["Using two transport modes","Buying from two suppliers","Using two warehouses"],1],["How will safety stock change?",["From 4 to 2 weeks","From 2 to 4 weeks","It will stay the same"],1],["What is the cost of the extra safety stock?",["About 12% higher holding costs","About 95% higher costs","No extra cost"],0]]},
+ {id:"l9",level:"B2",title:"Negotiating Incoterms",vi:"Đàm phán Incoterms",
+  lines:[["Buyer","We'd prefer to buy on DDP terms, so the price includes delivery to our warehouse in Lyon, duty paid."],["Seller","I understand, but DDP is risky for us. We're not registered as an importer in the EU, and French customs procedures are outside our control."],["Buyer","What would you suggest instead?"],["Seller","We could offer DAP Lyon. We'd still cover the freight to your door, but your customs broker would handle import clearance and pay the duty."],["Buyer","That means our costs aren't fixed. Could you lower the unit price to compensate?"],["Seller","If you commit to a twelve-month contract, we can reduce the price by three percent."],["Buyer","Make it four percent and we have a deal."],["Seller","Let's say three and a half, and we'll include cargo insurance."],["Buyer","Agreed."]],
+  qs:[["Why doesn't the seller want DDP?",["It is too slow","They aren't registered as an importer in the EU","The buyer has no warehouse"],1],["Under DAP, who pays import duty?",["The seller","The buyer","The carrier"],1],["What is the final deal?",["4% discount","3.5% discount plus cargo insurance","3% discount only"],1]]}
+];
+
+/* ============ READING ============ */
+const READ=[
+ {id:"r1",level:"A2",title:"A day in a distribution center",vi:"Một ngày tại trung tâm phân phối",
+  text:["Minh works at a distribution center near Ho Chi Minh City. His shift starts at six in the morning.","First, trucks arrive from suppliers. Minh checks the delivery note and counts the pallets. Then the team scans each pallet and puts it away in the racking. Every location has a code, so the system always knows where each product is.","In the afternoon, Minh helps with picking. A handheld scanner shows him which items to collect for each order. After picking, the packing team puts the items in boxes and prints the shipping labels.","At four o'clock, trucks leave for shops all over the south of Vietnam. Minh says his favourite part of the job is seeing a full truck leave on time."],
+  glossary:["delivery note","racking","handheld scanner","shipping label"],
+  qs:[["What does Minh do when trucks arrive?",["He drives the forklift","He checks the delivery note and counts pallets","He prints labels"],1],["How does the system know where products are?",["Every location has a code","Minh remembers","The driver tells them"],0],["What does the packing team do?",["Unload trucks","Put items in boxes and print labels","Count inventory"],1],["What is Minh's favourite part of the job?",["Picking","Seeing a full truck leave on time","Starting early"],1]]},
+ {id:"r2",level:"A2",title:"What is a bill of lading?",vi:"Vận đơn là gì?",
+  text:["When a company ships goods by sea, the shipping line gives it an important document called a bill of lading, or B/L.","The B/L has three jobs. First, it is a receipt: it shows that the carrier received the goods. Second, it is a contract between the shipper and the carrier. Third, an original B/L can be a document of title. This means the person who holds it can collect the goods at the destination.","A B/L includes the names of the shipper and consignee, the vessel name, the ports of loading and discharge, and a description of the cargo. Today, many companies use an electronic B/L, which is faster and cannot be lost in the mail."],
+  glossary:["receipt","contract","document of title","electronic B/L"],
+  qs:[["Who issues the bill of lading?",["The customs office","The shipping line","The buyer"],1],["How many jobs does a B/L have?",["Two","Three","Four"],1],["What does 'document of title' mean here?",["The holder can collect the goods","It shows the price","It is a tax form"],0],["Why do companies use an electronic B/L?",["It is cheaper to print","It is faster and cannot be lost in the mail","Customs requires it"],1]]},
+ {id:"r3",level:"B1",title:"The box that changed the world",vi:"Chiếc hộp thay đổi thế giới",
+  text:["Before the 1950s, loading a ship was slow and expensive. Workers called stevedores carried sacks, barrels and boxes onto the vessel one by one. A ship could spend more time in port than at sea, and theft and damage were common.","In 1956, an American trucking businessman, Malcolm McLean, shipped 58 metal containers from New Jersey to Texas. His idea was simple: instead of handling each item, put the cargo in a standard box that can move from truck to ship to train without being opened.","Standard container sizes, measured in twenty-foot equivalent units (TEU), made this possible around the world. Cranes could now load a ship in hours instead of days. Shipping costs fell dramatically, and this helped global trade grow. Today, the largest container ships carry more than 24,000 TEU."],
+  glossary:["stevedore","standard box","crane","TEU"],
+  qs:[["What was a problem before containers?",["Ships were too fast","Loading was slow, and theft and damage were common","There were no ports"],1],["What was McLean's main idea?",["Build bigger ships","Move cargo in a standard box without opening it","Use more workers"],1],["What made containers work globally?",["Standard sizes","Cheaper fuel","New laws"],0],["What happened to shipping costs?",["They rose","They stayed the same","They fell dramatically"],2]]},
+ {id:"r4",level:"B1",title:"Incoterms: who pays for what?",vi:"Incoterms: ai trả chi phí gì?",
+  text:["In international trade, the buyer and seller must agree on who arranges transport, who pays for it, and when the risk passes from one to the other. Incoterms, published by the International Chamber of Commerce, give them a common language.","Under EXW (Ex Works), the seller simply makes the goods available at its premises. The buyer handles everything else, including export clearance. Under FOB (Free On Board), the seller delivers the goods on board the vessel at the port of loading. Risk passes to the buyer at that moment, and the buyer pays the ocean freight.","With CIF (Cost, Insurance and Freight), the seller pays freight and minimum insurance to the destination port, but the risk still passes when the goods are loaded. This surprises many beginners. Finally, under DDP (Delivered Duty Paid), the seller takes on almost all costs and risks, including import duty in the buyer's country.","Choosing the right Incoterm can save money and prevent arguments, so logistics teams should check it in every contract."],
+  glossary:["premises","risk passes","export clearance","on board"],
+  qs:[["Who publishes Incoterms?",["The World Bank","The International Chamber of Commerce","Each shipping line"],1],["Under FOB, when does risk pass to the buyer?",["When goods are on board at the port of loading","When goods reach the buyer","When the invoice is paid"],0],["What surprises beginners about CIF?",["The buyer pays freight","Risk passes at loading, even though the seller pays freight","There is no insurance"],1],["Which term gives the seller the most responsibility?",["EXW","FOB","DDP"],2]]},
+ {id:"r5",level:"B2",title:"The last-mile problem",vi:"Bài toán giao hàng chặng cuối",
+  text:["The final leg of a delivery, from a local hub to the customer's door, is known as the last mile. Although it is the shortest part of the journey, it can account for more than half of total shipping costs.","The reasons are easy to see. A container ship moves thousands of boxes at once, but a delivery van stops dozens of times, often to drop off a single parcel. Traffic, narrow streets and limited parking slow drivers down. Failed deliveries, when nobody is home, add a second attempt and further cost.","Companies are experimenting with several solutions. Parcel lockers and pick-up points let customers collect orders at a convenient time. Route-optimisation software reduces the distance driven, while electric cargo bikes are proving efficient in dense city centres. Some retailers are also turning stores into micro-fulfilment centres so that goods start their journey closer to the customer.","None of these is a complete answer. The best last-mile strategy usually combines several methods, depending on the city, the product and what customers are willing to pay for speed."],
+  glossary:["final leg","failed delivery","parcel locker","micro-fulfilment centre"],
+  qs:[["Why is the last mile so expensive?",["Fuel is more expensive in cities","Many stops with few parcels each, plus traffic and failed deliveries","Customers pay less"],1],["What problem do parcel lockers solve?",["Failed deliveries when nobody is home","Customs delays","High fuel costs at sea"],0],["What is a micro-fulfilment centre?",["A store used to send goods from closer to the customer","A small container ship","A customs office"],0],["What is the writer's conclusion?",["Cargo bikes solve everything","Combine several methods depending on context","Stop offering fast delivery"],1]]},
+ {id:"r6",level:"B2",title:"From lean to resilient",vi:"Từ tinh gọn đến bền vững trước rủi ro",
+  text:["For decades, many manufacturers followed lean, just-in-time principles: hold as little inventory as possible and let parts arrive exactly when production needs them. The approach freed up cash and reduced waste, and it worked well while transport was cheap and predictable.","Recent disruptions changed that view. Factory closures, port congestion and sudden spikes in freight rates showed how fragile long, tightly timed supply chains can be. When one supplier stopped, entire production lines stopped with it.","As a result, companies are rebalancing efficiency with resilience. Common measures include dual sourcing for critical components, holding strategic safety stock, moving some production closer to end markets (nearshoring), and investing in visibility tools that track orders across multiple tiers of suppliers.","Resilience has a price: more inventory and more suppliers mean higher costs and more complex management. The challenge for logistics professionals is to decide where that extra cost is justified, and where lean principles still make sense."],
+  glossary:["just-in-time","disruption","nearshoring","visibility","tier"],
+  qs:[["What is a key principle of just-in-time?",["Hold large safety stocks","Hold as little inventory as possible","Use only local suppliers"],1],["Why did views on lean change?",["Disruptions showed supply chains were fragile","Inventory became free","Customers asked for slower delivery"],0],["What is nearshoring?",["Moving production closer to end markets","Shipping by sea only","Closing factories"],0],["What is the main challenge in the last paragraph?",["Finding cheaper fuel","Deciding where the cost of resilience is justified","Hiring more drivers"],1]]}
+];
+
+/* ============ WRITING ============ */
+const WRITE=[
+ {id:"w1",level:"A2",title:"Confirm a pickup",vi:"Email xác nhận lịch lấy hàng",
+  brief:"Bạn là nhân viên kho. Viết email ngắn (50–80 từ) gửi hãng xe tải để xác nhận lịch lấy hàng: ngày, giờ, số pallet, địa chỉ, người liên hệ.",
+  checks:["pick up|pickup|collect","pallet","confirm","address","contact|call"],
+  phrases:["I am writing to confirm…","The goods will be ready at…","Please contact … on …","Kind regards,"],
+  model:"Subject: Pickup confirmation – Order 4471\n\nDear Mr Long,\n\nI am writing to confirm the pickup for order 4471. Please collect 6 pallets from our warehouse at 25 Nguyen Van Linh, District 7, on Tuesday 18 March at 8:30 a.m. The goods will be ready at loading dock 2.\n\nIf there is any problem, please call me on 0901 234 567.\n\nKind regards,\nHoa Nguyen\nWarehouse Team"},
+ {id:"w2",level:"B1",title:"Request a freight quotation",vi:"Email xin báo giá cước",
+  brief:"Viết email (80–120 từ) gửi công ty giao nhận xin báo giá vận chuyển: tuyến cảng, loại container, hàng hóa, trọng lượng, ngày hàng sẵn sàng, Incoterm.",
+  checks:["quotation|quote","container|FCL|LCL|40|20","port","weight|kg|tonne","ready","FOB|CIF|EXW|DAP|DDP|Incoterm"],
+  phrases:["We would like to request a quotation for…","The cargo will be ready on…","Please include transit time and any surcharges.","We look forward to hearing from you."],
+  model:"Subject: Quotation request – HCMC to Rotterdam, 1 x 40HC\n\nDear Ms Jansen,\n\nWe would like to request a quotation for ocean freight from Cat Lai (Ho Chi Minh City) to Rotterdam.\n\nDetails:\n- Container: 1 x 40HC (FCL)\n- Cargo: wooden furniture, 520 cartons\n- Gross weight: 9,800 kg\n- Cargo ready date: 2 April\n- Terms: FOB Cat Lai\n\nPlease include the transit time, free days at destination and any surcharges.\n\nWe look forward to hearing from you.\n\nBest regards,\nTuan Le\nExport Coordinator"},
+ {id:"w3",level:"B1",title:"Inform a customer about a delay",vi:"Email báo khách hàng về việc giao chậm",
+  brief:"Viết email (100–140 từ) báo khách hàng lô hàng bị chậm: lý do, ETA mới, giải pháp bạn đề xuất, lời xin lỗi.",
+  checks:["delay|delayed","ETA|arrive","apolog|sorry","because|due to","option|suggest|propose|solution"],
+  phrases:["I am sorry to inform you that…","due to…","The new ETA is…","As an alternative, we could…","We apologise for the inconvenience."],
+  model:"Subject: Shipment SGN-2291 – revised ETA\n\nDear Mr Schmidt,\n\nI am sorry to inform you that shipment SGN-2291 has been delayed due to port congestion in Singapore, where the vessel is waiting for a berth.\n\nThe new ETA in Hamburg is 9 May, four days later than planned.\n\nAs we know you need part of the order for your promotion on 8 May, we suggest sending 40 cartons by air freight. They could arrive on 6 May. I have attached a quotation for this option.\n\nWe apologise for the inconvenience and will update you as soon as the vessel departs.\n\nBest regards,\nLinh Pham\nCustomer Service"},
+ {id:"w4",level:"B2",title:"File a damage claim",vi:"Email khiếu nại hàng hư hỏng",
+  brief:"Viết email (130–180 từ) gửi hãng vận chuyển khiếu nại hàng bị hư hỏng: thông tin lô hàng, mô tả thiệt hại, bằng chứng (ảnh, ghi chú trên POD), số tiền yêu cầu bồi thường, thời hạn phản hồi.",
+  checks:["claim","damage","proof of delivery|POD|delivery note","photo","amount|USD|\\$|VND|value","respond|reply|within"],
+  phrases:["We wish to file a formal claim regarding…","Upon delivery, our team noted…","Please find attached…","We hold you liable for…","We would appreciate your response within…"],
+  model:"Subject: Formal claim – damaged cargo, B/L HPH0045821\n\nDear Claims Department,\n\nWe wish to file a formal claim regarding shipment B/L HPH0045821, delivered to our warehouse on 14 June.\n\nUpon delivery, our team noted that 18 of the 240 cartons were crushed and wet. The damage was recorded on the proof of delivery and signed by your driver. Inspection showed that 54 units of ceramic tableware were broken beyond repair.\n\nPlease find attached the signed POD, 12 photos of the damaged cartons, the commercial invoice and the packing list.\n\nBased on the invoice value, we claim USD 2,430 for the damaged goods. As the cargo was in your care when the damage occurred, we hold you liable for this loss.\n\nWe would appreciate your response within 14 days.\n\nYours faithfully,\nKhanh Do\nImport Manager"},
+ {id:"w5",level:"B2",title:"Monthly KPI summary",vi:"Báo cáo ngắn KPI tháng",
+  brief:"Viết đoạn báo cáo (150–200 từ) gửi quản lý tóm tắt KPI kho tháng này: tỷ lệ giao đúng hạn, độ chính xác lấy hàng, tồn kho, nguyên nhân thay đổi, đề xuất cải thiện.",
+  checks:["on-time|on time","accuracy","inventory|stock","increase|rose|improve","decrease|fell|drop","recommend|propose|suggest"],
+  phrases:["This report summarises…","…rose from X% to Y%","…fell slightly, mainly because…","Compared with last month,…","I recommend that we…"],
+  model:"Subject: Warehouse KPI summary – October\n\nThis report summarises the main warehouse KPIs for October.\n\nOn-time delivery rose from 92% to 95.5%, which meets our target for the first time this year. The improvement was mainly due to the new loading schedule, which reduced waiting time at the docks.\n\nPicking accuracy fell slightly, from 99.4% to 98.9%. Most errors happened in the second week, when we used six temporary workers during the peak period.\n\nInventory value increased by 8% because we built safety stock for the holiday season. However, 140 SKUs have not moved for more than 90 days, which ties up around 310 million dong.\n\nI recommend that we (1) give temporary staff a two-hour scanner training before their first shift and (2) review the slow-moving SKUs with the sales team and agree on a clearance plan by mid-November.\n\nPlease let me know if you need the full data."}
+];
+
+/* ============ VIDEOS (links checked) ============ */
+const VIDEOS=[
+ {id:"5SBe3dgdKbk",ch:"HTMT ProdTalk",level:"A2",title:"Learn Everyday Conversations for English At Work | Logistics & Shipment Handling",focus:["shipment","delivery","warehouse","delay"],task:["Nghe lần 1, chỉ ghi lại các từ logistics bạn nhận ra.","Nghe lần 2, bật phụ đề tiếng Anh và chép lại 5 câu hỏi hữu ích.","Đóng vai: tự nói lại một đoạn hội thoại bằng giọng của bạn."]},
+ {id:"I1A__mB5d7k",ch:"TheFausta",level:"B1",title:"INCOTERM 2020",focus:["EXW","FOB","CIF","DAP","DDP","risk"],task:["Trước khi xem, ôn lại chủ đề IN-07 trong mục Từ vựng.","Khi xem, ghi lại với mỗi điều kiện: ai trả cước chính, rủi ro chuyển giao ở đâu.","Sau khi xem, làm bài đọc 'Incoterms: who pays for what?' để đối chiếu."]},
+ {id:"VJ1lNcw3Rbw",ch:"WIRED",level:"B1",title:"Every Stop a Shipping Container Makes from China to Chicago",focus:["container","port","terminal","rail freight","truck"],task:["Vẽ sơ đồ các điểm dừng của container theo thứ tự trong video.","Ghi tên phương thức vận tải ở mỗi chặng (ship, train, truck…).","Viết 5 câu tóm tắt hành trình bằng thì hiện tại đơn."]},
+ {id:"FN3VFgG922A",ch:"Vox",level:"B1",title:"Meet the enormous boats that carry your stuff",focus:["vessel","container","TEU","cargo"],task:["Ghi lại các con số về kích thước tàu và lượng hàng được nhắc đến.","Tìm 3 lý do vì sao tàu ngày càng lớn hơn.","Nói 1 phút: lợi ích và rủi ro của tàu siêu lớn."]},
+ {id:"KgE_iK_NGmE",ch:"Half as Interesting",level:"B2",title:"The Crazy-Complex Process of Organizing a Container Ship",focus:["stowage","weight","port of discharge","crane"],task:["Ghi lại các yếu tố quyết định container nào được xếp ở đâu.","Giải thích bằng tiếng Anh vì sao thứ tự cảng dỡ hàng quan trọng.","Ghi 5 cụm từ mới và tra nghĩa."]},
+ {id:"DY9VE3i-KcM",ch:"PolyMatter",level:"B2",title:"How Container Ships Work",focus:["shipping line","freight rate","economies of scale","fuel"],task:["Tóm tắt mô hình kinh doanh của hãng tàu trong 3 câu.","Ghi lại mọi chi phí được nhắc đến (fuel, port fees…).","Tranh luận: vì sao giá cước có thể biến động mạnh?"]},
+ {id:"8d5d_HXGeMA",ch:"Wendover Productions",level:"B2",title:"How Ocean Shipping Works (And Why It's Broken)",focus:["congestion","freight rate","schedule reliability","capacity"],task:["Ghi lại các nguyên nhân khiến vận tải biển bị 'broken'.","Liên hệ với bài nghe 'A delay at the port' trong app.","Viết 1 đoạn 100 từ: bạn sẽ giảm rủi ro chậm trễ thế nào?"]},
+ {id:"F-ZskaqBshs",ch:"Wendover Productions",level:"B2",title:"Containerization: The Most Influential Invention That You've Never Heard Of",focus:["containerization","stevedore","standardization","global trade"],task:["Đọc bài 'The box that changed the world' trước khi xem.","Ghi lại 3 thay đổi lớn mà container tạo ra cho thương mại.","So sánh: thông tin nào trong video bổ sung cho bài đọc?"]}
+];
+
+/* ============ STATE ============ */
+const KEY="logi-eng-v1";
+let S={box:{},star:{},done:{},best:0,drafts:{}};
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s)S=Object.assign(S,s)}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}renderStats()}
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+
+function renderStats(){
+  const mastered=VOCAB.filter(w=>(S.box[w.id]||0)>=3).length;
+  const lessons=Object.keys(S.done).length;
+  $("#stats").innerHTML=`<span>Đã thuộc <b>${mastered}/${VOCAB.length}</b> từ</span><span>Bài hoàn thành <b>${lessons}/${LISTEN.length+READ.length+WRITE.length}</b></span><span>Quiz cao nhất <b>${S.best}/10</b></span>`;
+}
+
+/* ============ SPEECH ============ */
+const synth=window.speechSynthesis;
+let voices=[];
+function loadVoices(){try{voices=synth?synth.getVoices().filter(v=>/^en/i.test(v.lang)):[]}catch(e){voices=[]}}
+if(synth){loadVoices();synth.onvoiceschanged=loadVoices}
+function voiceFor(i){if(!voices.length)return null;const pref=voices.filter(v=>/en-(US|GB)/i.test(v.lang));const pool=pref.length?pref:voices;return pool[i%pool.length]}
+let TTS=null,gen=0,lastCancel=0;
+function toast(msg){let t=document.getElementById("toast");if(!t){t=document.createElement("div");t.id="toast";t.setAttribute("role","status");document.body.appendChild(t)}
+  t.textContent=msg;t.hidden=false;clearTimeout(t._h);t._h=setTimeout(()=>{t.hidden=true},6000)}
+function synthSay(text,rate,vi,done){
+  if(!synth){toast("Thiết bị này chưa phát được giọng đọc. Hãy mở app bằng Chrome, Edge hoặc Safari, hoặc bật âm lượng/tắt chế độ im lặng.");done(false);return}
+  const go=()=>{try{const u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=rate;const v=voiceFor(vi);if(v)u.voice=v;if(vi%2)u.pitch=0.85;
+    u.onend=()=>done(true);u.onerror=()=>done(false);synth.resume&&synth.resume();synth.speak(u)}catch(e){done(false)}};
+  Date.now()-lastCancel<120?setTimeout(go,120):go()}
+function say(text,rate=0.95,vi=0,onend){
+  const g=gen;const done=()=>{if(g===gen&&onend)onend()};
+  if(TTS){const r=Math.max(0.7,Math.min(1.5,rate));
+    TTS.speak(text,{rate:r,language:"en",voice:["buttery","airy","rounded","glassy"][vi%4]}).then(done).catch(e=>{
+      const c=e&&e.code;if(g!==gen||c==="viewer_stopped"||c==="stopped")return done();
+      if(c==="not_granted")TTS=null;synthSay(text,rate,vi,done)});
+    return true}
+  synthSay(text,rate,vi,done);return true}
+function stopSpeech(){gen++;lastCancel=Date.now();try{TTS&&TTS.stop()}catch(e){}try{synth&&synth.cancel()}catch(e){}}
+
+/* ============ VIEWS ============ */
+const app=$("#app");
+const lvls=["Tất cả","A2","B1","B2"];
+let vocabFilter={level:"Tất cả",q:"",starred:false,topic:"sc"};
+
+function vocabView(){
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">${VOCAB.length} từ · ${TOPICS.length} chủ đề</span><h2>Từ vựng logistics</h2><p class="lead">Từ thông dụng trong công việc hằng ngày: email với forwarder, hãng tàu, hải quan, kho và khách hàng. Mỗi từ có nghĩa tiếng Việt, câu ví dụ và nút phát âm. Đánh sao những từ khó để ôn riêng.</p>
+  <div class="bar" style="margin:4px 0 0"><button class="btn ghost" id="pdf">Tải bản PDF để in (${VOCAB.length} từ)</button><span class="note" id="pdfmsg"></span></div></div>
+  <div class="bar"><label class="note" for="vt">Chủ đề</label><select id="vt" class="pill"><option value="all">Tất cả chủ đề (${VOCAB.length} từ)</option>${TOPICS.map(t=>`<option value="${t.id}" ${vocabFilter.topic===t.id?"selected":""}>${t.code} · ${esc(t.en)} · ${esc(t.name)} (${VOCAB.filter(w=>w.topic===t.id).length})</option>`).join("")}</select></div>
+  <div class="bar">${lvls.map(l=>`<button class="pill" data-l="${l}" aria-pressed="${vocabFilter.level===l}">${l}</button>`).join("")}
+  <button class="pill" id="vstar" aria-pressed="${vocabFilter.starred}">★ Từ đã đánh sao</button>
+  <input class="search" id="vq" type="search" placeholder="Tìm từ tiếng Anh hoặc tiếng Việt…" value="${esc(vocabFilter.q)}"></div><div id="vlist"></div>`;
+  app.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{vocabFilter.level=b.dataset.l;vocabView()});
+  $("#vstar").onclick=()=>{vocabFilter.starred=!vocabFilter.starred;vocabView()};
+  $("#vq").oninput=e=>{vocabFilter.q=e.target.value;drawVocab()};
+  $("#vt").value=vocabFilter.topic;$("#vt").onchange=e=>{vocabFilter.topic=e.target.value;drawVocab()};
+  $("#pdf").onclick=savePdf;
+  drawVocab();
+}
+function drawVocab(){
+  const q=vocabFilter.q.trim().toLowerCase();
+  const html=TOPICS.filter(t=>q||vocabFilter.starred||vocabFilter.topic==="all"||t.id===vocabFilter.topic).map(t=>{
+    const ws=VOCAB.filter(w=>w.topic===t.id&&(vocabFilter.level==="Tất cả"||w.level===vocabFilter.level)&&(!vocabFilter.starred||S.star[w.id])&&(!q||w.term.toLowerCase().includes(q)||w.vi.toLowerCase().includes(q)));
+    if(!ws.length)return"";
+    return `<section class="topic"><div class="topic-head"><h3>${t.en}</h3><span class="note">${t.name}</span><span class="code">${t.code} · ${ws.length} từ</span></div>
+    ${ws.map(w=>`<div class="vrow"><div class="vterm">${esc(w.term)} <span class="lvl ${w.level}">${w.level}</span></div><div class="vvi">${esc(w.vi)}</div><div class="vex">${esc(w.ex)}</div>
+    <div class="vact"><button class="icon-btn" aria-label="Phát âm ${esc(w.term)}" data-say="${w.id}">${ICON.speak}</button><button class="icon-btn" aria-label="Đánh sao" aria-pressed="${!!S.star[w.id]}" data-star="${w.id}">${ICON.star}</button></div></div>`).join("")}</section>`}).join("");
+  $("#vlist").innerHTML=html||`<p class="note">Không có từ nào khớp. Thử bỏ bộ lọc hoặc đổi từ khóa.</p>`;
+  $("#vlist").querySelectorAll("[data-say]").forEach(b=>b.onclick=()=>{const w=VOCAB.find(x=>x.id===b.dataset.say);stopSpeech();say(w.term.replace(/\(.*?\)/g,""),0.85,0,()=>say(w.ex,0.9))});
+  $("#vlist").querySelectorAll("[data-star]").forEach(b=>b.onclick=()=>{const id=b.dataset.star;S.star[id]=!S.star[id];if(!S.star[id])delete S.star[id];b.setAttribute("aria-pressed",!!S.star[id]);save()});
+}
+
+let listLevel="Tất cả";
+function listIndex(kind){
+  const data=kind==="nghe"?LISTEN:kind==="doc"?READ:WRITE;
+  const head={nghe:["9 bài · A2 → B2","Bài nghe theo trình độ","Nghe hội thoại thực tế trong kho, cảng, hải quan. Chọn tốc độ đọc, nghe trước rồi mới mở lời thoại, sau đó trả lời câu hỏi."],
+    doc:["6 bài · A2 → B2","Bài đọc","Bài đọc về nghiệp vụ logistics, có từ khóa và câu hỏi đọc hiểu chấm điểm ngay."],
+    viet:["5 bài · A2 → B2","Bài viết","Viết email và báo cáo như ở công ty. App kiểm tra các ý bắt buộc, đếm từ và có bài mẫu để so sánh. Bản nháp tự lưu."]}[kind];
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">${head[0]}</span><h2>${head[1]}</h2><p class="lead">${head[2]}</p></div>
+  <div class="bar">${lvls.map(l=>`<button class="pill" data-l="${l}" aria-pressed="${listLevel===l}">${l}</button>`).join("")}</div>
+  <div class="grid">${data.filter(d=>listLevel==="Tất cả"||d.level===listLevel).map(d=>`<button class="card" data-open="${d.id}"><div class="meta"><span class="lvl ${d.level}">${d.level}</span>${S.done[d.id]?`<span class="done-tag">✓ ${typeof S.done[d.id]==="string"?S.done[d.id]:"Đã làm"}</span>`:""}</div><h3>${esc(d.title)}</h3><span class="note">${esc(d.vi)}</span></button>`).join("")}</div>`;
+  app.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{listLevel=b.dataset.l;listIndex(kind)});
+  app.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{const d=data.find(x=>x.id===b.dataset.open);kind==="nghe"?listenLesson(d):kind==="doc"?readLesson(d):writeLesson(d);window.scrollTo(0,0)});
+}
+
+function quizBlock(qs,id){
+  return `<div id="qz">${qs.map((q,i)=>`<div class="q" data-q="${i}"><p>${i+1}. ${esc(q[0])}</p><div class="opts">${q[1].map((o,j)=>`<button class="opt" data-j="${j}">${esc(o)}</button>`).join("")}</div></div>`).join("")}<p class="score" id="qs-score" hidden></p></div>`;
+}
+function wireQuiz(qs,id){
+  let answered=0,right=0;
+  app.querySelectorAll(".q").forEach(qe=>{const i=+qe.dataset.q;qe.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
+    if(qe.dataset.done)return;qe.dataset.done=1;answered++;const j=+b.dataset.j,ok=j===qs[i][2];if(ok)right++;
+    b.classList.add(ok?"right":"wrong");if(!ok)qe.querySelectorAll(".opt")[qs[i][2]].classList.add("right");
+    if(answered===qs.length){const sc=$("#qs-score");sc.hidden=false;sc.textContent=`Kết quả: ${right}/${qs.length} câu đúng`;S.done[id]=`${right}/${qs.length}`;save()}
+  })});
+}
+
+function listenLesson(d){
+  stopSpeech();
+  app.innerHTML=`<div class="panel"><button class="back" id="bk">← Tất cả bài nghe</button>
+  <div class="view-head"><span class="eyebrow">Listening · ${d.level}</span><h2>${esc(d.title)}</h2><p class="lead">${esc(d.vi)}. Nghe ít nhất hai lần trước khi xem lời thoại.</p></div>
+  <div class="player"><button class="btn" id="play">▶ Nghe</button><button class="btn ghost" id="stop">■ Dừng</button>
+  <label class="note" for="rate">Tốc độ</label><select id="rate"><option value="0.75">Chậm</option><option value="0.9" ${d.level!=="B2"?"selected":""}>Vừa</option><option value="1.05" ${d.level==="B2"?"selected":""}>Tự nhiên</option></select>
+  <button class="btn ghost" id="tog">Hiện lời thoại</button></div>
+  <p class="note" id="nosynth" hidden>Trình duyệt này không có giọng đọc tiếng Anh. Hãy mở app bằng Chrome, Edge hoặc Safari, hoặc đọc lời thoại.</p>
+  <div class="transcript" id="tr" hidden>${d.lines.map(l=>`<p><span class="sp">${esc(l[0]).toUpperCase()}</span>${esc(l[1])}</p>`).join("")}</div>
+  <h3>Câu hỏi</h3>${quizBlock(d.qs,d.id)}</div>`;
+  $("#bk").onclick=()=>{stopSpeech();listIndex("nghe")};
+  
+  const speakers=[...new Set(d.lines.map(l=>l[0]))];
+  const ps=$("#tr").querySelectorAll("p");
+  let idx=0,playing=false;
+  function next(){if(!playing||idx>=d.lines.length){playing=false;ps.forEach(p=>p.classList.remove("on"));return}
+    ps.forEach(p=>p.classList.remove("on"));ps[idx].classList.add("on");const l=d.lines[idx];idx++;
+    say(l[1],+$("#rate").value,speakers.indexOf(l[0]),next)}
+  $("#play").onclick=()=>{stopSpeech();idx=0;playing=true;if(!synth&&!TTS){$("#nosynth").hidden=false;return}next()};
+  $("#stop").onclick=()=>{playing=false;stopSpeech()};
+  $("#tog").onclick=()=>{const t=$("#tr");t.hidden=!t.hidden;$("#tog").textContent=t.hidden?"Hiện lời thoại":"Ẩn lời thoại"};
+  wireQuiz(d.qs,d.id);
+}
+
+function readLesson(d){
+  stopSpeech();
+  app.innerHTML=`<div class="panel"><button class="back" id="bk">← Tất cả bài đọc</button>
+  <div class="view-head"><span class="eyebrow">Reading · ${d.level}</span><h2>${esc(d.title)}</h2><p class="lead">${esc(d.vi)}</p></div>
+  <div class="gl"><span class="note">Từ khóa:</span>${d.glossary.map(g=>`<span><b>${esc(g)}</b></span>`).join("")}</div>
+  <div class="player"><button class="btn ghost" id="readall">▶ Nghe bài đọc</button><button class="btn ghost" id="stop">■ Dừng</button></div>
+  <div class="reading">${d.text.map(p=>`<p>${esc(p)}</p>`).join("")}</div>
+  <h3>Câu hỏi đọc hiểu</h3>${quizBlock(d.qs,d.id)}</div>`;
+  $("#bk").onclick=()=>{stopSpeech();listIndex("doc")};
+  $("#readall").onclick=()=>{stopSpeech();let k=0;const nx=()=>{if(k<d.text.length)say(d.text[k++],0.92,0,nx)};nx()};
+  $("#stop").onclick=stopSpeech;
+  wireQuiz(d.qs,d.id);
+}
+
+function writeLesson(d){
+  const draft=S.drafts[d.id]||"";
+  app.innerHTML=`<div class="panel"><button class="back" id="bk">← Tất cả bài viết</button>
+  <div class="view-head"><span class="eyebrow">Writing · ${d.level}</span><h2>${esc(d.title)}</h2><p class="lead">${esc(d.brief)}</p></div>
+  <div class="two"><div style="min-width:0;display:flex;flex-direction:column;gap:8px">
+    <label for="wt" class="note">Bài viết của bạn (tự lưu)</label><textarea id="wt" spellcheck="true">${esc(draft)}</textarea>
+    <div class="bar" style="margin:0"><span class="note" id="wc">0 từ</span><button class="btn" id="chk">Kiểm tra ý</button><button class="btn ghost" id="clr">Xóa bài</button></div>
+    <div class="checks" id="ck"></div></div>
+  <div style="min-width:0;display:flex;flex-direction:column;gap:12px"><h3>Cụm từ hữu ích</h3><div class="gl">${d.phrases.map(p=>`<span>${esc(p)}</span>`).join("")}</div>
+  <details><summary>Xem bài mẫu</summary><div class="model">${esc(d.model)}</div></details>
+  <p class="note">Mẹo: viết xong mới mở bài mẫu. So sánh cách mở đầu, cách đưa số liệu và câu kết.</p></div></div></div>`;
+  $("#bk").onclick=()=>listIndex("viet");
+  const ta=$("#wt");
+  const wc=()=>{const n=(ta.value.trim().match(/\S+/g)||[]).length;$("#wc").textContent=n+" từ"};wc();
+  ta.oninput=()=>{S.drafts[d.id]=ta.value;wc();save()};
+  $("#clr").onclick=()=>{ta.value="";S.drafts[d.id]="";wc();save();$("#ck").innerHTML=""};
+  const labels={"pick up|pickup|collect":"Nêu việc lấy hàng","pallet":"Số pallet","confirm":"Từ 'confirm'","address":"Địa chỉ","contact|call":"Thông tin liên hệ",
+   "quotation|quote":"Xin báo giá","container|FCL|LCL|40|20":"Loại container","port":"Cảng","weight|kg|tonne":"Trọng lượng","ready":"Ngày hàng sẵn sàng","FOB|CIF|EXW|DAP|DDP|Incoterm":"Điều kiện Incoterm",
+   "delay|delayed":"Thông báo chậm trễ","ETA|arrive":"ETA mới","apolog|sorry":"Lời xin lỗi","because|due to":"Lý do","option|suggest|propose|solution":"Giải pháp đề xuất",
+   "claim":"Từ 'claim'","damage":"Mô tả hư hỏng","proof of delivery|POD|delivery note":"Ghi chú trên POD","photo":"Ảnh làm bằng chứng","amount|USD|\\$|VND|value":"Số tiền yêu cầu","respond|reply|within":"Thời hạn phản hồi",
+   "on-time|on time":"Giao đúng hạn","accuracy":"Độ chính xác","inventory|stock":"Tồn kho","increase|rose|improve":"Mô tả tăng","decrease|fell|drop":"Mô tả giảm","recommend|propose|suggest":"Đề xuất"};
+  $("#chk").onclick=()=>{const t=ta.value;let hit=0;
+    $("#ck").innerHTML=d.checks.map(c=>{const ok=new RegExp(c,"i").test(t);if(ok)hit++;return`<span class="${ok?"hit":"miss"}">${ok?"✓":"○"} ${labels[c]||c}</span>`}).join("")+`<span class="score">${hit}/${d.checks.length} ý</span>`;
+    if(hit===d.checks.length){S.done[d.id]="Đủ ý";save()}};
+}
+
+/* ============ REVIEW ============ */
+let reviewMode="flash",flashPool="due",flashQueue=[],flashIdx=0,flipped=false;
+function reviewView(){
+  const counts=[0,1,2,3].map(b=>VOCAB.filter(w=>Math.min(S.box[w.id]||0,3)===b).length);
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">Ôn tập</span><h2>Ôn tập và kiểm tra</h2><p class="lead">Thẻ ghi nhớ chia từ vào 4 ngăn: từ mới ở ngăn 0, mỗi lần nhớ đúng thì lên một ngăn, quên thì về ngăn 0. Từ ở ngăn 3 được tính là đã thuộc.</p></div>
+  <div class="modes">
+    <button class="card" data-m="flash" ${reviewMode==="flash"?'style="border-color:var(--accent)"':""}><h3>Thẻ ghi nhớ</h3><span class="note">Lật thẻ, tự chấm nhớ hay chưa</span></button>
+    <button class="card" data-m="quiz" ${reviewMode==="quiz"?'style="border-color:var(--accent)"':""}><h3>Quiz 10 câu</h3><span class="note">Trắc nghiệm Anh–Việt, Việt–Anh</span></button>
+    <button class="card" data-m="fill" ${reviewMode==="fill"?'style="border-color:var(--accent)"':""}><h3>Điền từ vào câu</h3><span class="note">Gõ từ còn thiếu trong câu ví dụ</span></button>
+    <button class="card" data-m="lessons" ${reviewMode==="lessons"?'style="border-color:var(--accent)"':""}><h3>Làm lại bài sai</h3><span class="note">Bài nghe, đọc chưa đạt điểm tối đa</span></button>
+  </div>
+  <div class="boxes">${counts.map((c,i)=>`<span>Ngăn ${i}: ${c} từ</span>`).join("")}</div>
+  <div class="progress-track" style="margin:10px 0 20px" aria-hidden="true"><i style="width:${Math.round(counts[3]/VOCAB.length*100)}%"></i></div>
+  <div id="rv"></div>`;
+  app.querySelectorAll("[data-m]").forEach(b=>b.onclick=()=>{reviewMode=b.dataset.m;reviewView()});
+  ({flash:flashMode,quiz:quizMode,fill:fillMode,lessons:redoMode})[reviewMode]();
+}
+function buildFlashQueue(){
+  let pool=flashPool==="star"?VOCAB.filter(w=>S.star[w.id]):flashPool==="all"?VOCAB:VOCAB.filter(w=>(S.box[w.id]||0)<3);
+  if(TOPICS.some(t=>t.id===flashPool))pool=VOCAB.filter(w=>w.topic===flashPool);
+  pool=shuffle(pool).sort((a,b)=>(S.box[a.id]||0)-(S.box[b.id]||0));
+  flashQueue=pool.slice(0,20);flashIdx=0;flipped=false;
+}
+function flashMode(){
+  if(!flashQueue.length||flashIdx>=flashQueue.length)buildFlashQueue();
+  const opts=[["due","Từ chưa thuộc"],["star","★ Đã đánh sao"],["all","Tất cả"],...TOPICS.map(t=>[t.id,t.en])];
+  const w=flashQueue[flashIdx];
+  $("#rv").innerHTML=`<div class="bar"><label class="note" for="fp">Bộ thẻ</label><select id="fp" class="pill">${opts.map(o=>`<option value="${o[0]}" ${o[0]===flashPool?"selected":""}>${esc(o[1])}</option>`).join("")}</select><span class="note">${w?`Thẻ ${flashIdx+1}/${flashQueue.length}`:""}</span></div>
+  ${w?`<div class="flash"><div class="flash-inner" id="fc" tabindex="0" role="button" aria-label="Lật thẻ"><span class="flash-code">${TOPICS.find(t=>t.id===w.topic).code} · ngăn ${Math.min(S.box[w.id]||0,3)}</span>
+   ${flipped?`<div class="flash-term">${esc(w.vi)}</div><div class="flash-sub">${esc(w.term)}</div><div class="flash-sub"><i>${esc(w.ex)}</i></div>`:`<div class="flash-term">${esc(w.term)}</div><div class="flash-sub">Chạm để xem nghĩa</div>`}</div>
+   <div class="flash-actions"><button class="icon-btn" id="fs" aria-label="Phát âm">${ICON.speak}</button>${flipped?`<button class="btn ghost" id="no">Chưa nhớ</button><button class="btn warn" id="yes">Nhớ rồi</button>`:`<button class="btn" id="flip">Lật thẻ</button>`}</div></div>`
+   :`<p class="note">Bộ thẻ này đang trống. ${flashPool==="star"?"Hãy đánh sao vài từ trong mục Từ vựng.":"Bạn đã thuộc hết các từ ở đây. Chọn 'Tất cả' để ôn lại."}</p>`}`;
+  $("#fp").onchange=e=>{flashPool=e.target.value;buildFlashQueue();flashMode()};
+  if(!w)return;
+  const flip=()=>{flipped=!flipped;flashMode()};
+  $("#fc").onclick=flip;$("#fc").onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();flip()}};
+  $("#fs").onclick=()=>{stopSpeech();say(w.term.replace(/\(.*?\)/g,""),0.9)};
+  if($("#flip"))$("#flip").onclick=flip;
+  const grade=ok=>{S.box[w.id]=ok?Math.min((S.box[w.id]||0)+1,3):0;save();flashIdx++;flipped=false;
+    if(flashIdx>=flashQueue.length){$("#rv").innerHTML=`<div class="panel"><p class="score">Xong bộ thẻ</p><p class="note">Đã thuộc ${VOCAB.filter(x=>(S.box[x.id]||0)>=3).length}/${VOCAB.length} từ.</p><button class="btn" id="again">Ôn tiếp</button></div>`;$("#again").onclick=()=>{buildFlashQueue();reviewView()};return}
+    reviewView()};
+  if($("#yes")){$("#yes").onclick=()=>grade(true);$("#no").onclick=()=>grade(false)}
+}
+function quizMode(){
+  const qs=shuffle(VOCAB).slice(0,10).map((w,i)=>{
+    const enToVi=i%2===0;const same=shuffle(VOCAB.filter(x=>x.id!==w.id&&x.topic===w.topic)).slice(0,3);
+    const opts=shuffle([w,...same]);
+    return [enToVi?`"${w.term}" nghĩa là gì?`:`Từ tiếng Anh của "${w.vi}" là gì?`,opts.map(o=>enToVi?o.vi:o.term),opts.indexOf(w),w];
+  });
+  $("#rv").innerHTML=`<div class="panel">${quizBlock(qs,"quiz")}<button class="btn" id="newq">Làm bộ câu hỏi mới</button></div>`;
+  let answered=0,right=0;
+  app.querySelectorAll(".q").forEach(qe=>{const i=+qe.dataset.q;qe.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
+    if(qe.dataset.done)return;qe.dataset.done=1;answered++;const ok=+b.dataset.j===qs[i][2];const w=qs[i][3];
+    if(ok)right++;else S.box[w.id]=0;
+    b.classList.add(ok?"right":"wrong");if(!ok)qe.querySelectorAll(".opt")[qs[i][2]].classList.add("right");
+    if(answered===qs.length){const sc=$("#qs-score");sc.hidden=false;sc.textContent=`Kết quả: ${right}/10. Từ sai đã được đưa về ngăn 0 để ôn lại.`;if(right>S.best)S.best=right}save()})});
+  $("#newq").onclick=quizMode;
+}
+function fillMode(){
+  const cands=VOCAB.filter(w=>{const t=w.term.replace(/\s*\(.*?\)/,"").split(" / ")[0];return w.ex.toLowerCase().includes(t.toLowerCase())});
+  const w=shuffle(cands)[0];const t=w.term.replace(/\s*\(.*?\)/,"").split(" / ")[0];
+  const re=new RegExp(t.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),"i");
+  const sent=esc(w.ex).replace(re,"_____");
+  $("#rv").innerHTML=`<div class="panel"><p class="note">Gợi ý: ${esc(w.vi)} · ${t.length} ký tự · bắt đầu bằng "${esc(t[0])}"</p><p class="reading" style="font-size:1.1rem">${sent}</p>
+  <form class="fill-in" id="ff"><input id="fa" autocomplete="off" placeholder="Gõ từ còn thiếu"><button class="btn">Kiểm tra</button><button class="btn ghost" type="button" id="skip">Câu khác</button></form><p id="fr" class="score" hidden></p></div>`;
+  $("#fa").focus({preventScroll:true});
+  $("#ff").onsubmit=e=>{e.preventDefault();const ok=$("#fa").value.trim().toLowerCase()===t.toLowerCase();const r=$("#fr");r.hidden=false;
+    r.style.color=ok?"var(--ok)":"var(--bad)";r.textContent=ok?"Chính xác!":`Chưa đúng. Đáp án: ${t}`;
+    S.box[w.id]=ok?Math.min((S.box[w.id]||0)+1,3):0;save();if(ok)setTimeout(fillMode,900)};
+  $("#skip").onclick=fillMode;
+}
+function redoMode(){
+  const all=[...LISTEN.map(x=>[x,"nghe"]),...READ.map(x=>[x,"doc"])];
+  const todo=all.filter(([x])=>{const d=S.done[x.id];if(!d)return true;const [a,b]=String(d).split("/");return a!==b});
+  $("#rv").innerHTML=todo.length?`<div class="grid">${todo.map(([x,k])=>`<button class="card" data-k="${k}" data-id="${x.id}"><div class="meta"><span class="lvl ${x.level}">${x.level}</span><span>${k==="nghe"?"Nghe":"Đọc"}</span><span>${S.done[x.id]?"Điểm: "+S.done[x.id]:"Chưa làm"}</span></div><h3>${esc(x.title)}</h3></button>`).join("")}</div>`:`<p class="note">Bạn đã đạt điểm tối đa ở tất cả bài nghe và đọc.</p>`;
+  $("#rv").querySelectorAll("[data-id]").forEach(b=>b.onclick=()=>{const k=b.dataset.k;const d=(k==="nghe"?LISTEN:READ).find(x=>x.id===b.dataset.id);pendingOpen=[k,d];location.hash=k});
+}
+
+/* ============ VIDEOS ============ */
+function videoView(){
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">${VIDEOS.length} video · YouTube</span><h2>Video tiếng Anh về logistics</h2><p class="lead">Video thật từ các kênh nước ngoài, xếp từ dễ đến khó. Mỗi video có từ khóa cần nghe và nhiệm vụ khi xem. Bật phụ đề tiếng Anh (không phải tiếng Việt) để luyện nghe tốt hơn.</p></div>
+  <div class="grid">${VIDEOS.map(v=>`<article class="vid"><div class="vid-top"><span class="ch">${esc(v.ch).toUpperCase()}</span><h3>${esc(v.title)}</h3></div>
+  <div class="vid-body"><div class="meta note" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="lvl ${v.level}">${v.level}</span>${v.focus.map(f=>`<span class="lvl">${esc(f)}</span>`).join("")}</div>
+  <ol>${v.task.map(t=>`<li>${esc(t)}</li>`).join("")}</ol>
+  <a class="btn" href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener">Xem trên YouTube ↗</a></div></article>`).join("")}</div>
+  <div class="panel" style="margin-top:16px"><h3>Nghe thêm: podcast</h3><p class="note">Business English Pod có loạt bài nghe về chuỗi cung ứng (Supply Chain), kèm lời thoại, phù hợp trình độ B1–B2.</p><a class="btn ghost" style="align-self:flex-start;text-decoration:none" href="https://www.businessenglishpod.com/category/supply-chain/" target="_blank" rel="noopener">Mở Business English Pod ↗</a></div>`;
+}
+
+/* ============ CAPABILITIES ============ */
+let DICT=null,DL=null;
+/* standalone: browser speech recognition adapter with the same shape as Claude's dictation */
+(function(){const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR)return;
+  let rec=null,state="idle",P=[],F=[],ST=[],stopWait=null;
+  const emit=(a,e)=>a.slice().forEach(f=>{try{f(e)}catch(x){}});
+  const set=(s,reason)=>{state=s;emit(ST,reason?{state:s,reason}:{state:s})};
+  const sub=(a,f)=>{a.push(f);return()=>{const i=a.indexOf(f);if(i>=0)a.splice(i,1)}};
+  DICT={active:()=>state!=="idle",onPartial:f=>sub(P,f),onFinal:f=>sub(F,f),onState:f=>sub(ST,f),
+    start(o){return new Promise((res,rej)=>{if(state!=="idle")return res();
+      rec=new SR();rec.lang="en-US";rec.continuous=true;rec.interimResults=true;let reason="stopped",started=false;
+      rec.onstart=()=>{started=true;set("listening");res()};
+      rec.onresult=e=>{let interim="";for(let i=e.resultIndex;i<e.results.length;i++){const r=e.results[i];if(r.isFinal)emit(F,{text:" "+r[0].transcript});else interim+=r[0].transcript}emit(P,{text:interim})};
+      rec.onerror=e=>{reason=e.error==="not-allowed"||e.error==="service-not-allowed"?"not_granted":e.error==="no-speech"||e.error==="aborted"?"stopped":"upstream_error";if(!started)rej({code:reason==="stopped"?"stopped":reason,message:e.error})};
+      rec.onend=()=>{rec=null;set("idle",reason);if(stopWait){stopWait();stopWait=null}};
+      set("starting");try{rec.start()}catch(e){set("idle","upstream_error");rej({code:"upstream_error",message:String(e)})}})},
+    stop(){return new Promise(r=>{if(!rec)return r();stopWait=r;set("finishing");try{rec.stop()}catch(e){r()}})}};
+})();
+DL={save({filename}){const a=document.createElement("a");a.href="tu-vung-logistics.pdf";a.download=filename;document.body.appendChild(a);a.click();a.remove();return Promise.resolve()}};
+if("serviceWorker" in navigator&&location.protocol.startsWith("http"))navigator.serviceWorker.register("sw.js").catch(()=>{});
+async function savePdf(){
+  const m=$("#pdfmsg");
+  if(!DL){m.textContent="Trình xem này chưa hỗ trợ tải file. Hãy mở app trên claude.ai bằng trình duyệt máy tính.";return}
+  m.textContent="Đang chuẩn bị file…";
+  try{await DL.save({filename:"Tu-vung-logistics-"+VOCAB.length+"-tu.pdf"});m.textContent="Đã tải file PDF. Mở file và in như bình thường."}
+  catch(e){m.textContent=e&&e.code==="cancelled"||e&&e.code==="declined"?"Bạn đã hủy tải file.":"Chưa tải được file, thử lại sau ít phút."}
+}
+
+/* ============ PRONUNCIATION ============ */
+const norm=t=>t.toLowerCase().replace(/\(.*?\)/g," ").replace(/[^a-z0-9' ]+/g," ").replace(/\s+/g," ").trim();
+function lev(a,b){const m=a.length,n=b.length;if(!m)return n;if(!n)return m;let p=Array.from({length:n+1},(_,i)=>i);
+  for(let i=1;i<=m;i++){const c=[i];for(let j=1;j<=n;j++)c[j]=Math.min(p[j]+1,c[j-1]+1,p[j-1]+(a[i-1]===b[j-1]?0:1));p=c}return p[n]}
+const sim=(a,b)=>{const L=Math.max(a.length,b.length);return L?1-lev(a,b)/L:1};
+function scoreSpeech(target,heard){
+  const tw=norm(target).split(" ").filter(Boolean),hw=norm(heard).split(" ").filter(Boolean);
+  if(!hw.length)return{score:0,words:tw.map(w=>[w,0])};
+  const words=tw.map(w=>{let best=0;hw.forEach(h=>{best=Math.max(best,sim(w,h))});return[w,best]});
+  const wordAvg=words.reduce((a,x)=>a+(x[1]>=.95?1:x[1]>=.75?x[1]*.7:x[1]>=.5?x[1]*.4:0),0)/tw.length;
+  const whole=sim(tw.join(" "),hw.join(" "));
+  return{score:Math.round(100*Math.max(0,Math.min(1,.7*wordAvg+.3*whole))),words};
+}
+let pron={mode:"word",level:"Tất cả",topic:"all",list:[],i:0};
+function buildPron(){
+  let pool=VOCAB.filter(w=>(pron.level==="Tất cả"||w.level===pron.level)&&(pron.topic==="all"||w.topic===pron.topic));
+  if(pron.topic==="weak")pool=VOCAB.filter(w=>S.pron&&S.pron[w.id]!==undefined&&S.pron[w.id]<70);
+  pron.list=shuffle(pool).slice(0,10);pron.i=0;
+}
+function pronView(){
+  S.pron=S.pron||{};
+  if(!pron.list.length)buildPron();
+  const done=Object.keys(S.pron).length,avg=done?Math.round(Object.values(S.pron).reduce((a,b)=>a+b,0)/done):0;
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">Phát âm · chấm điểm</span><h2>Luyện và chấm điểm phát âm</h2><p class="lead">Nghe mẫu, bấm nút micro rồi đọc to. App nhận giọng nói của bạn và so với từ hoặc câu mẫu để cho điểm từ 0 đến 100. Từ nào máy chưa nhận ra sẽ hiện màu đỏ để bạn luyện lại.</p></div>
+  <div class="bar">
+    <button class="pill" data-pm="word" aria-pressed="${pron.mode==="word"}">Đọc từ</button><button class="pill" data-pm="sent" aria-pressed="${pron.mode==="sent"}">Đọc câu ví dụ</button>
+    <select id="pl" class="pill">${lvls.map(l=>`<option ${l===pron.level?"selected":""}>${l}</option>`).join("")}</select>
+    <select id="pt" class="pill"><option value="all">Tất cả chủ đề</option><option value="weak" ${pron.topic==="weak"?"selected":""}>Từ dưới 70 điểm</option>${TOPICS.map(t=>`<option value="${t.id}" ${pron.topic===t.id?"selected":""}>${esc(t.en)}</option>`).join("")}</select>
+    <span class="note">Đã chấm ${done} từ · điểm trung bình <b>${avg}</b></span></div>
+  <div id="pr"></div>`;
+  app.querySelectorAll("[data-pm]").forEach(b=>b.onclick=()=>{pron.mode=b.dataset.pm;pronView()});
+  $("#pl").onchange=e=>{pron.level=e.target.value;buildPron();pronView()};
+  $("#pt").onchange=e=>{pron.topic=e.target.value;buildPron();pronView()};
+  drawPron();
+}
+let unsub=[];
+function drawPron(){
+  unsub.forEach(f=>{try{f()}catch(e){}});unsub=[];
+  const w=pron.list[pron.i];
+  if(!w){$("#pr").innerHTML=`<p class="note">${pron.topic==="weak"?"Chưa có từ nào dưới 70 điểm. Tốt lắm!":"Không có từ nào khớp bộ lọc."}</p>`;return}
+  const target=pron.mode==="word"?w.term.replace(/\s*\(.*?\)/g,""):w.ex;
+  const best=S.pron[w.id];
+  $("#pr").innerHTML=`<div class="panel pron">
+    <div class="meta note" style="display:flex;gap:8px;flex-wrap:wrap"><span>Câu ${pron.i+1}/${pron.list.length}</span><span class="lvl ${w.level}">${w.level}</span>${best!==undefined?`<span>Điểm cao nhất: ${best}</span>`:""}</div>
+    <p class="pron-target">${esc(target)}</p><p class="note">${esc(w.vi)}</p>
+    <div class="bar" style="margin:0"><button class="btn ghost" id="pmodel">▶ Nghe mẫu</button><button class="btn ghost" id="pslow">▶ Nghe chậm</button>
+      <button class="btn warn mic" id="pmic" ${DICT?"":"disabled"}>● Bấm để nói</button></div>
+    <p class="note" id="pstate">${DICT?"Bấm nút, đọc to rõ ràng, app tự chấm khi bạn ngừng nói.":"Trình duyệt này chưa hỗ trợ nhận giọng nói. Hãy mở app bằng Chrome (máy tính hoặc Android), Edge, hoặc Safari trên iPhone. Bạn vẫn nghe mẫu và tự luyện được."}</p>
+    <p class="heard" id="pheard"></p><div id="presult"></div>
+    <div class="bar" style="margin:0"><button class="btn ghost" id="pprev" ${pron.i?"":"disabled"}>← Trước</button><button class="btn" id="pnext">${pron.i+1<pron.list.length?"Tiếp →":"Bộ mới"}</button></div></div>`;
+  $("#pmodel").onclick=()=>{stopSpeech();say(target,0.9)};
+  $("#pslow").onclick=()=>{stopSpeech();say(target,0.6)};
+  $("#pprev").onclick=()=>{if(DICT&&DICT.active())DICT.stop();pron.i--;drawPron()};
+  $("#pnext").onclick=()=>{if(DICT&&DICT.active())DICT.stop();if(pron.i+1<pron.list.length)pron.i++;else buildPron();drawPron()};
+  if(!DICT)return;
+  let heard="",timer=null;
+  const btn=$("#pmic"),st=$("#pstate"),hd=$("#pheard");
+  const finish=()=>{clearTimeout(timer);const txt=heard.trim();if(!txt){st.textContent="Chưa nghe thấy gì. Kiểm tra micro và thử lại.";return}
+    const r=scoreSpeech(target,txt);
+    S.pron[w.id]=Math.max(S.pron[w.id]||0,r.score);save();
+    const cls=r.score>=85?"good":r.score>=60?"mid":"low";
+    $("#presult").innerHTML=`<div class="pron-score ${cls}"><b>${r.score}</b><span>/100 · ${r.score>=85?"Rất tốt":r.score>=60?"Khá, luyện thêm các từ màu đỏ":"Cần luyện lại, nghe chậm rồi đọc theo"}</span></div>
+      <p class="pron-words">${r.words.map(([t,v])=>`<span class="${v>=.95?"ok":v>=.6?"near":"miss"}">${esc(t)}</span>`).join(" ")}</p>`;};
+  unsub.push(DICT.onPartial(({text})=>{hd.textContent="Máy nghe được: "+(heard+text).trim()}));
+  unsub.push(DICT.onFinal(({text})=>{heard+=text;hd.textContent="Máy nghe được: "+heard.trim();clearTimeout(timer);timer=setTimeout(()=>DICT.stop(),1400)}));
+  unsub.push(DICT.onState(({state,reason})=>{
+    if(state==="idle"){btn.textContent="● Bấm để nói";btn.classList.remove("on");
+      if(reason==="not_granted"){st.textContent="Micro chưa được cho phép. Mở menu Permissions của trang để bật lại.";btn.disabled=true}
+      else if(reason==="unavailable"){st.textContent="Tài khoản hoặc trình duyệt này chưa hỗ trợ nhận giọng nói tiếng Anh.";btn.disabled=true}
+      else if(reason==="rate_limited"){st.textContent="Đang quá tải, thử lại sau vài giây."}
+      else if(reason==="upstream_error"){st.textContent="Micro hoặc dịch vụ nhận giọng gặp lỗi, thử lại."}
+      else finish()}
+    else if(state==="listening"){btn.textContent="■ Dừng và chấm";btn.classList.add("on");st.textContent="Đang nghe… hãy đọc to."}
+    else if(state==="starting"){st.textContent="Đang mở micro… (trình duyệt có thể hỏi quyền dùng micro)"}}));
+  btn.onclick=()=>{
+    if(DICT.active()){DICT.stop().catch(()=>{});return}
+    heard="";hd.textContent="";$("#presult").innerHTML="";stopSpeech();
+    DICT.start({language:"en"}).catch(e=>{const c=e&&e.code;
+      if(c==="not_granted")st.textContent="Bạn chưa cho phép dùng micro cho trang này.";
+      else if(c==="dismissed")st.textContent="Bạn đã đóng hộp hỏi quyền. Bấm lại nút để thử.";
+      else if(c==="unavailable")st.textContent="Chưa nhận được giọng nói tiếng Anh ở trình duyệt này.";
+      else if(c!=="stopped")st.textContent="Không mở được micro, thử lại.";});
+  };
+}
+
+/* ============ ROUTER ============ */
+let pendingOpen=null;
+const ROUTES={"tu-vung":vocabView,"nghe":()=>listIndex("nghe"),"doc":()=>listIndex("doc"),"viet":()=>listIndex("viet"),"on-tap":reviewView,"phat-am":pronView,"video":videoView};
+function route(){
+  stopSpeech();try{if(DICT&&DICT.active())DICT.stop()}catch(e){}
+  const h=(location.hash||"#tu-vung").slice(1);const r=ROUTES[h]?h:"tu-vung";
+  document.querySelectorAll("nav.tabs a").forEach(a=>a.setAttribute("aria-current",a.getAttribute("href")==="#"+r?"page":"false"));
+  ROUTES[r]();
+  if(pendingOpen&&pendingOpen[0]===r){const [k,d]=pendingOpen;pendingOpen=null;k==="nghe"?listenLesson(d):readLesson(d);window.scrollTo(0,0)}
+}
+window.addEventListener("hashchange",route);
+renderStats();route();
+</script>
+
+</body></html>

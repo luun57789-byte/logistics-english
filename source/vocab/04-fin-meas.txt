@@ -1,0 +1,80 @@
+debit note|giấy báo nợ|Please find our debit note for the local charges.|B1|fi
+credit note|giấy báo có|We will issue a credit note for the overcharge.|B1|fi
+payment terms|điều kiện thanh toán|Our payment terms are 30 days after invoice.|B1|fi
+due date|hạn thanh toán|The due date for this invoice is 15 May.|A2|fi
+overdue|quá hạn|This invoice is 20 days overdue.|B1|fi
+outstanding balance|số dư còn nợ|Your outstanding balance is USD 4,500.|B1|fi
+bank transfer|chuyển khoản|Payment is by bank transfer.|A2|fi
+T/T (telegraphic transfer)|chuyển tiền bằng điện|Terms: 30% T/T in advance, 70% against B/L copy.|B1|fi
+deposit|tiền đặt cọc|We need a 30% deposit before production.|A2|fi
+advance payment|thanh toán trước|Advance payment is required for new customers.|B1|fi
+balance payment|thanh toán phần còn lại|The balance payment is due before release.|B1|fi
+remittance|giấy báo chuyển tiền|Please send us the bank remittance.|B1|fi
+bank charges|phí ngân hàng|Bank charges are for the buyer's account.|B1|fi
+exchange rate|tỷ giá|The exchange rate is fixed on the invoice date.|A2|fi
+currency|tiền tệ|The invoice currency is USD.|A2|fi
+billing|lập hóa đơn|Billing is done at the end of each month.|B1|fi
+statement of account (SOA)|bảng đối chiếu công nợ|Please check the statement of account and confirm.|B1|fi
+reconciliation|đối chiếu|We do a monthly reconciliation with each carrier.|B2|fi
+cost breakdown|bảng chi tiết chi phí|Could you send a cost breakdown?|B1|fi
+selling rate|giá bán|Our selling rate to the customer is USD 1,350.|B1|fi
+buying rate|giá mua|The buying rate from the carrier is USD 1,200.|B1|fi
+profit margin|tỷ suất lợi nhuận|The profit margin on this shipment is low.|B1|fi
+budget|ngân sách|The freight budget for Q4 is 2 billion dong.|A2|fi
+cost saving|tiết kiệm chi phí|Consolidation gave us a 15% cost saving.|B1|fi
+extra charge|phí phát sinh|There is an extra charge for waiting time.|A2|fi
+quote validity|hiệu lực báo giá|This quote is valid until 30 November.|B1|fi
+rate sheet|bảng giá|Please send me your latest rate sheet.|B1|fi
+tender|đấu thầu|We will run a freight tender next month.|B2|fi
+contract rate|giá hợp đồng|The contract rate is fixed for 12 months.|B1|fi
+spot rate|giá thị trường (theo thời điểm)|Spot rates are higher than contract rates now.|B2|fi
+D/O fee|phí lệnh giao hàng|The D/O fee is 1 million dong.|B1|fi
+THC at destination|phí THC tại cảng đến|THC at destination is paid by the consignee.|B1|fi
+documentation fee|phí chứng từ|The documentation fee is USD 40 per B/L.|B1|fi
+seal fee|phí kẹp chì|The seal fee is USD 10.|B1|fi
+handling charge|phí làm hàng|The forwarder adds a handling charge of USD 25.|B1|fi
+cleaning fee|phí vệ sinh container|A cleaning fee applies if the container is dirty.|B1|fi
+freight prepaid|cước trả trước|The B/L shows "freight prepaid".|B1|fi
+freight collect|cước trả sau|The consignee pays because it is freight collect.|B1|fi
+payable at|thanh toán tại|Freight payable at destination.|B2|fi
+refund|hoàn tiền|We will refund the deposit within 7 days.|A2|fi
+compensation|bồi thường|The carrier offered compensation of USD 500.|B1|fi
+penalty|tiền phạt|There is a penalty for late delivery.|B1|fi
+CBM (cubic meter)|mét khối|The shipment is 12 CBM.|A2|mt
+gross weight (GW)|trọng lượng cả bì|Gross weight: 8,450 kg.|A2|mt
+net weight (NW)|trọng lượng tịnh|Net weight: 8,100 kg.|A2|mt
+volume|thể tích|What is the total volume?|A2|mt
+dimensions|kích thước|Please send the dimensions of each pallet.|A2|mt
+length x width x height|dài x rộng x cao|The carton is 60 x 40 x 35 cm.|A2|mt
+measurement|số đo|Please check the measurement on the packing list.|A2|mt
+quantity|số lượng|The quantity is 1,200 pieces.|A2|mt
+pieces (pcs)|cái, chiếc|Each carton has 50 pcs.|A2|mt
+packages (pkgs)|kiện|Total: 45 pkgs.|A2|mt
+unit|đơn vị|The price per unit is USD 2.50.|A2|mt
+tonne / metric ton|tấn|The cargo weighs 18 tonnes.|A2|mt
+kilogram (kg)|ki-lô-gam|The parcel is 2.5 kg.|A2|mt
+stackable|có thể xếp chồng|These pallets are stackable.|B1|mt
+non-stackable|không thể xếp chồng|Fragile items are non-stackable.|B1|mt
+fragile|dễ vỡ|Fragile – handle with care.|A2|mt
+handle with care|xử lý cẩn thận|Write "handle with care" on the carton.|A2|mt
+this side up|đặt mặt này lên trên|The arrow shows this side up.|A2|mt
+keep dry|giữ khô|Keep dry: the goods are paper products.|A2|mt
+packaging|bao bì|The packaging must be strong enough for sea freight.|A2|mt
+export packing|đóng gói xuất khẩu|Export packing costs extra.|B1|mt
+wooden crate|thùng gỗ|The machine is packed in a wooden crate.|B1|mt
+ISPM 15|tiêu chuẩn xử lý gỗ đóng gói|Wooden pallets must meet ISPM 15.|B2|mt
+bag / sack|bao|The rice is packed in 50 kg bags.|A2|mt
+drum|thùng phuy|The chemical is shipped in steel drums.|B1|mt
+IBC (intermediate bulk container)|bồn IBC|Liquid cargo is packed in IBCs.|B2|mt
+jumbo bag|bao jumbo|Plastic pellets come in jumbo bags.|B1|mt
+pallet size|kích thước pallet|The pallet size is 1.2 x 1.0 m.|A2|mt
+euro pallet|pallet chuẩn châu Âu|The customer requires euro pallets.|B1|mt
+loading plan|sơ đồ xếp hàng|Please share the container loading plan.|B1|mt
+load capacity|tải trọng|The load capacity of the truck is 15 tonnes.|B1|mt
+over-dimensional|quá khổ|Over-dimensional cargo needs a special permit.|B2|mt
+heavy lift|hàng siêu trọng|The transformer is heavy lift cargo.|B2|mt
+bulk cargo|hàng rời|Coal is shipped as bulk cargo.|B1|mt
+break bulk|hàng rời đóng kiện|Steel coils are often shipped break bulk.|B2|mt
+general cargo|hàng bách hóa|This is general cargo, not dangerous goods.|B1|mt
+loose cargo|hàng rời lẻ|Loose cargo takes longer to load.|B1|mt
+carton marking|ký hiệu trên thùng|Carton marking must match the packing list.|B1|mt

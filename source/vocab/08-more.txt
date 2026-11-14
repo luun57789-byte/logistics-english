@@ -1,0 +1,122 @@
+FCA (Free Carrier)|giao cho người chuyên chở|FCA is common for air freight and containers.|B1|in
+CFR (Cost and Freight)|tiền hàng và cước|Under CFR, the buyer arranges insurance.|B1|in
+CPT (Carriage Paid To)|cước trả tới|With CPT, the seller pays carriage to the named place.|B2|in
+CIP (Carriage and Insurance Paid To)|cước và bảo hiểm trả tới|CIP requires higher insurance cover than CIF.|B2|in
+FAS (Free Alongside Ship)|giao dọc mạn tàu|FAS is used for bulk cargo.|B2|in
+DPU (Delivered at Place Unloaded)|giao tại nơi đến đã dỡ xuống|Under DPU, the seller unloads the goods.|B2|in
+named place|địa điểm chỉ định|Always write the named place: FOB Hai Phong.|B1|in
+transfer of risk|chuyển giao rủi ro|Transfer of risk happens at different points for each Incoterm.|B2|in
+responsibility|trách nhiệm|Export clearance is the seller's responsibility under FOB.|B1|in
+buyer's account|do người mua chịu|Destination charges are for the buyer's account.|B1|in
+seller's account|do người bán chịu|Origin charges are for the seller's account.|B1|in
+origin charges|phí đầu xuất|Origin charges include THC and documentation fee.|B1|in
+destination charges|phí đầu nhập|Destination charges are paid by the consignee.|B1|in
+insured value|giá trị được bảo hiểm|The insured value is 110% of the CIF value.|B2|in
+premium|phí bảo hiểm|The insurance premium is 0.15% of the value.|B2|in
+all risks|bảo hiểm mọi rủi ro|We insure on all risks terms.|B2|in
+insurance policy|hợp đồng bảo hiểm|Check the insurance policy for exclusions.|B1|in
+insurer|công ty bảo hiểm|The insurer asked for the survey report.|B1|in
+coverage|phạm vi bảo hiểm|Does the coverage include theft?|B1|in
+deductible|mức khấu trừ|There is a deductible of USD 200.|B2|in
+general average|tổn thất chung|The carrier declared general average after the fire.|B2|in
+cost|chi phí|The total cost is USD 2,300.|A2|in
+price|giá|The price includes delivery.|A2|in
+rate|giá, cước|What is your rate to Tokyo?|A2|in
+fee|phí|There is no fee for the first change.|A2|in
+charge|phí, tính phí|We charge USD 20 per pallet.|A2|in
+total|tổng cộng|The total is 45 cartons.|A2|in
+include / exclude|bao gồm / không bao gồm|The rate excludes duty and tax.|A2|in
+valid until|có hiệu lực đến|The price is valid until the end of the month.|A2|in
+competitive rate|giá cạnh tranh|We offer competitive rates to Europe.|B1|in
+best rate|giá tốt nhất|Can you give me your best rate?|A2|in
+rate increase|tăng giá|There is a rate increase from 1 January.|A2|in
+port|cảng|Which port do you use?|A2|tr
+airport|sân bay|The cargo is at the airport.|A2|tr
+ICD (inland container depot)|cảng cạn|We clear customs at Song Than ICD.|B1|tr
+dry port|cảng cạn|The dry port reduces traffic at the seaport.|B1|tr
+barge|sà lan|Containers go by barge from Binh Duong to Cai Mep.|B1|tr
+inland waterway|đường thủy nội địa|Inland waterway transport is cheap.|B2|tr
+multimodal|đa phương thức|We provide multimodal solutions to Central Asia.|B2|tr
+rail|đường sắt|Rail to China takes about 5 days.|A2|tr
+railway station|ga đường sắt|The containers are loaded at Yen Vien station.|A2|tr
+lorry|xe tải (Anh-Anh)|The lorry is parked at the gate.|A2|tr
+van|xe tải nhỏ|A van is enough for these 10 boxes.|A2|tr
+motorbike delivery|giao hàng bằng xe máy|Most last-mile deliveries use motorbikes.|A2|tr
+mode of transport|phương thức vận tải|Which mode of transport is cheapest?|B1|tr
+transport cost|chi phí vận tải|Transport cost is 8% of sales.|A2|tr
+transport plan|kế hoạch vận chuyển|Please share the transport plan for next week.|B1|tr
+logistics provider|nhà cung cấp dịch vụ logistics|We work with three logistics providers.|B1|tr
+forwarding agent|đại lý giao nhận|The forwarding agent will collect the cargo.|B1|tr
+shipping agent|đại lý hãng tàu|The shipping agent issues the D/O.|B1|tr
+haulier / haulage company|công ty vận tải đường bộ|The haulier will deliver the container.|B2|tr
+logistics solution|giải pháp logistics|We need a logistics solution for Cambodia.|B1|tr
+route|tuyến đường|This route avoids the city center.|A2|tr
+destination|nơi đến|What is the destination?|A2|tr
+origin|nơi đi, xuất xứ|Origin: Ho Chi Minh City.|A2|tr
+door delivery|giao tận cửa|Is door delivery included in the price?|A2|tr
+port-to-port|từ cảng đến cảng|This is a port-to-port rate.|B1|tr
+door-to-port|từ kho đến cảng|We quote door-to-port from your factory.|B1|tr
+hand over|bàn giao (hàng)|The goods were handed over to the carrier.|B1|tr
+transit|quá cảnh, đang vận chuyển|The transit through Laos takes one day.|B1|tr
+could you confirm|bạn có thể xác nhận|Could you confirm the pickup time?|A2|em
+could you advise|bạn có thể cho biết|Could you advise the ETA, please?|B1|em
+I'd like to check|tôi muốn kiểm tra|I'd like to check the status of my shipment.|A2|em
+let me check|để tôi kiểm tra|Let me check and get back to you.|A2|em
+I'm afraid|tôi e rằng (báo tin xấu)|I'm afraid the vessel is full.|A2|em
+unfortunately|thật không may|Unfortunately, the container is damaged.|A2|em
+we regret to inform you|chúng tôi rất tiếc thông báo|We regret to inform you that the flight was cancelled.|B2|em
+we are pleased to|chúng tôi vui mừng|We are pleased to confirm your booking.|B1|em
+thank you for your patience|cảm ơn sự kiên nhẫn của bạn|Thank you for your patience during the delay.|B1|em
+sorry for the late reply|xin lỗi vì trả lời muộn|Sorry for the late reply.|A2|em
+I'm calling about|tôi gọi về việc|I'm calling about booking 4512.|A2|em
+is it possible to|có thể … không|Is it possible to change the delivery address?|A2|em
+would it be possible|liệu có thể|Would it be possible to extend the free time?|B1|em
+I suggest that|tôi đề xuất rằng|I suggest that we ship by air.|B1|em
+how about|thế còn … thì sao|How about delivering on Saturday?|A2|em
+that works for us|như vậy được với chúng tôi|Friday morning works for us.|A2|em
+agreed|đồng ý|Agreed. Please go ahead.|A2|em
+let's keep in touch|giữ liên lạc nhé|Let's keep in touch about the next order.|A2|em
+best regards|trân trọng|Best regards, Nam|A2|em
+dear Sir or Madam|kính gửi ông/bà|Dear Sir or Madam, I am writing to request a quote.|A2|em
+I look forward to working with you|mong được hợp tác|I look forward to working with you.|A2|em
+confirm receipt|xác nhận đã nhận|Please confirm receipt of the payment.|B1|em
+action required|cần xử lý|Action required: missing VGM.|B1|em
+asap reply needed|cần trả lời gấp|Please reply ASAP; the cut-off is today.|A2|em
+on behalf of|thay mặt|I am writing on behalf of ABC Logistics.|B1|em
+agenda|chương trình họp|Here is the agenda for tomorrow's meeting.|B1|em
+minutes|biên bản họp|I will send the minutes after the meeting.|B1|em
+action items|việc cần làm|Here are the action items from today's call.|B1|em
+point of contact|đầu mối liên lạc|I will be your point of contact.|B1|em
+customs broker fee|phí dịch vụ hải quan|The customs broker fee is 1.5 million dong per declaration.|B1|cu
+customs inspection fee|phí kiểm hóa|The customs inspection fee is charged per container.|B1|cu
+customs hold|bị hải quan giữ|The container is on customs hold.|B1|cu
+duty-free|miễn thuế|These goods are duty-free under the FTA.|B1|cu
+tax code|mã số thuế|Please send the consignee's tax code.|A2|cu
+HS code check|kiểm tra mã HS|We need an HS code check before declaring.|B1|cu
+customs valuation|xác định trị giá hải quan|Customs valuation is based on the transaction value.|B2|cu
+anti-dumping duty|thuế chống bán phá giá|Steel from some countries pays anti-dumping duty.|B2|cu
+specialised inspection|kiểm tra chuyên ngành|Food needs specialised inspection before clearance.|B2|cu
+origin criteria|tiêu chí xuất xứ|The product meets the origin criteria for Form E.|B2|cu
+self-certification|tự chứng nhận xuất xứ|Under EVFTA, approved exporters can use self-certification.|B2|cu
+REX (registered exporter)|nhà xuất khẩu đăng ký|We registered in the REX system.|B2|cu
+customs clearance time|thời gian thông quan|Customs clearance time is about 24 hours.|B1|cu
+clearance documents|chứng từ thông quan|Please send the clearance documents today.|A2|cu
+import permit|giấy phép nhập khẩu|An import permit is needed for this chemical.|B1|cu
+cargo|hàng hóa|The cargo is ready.|A2|oc
+consignment|lô hàng gửi|The consignment arrived in good condition.|B1|oc
+in good condition|trong tình trạng tốt|All cartons were received in good condition.|A2|oc
+in bad order|trong tình trạng xấu|Two pallets arrived in bad order.|B2|oc
+clean B/L|vận đơn sạch|The bank requires a clean B/L.|B2|dc
+claused B/L|vận đơn có ghi chú xấu|A claused B/L says the goods were damaged.|B2|dc
+LOI (letter of indemnity)|thư bảo đảm|The carrier will release the cargo against an LOI.|B2|dc
+release order|lệnh giải phóng hàng|We received the release order from the shipping line.|B1|dc
+EIR (equipment interchange receipt)|phiếu giao nhận container|Check the EIR for container damage.|B2|dc
+container release order|lệnh cấp container rỗng|Show the container release order at the depot.|B1|dc
+gate pass|phiếu ra vào cổng|The driver needs a gate pass to enter the port.|B1|dc
+customs declaration number|số tờ khai|Please send me the customs declaration number.|A2|dc
+cargo receipt|biên nhận hàng|The warehouse issued a cargo receipt.|B1|dc
+booking note|giấy xác nhận lưu khoang|The booking note shows the cut-off times.|B1|dc
+VAT invoice|hóa đơn VAT|Please issue a VAT invoice for the local charges.|A2|dc
+e-invoice|hóa đơn điện tử|We only issue e-invoices.|A2|dc
+contract of carriage|hợp đồng vận chuyển|The B/L is evidence of the contract of carriage.|B2|dc
+terms and conditions|điều khoản và điều kiện|See our terms and conditions on page 2.|B1|dc

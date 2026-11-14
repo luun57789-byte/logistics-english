@@ -1,0 +1,101 @@
+supply chain|chuỗi cung ứng|A strong supply chain gets products to customers on time.|A2|sc
+logistics|hậu cần, logistics|She works in logistics for an electronics company.|A2|sc
+supplier|nhà cung cấp|We buy all our packaging from one supplier.|A2|sc
+manufacturer|nhà sản xuất|The manufacturer ships the goods every Monday.|A2|sc
+distributor|nhà phân phối|The distributor sells our products to small shops.|B1|sc
+retailer|nhà bán lẻ|The retailer ordered 500 units for the holiday season.|A2|sc
+purchase order (PO)|đơn đặt hàng|Please send me the PO number so I can book the shipment.|A2|sc
+lead time|thời gian chờ (từ lúc đặt đến lúc nhận)|The lead time for this part is six weeks.|B1|sc
+procurement|thu mua, mua hàng|Procurement chose a new supplier in Vietnam.|B1|sc
+demand forecasting|dự báo nhu cầu|Better demand forecasting reduces extra stock.|B2|sc
+inventory|hàng tồn kho|We check inventory levels every morning.|A2|sc
+bottleneck|điểm nghẽn|The loading dock is the main bottleneck in our process.|B2|sc
+reverse logistics|logistics ngược (hàng trả về)|Reverse logistics handles returned and damaged goods.|B2|sc
+warehouse|nhà kho|The warehouse is open 24 hours a day.|A2|wh
+distribution center|trung tâm phân phối|Orders are sent from our distribution center in Binh Duong.|B1|wh
+SKU (stock keeping unit)|mã hàng hóa lưu kho|This warehouse stores more than 8,000 SKUs.|B1|wh
+pallet|pallet, tấm kê hàng|Each pallet holds 40 cartons.|A2|wh
+forklift|xe nâng|Only trained staff may drive the forklift.|A2|wh
+picking|lấy hàng (theo đơn)|Picking takes most of the warehouse team's time.|B1|wh
+packing|đóng gói|After picking, the items go to the packing area.|A2|wh
+put-away|cất hàng vào vị trí|Put-away must be finished before the next truck arrives.|B1|wh
+loading dock|cửa/bến bốc xếp hàng|The truck is waiting at loading dock 3.|A2|wh
+cycle count|kiểm kê luân phiên|We do a cycle count on high-value items every week.|B2|wh
+FIFO (first in, first out)|nhập trước xuất trước|Food products must follow FIFO.|B1|wh
+cross-docking|chuyển hàng thẳng (không lưu kho)|With cross-docking, goods leave the site within hours.|B2|wh
+safety stock|tồn kho an toàn|We keep two weeks of safety stock for key parts.|B2|wh
+reorder point|điểm đặt hàng lại|When stock falls to the reorder point, the system creates an order.|B2|wh
+stock-out|hết hàng|A stock-out means lost sales.|B1|wh
+freight|hàng hóa vận chuyển; cước|The freight is ready for collection.|A2|tr
+carrier|hãng vận chuyển|The carrier confirmed the pickup time.|B1|tr
+shipper|người gửi hàng|The shipper must prepare the export documents.|B1|tr
+consignee|người nhận hàng|Please write the consignee's address clearly.|B1|tr
+ocean freight|vận tải đường biển|Ocean freight is cheaper but slower than air freight.|A2|tr
+air freight|vận tải hàng không|We used air freight because the parts were urgent.|A2|tr
+trucking|vận tải xe tải, kéo container|Our trucking company will pick up the container at the port.|A2|tr
+freight forwarder|công ty giao nhận (forwarder)|Our freight forwarder booked space on the vessel for us.|A2|tr
+door-to-door|giao tận nơi (từ kho đến kho)|We offer door-to-door service from Hanoi to Osaka.|B1|tr
+last-mile delivery|giao hàng chặng cuối|Last-mile delivery is often the most expensive part.|B1|tr
+transit time|thời gian vận chuyển|The transit time from Hai Phong to Rotterdam is about 30 days.|B1|tr
+truckload (FTL / LTL)|hàng nguyên xe / hàng lẻ xe|This order is too small for a full truckload, so we will ship LTL.|B2|tr
+container|công-te-nơ|The container was sealed at the factory.|A2|oc
+TEU|đơn vị tương đương container 20 feet|The vessel can carry 20,000 TEU.|B1|oc
+FCL (full container load)|hàng nguyên container|We ship FCL when we have enough cargo.|B1|oc
+LCL (less than container load)|hàng lẻ (ghép container)|LCL is good for small shipments.|B1|oc
+vessel|tàu|The vessel arrived at the port this morning.|A2|oc
+port of loading (POL)|cảng xếp hàng|The port of loading is Cat Lai.|B1|oc
+port of discharge (POD)|cảng dỡ hàng|The port of discharge is Los Angeles.|B1|oc
+terminal|bến cảng, cảng container|The container is still at the terminal.|B1|oc
+seal number|số chì container|Please check that the seal number matches the bill of lading.|B1|oc
+transshipment|chuyển tải|There is a transshipment in Singapore.|B2|oc
+ETD / ETA|ngày dự kiến khởi hành / đến|ETD is 12 March and ETA is 2 April.|A2|oc
+demurrage|phí lưu container tại cảng|Pick up the container quickly to avoid demurrage.|B2|oc
+detention|phí lưu container ngoài cảng|We paid detention because the empty container was returned late.|B2|oc
+reefer container|container lạnh|Frozen seafood is shipped in a reefer container.|B1|oc
+cut-off time|giờ cắt máng (hạn chót nhận hàng)|The cut-off time for this vessel is Thursday at noon.|B1|oc
+bill of lading (B/L)|vận đơn đường biển|The bill of lading is proof that the carrier received the goods.|B1|dc
+air waybill (AWB)|vận đơn hàng không|Please send me the air waybill number.|B1|dc
+commercial invoice|hóa đơn thương mại|The commercial invoice shows the value of the goods.|B1|dc
+packing list|phiếu đóng gói|The packing list shows the weight of each carton.|A2|dc
+certificate of origin (C/O)|giấy chứng nhận xuất xứ|With a certificate of origin, the buyer pays lower duty.|B1|dc
+booking confirmation|xác nhận đặt chỗ|The carrier sent the booking confirmation yesterday.|B1|dc
+shipping instructions (SI)|hướng dẫn gửi hàng|Please submit the shipping instructions before Friday.|B2|dc
+delivery order (D/O)|lệnh giao hàng|You need the delivery order to collect the container.|B2|dc
+arrival notice|thông báo hàng đến|We received the arrival notice from the shipping line.|B1|dc
+letter of credit (L/C)|thư tín dụng|Payment is by letter of credit.|B2|dc
+proof of delivery (POD)|bằng chứng giao hàng|The driver uploads the proof of delivery with a photo.|B1|dc
+customs clearance|thông quan|Customs clearance usually takes one or two days.|B1|cu
+customs broker|đại lý hải quan|Our customs broker prepares the declaration.|B1|cu
+customs declaration|tờ khai hải quan|Every import needs a customs declaration.|B1|cu
+HS code|mã HS (mã phân loại hàng hóa)|The wrong HS code can lead to a fine.|B1|cu
+import duty|thuế nhập khẩu|The import duty on this product is 5%.|B1|cu
+tariff|biểu thuế, thuế quan|New tariffs increased the cost of steel.|B2|cu
+inspection|kiểm tra, kiểm hóa|Customs selected the container for physical inspection.|B1|cu
+bonded warehouse|kho ngoại quan|Goods in a bonded warehouse have not paid duty yet.|B2|cu
+free trade agreement (FTA)|hiệp định thương mại tự do|Under the free trade agreement, duty is zero.|B2|cu
+telex release|điện giao hàng (không cần B/L gốc)|The shipper has paid, so we can do a telex release.|B2|cu
+THC (terminal handling charge)|phí xếp dỡ tại cảng|THC is paid at both the port of loading and the port of discharge.|B1|cu
+Incoterms|điều kiện giao hàng quốc tế|Incoterms tell buyer and seller who pays for what.|B1|in
+EXW (Ex Works)|giao tại xưởng|Under EXW, the buyer arranges almost everything.|B1|in
+FOB (Free On Board)|giao lên tàu|With FOB, risk passes when the goods are on board the vessel.|B1|in
+CIF (Cost, Insurance and Freight)|tiền hàng, bảo hiểm và cước|Under CIF, the seller pays freight and insurance to the destination port.|B2|in
+DAP (Delivered At Place)|giao tại nơi đến|With DAP, the buyer pays import duty.|B2|in
+DDP (Delivered Duty Paid)|giao đã nộp thuế|DDP puts the most responsibility on the seller.|B2|in
+freight rate|giá cước|Freight rates went up sharply this month.|B1|in
+surcharge|phụ phí|There is a fuel surcharge of $150 per container.|B2|in
+quotation|báo giá|Could you send us a quotation for 2 x 40HC?|A2|in
+cargo insurance|bảo hiểm hàng hóa|Cargo insurance covers loss or damage during transit.|B1|in
+local charges|phí địa phương (local charge)|Please send us the local charges at destination.|B1|in
+shipment|lô hàng|The shipment left the warehouse at 6 a.m.|A2|op
+track and trace|theo dõi hành trình|You can track and trace your parcel online.|A2|op
+delay|sự chậm trễ; trì hoãn|The storm caused a two-day delay.|A2|op
+damage|hư hỏng|Please take photos of any damage.|A2|op
+claim|khiếu nại, yêu cầu bồi thường|We filed a claim for the broken cartons.|B1|op
+dispatch|xuất hàng, gửi đi|The order will be dispatched tomorrow.|B1|op
+expedite|đẩy nhanh|Can you expedite this order? The customer is waiting.|B2|op
+backlog|lượng việc tồn đọng|After the holiday, we have a backlog of 300 orders.|B2|op
+KPI|chỉ số hiệu suất chính|Our main KPI is on-time delivery.|B1|op
+on-time delivery|giao hàng đúng hạn|On-time delivery rose to 96% this quarter.|B1|op
+fill rate|tỷ lệ đáp ứng đơn hàng|A low fill rate means customers did not get everything they ordered.|B2|op
+consolidate|gom hàng|We consolidate small orders into one container.|B2|op
+confirm|xác nhận|Please confirm the delivery address.|A2|op

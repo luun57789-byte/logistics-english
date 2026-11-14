@@ -1,0 +1,87 @@
+airline|hãng hàng không|The airline confirmed space on tomorrow's flight.|A2|af
+flight number|số chuyến bay|The flight number is VN 0300.|A2|af
+MAWB (master air waybill)|vận đơn hàng không chủ|The airline issues the MAWB to the forwarder.|B1|af
+HAWB (house air waybill)|vận đơn hàng không của forwarder|We issue a HAWB to each shipper.|B1|af
+chargeable weight|trọng lượng tính cước|The chargeable weight is the higher of actual and volumetric weight.|B1|af
+volumetric weight|trọng lượng thể tích|Volumetric weight = L x W x H (cm) / 6000.|B1|af
+actual weight|trọng lượng thực tế|The actual weight is 120 kg.|A2|af
+rate per kg|giá theo kg|The rate per kg is USD 3.20 for 100 kg+.|A2|af
+minimum charge|phí tối thiểu|Small shipments pay the minimum charge.|B1|af
+FSC (fuel surcharge)|phụ phí nhiên liệu|The FSC is USD 0.85 per kg.|B1|af
+SSC (security surcharge)|phụ phí an ninh|SSC is charged on all air shipments.|B2|af
+screening|soi chiếu an ninh|All cargo must pass X-ray screening.|B1|af
+ULD (unit load device)|thiết bị chất xếp hàng không|The cargo is built up on a ULD.|B2|af
+airport of departure|sân bay đi|The airport of departure is Noi Bai.|A2|af
+airport of destination|sân bay đến|The airport of destination is Frankfurt.|A2|af
+cargo terminal|nhà ga hàng hóa|Deliver the goods to the TCS cargo terminal.|B1|af
+air cargo|hàng không (hàng hóa)|Air cargo is fast but expensive.|A2|af
+express courier|chuyển phát nhanh|Send the samples by express courier.|A2|af
+courier|dịch vụ chuyển phát|The original documents were sent by courier.|A2|af
+offload|bị bỏ lại (không lên máy bay)|Our cargo was offloaded because the flight was full.|B2|af
+connecting flight|chuyến bay nối|The cargo will move on a connecting flight via Dubai.|B1|af
+freighter|máy bay chở hàng|Heavy cargo goes on a freighter.|B1|af
+belly cargo|hàng chở trong bụng máy bay khách|Most air cargo travels as belly cargo.|B2|af
+consolidation (air)|gom hàng lẻ hàng không|We run a weekly consolidation to Tokyo.|B1|af
+backload|hàng chiều về|We are looking for a backload to reduce cost.|B2|af
+sea-air|vận chuyển kết hợp biển–hàng không|Sea-air via Dubai is cheaper than direct air.|B2|af
+hand carry|xách tay|The spare part was sent by hand carry.|B1|af
+time-critical|cần gấp, nhạy cảm thời gian|This is a time-critical shipment for a broken machine.|B2|af
+shipping documents|bộ chứng từ gửi hàng|Please send the full set of shipping documents.|A2|dc
+original B/L|vận đơn gốc|The consignee needs the original B/L to collect the cargo.|B1|dc
+draft B/L|vận đơn nháp|Please check the draft B/L and confirm.|A2|dc
+B/L amendment|sửa vận đơn|A B/L amendment costs USD 50.|B1|dc
+MBL (master bill of lading)|vận đơn chủ (hãng tàu cấp)|The shipping line issues the MBL.|B1|dc
+HBL (house bill of lading)|vận đơn nhà (forwarder cấp)|We issue the HBL to our customer.|B1|dc
+surrendered B/L|vận đơn đã nộp lại (điện giao hàng)|The B/L is surrendered, so no original is needed.|B2|dc
+seaway bill|giấy gửi hàng đường biển|A seaway bill is not a document of title.|B2|dc
+on board date|ngày xếp hàng lên tàu|The L/C requires an on board date before 30 June.|B2|dc
+notify party|bên được thông báo|The notify party is the buyer's customs broker.|B1|dc
+proforma invoice (PI)|hóa đơn chiếu lệ|The supplier sent a proforma invoice for payment.|B1|dc
+invoice number|số hóa đơn|Please write the invoice number on the transfer.|A2|dc
+fumigation certificate|chứng thư hun trùng|Wooden pallets need a fumigation certificate.|B1|dc
+phytosanitary certificate|giấy kiểm dịch thực vật|Fresh fruit needs a phytosanitary certificate.|B2|dc
+health certificate|giấy chứng nhận vệ sinh|The seafood shipment needs a health certificate.|B1|dc
+certificate of analysis (COA)|giấy chứng nhận phân tích|The buyer asked for a COA for each batch.|B2|dc
+MSDS / SDS|bảng dữ liệu an toàn hóa chất|Please provide the MSDS for this chemical.|B1|dc
+insurance certificate|giấy chứng nhận bảo hiểm|Under CIF, the seller provides an insurance certificate.|B1|dc
+sales contract|hợp đồng mua bán|The payment terms are in the sales contract.|A2|dc
+bill of exchange|hối phiếu|The bank needs a bill of exchange with the L/C documents.|B2|dc
+discrepancy|sai sót chứng từ|The bank found a discrepancy in the invoice.|B2|dc
+manifest|bản lược khai hàng hóa|The cargo manifest must be sent before arrival.|B1|dc
+e-manifest|lược khai điện tử|Submit the e-manifest 24 hours before loading.|B2|dc
+weight certificate|giấy chứng nhận trọng lượng|The buyer asked for a weight certificate.|B1|dc
+inspection certificate|chứng thư giám định|SGS issued the inspection certificate.|B2|dc
+copy|bản sao|Please email us a scanned copy first.|A2|dc
+signed and stamped|có ký tên và đóng dấu|The invoice must be signed and stamped.|A2|dc
+soft copy / hard copy|bản mềm / bản cứng|Send a soft copy now and the hard copy by courier.|A2|dc
+attached|đính kèm|Please find the packing list attached.|A2|dc
+customs office|chi cục hải quan|The declaration was submitted to the Cat Lai customs office.|A2|cu
+customs officer|cán bộ hải quan|The customs officer asked for the catalogue.|A2|cu
+import declaration|tờ khai nhập khẩu|The import declaration was registered today.|B1|cu
+export declaration|tờ khai xuất khẩu|We need the export declaration number.|B1|cu
+green channel|luồng xanh|The declaration went to the green channel, so no inspection.|B1|cu
+yellow channel|luồng vàng|Yellow channel means documents are checked.|B1|cu
+red channel|luồng đỏ|Red channel means physical inspection.|B1|cu
+customs release|thông quan, giải phóng hàng|We got customs release this afternoon.|B1|cu
+duty and tax|thuế|Duty and tax must be paid before release.|A2|cu
+VAT (value-added tax)|thuế giá trị gia tăng|Import VAT is 10%.|A2|cu
+customs value|trị giá hải quan|The customs value is based on the CIF value.|B2|cu
+tariff classification|phân loại mã số hàng hóa|Tariff classification decides the duty rate.|B2|cu
+preferential rate|thuế suất ưu đãi|With Form D, we can use the preferential rate.|B2|cu
+Form E / Form D|C/O mẫu E / mẫu D|We need Form E for exports to China.|B2|cu
+quarantine|kiểm dịch|The plants are held for quarantine inspection.|B1|cu
+customs fine|phạt hải quan|A wrong declaration can lead to a customs fine.|B1|cu
+re-export|tái xuất|The goods were rejected and must be re-exported.|B2|cu
+temporary import|tạm nhập|The exhibition goods are under temporary import.|B2|cu
+ECUS|phần mềm khai hải quan ECUS|We submit declarations through ECUS.|B1|cu
+post-clearance audit|kiểm tra sau thông quan|Customs will do a post-clearance audit next month.|B2|cu
+restricted goods|hàng hạn chế|Restricted goods need a license.|B1|cu
+prohibited goods|hàng cấm|Batteries are not prohibited, but they are restricted.|B1|cu
+import license|giấy phép nhập khẩu|Medical equipment needs an import license.|B1|cu
+customs procedures|thủ tục hải quan|Customs procedures take about two days.|A2|cu
+document check|kiểm tra hồ sơ|The shipment only needs a document check.|B1|cu
+physical inspection|kiểm tra thực tế hàng hóa|Physical inspection is scheduled for tomorrow morning.|B1|cu
+customs bond|bảo lãnh hải quan|The importer has a customs bond in the US.|B2|cu
+ISF (importer security filing)|khai báo an ninh nhập khẩu Mỹ|ISF must be filed 24 hours before loading for US shipments.|B2|cu
+AMS / ENS|khai báo lược khai Mỹ / EU|The carrier charges USD 35 for AMS filing.|B2|cu
+de minimis|ngưỡng miễn thuế|Parcels under the de minimis value pay no duty.|B2|cu

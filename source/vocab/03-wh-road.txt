@@ -1,0 +1,99 @@
+receiving|nhận hàng (nhập kho)|Receiving starts at 7 a.m.|A2|wh
+goods receipt|phiếu nhập kho|Create the goods receipt in the system after counting.|B1|wh
+goods issue|phiếu xuất kho|The goods issue is printed for each order.|B1|wh
+inbound|hàng nhập (vào kho)|We have 12 inbound trucks today.|A2|wh
+outbound|hàng xuất (ra khỏi kho)|Outbound orders must leave by 4 p.m.|A2|wh
+stock|hàng trong kho|We have 300 units in stock.|A2|wh
+in stock / out of stock|còn hàng / hết hàng|This item is out of stock until next week.|A2|wh
+stock level|mức tồn kho|Check the stock level before you confirm the order.|A2|wh
+stocktake|kiểm kê|The annual stocktake is on 31 December.|B1|wh
+discrepancy (stock)|chênh lệch tồn kho|There is a discrepancy of 5 cartons.|B1|wh
+shortage|thiếu hàng|We found a shortage of 2 pallets.|A2|wh
+overage|thừa hàng|There is an overage of 10 units.|B1|wh
+location|vị trí kho|Put the pallet in location A-03-02.|A2|wh
+racking|giá kệ|The racking is five levels high.|B1|wh
+shelf|kệ|Small items are kept on the shelf.|A2|wh
+aisle|lối đi giữa các kệ|Aisle 4 is blocked by a pallet.|A2|wh
+bin|ô chứa hàng|Each bin has a barcode label.|B1|wh
+staging area|khu tập kết hàng|Put the orders in the staging area before loading.|B1|wh
+pick list|danh sách lấy hàng|Print the pick list for wave 2.|A2|wh
+picker|nhân viên lấy hàng|We need three more pickers tonight.|A2|wh
+order picking|lấy hàng theo đơn|Order picking takes about 60% of labour time.|B1|wh
+wave picking|lấy hàng theo đợt|We use wave picking for e-commerce orders.|B2|wh
+batch picking|lấy hàng gộp nhiều đơn|Batch picking saves walking time.|B2|wh
+replenishment|bổ sung hàng (lên vị trí lấy)|Replenishment must happen before the next shift.|B2|wh
+pallet jack|xe nâng tay|Use the pallet jack for short distances.|A2|wh
+reach truck|xe nâng tầm cao|The reach truck can lift to 10 metres.|B1|wh
+stretch wrap|màng quấn pallet|Wrap each pallet with stretch wrap.|A2|wh
+shrink wrap|màng co|The products are packed in shrink wrap.|B1|wh
+carton|thùng carton|Each carton contains 24 bottles.|A2|wh
+label|nhãn|The label is missing on carton 15.|A2|wh
+barcode|mã vạch|Scan the barcode on each carton.|A2|wh
+scanner|máy quét|The scanner battery is low.|A2|wh
+labelling|dán nhãn|Labelling must be done before dispatch.|B1|wh
+kitting|đóng bộ (gom nhiều món thành bộ)|We do kitting for gift sets.|B2|wh
+value-added services (VAS)|dịch vụ giá trị gia tăng|VAS includes labelling and repacking.|B2|wh
+repacking|đóng gói lại|The damaged cartons need repacking.|B1|wh
+quarantine area|khu cách ly hàng|Damaged goods go to the quarantine area.|B1|wh
+returns|hàng trả về|We process 200 returns a day.|A2|wh
+storage|lưu kho|Storage costs USD 5 per pallet per week.|A2|wh
+storage capacity|sức chứa kho|The warehouse is at 90% of storage capacity.|B1|wh
+pallet position|vị trí pallet|We rent 500 pallet positions.|B1|wh
+handling fee|phí bốc xếp|The handling fee is USD 3 per pallet in and out.|B1|wh
+loading|bốc hàng lên xe|Loading starts at 2 p.m.|A2|wh
+unloading|dỡ hàng|Unloading took one hour.|A2|wh
+floor-loaded|xếp rời dưới sàn (không pallet)|The container is floor-loaded, so unloading will take longer.|B2|wh
+palletised|đã xếp pallet|Palletised cargo is faster to unload.|B1|wh
+dock door|cửa dock|Truck 3 is at dock door 5.|A2|wh
+dock appointment|lịch hẹn vào dock|Please book a dock appointment 24 hours in advance.|B1|wh
+yard|bãi xe|The trailer is waiting in the yard.|A2|wh
+3PL (third-party logistics)|nhà cung cấp dịch vụ logistics bên thứ ba|We outsource our warehouse to a 3PL.|B1|wh
+expiry date|hạn sử dụng|Check the expiry date before shipping.|A2|wh
+batch number / lot number|số lô|Record the lot number for every pallet.|B1|wh
+FEFO (first expired, first out)|hết hạn trước xuất trước|Medicines follow FEFO.|B1|wh
+slow-moving|hàng chậm luân chuyển|We have too many slow-moving items.|B1|wh
+fast-moving|hàng bán chạy|Fast-moving items are near the dock.|B1|wh
+dead stock|hàng tồn chết|We need to clear the dead stock.|B1|wh
+stock transfer|chuyển kho|Create a stock transfer from Hanoi to HCMC.|B1|wh
+inventory accuracy|độ chính xác tồn kho|Our inventory accuracy is 99.5%.|B1|wh
+shift|ca làm việc|The night shift starts at 10 p.m.|A2|wh
+truck|xe tải|The truck will arrive at 9 a.m.|A2|td
+trailer|rơ-moóc|The trailer is 13.6 metres long.|A2|td
+tractor / prime mover|đầu kéo|The tractor will pick up the container at the port.|B1|td
+container truck|xe container|We need a container truck for a 40HC.|A2|td
+box truck|xe tải thùng|A 5-tonne box truck is enough for this order.|A2|td
+driver|tài xế|The driver's phone number is 0912 345 678.|A2|td
+license plate|biển số xe|Please send the driver's name and license plate.|A2|td
+pickup|việc lấy hàng|Pickup is confirmed for 8 a.m.|A2|td
+drop-off|việc giao/hạ hàng|The drop-off is at the customer's warehouse.|A2|td
+delivery note|phiếu giao hàng|Ask the receiver to sign the delivery note.|A2|td
+POD signed|POD đã ký|We have the signed POD for all deliveries.|B1|td
+waiting time|thời gian chờ|Waiting time over 2 hours is charged.|B1|td
+trip|chuyến xe|The truck can make two trips a day.|A2|td
+round trip|chuyến khứ hồi|The round trip takes 6 hours.|A2|td
+one-way|một chiều|The one-way price is 3 million dong.|A2|td
+empty return|trả rỗng|The empty return must be at the depot by Friday.|B1|td
+milk run|tuyến gom hàng nhiều điểm|The milk run collects parts from five suppliers.|B2|td
+route planning|lập kế hoạch tuyến|Route planning saves fuel.|B1|td
+GPS tracking|định vị GPS|All trucks have GPS tracking.|A2|td
+fuel cost|chi phí nhiên liệu|Fuel cost increased this month.|A2|td
+toll|phí cầu đường|The price includes tolls.|A2|td
+weight limit|giới hạn tải trọng|This bridge has a 10-tonne weight limit.|B1|td
+restricted hours|giờ cấm|Trucks cannot enter the city during restricted hours.|B1|td
+night delivery|giao hàng ban đêm|We do night delivery to avoid traffic.|A2|td
+delivery window|khung giờ giao hàng|The delivery window is 8–10 a.m.|B1|td
+failed delivery|giao hàng không thành công|A failed delivery costs us money.|B1|td
+redelivery|giao lại|Redelivery is free for the first time.|B1|td
+COD (cash on delivery)|thu tiền khi giao hàng|60% of our orders are COD.|A2|td
+fleet|đội xe|Our fleet has 50 trucks.|B1|td
+subcontractor|nhà thầu phụ|We use a subcontractor for long-haul routes.|B1|td
+long-haul|tuyến dài|Long-haul drivers need rest stops.|B1|td
+short-haul|tuyến ngắn|Short-haul trips are inside the city.|B1|td
+FTL (full truckload)|hàng nguyên xe|This order is an FTL.|B1|td
+LTL (less than truckload)|hàng lẻ xe|Small orders go LTL.|B1|td
+cross-border trucking|vận tải đường bộ qua biên giới|Cross-border trucking to China takes 2 days.|B2|td
+border gate|cửa khẩu|The truck is waiting at Huu Nghi border gate.|B1|td
+transit cargo|hàng quá cảnh|Transit cargo to Laos is sealed by customs.|B2|td
+breakdown|hỏng xe|The truck had a breakdown on the highway.|A2|td
+accident|tai nạn|Report any accident to the dispatcher immediately.|A2|td
+dispatcher|điều phối viên|The dispatcher assigned truck 12 to your order.|B1|td

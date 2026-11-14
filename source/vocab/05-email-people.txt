@@ -1,0 +1,83 @@
+please be advised that|xin lưu ý rằng / xin thông báo|Please be advised that the vessel is delayed.|B1|em
+kindly|vui lòng (lịch sự)|Kindly confirm receipt of this email.|B1|em
+as per|theo như|As per your request, we attach the invoice.|B1|em
+please find attached|vui lòng xem file đính kèm|Please find attached the draft B/L.|A2|em
+for your reference|để bạn tham khảo|I attach last month's report for your reference.|A2|em
+for your approval|để bạn phê duyệt|Please see the quotation for your approval.|B1|em
+for your information (FYI)|để bạn biết|FYI, the customer has paid.|A2|em
+as soon as possible (ASAP)|càng sớm càng tốt|Please send the VGM ASAP.|A2|em
+at your earliest convenience|sớm nhất khi bạn có thể|Please reply at your earliest convenience.|B2|em
+follow up|theo dõi, nhắc lại|I am following up on my email from Monday.|B1|em
+reminder|lời nhắc|This is a friendly reminder about the SI cut-off.|A2|em
+urgent|khẩn|URGENT: container on hold at customs.|A2|em
+update|cập nhật|Any update on the shipment?|A2|em
+noted with thanks|đã ghi nhận, cảm ơn|Noted with thanks. We will proceed.|B1|em
+well received|đã nhận được|Your documents are well received.|B1|em
+acknowledge receipt|xác nhận đã nhận|Please acknowledge receipt of the booking.|B2|em
+proceed|tiến hành|Please proceed with the booking.|B1|em
+on hold|tạm giữ, tạm dừng|The shipment is on hold until payment is received.|A2|em
+go ahead|cứ tiến hành|You can go ahead with the pickup.|A2|em
+revert|phản hồi lại|I will revert to you by tomorrow.|B2|em
+get back to you|trả lời lại bạn|I will get back to you this afternoon.|A2|em
+look forward to|mong đợi|We look forward to your reply.|A2|em
+apologise for the inconvenience|xin lỗi vì sự bất tiện|We apologise for the inconvenience caused.|B1|em
+in advance|trước|Thank you in advance for your help.|A2|em
+cc|đồng gửi (cc)|I cc'd the sales team on this email.|A2|em
+subject line|tiêu đề email|Please put the booking number in the subject line.|A2|em
+regarding (Re:)|về việc|Regarding your shipment to Busan, the ETA is 5 June.|A2|em
+with reference to|liên quan đến|With reference to our call, I attach the quote.|B2|em
+at the moment|hiện tại|At the moment, there is no space.|A2|em
+in the meantime|trong khi chờ đợi|In the meantime, please prepare the documents.|B1|em
+as discussed|như đã trao đổi|As discussed, we will ship by air.|B1|em
+please note|xin lưu ý|Please note that the rates do not include duty.|A2|em
+subject to|tùy thuộc vào|Rates are subject to space availability.|B2|em
+TBC (to be confirmed)|sẽ xác nhận sau|ETD: 12 May (TBC).|A2|em
+TBA (to be advised)|sẽ thông báo sau|Vessel name: TBA.|B1|em
+N/A (not applicable)|không áp dụng|Insurance: N/A.|A2|em
+w/c (week commencing)|tuần bắt đầu từ|Cargo ready w/c 10 June.|B1|em
+EOD (end of day)|cuối ngày|I will send the invoice by EOD.|A2|em
+OOO (out of office)|vắng mặt|I will be OOO on Friday.|A2|em
+escalate|chuyển lên cấp cao hơn|If there is no reply, I will escalate the case.|B2|em
+conference call|cuộc họp qua điện thoại|We have a conference call with the client at 3 p.m.|B1|em
+hold the line|vui lòng giữ máy|Please hold the line, I will check.|A2|em
+call back|gọi lại|Can I call you back in 10 minutes?|A2|em
+leave a message|để lại lời nhắn|Can I leave a message for Ms Lan?|A2|em
+speak up|nói to hơn|Sorry, could you speak up a little?|A2|em
+spell|đánh vần|Could you spell the consignee's name, please?|A2|em
+customer service (CS)|dịch vụ khách hàng|Our CS team will update you daily.|A2|pe
+sales executive|nhân viên kinh doanh|Our sales executive will send the quote.|A2|pe
+operations (ops)|bộ phận hiện trường/điều phối|Ops will arrange the trucking.|A2|pe
+documentation staff|nhân viên chứng từ|Our documentation staff will check the B/L.|B1|pe
+pricing team|bộ phận báo giá|The pricing team is checking the rates.|B1|pe
+account manager|người quản lý khách hàng|Your account manager is Mr Hai.|B1|pe
+warehouse supervisor|giám sát kho|The warehouse supervisor approved the overtime.|B1|pe
+logistics coordinator|điều phối viên logistics|The logistics coordinator handles all bookings.|B1|pe
+import-export staff|nhân viên xuất nhập khẩu|Our import-export staff will prepare the declaration.|A2|pe
+purchasing staff / buyer|nhân viên mua hàng|The buyer placed the PO yesterday.|A2|pe
+agent|đại lý|Our agent in Rotterdam will handle delivery.|A2|pe
+overseas agent|đại lý nước ngoài|We will send the pre-alert to our overseas agent.|B1|pe
+counterpart|người phụ trách phía bên kia|I will contact my counterpart in Japan.|B2|pe
+vendor|nhà cung cấp|The vendor must deliver by Friday.|A2|pe
+client|khách hàng|The client wants weekly reports.|A2|pe
+person in charge (PIC)|người phụ trách|Who is the PIC for this shipment?|A2|pe
+contact person|người liên hệ|The contact person at the warehouse is Ms Mai.|A2|pe
+team leader|trưởng nhóm|The team leader assigns the tasks each morning.|A2|pe
+trainee|thực tập sinh|The trainee will help with data entry.|A2|pe
+colleague|đồng nghiệp|My colleague will take over while I am away.|A2|pe
+take over|tiếp quản công việc|Linh will take over this account from Monday.|B1|pe
+in charge of|phụ trách|I am in charge of import shipments.|A2|pe
+report to|báo cáo cho|I report to the logistics manager.|A2|pe
+handover|bàn giao|Please prepare a handover note before your leave.|B1|pe
+overtime|làm thêm giờ|We need overtime to clear the backlog.|A2|pe
+workload|khối lượng công việc|The workload is heavy in December.|B1|pe
+deadline|hạn chót|The deadline for the report is Friday.|A2|pe
+meeting|cuộc họp|We have a daily meeting at 8:30.|A2|pe
+pre-alert|thông báo trước hàng đến|Please send the pre-alert with the B/L copy.|B1|em
+shipping advice|thông báo giao hàng|The seller sent the shipping advice after loading.|B1|em
+booking amendment|sửa booking|We need a booking amendment: 2 x 40HC instead of 1.|B1|em
+cancellation|hủy|The cancellation fee is USD 100.|A2|em
+confirmation|sự xác nhận|We are waiting for confirmation from the carrier.|A2|em
+request|yêu cầu|We received your request for a quote.|A2|em
+inquiry / enquiry|yêu cầu thông tin, hỏi giá|Thank you for your inquiry.|A2|em
+feedback|phản hồi|Please give us your feedback on our service.|A2|em
+complaint|khiếu nại|We take every complaint seriously.|A2|em

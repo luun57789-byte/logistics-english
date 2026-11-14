@@ -1,0 +1,130 @@
+cold chain|chuỗi cung ứng lạnh|Vaccines need an unbroken cold chain.|B1|cc
+temperature-controlled|kiểm soát nhiệt độ|We offer temperature-controlled storage.|B1|cc
+chilled|ướp lạnh (0–5°C)|Chilled goods are kept at 2–4°C.|A2|cc
+frozen|đông lạnh|Frozen shrimp must stay at -18°C.|A2|cc
+set temperature|nhiệt độ cài đặt|The set temperature is -20°C.|B1|cc
+temperature log|nhật ký nhiệt độ|Please send the temperature log for the trip.|B1|cc
+data logger|thiết bị ghi nhiệt độ|Put a data logger in each container.|B1|cc
+ventilation|thông gió|Set the ventilation to 25 CBM per hour.|B2|cc
+humidity|độ ẩm|Humidity must be below 60%.|B1|cc
+cold storage|kho lạnh|We rent cold storage near the port.|A2|cc
+blast freezer|tủ cấp đông nhanh|Fresh fish goes into the blast freezer first.|B2|cc
+perishable goods|hàng dễ hư hỏng|Perishable goods have priority at the terminal.|B1|cc
+shelf life|thời hạn sử dụng|The shelf life of this product is 6 months.|B1|cc
+temperature excursion|sai lệch nhiệt độ ngoài ngưỡng|There was a temperature excursion during transit.|B2|cc
+pharma|dược phẩm|Pharma shipments need GDP-certified warehouses.|B1|cc
+insulated box|thùng giữ nhiệt|Samples are packed in an insulated box with dry ice.|B1|cc
+dry ice|đá khô|Dry ice is classed as dangerous goods for air.|B1|cc
+ice pack / gel pack|túi đá gel|Add four gel packs to each box.|A2|cc
+fresh produce|nông sản tươi|Fresh produce is shipped in reefers.|B1|cc
+dangerous goods (DG)|hàng nguy hiểm|DG must be declared to the carrier.|B1|cc
+hazardous materials (hazmat)|vật liệu nguy hiểm|Hazmat drivers need special training.|B1|cc
+DG declaration|tờ khai hàng nguy hiểm|Please submit the DG declaration with the booking.|B2|cc
+UN number|số UN|Lithium batteries have UN number 3480 or 3481.|B2|cc
+IMO class|nhóm hàng nguy hiểm IMO|This paint is IMO class 3.|B2|cc
+IMDG code|bộ luật hàng nguy hiểm đường biển|The cargo must follow the IMDG code.|B2|cc
+flammable|dễ cháy|Flammable liquids need special labels.|B1|cc
+lithium battery|pin lithium|Lithium batteries have strict air rules.|B1|cc
+DG surcharge|phụ phí hàng nguy hiểm|There is a DG surcharge of USD 250.|B2|cc
+non-DG|hàng không nguy hiểm|Please confirm the cargo is non-DG.|B1|cc
+leakage|rò rỉ|We found leakage from two drums.|B1|cc
+spill|tràn đổ|Clean up the spill immediately.|A2|cc
+safety|an toàn|Safety comes first in the warehouse.|A2|hs
+PPE (personal protective equipment)|đồ bảo hộ cá nhân|Wear your PPE at all times.|A2|hs
+hard hat|mũ bảo hộ|Wear a hard hat in the yard.|A2|hs
+safety shoes|giày bảo hộ|Safety shoes are required on the warehouse floor.|A2|hs
+hi-vis vest|áo phản quang|Visitors must wear a hi-vis vest.|A2|hs
+gloves|găng tay|Wear gloves when handling chemicals.|A2|hs
+fire extinguisher|bình chữa cháy|The fire extinguisher is next to the door.|A2|hs
+fire exit|lối thoát hiểm|Keep the fire exit clear.|A2|hs
+emergency|tình huống khẩn cấp|In an emergency, call 114.|A2|hs
+first aid|sơ cứu|The first aid kit is in the office.|A2|hs
+injury|chấn thương|Report every injury, even small ones.|A2|hs
+near miss|sự cố suýt xảy ra|We had a near miss with a forklift today.|B2|hs
+hazard|mối nguy|A wet floor is a hazard.|B1|hs
+risk assessment|đánh giá rủi ro|Do a risk assessment before the job.|B1|hs
+training|đào tạo|Forklift training takes three days.|A2|hs
+certificate|chứng chỉ|Only drivers with a certificate can use the forklift.|A2|hs
+inspection checklist|danh sách kiểm tra|Complete the inspection checklist every morning.|B1|hs
+5S|phương pháp 5S|We use 5S to keep the warehouse tidy.|B1|hs
+housekeeping|giữ gìn ngăn nắp|Good housekeeping prevents accidents.|B1|hs
+audit|đánh giá, kiểm toán|The customer will audit our warehouse next week.|B1|hs
+ISO certification|chứng nhận ISO|We have ISO 9001 certification.|B1|hs
+quality control|kiểm soát chất lượng|Quality control checks 10% of the cartons.|A2|hs
+SOP (standard operating procedure)|quy trình thao tác chuẩn|Follow the SOP for receiving.|B1|hs
+non-conformance|sự không phù hợp|Record any non-conformance in the system.|B2|hs
+corrective action|hành động khắc phục|What corrective action will you take?|B2|hs
+root cause|nguyên nhân gốc rễ|We need to find the root cause of the errors.|B2|hs
+security|an ninh|Security checks every truck at the gate.|A2|hs
+CCTV|camera giám sát|The loading area has CCTV.|A2|hs
+theft|trộm cắp|Seals help prevent theft.|B1|hs
+pilferage|mất cắp vặt (một phần hàng)|Pilferage was found in three cartons.|B2|hs
+loss|tổn thất, mất mát|The loss was covered by insurance.|A2|op
+missing|bị thiếu, bị mất|Two cartons are missing.|A2|op
+wet damage|hư hỏng do ướt|The cartons have wet damage.|B1|op
+crushed|bị đè bẹp|Several cartons were crushed.|B1|op
+dented|bị móp|The container is dented on one side.|B1|op
+torn|bị rách|The bags are torn.|A2|op
+broken|bị vỡ|Three bottles are broken.|A2|op
+survey|giám định tổn thất|We have asked for a survey of the damaged cargo.|B2|op
+surveyor|giám định viên|The surveyor will inspect the cargo tomorrow.|B2|op
+survey report|biên bản giám định|The survey report confirms water damage.|B2|op
+claim form|mẫu đơn khiếu nại|Please fill in the claim form.|B1|op
+notice of claim|thông báo khiếu nại|Send a notice of claim within 3 days of delivery.|B2|op
+time bar|thời hiệu khiếu nại|The time bar for this claim is one year.|B2|op
+exception|ngoại lệ, sự cố|The delivery has an exception: address not found.|B1|op
+issue|vấn đề|We have an issue with the booking.|A2|op
+problem|vấn đề, trục trặc|What is the problem with the shipment?|A2|op
+solution|giải pháp|We need a solution by tomorrow.|A2|op
+workaround|giải pháp tạm thời|As a workaround, we will truck the cargo to Hai Phong.|B2|op
+priority|ưu tiên|This order has top priority.|A2|op
+rush order|đơn gấp|We have a rush order for Monday.|B1|op
+urgent shipment|lô hàng gấp|Urgent shipments go by air.|A2|op
+deadline missed|trễ hạn|The deadline was missed because of the storm.|B1|op
+on schedule|đúng lịch|The shipment is on schedule.|A2|op
+behind schedule|chậm lịch|We are two days behind schedule.|B1|op
+ahead of schedule|sớm hơn lịch|The vessel arrived ahead of schedule.|B1|op
+reschedule|dời lịch|Can we reschedule the pickup to Friday?|A2|op
+postpone|hoãn|The inspection was postponed to next week.|B1|op
+cancel|hủy|The customer cancelled the order.|A2|op
+arrange|sắp xếp, bố trí|We will arrange a truck for tomorrow.|A2|op
+handle|xử lý|Who handles this shipment?|A2|op
+check|kiểm tra|Please check the packing list again.|A2|op
+double-check|kiểm tra lại|Please double-check the container number.|A2|op
+verify|xác minh|Verify the address before dispatch.|B1|op
+notify|thông báo|Please notify the consignee.|B1|op
+inform|cho biết, thông báo|We will inform you when the cargo arrives.|A2|op
+submit|nộp|Submit the SI before the cut-off.|A2|op
+issue (a document)|phát hành (chứng từ)|The carrier will issue the B/L after departure.|B1|op
+release|giải phóng, phát hành|The cargo will be released after payment.|B1|op
+collect|lấy, nhận|You can collect the container tomorrow.|A2|op
+deliver|giao hàng|We deliver to all provinces.|A2|op
+load|xếp hàng lên|Load the heavy cartons first.|A2|op
+unload|dỡ hàng xuống|Unload the truck at dock 2.|A2|op
+ship|gửi hàng|We ship every Tuesday.|A2|op
+book|đặt (chỗ, xe)|I need to book a 40HC for next week.|A2|op
+track|theo dõi|You can track the container online.|A2|op
+trace|truy tìm|We are trying to trace the missing pallet.|B1|op
+allocate|phân bổ|The carrier allocated 10 containers to us.|B2|op
+assign|giao (việc), phân công|I assigned the order to Nam.|B1|op
+coordinate|phối hợp|I coordinate with the forwarder every day.|B1|op
+monitor|giám sát|We monitor the temperature during transit.|B1|op
+resolve|giải quyết|The issue was resolved quickly.|B1|op
+approve|phê duyệt|The manager approved the extra cost.|A2|op
+reject|từ chối|Customs rejected the declaration.|A2|op
+store|lưu trữ|We store the goods for 30 days.|A2|op
+transfer|chuyển|Transfer the stock to the new warehouse.|A2|op
+return|trả lại|The customer returned five items.|A2|op
+replace|thay thế|We will replace the damaged items.|A2|op
+improve|cải thiện|We want to improve on-time delivery.|A2|op
+reduce|giảm|Reduce empty miles to save fuel.|A2|op
+increase|tăng|Volumes increased by 20%.|A2|op
+performance|hiệu suất|Carrier performance improved this month.|B1|op
+target|mục tiêu|Our target is 98% accuracy.|A2|op
+lead time variance|độ lệch thời gian chờ|Lead time variance makes planning hard.|B2|op
+order accuracy|độ chính xác đơn hàng|Order accuracy reached 99.8%.|B1|op
+throughput|năng suất xử lý|Warehouse throughput is 5,000 cartons a day.|B2|op
+productivity|năng suất|Picking productivity is 120 lines per hour.|B1|op
+utilisation|hiệu suất sử dụng|Truck utilisation is only 70%.|B2|op
+capacity|năng lực, công suất|We don't have enough capacity in December.|B1|op
+shipping volume|sản lượng|Our volume is 300 TEU a month.|A2|op

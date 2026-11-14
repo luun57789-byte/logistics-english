@@ -1,0 +1,105 @@
+order|đơn hàng|We received the order this morning.|A2|pu
+place an order|đặt hàng|We placed an order for 5,000 units.|A2|pu
+order confirmation|xác nhận đơn hàng|Please send the order confirmation.|A2|pu
+sales order (SO)|đơn bán hàng|Create a sales order in the system.|B1|pu
+order quantity|số lượng đặt|The minimum order quantity is 500 pcs.|A2|pu
+MOQ (minimum order quantity)|số lượng đặt hàng tối thiểu|The MOQ for this product is 1,000 pcs.|B1|pu
+unit price|đơn giá|The unit price is USD 1.20.|A2|pu
+price list|bảng giá|Here is our price list for 2027.|A2|pu
+discount|chiết khấu|We can offer a 5% discount for large orders.|A2|pu
+sample|hàng mẫu|We will send the sample by courier.|A2|pu
+production|sản xuất|Production will finish on 20 May.|A2|pu
+cargo ready date (CRD)|ngày hàng sẵn sàng|The cargo ready date is 15 June.|B1|pu
+ex-factory date|ngày xuất xưởng|The ex-factory date has moved to next week.|B1|pu
+delivery date|ngày giao hàng|The customer wants a delivery date of 1 July.|A2|pu
+partial shipment|giao hàng từng phần|Partial shipment is allowed under this L/C.|B1|pu
+backorder|đơn hàng chờ (chưa đủ hàng)|The rest of the order is on backorder.|B1|pu
+split shipment|chia lô giao hàng|We will split the shipment into two containers.|B1|pu
+buyer|người mua|The buyer is in Germany.|A2|pu
+seller|người bán|The seller is responsible for export clearance.|A2|pu
+exporter|nhà xuất khẩu|Vietnam is a big exporter of coffee.|A2|pu
+importer|nhà nhập khẩu|The importer pays the import duty.|A2|pu
+importer of record|người nhập khẩu đứng tên|Who is the importer of record?|B2|pu
+trading company|công ty thương mại|We buy through a trading company in Hong Kong.|B1|pu
+factory|nhà máy|The factory is in Bac Ninh.|A2|pu
+raw materials|nguyên vật liệu|Raw materials come from Korea.|A2|pu
+components|linh kiện|We import electronic components from Japan.|A2|pu
+spare parts|phụ tùng|Spare parts are sent by air.|A2|pu
+finished goods|thành phẩm|Finished goods are stored in warehouse B.|B1|pu
+work in progress (WIP)|bán thành phẩm|WIP is not counted as finished goods.|B2|pu
+quality check (QC)|kiểm tra chất lượng|QC will check the goods before loading.|A2|pu
+pre-shipment inspection|giám định trước khi giao|The buyer requires a pre-shipment inspection.|B1|pu
+defect|lỗi sản phẩm|We found defects in 3% of the goods.|B1|pu
+rejection|từ chối (hàng)|The customer rejection rate is too high.|B1|pu
+specifications (specs)|thông số kỹ thuật|Please send the product specs.|A2|pu
+negotiate|đàm phán|We negotiated a better rate with the carrier.|B1|pu
+supply|cung cấp; nguồn cung|There is a supply shortage of chips.|A2|sc
+demand|nhu cầu|Demand is high before Tet.|A2|sc
+forecast|dự báo|The sales forecast for next month is 20,000 units.|B1|sc
+planning|lập kế hoạch|Good planning reduces urgent air shipments.|A2|sc
+visibility|khả năng theo dõi toàn chuỗi|We need better visibility of our shipments.|B2|sc
+end-to-end|toàn trình|We offer end-to-end logistics solutions.|B1|sc
+flow|dòng chảy (hàng, thông tin)|We want a smooth flow of goods.|B1|sc
+sourcing|tìm nguồn hàng|We are sourcing new suppliers in Thailand.|B1|sc
+outsourcing|thuê ngoài|Outsourcing transport saves us money.|B1|sc
+just-in-time (JIT)|đúng lúc|The car factory works on a JIT basis.|B2|sc
+lean|tinh gọn|Lean warehouses reduce waste.|B2|sc
+disruption|gián đoạn|The storm caused a supply chain disruption.|B1|sc
+risk|rủi ro|Single sourcing increases risk.|A2|sc
+contingency plan|kế hoạch dự phòng|We need a contingency plan for port strikes.|B2|sc
+cost-effective|hiệu quả về chi phí|Sea freight is more cost-effective.|B1|sc
+efficiency|hiệu quả|The new layout improved efficiency.|B1|sc
+service level|mức dịch vụ|Our target service level is 98%.|B1|sc
+SLA (service level agreement)|thỏa thuận mức dịch vụ|The SLA says orders are shipped within 24 hours.|B2|sc
+customer requirement|yêu cầu khách hàng|Check the customer requirements before packing.|A2|sc
+lead time reduction|giảm thời gian chờ|Lead time reduction is our main goal.|B2|sc
+order cycle|chu kỳ đơn hàng|The order cycle is 10 days.|B2|sc
+sustainability|tính bền vững|Customers care about sustainability.|B1|sc
+carbon emissions|lượng khí thải carbon|Rail has lower carbon emissions than road.|B1|sc
+WMS (warehouse management system)|hệ thống quản lý kho|The WMS shows real-time stock.|B1|it
+TMS (transport management system)|hệ thống quản lý vận tải|We plan routes in the TMS.|B1|it
+ERP|hệ thống hoạch định nguồn lực doanh nghiệp|Orders come from the ERP system.|B1|it
+EDI (electronic data interchange)|trao đổi dữ liệu điện tử|The customer sends orders by EDI.|B2|it
+system|hệ thống|The system is down this morning.|A2|it
+data entry|nhập liệu|Data entry must be accurate.|A2|it
+input|nhập vào (hệ thống)|Please input the container number in the system.|A2|it
+real-time|thời gian thực|We can see real-time location of the trucks.|B1|it
+dashboard|bảng điều khiển số liệu|The dashboard shows today's KPIs.|B1|it
+report|báo cáo|Please send the weekly report on Monday.|A2|it
+spreadsheet|bảng tính|I keep the shipment list in a spreadsheet.|A2|it
+tracking number|mã vận đơn, mã theo dõi|Here is the tracking number for your parcel.|A2|it
+tracking link|đường dẫn theo dõi|Click the tracking link to see the status.|A2|it
+status|trạng thái|The status shows "in transit".|A2|it
+in transit|đang vận chuyển|The goods are in transit.|A2|it
+RFID|nhận dạng bằng sóng vô tuyến|RFID tags help count inventory quickly.|B2|it
+handheld|máy cầm tay|Pickers use a handheld to scan items.|B1|it
+portal|cổng thông tin trực tuyến|Book your shipment on our customer portal.|B1|it
+upload|tải lên|Upload the invoice to the portal.|A2|it
+download|tải xuống|You can download the B/L from the website.|A2|it
+automation|tự động hóa|Automation reduces picking errors.|B1|it
+e-commerce|thương mại điện tử|E-commerce orders are small but many.|A2|ec
+online order|đơn hàng trực tuyến|We ship 3,000 online orders a day.|A2|ec
+marketplace|sàn thương mại điện tử|We sell on Shopee and Lazada marketplaces.|A2|ec
+fulfilment|xử lý đơn hàng (lấy, đóng, giao)|We outsource fulfilment to a 3PL.|B1|ec
+fulfilment center|trung tâm xử lý đơn hàng|The fulfilment center runs 24/7.|B1|ec
+parcel|bưu kiện|The parcel was delivered at 2 p.m.|A2|ec
+same-day delivery|giao trong ngày|Same-day delivery is available in Hanoi.|A2|ec
+next-day delivery|giao ngày hôm sau|Next-day delivery costs extra.|A2|ec
+express delivery|giao nhanh|Choose express delivery at checkout.|A2|ec
+standard delivery|giao tiêu chuẩn|Standard delivery takes 3–5 days.|A2|ec
+shipping fee|phí vận chuyển|Free shipping fee for orders over 300,000 dong.|A2|ec
+return policy|chính sách đổi trả|Our return policy allows returns within 7 days.|A2|ec
+return rate|tỷ lệ hoàn hàng|The return rate for fashion is high.|B1|ec
+pick-up point|điểm nhận hàng|You can collect your parcel at a pick-up point.|A2|ec
+parcel locker|tủ nhận hàng|Parcel lockers reduce failed deliveries.|B1|ec
+sorting|phân loại hàng|Parcels go through sorting at the hub.|A2|ec
+sorting center|trung tâm phân loại|The parcel is at the sorting center.|A2|ec
+hub|trung tâm trung chuyển|All parcels go through the main hub.|A2|ec
+shipper (delivery rider)|nhân viên giao hàng|The shipper will call you before delivery.|A2|ec
+order status|trạng thái đơn hàng|You can check the order status online.|A2|ec
+out for delivery|đang giao hàng|Your parcel is out for delivery.|A2|ec
+delivered|đã giao|Status: delivered.|A2|ec
+seller center|trung tâm người bán|Print the label from the seller center.|B1|ec
+flash sale|đợt giảm giá chớp nhoáng|Order volume triples during a flash sale.|A2|ec
+peak day|ngày cao điểm|11.11 is our biggest peak day.|B1|ec
+cross-border e-commerce|thương mại điện tử xuyên biên giới|Cross-border e-commerce parcels need simple customs procedures.|B2|ec

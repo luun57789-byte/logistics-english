@@ -1,0 +1,121 @@
+air freight rate|giá cước hàng không|Air freight rates rise before Christmas.|A2|af
+cargo acceptance|tiếp nhận hàng (tại sân bay)|Cargo acceptance closes 6 hours before departure.|B1|af
+airline cut-off|giờ cắt hàng của hãng bay|The airline cut-off is 10 p.m.|B1|af
+known shipper|người gửi hàng được chứng nhận an ninh|As a known shipper, our cargo needs less screening.|B2|af
+dimension check|kiểm tra kích thước|The terminal did a dimension check on each piece.|B1|af
+oversize|quá cỡ|This box is oversize for the passenger aircraft.|B1|af
+cargo-only aircraft (CAO)|chỉ được chở trên máy bay hàng|The label says "cargo aircraft only".|B2|af
+priority service|dịch vụ ưu tiên|Priority service guarantees the first flight.|B1|af
+deferred service|dịch vụ tiết kiệm (chậm hơn)|Deferred service is cheaper but slower.|B2|af
+customs at the airport|hải quan sân bay|Customs at the airport cleared the cargo in 4 hours.|A2|af
+flight delay|chậm chuyến bay|A flight delay pushed the arrival to Saturday.|A2|af
+airport transfer|chuyển hàng giữa các sân bay|An airport transfer is needed from Hanoi to Ho Chi Minh City.|B1|af
+air cargo manifest|lược khai hàng không|The air cargo manifest lists every HAWB.|B2|af
+pallet label|nhãn pallet|Print a pallet label for each pallet.|A2|wh
+cartons per pallet|số thùng mỗi pallet|There are 48 cartons per pallet.|A2|wh
+layer|lớp (xếp hàng)|Stack the cartons six layers high.|A2|wh
+mixed pallet|pallet hỗn hợp|A mixed pallet has more than one SKU.|B1|wh
+full pallet|pallet nguyên|We ship full pallets to the distributors.|A2|wh
+pick face|vị trí lấy hàng|Refill the pick face when it is empty.|B2|wh
+mezzanine|tầng lửng|Small items are stored on the mezzanine.|B2|wh
+conveyor|băng chuyền|The conveyor moves cartons to the packing area.|A2|wh
+sorter|máy phân loại|The sorter handles 10,000 parcels per hour.|B1|wh
+packing station|bàn đóng gói|Each packing station has a printer and scale.|A2|wh
+weighing scale|cân|Weigh each carton on the weighing scale.|A2|wh
+filler / void fill|vật liệu chèn|Use void fill to protect the items.|B1|wh
+bubble wrap|màng xốp hơi|Wrap the glass in bubble wrap.|A2|wh
+tape|băng keo|Seal the box with brown tape.|A2|wh
+seal (a box)|dán kín (thùng)|Seal the box after checking the items.|A2|wh
+temperature zone|vùng nhiệt độ|The warehouse has three temperature zones.|B1|wh
+bonded storage|lưu kho ngoại quan|Bonded storage lets you delay paying duty.|B2|wh
+warehouse layout|bố trí mặt bằng kho|The new warehouse layout reduces travel time.|B1|wh
+occupancy|tỷ lệ lấp đầy kho|Warehouse occupancy is 85%.|B2|wh
+inventory turnover|vòng quay hàng tồn kho|Inventory turnover is 8 times a year.|B2|wh
+days of inventory|số ngày tồn kho|We hold 30 days of inventory.|B2|wh
+warehouse receipt|phiếu lưu kho|The warehouse receipt shows the storage date.|B1|wh
+security seal|niêm phong an ninh|Check the security seal before opening.|B1|hs
+gate check|kiểm tra tại cổng|Every truck has a gate check.|A2|hs
+visitor badge|thẻ khách|All visitors must wear a visitor badge.|A2|hs
+no smoking|cấm hút thuốc|No smoking in the warehouse.|A2|hs
+speed limit|giới hạn tốc độ|The forklift speed limit is 10 km/h.|A2|hs
+pedestrian walkway|lối đi bộ|Stay on the pedestrian walkway.|A2|hs
+load securing|cố định hàng|Load securing prevents accidents on the road.|B1|hs
+overloading|chở quá tải|Overloading is illegal and dangerous.|B1|hs
+incident report|báo cáo sự cố|Write an incident report within 24 hours.|B1|hs
+driver's license|bằng lái xe|The driver showed his license at the gate.|A2|td
+driving hours|giờ lái xe|Drivers must not exceed the legal driving hours.|B1|td
+rest stop|điểm dừng nghỉ|The driver took a rest stop after 4 hours.|A2|td
+traffic jam|kẹt xe|The truck is stuck in a traffic jam.|A2|td
+detour|đường vòng|The truck took a detour because of the flood.|B1|td
+loading time|thời gian bốc hàng|Loading time is about 45 minutes.|A2|td
+truck booking|đặt xe|Truck booking must be made by 3 p.m. the day before.|A2|td
+trucking rate|giá cước xe|The trucking rate is based on distance.|A2|td
+fuel surcharge (road)|phụ phí xăng dầu (đường bộ)|A fuel surcharge applies when diesel prices rise.|B1|td
+backhaul|chiều về có hàng|We look for backhaul loads to reduce empty trips.|B2|td
+empty run|chạy rỗng|Empty runs waste fuel and money.|B1|td
+delivery route|tuyến giao hàng|The delivery route has 25 stops.|A2|td
+stop|điểm giao|This is the third stop today.|A2|td
+receiver|người nhận|The receiver was not at home.|A2|td
+signature|chữ ký|Please get the receiver's signature.|A2|td
+e-POD|bằng chứng giao hàng điện tử|Drivers upload an e-POD with a photo.|B1|td
+EDI message|thông điệp EDI|The carrier sends status updates by EDI message.|B2|it
+API|giao diện kết nối phần mềm|We connect to the carrier's tracking API.|B2|it
+login|đăng nhập|Please send me the portal login.|A2|it
+password|mật khẩu|Do not share your password.|A2|it
+error message|thông báo lỗi|The system shows an error message.|A2|it
+backup|sao lưu|We back up the WMS data every night.|B1|it
+label printer|máy in nhãn|The label printer is out of paper.|A2|it
+data accuracy|độ chính xác dữ liệu|Data accuracy is important for customs.|B1|it
+digitalisation|số hóa|Digitalisation reduces paperwork.|B2|it
+paperless|không giấy tờ|We aim for paperless customs clearance.|B1|it
+track and trace system|hệ thống theo dõi hành trình|Our track and trace system updates every hour.|B1|it
+proof of identity|giấy tờ tùy thân|The driver must show proof of identity.|B1|it
+order management|quản lý đơn hàng|Order management is done in the ERP.|B1|it
+shipment status|trạng thái lô hàng|Shipment status: arrived at destination port.|A2|it
+milestone|mốc (hành trình)|The next milestone is customs release.|B1|it
+COD reconciliation|đối soát COD|COD reconciliation is done every week.|B1|ec
+packaging cost|chi phí bao bì|Smaller boxes reduce packaging cost.|A2|ec
+unboxing|mở hộp|Good packaging gives a good unboxing experience.|B1|ec
+SKU count|số lượng mã hàng|Our SKU count doubled this year.|B1|ec
+order cut-off|giờ chốt đơn|The order cut-off for same-day delivery is 11 a.m.|B1|ec
+customer review|đánh giá của khách|Late delivery leads to bad customer reviews.|A2|ec
+delivery attempt|lần giao hàng|We make three delivery attempts.|B1|ec
+refund request|yêu cầu hoàn tiền|The customer sent a refund request.|A2|ec
+exchange|đổi hàng|The customer wants an exchange for a bigger size.|A2|ec
+last-mile carrier|đơn vị giao chặng cuối|We use two last-mile carriers in Hanoi.|B1|ec
+dropshipping|bán hàng không giữ kho|With dropshipping, the supplier ships directly to the customer.|B2|ec
+pick, pack and ship|lấy, đóng, giao|Our 3PL handles pick, pack and ship.|B1|ec
+general manager|tổng giám đốc|The general manager approved the new contract.|A2|pe
+logistics manager|trưởng phòng logistics|The logistics manager reviews carrier performance.|A2|pe
+supply chain manager|quản lý chuỗi cung ứng|The supply chain manager sets inventory targets.|B1|pe
+planner|nhân viên kế hoạch|The planner updates the forecast every week.|B1|pe
+forklift driver|tài xế xe nâng|We are hiring two forklift drivers.|A2|pe
+storekeeper|thủ kho|The storekeeper checks every receipt.|A2|pe
+customs declarant|nhân viên khai báo hải quan|Our customs declarant has a certificate.|B1|pe
+freight forwarder staff|nhân viên forwarder|The forwarder staff sent the arrival notice.|A2|pe
+shipping clerk|nhân viên giao nhận|The shipping clerk prepares the documents.|A2|pe
+key account|khách hàng lớn|Samsung is our key account.|B1|pe
+supplier evaluation|đánh giá nhà cung cấp|We do a supplier evaluation every year.|B1|pu
+purchase request (PR)|đề nghị mua hàng|Create a PR before you order.|B1|pu
+lead time (supplier)|thời gian giao của nhà cung cấp|Supplier lead time is 45 days.|B1|pu
+quotation comparison|so sánh báo giá|Prepare a quotation comparison of three suppliers.|B1|pu
+long-term contract|hợp đồng dài hạn|We signed a long-term contract with the carrier.|B1|pu
+order volume|lượng đơn hàng|Order volume is lower in February.|A2|pu
+re-order|đặt hàng lại|We re-order every two weeks.|A2|pu
+safety stock level|mức tồn kho an toàn|Set the safety stock level for each SKU.|B2|sc
+stock coverage|số ngày đủ hàng|Stock coverage is 3 weeks.|B2|sc
+demand planning|hoạch định nhu cầu|Demand planning uses sales history.|B2|sc
+supply planning|hoạch định cung ứng|Supply planning matches orders with capacity.|B2|sc
+network design|thiết kế mạng lưới|Network design decides where to build warehouses.|B2|sc
+nearshoring|dịch chuyển sản xuất gần thị trường|Nearshoring is growing in Mexico.|B2|sc
+dual sourcing|mua từ hai nguồn|Dual sourcing reduces supply risk.|B2|sc
+supplier lead time|thời gian giao hàng của nhà cung cấp|We track supplier lead time every month.|B1|sc
+shortage of supply|thiếu nguồn cung|A shortage of supply delayed production.|B1|sc
+on-time in-full (OTIF)|giao đúng hạn, đủ hàng|Our OTIF is 94%.|B2|op
+perfect order|đơn hàng hoàn hảo|A perfect order is on time, in full and without damage.|B2|op
+cost per unit|chi phí trên mỗi đơn vị|Cost per unit fell by 5%.|B1|op
+cost per order|chi phí trên mỗi đơn hàng|Our cost per order is 18,000 dong.|B1|op
+error rate|tỷ lệ lỗi|The picking error rate is 0.2%.|B1|op
+lessons learned|bài học rút ra|Let's write down the lessons learned.|B1|op
+continuous improvement|cải tiến liên tục|Continuous improvement is part of our culture.|B1|op
+weekly report|báo cáo tuần|The weekly report is due on Monday.|A2|op

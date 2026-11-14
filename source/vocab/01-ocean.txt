@@ -1,0 +1,73 @@
+shipping line|hãng tàu|The shipping line released the booking this morning.|A2|oc
+booking number|số booking|Please quote the booking number in all emails.|A2|oc
+booking request|yêu cầu đặt chỗ|I have sent the booking request to Maersk.|B1|oc
+space|chỗ (trên tàu)|There is no space on this vessel; can we roll to next week?|B1|oc
+roll over|bị rớt tàu, chuyển sang chuyến sau|Our container was rolled over to the next vessel.|B1|oc
+vessel schedule|lịch tàu|Please check the vessel schedule for December.|A2|oc
+voyage number|số chuyến|The vessel name is ONE Apus, voyage number 045E.|B1|oc
+feeder vessel|tàu gom/tàu feeder|A feeder vessel takes the container to Singapore.|B1|oc
+mother vessel|tàu mẹ|The cargo is transferred to the mother vessel in Singapore.|B1|oc
+direct service|tuyến đi thẳng|Is this a direct service or via Busan?|B1|oc
+via|qua (cảng chuyển tải)|The routing is Hai Phong to Long Beach via Kaohsiung.|A2|oc
+routing|tuyến đường vận chuyển|Please confirm the routing before booking.|B1|oc
+SI cut-off|hạn nộp chi tiết làm B/L|SI cut-off is Wednesday 5 p.m.|B1|oc
+CY cut-off|hạn hạ container tại bãi|The CY cut-off is Thursday at noon.|B1|oc
+VGM (verified gross mass)|khối lượng tổng đã xác nhận|Please submit the VGM before the cut-off.|B1|oc
+VGM cut-off|hạn nộp VGM|We missed the VGM cut-off, so the container was not loaded.|B2|oc
+empty container|container rỗng|Pick up the empty container from the depot tomorrow.|A2|oc
+container depot|bãi container rỗng|The empty container is at the Phuoc Long depot.|B1|oc
+gate in|hạ container vào cảng|The container gated in at Cat Lai at 2 p.m.|B1|oc
+gate out|lấy container ra khỏi cảng|The full container gated out this morning.|B1|oc
+loaded on board|đã xếp lên tàu|The container is loaded on board.|B1|oc
+discharged|đã dỡ khỏi tàu|The container was discharged at Long Beach yesterday.|B1|oc
+stuffing|đóng hàng vào container|Stuffing will start at 8 a.m. at the factory.|B1|oc
+unstuffing / devanning|rút hàng khỏi container|Unstuffing takes about two hours.|B2|oc
+20GP|container 20 feet thường|We need one 20GP for this order.|A2|oc
+40GP|container 40 feet thường|A 40GP holds about 67 CBM.|A2|oc
+40HC (high cube)|container 40 feet cao|Please book two 40HC for furniture.|A2|oc
+open top|container hở mái|Large machines are shipped in an open top container.|B1|oc
+flat rack|container mặt bằng|The excavator needs a flat rack.|B1|oc
+out of gauge (OOG)|hàng quá khổ|OOG cargo has extra charges.|B2|oc
+container number|số container|Please send me the container number and seal number.|A2|oc
+tare weight|trọng lượng vỏ container|The tare weight of a 40HC is about 3,900 kg.|B1|oc
+payload|tải trọng hàng tối đa|The maximum payload of this container is 26 tonnes.|B1|oc
+overweight|quá tải|The container is overweight and cannot be loaded.|B1|oc
+free time|thời gian miễn phí lưu cont/bãi|We have 7 days free time at destination.|B1|oc
+storage charge|phí lưu bãi|Storage charges started on day 5.|B1|oc
+port congestion|ùn tắc cảng|Port congestion caused a three-day delay.|B1|oc
+blank sailing|chuyến tàu bị hủy|The carrier announced a blank sailing next week.|B2|oc
+peak season|mùa cao điểm|Rates are high during peak season.|A2|oc
+off-peak|mùa thấp điểm|Off-peak rates are much lower.|B1|oc
+PSS (peak season surcharge)|phụ phí mùa cao điểm|A PSS of USD 300 applies from 1 August.|B2|oc
+BAF (bunker adjustment factor)|phụ phí nhiên liệu đường biển|BAF changes every month.|B2|oc
+CIC (container imbalance charge)|phụ phí mất cân bằng container|CIC is charged on imports from Asia.|B2|oc
+EBS (emergency bunker surcharge)|phụ phí nhiên liệu khẩn cấp|The carrier added an EBS of USD 100.|B2|oc
+GRI (general rate increase)|tăng giá cước chung|There is a GRI on the Asia–Europe route next month.|B2|oc
+all-in rate|giá trọn gói|Is this an all-in rate or are there extra surcharges?|B1|oc
+ocean carrier|hãng vận tải biển|The ocean carrier confirmed the space.|B1|oc
+NVOCC|người vận chuyển không tàu|As an NVOCC, we issue our own house bill.|B2|oc
+co-loader|đơn vị gom hàng lẻ|We send LCL cargo through a co-loader.|B2|oc
+CFS (container freight station)|kho hàng lẻ|LCL cargo must be delivered to the CFS.|B1|oc
+CFS charge|phí kho hàng lẻ|The CFS charge is USD 15 per CBM.|B1|oc
+port of transshipment|cảng chuyển tải|The port of transshipment is Singapore.|B1|oc
+final destination|nơi đến cuối cùng|The final destination is Chicago.|A2|oc
+place of receipt|nơi nhận hàng|The place of receipt is our factory in Bac Ninh.|B1|oc
+place of delivery|nơi giao hàng|The place of delivery is the buyer's warehouse.|B1|oc
+ATD / ATA|ngày đi / đến thực tế|ATD was 3 May, two days later than ETD.|B1|oc
+departure|khởi hành|Departure is scheduled for Friday.|A2|oc
+arrival|việc đến nơi|Please inform the consignee before arrival.|A2|oc
+sailing|chuyến tàu|There are two sailings per week.|B1|oc
+weekly service|tuyến hàng tuần|This is a weekly service with fixed day.|B1|oc
+lashing|chằng buộc hàng|Proper lashing prevents cargo from moving.|B2|oc
+dunnage|vật chèn lót|Use dunnage to fill the empty space in the container.|B2|oc
+shipping mark|ký mã hiệu|Each carton must show the shipping mark.|B1|oc
+container seal|kẹp chì container|The container seal was broken on arrival.|B1|oc
+inland haulage|vận chuyển nội địa (kéo cont)|Inland haulage from the port to Binh Duong costs USD 180.|B2|oc
+pre-carriage|vận chuyển chặng đầu|Pre-carriage is by truck from the factory to the port.|B2|oc
+on-carriage|vận chuyển chặng sau|On-carriage is by rail to Chicago.|B2|oc
+shipper's load and count|chủ hàng tự đóng và đếm|The B/L says "shipper's load and count".|B2|oc
+SOC (shipper-owned container)|container của chủ hàng|We use SOC containers for this route.|B2|oc
+COC (carrier-owned container)|container của hãng tàu|Most shipments use COC containers.|B2|oc
+reefer plug|ổ cắm điện container lạnh|The reefer must be connected to a reefer plug at the terminal.|B2|oc
+pre-trip inspection (PTI)|kiểm tra container lạnh trước khi đi|The depot completed the PTI on the reefer.|B2|oc
+genset|máy phát điện cho container lạnh|A genset is used while the reefer is on the truck.|B2|oc
