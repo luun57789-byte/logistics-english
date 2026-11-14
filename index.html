@@ -1211,7 +1211,17 @@ cost per order|chi phí trên mỗi đơn hàng|Our cost per order is 18,000 don
 error rate|tỷ lệ lỗi|The picking error rate is 0.2%.|B1|op
 lessons learned|bài học rút ra|Let's write down the lessons learned.|B1|op
 continuous improvement|cải tiến liên tục|Continuous improvement is part of our culture.|B1|op
-weekly report|báo cáo tuần|The weekly report is due on Monday.|A2|op`;
+weekly report|báo cáo tuần|The weekly report is due on Monday.|A2|op
+free time extension|gia hạn thời gian miễn phí|Could you request a free time extension of 7 days at destination?|B1|oc
+detention and demurrage (D&D)|phí lưu container (trong và ngoài cảng)|D&D charges started because the consignee picked up the container late.|B1|oc
+B/L release|phát hành vận đơn|We can do the B/L release once the freight is paid.|B1|dc
+freight invoice|hóa đơn cước|Please send the freight invoice so we can arrange payment.|A2|fi
+origin agent|đại lý đầu xuất|Our origin agent in Shanghai will collect the cargo.|B1|pe
+destination agent|đại lý đầu nhập|The destination agent will contact the consignee for customs clearance.|B1|pe
+loading photos|ảnh đóng hàng|Please send loading photos showing the container number and seal.|A2|oc
+container inspection|kiểm tra container rỗng|Do a container inspection before stuffing to check for holes and smells.|B1|oc
+shipment details|thông tin lô hàng|Please confirm the shipment details: 2 x 40HC, 18 tonnes, ETD 20 Nov.|A2|em
+rate confirmation|xác nhận giá|We need your rate confirmation before we can place the booking.|B1|fi`;
 const VOCAB=RAW.trim().split("\n").map((l,i)=>{const [term,vi,ex,level,topic]=l.split("|");return{id:"w"+i,term,vi,ex,level,topic}});
 
 /* ============ LISTENING ============ */
@@ -1242,7 +1252,10 @@ const LISTEN=[
   qs:[["What happened when the supplier's factory closed?",["Fill rate fell to 68%","Costs fell by 12%","Sales increased"],0],["What is dual sourcing?",["Using two transport modes","Buying from two suppliers","Using two warehouses"],1],["How will safety stock change?",["From 4 to 2 weeks","From 2 to 4 weeks","It will stay the same"],1],["What is the cost of the extra safety stock?",["About 12% higher holding costs","About 95% higher costs","No extra cost"],0]]},
  {id:"l9",level:"B2",title:"Negotiating Incoterms",vi:"Đàm phán Incoterms",
   lines:[["Buyer","We'd prefer to buy on DDP terms, so the price includes delivery to our warehouse in Lyon, duty paid."],["Seller","I understand, but DDP is risky for us. We're not registered as an importer in the EU, and French customs procedures are outside our control."],["Buyer","What would you suggest instead?"],["Seller","We could offer DAP Lyon. We'd still cover the freight to your door, but your customs broker would handle import clearance and pay the duty."],["Buyer","That means our costs aren't fixed. Could you lower the unit price to compensate?"],["Seller","If you commit to a twelve-month contract, we can reduce the price by three percent."],["Buyer","Make it four percent and we have a deal."],["Seller","Let's say three and a half, and we'll include cargo insurance."],["Buyer","Agreed."]],
-  qs:[["Why doesn't the seller want DDP?",["It is too slow","They aren't registered as an importer in the EU","The buyer has no warehouse"],1],["Under DAP, who pays import duty?",["The seller","The buyer","The carrier"],1],["What is the final deal?",["4% discount","3.5% discount plus cargo insurance","3% discount only"],1]]}
+  qs:[["Why doesn't the seller want DDP?",["It is too slow","They aren't registered as an importer in the EU","The buyer has no warehouse"],1],["Under DAP, who pays import duty?",["The seller","The buyer","The carrier"],1],["What is the final deal?",["4% discount","3.5% discount plus cargo insurance","3% discount only"],1]]},
+ {id:"l10",level:"B1",title:"Asking for more free time",vi:"Xin gia hạn thời gian miễn phí",
+  lines:[["Importer","Hello, this is Hoa from Minh Phat Trading. I'm calling about container TGHU 812345 7 at Cat Lai."],["Shipping line","Good morning, Ms Hoa. How can I help?"],["Importer","Our free time ends tomorrow, but customs selected the container for physical inspection on Friday. Could we get a free time extension?"],["Shipping line","I see. You have five days of combined free time. We can extend it by three days, but there is a fee of ten dollars per day."],["Importer","That's fine. Could you also waive the detention for the empty return? Our truck can only return it on Monday."],["Shipping line","I'm afraid I can't waive it, but if you return the empty container by Monday noon, there will be no extra charge."],["Importer","Great. Please send me the confirmation by email."],["Shipping line","Sure. Please send us the booking number and the customs inspection notice."]],
+  qs:[["Why does the importer need more free time?",["The truck broke down","Customs will inspect the container on Friday","The vessel arrived early"],1],["How many extra days does the shipping line give?",["Three days","Five days","Seven days"],0],["What must the importer send?",["The booking number and the inspection notice","The original B/L","A new invoice"],0]]}
 ];
 
 /* ============ READING ============ */
@@ -1388,7 +1401,7 @@ function drawVocab(){
 let listLevel="Tất cả";
 function listIndex(kind){
   const data=kind==="nghe"?LISTEN:kind==="doc"?READ:WRITE;
-  const head={nghe:["9 bài · A2 → B2","Bài nghe theo trình độ","Nghe hội thoại thực tế trong kho, cảng, hải quan. Chọn tốc độ đọc, nghe trước rồi mới mở lời thoại, sau đó trả lời câu hỏi."],
+  const head={nghe:[`${LISTEN.length} bài · A2 → B2`,"Bài nghe theo trình độ","Nghe hội thoại thực tế trong kho, cảng, hải quan. Chọn tốc độ đọc, nghe trước rồi mới mở lời thoại, sau đó trả lời câu hỏi."],
     doc:["6 bài · A2 → B2","Bài đọc","Bài đọc về nghiệp vụ logistics, có từ khóa và câu hỏi đọc hiểu chấm điểm ngay."],
     viet:["5 bài · A2 → B2","Bài viết","Viết email và báo cáo như ở công ty. App kiểm tra các ý bắt buộc, đếm từ và có bài mẫu để so sánh. Bản nháp tự lưu."]}[kind];
   app.innerHTML=`<div class="view-head"><span class="eyebrow">${head[0]}</span><h2>${head[1]}</h2><p class="lead">${head[2]}</p></div>

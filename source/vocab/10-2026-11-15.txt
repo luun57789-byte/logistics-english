@@ -1,0 +1,10 @@
+free time extension|gia hạn thời gian miễn phí|Could you request a free time extension of 7 days at destination?|B1|oc
+detention and demurrage (D&D)|phí lưu container (trong và ngoài cảng)|D&D charges started because the consignee picked up the container late.|B1|oc
+B/L release|phát hành vận đơn|We can do the B/L release once the freight is paid.|B1|dc
+freight invoice|hóa đơn cước|Please send the freight invoice so we can arrange payment.|A2|fi
+origin agent|đại lý đầu xuất|Our origin agent in Shanghai will collect the cargo.|B1|pe
+destination agent|đại lý đầu nhập|The destination agent will contact the consignee for customs clearance.|B1|pe
+loading photos|ảnh đóng hàng|Please send loading photos showing the container number and seal.|A2|oc
+container inspection|kiểm tra container rỗng|Do a container inspection before stuffing to check for holes and smells.|B1|oc
+shipment details|thông tin lô hàng|Please confirm the shipment details: 2 x 40HC, 18 tonnes, ETD 20 Nov.|A2|em
+rate confirmation|xác nhận giá|We need your rate confirmation before we can place the booking.|B1|fi
