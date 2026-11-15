@@ -151,6 +151,29 @@ details summary{cursor:pointer;font-weight:600;color:var(--steel)}
 .pron-words span{padding:2px 8px;border-radius:3px;font-weight:600}
 .pron-words .ok{background:var(--ok-bg);color:var(--ok)} .pron-words .near{background:var(--chip);color:var(--ink)} .pron-words .miss{background:var(--bad-bg);color:var(--bad)}
 #toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(16px + env(safe-area-inset-bottom,0px));max-width:min(520px,calc(100% - 32px));background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:var(--r);font-size:.9rem;z-index:20}
+.scard .sthumb{background:var(--chip);border-radius:4px;overflow:hidden}
+.stage{position:relative;border-radius:8px;overflow:hidden;background:linear-gradient(180deg,color-mix(in srgb,var(--steel) 18%,var(--surface)) 0%,var(--surface) 70%);border:1px solid var(--line);display:flex;flex-direction:column}
+.stage-art{opacity:.55}
+.stage svg,.sthumb svg{display:block;width:100%;height:auto}
+.a-ground{fill:var(--line)} .a-line{stroke:var(--muted);stroke-width:3;fill:none}
+.a-box0{fill:var(--accent)} .a-box1{fill:var(--steel)} .a-box2{fill:var(--navy)}
+.actors{display:flex;justify-content:space-around;align-items:flex-end;gap:12px;padding:8px 12px 12px;margin-top:-40px;position:relative}
+.actor{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1 1 0;min-width:0;position:relative}
+.face{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;font-family:var(--f-display);font-weight:800;font-size:1.8rem;color:var(--surface);border:4px solid var(--surface);box-shadow:0 2px 6px rgba(0,0,0,.15);transition:transform .25s}
+.a0 .face{background:var(--steel)} .a1 .face{background:var(--accent);color:var(--accent-ink)}
+.actor.talk .face{outline:3px solid var(--accent);outline-offset:3px;animation:bob .6s ease-in-out infinite alternate}
+@keyframes bob{from{transform:translateY(0)}to{transform:translateY(-5px)}}
+.nm{text-align:center;line-height:1.2}.nm small{display:block;color:var(--muted);font-size:.75rem}
+.bubble{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:.88rem;max-width:100%;box-shadow:0 2px 6px rgba(0,0,0,.08);text-align:left}
+.subs{background:var(--ink);color:var(--bg);padding:10px 14px;min-height:64px}
+.subs p{margin:0}.sub-en{font-size:1rem}.sub-vi{font-size:.88rem;opacity:.8;margin-top:4px}
+.subs .vw{color:var(--accent)}
+.vw{background:color-mix(in srgb,var(--accent) 28%,transparent);border:0;border-radius:3px;padding:0 3px;font:inherit;color:inherit;font-weight:600;cursor:pointer}
+.vw.chip{padding:3px 8px;font-size:.85rem}
+.wpop{border:1px solid var(--accent);background:var(--surface);border-radius:var(--r);padding:12px;display:flex;flex-direction:column;gap:6px}
+.wp-head{display:flex;align-items:center;gap:8px}.wp-head b{flex:1;font-family:var(--f-display);font-size:1.15rem}
+@media (max-width:480px){.face{width:56px;height:56px;font-size:1.4rem}.actors{margin-top:-28px}}
+@media (prefers-reduced-motion:reduce){.actor.talk .face{animation:none}}
 footer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px solid var(--line)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -168,13 +191,14 @@ footer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px soli
       <a href="#viet">Viết</a>
       <a href="#phat-am">Phát âm</a>
       <a href="#on-tap">Ôn tập</a>
+      <a href="#hoi-thoai">Hội thoại</a>
       <a href="#video">Video</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap" id="app"></main>
-<footer class="wrap">Âm thanh dùng giọng đọc của Claude khi có; nếu không, dùng giọng tiếng Anh có sẵn trên máy bạn. Chấm phát âm dựa trên việc máy nhận ra đúng từ bạn đọc, nên đọc chậm, rõ ở nơi yên tĩnh. Tiến độ học lưu trên trình duyệt này. Video mở trên YouTube ở tab mới.</footer>
+<footer class="wrap"><b>Phiên bản __BUILD__</b> · Âm thanh dùng giọng đọc của Claude khi có; nếu không, dùng giọng tiếng Anh có sẵn trên máy bạn. Chấm phát âm dựa trên việc máy nhận ra đúng từ bạn đọc, nên đọc chậm, rõ ở nơi yên tĩnh. Tiến độ học lưu trên trình duyệt này. Video mở trên YouTube ở tab mới.</footer>
 
 <script>
 const ICON={
@@ -658,9 +682,128 @@ function drawPron(){
   };
 }
 
+/* ============ DIALOGUE SCENES ============ */
+// Each line: [speakerIndex, english with {vocab} or {shown|vocab term}, vietnamese]
+const SCENES=[
+ {id:"s1",level:"A2",place:"port",title:"Booking a 40HC",vi:"Đặt chỗ một container 40HC",where:"Văn phòng forwarder · 9:00",
+  cast:[["Lan","Shipper"],["Mark","Forwarder sales"]],
+  lines:[[0,"Hi Mark. I need a {booking|book} for one {40HC} to Los Angeles.","Chào Mark. Tôi cần đặt chỗ một container 40HC đi Los Angeles."],
+   [1,"Sure. When is your {cargo ready date}?","Được. Ngày hàng sẵn sàng của chị là khi nào?"],
+   [0,"Next Monday. Can you send me a {quotation}?","Thứ Hai tới. Anh gửi báo giá cho tôi được không?"],
+   [1,"Yes. The {all-in rate} is 2,350 dollars, {ETD|ETD / ETA} on the 20th.","Được. Giá trọn gói là 2.350 đô, ngày tàu chạy dự kiến là ngày 20."],
+   [0,"OK, please {confirm} the {booking number} today.","Được, anh xác nhận số booking trong hôm nay nhé."],
+   [1,"Will do. Remember the {SI cut-off} is Thursday at 5 p.m.","Chắc chắn rồi. Chị nhớ hạn nộp SI là 5 giờ chiều thứ Năm."]]},
+ {id:"s2",level:"A2",place:"warehouse",title:"One pallet is missing",vi:"Thiếu một pallet",where:"Cửa dock số 3 · 7:30",
+  cast:[["Tuan","Storekeeper"],["Ben","Truck driver"]],
+  lines:[[1,"Morning! Here is the {delivery note}. Twelve {pallet|pallet}s.","Chào buổi sáng! Đây là phiếu giao hàng. Mười hai pallet."],
+   [0,"Thanks. Please wait, I need to {check} them.","Cảm ơn. Anh chờ chút, tôi cần kiểm tra."],
+   [0,"I can only count eleven. We have a {shortage} of one pallet.","Tôi chỉ đếm được mười một. Bị thiếu một pallet."],
+   [1,"Oh no. Let me call the {dispatcher}.","Ôi. Để tôi gọi điều phối viên."],
+   [0,"I'll write the shortage on the {proof of delivery}.","Tôi sẽ ghi việc thiếu hàng vào bằng chứng giao hàng."],
+   [1,"OK. Please sign here, and I'll {deliver} the last pallet this afternoon.","Được. Anh ký ở đây, chiều nay tôi giao nốt pallet còn lại."]]},
+ {id:"s3",level:"B1",place:"office",title:"Red channel at customs",vi:"Hàng bị luồng đỏ",where:"Chi cục hải quan · 10:15",
+  cast:[["Hoa","Importer"],["Duc","Customs broker"]],
+  lines:[[1,"Ms Hoa, your {customs declaration} went to the {red channel}.","Chị Hoa, tờ khai hải quan của chị bị phân luồng đỏ."],
+   [0,"So they will do a {physical inspection}?","Vậy họ sẽ kiểm tra thực tế hàng hóa à?"],
+   [1,"Yes, tomorrow at 9. They want to check the {HS code} too.","Đúng, 9 giờ sáng mai. Họ cũng muốn kiểm tra mã HS."],
+   [0,"Do you need any other documents?","Anh có cần thêm chứng từ gì không?"],
+   [1,"Please send the {packing list} and the original {certificate of origin}.","Chị gửi giúp phiếu đóng gói và bản gốc giấy chứng nhận xuất xứ."],
+   [0,"Will the {free time} be enough?","Thời gian miễn phí có đủ không?"],
+   [1,"We have five days, so it should be fine. I'll {update} you after the inspection.","Mình có năm ngày nên chắc là đủ. Tôi sẽ cập nhật cho chị sau khi kiểm hóa."]]},
+ {id:"s4",level:"B1",place:"port",title:"Rolled to the next vessel",vi:"Bị rớt sang chuyến tàu sau",where:"Gọi điện thoại · 15:00",
+  cast:[["Minh","Customer service"],["Sarah","Customer"]],
+  lines:[[0,"Hi Sarah. I'm afraid your container was {rolled over|roll over} to the next vessel.","Chào Sarah. Tôi e là container của chị bị chuyển sang chuyến tàu sau."],
+   [1,"Why? We met the {CY cut-off}.","Sao vậy? Chúng tôi hạ bãi đúng hạn mà."],
+   [0,"There is heavy {port congestion}, and the vessel had no {space}.","Cảng đang ùn tắc nặng và tàu không còn chỗ."],
+   [1,"What is the new {ETA|ETD / ETA}?","ETA mới là khi nào?"],
+   [0,"The 14th, five days later. We are very sorry for the {delay}.","Ngày 14, trễ năm ngày. Chúng tôi rất xin lỗi vì sự chậm trễ."],
+   [1,"Please send me a {shipping advice} with the new {vessel schedule}.","Anh gửi tôi thông báo giao hàng kèm lịch tàu mới nhé."]]},
+ {id:"s5",level:"B1",place:"airport",title:"Urgent parts by air",vi:"Gửi phụ tùng gấp bằng máy bay",where:"Kho hàng sân bay · 13:00",
+  cast:[["Nam","Planner"],["Anna","Air freight agent"]],
+  lines:[[0,"Anna, the line is down. We need {spare parts} from Japan by Friday.","Anna, dây chuyền đang dừng. Chúng tôi cần phụ tùng từ Nhật trước thứ Sáu."],
+   [1,"OK. What are the dimensions and {actual weight}?","Được. Kích thước và trọng lượng thực tế là bao nhiêu?"],
+   [0,"Two boxes, 80 by 60 by 50 cm, 40 kilos in total.","Hai thùng, 80 x 60 x 50 cm, tổng 40 ký."],
+   [1,"Then the {volumetric weight} is higher, so the {chargeable weight} is 48 kilos.","Vậy trọng lượng thể tích cao hơn, nên trọng lượng tính cước là 48 ký."],
+   [0,"Fine. Can it go on tomorrow's flight?","Được. Gửi chuyến bay ngày mai được không?"],
+   [1,"Yes. I'll send the {MAWB} number and {flight number} tonight.","Được. Tối nay tôi gửi số vận đơn chủ và số chuyến bay."]]},
+ {id:"s6",level:"B2",place:"warehouse",title:"Crushed cartons",vi:"Thùng hàng bị đè bẹp",where:"Khu nhận hàng · 16:40",
+  cast:[["Linh","Warehouse supervisor"],["Paul","Carrier claims"]],
+  lines:[[0,"Paul, eighteen cartons arrived {crushed} and some are {wet damage|wet damage}.","Paul, mười tám thùng đến nơi bị bẹp, vài thùng bị ướt."],
+   [1,"Did you note it on the {proof of delivery}?","Chị đã ghi chú vào bằng chứng giao hàng chưa?"],
+   [0,"Yes, the driver signed it, and we took photos.","Rồi, tài xế đã ký, và chúng tôi đã chụp ảnh."],
+   [1,"Good. Please send a {notice of claim} within three days.","Tốt. Chị gửi thông báo khiếu nại trong vòng ba ngày nhé."],
+   [0,"Will you arrange a {survey}?","Bên anh có sắp xếp giám định không?"],
+   [1,"Yes, a {surveyor} will come on Monday. Then you can file the {claim}.","Có, thứ Hai giám định viên sẽ đến. Sau đó chị nộp hồ sơ khiếu nại."]]},
+ {id:"s7",level:"B1",place:"office",title:"Checking the debit note",vi:"Kiểm tra giấy báo nợ",where:"Phòng kế toán · 11:00",
+  cast:[["Mai","Accountant"],["Tom","Forwarder"]],
+  lines:[[0,"Tom, I got your {debit note}, but the total looks high.","Tom, tôi nhận được giấy báo nợ của anh, nhưng tổng tiền có vẻ cao."],
+   [1,"It includes {THC|THC (terminal handling charge)}, the {D/O fee}, and a {cleaning fee}.","Nó gồm phí THC, phí lệnh giao hàng và phí vệ sinh container."],
+   [0,"Our contract says no cleaning fee. Can you send a {cost breakdown}?","Hợp đồng ghi không có phí vệ sinh. Anh gửi bảng chi tiết chi phí được không?"],
+   [1,"You're right, sorry. I'll issue a {credit note} for that.","Chị nói đúng, xin lỗi. Tôi sẽ xuất giấy báo có cho khoản đó."],
+   [0,"Thanks. Our {payment terms} are 30 days, so we'll pay on the 15th.","Cảm ơn. Điều kiện thanh toán của chúng tôi là 30 ngày, nên ngày 15 sẽ chuyển."]]},
+ {id:"s8",level:"A2",place:"warehouse",title:"Peak day in e-commerce",vi:"Ngày cao điểm thương mại điện tử",where:"Trung tâm xử lý đơn · 11/11",
+  cast:[["Quang","Team leader"],["Vy","Picker"]],
+  lines:[[0,"Today is our {peak day}. We have 9,000 {online order}s.","Hôm nay là ngày cao điểm. Chúng ta có 9.000 đơn trực tuyến."],
+   [1,"Wow. Where is my {pick list}?","Trời. Danh sách lấy hàng của em đâu?"],
+   [0,"On your {scanner}. We use {wave picking} today.","Trên máy quét của em. Hôm nay mình lấy hàng theo đợt."],
+   [1,"What time is the {order cut-off}?","Mấy giờ chốt đơn ạ?"],
+   [0,"Eleven a.m. for {same-day delivery}. Then take the orders to the {packing station}.","11 giờ sáng cho đơn giao trong ngày. Sau đó mang đơn đến bàn đóng gói."],
+   [1,"Got it. The first parcels are already {out for delivery}!","Em hiểu rồi. Những kiện đầu tiên đã đang được giao rồi!"]]}
+];
+const SCENE_ART={
+ port:`<svg viewBox="0 0 320 90" aria-hidden="true"><rect x="0" y="70" width="320" height="20" class="a-ground"/><path d="M30 70V20h4v50M18 22h52v4H18zM62 26v14" class="a-line"/><path d="M250 70V12h4v58M236 14h56v4h-56zM286 18v12" class="a-line"/>${[0,1,2,3,4].map(i=>`<rect x="${90+i*30}" y="52" width="28" height="18" class="a-box${i%3}"/><rect x="${105+i*30}" y="34" width="28" height="18" class="a-box${(i+1)%3}"/>`).join("")}</svg>`,
+ warehouse:`<svg viewBox="0 0 320 90" aria-hidden="true"><rect x="0" y="70" width="320" height="20" class="a-ground"/>${[0,1,2].map(i=>`<path d="M${20+i*100} 70V14M${90+i*100} 70V14M${20+i*100} 32h70M${20+i*100} 50h70" class="a-line"/><rect x="${28+i*100}" y="38" width="22" height="12" class="a-box${i%3}"/><rect x="${56+i*100}" y="56" width="26" height="14" class="a-box${(i+2)%3}"/><rect x="${36+i*100}" y="20" width="24" height="12" class="a-box${(i+1)%3}"/>`).join("")}</svg>`,
+ office:`<svg viewBox="0 0 320 90" aria-hidden="true"><rect x="0" y="70" width="320" height="20" class="a-ground"/><rect x="40" y="52" width="240" height="6" class="a-box0"/><path d="M60 58v12M260 58v12" class="a-line"/><rect x="90" y="24" width="56" height="34" rx="2" class="a-box2"/><rect x="176" y="24" width="56" height="34" rx="2" class="a-box2"/><path d="M118 58v-4M204 58v-4" class="a-line"/></svg>`,
+ airport:`<svg viewBox="0 0 320 90" aria-hidden="true"><rect x="0" y="70" width="320" height="20" class="a-ground"/><path d="M70 46h170l24-10h10l-14 14H70c-6 0-6-4 0-4z" class="a-box2"/><path d="M150 46l-30-22h14l40 22M150 52l-24 14h14l34-14" class="a-box1"/><rect x="40" y="58" width="24" height="12" class="a-box0"/><rect x="66" y="58" width="24" height="12" class="a-box1"/></svg>`
+};
+function vocabFor(key){const k=key.toLowerCase();return VOCAB.find(w=>w.term.toLowerCase()===k)||VOCAB.find(w=>w.term.replace(/\s*\(.*?\)/g,"").toLowerCase()===k)}
+function parseLine(txt){const used=[];const html=esc(txt).replace(/\{([^}|]+)(?:\|([^}]+))?\}/g,(m,shown,key)=>{const w=vocabFor(key||shown);if(!w)return shown;used.push(w);return`<button class="vw" data-w="${w.id}">${shown}</button>`});
+  return{html,plain:txt.replace(/\{([^}|]+)(?:\|[^}]+)?\}/g,"$1"),used}}
+let scene={cur:null,i:0,playing:false,vi:false};
+function scenesIndex(){
+  stopSpeech();
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">${SCENES.length} hội thoại · có giọng đọc</span><h2>Hội thoại ngắn</h2><p class="lead">Những cảnh hội thoại ngắn ở cảng, kho, hải quan, văn phòng. Bấm Phát để xem hai nhân vật nói, phụ đề chạy theo, từ vựng trong app được tô sáng. Chạm vào từ tô sáng để xem nghĩa và phiên âm.</p></div>
+  <div class="grid">${SCENES.map(s=>`<button class="card scard" data-s="${s.id}"><div class="sthumb">${SCENE_ART[s.place]}</div><div class="meta"><span class="lvl ${s.level}">${s.level}</span><span>${s.lines.length} câu</span>${S.done[s.id]?`<span class="done-tag">✓ Đã xem</span>`:""}</div><h3>${esc(s.title)}</h3><span class="note">${esc(s.vi)}</span></button>`).join("")}</div>`;
+  app.querySelectorAll("[data-s]").forEach(b=>b.onclick=()=>{openScene(SCENES.find(x=>x.id===b.dataset.s));window.scrollTo(0,0)});
+}
+function openScene(s){
+  stopSpeech();scene={cur:s,i:0,playing:false,vi:scene.vi,ended:false,started:false};
+  const parsed=s.lines.map(l=>parseLine(l[1]));
+  const used=[...new Map(parsed.flatMap(p=>p.used).map(w=>[w.id,w])).values()];
+  app.innerHTML=`<div class="panel"><button class="back" id="bk">← Tất cả hội thoại</button>
+  <div class="view-head"><span class="eyebrow">${esc(s.where)} · ${s.level}</span><h2>${esc(s.title)}</h2><p class="lead">${esc(s.vi)}</p></div>
+  <div class="stage" id="stage"><div class="stage-art">${SCENE_ART[s.place]}</div>
+    <div class="actors">${s.cast.map((c,k)=>`<div class="actor a${k}" id="actor${k}"><div class="bubble" id="bub${k}" hidden></div><div class="face"><span>${esc(c[0][0])}</span></div><div class="nm"><b>${esc(c[0])}</b><small>${esc(c[1])}</small></div></div>`).join("")}</div>
+    <div class="subs" id="subs"><p class="sub-en" id="suben">Bấm ▶ Phát để bắt đầu.</p><p class="sub-vi" id="subvi" ${scene.vi?"":"hidden"}></p></div>
+  </div>
+  <div class="player"><button class="btn" id="splay">▶ Phát</button><button class="btn ghost" id="sprev" aria-label="Câu trước">◀</button><button class="btn ghost" id="snext" aria-label="Câu sau">▶</button>
+   <label class="note" for="srate">Tốc độ</label><select id="srate"><option value="0.75">Chậm</option><option value="0.9" selected>Vừa</option><option value="1.05">Tự nhiên</option></select>
+   <button class="pill" id="svi" aria-pressed="${scene.vi}">Phụ đề tiếng Việt</button><span class="note" id="spos"></span></div>
+  <div class="wpop" id="wpop" hidden></div>
+  <details><summary>Xem toàn bộ lời thoại</summary><div class="transcript" style="margin-top:8px">${s.lines.map((l,k)=>`<p><span class="sp">${esc(s.cast[l[0]][0]).toUpperCase()}</span>${parsed[k].html}<br><span class="note">${esc(l[2])}</span></p>`).join("")}</div></details>
+  <h3>Từ vựng trong hội thoại (${used.length})</h3>
+  <div class="gl">${used.map(w=>`<button class="vw chip" data-w="${w.id}">${esc(w.term)}</button>`).join("")}</div></div>`;
+  $("#bk").onclick=()=>{stopSpeech();scenesIndex()};
+  const show=k=>{scene.i=k;const l=s.lines[k];
+    s.cast.forEach((_,a)=>{$("#actor"+a).classList.toggle("talk",a===l[0]);const b=$("#bub"+a);b.hidden=a!==l[0];if(a===l[0])b.innerHTML=parsed[k].html});
+    $("#suben").innerHTML=`<b>${esc(s.cast[l[0]][0])}:</b> ${parsed[k].html}`;$("#subvi").textContent=l[2];$("#spos").textContent=`Câu ${k+1}/${s.lines.length}`;wire()};
+  const speakFrom=k=>{if(!scene.playing)return;if(k>=s.lines.length){scene.playing=false;scene.ended=true;$("#splay").textContent="⟲ Xem lại";s.cast.forEach((_,a)=>$("#actor"+a).classList.remove("talk"));S.done[s.id]="Đã xem";save();return}
+    show(k);say(parsed[k].plain,+$("#srate").value,s.lines[k][0]===0?0:1,()=>setTimeout(()=>speakFrom(k+1),350))};
+  const pop=$("#wpop");
+  function wire(){app.querySelectorAll(".vw").forEach(b=>b.onclick=e=>{e.stopPropagation();const w=VOCAB.find(x=>x.id===b.dataset.w);
+    pop.innerHTML=`<div class="wp-head"><b>${esc(w.term)}</b><button class="icon-btn" id="wpsay" aria-label="Phát âm">${ICON.speak}</button><button class="icon-btn" id="wpx" aria-label="Đóng">✕</button></div>${ipaHtml(w)}<p>${esc(w.vi)}</p><p class="note"><i>${esc(w.ex)}</i></p>`;
+    pop.hidden=false;$("#wpx").onclick=()=>pop.hidden=true;$("#wpsay").onclick=()=>{const was=scene.playing;scene.playing=false;stopSpeech();say(w.term.replace(/\s*\(.*?\)/g,""),0.85);if(was)$("#splay").textContent="▶ Tiếp tục"};pop.scrollIntoView({block:"nearest"})})}
+  wire();
+  $("#splay").onclick=()=>{if(scene.playing){scene.playing=false;stopSpeech();$("#splay").textContent="▶ Tiếp tục";return}
+    stopSpeech();scene.playing=true;$("#splay").textContent="⏸ Tạm dừng";const start=scene.ended||!scene.started?0:scene.i;scene.ended=false;scene.started=true;speakFrom(start)};
+  $("#sprev").onclick=()=>{scene.started=true;scene.playing=false;stopSpeech();$("#splay").textContent="▶ Tiếp tục";const k=Math.max(0,scene.i-1);show(k);say(parsed[k].plain,+$("#srate").value,s.lines[k][0]===0?0:1)};
+  $("#snext").onclick=()=>{scene.started=true;scene.playing=false;stopSpeech();$("#splay").textContent="▶ Tiếp tục";const k=Math.min(s.lines.length-1,scene.i+1);show(k);say(parsed[k].plain,+$("#srate").value,s.lines[k][0]===0?0:1)};
+  $("#svi").onclick=()=>{scene.vi=!scene.vi;$("#svi").setAttribute("aria-pressed",scene.vi);$("#subvi").hidden=!scene.vi};
+}
+
 /* ============ ROUTER ============ */
 let pendingOpen=null;
-const ROUTES={"tu-vung":vocabView,"nghe":()=>listIndex("nghe"),"doc":()=>listIndex("doc"),"viet":()=>listIndex("viet"),"on-tap":reviewView,"phat-am":pronView,"video":videoView};
+const ROUTES={"tu-vung":vocabView,"nghe":()=>listIndex("nghe"),"doc":()=>listIndex("doc"),"viet":()=>listIndex("viet"),"on-tap":reviewView,"phat-am":pronView,"hoi-thoai":scenesIndex,"video":videoView};
 function route(){
   stopSpeech();try{if(DICT&&DICT.active())DICT.stop()}catch(e){}
   const h=(location.hash||"#tu-vung").slice(1);const r=ROUTES[h]?h:"tu-vung";
