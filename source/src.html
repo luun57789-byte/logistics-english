@@ -56,6 +56,7 @@ main{padding-block:24px 64px}
 .bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:16px}
 .pill{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:.85rem;font-weight:500}
 .pill[aria-pressed="true"]{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.bar select{max-width:100%;min-width:0}
 .search{flex:1 1 220px;min-width:0;border:1px solid var(--line);background:var(--surface);border-radius:var(--r);padding:8px 12px}
 .btn{border:1px solid var(--navy);background:var(--navy);color:var(--surface);border-radius:var(--r);padding:8px 14px;font-weight:600;font-size:.9rem}
 .btn.ghost{background:transparent;color:var(--navy)}
@@ -75,10 +76,13 @@ main{padding-block:24px 64px}
 .topic-head .code{font-family:var(--f-mono);font-size:.75rem;color:var(--muted)}
 .vrow{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:4px 16px;padding:10px 0;border-bottom:1px solid var(--line);align-items:start}
 .vterm{font-weight:600;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.ipa{grid-column:1 / 3;display:flex;flex-wrap:wrap;gap:4px 14px;font-family:"Noto Sans","Segoe UI","Lucida Sans Unicode","DejaVu Sans",var(--f-body);font-size:.88rem;color:var(--steel)}
+.flash-inner .ipa{justify-content:center}
+.ipa b{font-family:var(--f-mono);font-size:.68rem;font-weight:500;color:var(--muted);margin-right:4px;letter-spacing:.05em}
 .vvi{color:var(--ink)}
 .vex{grid-column:1 / 3;font-size:.88rem;color:var(--muted);font-style:italic}
-.vact{grid-row:1 / 3;grid-column:3;display:flex;gap:6px}
-@media (max-width:560px){.vrow{grid-template-columns:minmax(0,1fr) auto}.vvi{grid-column:1}.vex{grid-column:1 / 3}.vact{grid-row:1 / 3;grid-column:2}}
+.vact{grid-row:1 / 4;grid-column:3;display:flex;gap:6px}
+@media (max-width:560px){.vrow{grid-template-columns:minmax(0,1fr) auto}.vvi{grid-column:1}.vex{grid-column:1 / 3}.vact{grid-row:1 / 4;grid-column:2}.ipa{grid-column:1 / 3}}
 
 /* lesson cards (listening/reading/writing) */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
@@ -202,7 +206,7 @@ const TOPICS=[
 ];
 // term | vietnamese | example | level | topic
 const RAW=`__VOCAB__`;
-const VOCAB=RAW.trim().split("\n").map((l,i)=>{const [term,vi,ex,level,topic]=l.split("|");return{id:"w"+i,term,vi,ex,level,topic}});
+const VOCAB=RAW.trim().split("\n").map((l,i)=>{const [term,vi,ex,level,topic,uk,us]=l.split("|");return{id:"w"+i,term,vi,ex,level,topic,uk:uk||"",us:us||""}});
 
 /* ============ LISTENING ============ */
 const LISTEN=[
@@ -313,6 +317,7 @@ let S={box:{},star:{},done:{},best:0,drafts:{}};
 try{const s=JSON.parse(localStorage.getItem(KEY)||"null");if(s)S=Object.assign(S,s)}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}renderStats()}
 const $=s=>document.querySelector(s);
+const ipaHtml=w=>w.uk?`<div class="ipa"><span><b>UK</b>${esc(w.uk)}</span><span><b>US</b>${esc(w.us)}</span></div>`:"";
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
 
@@ -352,7 +357,7 @@ const lvls=["Tất cả","A2","B1","B2"];
 let vocabFilter={level:"Tất cả",q:"",starred:false,topic:"sc"};
 
 function vocabView(){
-  app.innerHTML=`<div class="view-head"><span class="eyebrow">${VOCAB.length} từ · ${TOPICS.length} chủ đề</span><h2>Từ vựng logistics</h2><p class="lead">Từ thông dụng trong công việc hằng ngày: email với forwarder, hãng tàu, hải quan, kho và khách hàng. Mỗi từ có nghĩa tiếng Việt, câu ví dụ và nút phát âm. Đánh sao những từ khó để ôn riêng.</p>
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">${VOCAB.length} từ · ${TOPICS.length} chủ đề</span><h2>Từ vựng logistics</h2><p class="lead">Từ thông dụng trong công việc hằng ngày: email với forwarder, hãng tàu, hải quan, kho và khách hàng. Mỗi từ có phiên âm IPA Anh-Anh (UK) và Anh-Mỹ (US), nghĩa tiếng Việt, câu ví dụ và nút phát âm. Đánh sao những từ khó để ôn riêng.</p>
   <div class="bar" style="margin:4px 0 0"><button class="btn ghost" id="pdf">Tải bản PDF để in (${VOCAB.length} từ)</button><span class="note" id="pdfmsg"></span></div></div>
   <div class="bar"><label class="note" for="vt">Chủ đề</label><select id="vt" class="pill"><option value="all">Tất cả chủ đề (${VOCAB.length} từ)</option>${TOPICS.map(t=>`<option value="${t.id}" ${vocabFilter.topic===t.id?"selected":""}>${t.code} · ${esc(t.en)} · ${esc(t.name)} (${VOCAB.filter(w=>w.topic===t.id).length})</option>`).join("")}</select></div>
   <div class="bar">${lvls.map(l=>`<button class="pill" data-l="${l}" aria-pressed="${vocabFilter.level===l}">${l}</button>`).join("")}
@@ -371,7 +376,7 @@ function drawVocab(){
     const ws=VOCAB.filter(w=>w.topic===t.id&&(vocabFilter.level==="Tất cả"||w.level===vocabFilter.level)&&(!vocabFilter.starred||S.star[w.id])&&(!q||w.term.toLowerCase().includes(q)||w.vi.toLowerCase().includes(q)));
     if(!ws.length)return"";
     return `<section class="topic"><div class="topic-head"><h3>${t.en}</h3><span class="note">${t.name}</span><span class="code">${t.code} · ${ws.length} từ</span></div>
-    ${ws.map(w=>`<div class="vrow"><div class="vterm">${esc(w.term)} <span class="lvl ${w.level}">${w.level}</span></div><div class="vvi">${esc(w.vi)}</div><div class="vex">${esc(w.ex)}</div>
+    ${ws.map(w=>`<div class="vrow"><div class="vterm">${esc(w.term)} <span class="lvl ${w.level}">${w.level}</span></div><div class="vvi">${esc(w.vi)}</div>${ipaHtml(w)}<div class="vex">${esc(w.ex)}</div>
     <div class="vact"><button class="icon-btn" aria-label="Phát âm ${esc(w.term)}" data-say="${w.id}">${ICON.speak}</button><button class="icon-btn" aria-label="Đánh sao" aria-pressed="${!!S.star[w.id]}" data-star="${w.id}">${ICON.star}</button></div></div>`).join("")}</section>`}).join("");
   $("#vlist").innerHTML=html||`<p class="note">Không có từ nào khớp. Thử bỏ bộ lọc hoặc đổi từ khóa.</p>`;
   $("#vlist").querySelectorAll("[data-say]").forEach(b=>b.onclick=()=>{const w=VOCAB.find(x=>x.id===b.dataset.say);stopSpeech();say(w.term.replace(/\(.*?\)/g,""),0.85,0,()=>say(w.ex,0.9))});
@@ -496,7 +501,7 @@ function flashMode(){
   const w=flashQueue[flashIdx];
   $("#rv").innerHTML=`<div class="bar"><label class="note" for="fp">Bộ thẻ</label><select id="fp" class="pill">${opts.map(o=>`<option value="${o[0]}" ${o[0]===flashPool?"selected":""}>${esc(o[1])}</option>`).join("")}</select><span class="note">${w?`Thẻ ${flashIdx+1}/${flashQueue.length}`:""}</span></div>
   ${w?`<div class="flash"><div class="flash-inner" id="fc" tabindex="0" role="button" aria-label="Lật thẻ"><span class="flash-code">${TOPICS.find(t=>t.id===w.topic).code} · ngăn ${Math.min(S.box[w.id]||0,3)}</span>
-   ${flipped?`<div class="flash-term">${esc(w.vi)}</div><div class="flash-sub">${esc(w.term)}</div><div class="flash-sub"><i>${esc(w.ex)}</i></div>`:`<div class="flash-term">${esc(w.term)}</div><div class="flash-sub">Chạm để xem nghĩa</div>`}</div>
+   ${flipped?`<div class="flash-term">${esc(w.vi)}</div><div class="flash-sub">${esc(w.term)}</div><div class="flash-sub"><i>${esc(w.ex)}</i></div>`:`<div class="flash-term">${esc(w.term)}</div>${ipaHtml(w)}<div class="flash-sub">Chạm để xem nghĩa</div>`}</div>
    <div class="flash-actions"><button class="icon-btn" id="fs" aria-label="Phát âm">${ICON.speak}</button>${flipped?`<button class="btn ghost" id="no">Chưa nhớ</button><button class="btn warn" id="yes">Nhớ rồi</button>`:`<button class="btn" id="flip">Lật thẻ</button>`}</div></div>`
    :`<p class="note">Bộ thẻ này đang trống. ${flashPool==="star"?"Hãy đánh sao vài từ trong mục Từ vựng.":"Bạn đã thuộc hết các từ ở đây. Chọn 'Tất cả' để ôn lại."}</p>`}`;
   $("#fp").onchange=e=>{flashPool=e.target.value;buildFlashQueue();flashMode()};
@@ -612,7 +617,7 @@ function drawPron(){
   const best=S.pron[w.id];
   $("#pr").innerHTML=`<div class="panel pron">
     <div class="meta note" style="display:flex;gap:8px;flex-wrap:wrap"><span>Câu ${pron.i+1}/${pron.list.length}</span><span class="lvl ${w.level}">${w.level}</span>${best!==undefined?`<span>Điểm cao nhất: ${best}</span>`:""}</div>
-    <p class="pron-target">${esc(target)}</p><p class="note">${esc(w.vi)}</p>
+    <p class="pron-target">${esc(target)}</p>${pron.mode==="word"?ipaHtml(w):""}<p class="note">${esc(w.vi)}</p>
     <div class="bar" style="margin:0"><button class="btn ghost" id="pmodel">▶ Nghe mẫu</button><button class="btn ghost" id="pslow">▶ Nghe chậm</button>
       <button class="btn warn mic" id="pmic" ${DICT?"":"disabled"}>● Bấm để nói</button></div>
     <p class="note" id="pstate">${DICT?"Bấm nút, đọc to rõ ràng, app tự chấm khi bạn ngừng nói.":"Phần chấm điểm cần quyền dùng micro qua claude.ai. Hãy mở app bằng Chrome hoặc Edge trên máy tính (hoặc ứng dụng Claude cho máy tính). Trên điện thoại, Safari và Firefox, bạn vẫn nghe mẫu và tự luyện được."}</p>

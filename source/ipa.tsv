@@ -1,0 +1,1011 @@
+supply chain	/səˈplaɪ ˈtʃeɪn/	/səˈplaɪ ˈtʃeɪn/
+logistics	/ləˈdʒɪstɪks/	/ləˈdʒɪstɪks/
+supplier	/səˈplaɪə/	/səˈplaɪər/
+manufacturer	/ˌmænjuːˈfæktʃərə/	/ˌmænjuːˈfæktʃərər/
+distributor	/dɪˈstrɪbjuːtə/	/dɪˈstrɪbjuːtər/
+retailer	/ˈriːteɪlə/	/ˈriːteɪlər/
+purchase order (PO)	/ˈpɜːtʃɪs ˈɔːdə/	/ˈpɜːrtʃɪs ˈɔːrdər/
+lead time	/ˈliːd ˈtaɪm/	/ˈliːd ˈtaɪm/
+procurement	/prəˈkjʊəmənt/	/prəˈkjʊrmənt/
+demand forecasting	/dɪˈmænd ˈfɔːkæstɪŋ/	/dɪˈmænd ˈfɔːrkæstɪŋ/
+inventory	/ˈɪnvəntri/	/ˈɪnvənˌtɔːri/
+bottleneck	/ˈbɒtəlˌnɛk/	/ˈbɑːtəlˌnɛk/
+reverse logistics	/rɪˈvɜːs ləˈdʒɪstɪks/	/rɪˈvɜːrs ləˈdʒɪstɪks/
+warehouse	/ˈweəhaʊs/	/ˈwɛrhaʊs/
+distribution center	/ˌdɪstrɪˈbjuːʃən ˈsɛntə/	/ˌdɪstrɪˈbjuːʃən ˈsɛntər/
+SKU (stock keeping unit)	/ˌɛs keɪ ˈjuː/	/ˌɛs keɪ ˈjuː/
+pallet	/ˈpælɪt/	/ˈpælɪt/
+forklift	/ˈfɔːklɪft/	/ˈfɔːrklɪft/
+picking	/ˈpɪkɪŋ/	/ˈpɪkɪŋ/
+packing	/ˈpækɪŋ/	/ˈpækɪŋ/
+put-away	/ˌpʊt əˈweɪ/	/ˌpʊt əˈweɪ/
+loading dock	/ˈləʊdɪŋ ˈdɒk/	/ˈloʊdɪŋ ˈdɑːk/
+cycle count	/ˈsaɪkəl ˈkaʊnt/	/ˈsaɪkəl ˈkaʊnt/
+FIFO (first in, first out)	/ˈfiːfəʊ/	/ˈfiːfoʊ/
+cross-docking	/ˈkrɒs ˈdɒkɪŋ/	/ˈkrɔs ˈdɑːkɪŋ/
+safety stock	/ˈseɪfti ˈstɒk/	/ˈseɪfti ˈstɑːk/
+reorder point	/rɪˈɔːdə ˈpɔɪnt/	/rɪˈɔːrdər ˈpɔɪnt/
+stock-out	/ˈstɒk ˈaʊt/	/ˈstɑːk ˈaʊt/
+freight	/ˈfreɪt/	/ˈfreɪt/
+carrier	/ˈkæriə/	/ˈkæriər/
+shipper	/ˈʃɪpə/	/ˈʃɪpər/
+consignee	/kənˈsaɪniː/	/kənˈsaɪniː/
+ocean freight	/ˈəʊʃən ˈfreɪt/	/ˈoʊʃən ˈfreɪt/
+air freight	/ˈeə ˈfreɪt/	/ˈɛr ˈfreɪt/
+trucking	/ˈtrʌkɪŋ/	/ˈtrʌkɪŋ/
+freight forwarder	/ˈfreɪt ˈfɔːwədə/	/ˈfreɪt ˈfɔːrwərdər/
+door-to-door	/ˈdɔː tə ˈdɔː/	/ˈdɔːr tə ˈdɔːr/
+last-mile delivery	/ˈlæst ˈmaɪl dɪˈlɪvəri/	/ˈlæst ˈmaɪl dɪˈlɪvəri/
+transit time	/ˈtrænsɪt ˈtaɪm/	/ˈtrænsɪt ˈtaɪm/
+truckload (FTL / LTL)	/ˈtrʌkləʊd/	/ˈtrʌkloʊd/
+container	/kənˈteɪnə/	/kənˈteɪnər/
+TEU	/ˌtiː iː ˈjuː/	/ˌtiː iː ˈjuː/
+FCL (full container load)	/ˌɛf siː ˈɛl/	/ˌɛf siː ˈɛl/
+LCL (less than container load)	/ˌɛl siː ˈɛl/	/ˌɛl siː ˈɛl/
+vessel	/ˈvɛsəl/	/ˈvɛsəl/
+port of loading (POL)	/ˈpɔːt ɒv ˈləʊdɪŋ/	/ˈpɔːrt ʌv ˈloʊdɪŋ/
+port of discharge (POD)	/ˈpɔːt ɒv dɪsˈtʃɑːdʒ/	/ˈpɔːrt ʌv dɪsˈtʃɑːrdʒ/
+terminal	/ˈtɜːmɪnəl/	/ˈtɜːrmɪnəl/
+seal number	/ˈsiːl ˈnʌmbə/	/ˈsiːl ˈnʌmbər/
+transshipment	/trænsˈʃɪpmənt/	/trænsˈʃɪpmənt/
+ETD / ETA	/ˌiː tiː ˈdiː/, /ˌiː tiː ˈeɪ/	/ˌiː tiː ˈdiː/, /ˌiː tiː ˈeɪ/
+demurrage	/dɪˈmʌrɪdʒ/	/dɪˈmɜːrɪdʒ/
+detention	/dɪˈtɛnʃən/	/dɪˈtɛnʃən/
+reefer container	/ˈriːfə kənˈteɪnə/	/ˈriːfər kənˈteɪnər/
+cut-off time	/ˈkʌt ˈɒf ˈtaɪm/	/ˈkʌt ˈɔf ˈtaɪm/
+bill of lading (B/L)	/ˈbɪl ɒv ˈleɪdɪŋ/	/ˈbɪl ʌv ˈleɪdɪŋ/
+air waybill (AWB)	/ˈeə ˈweɪbɪl/	/ˈɛr ˈweɪbɪl/
+commercial invoice	/kəˈmɜːʃəl ˈɪnvɔɪs/	/kəˈmɜːrʃəl ˈɪnvɔɪs/
+packing list	/ˈpækɪŋ ˈlɪst/	/ˈpækɪŋ ˈlɪst/
+certificate of origin (C/O)	/səˈtɪfɪkət ɒv ˈɒrɪˌdʒɪn/	/sərˈtɪfɪkət ʌv ˈɔːrɪˌdʒɪn/
+booking confirmation	/ˈbʊkɪŋ kɒnfəˈmeɪʃən/	/ˈbʊkɪŋ kɑːnfərˈmeɪʃən/
+shipping instructions (SI)	/ˈʃɪpɪŋ ɪnˈstrʌkʃənz/	/ˈʃɪpɪŋ ɪnˈstrʌkʃənz/
+delivery order (D/O)	/dɪˈlɪvəri ˈɔːdə/	/dɪˈlɪvəri ˈɔːrdər/
+arrival notice	/əˈraɪvəl ˈnəʊtɪs/	/əˈraɪvəl ˈnoʊtɪs/
+letter of credit (L/C)	/ˈlɛtə ɒv ˈkrɛdɪt/	/ˈlɛtər ʌv ˈkrɛdɪt/
+proof of delivery (POD)	/ˈpruːf ɒv dɪˈlɪvəri/	/ˈpruːf ʌv dɪˈlɪvəri/
+customs clearance	/ˈkʌstəmz ˈkliərəns/	/ˈkʌstəmz ˈklɪrəns/
+customs broker	/ˈkʌstəmz ˈbrəʊkə/	/ˈkʌstəmz ˈbroʊkər/
+customs declaration	/ˈkʌstəmz ˌdɛkləˈreɪʃən/	/ˈkʌstəmz ˌdɛkləˈreɪʃən/
+HS code	/ˌeɪtʃ ˈɛs ˈkəʊd/	/ˌeɪtʃ ˈɛs ˈkoʊd/
+import duty	/ɪmˈpɔːt ˈdjuːti/	/ɪmˈpɔːrt ˈduːti/
+tariff	/ˈtærɪf/	/ˈtærɪf/
+inspection	/ɪnˈspɛkʃən/	/ɪnˈspɛkʃən/
+bonded warehouse	/ˈbɒndɪd ˈweəhaʊs/	/ˈbɑːndɪd ˈwɛrhaʊs/
+free trade agreement (FTA)	/ˈfriː ˈtreɪd əɡˈriːmənt/	/ˈfriː ˈtreɪd əɡˈriːmənt/
+telex release	/ˈtɛlɪks rɪˈliːs/	/ˈtɛlɪks rɪˈliːs/
+THC (terminal handling charge)	/ˌtiː eɪtʃ ˈsiː/	/ˌtiː eɪtʃ ˈsiː/
+Incoterms	/ɪŋˈkəʊtɜːmz/	/ɪŋˈkoʊtɜːrmz/
+EXW (Ex Works)	/ˌiː ɛks ˈdʌbəljuː/	/ˌiː ɛks ˈdʌbəljuː/
+FOB (Free On Board)	/ˌɛf əʊ ˈbiː/	/ˌɛf oʊ ˈbiː/
+CIF (Cost, Insurance and Freight)	/ˌsiː aɪ ˈɛf/	/ˌsiː aɪ ˈɛf/
+DAP (Delivered At Place)	/ˌdiː eɪ ˈpiː/	/ˌdiː eɪ ˈpiː/
+DDP (Delivered Duty Paid)	/ˌdiː diː ˈpiː/	/ˌdiː diː ˈpiː/
+freight rate	/ˈfreɪt ˈreɪt/	/ˈfreɪt ˈreɪt/
+surcharge	/ˈsɜːtʃɑːdʒ/	/ˈsɜːrtʃɑːrdʒ/
+quotation	/kwəʊˈteɪʃən/	/kwoʊˈteɪʃən/
+cargo insurance	/ˈkɑːɡəʊ ɪnˈʃʊərəns/	/ˈkɑːrɡoʊ ɪnˈʃʊrəns/
+local charges	/ˈləʊkəl ˈtʃɑːdʒɪz/	/ˈloʊkəl ˈtʃɑːrdʒɪz/
+shipment	/ˈʃɪpmənt/	/ˈʃɪpmənt/
+track and trace	/ˈtræk ænd ˈtreɪs/	/ˈtræk ænd ˈtreɪs/
+delay	/dɪˈleɪ/	/dɪˈleɪ/
+damage	/ˈdæmɪdʒ/	/ˈdæmɪdʒ/
+claim	/ˈkleɪm/	/ˈkleɪm/
+dispatch	/dɪˈspætʃ/	/dɪˈspætʃ/
+expedite	/ˈɛkspəˌdaɪt/	/ˈɛkspəˌdaɪt/
+backlog	/ˈbæklɒɡ/	/ˈbæklɑːɡ/
+KPI	/ˌkeɪ piː ˈaɪ/	/ˌkeɪ piː ˈaɪ/
+on-time delivery	/ˌɒn ˈtaɪm dɪˈlɪvəri/	/ˌɔn ˈtaɪm dɪˈlɪvəri/
+fill rate	/ˈfɪl ˈreɪt/	/ˈfɪl ˈreɪt/
+consolidate	/kənˈsɒlɪˌdeɪt/	/kənˈsɑːlɪˌdeɪt/
+confirm	/kənˈfɜːm/	/kənˈfɜːrm/
+shipping line	/ˈʃɪpɪŋ ˈlaɪn/	/ˈʃɪpɪŋ ˈlaɪn/
+booking number	/ˈbʊkɪŋ ˈnʌmbə/	/ˈbʊkɪŋ ˈnʌmbər/
+booking request	/ˈbʊkɪŋ rɪˈkwɛst/	/ˈbʊkɪŋ rɪˈkwɛst/
+space	/ˈspeɪs/	/ˈspeɪs/
+roll over	/ˈrəʊl ˈəʊvə/	/ˈroʊl ˈoʊvər/
+vessel schedule	/ˈvɛsəl ˈʃɛdjuːl/	/ˈvɛsəl ˈskɛdʒuːl/
+voyage number	/ˈvɔɪɪdʒ ˈnʌmbə/	/ˈvɔɪɪdʒ ˈnʌmbər/
+feeder vessel	/ˈfiːdə ˈvɛsəl/	/ˈfiːdər ˈvɛsəl/
+mother vessel	/ˈmʌðə ˈvɛsəl/	/ˈmʌðər ˈvɛsəl/
+direct service	/daɪˈrɛkt ˈsɜːvɪs/	/dɪˈrɛkt ˈsɜːrvɪs/
+via	/ˈvaɪə/	/ˈvaɪə/
+routing	/ˈraʊtɪŋ/	/ˈraʊtɪŋ/
+SI cut-off	/ˌɛs ˈaɪ ˈkʌt ˈɒf/	/ˌɛs ˈaɪ ˈkʌt ˈɔf/
+CY cut-off	/ˌsiː ˈwaɪ ˈkʌt ˈɒf/	/ˌsiː ˈwaɪ ˈkʌt ˈɔf/
+VGM (verified gross mass)	/ˌviː dʒiː ˈɛm/	/ˌviː dʒiː ˈɛm/
+VGM cut-off	/ˌviː dʒiː ˈɛm ˈkʌt ˈɒf/	/ˌviː dʒiː ˈɛm ˈkʌt ˈɔf/
+empty container	/ˈɛmpti kənˈteɪnə/	/ˈɛmpti kənˈteɪnər/
+container depot	/kənˈteɪnə ˈdɛpəʊ/	/kənˈteɪnər ˈdiːpoʊ/
+gate in	/ˈɡeɪt ˈɪn/	/ˈɡeɪt ˈɪn/
+gate out	/ˈɡeɪt ˈaʊt/	/ˈɡeɪt ˈaʊt/
+loaded on board	/ˈləʊdɪd ˌɒn ˈbɔːd/	/ˈloʊdɪd ˌɔn ˈbɔːrd/
+discharged	/dɪsˈtʃɑːdʒd/	/dɪsˈtʃɑːrdʒd/
+stuffing	/ˈstʌfɪŋ/	/ˈstʌfɪŋ/
+unstuffing / devanning	/ʌnˈstʌfɪŋ/, /dɪˈvænɪŋ/	/ʌnˈstʌfɪŋ/, /dɪˈvænɪŋ/
+20GP	/ˈtwɛnti ˌdʒiː ˈpiː/	/ˈtwɛnti ˌdʒiː ˈpiː/
+40GP	/ˈfɔːti ˌdʒiː ˈpiː/	/ˈfɔːrti ˌdʒiː ˈpiː/
+40HC (high cube)	/ˈfɔːti ˌeɪtʃ ˈsiː/	/ˈfɔːrti ˌeɪtʃ ˈsiː/
+open top	/ˈəʊpən ˈtɒp/	/ˈoʊpən ˈtɑːp/
+flat rack	/ˈflæt ˈræk/	/ˈflæt ˈræk/
+out of gauge (OOG)	/ˌaʊtəv ˈɡeɪdʒ/	/ˌaʊtəv ˈɡeɪdʒ/
+container number	/kənˈteɪnə ˈnʌmbə/	/kənˈteɪnər ˈnʌmbər/
+tare weight	/ˈteə ˈweɪt/	/ˈtɛr ˈweɪt/
+payload	/ˈpeɪləʊd/	/ˈpeɪloʊd/
+overweight	/ˌəʊvəˈweɪt/	/ˌoʊvərˈweɪt/
+free time	/ˈfriː ˈtaɪm/	/ˈfriː ˈtaɪm/
+storage charge	/ˈstɔːrɪdʒ ˈtʃɑːdʒ/	/ˈstɔːrɪdʒ ˈtʃɑːrdʒ/
+port congestion	/ˈpɔːt kənˈdʒɛstʃən/	/ˈpɔːrt kənˈdʒɛstʃən/
+blank sailing	/ˈblæŋk ˈseɪlɪŋ/	/ˈblæŋk ˈseɪlɪŋ/
+peak season	/ˈpiːk ˈsiːzən/	/ˈpiːk ˈsiːzən/
+off-peak	/ˈɒf ˈpiːk/	/ˈɔf ˈpiːk/
+PSS (peak season surcharge)	/ˌpiː ɛs ˈɛs/	/ˌpiː ɛs ˈɛs/
+BAF (bunker adjustment factor)	/ˌbiː eɪ ˈɛf/	/ˌbiː eɪ ˈɛf/
+CIC (container imbalance charge)	/ˌsiː aɪ ˈsiː/	/ˌsiː aɪ ˈsiː/
+EBS (emergency bunker surcharge)	/ˌiː biː ˈɛs/	/ˌiː biː ˈɛs/
+GRI (general rate increase)	/ˌdʒiː ɑː ˈaɪ/	/ˌdʒiː ɑːr ˈaɪ/
+all-in rate	/ˈɔːl ɪn ˈreɪt/	/ˈɔːl ɪn ˈreɪt/
+ocean carrier	/ˈəʊʃən ˈkæriə/	/ˈoʊʃən ˈkæriər/
+NVOCC	/ˌɛn viː əʊ siː ˈsiː/	/ˌɛn viː oʊ siː ˈsiː/
+co-loader	/ˈkəʊ ˈləʊdə/	/ˈkoʊ ˈloʊdər/
+CFS (container freight station)	/ˌsiː ɛf ˈɛs/	/ˌsiː ɛf ˈɛs/
+CFS charge	/ˌsiː ɛf ˈɛs ˈtʃɑːdʒ/	/ˌsiː ɛf ˈɛs ˈtʃɑːrdʒ/
+port of transshipment	/ˈpɔːt ɒv trænsˈʃɪpmənt/	/ˈpɔːrt ʌv trænsˈʃɪpmənt/
+final destination	/ˈfaɪnəl ˌdɛstɪˈneɪʃən/	/ˈfaɪnəl ˌdɛstɪˈneɪʃən/
+place of receipt	/ˈpleɪs ɒv rɪˈsiːt/	/ˈpleɪs ʌv rɪˈsiːt/
+place of delivery	/ˈpleɪs ɒv dɪˈlɪvəri/	/ˈpleɪs ʌv dɪˈlɪvəri/
+ATD / ATA	/ˌeɪ tiː ˈdiː/, /ˌeɪ tiː ˈeɪ/	/ˌeɪ tiː ˈdiː/, /ˌeɪ tiː ˈeɪ/
+departure	/dɪˈpɑːtʃə/	/dɪˈpɑːrtʃər/
+arrival	/əˈraɪvəl/	/əˈraɪvəl/
+sailing	/ˈseɪlɪŋ/	/ˈseɪlɪŋ/
+weekly service	/ˈwiːkli ˈsɜːvɪs/	/ˈwiːkli ˈsɜːrvɪs/
+lashing	/ˈlæʃɪŋ/	/ˈlæʃɪŋ/
+dunnage	/ˈdʌnɪdʒ/	/ˈdʌnɪdʒ/
+shipping mark	/ˈʃɪpɪŋ ˈmɑːk/	/ˈʃɪpɪŋ ˈmɑːrk/
+container seal	/kənˈteɪnə ˈsiːl/	/kənˈteɪnər ˈsiːl/
+inland haulage	/ˈɪnlənd ˈhɔːlɪdʒ/	/ˈɪnlənd ˈhɔːlɪdʒ/
+pre-carriage	/ˈpriː ˈkærɪdʒ/	/ˈpriː ˈkærɪdʒ/
+on-carriage	/ˌɒn ˈkærɪdʒ/	/ˌɔn ˈkærɪdʒ/
+shipper's load and count	/ˈʃɪpəz ˈləʊd ænd ˈkaʊnt/	/ˈʃɪpərz ˈloʊd ænd ˈkaʊnt/
+SOC (shipper-owned container)	/ˌɛs əʊ ˈsiː/	/ˌɛs oʊ ˈsiː/
+COC (carrier-owned container)	/ˌsiː əʊ ˈsiː/	/ˌsiː oʊ ˈsiː/
+reefer plug	/ˈriːfə ˈplʌɡ/	/ˈriːfər ˈplʌɡ/
+pre-trip inspection (PTI)	/ˈpriː ˈtrɪp ɪnˈspɛkʃən/	/ˈpriː ˈtrɪp ɪnˈspɛkʃən/
+genset	/ˈdʒɛnsɛt/	/ˈdʒɛnsɛt/
+airline	/ˈeəlaɪn/	/ˈɛrlaɪn/
+flight number	/ˈflaɪt ˈnʌmbə/	/ˈflaɪt ˈnʌmbər/
+MAWB (master air waybill)	/ˌɛm eɪ dʌbəljuː ˈbiː/	/ˌɛm eɪ dʌbəljuː ˈbiː/
+HAWB (house air waybill)	/ˌeɪtʃ eɪ dʌbəljuː ˈbiː/	/ˌeɪtʃ eɪ dʌbəljuː ˈbiː/
+chargeable weight	/ˈtʃɑːdʒəbəl ˈweɪt/	/ˈtʃɑːrdʒəbəl ˈweɪt/
+volumetric weight	/ˌvɒljuːˈmɛtrɪk ˈweɪt/	/ˌvɑːljuːˈmɛtrɪk ˈweɪt/
+actual weight	/ˈæktʃuːəl ˈweɪt/	/ˈæktʃuːəl ˈweɪt/
+rate per kg	/ˈreɪt pɜː ˌkeɪˈdʒiː/	/ˈreɪt pɜːr ˌkeɪˈdʒiː/
+minimum charge	/ˈmɪnɪməm ˈtʃɑːdʒ/	/ˈmɪnɪməm ˈtʃɑːrdʒ/
+FSC (fuel surcharge)	/ˌɛf ɛs ˈsiː/	/ˌɛf ɛs ˈsiː/
+SSC (security surcharge)	/ˌɛs ɛs ˈsiː/	/ˌɛs ɛs ˈsiː/
+screening	/ˈskriːnɪŋ/	/ˈskriːnɪŋ/
+ULD (unit load device)	/ˌjuː ɛl ˈdiː/	/ˌjuː ɛl ˈdiː/
+airport of departure	/ˈeəpɔːt ɒv dɪˈpɑːtʃə/	/ˈɛrpɔːrt ʌv dɪˈpɑːrtʃər/
+airport of destination	/ˈeəpɔːt ɒv ˌdɛstɪˈneɪʃən/	/ˈɛrpɔːrt ʌv ˌdɛstɪˈneɪʃən/
+cargo terminal	/ˈkɑːɡəʊ ˈtɜːmɪnəl/	/ˈkɑːrɡoʊ ˈtɜːrmɪnəl/
+air cargo	/ˈeə ˈkɑːɡəʊ/	/ˈɛr ˈkɑːrɡoʊ/
+express courier	/ɛkˈsprɛs ˈkɜːriə/	/ɛkˈsprɛs ˈkɜːriər/
+courier	/ˈkɜːriə/	/ˈkɜːriər/
+offload	/ˈɒfləʊd/	/ˈɔfloʊd/
+connecting flight	/kəˈnɛktɪŋ ˈflaɪt/	/kəˈnɛktɪŋ ˈflaɪt/
+freighter	/ˈfreɪtə/	/ˈfreɪtər/
+belly cargo	/ˈbɛlɪ ˈkɑːɡəʊ/	/ˈbɛli ˈkɑːrɡoʊ/
+consolidation (air)	/kənˌsɒlɪˈdeɪʃən/	/kənˌsɑːlɪˈdeɪʃən/
+backload	/ˈbækləʊd/	/ˈbækloʊd/
+sea-air	/ˈsiː ˈeə/	/ˈsiː ˈɛr/
+hand carry	/ˈhænd ˈkæri/	/ˈhænd ˈkæri/
+time-critical	/ˈtaɪm ˈkrɪtɪkəl/	/ˈtaɪm ˈkrɪtɪkəl/
+shipping documents	/ˈʃɪpɪŋ ˈdɒkjuːmənts/	/ˈʃɪpɪŋ ˈdɑːkjuːmənts/
+original B/L	/əˈrɪdʒɪnəl ˌbiː ˈɛl/	/əˈrɪdʒɪnəl ˌbiː ˈɛl/
+draft B/L	/ˈdræft ˌbiː ˈɛl/	/ˈdræft ˌbiː ˈɛl/
+B/L amendment	/ˌbiː ˈɛl əˈmɛndmənt/	/ˌbiː ˈɛl əˈmɛndmənt/
+MBL (master bill of lading)	/ˌɛm biː ˈɛl/	/ˌɛm biː ˈɛl/
+HBL (house bill of lading)	/ˌeɪtʃ biː ˈɛl/	/ˌeɪtʃ biː ˈɛl/
+surrendered B/L	/səˈrɛndəd ˌbiː ˈɛl/	/səˈrɛndərd ˌbiː ˈɛl/
+seaway bill	/ˈsiːweɪ ˈbɪl/	/ˈsiːweɪ ˈbɪl/
+on board date	/ˌɒn ˈbɔːd ˈdeɪt/	/ˌɔn ˈbɔːrd ˈdeɪt/
+notify party	/ˈnəʊtɪˌfaɪ ˈpɑːti/	/ˈnoʊtɪˌfaɪ ˈpɑːrti/
+proforma invoice (PI)	/ˈprɒfɔːmə ˈɪnvɔɪs/	/ˈprɑːfɔːrmə ˈɪnvɔɪs/
+invoice number	/ˈɪnvɔɪs ˈnʌmbə/	/ˈɪnvɔɪs ˈnʌmbər/
+fumigation certificate	/ˌfjuːmɪˈɡeɪʃən səˈtɪfɪkət/	/ˌfjuːmɪˈɡeɪʃən sərˈtɪfɪkət/
+phytosanitary certificate	/ˈfaɪtəˌsænɪtəri səˈtɪfɪkət/	/ˈfaɪtəˌsænəˌtɛri sərˈtɪfɪkət/
+health certificate	/ˈhɛlθ səˈtɪfɪkət/	/ˈhɛlθ sərˈtɪfɪkət/
+certificate of analysis (COA)	/səˈtɪfɪkət ɒv əˈnæləˌsɪs/	/sərˈtɪfɪkət ʌv əˈnæləˌsɪs/
+MSDS / SDS	/ˌɛm ɛs diː ˈɛs/, /ˌɛs diː ˈɛs/	/ˌɛm ɛs diː ˈɛs/, /ˌɛs diː ˈɛs/
+insurance certificate	/ɪnˈʃʊərəns səˈtɪfɪkət/	/ɪnˈʃʊrəns sərˈtɪfɪkət/
+sales contract	/ˈseɪlz ˈkɒntrækt/	/ˈseɪlz ˈkɑːntrækt/
+bill of exchange	/ˈbɪl ɒv ɛksˈtʃeɪndʒ/	/ˈbɪl ʌv ɛksˈtʃeɪndʒ/
+discrepancy	/dɪˈskrɛpənsi/	/dɪˈskrɛpənsi/
+manifest	/ˈmænɪˌfɛst/	/ˈmænɪˌfɛst/
+e-manifest	/ˈiː ˈmænɪˌfɛst/	/ˈiː ˈmænɪˌfɛst/
+weight certificate	/ˈweɪt səˈtɪfɪkət/	/ˈweɪt sərˈtɪfɪkət/
+inspection certificate	/ɪnˈspɛkʃən səˈtɪfɪkət/	/ɪnˈspɛkʃən sərˈtɪfɪkət/
+copy	/ˈkɒpɪ/	/ˈkɑːpi/
+signed and stamped	/ˈsaɪnd ænd ˈstæmpt/	/ˈsaɪnd ænd ˈstæmpt/
+soft copy / hard copy	/ˈsɒft ˈkɒpɪ/, /ˈhɑːd ˈkɒpɪ/	/ˈsɔft ˈkɑːpi/, /ˈhɑːrd ˈkɑːpi/
+attached	/əˈtætʃt/	/əˈtætʃt/
+customs office	/ˈkʌstəmz ˈɒfɪs/	/ˈkʌstəmz ˈɑːfɪs/
+customs officer	/ˈkʌstəmz ˈɒfɪsə/	/ˈkʌstəmz ˈɑːfɪsər/
+import declaration	/ɪmˈpɔːt ˌdɛkləˈreɪʃən/	/ɪmˈpɔːrt ˌdɛkləˈreɪʃən/
+export declaration	/ˈɛkspɔːt ˌdɛkləˈreɪʃən/	/ˈɛkspɔːrt ˌdɛkləˈreɪʃən/
+green channel	/ˈɡriːn ˈtʃænəl/	/ˈɡriːn ˈtʃænəl/
+yellow channel	/ˈjɛləʊ ˈtʃænəl/	/ˈjɛloʊ ˈtʃænəl/
+red channel	/ˈrɛd ˈtʃænəl/	/ˈrɛd ˈtʃænəl/
+customs release	/ˈkʌstəmz rɪˈliːs/	/ˈkʌstəmz rɪˈliːs/
+duty and tax	/ˈdjuːti ænd ˈtæks/	/ˈduːti ænd ˈtæks/
+VAT (value-added tax)	/ˌviː eɪ ˈtiː/	/ˌviː eɪ ˈtiː/
+customs value	/ˈkʌstəmz ˈvæljuː/	/ˈkʌstəmz ˈvæljuː/
+tariff classification	/ˈtærɪf ˌklæsɪfɪˈkeɪʃən/	/ˈtærɪf ˌklæsɪfɪˈkeɪʃən/
+preferential rate	/ˌprɛfəˈrɛnʃəl ˈreɪt/	/ˌprɛfəˈrɛnʃəl ˈreɪt/
+Form E / Form D	/ˈfɔːm ˈiː/, /ˈfɔːm ˈdiː/	/ˈfɔːrm ˈiː/, /ˈfɔːrm ˈdiː/
+quarantine	/ˈkwɒrənˌtiːn/	/ˈkwɔːrənˌtiːn/
+customs fine	/ˈkʌstəmz ˈfaɪn/	/ˈkʌstəmz ˈfaɪn/
+re-export	/ˌriː ˈɛkspɔːt/	/ˌriː ˈɛkspɔːrt/
+temporary import	/ˈtɛmprəri ɪmˈpɔːt/	/ˈtɛmpəˌrɛri ɪmˈpɔːrt/
+ECUS	/ˈɛkəs/	/ˈɛkəs/
+post-clearance audit	/ˈpəʊst ˈkliərəns ˈɔːdɪt/	/ˈpoʊst ˈklɪrəns ˈɔːdɪt/
+restricted goods	/rɪˈstrɪktɪd ˈɡʊdz/	/rɪˈstrɪktɪd ˈɡʊdz/
+prohibited goods	/prəˈhɪbɪtɪd ˈɡʊdz/	/prəˈhɪbɪtɪd ˈɡʊdz/
+import license	/ɪmˈpɔːt ˈlaɪsəns/	/ɪmˈpɔːrt ˈlaɪsəns/
+customs procedures	/ˈkʌstəmz prəˈsiːdʒəz/	/ˈkʌstəmz prəˈsiːdʒərz/
+document check	/ˈdɒkjuːmənt ˈtʃɛk/	/ˈdɑːkjuːmənt ˈtʃɛk/
+physical inspection	/ˈfɪzɪkəl ɪnˈspɛkʃən/	/ˈfɪzɪkəl ɪnˈspɛkʃən/
+customs bond	/ˈkʌstəmz ˈbɒnd/	/ˈkʌstəmz ˈbɑːnd/
+ISF (importer security filing)	/ˌaɪ ɛs ˈɛf/	/ˌaɪ ɛs ˈɛf/
+AMS / ENS	/ˌeɪ ɛm ˈɛs/, /ˌiː ɛn ˈɛs/	/ˌeɪ ɛm ˈɛs/, /ˌiː ɛn ˈɛs/
+de minimis	/də ˈmɪnɪˌmɪs/	/də ˈmɪnɪˌmɪs/
+receiving	/rɪˈsiːvɪŋ/	/rɪˈsiːvɪŋ/
+goods receipt	/ˈɡʊdz rɪˈsiːt/	/ˈɡʊdz rɪˈsiːt/
+goods issue	/ˈɡʊdz ˈɪʃuː/	/ˈɡʊdz ˈɪʃuː/
+inbound	/ˈɪnbaʊnd/	/ˈɪnbaʊnd/
+outbound	/aʊtˈbaʊnd/	/aʊtˈbaʊnd/
+stock	/ˈstɒk/	/ˈstɑːk/
+in stock / out of stock	/ɪn ˈstɒk/, /ˌaʊtəv ˈstɒk/	/ɪn ˈstɑːk/, /ˌaʊtəv ˈstɑːk/
+stock level	/ˈstɒk ˈlɛvəl/	/ˈstɑːk ˈlɛvəl/
+stocktake	/ˈstɒkteɪk/	/ˈstɑːkteɪk/
+discrepancy (stock)	/dɪˈskrɛpənsi/	/dɪˈskrɛpənsi/
+shortage	/ˈʃɔːtɪdʒ/	/ˈʃɔːrtɪdʒ/
+overage	/ˈəʊvəˌreɪdʒ/	/ˈoʊvəˌreɪdʒ/
+location	/ləʊˈkeɪʃən/	/loʊˈkeɪʃən/
+racking	/ˈrækɪŋ/	/ˈrækɪŋ/
+shelf	/ˈʃɛlf/	/ˈʃɛlf/
+aisle	/ˈaɪəl/	/ˈaɪəl/
+bin	/ˈbɪn/	/ˈbɪn/
+staging area	/ˈsteɪdʒɪŋ ˈeəriə/	/ˈsteɪdʒɪŋ ˈɛriə/
+pick list	/ˈpɪk ˈlɪst/	/ˈpɪk ˈlɪst/
+picker	/ˈpɪkə/	/ˈpɪkər/
+order picking	/ˈɔːdə ˈpɪkɪŋ/	/ˈɔːrdər ˈpɪkɪŋ/
+wave picking	/ˈweɪv ˈpɪkɪŋ/	/ˈweɪv ˈpɪkɪŋ/
+batch picking	/ˈbætʃ ˈpɪkɪŋ/	/ˈbætʃ ˈpɪkɪŋ/
+replenishment	/rɪˈplɛnɪʃmənt/	/rɪˈplɛnɪʃmənt/
+pallet jack	/ˈpælɪt ˈdʒæk/	/ˈpælɪt ˈdʒæk/
+reach truck	/ˈriːtʃ ˈtrʌk/	/ˈriːtʃ ˈtrʌk/
+stretch wrap	/ˈstrɛtʃ ˈræp/	/ˈstrɛtʃ ˈræp/
+shrink wrap	/ˈʃrɪŋk ˈræp/	/ˈʃrɪŋk ˈræp/
+carton	/ˈkɑːtən/	/ˈkɑːrtən/
+label	/ˈleɪbəl/	/ˈleɪbəl/
+barcode	/ˈbɑːkəʊd/	/ˈbɑːrkoʊd/
+scanner	/ˈskænə/	/ˈskænər/
+labelling	/ˈleɪbəlɪŋ/	/ˈleɪbəlɪŋ/
+kitting	/ˈkɪtɪŋ/	/ˈkɪtɪŋ/
+value-added services (VAS)	/ˈvæljuː ˈædɪd ˈsɜːvɪsɪz/	/ˈvæljuː ˈædɪd ˈsɜːrvɪsɪz/
+repacking	/rɪˈpækɪŋ/	/rɪˈpækɪŋ/
+quarantine area	/ˈkwɒrənˌtiːn ˈeəriə/	/ˈkwɔːrənˌtiːn ˈɛriə/
+returns	/rɪˈtɜːnz/	/rɪˈtɜːrnz/
+storage	/ˈstɔːrɪdʒ/	/ˈstɔːrɪdʒ/
+storage capacity	/ˈstɔːrɪdʒ kəˈpæsɪti/	/ˈstɔːrɪdʒ kəˈpæsɪti/
+pallet position	/ˈpælɪt pəˈzɪʃən/	/ˈpælɪt pəˈzɪʃən/
+handling fee	/ˈhændlɪŋ ˈfiː/	/ˈhændlɪŋ ˈfiː/
+loading	/ˈləʊdɪŋ/	/ˈloʊdɪŋ/
+unloading	/ʌnˈləʊdɪŋ/	/ʌnˈloʊdɪŋ/
+floor-loaded	/ˈflɔː ˈləʊdɪd/	/ˈflɔːr ˈloʊdɪd/
+palletised	/ˈpælɪˌtaɪzd/	/ˈpælɪˌtaɪzd/
+dock door	/ˈdɒk ˈdɔː/	/ˈdɑːk ˈdɔːr/
+dock appointment	/ˈdɒk əˈpɔɪntmənt/	/ˈdɑːk əˈpɔɪntmənt/
+yard	/ˈjɑːd/	/ˈjɑːrd/
+3PL (third-party logistics)	/ˈθriː ˌpiː ˈɛl/	/ˈθriː ˌpiː ˈɛl/
+expiry date	/ɛkˈspaɪəri ˈdeɪt/	/ɛkˈspaɪəri ˈdeɪt/
+batch number / lot number	/ˈbætʃ ˈnʌmbə/, /ˈlɒt ˈnʌmbə/	/ˈbætʃ ˈnʌmbər/, /ˈlɑːt ˈnʌmbər/
+FEFO (first expired, first out)	/ˈfiːfəʊ/	/ˈfiːfoʊ/
+slow-moving	/ˈsləʊ ˈmuːvɪŋ/	/ˈsloʊ ˈmuːvɪŋ/
+fast-moving	/ˈfæst ˈmuːvɪŋ/	/ˈfæst ˈmuːvɪŋ/
+dead stock	/ˈdɛd ˈstɒk/	/ˈdɛd ˈstɑːk/
+stock transfer	/ˈstɒk ˈtrænsfɜː/	/ˈstɑːk ˈtrænsfɜːr/
+inventory accuracy	/ˈɪnvəntri ˈækjʊrəsi/	/ˈɪnvənˌtɔːri ˈækjʊrəsi/
+shift	/ˈʃɪft/	/ˈʃɪft/
+truck	/ˈtrʌk/	/ˈtrʌk/
+trailer	/ˈtreɪlə/	/ˈtreɪlər/
+tractor / prime mover	/ˈtræktə/, /ˈpraɪm ˈmuːvə/	/ˈtræktər/, /ˈpraɪm ˈmuːvər/
+container truck	/kənˈteɪnə ˈtrʌk/	/kənˈteɪnər ˈtrʌk/
+box truck	/ˈbɒks ˈtrʌk/	/ˈbɑːks ˈtrʌk/
+driver	/ˈdraɪvə/	/ˈdraɪvər/
+license plate	/ˈlaɪsəns ˈpleɪt/	/ˈlaɪsəns ˈpleɪt/
+pickup	/ˈpɪkʌp/	/ˈpɪkʌp/
+drop-off	/ˈdrɒp ˈɒf/	/ˈdrɑːp ˈɔf/
+delivery note	/dɪˈlɪvəri ˈnəʊt/	/dɪˈlɪvəri ˈnoʊt/
+POD signed	/ˌpiː əʊ ˈdiː ˈsaɪnd/	/ˌpiː oʊ ˈdiː ˈsaɪnd/
+waiting time	/ˈweɪtɪŋ ˈtaɪm/	/ˈweɪtɪŋ ˈtaɪm/
+trip	/ˈtrɪp/	/ˈtrɪp/
+round trip	/ˈraʊnd ˈtrɪp/	/ˈraʊnd ˈtrɪp/
+one-way	/ˈwɒn ˈweɪ/	/ˈwʌn ˈweɪ/
+empty return	/ˈɛmpti rɪˈtɜːn/	/ˈɛmpti rɪˈtɜːrn/
+milk run	/ˈmɪlk ˈrʌn/	/ˈmɪlk ˈrʌn/
+route planning	/ˈruːt ˈplænɪŋ/	/ˈraʊt ˈplænɪŋ/
+GPS tracking	/ˌdʒiː piː ˈɛs ˈtrækɪŋ/	/ˌdʒiː piː ˈɛs ˈtrækɪŋ/
+fuel cost	/ˈfjuːəl ˈkɒst/	/ˈfjuːəl ˈkɔst/
+toll	/ˈtəʊl/	/ˈtoʊl/
+weight limit	/ˈweɪt ˈlɪmɪt/	/ˈweɪt ˈlɪmɪt/
+restricted hours	/rɪˈstrɪktɪd ˈaʊəz/	/rɪˈstrɪktɪd ˈaʊərz/
+night delivery	/ˈnaɪt dɪˈlɪvəri/	/ˈnaɪt dɪˈlɪvəri/
+delivery window	/dɪˈlɪvəri ˈwɪndəʊ/	/dɪˈlɪvəri ˈwɪndoʊ/
+failed delivery	/ˈfeɪld dɪˈlɪvəri/	/ˈfeɪld dɪˈlɪvəri/
+redelivery	/ˌriːdɪˈlɪvəri/	/ˌriːdɪˈlɪvəri/
+COD (cash on delivery)	/ˌsiː əʊ ˈdiː/	/ˌsiː oʊ ˈdiː/
+fleet	/ˈfliːt/	/ˈfliːt/
+subcontractor	/ˈsʌbkənˌtræktə/	/ˈsʌbkənˌtræktər/
+long-haul	/ˈlɒŋ ˈhɔːl/	/ˈlɔŋ ˈhɔːl/
+short-haul	/ˈʃɔːt ˈhɔːl/	/ˈʃɔːrt ˈhɔːl/
+FTL (full truckload)	/ˌɛf tiː ˈɛl/	/ˌɛf tiː ˈɛl/
+LTL (less than truckload)	/ˌɛl tiː ˈɛl/	/ˌɛl tiː ˈɛl/
+cross-border trucking	/ˈkrɒs ˈbɔːdə ˈtrʌkɪŋ/	/ˈkrɔs ˈbɔːrdər ˈtrʌkɪŋ/
+border gate	/ˈbɔːdə ˈɡeɪt/	/ˈbɔːrdər ˈɡeɪt/
+transit cargo	/ˈtrænsɪt ˈkɑːɡəʊ/	/ˈtrænsɪt ˈkɑːrɡoʊ/
+breakdown	/ˈbreɪkdaʊn/	/ˈbreɪkdaʊn/
+accident	/ˈæksɪdənt/	/ˈæksɪdənt/
+dispatcher	/dɪˈspætʃə/	/dɪˈspætʃər/
+debit note	/ˈdɛbɪt ˈnəʊt/	/ˈdɛbɪt ˈnoʊt/
+credit note	/ˈkrɛdɪt ˈnəʊt/	/ˈkrɛdɪt ˈnoʊt/
+payment terms	/ˈpeɪmənt ˈtɜːmz/	/ˈpeɪmənt ˈtɜːrmz/
+due date	/ˈdjuː ˈdeɪt/	/ˈduː ˈdeɪt/
+overdue	/ˌəʊvəˈdjuː/	/ˌoʊvərˈduː/
+outstanding balance	/aʊtˈstændɪŋ ˈbæləns/	/aʊtˈstændɪŋ ˈbæləns/
+bank transfer	/ˈbæŋk ˈtrænsfɜː/	/ˈbæŋk ˈtrænsfɜːr/
+T/T (telegraphic transfer)	/ˌtiː ˈtiː/	/ˌtiː ˈtiː/
+deposit	/dɪˈpɒzɪt/	/dɪˈpɑːzɪt/
+advance payment	/ədˈvæns ˈpeɪmənt/	/ədˈvæns ˈpeɪmənt/
+balance payment	/ˈbæləns ˈpeɪmənt/	/ˈbæləns ˈpeɪmənt/
+remittance	/rɪˈmɪtəns/	/rɪˈmɪtəns/
+bank charges	/ˈbæŋk ˈtʃɑːdʒɪz/	/ˈbæŋk ˈtʃɑːrdʒɪz/
+exchange rate	/ɛksˈtʃeɪndʒ ˈreɪt/	/ɛksˈtʃeɪndʒ ˈreɪt/
+currency	/ˈkʌrənsi/	/ˈkɜːrənsi/
+billing	/ˈbɪlɪŋ/	/ˈbɪlɪŋ/
+statement of account (SOA)	/ˈsteɪtmənt ɒv əˈkaʊnt/	/ˈsteɪtmənt ʌv əˈkaʊnt/
+reconciliation	/ˌrɛkənˌsɪlɪˈeɪʃən/	/ˌrɛkənˌsɪlɪˈeɪʃən/
+cost breakdown	/ˈkɒst ˈbreɪkdaʊn/	/ˈkɔst ˈbreɪkdaʊn/
+selling rate	/ˈsɛlɪŋ ˈreɪt/	/ˈsɛlɪŋ ˈreɪt/
+buying rate	/ˈbaɪɪŋ ˈreɪt/	/ˈbaɪɪŋ ˈreɪt/
+profit margin	/ˈprɒfɪt ˈmɑːdʒɪn/	/ˈprɑːfɪt ˈmɑːrdʒɪn/
+budget	/ˈbʌdʒɪt/	/ˈbʌdʒɪt/
+cost saving	/ˈkɒst ˈseɪvɪŋ/	/ˈkɔst ˈseɪvɪŋ/
+extra charge	/ˈɛkstrə ˈtʃɑːdʒ/	/ˈɛkstrə ˈtʃɑːrdʒ/
+quote validity	/ˈkwəʊt væˈlɪdɪti/	/ˈkwoʊt væˈlɪdɪti/
+rate sheet	/ˈreɪt ˈʃiːt/	/ˈreɪt ˈʃiːt/
+tender	/ˈtɛndə/	/ˈtɛndər/
+contract rate	/ˈkɒntrækt ˈreɪt/	/ˈkɑːntrækt ˈreɪt/
+spot rate	/ˈspɒt ˈreɪt/	/ˈspɑːt ˈreɪt/
+D/O fee	/ˌdiː ˈəʊ ˈfiː/	/ˌdiː ˈoʊ ˈfiː/
+THC at destination	/ˌtiː eɪtʃ ˈsiː æt ˌdɛstɪˈneɪʃən/	/ˌtiː eɪtʃ ˈsiː æt ˌdɛstɪˈneɪʃən/
+documentation fee	/ˌdɒkjuːmənˈteɪʃən ˈfiː/	/ˌdɑːkjuːmənˈteɪʃən ˈfiː/
+seal fee	/ˈsiːl ˈfiː/	/ˈsiːl ˈfiː/
+handling charge	/ˈhændlɪŋ ˈtʃɑːdʒ/	/ˈhændlɪŋ ˈtʃɑːrdʒ/
+cleaning fee	/ˈkliːnɪŋ ˈfiː/	/ˈkliːnɪŋ ˈfiː/
+freight prepaid	/ˈfreɪt prɪˈpeɪd/	/ˈfreɪt prɪˈpeɪd/
+freight collect	/ˈfreɪt kəˈlɛkt/	/ˈfreɪt kəˈlɛkt/
+payable at	/ˈpeɪəbəl æt/	/ˈpeɪəbəl æt/
+refund	/rɪˈfʌnd/	/rɪˈfʌnd/
+compensation	/ˌkɒmpənˈseɪʃən/	/ˌkɑːmpənˈseɪʃən/
+penalty	/ˈpɛnəlti/	/ˈpɛnəlti/
+CBM (cubic meter)	/ˌsiː biː ˈɛm/	/ˌsiː biː ˈɛm/
+gross weight (GW)	/ˈɡrəʊs ˈweɪt/	/ˈɡroʊs ˈweɪt/
+net weight (NW)	/ˈnɛt ˈweɪt/	/ˈnɛt ˈweɪt/
+volume	/ˈvɒljuːm/	/ˈvɑːljuːm/
+dimensions	/daɪˈmɛnʃənz/	/dɪˈmɛnʃənz/
+length x width x height	/ˈlɛŋθ ˈɛks ˈwɪdθ ˈɛks ˈhaɪt/	/ˈlɛŋθ ˈɛks ˈwɪdθ ˈɛks ˈhaɪt/
+measurement	/ˈmɛʒəmənt/	/ˈmɛʒərmənt/
+quantity	/ˈkwɒntɪti/	/ˈkwɔntɪti/
+pieces (pcs)	/ˈpiːsɪz/	/ˈpiːsɪz/
+packages (pkgs)	/ˈpækɪdʒɪz/	/ˈpækɪdʒɪz/
+unit	/ˈjuːnɪt/	/ˈjuːnɪt/
+tonne / metric ton	/ˈtʌn/, /ˈmɛtrɪk ˈtʌn/	/ˈtʌn/, /ˈmɛtrɪk ˈtʌn/
+kilogram (kg)	/ˈkɪləɡˌræm/	/ˈkɪləɡˌræm/
+stackable	/ˈstækəbəl/	/ˈstækəbəl/
+non-stackable	/ˈnɒn ˈstækəbəl/	/ˈnɑːn ˈstækəbəl/
+fragile	/ˈfrædʒaɪl/	/ˈfrædʒəl/
+handle with care	/ˈhændəl wɪð ˈkeə/	/ˈhændəl wɪð ˈkɛr/
+this side up	/ðɪs ˈsaɪd ˈʌp/	/ðɪs ˈsaɪd ˈʌp/
+keep dry	/ˈkiːp ˈdraɪ/	/ˈkiːp ˈdraɪ/
+packaging	/ˈpækɪdʒɪŋ/	/ˈpækɪdʒɪŋ/
+export packing	/ˈɛkspɔːt ˈpækɪŋ/	/ˈɛkspɔːrt ˈpækɪŋ/
+wooden crate	/ˈwʊdən ˈkreɪt/	/ˈwʊdən ˈkreɪt/
+ISPM 15	/ˌaɪ ɛs piː ˈɛm ˈfɪftiːn/	/ˌaɪ ɛs piː ˈɛm ˈfɪftiːn/
+bag / sack	/ˈbæɡ/, /ˈsæk/	/ˈbæɡ/, /ˈsæk/
+drum	/ˈdrʌm/	/ˈdrʌm/
+IBC (intermediate bulk container)	/ˌaɪ biː ˈsiː/	/ˌaɪ biː ˈsiː/
+jumbo bag	/ˈdʒʌmbəʊ ˈbæɡ/	/ˈdʒʌmboʊ ˈbæɡ/
+pallet size	/ˈpælɪt ˈsaɪz/	/ˈpælɪt ˈsaɪz/
+euro pallet	/ˈjʊərəʊ ˈpælɪt/	/ˈjʊroʊ ˈpælɪt/
+loading plan	/ˈləʊdɪŋ ˈplæn/	/ˈloʊdɪŋ ˈplæn/
+load capacity	/ˈləʊd kəˈpæsɪti/	/ˈloʊd kəˈpæsɪti/
+over-dimensional	/ˌəʊvə daɪˈmɛnʃənəl/	/ˌoʊvər dɪˈmɛnʃənəl/
+heavy lift	/ˈhɛvi ˈlɪft/	/ˈhɛvi ˈlɪft/
+bulk cargo	/ˈbʌlk ˈkɑːɡəʊ/	/ˈbʌlk ˈkɑːrɡoʊ/
+break bulk	/ˈbreɪk ˈbʌlk/	/ˈbreɪk ˈbʌlk/
+general cargo	/ˈdʒɛnərəl ˈkɑːɡəʊ/	/ˈdʒɛnərəl ˈkɑːrɡoʊ/
+loose cargo	/ˈluːs ˈkɑːɡəʊ/	/ˈluːs ˈkɑːrɡoʊ/
+carton marking	/ˈkɑːtən ˈmɑːkɪŋ/	/ˈkɑːrtən ˈmɑːrkɪŋ/
+please be advised that	/ˈpliːz biː ədˈvaɪzd ˈðæt/	/ˈpliːz biː ədˈvaɪzd ˈðæt/
+kindly	/ˈkaɪndli/	/ˈkaɪndli/
+as per	/æz pɜː/	/æz pɜːr/
+please find attached	/ˈpliːz ˈfaɪnd əˈtætʃt/	/ˈpliːz ˈfaɪnd əˈtætʃt/
+for your reference	/fɔː jɔː ˈrɛfrəns/	/fɔːr jʊr ˈrɛfrəns/
+for your approval	/fɔː jɔː əˈpruːvəl/	/fɔːr jʊr əˈpruːvəl/
+for your information (FYI)	/fɔː jɔː ˌɪnfəˈmeɪʃən/	/fɔːr jʊr ˌɪnfərˈmeɪʃən/
+as soon as possible (ASAP)	/æz ˈsuːn æz ˈpɒsɪbəl/	/æz ˈsuːn æz ˈpɑːsɪbəl/
+at your earliest convenience	/æt jɔː ˈɜːlɪɪst kənˈviːnɪəns/	/æt jʊr ˈɜːrlɪɪst kənˈviːnɪəns/
+follow up	/ˈfɒləʊ ˈʌp/	/ˈfɑːloʊ ˈʌp/
+reminder	/rɪˈmaɪndə/	/rɪˈmaɪndər/
+urgent	/ˈɜːdʒənt/	/ˈɜːrdʒənt/
+update	/ˈʌpdeɪt/	/ˈʌpdeɪt/
+noted with thanks	/ˈnəʊtɪd wɪð ˈθæŋks/	/ˈnoʊtɪd wɪð ˈθæŋks/
+well received	/ˈwɛl rɪˈsiːvd/	/ˈwɛl rɪˈsiːvd/
+acknowledge receipt	/əkˈnɒlɪdʒ rɪˈsiːt/	/əkˈnɑːlɪdʒ rɪˈsiːt/
+proceed	/prəˈsiːd/	/prəˈsiːd/
+on hold	/ˌɒn ˈhəʊld/	/ˌɔn ˈhoʊld/
+go ahead	/ˌɡəʊ əˈhɛd/	/ˌɡoʊ əˈhɛd/
+revert	/rɪˈvɜːt/	/rɪˈvɜːrt/
+get back to you	/ɡɛt ˈbæk tə juː/	/ɡɛt ˈbæk tə juː/
+look forward to	/ˈlʊk ˈfɔːwəd tuː/	/ˈlʊk ˈfɔːrwərd tuː/
+apologise for the inconvenience	/əˈpɒləˌdʒaɪz fəðɪ ɪŋkənˈviːnɪəns/	/əˈpɑːləˌdʒaɪz fərðɪ ɪŋkənˈviːnɪəns/
+in advance	/ɪn ədˈvæns/	/ɪn ədˈvæns/
+cc	/ˌsiː ˈsiː/	/ˌsiː ˈsiː/
+subject line	/ˈsʌbdʒɛkt ˈlaɪn/	/ˈsʌbdʒɛkt ˈlaɪn/
+regarding (Re:)	/rɪˈɡɑːdɪŋ/	/rɪˈɡɑːrdɪŋ/
+with reference to	/wɪð ˈrɛfrəns tuː/	/wɪð ˈrɛfrəns tuː/
+at the moment	/æt ðə ˈməʊmənt/	/æt ðə ˈmoʊmənt/
+in the meantime	/ɪnðə ˈmiːntaɪm/	/ɪnðə ˈmiːntaɪm/
+as discussed	/æz dɪˈskʌst/	/æz dɪˈskʌst/
+please note	/ˈpliːz ˈnəʊt/	/ˈpliːz ˈnoʊt/
+subject to	/ˈsʌbdʒɛkt tuː/	/ˈsʌbdʒɛkt tuː/
+TBC (to be confirmed)	/ˌtiː biː ˈsiː/	/ˌtiː biː ˈsiː/
+TBA (to be advised)	/ˌtiː biː ˈeɪ/	/ˌtiː biː ˈeɪ/
+N/A (not applicable)	/ˈɛn ˈeɪ/	/ˈɛn ˈeɪ/
+w/c (week commencing)	/ˌdʌbəljuː ˈsiː/	/ˌdʌbəljuː ˈsiː/
+EOD (end of day)	/ˌiː əʊ ˈdiː/	/ˌiː oʊ ˈdiː/
+OOO (out of office)	/ˌəʊ əʊ ˈəʊ/	/ˌoʊ oʊ ˈoʊ/
+escalate	/ˈɛskəˌleɪt/	/ˈɛskəˌleɪt/
+conference call	/ˈkɒnfrəns ˈkɔːl/	/ˈkɑːnfrəns ˈkɔːl/
+hold the line	/ˈhəʊld ðə ˈlaɪn/	/ˈhoʊld ðə ˈlaɪn/
+call back	/ˈkɔːl ˈbæk/	/ˈkɔːl ˈbæk/
+leave a message	/ˈliːv ə ˈmɛsɪdʒ/	/ˈliːv ə ˈmɛsɪdʒ/
+speak up	/ˈspiːk ˈʌp/	/ˈspiːk ˈʌp/
+spell	/ˈspɛl/	/ˈspɛl/
+customer service (CS)	/ˈkʌstəmə ˈsɜːvɪs/	/ˈkʌstəmər ˈsɜːrvɪs/
+sales executive	/ˈseɪlz ɛɡˈzɛkjuːˌtɪv/	/ˈseɪlz ɛɡˈzɛkjuːˌtɪv/
+operations (ops)	/ˌɒpəˈreɪʃənz/	/ˌɑːpəˈreɪʃənz/
+documentation staff	/ˌdɒkjuːmənˈteɪʃən ˈstæf/	/ˌdɑːkjuːmənˈteɪʃən ˈstæf/
+pricing team	/ˈpraɪsɪŋ ˈtiːm/	/ˈpraɪsɪŋ ˈtiːm/
+account manager	/əˈkaʊnt ˈmænɪdʒə/	/əˈkaʊnt ˈmænɪdʒər/
+warehouse supervisor	/ˈweəhaʊs ˈsuːpəˌvaɪzə/	/ˈwɛrhaʊs ˈsuːpərˌvaɪzər/
+logistics coordinator	/ləˈdʒɪstɪks kəʊˈɔːdɪˌneɪtə/	/ləˈdʒɪstɪks koʊˈɔːrdɪˌneɪtər/
+import-export staff	/ɪmˈpɔːt ˈɛkspɔːt ˈstæf/	/ɪmˈpɔːrt ˈɛkspɔːrt ˈstæf/
+purchasing staff / buyer	/ˈpɜːtʃɪsɪŋ ˈstæf/, /ˈbaɪə/	/ˈpɜːrtʃɪsɪŋ ˈstæf/, /ˈbaɪər/
+agent	/ˈeɪdʒənt/	/ˈeɪdʒənt/
+overseas agent	/ˌəʊvəˈsiːz ˈeɪdʒənt/	/ˌoʊvərˈsiːz ˈeɪdʒənt/
+counterpart	/ˈkaʊntəˌpɑːt/	/ˈkaʊntərˌpɑːrt/
+vendor	/ˈvɛndə/	/ˈvɛndər/
+client	/ˈklaɪənt/	/ˈklaɪənt/
+person in charge (PIC)	/ˈpɜːsən ɪn ˈtʃɑːdʒ/	/ˈpɜːrsən ɪn ˈtʃɑːrdʒ/
+contact person	/ˈkɒntækt ˈpɜːsən/	/ˈkɑːntækt ˈpɜːrsən/
+team leader	/ˈtiːm ˈliːdə/	/ˈtiːm ˈliːdər/
+trainee	/ˈtreɪniː/	/ˈtreɪniː/
+colleague	/ˈkɒliːɡ/	/ˈkɑːliːɡ/
+take over	/ˈteɪk ˈəʊvə/	/ˈteɪk ˈoʊvər/
+in charge of	/ɪn ˈtʃɑːdʒ ɒv/	/ɪn ˈtʃɑːrdʒ ʌv/
+report to	/rɪˈpɔːt tuː/	/rɪˈpɔːrt tuː/
+handover	/ˈhændəʊvə/	/ˈhændoʊvər/
+overtime	/ˈəʊvəˌtaɪm/	/ˈoʊvərˌtaɪm/
+workload	/ˈwɜːkləʊd/	/ˈwɜːrkloʊd/
+deadline	/ˈdɛdlaɪn/	/ˈdɛdlaɪn/
+meeting	/ˈmiːtɪŋ/	/ˈmiːtɪŋ/
+pre-alert	/ˈpriː əˈlɜːt/	/ˈpriː əˈlɜːrt/
+shipping advice	/ˈʃɪpɪŋ ədˈvaɪs/	/ˈʃɪpɪŋ ədˈvaɪs/
+booking amendment	/ˈbʊkɪŋ əˈmɛndmənt/	/ˈbʊkɪŋ əˈmɛndmənt/
+cancellation	/ˌkænsɪˈleɪʃən/	/ˌkænsɪˈleɪʃən/
+confirmation	/kɒnfəˈmeɪʃən/	/kɑːnfərˈmeɪʃən/
+request	/rɪˈkwɛst/	/rɪˈkwɛst/
+inquiry / enquiry	/ɪŋˈkwaɪəri/, /ɛŋˈkwaɪəri/	/ˈɪŋkwəri/, /ɛŋˈkwaɪəri/
+feedback	/ˈfiːdbæk/	/ˈfiːdbæk/
+complaint	/kəmˈpleɪnt/	/kəmˈpleɪnt/
+order	/ˈɔːdə/	/ˈɔːrdər/
+place an order	/ˈpleɪs ən ˈɔːdə/	/ˈpleɪs ən ˈɔːrdər/
+order confirmation	/ˈɔːdə kɒnfəˈmeɪʃən/	/ˈɔːrdər kɑːnfərˈmeɪʃən/
+sales order (SO)	/ˈseɪlz ˈɔːdə/	/ˈseɪlz ˈɔːrdər/
+order quantity	/ˈɔːdə ˈkwɒntɪti/	/ˈɔːrdər ˈkwɔntɪti/
+MOQ (minimum order quantity)	/ˌɛm əʊ ˈkjuː/	/ˌɛm oʊ ˈkjuː/
+unit price	/ˈjuːnɪt ˈpraɪs/	/ˈjuːnɪt ˈpraɪs/
+price list	/ˈpraɪs ˈlɪst/	/ˈpraɪs ˈlɪst/
+discount	/ˈdɪskaʊnt/	/ˈdɪskaʊnt/
+sample	/ˈsæmpəl/	/ˈsæmpəl/
+production	/prəˈdʌkʃən/	/prəˈdʌkʃən/
+cargo ready date (CRD)	/ˈkɑːɡəʊ ˈrɛdi ˈdeɪt/	/ˈkɑːrɡoʊ ˈrɛdi ˈdeɪt/
+ex-factory date	/ˈɛks ˈfæktəri ˈdeɪt/	/ˈɛks ˈfæktəri ˈdeɪt/
+delivery date	/dɪˈlɪvəri ˈdeɪt/	/dɪˈlɪvəri ˈdeɪt/
+partial shipment	/ˈpɑːʃəl ˈʃɪpmənt/	/ˈpɑːrʃəl ˈʃɪpmənt/
+backorder	/ˈbækɔːdə/	/ˈbækɔːrdər/
+split shipment	/ˈsplɪt ˈʃɪpmənt/	/ˈsplɪt ˈʃɪpmənt/
+buyer	/ˈbaɪə/	/ˈbaɪər/
+seller	/ˈsɛlə/	/ˈsɛlər/
+exporter	/ɛkˈspɔːtə/	/ɛkˈspɔːrtər/
+importer	/ɪmˈpɔːtə/	/ɪmˈpɔːrtər/
+importer of record	/ɪmˈpɔːtə ɒv ˈrɛkɔːd/	/ɪmˈpɔːrtər ʌv ˈrɛkərd/
+trading company	/ˈtreɪdɪŋ ˈkʌmpəni/	/ˈtreɪdɪŋ ˈkʌmpəni/
+factory	/ˈfæktəri/	/ˈfæktəri/
+raw materials	/ˈrɔː məˈtiəriəlz/	/ˈrɔː məˈtɪriəlz/
+components	/kəmˈpəʊnənts/	/kəmˈpoʊnənts/
+spare parts	/ˈspeə ˈpɑːts/	/ˈspɛr ˈpɑːrts/
+finished goods	/ˈfɪnɪʃt ˈɡʊdz/	/ˈfɪnɪʃt ˈɡʊdz/
+work in progress (WIP)	/ˈwɜːk ɪn ˈprəʊɡrɛs/	/ˈwɜːrk ɪn ˈprɑːɡrɛs/
+quality check (QC)	/ˈkwɒlɪti ˈtʃɛk/	/ˈkwɔlɪti ˈtʃɛk/
+pre-shipment inspection	/ˈpriː ˈʃɪpmənt ɪnˈspɛkʃən/	/ˈpriː ˈʃɪpmənt ɪnˈspɛkʃən/
+defect	/ˈdiːfɛkt/	/ˈdiːfɛkt/
+rejection	/rɪˈdʒɛkʃən/	/rɪˈdʒɛkʃən/
+specifications (specs)	/ˌspɛsɪfɪˈkeɪʃənz/	/ˌspɛsɪfɪˈkeɪʃənz/
+negotiate	/nɪˈɡəʊʃɪˌeɪt/	/nɪˈɡoʊʃɪˌeɪt/
+supply	/səˈplaɪ/	/səˈplaɪ/
+demand	/dɪˈmænd/	/dɪˈmænd/
+forecast	/ˈfɔːkæst/	/ˈfɔːrkæst/
+planning	/ˈplænɪŋ/	/ˈplænɪŋ/
+visibility	/ˌvɪzɪˈbɪlɪti/	/ˌvɪzɪˈbɪlɪti/
+end-to-end	/ˈɛnd tʊ ˈɛnd/	/ˈɛnd tʊ ˈɛnd/
+flow	/ˈfləʊ/	/ˈfloʊ/
+sourcing	/ˈsɔːsɪŋ/	/ˈsɔːrsɪŋ/
+outsourcing	/aʊtˈsɔːsɪŋ/	/aʊtˈsɔːrsɪŋ/
+just-in-time (JIT)	/ˈdʒʌst ɪn ˈtaɪm/	/ˈdʒʌst ɪn ˈtaɪm/
+lean	/ˈliːn/	/ˈliːn/
+disruption	/dɪsˈrʌpʃən/	/dɪsˈrʌpʃən/
+risk	/ˈrɪsk/	/ˈrɪsk/
+contingency plan	/kənˈtɪndʒənsi ˈplæn/	/kənˈtɪndʒənsi ˈplæn/
+cost-effective	/ˈkɒst ɪˈfɛktɪv/	/ˈkɔst ɪˈfɛktɪv/
+efficiency	/ɪˈfɪʃənsi/	/ɪˈfɪʃənsi/
+service level	/ˈsɜːvɪs ˈlɛvəl/	/ˈsɜːrvɪs ˈlɛvəl/
+SLA (service level agreement)	/ˌɛs ɛl ˈeɪ/	/ˌɛs ɛl ˈeɪ/
+customer requirement	/ˈkʌstəmə rɪˈkwaɪəmənt/	/ˈkʌstəmər rɪˈkwaɪərmənt/
+lead time reduction	/ˈliːd ˈtaɪm rɪˈdʌkʃən/	/ˈliːd ˈtaɪm rɪˈdʌkʃən/
+order cycle	/ˈɔːdə ˈsaɪkəl/	/ˈɔːrdər ˈsaɪkəl/
+sustainability	/səˌsteɪnəˈbɪlɪti/	/səˌsteɪnəˈbɪlɪti/
+carbon emissions	/ˈkɑːbən ɪˈmɪʃənz/	/ˈkɑːrbən ɪˈmɪʃənz/
+WMS (warehouse management system)	/ˌdʌbəljuː ɛm ˈɛs/	/ˌdʌbəljuː ɛm ˈɛs/
+TMS (transport management system)	/ˌtiː ɛm ˈɛs/	/ˌtiː ɛm ˈɛs/
+ERP	/ˌiː ɑː ˈpiː/	/ˌiː ɑːr ˈpiː/
+EDI (electronic data interchange)	/ˌiː diː ˈaɪ/	/ˌiː diː ˈaɪ/
+system	/ˈsɪstəm/	/ˈsɪstəm/
+data entry	/ˈdeɪtə ˈɛntri/	/ˈdeɪtə ˈɛntri/
+input	/ˈɪnpʊt/	/ˈɪnpʊt/
+real-time	/ˈriəl ˈtaɪm/	/ˈriːəl ˈtaɪm/
+dashboard	/ˈdæʃbɔːd/	/ˈdæʃbɔːrd/
+report	/rɪˈpɔːt/	/rɪˈpɔːrt/
+spreadsheet	/ˈsprɛdʃiːt/	/ˈsprɛdʃiːt/
+tracking number	/ˈtrækɪŋ ˈnʌmbə/	/ˈtrækɪŋ ˈnʌmbər/
+tracking link	/ˈtrækɪŋ ˈlɪŋk/	/ˈtrækɪŋ ˈlɪŋk/
+status	/ˈsteɪtəs/	/ˈstætəs/
+in transit	/ɪn ˈtrænsɪt/	/ɪn ˈtrænsɪt/
+RFID	/ˌɑː ɛf aɪ ˈdiː/	/ˌɑːr ɛf aɪ ˈdiː/
+handheld	/ˈhændhɛld/	/ˈhændhɛld/
+portal	/ˈpɔːtəl/	/ˈpɔːrtəl/
+upload	/ˈʌpləʊd/	/ˈʌploʊd/
+download	/ˈdaʊnləʊd/	/ˈdaʊnloʊd/
+automation	/ˌɔːtəˈmeɪʃən/	/ˌɔːtəˈmeɪʃən/
+e-commerce	/ˈiː ˈkɒmɜːs/	/ˈiː ˈkɑːmɜːrs/
+online order	/ˈɒnlaɪn ˈɔːdə/	/ˈɑːnlaɪn ˈɔːrdər/
+marketplace	/ˈmɑːkɪtˌpleɪs/	/ˈmɑːrkɪtˌpleɪs/
+fulfilment	/fʊlˈfɪlmənt/	/fʊlˈfɪlmənt/
+fulfilment center	/fʊlˈfɪlmənt ˈsɛntə/	/fʊlˈfɪlmənt ˈsɛntər/
+parcel	/ˈpɑːsəl/	/ˈpɑːrsəl/
+same-day delivery	/ˈseɪm ˈdeɪ dɪˈlɪvəri/	/ˈseɪm ˈdeɪ dɪˈlɪvəri/
+next-day delivery	/ˈnɛkst ˈdeɪ dɪˈlɪvəri/	/ˈnɛkst ˈdeɪ dɪˈlɪvəri/
+express delivery	/ɛkˈsprɛs dɪˈlɪvəri/	/ɛkˈsprɛs dɪˈlɪvəri/
+standard delivery	/ˈstændəd dɪˈlɪvəri/	/ˈstændərd dɪˈlɪvəri/
+shipping fee	/ˈʃɪpɪŋ ˈfiː/	/ˈʃɪpɪŋ ˈfiː/
+return policy	/rɪˈtɜːn ˈpɒlɪsi/	/rɪˈtɜːrn ˈpɑːlɪsi/
+return rate	/rɪˈtɜːn ˈreɪt/	/rɪˈtɜːrn ˈreɪt/
+pick-up point	/ˈpɪk ˌʌp ˈpɔɪnt/	/ˈpɪk ˌʌp ˈpɔɪnt/
+parcel locker	/ˈpɑːsəl ˈlɒkə/	/ˈpɑːrsəl ˈlɑːkər/
+sorting	/ˈsɔːtɪŋ/	/ˈsɔːrtɪŋ/
+sorting center	/ˈsɔːtɪŋ ˈsɛntə/	/ˈsɔːrtɪŋ ˈsɛntər/
+hub	/ˈhʌb/	/ˈhʌb/
+shipper (delivery rider)	/ˈʃɪpə/	/ˈʃɪpər/
+order status	/ˈɔːdə ˈsteɪtəs/	/ˈɔːrdər ˈstætəs/
+out for delivery	/ˈaʊt fɔː dɪˈlɪvəri/	/ˈaʊt fɔːr dɪˈlɪvəri/
+delivered	/dɪˈlɪvəd/	/dɪˈlɪvərd/
+seller center	/ˈsɛlə ˈsɛntə/	/ˈsɛlər ˈsɛntər/
+flash sale	/ˈflæʃ ˈseɪl/	/ˈflæʃ ˈseɪl/
+peak day	/ˈpiːk ˈdeɪ/	/ˈpiːk ˈdeɪ/
+cross-border e-commerce	/ˈkrɒs ˈbɔːdə ˈiː ˈkɒmɜːs/	/ˈkrɔs ˈbɔːrdər ˈiː ˈkɑːmɜːrs/
+cold chain	/ˈkəʊld ˈtʃeɪn/	/ˈkoʊld ˈtʃeɪn/
+temperature-controlled	/ˈtɛmprɪtʃə kənˈtrəʊld/	/ˈtɛmprɪtʃər kənˈtroʊld/
+chilled	/ˈtʃɪld/	/ˈtʃɪld/
+frozen	/ˈfrəʊzən/	/ˈfroʊzən/
+set temperature	/ˈsɛt ˈtɛmprɪtʃə/	/ˈsɛt ˈtɛmprɪtʃər/
+temperature log	/ˈtɛmprɪtʃə ˈlɒɡ/	/ˈtɛmprɪtʃər ˈlɔɡ/
+data logger	/ˈdeɪtə ˈlɒɡə/	/ˈdeɪtə ˈlɔɡər/
+ventilation	/ˌvɛntɪˈleɪʃən/	/ˌvɛntɪˈleɪʃən/
+humidity	/hjuːˈmɪdɪti/	/hjuːˈmɪdɪti/
+cold storage	/ˈkəʊld ˈstɔːrɪdʒ/	/ˈkoʊld ˈstɔːrɪdʒ/
+blast freezer	/ˈblæst ˈfriːzə/	/ˈblæst ˈfriːzər/
+perishable goods	/ˈpɛrɪʃəbəl ˈɡʊdz/	/ˈpɛrɪʃəbəl ˈɡʊdz/
+shelf life	/ˈʃɛlf ˈlaɪf/	/ˈʃɛlf ˈlaɪf/
+temperature excursion	/ˈtɛmprɪtʃə ɛkˈskɜːʃən/	/ˈtɛmprɪtʃər ɛkˈskɜːrʃən/
+pharma	/ˈfɑːmə/	/ˈfɑːrmə/
+insulated box	/ˈɪnsjuːˌleɪtɪd ˈbɒks/	/ˈɪnsəˌleɪtɪd ˈbɑːks/
+dry ice	/ˈdraɪ ˈaɪs/	/ˈdraɪ ˈaɪs/
+ice pack / gel pack	/ˈaɪs ˈpæk/, /ˈdʒɛl ˈpæk/	/ˈaɪs ˈpæk/, /ˈdʒɛl ˈpæk/
+fresh produce	/ˈfrɛʃ prəˈdjuːs/	/ˈfrɛʃ prəˈduːs/
+dangerous goods (DG)	/ˈdeɪndʒərəs ˈɡʊdz/	/ˈdeɪndʒərəs ˈɡʊdz/
+hazardous materials (hazmat)	/ˈhæzədəs məˈtiəriəlz/	/ˈhæzərdəs məˈtɪriəlz/
+DG declaration	/ˌdiː ˈdʒiː ˌdɛkləˈreɪʃən/	/ˌdiː ˈdʒiː ˌdɛkləˈreɪʃən/
+UN number	/ˌjuː ˈɛn ˈnʌmbə/	/ˌjuː ˈɛn ˈnʌmbər/
+IMO class	/ˌaɪ ɛm ˈəʊ ˈklæs/	/ˌaɪ ɛm ˈoʊ ˈklæs/
+IMDG code	/ˌaɪ ɛm diː ˈdʒiː ˈkəʊd/	/ˌaɪ ɛm diː ˈdʒiː ˈkoʊd/
+flammable	/ˈflæməbəl/	/ˈflæməbəl/
+lithium battery	/ˈlɪθiəm ˈbætəri/	/ˈlɪθiəm ˈbætəri/
+DG surcharge	/ˌdiː ˈdʒiː ˈsɜːtʃɑːdʒ/	/ˌdiː ˈdʒiː ˈsɜːrtʃɑːrdʒ/
+non-DG	/ˈnɒn ˌdiː ˈdʒiː/	/ˈnɑːn ˌdiː ˈdʒiː/
+leakage	/ˈliːkɪdʒ/	/ˈliːkɪdʒ/
+spill	/ˈspɪl/	/ˈspɪl/
+safety	/ˈseɪfti/	/ˈseɪfti/
+PPE (personal protective equipment)	/ˌpiː piː ˈiː/	/ˌpiː piː ˈiː/
+hard hat	/ˈhɑːd ˈhæt/	/ˈhɑːrd ˈhæt/
+safety shoes	/ˈseɪfti ˈʃuːz/	/ˈseɪfti ˈʃuːz/
+hi-vis vest	/ˈhaɪ ˈvɪs ˈvɛst/	/ˈhaɪ ˈvɪs ˈvɛst/
+gloves	/ˈɡlʌvz/	/ˈɡlʌvz/
+fire extinguisher	/ˈfaɪə ɛkˈstɪŋɡwɪʃə/	/ˈfaɪər ɛkˈstɪŋɡwɪʃər/
+fire exit	/ˈfaɪə ˈɛɡzɪt/	/ˈfaɪər ˈɛɡzɪt/
+emergency	/ɪˈmɜːdʒənsi/	/ɪˈmɜːrdʒənsi/
+first aid	/ˈfɜːst ˈeɪd/	/ˈfɜːrst ˈeɪd/
+injury	/ˈɪndʒəri/	/ˈɪndʒəri/
+near miss	/ˌniə ˈmɪs/	/ˌnɪr ˈmɪs/
+hazard	/ˈhæzəd/	/ˈhæzərd/
+risk assessment	/ˈrɪsk əˈsɛsmənt/	/ˈrɪsk əˈsɛsmənt/
+training	/ˈtreɪnɪŋ/	/ˈtreɪnɪŋ/
+certificate	/səˈtɪfɪkət/	/sərˈtɪfɪkət/
+inspection checklist	/ɪnˈspɛkʃən ˈtʃɛklɪst/	/ɪnˈspɛkʃən ˈtʃɛklɪst/
+5S	/ˈfaɪv ˈɛs/	/ˈfaɪv ˈɛs/
+housekeeping	/ˈhaʊskiːpɪŋ/	/ˈhaʊskiːpɪŋ/
+audit	/ˈɔːdɪt/	/ˈɔːdɪt/
+ISO certification	/ˈaɪzəʊ ˌsɜːtɪfɪˈkeɪʃən/	/ˈaɪzoʊ ˌsɜːrtɪfɪˈkeɪʃən/
+quality control	/ˈkwɒlɪti kənˈtrəʊl/	/ˈkwɔlɪti kənˈtroʊl/
+SOP (standard operating procedure)	/ˌɛs əʊ ˈpiː/	/ˌɛs oʊ ˈpiː/
+non-conformance	/ˈnɒn kənˈfɔːməns/	/ˈnɑːn kənˈfɔːrməns/
+corrective action	/kəˈrɛktɪv ˈækʃən/	/kəˈrɛktɪv ˈækʃən/
+root cause	/ˈruːt ˈkɔːz/	/ˈruːt ˈkɔːz/
+security	/sɪˈkjʊərɪti/	/sɪˈkjʊrɪti/
+CCTV	/ˌsiː siː tiː ˈviː/	/ˌsiː siː tiː ˈviː/
+theft	/ˈθɛft/	/ˈθɛft/
+pilferage	/ˈpɪlfərɪdʒ/	/ˈpɪlfərɪdʒ/
+loss	/ˈlɒs/	/ˈlɔs/
+missing	/ˈmɪsɪŋ/	/ˈmɪsɪŋ/
+wet damage	/ˈwɛt ˈdæmɪdʒ/	/ˈwɛt ˈdæmɪdʒ/
+crushed	/ˈkrʌʃt/	/ˈkrʌʃt/
+dented	/ˈdɛntɪd/	/ˈdɛntɪd/
+torn	/ˈtɔːn/	/ˈtɔːrn/
+broken	/ˈbrəʊkən/	/ˈbroʊkən/
+survey	/ˈsɜːveɪ/	/ˈsɜːrveɪ/
+surveyor	/səˈveɪə/	/sərˈveɪər/
+survey report	/ˈsɜːveɪ rɪˈpɔːt/	/ˈsɜːrveɪ rɪˈpɔːrt/
+claim form	/ˈkleɪm ˈfɔːm/	/ˈkleɪm ˈfɔːrm/
+notice of claim	/ˈnəʊtɪs ɒv ˈkleɪm/	/ˈnoʊtɪs ʌv ˈkleɪm/
+time bar	/ˈtaɪm ˈbɑː/	/ˈtaɪm ˈbɑːr/
+exception	/ɛkˈsɛpʃən/	/ɛkˈsɛpʃən/
+issue	/ˈɪʃuː/	/ˈɪʃuː/
+problem	/ˈprɒbləm/	/ˈprɑːbləm/
+solution	/səˈluːʃən/	/səˈluːʃən/
+workaround	/ˈwɜːkəˌraʊnd/	/ˈwɜːrkəˌraʊnd/
+priority	/praɪˈɒrɪti/	/praɪˈɔːrɪti/
+rush order	/ˈrʌʃ ˈɔːdə/	/ˈrʌʃ ˈɔːrdər/
+urgent shipment	/ˈɜːdʒənt ˈʃɪpmənt/	/ˈɜːrdʒənt ˈʃɪpmənt/
+deadline missed	/ˈdɛdlaɪn ˈmɪst/	/ˈdɛdlaɪn ˈmɪst/
+on schedule	/ˌɒn ˈʃɛdjuːl/	/ˌɔn ˈskɛdʒuːl/
+behind schedule	/bɪˌhaɪnd ˈʃɛdjuːl/	/bɪˌhaɪnd ˈskɛdʒuːl/
+ahead of schedule	/əˈhɛd ɒv ˈʃɛdjuːl/	/əˈhɛd ʌv ˈskɛdʒuːl/
+reschedule	/rɪˈʃɛdjuːl/	/rɪˈskɛdʒuːl/
+postpone	/pəʊstˈpəʊn/	/poʊstˈpoʊn/
+cancel	/ˈkænsəl/	/ˈkænsəl/
+arrange	/əˈreɪndʒ/	/əˈreɪndʒ/
+handle	/ˈhændəl/	/ˈhændəl/
+check	/ˈtʃɛk/	/ˈtʃɛk/
+double-check	/ˈdʌbəl ˈtʃɛk/	/ˈdʌbəl ˈtʃɛk/
+verify	/ˈvɛrɪˌfaɪ/	/ˈvɛrɪˌfaɪ/
+notify	/ˈnəʊtɪˌfaɪ/	/ˈnoʊtɪˌfaɪ/
+inform	/ɪnˈfɔːm/	/ɪnˈfɔːrm/
+submit	/səbˈmɪt/	/səbˈmɪt/
+issue (a document)	/ˈɪʃuː/	/ˈɪʃuː/
+release	/rɪˈliːs/	/rɪˈliːs/
+collect	/kəˈlɛkt/	/kəˈlɛkt/
+deliver	/dɪˈlɪvə/	/dɪˈlɪvər/
+load	/ˈləʊd/	/ˈloʊd/
+unload	/ʌnˈləʊd/	/ʌnˈloʊd/
+ship	/ˈʃɪp/	/ˈʃɪp/
+book	/ˈbʊk/	/ˈbʊk/
+track	/ˈtræk/	/ˈtræk/
+trace	/ˈtreɪs/	/ˈtreɪs/
+allocate	/ˈæləˌkeɪt/	/ˈæləˌkeɪt/
+assign	/əˈsaɪn/	/əˈsaɪn/
+coordinate	/kəʊˈɔːdɪnət/	/koʊˈɔːrdɪnət/
+monitor	/ˈmɒnɪtə/	/ˈmɑːnɪtər/
+resolve	/rɪˈzɒlv/	/rɪˈzɑːlv/
+approve	/əˈpruːv/	/əˈpruːv/
+reject	/rɪˈdʒɛkt/	/rɪˈdʒɛkt/
+store	/ˈstɔː/	/ˈstɔːr/
+transfer	/ˈtrænsfɜː/	/ˈtrænsfɜːr/
+return	/rɪˈtɜːn/	/rɪˈtɜːrn/
+replace	/rɪˈpleɪs/	/rɪˈpleɪs/
+improve	/ɪmˈpruːv/	/ɪmˈpruːv/
+reduce	/rɪˈdjuːs/	/rɪˈduːs/
+increase	/ˈɪŋkriːs/	/ˈɪŋkriːs/
+performance	/pəˈfɔːməns/	/pərˈfɔːrməns/
+target	/ˈtɑːɡɪt/	/ˈtɑːrɡɪt/
+lead time variance	/ˈliːd ˈtaɪm ˈveəriəns/	/ˈliːd ˈtaɪm ˈvɛriəns/
+order accuracy	/ˈɔːdə ˈækjʊrəsi/	/ˈɔːrdər ˈækjʊrəsi/
+throughput	/ˈθruːpʊt/	/ˈθruːpʊt/
+productivity	/ˌprɒdəkˈtɪvɪti/	/ˌprɑːdəkˈtɪvɪti/
+utilisation	/ˌjuːtɪlaɪˈzeɪʃən/	/ˌjuːtɪləˈzeɪʃən/
+capacity	/kəˈpæsɪti/	/kəˈpæsɪti/
+shipping volume	/ˈʃɪpɪŋ ˈvɒljuːm/	/ˈʃɪpɪŋ ˈvɑːljuːm/
+FCA (Free Carrier)	/ˌɛf siː ˈeɪ/	/ˌɛf siː ˈeɪ/
+CFR (Cost and Freight)	/ˌsiː ɛf ˈɑː/	/ˌsiː ɛf ˈɑːr/
+CPT (Carriage Paid To)	/ˌsiː piː ˈtiː/	/ˌsiː piː ˈtiː/
+CIP (Carriage and Insurance Paid To)	/ˌsiː aɪ ˈpiː/	/ˌsiː aɪ ˈpiː/
+FAS (Free Alongside Ship)	/ˌɛf eɪ ˈɛs/	/ˌɛf eɪ ˈɛs/
+DPU (Delivered at Place Unloaded)	/ˌdiː piː ˈjuː/	/ˌdiː piː ˈjuː/
+named place	/ˈneɪmd ˈpleɪs/	/ˈneɪmd ˈpleɪs/
+transfer of risk	/ˈtrænsfɜː ɒv ˈrɪsk/	/ˈtrænsfɜːr ʌv ˈrɪsk/
+responsibility	/rɪˌspɒnsəˈbɪlɪti/	/rɪˌspɑːnsəˈbɪlɪti/
+buyer's account	/ˈbaɪəz əˈkaʊnt/	/ˈbaɪərz əˈkaʊnt/
+seller's account	/ˈsɛləz əˈkaʊnt/	/ˈsɛlərz əˈkaʊnt/
+origin charges	/ˈɒrɪˌdʒɪn ˈtʃɑːdʒɪz/	/ˈɔːrɪˌdʒɪn ˈtʃɑːrdʒɪz/
+destination charges	/ˌdɛstɪˈneɪʃən ˈtʃɑːdʒɪz/	/ˌdɛstɪˈneɪʃən ˈtʃɑːrdʒɪz/
+insured value	/ɪnˈʃʊəd ˈvæljuː/	/ɪnˈʃʊrd ˈvæljuː/
+premium	/ˈpriːmiəm/	/ˈpriːmiəm/
+all risks	/ˈɔːl ˈrɪsks/	/ˈɔːl ˈrɪsks/
+insurance policy	/ɪnˈʃʊərəns ˈpɒlɪsi/	/ɪnˈʃʊrəns ˈpɑːlɪsi/
+insurer	/ɪnˈʃʊərə/	/ɪnˈʃʊrər/
+coverage	/ˈkʌvərɪdʒ/	/ˈkʌvərɪdʒ/
+deductible	/dɪˈdʌktɪbəl/	/dɪˈdʌktɪbəl/
+general average	/ˈdʒɛnərəl ˈævrɪdʒ/	/ˈdʒɛnərəl ˈævrɪdʒ/
+cost	/ˈkɒst/	/ˈkɔst/
+price	/ˈpraɪs/	/ˈpraɪs/
+rate	/ˈreɪt/	/ˈreɪt/
+fee	/ˈfiː/	/ˈfiː/
+charge	/ˈtʃɑːdʒ/	/ˈtʃɑːrdʒ/
+total	/ˈtəʊtəl/	/ˈtoʊtəl/
+include / exclude	/ɪŋˈkluːd/, /ɛksˈkluːd/	/ɪŋˈkluːd/, /ɛksˈkluːd/
+valid until	/ˈvælɪd ʌnˈtɪl/	/ˈvælɪd ʌnˈtɪl/
+competitive rate	/kəmˈpɛtɪˌtɪv ˈreɪt/	/kəmˈpɛtɪˌtɪv ˈreɪt/
+best rate	/ˈbɛst ˈreɪt/	/ˈbɛst ˈreɪt/
+rate increase	/ˈreɪt ˈɪŋkriːs/	/ˈreɪt ˈɪŋkriːs/
+port	/ˈpɔːt/	/ˈpɔːrt/
+airport	/ˈeəpɔːt/	/ˈɛrpɔːrt/
+ICD (inland container depot)	/ˌaɪ siː ˈdiː/	/ˌaɪ siː ˈdiː/
+dry port	/ˈdraɪ ˈpɔːt/	/ˈdraɪ ˈpɔːrt/
+barge	/ˈbɑːdʒ/	/ˈbɑːrdʒ/
+inland waterway	/ˈɪnlənd ˈwɔːtəˌweɪ/	/ˈɪnlənd ˈwɔːtərˌweɪ/
+multimodal	/ˌmʌltɪˈməʊdəl/	/ˌmʌltɪˈmoʊdəl/
+rail	/ˈreɪl/	/ˈreɪl/
+railway station	/ˈreɪlweɪ ˈsteɪʃən/	/ˈreɪlweɪ ˈsteɪʃən/
+lorry	/ˈlɒri/	/ˈlɔri/
+van	/ˈvæn/	/ˈvæn/
+motorbike delivery	/ˈməʊtəˌbaɪk dɪˈlɪvəri/	/ˈmoʊtərˌbaɪk dɪˈlɪvəri/
+mode of transport	/ˈməʊd ɒv ˈtrænspɔːt/	/ˈmoʊd ʌv ˈtrænspɔːrt/
+transport cost	/ˈtrænspɔːt ˈkɒst/	/ˈtrænspɔːrt ˈkɔst/
+transport plan	/ˈtrænspɔːt ˈplæn/	/ˈtrænspɔːrt ˈplæn/
+logistics provider	/ləˈdʒɪstɪks prəˈvaɪdə/	/ləˈdʒɪstɪks prəˈvaɪdər/
+forwarding agent	/ˈfɔːwədɪŋ ˈeɪdʒənt/	/ˈfɔːrwərdɪŋ ˈeɪdʒənt/
+shipping agent	/ˈʃɪpɪŋ ˈeɪdʒənt/	/ˈʃɪpɪŋ ˈeɪdʒənt/
+haulier / haulage company	/ˈhɔːliə/, /ˈhɔːlɪdʒ ˈkʌmpəni/	/ˈhɔːliər/, /ˈhɔːlɪdʒ ˈkʌmpəni/
+logistics solution	/ləˈdʒɪstɪks səˈluːʃən/	/ləˈdʒɪstɪks səˈluːʃən/
+route	/ˈruːt/	/ˈraʊt/
+destination	/ˌdɛstɪˈneɪʃən/	/ˌdɛstɪˈneɪʃən/
+origin	/ˈɒrɪˌdʒɪn/	/ˈɔːrɪˌdʒɪn/
+door delivery	/ˈdɔː dɪˈlɪvəri/	/ˈdɔːr dɪˈlɪvəri/
+port-to-port	/ˈpɔːt tə ˈpɔːt/	/ˈpɔːrt tə ˈpɔːrt/
+door-to-port	/ˈdɔː tə ˈpɔːt/	/ˈdɔːr tə ˈpɔːrt/
+hand over	/ˈhænd ˈəʊvə/	/ˈhænd ˈoʊvər/
+transit	/ˈtrænsɪt/	/ˈtrænsɪt/
+could you confirm	/kʊd juː kənˈfɜːm/	/kʊd juː kənˈfɜːrm/
+could you advise	/kʊd juː ədˈvaɪz/	/kʊd juː ədˈvaɪz/
+I'd like to check	/aɪd ˈlaɪk tə ˈtʃɛk/	/aɪd ˈlaɪk tə ˈtʃɛk/
+let me check	/ˈlɛt ˌmiː ˈtʃɛk/	/ˈlɛt ˌmiː ˈtʃɛk/
+I'm afraid	/aɪm əˈfreɪd/	/aɪm əˈfreɪd/
+unfortunately	/ʌnˈfɔːtʃənətli/	/ʌnˈfɔːrtʃənətli/
+we regret to inform you	/wiː rɪɡˈrɛt tʊ ɪnˈfɔːm juː/	/wiː rɪɡˈrɛt tʊ ɪnˈfɔːrm juː/
+we are pleased to	/wiː ɑː ˈpliːzd tuː/	/wiː ɑːr ˈpliːzd tuː/
+thank you for your patience	/ˈθæŋk juː fɔː jɔː ˈpeɪʃəns/	/ˈθæŋk juː fɔːr jʊr ˈpeɪʃəns/
+sorry for the late reply	/ˈsɒri fəðə ˈleɪt rɪˈplaɪ/	/ˈsɑːri fərðə ˈleɪt rɪˈplaɪ/
+I'm calling about	/aɪm ˈkɔːlɪŋ əˈbaʊt/	/aɪm ˈkɔːlɪŋ əˈbaʊt/
+is it possible to	/ɪz ɪt ˈpɒsɪbəl tuː/	/ɪz ɪt ˈpɑːsɪbəl tuː/
+would it be possible	/wʊd ɪt biː ˈpɒsɪbəl/	/wʊd ɪt biː ˈpɑːsɪbəl/
+I suggest that	/aɪ səˈdʒɛst ˈðæt/	/aɪ səˈdʒɛst ˈðæt/
+how about	/ˌhaʊ əˈbaʊt/	/ˌhaʊ əˈbaʊt/
+that works for us	/ðæt ˈwɜːks fɔː ˌʌs/	/ðæt ˈwɜːrks fɔːr ˌʌs/
+agreed	/əɡˈriːd/	/əɡˈriːd/
+let's keep in touch	/ˈlɛts ˈkiːp ɪn ˈtʌtʃ/	/ˈlɛts ˈkiːp ɪn ˈtʌtʃ/
+best regards	/ˈbɛst rɪˈɡɑːdz/	/ˈbɛst rɪˈɡɑːrdz/
+dear Sir or Madam	/ˈdiə ˌsɜː ɔː ˈmædəm/	/ˈdɪr ˌsɜːr ɔːr ˈmædəm/
+I look forward to working with you	/aɪ ˈlʊk ˈfɔːwəd tə ˈwɜːkɪŋ wɪð juː/	/aɪ ˈlʊk ˈfɔːrwərd tə ˈwɜːrkɪŋ wɪð juː/
+confirm receipt	/kənˈfɜːm rɪˈsiːt/	/kənˈfɜːrm rɪˈsiːt/
+action required	/ˈækʃən rɪˈkwaɪəd/	/ˈækʃən rɪˈkwaɪərd/
+asap reply needed	/ˌeɪˌɛˌseɪˈpiː rɪˈplaɪ ˈniːdɪd/	/ˌeɪˌɛˌseɪˈpiː rɪˈplaɪ ˈniːdɪd/
+on behalf of	/ˌɒn bɪˈhɑːf ɒv/	/ˌɔn bɪˈhæf ʌv/
+agenda	/əˈdʒɛndə/	/əˈdʒɛndə/
+minutes	/ˈmɪnɪts/	/ˈmɪnɪts/
+action items	/ˈækʃən ˈaɪtəmz/	/ˈækʃən ˈaɪtəmz/
+point of contact	/ˈpɔɪnt ɒv ˈkɒntækt/	/ˈpɔɪnt ʌv ˈkɑːntækt/
+customs broker fee	/ˈkʌstəmz ˈbrəʊkə ˈfiː/	/ˈkʌstəmz ˈbroʊkər ˈfiː/
+customs inspection fee	/ˈkʌstəmz ɪnˈspɛkʃən ˈfiː/	/ˈkʌstəmz ɪnˈspɛkʃən ˈfiː/
+customs hold	/ˈkʌstəmz ˈhəʊld/	/ˈkʌstəmz ˈhoʊld/
+duty-free	/ˈdjuːti ˈfriː/	/ˈduːti ˈfriː/
+tax code	/ˈtæks ˈkəʊd/	/ˈtæks ˈkoʊd/
+HS code check	/ˌeɪtʃ ˈɛs ˈkəʊd ˈtʃɛk/	/ˌeɪtʃ ˈɛs ˈkoʊd ˈtʃɛk/
+customs valuation	/ˈkʌstəmz ˌvæljuːˈeɪʃən/	/ˈkʌstəmz ˌvæljuːˈeɪʃən/
+anti-dumping duty	/ˈænti ˈdʌmpɪŋ ˈdjuːti/	/ˈæntaɪ ˈdʌmpɪŋ ˈduːti/
+specialised inspection	/ˈspɛʃəˌlaɪzd ɪnˈspɛkʃən/	/ˈspɛʃəˌlaɪzd ɪnˈspɛkʃən/
+origin criteria	/ˈɒrɪˌdʒɪn kraɪˈtiərɪə/	/ˈɔːrɪˌdʒɪn kraɪˈtiərɪə/
+self-certification	/ˈsɛlf ˌsɜːtɪfɪˈkeɪʃən/	/ˈsɛlf ˌsɜːrtɪfɪˈkeɪʃən/
+REX (registered exporter)	/ˈrɛks/	/ˈrɛks/
+customs clearance time	/ˈkʌstəmz ˈkliərəns ˈtaɪm/	/ˈkʌstəmz ˈklɪrəns ˈtaɪm/
+clearance documents	/ˈkliərəns ˈdɒkjuːmənts/	/ˈklɪrəns ˈdɑːkjuːmənts/
+import permit	/ɪmˈpɔːt ˈpɜːmɪt/	/ɪmˈpɔːrt ˈpɜːrmɪt/
+cargo	/ˈkɑːɡəʊ/	/ˈkɑːrɡoʊ/
+consignment	/kənˈsaɪnmənt/	/kənˈsaɪnmənt/
+in good condition	/ɪn ˈɡʊd kənˈdɪʃən/	/ɪn ˈɡʊd kənˈdɪʃən/
+in bad order	/ɪn ˈbæd ˈɔːdə/	/ɪn ˈbæd ˈɔːrdər/
+clean B/L	/ˈkliːn ˌbiː ˈɛl/	/ˈkliːn ˌbiː ˈɛl/
+claused B/L	/ˈklɔːzd ˌbiː ˈɛl/	/ˈklɔːzd ˌbiː ˈɛl/
+LOI (letter of indemnity)	/ˌɛl əʊ ˈaɪ/	/ˌɛl oʊ ˈaɪ/
+release order	/rɪˈliːs ˈɔːdə/	/rɪˈliːs ˈɔːrdər/
+EIR (equipment interchange receipt)	/ˌiː aɪ ˈɑː/	/ˌiː aɪ ˈɑːr/
+container release order	/kənˈteɪnə rɪˈliːs ˈɔːdə/	/kənˈteɪnər rɪˈliːs ˈɔːrdər/
+gate pass	/ˈɡeɪt ˈpæs/	/ˈɡeɪt ˈpæs/
+customs declaration number	/ˈkʌstəmz ˌdɛkləˈreɪʃən ˈnʌmbə/	/ˈkʌstəmz ˌdɛkləˈreɪʃən ˈnʌmbər/
+cargo receipt	/ˈkɑːɡəʊ rɪˈsiːt/	/ˈkɑːrɡoʊ rɪˈsiːt/
+booking note	/ˈbʊkɪŋ ˈnəʊt/	/ˈbʊkɪŋ ˈnoʊt/
+VAT invoice	/ˌviː eɪ ˈtiː ˈɪnvɔɪs/	/ˌviː eɪ ˈtiː ˈɪnvɔɪs/
+e-invoice	/ˈiː ˈɪnvɔɪs/	/ˈiː ˈɪnvɔɪs/
+contract of carriage	/ˈkɒntrækt ɒv ˈkærɪdʒ/	/ˈkɑːntrækt ʌv ˈkærɪdʒ/
+terms and conditions	/ˈtɜːmz ænd kənˈdɪʃənz/	/ˈtɜːrmz ænd kənˈdɪʃənz/
+air freight rate	/ˈeə ˈfreɪt ˈreɪt/	/ˈɛr ˈfreɪt ˈreɪt/
+cargo acceptance	/ˈkɑːɡəʊ əkˈsɛptəns/	/ˈkɑːrɡoʊ əkˈsɛptəns/
+airline cut-off	/ˈeəlaɪn ˈkʌt ˈɒf/	/ˈɛrlaɪn ˈkʌt ˈɔf/
+known shipper	/ˈnəʊn ˈʃɪpə/	/ˈnoʊn ˈʃɪpər/
+dimension check	/daɪˈmɛnʃən ˈtʃɛk/	/dɪˈmɛnʃən ˈtʃɛk/
+oversize	/ˌəʊvəˈsaɪz/	/ˌoʊvərˈsaɪz/
+cargo-only aircraft (CAO)	/ˈkɑːɡəʊ ˈəʊnli ˈeəkræft/	/ˈkɑːrɡoʊ ˈoʊnli ˈɛrkræft/
+priority service	/praɪˈɒrɪti ˈsɜːvɪs/	/praɪˈɔːrɪti ˈsɜːrvɪs/
+deferred service	/dɪˈfɜːd ˈsɜːvɪs/	/dɪˈfɜːrd ˈsɜːrvɪs/
+customs at the airport	/ˈkʌstəmz æt ðɪ ˈeəpɔːt/	/ˈkʌstəmz æt ðɪ ˈɛrpɔːrt/
+flight delay	/ˈflaɪt dɪˈleɪ/	/ˈflaɪt dɪˈleɪ/
+airport transfer	/ˈeəpɔːt ˈtrænsfɜː/	/ˈɛrpɔːrt ˈtrænsfɜːr/
+air cargo manifest	/ˈeə ˈkɑːɡəʊ ˈmænɪˌfɛst/	/ˈɛr ˈkɑːrɡoʊ ˈmænɪˌfɛst/
+pallet label	/ˈpælɪt ˈleɪbəl/	/ˈpælɪt ˈleɪbəl/
+cartons per pallet	/ˈkɑːtənz pɜː ˈpælɪt/	/ˈkɑːrtənz pɜːr ˈpælɪt/
+layer	/ˈleɪə/	/ˈleɪər/
+mixed pallet	/ˈmɪkst ˈpælɪt/	/ˈmɪkst ˈpælɪt/
+full pallet	/ˈfʊl ˈpælɪt/	/ˈfʊl ˈpælɪt/
+pick face	/ˈpɪk ˈfeɪs/	/ˈpɪk ˈfeɪs/
+mezzanine	/ˈmɛzəˌniːn/	/ˈmɛzəˌniːn/
+conveyor	/kənˈveɪə/	/kənˈveɪər/
+sorter	/ˈsɔːtə/	/ˈsɔːrtər/
+packing station	/ˈpækɪŋ ˈsteɪʃən/	/ˈpækɪŋ ˈsteɪʃən/
+weighing scale	/ˈweɪɪŋ ˈskeɪl/	/ˈweɪɪŋ ˈskeɪl/
+filler / void fill	/ˈfɪlə/, /ˈvɔɪd ˈfɪl/	/ˈfɪlər/, /ˈvɔɪd ˈfɪl/
+bubble wrap	/ˈbʌbəl ˈræp/	/ˈbʌbəl ˈræp/
+tape	/ˈteɪp/	/ˈteɪp/
+seal (a box)	/ˈsiːl/	/ˈsiːl/
+temperature zone	/ˈtɛmprɪtʃə ˈzəʊn/	/ˈtɛmprɪtʃər ˈzoʊn/
+bonded storage	/ˈbɒndɪd ˈstɔːrɪdʒ/	/ˈbɑːndɪd ˈstɔːrɪdʒ/
+warehouse layout	/ˈweəhaʊs ˈleɪaʊt/	/ˈwɛrhaʊs ˈleɪaʊt/
+occupancy	/ˈɒkjʊpənsi/	/ˈɑːkjʊpənsi/
+inventory turnover	/ˈɪnvəntri ˈtɜːnəʊvə/	/ˈɪnvənˌtɔːri ˈtɜːrnoʊvər/
+days of inventory	/ˈdeɪz ɒv ˈɪnvəntri/	/ˈdeɪz ʌv ˈɪnvənˌtɔːri/
+warehouse receipt	/ˈweəhaʊs rɪˈsiːt/	/ˈwɛrhaʊs rɪˈsiːt/
+security seal	/sɪˈkjʊərɪti ˈsiːl/	/sɪˈkjʊrɪti ˈsiːl/
+gate check	/ˈɡeɪt ˈtʃɛk/	/ˈɡeɪt ˈtʃɛk/
+visitor badge	/ˈvɪzɪtə ˈbædʒ/	/ˈvɪzɪtər ˈbædʒ/
+no smoking	/ˈnəʊ ˈsməʊkɪŋ/	/ˈnoʊ ˈsmoʊkɪŋ/
+speed limit	/ˈspiːd ˈlɪmɪt/	/ˈspiːd ˈlɪmɪt/
+pedestrian walkway	/pəˈdɛstriən ˈwɔːkweɪ/	/pəˈdɛstriən ˈwɔːkweɪ/
+load securing	/ˈləʊd sɪˈkjʊərɪŋ/	/ˈloʊd sɪˈkjʊrɪŋ/
+overloading	/ˌəʊvəˈləʊdɪŋ/	/ˌoʊvərˈloʊdɪŋ/
+incident report	/ˈɪnsɪdənt rɪˈpɔːt/	/ˈɪnsɪdənt rɪˈpɔːrt/
+driver's license	/ˈdraɪvəz ˈlaɪsəns/	/ˈdraɪvərz ˈlaɪsəns/
+driving hours	/ˈdraɪvɪŋ ˈaʊəz/	/ˈdraɪvɪŋ ˈaʊərz/
+rest stop	/ˈrɛst ˈstɒp/	/ˈrɛst ˈstɑːp/
+traffic jam	/ˈtræfɪk ˈdʒæm/	/ˈtræfɪk ˈdʒæm/
+detour	/ˈdiːtʊə/	/ˈdiːtʊr/
+loading time	/ˈləʊdɪŋ ˈtaɪm/	/ˈloʊdɪŋ ˈtaɪm/
+truck booking	/ˈtrʌk ˈbʊkɪŋ/	/ˈtrʌk ˈbʊkɪŋ/
+trucking rate	/ˈtrʌkɪŋ ˈreɪt/	/ˈtrʌkɪŋ ˈreɪt/
+fuel surcharge (road)	/ˈfjuːəl ˈsɜːtʃɑːdʒ/	/ˈfjuːəl ˈsɜːrtʃɑːrdʒ/
+backhaul	/ˈbækhɔːl/	/ˈbækhɔːl/
+empty run	/ˈɛmpti ˈrʌn/	/ˈɛmpti ˈrʌn/
+delivery route	/dɪˈlɪvəri ˈruːt/	/dɪˈlɪvəri ˈraʊt/
+stop	/ˈstɒp/	/ˈstɑːp/
+receiver	/rɪˈsiːvə/	/rɪˈsiːvər/
+signature	/ˈsɪɡnɪtʃə/	/ˈsɪɡnɪtʃər/
+e-POD	/ˌiː piː əʊ ˈdiː/	/ˌiː piː oʊ ˈdiː/
+EDI message	/ˌiː diː ˈaɪ ˈmɛsɪdʒ/	/ˌiː diː ˈaɪ ˈmɛsɪdʒ/
+API	/ˌeɪ piː ˈaɪ/	/ˌeɪ piː ˈaɪ/
+login	/ˈlɒɡɪn/	/ˈlɑːɡɪn/
+password	/ˈpæswɜːd/	/ˈpæswɜːrd/
+error message	/ˈɛrə ˈmɛsɪdʒ/	/ˈɛrər ˈmɛsɪdʒ/
+backup	/ˈbækʌp/	/ˈbækʌp/
+label printer	/ˈleɪbəl ˈprɪntə/	/ˈleɪbəl ˈprɪntər/
+data accuracy	/ˈdeɪtə ˈækjʊrəsi/	/ˈdeɪtə ˈækjʊrəsi/
+digitalisation	/ˌdɪdʒɪtəlaɪˈzeɪʃən/	/ˌdɪdʒɪtələˈzeɪʃən/
+paperless	/ˈpeɪpələs/	/ˈpeɪpərləs/
+track and trace system	/ˈtræk ænd ˈtreɪs ˈsɪstəm/	/ˈtræk ænd ˈtreɪs ˈsɪstəm/
+proof of identity	/ˈpruːf ɒv aɪˈdɛntɪti/	/ˈpruːf ʌv aɪˈdɛntɪti/
+order management	/ˈɔːdə ˈmænɪdʒmənt/	/ˈɔːrdər ˈmænɪdʒmənt/
+shipment status	/ˈʃɪpmənt ˈsteɪtəs/	/ˈʃɪpmənt ˈstætəs/
+milestone	/ˈmaɪlstəʊn/	/ˈmaɪlstoʊn/
+COD reconciliation	/ˌsiː əʊ ˈdiː ˌrɛkənˌsɪlɪˈeɪʃən/	/ˌsiː oʊ ˈdiː ˌrɛkənˌsɪlɪˈeɪʃən/
+packaging cost	/ˈpækɪdʒɪŋ ˈkɒst/	/ˈpækɪdʒɪŋ ˈkɔst/
+unboxing	/ʌnˈbɒksɪŋ/	/ʌnˈbɑːksɪŋ/
+SKU count	/ˌɛs keɪ ˈjuː ˈkaʊnt/	/ˌɛs keɪ ˈjuː ˈkaʊnt/
+order cut-off	/ˈɔːdə ˈkʌt ˈɒf/	/ˈɔːrdər ˈkʌt ˈɔf/
+customer review	/ˈkʌstəmə rɪˈvjuː/	/ˈkʌstəmər rɪˈvjuː/
+delivery attempt	/dɪˈlɪvəri əˈtɛmpt/	/dɪˈlɪvəri əˈtɛmpt/
+refund request	/rɪˈfʌnd rɪˈkwɛst/	/rɪˈfʌnd rɪˈkwɛst/
+exchange	/ɛksˈtʃeɪndʒ/	/ɛksˈtʃeɪndʒ/
+last-mile carrier	/ˈlæst ˈmaɪl ˈkæriə/	/ˈlæst ˈmaɪl ˈkæriər/
+dropshipping	/ˈdrɒpʃɪpɪŋ/	/ˈdrɑːpʃɪpɪŋ/
+pick, pack and ship	/ˈpɪk ˈpæk ænd ˈʃɪp/	/ˈpɪk ˈpæk ænd ˈʃɪp/
+general manager	/ˈdʒɛnərəl ˈmænɪdʒə/	/ˈdʒɛnərəl ˈmænɪdʒər/
+logistics manager	/ləˈdʒɪstɪks ˈmænɪdʒə/	/ləˈdʒɪstɪks ˈmænɪdʒər/
+supply chain manager	/səˈplaɪ ˈtʃeɪn ˈmænɪdʒə/	/səˈplaɪ ˈtʃeɪn ˈmænɪdʒər/
+planner	/ˈplænə/	/ˈplænər/
+forklift driver	/ˈfɔːklɪft ˈdraɪvə/	/ˈfɔːrklɪft ˈdraɪvər/
+storekeeper	/ˈstɔːkiːpə/	/ˈstɔːrkiːpər/
+customs declarant	/ˈkʌstəmz dɪˈklærənt/	/ˈkʌstəmz dɪˈklærənt/
+freight forwarder staff	/ˈfreɪt ˈfɔːwədə ˈstæf/	/ˈfreɪt ˈfɔːrwərdər ˈstæf/
+shipping clerk	/ˈʃɪpɪŋ ˈklɑːk/	/ˈʃɪpɪŋ ˈklɜːrk/
+key account	/ˈkiː əˈkaʊnt/	/ˈkiː əˈkaʊnt/
+supplier evaluation	/səˈplaɪə ɪˌvæljuːˈeɪʃən/	/səˈplaɪər ɪˌvæljuːˈeɪʃən/
+purchase request (PR)	/ˈpɜːtʃɪs rɪˈkwɛst/	/ˈpɜːrtʃɪs rɪˈkwɛst/
+lead time (supplier)	/ˈliːd ˈtaɪm/	/ˈliːd ˈtaɪm/
+quotation comparison	/kwəʊˈteɪʃən kəmˈpærɪsən/	/kwoʊˈteɪʃən kəmˈpærɪsən/
+long-term contract	/ˈlɒŋ ˈtɜːm ˈkɒntrækt/	/ˈlɔŋ ˈtɜːrm ˈkɑːntrækt/
+order volume	/ˈɔːdə ˈvɒljuːm/	/ˈɔːrdər ˈvɑːljuːm/
+re-order	/ˌriː ˈɔːdə/	/ˌriː ˈɔːrdər/
+safety stock level	/ˈseɪfti ˈstɒk ˈlɛvəl/	/ˈseɪfti ˈstɑːk ˈlɛvəl/
+stock coverage	/ˈstɒk ˈkʌvərɪdʒ/	/ˈstɑːk ˈkʌvərɪdʒ/
+demand planning	/dɪˈmænd ˈplænɪŋ/	/dɪˈmænd ˈplænɪŋ/
+supply planning	/səˈplaɪ ˈplænɪŋ/	/səˈplaɪ ˈplænɪŋ/
+network design	/ˈnɛtwɜːk dɪˈzaɪn/	/ˈnɛtwɜːrk dɪˈzaɪn/
+nearshoring	/ˈniəʃərɪŋ/	/ˈnɪrʃərɪŋ/
+dual sourcing	/ˈdjuːəl ˈsɔːsɪŋ/	/ˈduːəl ˈsɔːrsɪŋ/
+supplier lead time	/səˈplaɪə ˈliːd ˈtaɪm/	/səˈplaɪər ˈliːd ˈtaɪm/
+shortage of supply	/ˈʃɔːtɪdʒ ɒv səˈplaɪ/	/ˈʃɔːrtɪdʒ ʌv səˈplaɪ/
+on-time in-full (OTIF)	/ˌɒn ˈtaɪm ɪn ˈfʊl/	/ˌɔn ˈtaɪm ɪn ˈfʊl/
+perfect order	/ˈpɜːfɛkt ˈɔːdə/	/ˈpɜːrfɛkt ˈɔːrdər/
+cost per unit	/ˈkɒst pɜː ˈjuːnɪt/	/ˈkɔst pɜːr ˈjuːnɪt/
+cost per order	/ˈkɒst pɜː ˈɔːdə/	/ˈkɔst pɜːr ˈɔːrdər/
+error rate	/ˈɛrə ˈreɪt/	/ˈɛrər ˈreɪt/
+lessons learned	/ˈlɛsənz ˈlɜːnd/	/ˈlɛsənz ˈlɜːrnd/
+continuous improvement	/kənˈtɪnjuːəs ɪmˈpruːvmənt/	/kənˈtɪnjuːəs ɪmˈpruːvmənt/
+weekly report	/ˈwiːkli rɪˈpɔːt/	/ˈwiːkli rɪˈpɔːrt/
+free time extension	/ˈfriː ˈtaɪm ɛkˈstɛnʃən/	/ˈfriː ˈtaɪm ɛkˈstɛnʃən/
+detention and demurrage (D&D)	/dɪˈtɛnʃən ænd dɪˈmʌrɪdʒ/	/dɪˈtɛnʃən ænd dɪˈmɜːrɪdʒ/
+B/L release	/ˌbiː ˈɛl rɪˈliːs/	/ˌbiː ˈɛl rɪˈliːs/
+freight invoice	/ˈfreɪt ˈɪnvɔɪs/	/ˈfreɪt ˈɪnvɔɪs/
+origin agent	/ˈɒrɪˌdʒɪn ˈeɪdʒənt/	/ˈɔːrɪˌdʒɪn ˈeɪdʒənt/
+destination agent	/ˌdɛstɪˈneɪʃən ˈeɪdʒənt/	/ˌdɛstɪˈneɪʃən ˈeɪdʒənt/
+loading photos	/ˈləʊdɪŋ ˈfəʊtəʊz/	/ˈloʊdɪŋ ˈfoʊtoʊz/
+container inspection	/kənˈteɪnə ɪnˈspɛkʃən/	/kənˈteɪnər ɪnˈspɛkʃən/
+shipment details	/ˈʃɪpmənt ˈdiːteɪlz/	/ˈʃɪpmənt diːˈteɪlz/
+rate confirmation	/ˈreɪt kɒnfəˈmeɪʃən/	/ˈreɪt kɑːnfərˈmeɪʃən/
