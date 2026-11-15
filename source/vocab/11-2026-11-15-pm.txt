@@ -1,0 +1,10 @@
+booking|việc đặt chỗ (tàu, máy bay, xe)|The booking is confirmed for vessel MSC Anna, ETD 22 November.|A2|oc
+container yard (CY)|bãi container|The full container must be at the container yard before the CY cut-off.|B1|oc
+empty pick-up|lấy container rỗng|Empty pick-up is at the Tan Cang depot from tomorrow.|B1|td
+laden container|container có hàng|A laden container cannot exceed the maximum payload.|B2|oc
+port charges|phí cảng|Port charges at destination are for the consignee's account.|B1|fi
+delivery address|địa chỉ giao hàng|Please confirm the delivery address and contact person.|A2|td
+pick-up address|địa chỉ lấy hàng|The pick-up address is Lot 12, VSIP 2, Binh Duong.|A2|td
+delivery schedule|lịch giao hàng|The customer changed the delivery schedule to twice a week.|A2|op
+shipping cost|chi phí vận chuyển|Shipping cost went up 15% this quarter.|A2|fi
+cargo details|thông tin hàng hóa|Please send the cargo details: commodity, weight and volume.|A2|em

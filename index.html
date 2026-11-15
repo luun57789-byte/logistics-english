@@ -208,7 +208,7 @@ footer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px soli
 </header>
 
 <main class="wrap" id="app"></main>
-<footer class="wrap"><b>Phiên bản 15/11/2026 16:02 · 1011 từ, có IPA UK/US</b> · Âm thanh dùng giọng tiếng Anh có sẵn trên máy bạn; nếu không nghe thấy, hãy kiểm tra âm lượng và chế độ im lặng. Chấm phát âm dựa trên việc máy nhận ra đúng từ bạn đọc, nên đọc chậm, rõ ở nơi yên tĩnh. Tiến độ học lưu trên trình duyệt này. Video mở trên YouTube ở tab mới.</footer>
+<footer class="wrap"><b>Phiên bản 15/11/2026 18:49 · 1021 từ, có IPA UK/US</b> · Âm thanh dùng giọng tiếng Anh có sẵn trên máy bạn; nếu không nghe thấy, hãy kiểm tra âm lượng và chế độ im lặng. Chấm phát âm dựa trên việc máy nhận ra đúng từ bạn đọc, nên đọc chậm, rõ ở nơi yên tĩnh. Tiến độ học lưu trên trình duyệt này. Video mở trên YouTube ở tab mới.</footer>
 
 <script>
 const ICON={
@@ -1249,7 +1249,17 @@ destination agent|đại lý đầu nhập|The destination agent will contact th
 loading photos|ảnh đóng hàng|Please send loading photos showing the container number and seal.|A2|oc|/ˈləʊdɪŋ ˈfəʊtəʊz/|/ˈloʊdɪŋ ˈfoʊtoʊz/
 container inspection|kiểm tra container rỗng|Do a container inspection before stuffing to check for holes and smells.|B1|oc|/kənˈteɪnə ɪnˈspɛkʃən/|/kənˈteɪnər ɪnˈspɛkʃən/
 shipment details|thông tin lô hàng|Please confirm the shipment details: 2 x 40HC, 18 tonnes, ETD 20 Nov.|A2|em|/ˈʃɪpmənt ˈdiːteɪlz/|/ˈʃɪpmənt diːˈteɪlz/
-rate confirmation|xác nhận giá|We need your rate confirmation before we can place the booking.|B1|fi|/ˈreɪt kɒnfəˈmeɪʃən/|/ˈreɪt kɑːnfərˈmeɪʃən/`;
+rate confirmation|xác nhận giá|We need your rate confirmation before we can place the booking.|B1|fi|/ˈreɪt kɒnfəˈmeɪʃən/|/ˈreɪt kɑːnfərˈmeɪʃən/
+booking|việc đặt chỗ (tàu, máy bay, xe)|The booking is confirmed for vessel MSC Anna, ETD 22 November.|A2|oc|/ˈbʊkɪŋ/|/ˈbʊkɪŋ/
+container yard (CY)|bãi container|The full container must be at the container yard before the CY cut-off.|B1|oc|/kənˈteɪnə ˈjɑːd/|/kənˈteɪnər ˈjɑːrd/
+empty pick-up|lấy container rỗng|Empty pick-up is at the Tan Cang depot from tomorrow.|B1|td|/ˈɛmpti ˈpɪk ˈʌp/|/ˈɛmpti ˈpɪk ˈʌp/
+laden container|container có hàng|A laden container cannot exceed the maximum payload.|B2|oc|/ˈleɪdən kənˈteɪnə/|/ˈleɪdən kənˈteɪnər/
+port charges|phí cảng|Port charges at destination are for the consignee's account.|B1|fi|/ˈpɔːt ˈtʃɑːdʒɪz/|/ˈpɔːrt ˈtʃɑːrdʒɪz/
+delivery address|địa chỉ giao hàng|Please confirm the delivery address and contact person.|A2|td|/dɪˈlɪvəri əˈdrɛs/|/dɪˈlɪvəri əˈdrɛs/
+pick-up address|địa chỉ lấy hàng|The pick-up address is Lot 12, VSIP 2, Binh Duong.|A2|td|/ˈpɪk ˌʌp əˈdrɛs/|/ˈpɪk ˌʌp əˈdrɛs/
+delivery schedule|lịch giao hàng|The customer changed the delivery schedule to twice a week.|A2|op|/dɪˈlɪvəri ˈʃɛdjuːl/|/dɪˈlɪvəri ˈskɛdʒuːl/
+shipping cost|chi phí vận chuyển|Shipping cost went up 15% this quarter.|A2|fi|/ˈʃɪpɪŋ ˈkɒst/|/ˈʃɪpɪŋ ˈkɔst/
+cargo details|thông tin hàng hóa|Please send the cargo details: commodity, weight and volume.|A2|em|/ˈkɑːɡəʊ ˈdiːteɪlz/|/ˈkɑːrɡoʊ diːˈteɪlz/`;
 const VOCAB=RAW.trim().split("\n").map((l,i)=>{const [term,vi,ex,level,topic,uk,us]=l.split("|");return{id:"w"+i,term,vi,ex,level,topic,uk:uk||"",us:us||""}});
 
 /* ============ LISTENING ============ */
@@ -1311,7 +1321,11 @@ const READ=[
  {id:"r6",level:"B2",title:"From lean to resilient",vi:"Từ tinh gọn đến bền vững trước rủi ro",
   text:["For decades, many manufacturers followed lean, just-in-time principles: hold as little inventory as possible and let parts arrive exactly when production needs them. The approach freed up cash and reduced waste, and it worked well while transport was cheap and predictable.","Recent disruptions changed that view. Factory closures, port congestion and sudden spikes in freight rates showed how fragile long, tightly timed supply chains can be. When one supplier stopped, entire production lines stopped with it.","As a result, companies are rebalancing efficiency with resilience. Common measures include dual sourcing for critical components, holding strategic safety stock, moving some production closer to end markets (nearshoring), and investing in visibility tools that track orders across multiple tiers of suppliers.","Resilience has a price: more inventory and more suppliers mean higher costs and more complex management. The challenge for logistics professionals is to decide where that extra cost is justified, and where lean principles still make sense."],
   glossary:["just-in-time","disruption","nearshoring","visibility","tier"],
-  qs:[["What is a key principle of just-in-time?",["Hold large safety stocks","Hold as little inventory as possible","Use only local suppliers"],1],["Why did views on lean change?",["Disruptions showed supply chains were fragile","Inventory became free","Customers asked for slower delivery"],0],["What is nearshoring?",["Moving production closer to end markets","Shipping by sea only","Closing factories"],0],["What is the main challenge in the last paragraph?",["Finding cheaper fuel","Deciding where the cost of resilience is justified","Hiring more drivers"],1]]}
+  qs:[["What is a key principle of just-in-time?",["Hold large safety stocks","Hold as little inventory as possible","Use only local suppliers"],1],["Why did views on lean change?",["Disruptions showed supply chains were fragile","Inventory became free","Customers asked for slower delivery"],0],["What is nearshoring?",["Moving production closer to end markets","Shipping by sea only","Closing factories"],0],["What is the main challenge in the last paragraph?",["Finding cheaper fuel","Deciding where the cost of resilience is justified","Hiring more drivers"],1]]},
+ {id:"r7",level:"B1",title:"A forwarder's morning inbox",vi:"Hộp thư buổi sáng của nhân viên forwarder",
+  text:["At 8 a.m., Thu opens her inbox at a freight forwarding company in Hai Phong. There are 46 new emails, and she has to decide quickly which ones are urgent.","The first email is from a shipper in Bac Ninh. The cargo will be ready on Friday, and they ask for a booking for two 40HC to Rotterdam. Thu checks the vessel schedule, sends the booking request to the shipping line, and replies with the ETD and the SI cut-off.","The second email is a complaint. A container was rolled over to the next vessel because of port congestion in Singapore. The customer is worried about the delivery schedule. Thu explains the reason, gives the new ETA, and offers to ask the destination agent for a free time extension.","Next, the accounts team asks her to check a debit note. The local charges include a cleaning fee that is not in the contract, so Thu asks the shipping line for a credit note.","By 10 a.m., the urgent emails are done. Thu says the secret is simple: reply to problems first, always include the booking number, and never promise a date that the carrier has not confirmed."],
+  glossary:["inbox","booking request","complaint","credit note"],
+  qs:[["What does the shipper in Bac Ninh ask for?",["A quotation for air freight","A booking for two 40HC","A new invoice"],1],["Why was the container rolled over?",["Missing documents","Port congestion in Singapore","Late payment"],1],["What does Thu ask the shipping line for after checking the debit note?",["A credit note","A new vessel","A free time extension"],0],["Which is NOT part of Thu's 'secret'?",["Reply to problems first","Always include the booking number","Promise the earliest possible date"],2]]}
 ];
 
 /* ============ WRITING ============ */
@@ -1431,7 +1445,7 @@ let listLevel="Tất cả";
 function listIndex(kind){
   const data=kind==="nghe"?LISTEN:kind==="doc"?READ:WRITE;
   const head={nghe:[`${LISTEN.length} bài · A2 → B2`,"Bài nghe theo trình độ","Nghe hội thoại thực tế trong kho, cảng, hải quan. Chọn tốc độ đọc, nghe trước rồi mới mở lời thoại, sau đó trả lời câu hỏi."],
-    doc:["6 bài · A2 → B2","Bài đọc","Bài đọc về nghiệp vụ logistics, có từ khóa và câu hỏi đọc hiểu chấm điểm ngay."],
+    doc:[`${READ.length} bài · A2 → B2`,"Bài đọc","Bài đọc về nghiệp vụ logistics, có từ khóa và câu hỏi đọc hiểu chấm điểm ngay."],
     viet:["5 bài · A2 → B2","Bài viết","Viết email và báo cáo như ở công ty. App kiểm tra các ý bắt buộc, đếm từ và có bài mẫu để so sánh. Bản nháp tự lưu."]}[kind];
   app.innerHTML=`<div class="view-head"><span class="eyebrow">${head[0]}</span><h2>${head[1]}</h2><p class="lead">${head[2]}</p></div>
   <div class="bar">${lvls.map(l=>`<button class="pill" data-l="${l}" aria-pressed="${listLevel===l}">${l}</button>`).join("")}</div>
