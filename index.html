@@ -208,7 +208,7 @@ footer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px soli
 </header>
 
 <main class="wrap" id="app"></main>
-<footer class="wrap"><b>Phiên bản 15/11/2026 18:49 · 1021 từ, có IPA UK/US</b> · Âm thanh dùng giọng tiếng Anh có sẵn trên máy bạn; nếu không nghe thấy, hãy kiểm tra âm lượng và chế độ im lặng. Chấm phát âm dựa trên việc máy nhận ra đúng từ bạn đọc, nên đọc chậm, rõ ở nơi yên tĩnh. Tiến độ học lưu trên trình duyệt này. Video mở trên YouTube ở tab mới.</footer>
+<footer class="wrap"><b>Phiên bản 16/11/2026 06:46 · 1031 từ, có IPA UK/US</b> · Âm thanh dùng giọng tiếng Anh có sẵn trên máy bạn; nếu không nghe thấy, hãy kiểm tra âm lượng và chế độ im lặng. Chấm phát âm dựa trên việc máy nhận ra đúng từ bạn đọc, nên đọc chậm, rõ ở nơi yên tĩnh. Tiến độ học lưu trên trình duyệt này. Video mở trên YouTube ở tab mới.</footer>
 
 <script>
 const ICON={
@@ -1259,7 +1259,17 @@ delivery address|địa chỉ giao hàng|Please confirm the delivery address and
 pick-up address|địa chỉ lấy hàng|The pick-up address is Lot 12, VSIP 2, Binh Duong.|A2|td|/ˈpɪk ˌʌp əˈdrɛs/|/ˈpɪk ˌʌp əˈdrɛs/
 delivery schedule|lịch giao hàng|The customer changed the delivery schedule to twice a week.|A2|op|/dɪˈlɪvəri ˈʃɛdjuːl/|/dɪˈlɪvəri ˈskɛdʒuːl/
 shipping cost|chi phí vận chuyển|Shipping cost went up 15% this quarter.|A2|fi|/ˈʃɪpɪŋ ˈkɒst/|/ˈʃɪpɪŋ ˈkɔst/
-cargo details|thông tin hàng hóa|Please send the cargo details: commodity, weight and volume.|A2|em|/ˈkɑːɡəʊ ˈdiːteɪlz/|/ˈkɑːrɡoʊ diːˈteɪlz/`;
+cargo details|thông tin hàng hóa|Please send the cargo details: commodity, weight and volume.|A2|em|/ˈkɑːɡəʊ ˈdiːteɪlz/|/ˈkɑːrɡoʊ diːˈteɪlz/
+short shipment|giao thiếu hàng (so với chứng từ)|There was a short shipment of 20 cartons, so we need a revised invoice.|B2|op|/ˈʃɔːt ˈʃɪpmənt/|/ˈʃɔːrt ˈʃɪpmənt/
+trucking company|công ty vận tải xe tải|Our trucking company can collect the container at 7 a.m.|A2|td|/ˈtrʌkɪŋ ˈkʌmpəni/|/ˈtrʌkɪŋ ˈkʌmpəni/
+delivery confirmation|xác nhận đã giao hàng|Please send the delivery confirmation with the signed POD.|A2|td|/dɪˈlɪvəri kɒnfəˈmeɪʃən/|/dɪˈlɪvəri kɑːnfərˈmeɪʃən/
+shipping label|nhãn vận chuyển|Print the shipping label and stick it on the top of the box.|A2|ec|/ˈʃɪpɪŋ ˈleɪbəl/|/ˈʃɪpɪŋ ˈleɪbəl/
+tracking update|cập nhật hành trình|The customer asked for a daily tracking update.|A2|it|/ˈtrækɪŋ ˈʌpdeɪt/|/ˈtrækɪŋ ˈʌpdeɪt/
+freight payment|thanh toán cước|We will release the B/L after we receive the freight payment.|B1|fi|/ˈfreɪt ˈpeɪmənt/|/ˈfreɪt ˈpeɪmənt/
+warehouse fee|phí lưu kho|The warehouse fee is charged from the fourth day.|A2|fi|/ˈweəhaʊs ˈfiː/|/ˈwɛrhaʊs ˈfiː/
+cargo arrival|việc hàng đến|We will notify you two days before cargo arrival.|A2|oc|/ˈkɑːɡəʊ əˈraɪvəl/|/ˈkɑːrɡoʊ əˈraɪvəl/
+port of entry|cảng nhập cảnh (cửa khẩu nhập)|The port of entry for this shipment is Long Beach.|B1|cu|/ˈpɔːt ɒv ˈɛntri/|/ˈpɔːrt ʌv ˈɛntri/
+customs documents|chứng từ hải quan|Please prepare the customs documents before the vessel arrives.|A2|cu|/ˈkʌstəmz ˈdɒkjuːmənts/|/ˈkʌstəmz ˈdɑːkjuːmənts/`;
 const VOCAB=RAW.trim().split("\n").map((l,i)=>{const [term,vi,ex,level,topic,uk,us]=l.split("|");return{id:"w"+i,term,vi,ex,level,topic,uk:uk||"",us:us||""}});
 
 /* ============ LISTENING ============ */
@@ -1354,7 +1364,12 @@ const WRITE=[
   brief:"Viết đoạn báo cáo (150–200 từ) gửi quản lý tóm tắt KPI kho tháng này: tỷ lệ giao đúng hạn, độ chính xác lấy hàng, tồn kho, nguyên nhân thay đổi, đề xuất cải thiện.",
   checks:["on-time|on time","accuracy","inventory|stock","increase|rose|improve","decrease|fell|drop","recommend|propose|suggest"],
   phrases:["This report summarises…","…rose from X% to Y%","…fell slightly, mainly because…","Compared with last month,…","I recommend that we…"],
-  model:"Subject: Warehouse KPI summary – October\n\nThis report summarises the main warehouse KPIs for October.\n\nOn-time delivery rose from 92% to 95.5%, which meets our target for the first time this year. The improvement was mainly due to the new loading schedule, which reduced waiting time at the docks.\n\nPicking accuracy fell slightly, from 99.4% to 98.9%. Most errors happened in the second week, when we used six temporary workers during the peak period.\n\nInventory value increased by 8% because we built safety stock for the holiday season. However, 140 SKUs have not moved for more than 90 days, which ties up around 310 million dong.\n\nI recommend that we (1) give temporary staff a two-hour scanner training before their first shift and (2) review the slow-moving SKUs with the sales team and agree on a clearance plan by mid-November.\n\nPlease let me know if you need the full data."}
+  model:"Subject: Warehouse KPI summary – October\n\nThis report summarises the main warehouse KPIs for October.\n\nOn-time delivery rose from 92% to 95.5%, which meets our target for the first time this year. The improvement was mainly due to the new loading schedule, which reduced waiting time at the docks.\n\nPicking accuracy fell slightly, from 99.4% to 98.9%. Most errors happened in the second week, when we used six temporary workers during the peak period.\n\nInventory value increased by 8% because we built safety stock for the holiday season. However, 140 SKUs have not moved for more than 90 days, which ties up around 310 million dong.\n\nI recommend that we (1) give temporary staff a two-hour scanner training before their first shift and (2) review the slow-moving SKUs with the sales team and agree on a clearance plan by mid-November.\n\nPlease let me know if you need the full data."},
+ {id:"w6",level:"B1",title:"Send an arrival notice",vi:"Email báo hàng đến cho người nhận",
+  brief:"Bạn là nhân viên chứng từ hàng nhập của công ty forwarder. Viết email (100–150 từ) gửi người nhận hàng (consignee) báo hàng sắp đến: số B/L, tàu và ETA, các khoản phí local charges phải trả, chứng từ cần mang khi lấy lệnh giao hàng (D/O), số ngày miễn phí lưu container, người liên hệ.",
+  checks:["arriv|ETA","local charge|THC|D/O fee|charges","delivery order|D/O","free time|free days","original B/L|B/L|documents","contact|call|reach"],
+  phrases:["Please be advised that your shipment will arrive on…","Please find below the local charges:","To collect the D/O, please bring…","You have … days of free time at destination.","If you have any questions, please contact…"],
+  model:"Subject: Arrival notice – B/L HPH-24581 – ETA 21 Nov\n\nDear Ms Ngoc,\n\nPlease be advised that your shipment under B/L HPH-24581 (1 x 40HC, 18 pallets of furniture parts) is on vessel ONE Harmony, voyage 062W, with ETA Hai Phong on 21 November.\n\nLocal charges at destination:\n- THC: USD 160\n- D/O fee: 1,000,000 VND\n- Cleaning fee: USD 15\n\nTo collect the delivery order, please bring the original B/L (or confirm the telex release), a letter of introduction and the payment receipt.\n\nYou have 7 days of free time at destination. After that, demurrage and storage charges will apply.\n\nIf you have any questions, please contact me on 0904 123 456.\n\nBest regards,\nThao Nguyen\nImport Documentation"}
 ];
 
 /* ============ VIDEOS (links checked) ============ */
@@ -1446,7 +1461,7 @@ function listIndex(kind){
   const data=kind==="nghe"?LISTEN:kind==="doc"?READ:WRITE;
   const head={nghe:[`${LISTEN.length} bài · A2 → B2`,"Bài nghe theo trình độ","Nghe hội thoại thực tế trong kho, cảng, hải quan. Chọn tốc độ đọc, nghe trước rồi mới mở lời thoại, sau đó trả lời câu hỏi."],
     doc:[`${READ.length} bài · A2 → B2`,"Bài đọc","Bài đọc về nghiệp vụ logistics, có từ khóa và câu hỏi đọc hiểu chấm điểm ngay."],
-    viet:["5 bài · A2 → B2","Bài viết","Viết email và báo cáo như ở công ty. App kiểm tra các ý bắt buộc, đếm từ và có bài mẫu để so sánh. Bản nháp tự lưu."]}[kind];
+    viet:[`${WRITE.length} bài · A2 → B2`,"Bài viết","Viết email và báo cáo như ở công ty. App kiểm tra các ý bắt buộc, đếm từ và có bài mẫu để so sánh. Bản nháp tự lưu."]}[kind];
   app.innerHTML=`<div class="view-head"><span class="eyebrow">${head[0]}</span><h2>${head[1]}</h2><p class="lead">${head[2]}</p></div>
   <div class="bar">${lvls.map(l=>`<button class="pill" data-l="${l}" aria-pressed="${listLevel===l}">${l}</button>`).join("")}</div>
   <div class="grid">${data.filter(d=>listLevel==="Tất cả"||d.level===listLevel).map(d=>`<button class="card" data-open="${d.id}"><div class="meta"><span class="lvl ${d.level}">${d.level}</span>${S.done[d.id]?`<span class="done-tag">✓ ${typeof S.done[d.id]==="string"?S.done[d.id]:"Đã làm"}</span>`:""}</div><h3>${esc(d.title)}</h3><span class="note">${esc(d.vi)}</span></button>`).join("")}</div>`;
@@ -1524,7 +1539,8 @@ function writeLesson(d){
    "quotation|quote":"Xin báo giá","container|FCL|LCL|40|20":"Loại container","port":"Cảng","weight|kg|tonne":"Trọng lượng","ready":"Ngày hàng sẵn sàng","FOB|CIF|EXW|DAP|DDP|Incoterm":"Điều kiện Incoterm",
    "delay|delayed":"Thông báo chậm trễ","ETA|arrive":"ETA mới","apolog|sorry":"Lời xin lỗi","because|due to":"Lý do","option|suggest|propose|solution":"Giải pháp đề xuất",
    "claim":"Từ 'claim'","damage":"Mô tả hư hỏng","proof of delivery|POD|delivery note":"Ghi chú trên POD","photo":"Ảnh làm bằng chứng","amount|USD|\\$|VND|value":"Số tiền yêu cầu","respond|reply|within":"Thời hạn phản hồi",
-   "on-time|on time":"Giao đúng hạn","accuracy":"Độ chính xác","inventory|stock":"Tồn kho","increase|rose|improve":"Mô tả tăng","decrease|fell|drop":"Mô tả giảm","recommend|propose|suggest":"Đề xuất"};
+   "on-time|on time":"Giao đúng hạn","accuracy":"Độ chính xác","inventory|stock":"Tồn kho","increase|rose|improve":"Mô tả tăng","decrease|fell|drop":"Mô tả giảm","recommend|propose|suggest":"Đề xuất",
+   "arriv|ETA":"Tàu và ETA","local charge|THC|D/O fee|charges":"Các khoản local charges","delivery order|D/O":"Lệnh giao hàng (D/O)","free time|free days":"Số ngày miễn phí","original B/L|B/L|documents":"Chứng từ cần mang","contact|call|reach":"Người liên hệ"};
   $("#chk").onclick=()=>{const t=ta.value;let hit=0;
     $("#ck").innerHTML=d.checks.map(c=>{const ok=new RegExp(c,"i").test(t);if(ok)hit++;return`<span class="${ok?"hit":"miss"}">${ok?"✓":"○"} ${labels[c]||c}</span>`}).join("")+`<span class="score">${hit}/${d.checks.length} ý</span>`;
     if(hit===d.checks.length){S.done[d.id]="Đủ ý";save()}};

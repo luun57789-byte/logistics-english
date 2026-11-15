@@ -1,0 +1,10 @@
+short shipment|giao thiếu hàng (so với chứng từ)|There was a short shipment of 20 cartons, so we need a revised invoice.|B2|op
+trucking company|công ty vận tải xe tải|Our trucking company can collect the container at 7 a.m.|A2|td
+delivery confirmation|xác nhận đã giao hàng|Please send the delivery confirmation with the signed POD.|A2|td
+shipping label|nhãn vận chuyển|Print the shipping label and stick it on the top of the box.|A2|ec
+tracking update|cập nhật hành trình|The customer asked for a daily tracking update.|A2|it
+freight payment|thanh toán cước|We will release the B/L after we receive the freight payment.|B1|fi
+warehouse fee|phí lưu kho|The warehouse fee is charged from the fourth day.|A2|fi
+cargo arrival|việc hàng đến|We will notify you two days before cargo arrival.|A2|oc
+port of entry|cảng nhập cảnh (cửa khẩu nhập)|The port of entry for this shipment is Long Beach.|B1|cu
+customs documents|chứng từ hải quan|Please prepare the customs documents before the vessel arrives.|A2|cu
