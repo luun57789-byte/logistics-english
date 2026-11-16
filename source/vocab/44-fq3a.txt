@@ -1,0 +1,536 @@
+duke|công tước|The Duke of York|B2|f3
+hop|nhảy lò cò; nhảy lên (xe)|Hop in, I'll drive you.|B1|f3
+sin|tội lỗi|It's a sin to waste food.|B1|f3
+constitutional|thuộc hiến pháp|A constitutional right|B2|f3
+foster|nuôi dưỡng; thúc đẩy|Foster good relationships with customers.|B2|f3
+participation|sự tham gia|Thanks for your participation.|B1|f3
+legislative|lập pháp|The legislative process|B2|f3
+mask|khẩu trang; mặt nạ|Wear a mask in the dusty area.|A2|f3
+praise|khen ngợi|The boss praised our team.|B1|f3
+psychology|tâm lý học|She studied psychology.|B1|f3
+restriction|sự hạn chế|There are weight restrictions on this bridge.|B1|f3
+rocket|tên lửa|They launched a rocket.|B1|f3
+ruin|làm hỏng|The rain ruined our picnic.|B1|f3
+slave|nô lệ|He works like a slave.|B1|f3
+stability|sự ổn định|Price stability|B2|f3
+steady|đều đặn, vững|Business is steady.|B1|f3
+symbol|biểu tượng|The lotus is a symbol of Vietnam.|B1|f3
+treaty|hiệp ước|A trade treaty|B2|f3
+triple|gấp ba|The price tripled.|B1|f3
+unlikely|không chắc xảy ra|It's unlikely to rain.|B1|f3
+bat|con dơi; gậy (bóng chày)|A baseball bat|A2|f3
+bow|cúi chào; cái nơ|He bowed to the audience.|B1|f3
+cape|mũi đất; áo choàng|Cape Town|B2|f3
+collective|tập thể|A collective effort|B2|f3
+cooperation|sự hợp tác|Thank you for your cooperation.|B1|f3
+craft|nghề thủ công|Traditional crafts|B1|f3
+darkness|bóng tối|The room was in darkness.|B1|f3
+devil|ma quỷ|Speak of the devil!|B1|f3
+enable|cho phép, giúp|This app enables you to track orders.|B1|f3
+equity|vốn chủ sở hữu; công bằng|Private equity|B2|f3
+fortune|vận may; tài sản lớn|It cost a fortune.|B1|f3
+hardware|phần cứng; đồ ngũ kim|A hardware store|B1|f3
+intellectual|trí thức; trí tuệ|Intellectual property|B2|f3
+involvement|sự tham gia|Thanks for your involvement.|B1|f3
+nut|hạt (quả hạch); đai ốc|I'm allergic to nuts.|A2|f3
+partly|một phần|It's partly my fault.|B1|f3
+petition|đơn kiến nghị|Sign the petition.|B2|f3
+phrase|cụm từ|Learn useful phrases.|A2|f3
+physically|về thể chất|Physically, I'm fine.|B1|f3
+racial|chủng tộc|Racial equality|B2|f3
+regime|chế độ|A new tax regime|B2|f3
+sauce|nước sốt|Chilli sauce|A2|f3
+shield|tấm chắn|Use a face shield when grinding.|B1|f3
+similarly|tương tự|Similarly, air rates went up.|B1|f3
+slide|trượt; trang trình chiếu|Next slide, please.|B1|f3
+stem|thân cây; bắt nguồn|The problem stems from poor planning.|B2|f3
+summit|hội nghị thượng đỉnh; đỉnh núi|The APEC summit|B2|f3
+talented|tài năng|A talented player|B1|f3
+throat|họng|I have a sore throat.|A2|f3
+tiger|con hổ|Tigers are endangered.|A2|f3
+toy|đồ chơi|Children's toys|A2|f3
+warrior|chiến binh|A brave warrior|B1|f3
+wisdom|sự khôn ngoan|Words of wisdom|B1|f3
+accounting|kế toán|She works in accounting.|B1|f3
+alien|người ngoài hành tinh; xa lạ|A film about aliens|B1|f3
+awkward|lúng túng, khó xử|It was an awkward silence.|B1|f3
+beast|con thú|A wild beast|B1|f3
+candy|kẹo|The kids want candy.|A2|f3
+celebrity|người nổi tiếng|She is a celebrity.|B1|f3
+cite|trích dẫn|Cite your sources.|B2|f3
+clay|đất sét|A clay pot|B1|f3
+construct|xây dựng|They constructed a new bridge.|B1|f3
+default|mặc định|The default password is 1234.|B1|f3
+derive|bắt nguồn|The word derives from French.|B2|f3
+dialogue|đoạn hội thoại|Practise the dialogue.|A2|f3
+disable|vô hiệu hóa|Disable the alarm.|B1|f3
+distinct|riêng biệt, rõ ràng|Two distinct groups|B2|f3
+drag|kéo lê|Drag the file into the folder.|B1|f3
+educate|giáo dục|Educate your staff about safety.|B1|f3
+eligible|đủ điều kiện|You are eligible for a refund.|B2|f3
+execution|sự thực hiện; hành quyết|Good planning and execution|B2|f3
+fifty|năm mươi|Fifty dollars|A2|f3
+follower|người theo dõi|She has many followers.|B1|f3
+fool|kẻ ngốc|Don't be a fool.|B1|f3
+framework|khung, khuôn khổ|A legal framework|B2|f3
+franchise|nhượng quyền|A coffee franchise|B2|f3
+integrate|tích hợp|Integrate the two systems.|B2|f3
+intelligent|thông minh|An intelligent student|B1|f3
+interaction|sự tương tác|Customer interaction|B1|f3
+jet|máy bay phản lực|A private jet|B1|f3
+lifestyle|lối sống|A healthy lifestyle|B1|f3
+loop|vòng lặp|Keep me in the loop.|B1|f3
+mall|trung tâm mua sắm|Let's go to the mall.|A2|f3
+overseas|ở nước ngoài|We ship overseas.|B1|f3
+polish|đánh bóng; trau chuốt|Polish your shoes.|B1|f3
+recommendation|lời khuyên, đề xuất|Thanks for the recommendation.|B1|f3
+recover|hồi phục|He recovered quickly.|B1|f3
+rely|dựa vào|You can rely on me.|B1|f3
+remarkable|đáng chú ý|A remarkable result|B1|f3
+ruling|phán quyết; cầm quyền|The court's ruling|B2|f3
+sacrifice|hy sinh|Parents make sacrifices for their children.|B1|f3
+sole|duy nhất; đế giày|The sole agent in Vietnam|B2|f3
+succeed|thành công|If at first you don't succeed, try again.|B1|f3
+tale|câu chuyện|A fairy tale|B1|f3
+timing|thời điểm|Good timing!|B1|f3
+volunteer|tình nguyện viên|She volunteers at a school.|B1|f3
+worship|thờ cúng|They worship at the temple.|B1|f3
+worthy|xứng đáng|A worthy winner|B2|f3
+alarm|chuông báo|Set the alarm.|A2|f3
+bass|âm trầm; cá vược|Turn up the bass.|B1|f3
+bloody|đẫm máu; (UK) cực kỳ|It's bloody cold.|B1|f3
+breathing|sự thở|Breathing exercises|B1|f3
+characteristic|đặc điểm|What are the main characteristics?|B1|f3
+collaboration|sự hợp tác|A collaboration between two companies|B1|f3
+consideration|sự cân nhắc|Thank you for your consideration.|B1|f3
+crucial|cực kỳ quan trọng|Timing is crucial.|B1|f3
+dependent|phụ thuộc|It's dependent on the weather.|B1|f3
+dual|kép|Dual SIM phone|B1|f3
+equip|trang bị|The warehouse is equipped with cameras.|B1|f3
+experimental|thử nghiệm|An experimental product|B2|f3
+feeding|việc cho ăn|Feeding time at the zoo|B1|f3
+filter|bộ lọc; lọc|Clean the air filter.|B1|f3
+galaxy|thiên hà|Our galaxy is huge.|B1|f3
+globe|quả địa cầu|All over the globe|B1|f3
+gulf|vịnh|The Gulf of Tonkin|B1|f3
+highlight|điểm nổi bật; tô sáng|Highlight the key points.|B1|f3
+intent|ý định|Letter of intent|B2|f3
+judgement / judgment|sự phán xét|Use your judgment.|B1|f3
+knight|hiệp sĩ|A knight in shining armour|B1|f3
+logo|biểu trưng|Put our logo on the box.|A2|f3
+mature|trưởng thành|He is very mature for his age.|B1|f3
+photographer|nhiếp ảnh gia|A wedding photographer|A2|f3
+pin|ghim; mã PIN|Enter your PIN.|A2|f3
+prevention|sự phòng ngừa|Prevention is better than cure.|B1|f3
+publicly|công khai|He apologized publicly.|B1|f3
+pump|máy bơm; bơm|A water pump|B1|f3
+revenge|sự trả thù|He wanted revenge.|B1|f3
+satisfy|làm hài lòng|We want to satisfy our customers.|B1|f3
+slip|trượt chân; phiếu|Be careful not to slip.|B1|f3
+spare|dự phòng; rảnh|A spare tyre|B1|f3
+specialist|chuyên gia|A heart specialist|B1|f3
+tourism|du lịch (ngành)|Tourism is important for Vietnam.|B1|f3
+acceptable|chấp nhận được|Is this price acceptable?|B1|f3
+ally|đồng minh|They are close allies.|B2|f3
+auction|cuộc đấu giá|He bought it at an auction.|B1|f3
+chaos|sự hỗn loạn|It was total chaos at the port.|B1|f3
+centimetre / centimeter|xăng-ti-mét|The box is 40 centimeters high.|A2|f3
+compose|sáng tác; soạn|Compose an email.|B1|f3
+concentration|sự tập trung|It needs a lot of concentration.|B1|f3
+copper|đồng (kim loại)|Copper wire|B1|f3
+dawn|bình minh|We left at dawn.|B1|f3
+dispute|tranh chấp|A payment dispute|B1|f3
+earnings|thu nhập|Annual earnings|B1|f3
+execute|thực hiện|Execute the plan.|B2|f3
+frequent|thường xuyên|Frequent flyer|B1|f3
+gather|tập hợp|Gather everyone in the meeting room.|B1|f3
+hilarious|cực kỳ buồn cười|The film was hilarious.|B1|f3
+huh|hả?|Huh? What did you say?|A2|f3
+margin|lợi nhuận biên; lề|The profit margin is low.|B1|f3
+mechanism|cơ chế|A safety mechanism|B2|f3
+moderate|vừa phải|Moderate exercise|B1|f3
+overcome|vượt qua|We overcame many problems.|B1|f3
+parallel|song song|Parallel lines|B2|f3
+passage|đoạn văn; lối đi|Read the passage.|B1|f3
+pit|hố|A deep pit|B1|f3
+psychological|thuộc tâm lý|Psychological pressure|B2|f3
+quest|cuộc tìm kiếm|The quest for quality|B2|f3
+radiation|bức xạ|Radiation from the sun|B2|f3
+stroke|đột quỵ; cú đánh|He had a stroke.|B1|f3
+stun|làm choáng váng|We were stunned by the news.|B2|f3
+tune|giai điệu; điều chỉnh|A catchy tune|B1|f3
+utility|tiện ích|Utility bills|B1|f3
+wherever|bất cứ đâu|Sit wherever you like.|B1|f3
+acquisition|sự mua lại|The acquisition of a rival company|B2|f3
+anime|phim hoạt hình Nhật|My son loves anime.|B1|f3
+bold|táo bạo; in đậm|Write the title in bold.|B1|f3
+breathe|thở|Breathe in, breathe out.|A2|f3
+classical|cổ điển|Classical music|B1|f3
+classify|phân loại|Classify the goods by HS code.|B1|f3
+clip|đoạn phim ngắn; kẹp|A video clip|B1|f3
+coin|đồng xu|A one-dollar coin|A2|f3
+conspiracy|âm mưu|A conspiracy theory|B2|f3
+controversy|tranh cãi|There was a lot of controversy.|B2|f3
+disappear|biến mất|My keys disappeared.|B1|f3
+eh|hả, nhỉ|Nice day, eh?|B1|f3
+encounter|gặp phải|We encountered some problems.|B1|f3
+equality|sự bình đẳng|Gender equality|B1|f3
+exam|kỳ thi|I have an exam tomorrow.|A2|f3
+examination|sự kiểm tra; kỳ thi|A medical examination|B1|f3
+federation|liên đoàn|The football federation|B2|f3
+fiscal|tài khóa|The fiscal year|B2|f3
+guardian|người giám hộ|Parent or guardian|B1|f3
+homeless|vô gia cư|Homeless people|B1|f3
+intervention|sự can thiệp|Government intervention|B2|f3
+lover|người yêu; người hâm mộ|A music lover|B1|f3
+mainstream|chính thống, phổ biến|Mainstream media|B2|f3
+mutual|lẫn nhau|Mutual respect|B2|f3
+nope|không (thân mật)|Nope, I don't think so.|A2|f3
+offence / offense|sự xúc phạm; hành vi phạm tội|No offense, but I disagree.|B1|f3
+oral|bằng miệng|An oral exam|B1|f3
+panic|hoảng loạn|Don't panic!|B1|f3
+pursue|theo đuổi|Pursue your dreams.|B1|f3
+refugee|người tị nạn|A refugee camp|B1|f3
+rip|xé|I ripped my jeans.|B1|f3
+scope|phạm vi|The scope of the project|B2|f3
+segment|phân khúc|A market segment|B2|f3
+spectrum|phổ, dải|A wide spectrum of opinions|B2|f3
+terror|nỗi kinh hoàng|They ran in terror.|B2|f3
+uh|ờ|Uh, I'm not sure.|A2|f3
+venture|liên doanh; mạo hiểm|A joint venture|B2|f3
+virtually|hầu như|It's virtually impossible.|B1|f3
+yeah right|ừ, chắc rồi (mỉa mai)|You'll finish today? Yeah right.|B1|f3
+accompany|đi cùng|Children must be accompanied by an adult.|B1|f3
+alpha|alpha (bản thử nghiệm)|The alpha version|B2|f3
+arrangement|sự sắp xếp|Make arrangements for the trip.|B1|f3
+boundary|ranh giới|The property boundary|B2|f3
+brick|gạch|A brick wall|A2|f3
+considerable|đáng kể|A considerable amount of money|B1|f3
+conventional|thông thường|Conventional methods|B2|f3
+designate|chỉ định|A designated smoking area|B2|f3
+DVD|đĩa DVD|Watch a DVD|A2|f3
+emperor|hoàng đế|The emperor lived in Hue.|B1|f3
+employer|người sử dụng lao động|My employer pays for training.|B1|f3
+enormous|khổng lồ|An enormous ship|B1|f3
+forgive|tha thứ|Please forgive me.|B1|f3
+garage|nhà để xe; xưởng sửa xe|Take the car to the garage.|A2|f3
+gathering|cuộc tụ họp|A family gathering|B1|f3
+guideline|hướng dẫn, chỉ dẫn|Follow the packing guidelines.|B1|f3
+inspector|thanh tra; giám định viên|The inspector checked the cargo.|B1|f3
+lion|sư tử|A lion at the zoo|A2|f3
+mercy|lòng thương xót|Have mercy!|B2|f3
+nevertheless|tuy nhiên|It was hard. Nevertheless, we did it.|B2|f3
+outer|bên ngoài|The outer carton is damaged.|B1|f3
+oxygen|ô-xy|Plants produce oxygen.|B1|f3
+pipe|ống|A water pipe burst.|A2|f3
+poem|bài thơ|She wrote a poem.|A2|f3
+powder|bột|Washing powder|B1|f3
+racism|phân biệt chủng tộc|Say no to racism.|B1|f3
+screw|đinh vít; vặn|Tighten the screws.|B1|f3
+shelter|nơi trú ẩn|Find shelter from the rain.|B1|f3
+spider|con nhện|I'm scared of spiders.|A2|f3
+tribute|sự tưởng nhớ|A tribute to the victims|B2|f3
+trigger|kích hoạt; cò súng|What triggered the alarm?|B1|f3
+vary|thay đổi, khác nhau|Prices vary by season.|B1|f3
+venue|địa điểm (tổ chức)|The venue for the conference|B1|f3
+abortion|phá thai|Abortion is a sensitive topic.|B2|f3
+accuracy|độ chính xác|Check the accuracy of the data.|B1|f3
+artificial|nhân tạo|Artificial intelligence|B1|f3
+beneath|bên dưới|Beneath the surface|B2|f3
+bullet|viên đạn; gạch đầu dòng|Use bullet points.|B1|f3
+consistently|nhất quán|She consistently arrives on time.|B1|f3
+conversion|sự chuyển đổi|Currency conversion|B1|f3
+copyright|bản quyền|Copyright protected|B1|f3
+dirt|bụi bẩn|Clean the dirt off your shoes.|A2|f3
+diverse|đa dạng|A diverse workforce|B1|f3
+divine|thần thánh|Divine help|B2|f3
+exclusively|độc quyền, chỉ|Sold exclusively online|B2|f3
+export|xuất khẩu|Vietnam exports rice and coffee.|A2|f3
+formerly|trước đây|The hotel was formerly a palace.|B1|f3
+functional|có chức năng|The machine is fully functional.|B1|f3
+grandfather|ông|My grandfather is 85.|A2|f3
+habit|thói quen|A bad habit|A2|f3
+isolate|cô lập|Isolate the damaged goods.|B1|f3
+mama|mẹ|Mama, I'm home!|A2|f3
+modify|sửa đổi|Modify the order.|B1|f3
+municipal|thuộc thành phố|Municipal services|B2|f3
+naval|thuộc hải quân|A naval base|B2|f3
+neighbor|hàng xóm (US)|My neighbor is a teacher.|A2|f3
+neutral|trung lập|A neutral country|B1|f3
+noble|cao quý|A noble act|B1|f3
+pat|vỗ nhẹ|He patted the dog.|B1|f3
+popularity|sự phổ biến|The app's popularity is growing.|B1|f3
+robot|người máy|The factory uses robots.|A2|f3
+sacred|thiêng liêng|A sacred place|B1|f3
+spy|gián điệp|A spy film|B1|f3
+suggestion|lời gợi ý|Do you have any suggestions?|B1|f3
+suspension|sự đình chỉ; giảm xóc|The truck's suspension|B2|f3
+terrorism|khủng bố|The fight against terrorism|B1|f3
+toxic|độc hại|Toxic chemicals|B1|f3
+treasury|kho bạc|The national treasury|B2|f3
+tunnel|đường hầm|The Hai Van Tunnel|B1|f3
+upgrade|nâng cấp|Upgrade your software.|B1|f3
+warrant|lệnh (bắt, khám)|An arrest warrant|B2|f3
+actively|tích cực|We are actively looking for staff.|B1|f3
+backing|sự ủng hộ|With the backing of the bank|B2|f3
+baker|thợ làm bánh|The baker opens at five.|A2|f3
+bless|ban phước|God bless you.|B1|f3
+brush|bàn chải; chải|Brush your hair.|A2|f3
+burden|gánh nặng|A heavy burden|B2|f3
+casual|bình thường, thoải mái|Casual clothes are OK on Friday.|B1|f3
+certify|chứng nhận|Certified copy of the invoice|B2|f3
+charter|thuê (tàu, máy bay); hiến chương|We chartered a plane.|B2|f3
+civilian|thường dân|Civilian casualties|B2|f3
+coalition|liên minh|A coalition government|B2|f3
+controversial|gây tranh cãi|A controversial decision|B2|f3
+differently|khác biệt|I see it differently.|B1|f3
+discipline|kỷ luật|Discipline is important.|B1|f3
+disgust|sự ghê tởm|She looked at it in disgust.|B2|f3
+DJ|người chơi nhạc|The DJ played great music.|A2|f3
+dominant|chiếm ưu thế|The dominant player in the market|B2|f3
+essay|bài luận|Write an essay.|B1|f3
+furthermore|hơn nữa|Furthermore, the price is lower.|B2|f3
+graphic|đồ họa|A graphic designer|B1|f3
+healing|chữa lành|The healing process|B1|f3
+implement|thực hiện|Implement the new policy.|B2|f3
+instantly|ngay lập tức|It works instantly.|B1|f3
+invasion|cuộc xâm lược|An invasion of privacy|B2|f3
+legendary|huyền thoại|A legendary singer|B1|f3
+maker|nhà sản xuất|A coffee maker|B1|f3
+opponent|đối thủ|A strong opponent|B1|f3
+outdoor|ngoài trời|Outdoor activities|A2|f3
+palm|lòng bàn tay; cây cọ|Palm trees|B1|f3
+pole|cái cột; cực|The North Pole|B1|f3
+pub|quán rượu (UK)|Let's go to the pub.|A2|f3
+ranger|kiểm lâm|A park ranger|B1|f3
+regulatory|thuộc quản lý|Regulatory requirements|B2|f3
+rubber|cao su|Rubber gloves|B1|f3
+serial|số sê-ri; nhiều kỳ|Check the serial number.|B1|f3
+shed|nhà kho nhỏ; rụng|A garden shed|B1|f3
+sponsor|nhà tài trợ|The event sponsor|B1|f3
+subsequently|sau đó|He subsequently left the company.|B2|f3
+substance|chất|A dangerous substance|B1|f3
+syndrome|hội chứng|Down syndrome|B2|f3
+ultra|cực kỳ|Ultra-fast delivery|B1|f3
+unexpected|bất ngờ|An unexpected delay|B1|f3
+usage|cách dùng; mức sử dụng|Data usage|B1|f3
+accidentally|vô tình|I accidentally deleted the file.|B1|f3
+affordable|giá phải chăng|Affordable housing|B1|f3
+amateur|nghiệp dư|An amateur photographer|B1|f3
+biology|sinh học|Biology class|A2|f3
+briefly|ngắn gọn|Explain briefly.|B1|f3
+canal|kênh đào|The Suez Canal|B1|f3
+climb|leo|Climb the stairs.|A2|f3
+completion|sự hoàn thành|On completion of the work|B2|f3
+cruise|du thuyền|A cruise on Ha Long Bay|B1|f3
+custody|quyền nuôi con; tạm giam|He's in police custody.|B2|f3
+demonstrate|chứng minh; trình diễn|Can you demonstrate how it works?|B1|f3
+developer|nhà phát triển|A software developer|B1|f3
+dig|đào|Dig a hole.|A2|f3
+eagle|đại bàng|An eagle in the sky|A2|f3
+explosion|vụ nổ|There was an explosion.|B1|f3
+fluid|chất lỏng|Drink plenty of fluids.|B1|f3
+imagination|trí tưởng tượng|Use your imagination.|B1|f3
+integration|sự hội nhập, tích hợp|System integration|B2|f3
+integrity|sự chính trực|A person of integrity|B2|f3
+interpretation|sự giải thích; phiên dịch|Different interpretations|B2|f3
+leaf|lá cây|The leaves are turning yellow.|A2|f3
+legitimate|hợp pháp, chính đáng|A legitimate reason|B2|f3
+lightning|tia chớp|Thunder and lightning|B1|f3
+magical|kỳ diệu|A magical evening|B1|f3
+motivation|động lực|What's your motivation?|B1|f3
+nasty|khó chịu|A nasty cold|B1|f3
+outfit|bộ trang phục|Nice outfit!|B1|f3
+pension|lương hưu|He lives on his pension.|B1|f3
+permit|giấy phép; cho phép|You need a work permit.|B1|f3
+pleasant|dễ chịu|A pleasant surprise|A2|f3
+portrait|chân dung|A family portrait|B1|f3
+productive|năng suất|A productive day|B1|f3
+safely|an toàn|Drive safely.|A2|f3
+slight|nhẹ, nhỏ|A slight delay|B1|f3
+socialist|xã hội chủ nghĩa|A socialist country|B2|f3
+sue|kiện|They sued the company.|B1|f3
+tension|sự căng thẳng|There's tension in the office.|B1|f3
+transaction|giao dịch|A bank transaction|B1|f3
+twist|xoắn; tình tiết bất ngờ|An unexpected twist|B1|f3
+ugh|ặc, chán quá|Ugh, Monday again.|A2|f3
+unemployment|thất nghiệp|Unemployment is low.|B1|f3
+unity|sự đoàn kết|National unity|B2|f3
+useless|vô dụng|This old phone is useless.|A2|f3
+viewer|người xem|TV viewers|B1|f3
+advocate|ủng hộ; người bênh vực|She advocates for workers' rights.|B2|f3
+arc|vòng cung|An arc of light|B2|f3
+continuous|liên tục|Continuous improvement|B1|f3
+convert|chuyển đổi|Convert USD to VND.|B1|f3
+correctly|chính xác|Fill in the form correctly.|A2|f3
+creator|người tạo ra|A content creator|B1|f3
+creature|sinh vật|Sea creatures|B1|f3
+criterion / criteria|tiêu chí|What are the criteria?|B2|f3
+detective|thám tử|A detective story|B1|f3
+disability|khuyết tật|People with disabilities|B1|f3
+dish|món ăn; cái đĩa|My favourite dish is bun cha.|A2|f3
+duck|con vịt|Roast duck|A2|f3
+evaluation|sự đánh giá|Supplier evaluation|B2|f3
+excess|vượt quá|Excess baggage|B1|f3
+fence|hàng rào|Climb over the fence.|A2|f3
+gradually|dần dần|Prices gradually increased.|B1|f3
+gravity|trọng lực|The centre of gravity|B2|f3
+holder|người giữ; giá đỡ|The B/L holder|B1|f3
+hood|mũ trùm; nắp capô|Open the hood.|B1|f3
+identical|giống hệt|The two boxes are identical.|B1|f3
+imperial|thuộc hoàng gia|The Imperial City in Hue|B2|f3
+legally|hợp pháp|Legally, you must declare it.|B1|f3
+metre / meter|mét; đồng hồ đo|The room is ten meters long.|A2|f3
+nail|móng; đinh|Cut your nails.|A2|f3
+negotiation|sự đàm phán|Price negotiation|B1|f3
+nonsense|vô lý|That's nonsense!|B1|f3
+operational|thuộc vận hành|Operational costs|B2|f3
+poet|nhà thơ|A famous poet|A2|f3
+repeatedly|liên tục, nhiều lần|I called him repeatedly.|B1|f3
+skip|bỏ qua|Don't skip breakfast.|A2|f3
+slavery|chế độ nô lệ|The end of slavery|B2|f3
+snap|bẻ gãy; chụp nhanh|The rope snapped.|B1|f3
+transformation|sự biến đổi|Digital transformation|B2|f3
+vulnerable|dễ bị tổn thương|Vulnerable people|B2|f3
+wealthy|giàu có|A wealthy family|B1|f3
+additionally|thêm vào đó|Additionally, there is a fuel surcharge.|B1|f3
+beta|bản thử nghiệm|A beta version|B1|f3
+bore|làm chán|Am I boring you?|B1|f3
+bronze|đồng thiếc; huy chương đồng|She won bronze.|B1|f3
+bug|con bọ; lỗi phần mềm|There's a bug in the app.|A2|f3
+cave|hang động|Phong Nha Cave|A2|f3
+cheat|gian lận|Don't cheat in the exam.|B1|f3
+chronic|mãn tính|Chronic back pain|B2|f3
+communicate|giao tiếp|We communicate by email.|B1|f3
+convict|kết án|He was convicted of theft.|B2|f3
+diagnosis|chẩn đoán|The doctor's diagnosis|B2|f3
+dismiss|sa thải; bác bỏ|He was dismissed for stealing.|B2|f3
+distinguish|phân biệt|Can you distinguish the two?|B1|f3
+dose|liều lượng|Take one dose a day.|B1|f3
+eighth|thứ tám|The eighth floor|A2|f3
+flesh|thịt (cơ thể)|Flesh and blood|B2|f3
+flip|lật|Flip the coin.|B1|f3
+forty|bốn mươi|Forty-foot container|A2|f3
+incorporate|kết hợp, đưa vào|Incorporate the changes.|B2|f3
+laser|tia la-de|Laser printer|B1|f3
+loyal|trung thành|A loyal customer|B1|f3
+mentally|về mặt tinh thần|I'm mentally tired.|B1|f3
+occupation|nghề nghiệp|What's your occupation?|B1|f3
+patch|miếng vá|A patch on the jacket|B1|f3
+patience|sự kiên nhẫn|Thanks for your patience.|B1|f3
+pic|ảnh (thân mật)|Send me a pic.|A2|f3
+precisely|chính xác|At precisely nine o'clock|B1|f3
+privilege|đặc quyền|It's a privilege to be here.|B2|f3
+punk|nhạc punk|Punk rock|B1|f3
+radar|ra-đa|Ship radar|B1|f3
+resist|chống lại|I couldn't resist.|B1|f3
+solely|duy nhất, chỉ|You are solely responsible.|B2|f3
+villa|biệt thự|A villa by the sea|A2|f3
+wireless|không dây|Wireless headphones|B1|f3
+wrap|gói, bọc|Wrap the pallets in plastic film.|A2|f3
+anytime|bất cứ lúc nào|Call me anytime.|A2|f3
+bacteria|vi khuẩn|Bacteria can make you sick.|B1|f3
+being|sinh vật; sự tồn tại|A human being|B1|f3
+beside|bên cạnh|Sit beside me.|A2|f3
+blade|lưỡi dao|A sharp blade|B1|f3
+buck|đô la (thân mật)|It costs ten bucks.|B1|f3
+bulk|số lượng lớn; hàng rời|Bulk cargo|B1|f3
+census|cuộc điều tra dân số|The national census|B2|f3
+coastal|ven biển|Coastal cities|B1|f3
+commentary|bình luận|Football commentary|B2|f3
+confusion|sự nhầm lẫn|Sorry for the confusion.|B1|f3
+corn|ngô|Grilled corn|A2|f3
+dealer|đại lý|A car dealer|B1|f3
+deem|cho là|It was deemed safe.|B2|f3
+destiny|số phận|It's your destiny.|B1|f3
+distant|xa xôi|A distant relative|B1|f3
+electronics|đồ điện tử|Consumer electronics|B1|f3
+emerge|xuất hiện|New problems emerged.|B2|f3
+emphasis|sự nhấn mạnh|Put emphasis on safety.|B2|f3
+ethics|đạo đức|Business ethics|B2|f3
+excitement|sự phấn khích|Full of excitement|B1|f3
+exploration|sự thám hiểm|Space exploration|B2|f3
+filling|nhân (bánh); trám răng|A tooth filling|B1|f3
+humour / humor|sự hài hước|A good sense of humor|B1|f3
+insight|sự hiểu biết sâu|Thanks for the insight.|B2|f3
+nerve|dây thần kinh; can đảm|You've got nerve!|B1|f3
+nightmare|ác mộng|The traffic was a nightmare.|B1|f3
+overnight|qua đêm|Overnight delivery|B1|f3
+partially|một phần|Partially damaged|B1|f3
+pie|bánh nướng|Apple pie|A2|f3
+poster|áp phích|A safety poster|A2|f3
+practically|gần như|It's practically finished.|B1|f3
+preserve|bảo tồn|Preserve the old buildings.|B1|f3
+raid|đột kích|A police raid|B2|f3
+respective|tương ứng|Their respective countries|B2|f3
+restrict|hạn chế|Access is restricted.|B1|f3
+sandy|có cát|A sandy beach|B1|f3
+scenario|kịch bản, tình huống|In the worst-case scenario…|B1|f3
+sheep|con cừu|A flock of sheep|A2|f3
+sustainable|bền vững|Sustainable packaging|B1|f3
+sustain|duy trì|Sustain growth|B2|f3
+tobacco|thuốc lá|Tobacco products|B1|f3
+uncomfortable|không thoải mái|These shoes are uncomfortable.|A2|f3
+weakness|điểm yếu|What are your weaknesses?|B1|f3
+widespread|lan rộng|Widespread flooding|B2|f3
+accessible|dễ tiếp cận|The building is wheelchair accessible.|B1|f3
+acknowledge|xác nhận; thừa nhận|Please acknowledge receipt of this email.|B1|f3
+advise|khuyên; thông báo|Please advise the ETA.|B1|f3
+advisory|tư vấn; cảnh báo|A travel advisory|B2|f3
+animation|hoạt hình|Animation films|B1|f3
+assignment|bài tập; nhiệm vụ|A new assignment|B1|f3
+basement|tầng hầm|Park in the basement.|A2|f3
+bias|thiên vị|There's a bias in the report.|B2|f3
+carpet|thảm|A red carpet|A2|f3
+ceiling|trần nhà|A high ceiling|A2|f3
+cherry|anh đào|Cherry blossoms|A2|f3
+chill|thư giãn; lạnh|Let's chill at home.|B1|f3
+classification|sự phân loại|Tariff classification|B2|f3
+clue|manh mối|I have no clue.|B1|f3
+collapse|sụp đổ|The roof collapsed.|B1|f3
+compound|hợp chất; khu nhà|A chemical compound|B2|f3
+conscious|tỉnh táo; có ý thức|He is conscious now.|B1|f3
+consecutive|liên tiếp|Three consecutive days|B2|f3
+costume|trang phục (hóa trang)|A Halloween costume|A2|f3
+devote|cống hiến|She devotes her time to her family.|B1|f3
+dominate|thống trị|They dominate the market.|B2|f3
+endless|vô tận|An endless queue|B1|f3
+examine|kiểm tra, khám|The doctor examined me.|B1|f3
+float|nổi|Wood floats.|B1|f3
+garbage|rác (US)|Take out the garbage.|A2|f3
+gospel|phúc âm|Gospel music|B2|f3
+grain|ngũ cốc; hạt|Rice is a grain.|B1|f3
+grid|lưới|The power grid|B1|f3
+heating|hệ thống sưởi|The heating doesn't work.|B1|f3
+identification|giấy tờ tùy thân; nhận dạng|Bring some identification.|B1|f3
+lap|vòng; lòng|He ran ten laps.|B1|f3
+liver|gan|Liver disease|B1|f3
+metro|tàu điện ngầm|Take the metro.|A2|f3
+metropolitan|thuộc đô thị lớn|The metropolitan area|B2|f3
+mixture|hỗn hợp|A mixture of sugar and water|B1|f3
+nominate|đề cử|She was nominated for an award.|B2|f3
+oak|cây sồi|An oak table|B1|f3
+parliamentary|thuộc quốc hội|Parliamentary elections|B2|f3
+patent|bằng sáng chế|They applied for a patent.|B2|f3
+perception|nhận thức|Public perception|B2|f3
+physician|bác sĩ|Consult your physician.|B2|f3
+pupil|học sinh; con ngươi|The school has 500 pupils.|A2|f3
+restore|khôi phục|Restore the old temple.|B1|f3
+rifle|súng trường|A hunting rifle|B2|f3
+rival|đối thủ|A rival company|B1|f3
+runner|người chạy|A marathon runner|A2|f3
+sadly|đáng buồn là|Sadly, he couldn't come.|B1|f3
+significance|ý nghĩa, tầm quan trọng|Historical significance|B2|f3
+spray|xịt|Spray the plants with water.|B1|f3
+structural|thuộc cấu trúc|Structural damage|B2|f3
+suite|phòng hạng sang|A hotel suite|B1|f3
+tropical|nhiệt đới|A tropical climate|B1|f3
+unnecessary|không cần thiết|Avoid unnecessary costs.|B1|f3
+verse|câu thơ; đoạn bài hát|The first verse|B1|f3
+victor|người chiến thắng|The victor of the battle|B2|f3
+vintage|cổ điển (đồ cũ)|A vintage car|B1|f3
+warn|cảnh báo|I warned you.|B1|f3
+acre|mẫu Anh (≈0,4 ha)|A farm of 100 acres|B1|f3
+adapt|thích nghi|Adapt to the new system.|B1|f3
+adoption|sự nhận nuôi; áp dụng|The adoption of new technology|B2|f3
+anonymous|ẩn danh|An anonymous call|B2|f3

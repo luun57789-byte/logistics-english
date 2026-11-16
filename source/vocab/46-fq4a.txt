@@ -1,0 +1,564 @@
+derby|trận derby|The Manchester derby|B2|f4
+breeding|chăn nuôi; nhân giống|Cattle breeding|B2|f4
+dynamics|động lực học; động thái|Team dynamics|B2|f4
+recognise|nhận ra (UK)|I didn't recognise you.|B1|f4
+beg|cầu xin|I beg you, please help.|B1|f4
+belonging|đồ đạc cá nhân|Take all your belongings.|B1|f4
+bout|cơn, đợt|A bout of flu|B2|f4
+brass|đồng thau|A brass door handle|B1|f4
+buzz|tiếng vo ve; gọi điện|Give me a buzz later.|B1|f4
+comeback|sự trở lại|The team made a great comeback.|B1|f4
+diagnose|chẩn đoán|He was diagnosed with diabetes.|B1|f4
+diesel|dầu diesel|The truck runs on diesel.|B1|f4
+dimension|kích thước|What are the dimensions of the box?|B1|f4
+dip|nhúng; chấm|Dip the spring roll in the sauce.|B1|f4
+disturb|làm phiền|Do not disturb.|B1|f4
+dot|dấu chấm|Meet at nine on the dot.|A2|f4
+effectiveness|tính hiệu quả|The effectiveness of the new process|B2|f4
+exceptional|đặc biệt, xuất sắc|Exceptional service|B2|f4
+filing|việc lưu hồ sơ; nộp|Tax filing|B2|f4
+flee|bỏ chạy|They fled the flood.|B2|f4
+foul|lỗi (thể thao); hôi|That was a foul.|B1|f4
+frankly|thẳng thắn mà nói|Frankly, I don't care.|B1|f4
+freezing|lạnh cóng|It's freezing outside.|A2|f4
+graph|đồ thị|Look at the graph.|B1|f4
+hack|tấn công mạng; mẹo|A life hack|B1|f4
+hatred|lòng căm thù|Hatred and anger|B2|f4
+ignorant|thiếu hiểu biết|Don't be ignorant.|B1|f4
+interact|tương tác|Interact with customers.|B1|f4
+limitation|sự hạn chế|Every system has limitations.|B2|f4
+majesty|bệ hạ; vẻ uy nghi|Your Majesty|B2|f4
+median|trung vị|Median income|B2|f4
+medieval|thời trung cổ|A medieval castle|B2|f4
+mobility|tính di động|Mobility of workers|B2|f4
+orientation|sự định hướng; buổi giới thiệu|New staff orientation|B2|f4
+oven|lò nướng|Bake it in the oven.|A2|f4
+rabbit|con thỏ|A white rabbit|A2|f4
+rhythm|nhịp điệu|English rhythm and stress|B1|f4
+savage|dã man|A savage attack|B2|f4
+shooter|người bắn|The shooter was arrested.|B1|f4
+sibling|anh chị em ruột|Do you have any siblings?|B1|f4
+someday|một ngày nào đó|Someday I'll visit Japan.|A2|f4
+spam|thư rác|Check your spam folder.|B1|f4
+stack|chồng, xếp chồng|Don't stack more than four pallets.|B1|f4
+stance|lập trường|What's your stance on this?|B2|f4
+static|tĩnh|Static electricity|B2|f4
+subway|tàu điện ngầm (US)|Take the subway.|A2|f4
+supportive|ủng hộ|A supportive boss|B1|f4
+surgical|phẫu thuật|A surgical mask|B2|f4
+tent|lều|We slept in a tent.|A2|f4
+thesis|luận văn|A master's thesis|B2|f4
+tide|thủy triều|High tide|B1|f4
+warfare|chiến tranh|Modern warfare|B2|f4
+withdraw|rút (tiền); rút lui|Withdraw money from the ATM.|B1|f4
+withdrawal|việc rút tiền|A cash withdrawal|B2|f4
+ageing / aging|lão hóa|An aging population|B2|f4
+anyways|dù sao thì (thân mật)|Anyways, see you tomorrow.|B1|f4
+authentic|đích thực|Authentic Vietnamese food|B1|f4
+backwards|lùi lại|Move backwards slowly.|B1|f4
+blonde|tóc vàng|She has blonde hair.|A2|f4
+bolt|bu lông; tia sét|Tighten the bolt.|B1|f4
+brook|suối nhỏ|A babbling brook|B2|f4
+bust|bắt quả tang; tượng bán thân|A drug bust|B2|f4
+clearing|khoảng đất trống; dọn dẹp|Customs clearing|B2|f4
+collar|cổ áo|A shirt collar|B1|f4
+comply|tuân thủ|Comply with the rules.|B2|f4
+cope|đối phó|How do you cope with stress?|B1|f4
+creepy|rùng rợn|A creepy old house|B1|f4
+echo|tiếng vang|There's an echo in the hall.|B1|f4
+emotionally|về mặt cảm xúc|Emotionally tired|B1|f4
+finale|màn kết|The season finale|B2|f4
+flavour / flavor|hương vị|What flavor do you want?|A2|f4
+glove|găng tay (một chiếc)|I lost a glove.|A2|f4
+ignorance|sự thiếu hiểu biết|Ignorance of the law is no excuse.|B2|f4
+induce|gây ra|Induce sleep|B2|f4
+intermediate|trung cấp|Intermediate level|B1|f4
+invention|phát minh|A great invention|B1|f4
+IP address|địa chỉ IP|Check the IP address.|B1|f4
+likewise|tương tự|Nice to meet you. Likewise!|B1|f4
+lineup|đội hình|The starting lineup|B1|f4
+magnificent|tráng lệ|A magnificent view|B1|f4
+mathematical|toán học|Mathematical skills|B1|f4
+meantime|trong lúc đó|In the meantime, please wait.|B1|f4
+nonetheless|tuy nhiên|It's hard. Nonetheless, we'll try.|B2|f4
+pipeline|đường ống|An oil pipeline|B2|f4
+placement|sự sắp xếp; thực tập|Product placement|B2|f4
+pricing|việc định giá|Competitive pricing|B1|f4
+recreation|giải trí|Recreation area|B2|f4
+renew|gia hạn|Renew your passport.|B1|f4
+resign|từ chức|He resigned last week.|B1|f4
+shallow|nông|Shallow water|B1|f4
+sketch|bản phác thảo|A quick sketch|B1|f4
+soda|nước ngọt có ga|A can of soda|A2|f4
+spite|bất chấp (in spite of)|In spite of the rain, we went out.|B1|f4
+strengthen|củng cố|Strengthen the relationship|B2|f4
+sunset|hoàng hôn|A beautiful sunset|A2|f4
+Thanksgiving|lễ Tạ ơn|Thanksgiving is in November.|B1|f4
+thermal|nhiệt|Thermal underwear|B2|f4
+workplace|nơi làm việc|Safety in the workplace|B1|f4
+yell|la hét|Don't yell at me.|B1|f4
+analyst|nhà phân tích|A data analyst|B1|f4
+arctic|thuộc Bắc Cực|The Arctic Ocean|B2|f4
+calorie|ca-lo|Low-calorie food|B1|f4
+cease|ngừng|Cease fire|B2|f4
+chapel|nhà nguyện|A small chapel|B2|f4
+cloth|vải; khăn lau|Wipe it with a cloth.|A2|f4
+cowboy|cao bồi|A cowboy hat|A2|f4
+deploy|triển khai|Deploy the new system.|B2|f4
+differ|khác|Opinions differ.|B1|f4
+eager|háo hức|Eager to learn|B1|f4
+elevate|nâng lên|Elevate your legs.|B2|f4
+essence|bản chất|The essence of good service|B2|f4
+fur|lông thú|The cat's fur is soft.|B1|f4
+GPS|định vị GPS|The truck has GPS.|A2|f4
+harvest|vụ thu hoạch|The rice harvest|B1|f4
+headline|tiêu đề báo|Today's headlines|B1|f4
+hype|sự quảng cáo rùm beng|Don't believe the hype.|B1|f4
+junk|đồ bỏ đi|Junk food|B1|f4
+kidney|thận|Kidney stones|B1|f4
+ladder|cái thang|Climb the ladder.|A2|f4
+lobby|sảnh|Wait in the lobby.|A2|f4
+mineral|khoáng chất|Mineral water|B1|f4
+mob|đám đông|An angry mob|B2|f4
+modest|khiêm tốn|A modest increase|B1|f4
+mph|dặm/giờ|The speed limit is 30 mph.|B1|f4
+navigation|sự định hướng, điều hướng|Satellite navigation|B1|f4
+orbit|quỹ đạo|The satellite is in orbit.|B2|f4
+paragraph|đoạn văn|Read the first paragraph.|A2|f4
+passive|bị động|The passive voice|B1|f4
+peninsula|bán đảo|The Son Tra Peninsula|B2|f4
+profitable|có lời|A profitable business|B1|f4
+ranch|trang trại|A cattle ranch|B1|f4
+reasonably|khá; hợp lý|Reasonably priced|B1|f4
+remainder|phần còn lại|The remainder will be shipped next week.|B2|f4
+seize|tịch thu; nắm lấy|Customs seized the goods.|B2|f4
+semester|học kỳ|The second semester|B1|f4
+sentiment|tình cảm; tâm lý|Market sentiment|B2|f4
+sock|chiếc tất|I lost a sock.|A2|f4
+supplement|thực phẩm bổ sung|Vitamin supplements|B1|f4
+thereby|do đó|thereby reducing costs|B2|f4
+threshold|ngưỡng|The tax threshold|B2|f4
+tin|thiếc; hộp thiếc|A tin of paint|B1|f4
+tribal|thuộc bộ lạc|Tribal art|B2|f4
+trunk|thân cây; cốp xe|Put it in the trunk.|B1|f4
+uncertainty|sự không chắc chắn|There's a lot of uncertainty.|B2|f4
+vampire|ma cà rồng|A vampire film|B1|f4
+verdict|phán quyết|The jury's verdict|B2|f4
+accommodate|chứa; đáp ứng|The hall can accommodate 200 people.|B2|f4
+accordingly|theo đó|Plan accordingly.|B2|f4
+aesthetic|thẩm mỹ|Aesthetic design|B2|f4
+algorithm|thuật toán|A search algorithm|B2|f4
+anchor|mỏ neo; neo|The ship is at anchor.|B1|f4
+arch|vòm|A stone arch|B1|f4
+axis|trục|The X axis|B2|f4
+badge|huy hiệu; thẻ|Wear your ID badge.|A2|f4
+bizarre|kỳ quái|A bizarre story|B1|f4
+bounce|nảy|The ball bounced.|B1|f4
+broadcasting|ngành phát thanh truyền hình|Public broadcasting|B2|f4
+cannon|khẩu pháo|An old cannon|B1|f4
+complexity|sự phức tạp|The complexity of customs rules|B2|f4
+consultation|sự tư vấn|A free consultation|B1|f4
+convenience|sự tiện lợi|At your convenience|B1|f4
+deliberately|cố ý|He did it deliberately.|B1|f4
+dictionary|từ điển|Look it up in the dictionary.|A2|f4
+dignity|phẩm giá|Treat people with dignity.|B2|f4
+ego|cái tôi|He has a big ego.|B1|f4
+enthusiasm|sự nhiệt tình|Thanks for your enthusiasm.|B1|f4
+equation|phương trình|Solve the equation.|B1|f4
+extract|chiết xuất; trích|Extract the data.|B2|f4
+fisher|người đánh cá|A local fisher|B1|f4
+flexibility|tính linh hoạt|We need more flexibility.|B2|f4
+fusion|sự hợp nhất|Fusion food|B2|f4
+gauge|đồng hồ đo; đánh giá|The fuel gauge|B2|f4
+goat|con dê|Goat meat|A2|f4
+gut|ruột; trực giác|Trust your gut.|B1|f4
+heck|quái quỷ (nhẹ)|What the heck?|B1|f4
+ideology|hệ tư tưởng|Political ideology|B2|f4
+inclusion|sự bao gồm|The inclusion of tax|B2|f4
+insect|côn trùng|Insects in the rice|A2|f4
+instructor|người hướng dẫn|A driving instructor|B1|f4
+isolation|sự cô lập|Feel isolation|B2|f4
+keeper|người giữ; thủ môn|The goalkeeper|B1|f4
+lamb|thịt cừu non|Roast lamb|A2|f4
+liar|kẻ nói dối|You're a liar!|B1|f4
+machinery|máy móc|Heavy machinery|B1|f4
+mansion|dinh thự|A big mansion|B1|f4
+mega|cực lớn|A mega sale|B1|f4
+mercury|thủy ngân; sao Thủy|Mercury is toxic.|B2|f4
+namely|cụ thể là|Two countries, namely Japan and Korea|B2|f4
+platinum|bạch kim|A platinum ring|B2|f4
+possess|sở hữu|He possesses great skill.|B1|f4
+premise|tiền đề; cơ sở|On the premises|B2|f4
+probability|xác suất|High probability of rain|B2|f4
+resignation|sự từ chức|Letter of resignation|B2|f4
+rider|người cưỡi, lái|A motorbike rider|B1|f4
+ritual|nghi lễ|A wedding ritual|B2|f4
+slam|đóng sầm|Don't slam the door.|B1|f4
+starter|món khai vị|For starters, the soup|B1|f4
+subscribe|đăng ký theo dõi|Subscribe to our channel.|B1|f4
+utterly|hoàn toàn|Utterly ridiculous|B2|f4
+voltage|điện áp|High voltage|B1|f4
+width|chiều rộng|What's the width?|A2|f4
+workout|buổi tập|A morning workout|A2|f4
+activate|kích hoạt|Activate your card.|B1|f4
+adaptation|sự thích nghi; chuyển thể|A film adaptation|B2|f4
+adviser / advisor|cố vấn|A financial advisor|B1|f4
+aluminium / aluminum|nhôm|Aluminum cans|B1|f4
+bail|tiền bảo lãnh|He was released on bail.|B2|f4
+characterize|mô tả đặc điểm|Characterize the market|B2|f4
+civilization|nền văn minh|Ancient civilizations|B1|f4
+congrats|chúc mừng (thân mật)|Congrats on the new job!|A2|f4
+creativity|sự sáng tạo|Creativity is important.|B1|f4
+delicate|mỏng manh|Delicate items|B1|f4
+den|hang thú|A lion's den|B2|f4
+disappointment|sự thất vọng|It was a big disappointment.|B1|f4
+evaluate|đánh giá|Evaluate the results.|B1|f4
+formally|chính thức|Formally announced|B1|f4
+goddess|nữ thần|A Greek goddess|B1|f4
+harassment|sự quấy rối|Sexual harassment|B2|f4
+insert|chèn|Insert your card.|B1|f4
+legit|hợp pháp; xịn (thân mật)|Is this site legit?|B1|f4
+liquor|rượu mạnh|A liquor store|B1|f4
+loser|người thua|A bad loser|B1|f4
+massage|xoa bóp|A foot massage|A2|f4
+nephew|cháu trai|My nephew is five.|A2|f4
+notably|đáng chú ý là|Notably, prices fell.|B2|f4
+orchestra|dàn nhạc|A symphony orchestra|B1|f4
+pad|tập giấy; miếng đệm|A note pad|B1|f4
+precision|độ chính xác|Precision engineering|B2|f4
+preservation|sự bảo tồn|Food preservation|B2|f4
+privately|riêng tư|Can we talk privately?|B1|f4
+rumour / rumor|tin đồn|It's just a rumor.|B1|f4
+sail|đi thuyền buồm; khởi hành|The ship sails tomorrow.|B1|f4
+salmon|cá hồi|Grilled salmon|A2|f4
+secretly|bí mật|She secretly left.|B1|f4
+SEO|tối ưu công cụ tìm kiếm|SEO for our website|B2|f4
+sheer|tuyệt đối; dốc đứng|Sheer luck|B2|f4
+specially|đặc biệt|Specially made for you|B1|f4
+stark|rõ rệt|A stark contrast|B2|f4
+sympathy|sự đồng cảm|You have my sympathy.|B1|f4
+tan|da rám nắng|She got a tan.|B1|f4
+theoretical|lý thuyết|Theoretical knowledge|B2|f4
+thumb|ngón cái|Thumbs up!|A2|f4
+timber|gỗ xây dựng|Timber exports|B2|f4
+transparent|trong suốt; minh bạch|Transparent pricing|B1|f4
+upside|mặt tích cực|The upside is it's cheap.|B1|f4
+vitamin|vi-ta-min|Vitamin C|A2|f4
+void|không có hiệu lực|The contract is void.|B2|f4
+voluntary|tự nguyện|Voluntary work|B1|f4
+wheat|lúa mì|Wheat flour|B1|f4
+whip|roi; đánh (trứng)|Whip the cream.|B1|f4
+wipe|lau|Wipe the table.|A2|f4
+wrist|cổ tay|I hurt my wrist.|A2|f4
+acute|cấp tính; nhạy|Acute pain|B2|f4
+admiral|đô đốc|The admiral of the fleet|B2|f4
+behave|cư xử|Behave yourself!|B1|f4
+capitol|tòa nhà quốc hội (Mỹ)|The Capitol in Washington|B2|f4
+chin|cằm|Keep your chin up.|A2|f4
+civic|thuộc công dân|Civic duty|B2|f4
+clerk|nhân viên văn phòng|A warehouse clerk|A2|f4
+considerably|đáng kể|Considerably cheaper|B1|f4
+cottage|nhà tranh|A cottage in the countryside|B1|f4
+coup|cuộc đảo chính|A military coup|B2|f4
+criticize|chỉ trích|Don't criticize him.|B1|f4
+crude|thô|Crude oil|B2|f4
+dash|lao nhanh; gạch ngang|I have to dash.|B1|f4
+disclosure|sự tiết lộ|Full disclosure|B2|f4
+disposal|sự thải bỏ|Waste disposal|B2|f4
+distinctive|đặc biệt|A distinctive logo|B2|f4
+drone|máy bay không người lái|Drone delivery|B1|f4
+escort|hộ tống|A police escort|B2|f4
+firmly|chắc chắn|Hold it firmly.|B1|f4
+flour|bột mì|Rice flour|A2|f4
+GDP|tổng sản phẩm quốc nội|Vietnam's GDP growth|B2|f4
+holding|cổ phần; nắm giữ|A holding company|B2|f4
+indie|độc lập (nhạc, phim)|Indie music|B1|f4
+indirect|gián tiếp|Indirect costs|B1|f4
+institutional|thuộc thể chế|Institutional investors|B2|f4
+interim|tạm thời|An interim manager|B2|f4
+jerk|kẻ đáng ghét; giật|Don't be a jerk.|B1|f4
+kindness|lòng tốt|Thank you for your kindness.|B1|f4
+lottery|xổ số|He won the lottery.|B1|f4
+magnitude|độ lớn|An earthquake of magnitude 6|B2|f4
+minus|trừ|Ten minus three is seven.|A2|f4
+nude|khỏa thân|A nude painting|B2|f4
+outlet|cửa hàng; ổ cắm|A factory outlet|B1|f4
+parameter|tham số|Set the parameters.|B2|f4
+pause|tạm dừng|Pause the video.|A2|f4
+pledge|cam kết|They pledged support.|B2|f4
+protester|người biểu tình|Protesters gathered.|B2|f4
+proving|chứng minh|Proving it is hard.|B1|f4
+publicity|sự quảng bá|Good publicity|B2|f4
+punish|trừng phạt|Don't punish the children.|B1|f4
+puppy|chó con|A cute puppy|A2|f4
+recruitment|sự tuyển dụng|Staff recruitment|B1|f4
+silicon|silic|Silicon chips|B2|f4
+slice|lát|A slice of bread|A2|f4
+spur|thúc đẩy|On the spur of the moment|B2|f4
+subscriber|người đăng ký|The channel has 1 million subscribers.|B1|f4
+telegraph|điện báo|An old telegraph|B2|f4
+vaccine|vắc-xin|The COVID vaccine|B1|f4
+vinyl|nhựa vinyl; đĩa than|Vinyl records|B2|f4
+accurately|chính xác|Measure accurately.|B1|f4
+affiliate|chi nhánh, công ty liên kết|Our affiliate in Singapore|B2|f4
+asylum|tị nạn|Political asylum|B2|f4
+barn|chuồng trại|A farm barn|B1|f4
+bent|cong|A bent pin|B1|f4
+cathedral|nhà thờ lớn|Notre Dame Cathedral in Saigon|B1|f4
+clause|điều khoản|A clause in the contract|B2|f4
+cluster|cụm|A cluster of factories|B2|f4
+consistency|tính nhất quán|Consistency in quality|B2|f4
+cylinder|xi lanh; bình|A gas cylinder|B2|f4
+dancer|vũ công|A ballet dancer|A2|f4
+deaf|điếc|He is deaf.|B1|f4
+denial|sự từ chối, phủ nhận|He is in denial.|B2|f4
+dock|cầu tàu; ụ dock|The truck is at dock 3.|B1|f4
+entrepreneur|doanh nhân khởi nghiệp|A young entrepreneur|B1|f4
+evident|rõ ràng|It's evident that he lied.|B2|f4
+expedition|cuộc thám hiểm|An expedition to the mountains|B2|f4
+facilitate|tạo điều kiện|Facilitate trade|B2|f4
+feat|kỳ công|An amazing feat|B2|f4
+fossil|hóa thạch|Fossil fuels|B2|f4
+honesty|sự trung thực|Honesty is the best policy.|B1|f4
+inappropriate|không phù hợp|Inappropriate behavior|B1|f4
+infant|trẻ sơ sinh|Infant formula|B1|f4
+initiate|khởi xướng|Initiate the process|B2|f4
+injection|mũi tiêm|A flu injection|B1|f4
+instrumental|có vai trò quan trọng|She was instrumental in the deal.|B2|f4
+insult|lời lăng mạ|That's an insult.|B1|f4
+interference|sự can thiệp; nhiễu|Radio interference|B2|f4
+interstate|liên bang|Interstate highway|B2|f4
+neat|gọn gàng|A neat desk|B1|f4
+offset|bù đắp|Offset the costs|B2|f4
+outbreak|sự bùng phát|An outbreak of flu|B2|f4
+pal|bạn|My old pal|B1|f4
+perfection|sự hoàn hảo|Cooked to perfection|B1|f4
+pirate|cướp biển|Pirates attacked the ship.|B1|f4
+probe|cuộc điều tra; thăm dò|A space probe|B2|f4
+prohibit|cấm|Smoking is prohibited.|B1|f4
+quarterly|hằng quý|A quarterly report|B1|f4
+recruit|tuyển dụng|We need to recruit drivers.|B1|f4
+rehabilitation|phục hồi chức năng|Rehabilitation after injury|B2|f4
+remix|bản phối lại|A dance remix|B1|f4
+resistant|chống, kháng|Water-resistant|B1|f4
+roller|con lăn|A paint roller|B1|f4
+skinny|gầy nhom|Skinny jeans|B1|f4
+sneak|lén|Sneak out|B1|f4
+sore|đau nhức|Sore muscles|A2|f4
+spark|tia lửa|A spark caused the fire.|B1|f4
+speculation|sự suy đoán|Pure speculation|B2|f4
+steep|dốc|A steep hill|B1|f4
+straw|ống hút; rơm|A paper straw|A2|f4
+successor|người kế nhiệm|His successor|B2|f4
+uncertain|không chắc|The ETA is uncertain.|B1|f4
+vector|véc-tơ|Vector graphics|B2|f4
+weigh|cân, nặng|How much does it weigh?|A2|f4
+whatsoever|gì cả|No problem whatsoever.|B2|f4
+absent|vắng mặt|He is absent today.|A2|f4
+acoustic|âm học; mộc (nhạc)|An acoustic guitar|B1|f4
+ancestor|tổ tiên|We worship our ancestors.|B1|f4
+atomic|thuộc nguyên tử|Atomic energy|B2|f4
+bicycle|xe đạp|Ride a bicycle|A2|f4
+bump|va chạm; ổ gà|A bump on the head|B1|f4
+circus|rạp xiếc|The kids went to the circus.|A2|f4
+compel|bắt buộc|I felt compelled to help.|B2|f4
+compile|biên soạn|Compile a list|B2|f4
+complication|biến chứng; rắc rối|There were some complications.|B2|f4
+cord|dây|A power cord|B1|f4
+cyber|thuộc mạng|Cyber attack|B1|f4
+defendant|bị cáo|The defendant was found guilty.|B2|f4
+dense|dày đặc|Dense fog|B1|f4
+desperately|tuyệt vọng; rất|I desperately need sleep.|B1|f4
+doctrine|học thuyết|Military doctrine|B2|f4
+financially|về tài chính|Financially stable|B1|f4
+freshman|sinh viên năm nhất|A college freshman|B1|f4
+furious|giận dữ|He was furious.|B1|f4
+gameplay|lối chơi|Great gameplay|B1|f4
+geography|địa lý|I liked geography at school.|A2|f4
+gig|buổi diễn; việc làm tự do|A gig economy|B1|f4
+habitat|môi trường sống|Natural habitat|B2|f4
+hydrogen|hiđrô|Hydrogen fuel|B2|f4
+imply|ngụ ý|What are you implying?|B2|f4
+intact|nguyên vẹn|The seal is intact.|B2|f4
+intake|lượng tiêu thụ|Daily water intake|B2|f4
+irrelevant|không liên quan|That's irrelevant.|B1|f4
+jaw|hàm|A broken jaw|B1|f4
+kitty|mèo con|A cute kitty|A2|f4
+lawn|bãi cỏ|Mow the lawn.|B1|f4
+needle|kim|A needle and thread|A2|f4
+oval|hình bầu dục|An oval table|B1|f4
+pity|lòng thương; tiếc|What a pity!|B1|f4
+pond|ao|A fish pond|A2|f4
+porter|người khuân vác|A hotel porter|B1|f4
+prey|con mồi|Birds of prey|B2|f4
+prophet|nhà tiên tri|A prophet in the Bible|B2|f4
+referendum|trưng cầu dân ý|A national referendum|B2|f4
+regulate|điều chỉnh|Regulate the temperature.|B2|f4
+ruby|hồng ngọc|A ruby ring|B1|f4
+seasonal|theo mùa|Seasonal fruit|B1|f4
+sensible|hợp lý|A sensible decision|B1|f4
+sequel|phần tiếp theo|The sequel was better.|B1|f4
+teammate|đồng đội|My teammates helped me.|A2|f4
+township|thị trấn|A small township|B2|f4
+USB|cổng USB|Plug in the USB cable.|A2|f4
+whale|cá voi|A blue whale|A2|f4
+admire|ngưỡng mộ|I admire your courage.|B1|f4
+amber|màu hổ phách; đèn vàng|An amber light|B1|f4
+ankle|mắt cá chân|I twisted my ankle.|B1|f4
+armour / armor|áo giáp|A suit of armor|B2|f4
+autism|chứng tự kỷ|Children with autism|B2|f4
+bachelor|cử nhân; người độc thân|A bachelor's degree|B1|f4
+berry|quả mọng|Fresh berries|A2|f4
+bully|bắt nạt|Don't bully others.|B1|f4
+capitalism|chủ nghĩa tư bản|Capitalism and socialism|B2|f4
+caution|sự thận trọng|Handle with caution.|B1|f4
+certification|chứng nhận|ISO certification|B2|f4
+clan|dòng họ|A family clan|B2|f4
+clash|xung đột|A clash of opinions|B2|f4
+compatible|tương thích|Compatible with your phone|B1|f4
+condemn|lên án|They condemned the attack.|B2|f4
+configuration|cấu hình|System configuration|B2|f4
+continuously|liên tục|It rained continuously.|B1|f4
+curiosity|sự tò mò|Out of curiosity|B1|f4
+explosive|chất nổ; dễ nổ|Explosive materials|B1|f4
+flooding|lũ lụt|Flooding in the Mekong Delta|B1|f4
+fortunate|may mắn|We were fortunate.|B1|f4
+fortunately|may mắn thay|Fortunately, no one was hurt.|A2|f4
+frontier|biên giới; giới hạn|The new frontier|B2|f4
+frustration|sự bực bội|I understand your frustration.|B1|f4
+geographic|thuộc địa lý|Geographic location|B2|f4
+grasp|nắm bắt|Grasp the idea|B2|f4
+handy|tiện dụng|A handy tool|B1|f4
+hardcore|cực đoan; cứng cựa|A hardcore fan|B1|f4
+harmful|có hại|Harmful chemicals|B1|f4
+hers|của cô ấy|This bag is hers.|A2|f4
+incentive|sự khuyến khích|A sales incentive|B2|f4
+inclusive|bao gồm|All-inclusive price|B1|f4
+madness|sự điên rồ|It's madness!|B1|f4
+mandate|nhiệm vụ; ủy thác|A government mandate|B2|f4
+manga|truyện tranh Nhật|She reads manga.|B1|f4
+memorable|đáng nhớ|A memorable trip|B1|f4
+merger|sự sáp nhập|A merger of two companies|B2|f4
+poker|bài poker|Play poker|B1|f4
+portable|di động, xách tay|A portable charger|B1|f4
+randomly|ngẫu nhiên|Randomly selected|B1|f4
+ranking|xếp hạng|World ranking|B1|f4
+robbery|vụ cướp|A bank robbery|B1|f4
+rub|chà xát|Rub your hands together.|B1|f4
+scatter|rải rác|Scattered showers|B2|f4
+scout|trinh sát; hướng đạo sinh|A talent scout|B1|f4
+sexuality|giới tính, tính dục|Human sexuality|B2|f4
+slap|tát|He slapped him.|B1|f4
+steak|bít tết|A beef steak|A2|f4
+succession|sự kế tiếp|In quick succession|B2|f4
+superintendent|giám thị, quản đốc|A school superintendent|B2|f4
+suspicion|sự nghi ngờ|Under suspicion|B2|f4
+sweep|quét|Sweep the floor.|A2|f4
+tactical|chiến thuật|A tactical move|B2|f4
+therapist|nhà trị liệu|A physical therapist|B1|f4
+thereafter|sau đó|Shortly thereafter|B2|f4
+thorough|kỹ lưỡng|A thorough check|B1|f4
+tuition|học phí|Tuition fees|B1|f4
+tumour / tumor|khối u|A brain tumor|B2|f4
+wholesale|bán buôn|Wholesale prices|B1|f4
+administer|quản lý; cho dùng (thuốc)|Administer first aid|B2|f4
+architectural|thuộc kiến trúc|Architectural design|B2|f4
+artillery|pháo binh|Heavy artillery|B2|f4
+canvas|vải bạt|A canvas bag|B1|f4
+canyon|hẻm núi|The Grand Canyon|B1|f4
+cheek|má|A kiss on the cheek|A2|f4
+circular|hình tròn; thông tư|A circular table|B1|f4
+circulation|sự lưu thông|Blood circulation|B2|f4
+clearance|thông quan; giảm giá thanh lý|Customs clearance|B1|f4
+coincidence|sự trùng hợp|What a coincidence!|B1|f4
+comedian|diễn viên hài|A stand-up comedian|B1|f4
+conscience|lương tâm|A clear conscience|B2|f4
+cooler|thùng giữ lạnh|A cooler box|B1|f4
+countless|vô số|Countless times|B1|f4
+curry|cà ri|Chicken curry|A2|f4
+dedication|sự cống hiến|Thanks for your dedication.|B1|f4
+enforce|thực thi|Enforce the rules.|B2|f4
+explicit|rõ ràng|Explicit instructions|B2|f4
+explicitly|một cách rõ ràng|Explicitly stated|B2|f4
+forbid|cấm|Smoking is forbidden.|B1|f4
+fraction|phân số; phần nhỏ|A fraction of the cost|B1|f4
+infantry|bộ binh|Infantry soldiers|B2|f4
+integral|không thể thiếu|An integral part|B2|f4
+kidnap|bắt cóc|The child was kidnapped.|B1|f4
+lightly|nhẹ nhàng|Lightly salted|B1|f4
+marble|đá cẩm thạch|A marble floor|B1|f4
+maritime|hàng hải|Maritime law|B2|f4
+melt|tan chảy|The ice is melting.|A2|f4
+nominee|người được đề cử|An Oscar nominee|B2|f4
+oath|lời thề|Take an oath|B2|f4
+patriot|người yêu nước|A true patriot|B2|f4
+polar|thuộc vùng cực|A polar bear|B1|f4
+prediction|dự đoán|My prediction is 2–1.|B1|f4
+preview|xem trước|Print preview|B1|f4
+puzzle|câu đố|A crossword puzzle|A2|f4
+rapper|ca sĩ nhạc rap|A famous rapper|B1|f4
+reconstruction|sự tái thiết|Post-war reconstruction|B2|f4
+renowned|nổi tiếng|A renowned chef|B2|f4
+revelation|sự tiết lộ|A shocking revelation|B2|f4
+socially|về mặt xã hội|Socially responsible|B1|f4
+spa|spa|A day at the spa|A2|f4
+spike|sự tăng vọt|A spike in demand|B2|f4
+sprint|chạy nước rút|A 100-metre sprint|B1|f4
+stir|khuấy|Stir the soup.|A2|f4
+substantially|đáng kể|Substantially lower|B2|f4
+suburb|ngoại ô|They live in the suburbs.|B1|f4
+superb|tuyệt vời|Superb service|B1|f4
+supposedly|được cho là|Supposedly, it's the best.|B1|f4
+tab|thẻ; hóa đơn|Open a new tab.|B1|f4
+tendency|xu hướng|He has a tendency to be late.|B1|f4
+theirs|của họ|The house is theirs.|A2|f4
+toast|bánh mì nướng; nâng ly|A toast to the bride!|A2|f4
+trait|đặc điểm|Personality traits|B2|f4
+trek|chuyến đi bộ dài|A trek in Sapa|B1|f4
+tricky|khó, rắc rối|A tricky question|B1|f4
+triumph|chiến thắng|A great triumph|B2|f4
+unto|đến (cổ)|Unto us|B2|f4
+viable|khả thi|A viable option|B2|f4
+waist|eo|My waist size is 32.|A2|f4
+wit|sự dí dỏm|Quick wit|B2|f4
+wreck|xác (tàu, xe); phá hủy|A shipwreck|B1|f4
+absurd|vô lý|An absurd idea|B1|f4
+accessory|phụ kiện|Phone accessories|B1|f4
+ambitious|tham vọng|An ambitious plan|B1|f4
+amid|giữa lúc|Amid the chaos|B2|f4
+ballet|múa ba lê|Ballet classes|A2|f4
+binary|nhị phân|Binary code|B2|f4
+blend|pha trộn|A blend of coffee beans|B1|f4
+brake|phanh|Hit the brakes.|A2|f4
+cab|xe taxi|Call a cab.|A2|f4
+collision|vụ va chạm|A collision at sea|B2|f4
+compassion|lòng trắc ẩn|Show compassion.|B2|f4
+consume|tiêu thụ|The truck consumes a lot of fuel.|B1|f4
+correction|sự sửa chữa|Make a correction.|B1|f4
+depot|kho, bãi|The container depot|B1|f4
+distress|sự đau khổ; tình trạng nguy cấp|A ship in distress|B2|f4
+documentation|tài liệu, chứng từ|Shipping documentation|B1|f4
+dramatically|đáng kể|Prices rose dramatically.|B1|f4
+elegant|thanh lịch|An elegant dress|B1|f4
+feast|bữa tiệc|A Tet feast|B1|f4
+frost|sương giá|Frost in Sapa|B1|f4
+herald|báo hiệu|Herald a new era|B2|f4
+hike|đi bộ đường dài; tăng giá|A price hike|B1|f4
+hollow|rỗng|A hollow tree|B1|f4
+homeland|quê hương|My homeland|B1|f4
+internationally|trên toàn thế giới|Internationally known|B1|f4
+lame|què; dở|A lame excuse|B1|f4
+locker|tủ khóa|Leave your bag in the locker.|A2|f4
+mainland|đất liền|The mainland and the islands|B1|f4
+meditation|thiền|Meditation helps with stress.|B1|f4
+messenger|người đưa tin|A motorbike messenger|B1|f4
+pencil|bút chì|A pencil and paper|A2|f4
+philosophical|thuộc triết học|A philosophical question|B2|f4
+plasma|huyết tương; plasma|A plasma TV|B2|f4
+plea|lời cầu xin|A plea for help|B2|f4
+purse|ví nữ|She left her purse on the bus.|A2|f4
+quarterback|tiền vệ (bóng bầu dục)|The quarterback threw the ball.|B2|f4
+ref|trọng tài (thân mật)|The ref gave a penalty.|B1|f4
+relieve|làm dịu|Relieve pain|B1|f4
+rhetoric|lời lẽ hoa mỹ|Political rhetoric|B2|f4
+salvation|sự cứu rỗi|Salvation Army|B2|f4

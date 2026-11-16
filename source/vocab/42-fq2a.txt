@@ -1,0 +1,497 @@
+bigger|to hơn|We need a bigger truck.|A2|f2
+attorney|luật sư (Mỹ)|You should talk to an attorney.|B2|f2
+behaviour / behavior|hành vi, cách cư xử|His behavior was rude.|B1|f2
+debt|khoản nợ|He paid off his debt.|B1|f2
+domestic|nội địa; trong nhà|Domestic flights are cheap.|B1|f2
+historical|thuộc lịch sử|Hue has many historical buildings.|B1|f2
+honestly|thành thật|Honestly, I don't know.|B1|f2
+honour / honor|danh dự, vinh dự|It's an honor to meet you.|B1|f2
+jump|nhảy|Don't jump off the truck.|A2|f2
+launch|ra mắt; phóng|They launched a new app.|B1|f2
+minimum|tối thiểu|The minimum order is 100 units.|B1|f2
+native|bản xứ, bản địa|She is a native speaker.|B1|f2
+originally|ban đầu, vốn là|I'm originally from Nghe An.|B1|f2
+supreme|tối cao|The Supreme Court made a decision.|B2|f2
+tech|công nghệ (thân mật)|He works in tech.|B1|f2
+writer|nhà văn, người viết|She is a writer.|A2|f2
+ancient|cổ xưa|We visited an ancient temple.|B1|f2
+combine|kết hợp|Combine the two orders into one shipment.|B1|f2
+communication|giao tiếp; liên lạc|Good communication is important.|B1|f2
+connect|kết nối|Connect to the Wi-Fi.|A2|f2
+contain|chứa|The box contains glass items.|B1|f2
+ending|kết thúc (truyện, phim)|I didn't like the ending.|B1|f2
+express|bày tỏ; tốc hành|Send it by express mail.|B1|f2
+hero|anh hùng|He is my hero.|A2|f2
+illegal|bất hợp pháp|It's illegal to park here.|B1|f2
+joke|chuyện cười|Tell me a joke.|A2|f2
+loan|khoản vay|I took a loan from the bank.|B1|f2
+perform|biểu diễn; thực hiện|The band performed well.|B1|f2
+planet|hành tinh|Save the planet.|A2|f2
+select|chọn|Select your size.|B1|f2
+soft|mềm|This pillow is very soft.|A2|f2
+transport|vận chuyển; giao thông|Public transport is cheap here.|A2|f2
+affair|việc, chuyện|It's a family affair.|B1|f2
+appeal|kháng cáo; hấp dẫn|The idea doesn't appeal to me.|B2|f2
+appropriate|phù hợp|Wear appropriate clothes.|B1|f2
+device|thiết bị|Turn off all electronic devices.|B1|f2
+drama|kịch; phim truyền hình|I love Korean dramas.|A2|f2
+entry|lối vào; mục nhập|No entry.|B1|f2
+era|thời đại|It was a new era.|B2|f2
+factor|yếu tố|Price is the main factor.|B1|f2
+feed|cho ăn|Feed the cat, please.|A2|f2
+golden|bằng vàng; màu vàng|She has golden hair.|B1|f2
+grant|tài trợ; cấp|They granted us a visa.|B1|f2
+measure|đo; biện pháp|Measure the box.|A2|f2
+pool|hồ bơi|The hotel has a pool.|A2|f2
+regard|xem như; lời chào (regards)|Best regards, Nam|B1|f2
+relation|mối quan hệ|Vietnam has good relations with Japan.|B1|f2
+scientific|khoa học|It's a scientific fact.|B1|f2
+shoe|chiếc giày|One shoe is missing.|A2|f2
+smoke|khói; hút thuốc|No smoking. Do you smoke?|A2|f2
+squad|đội|He was picked for the national squad.|B1|f2
+abuse|lạm dụng; ngược đãi|Drug abuse is a serious problem.|B2|f2
+candidate|ứng viên|We interviewed five candidates.|B1|f2
+emotional|cảm xúc; xúc động|It was an emotional moment.|B1|f2
+facility|cơ sở vật chất|The hotel has good facilities.|B1|f2
+fox|con cáo|A fox ran across the road.|A2|f2
+hole|cái lỗ|There's a hole in the box.|A2|f2
+internal|nội bộ|This is an internal email.|B1|f2
+liberal|tự do, phóng khoáng|She has liberal views.|B2|f2
+pack|đóng gói; gói|Pack your bags.|A2|f2
+payment|sự thanh toán|We received your payment.|A2|f2
+relatively|tương đối|It's relatively cheap.|B1|f2
+sector|lĩnh vực, khu vực|He works in the private sector.|B1|f2
+snow|tuyết|It never snows in Saigon.|A2|f2
+strike|đình công; đánh|The port workers are on strike.|B1|f2
+studio|xưởng; phòng thu|She has a small studio apartment.|B1|f2
+chain|chuỗi; dây xích|It's a chain of coffee shops.|B1|f2
+chapter|chương|Read chapter five.|B1|f2
+commit|cam kết; phạm (tội)|We are committed to quality.|B1|f2
+confidence|sự tự tin|She speaks with confidence.|B1|f2
+equal|bằng nhau|All people are equal.|B1|f2
+fake|giả|This bag is fake.|B1|f2
+finance|tài chính|She works in finance.|B1|f2
+identity|danh tính|Show your identity card.|B1|f2
+journey|hành trình|How was your journey?|A2|f2
+maintain|duy trì; bảo trì|Maintain a safe distance.|B1|f2
+numerous|nhiều|There were numerous complaints.|B2|f2
+reveal|tiết lộ|He revealed the secret.|B1|f2
+specifically|cụ thể là|I asked specifically for a window seat.|B1|f2
+split|chia; tách|Let's split the cost.|B1|f2
+twenty|hai mươi|There are twenty pallets.|A2|f2
+urban|thành thị|Urban areas are crowded.|B1|f2
+affect|ảnh hưởng đến|The typhoon affected many flights.|B1|f2
+aircraft|máy bay|The aircraft can carry 100 tonnes.|B1|f2
+approximately|xấp xỉ|It takes approximately two hours.|B1|f2
+argument|cuộc tranh cãi; lập luận|They had an argument.|B1|f2
+arrest|bắt giữ|The police arrested him.|B1|f2
+conflict|xung đột|There's a conflict in the schedule.|B1|f2
+corporate|thuộc công ty|She works in corporate sales.|B1|f2
+debate|cuộc tranh luận|There was a debate on TV.|B1|f2
+determine|xác định|We need to determine the cause.|B1|f2
+distribution|phân phối|The distribution center is in Binh Duong.|B1|f2
+document|tài liệu, chứng từ|Please sign the document.|A2|f2
+escape|trốn thoát|The cat escaped.|B1|f2
+extend|gia hạn; kéo dài|Can we extend the deadline?|B1|f2
+fault|lỗi|It's not your fault.|B1|f2
+phase|giai đoạn|The first phase is finished.|B1|f2
+properly|đúng cách|Pack the goods properly.|B1|f2
+pure|tinh khiết, thuần|It's pure water.|B1|f2
+requirement|yêu cầu|What are the requirements?|B1|f2
+resident|cư dân|Residents can park here.|B1|f2
+revenue|doanh thu|Revenue increased by 15%.|B1|f2
+secure|an toàn; cố định|Secure the load with straps.|B1|f2
+strange|lạ|That's strange.|A2|f2
+talent|tài năng|She has a talent for music.|B1|f2
+troop|quân lính|Troops were sent to help after the flood.|B2|f2
+ah|à|Ah, I see.|A2|f2
+basically|về cơ bản|Basically, it's a good plan.|B1|f2
+besides|ngoài ra|Besides, it's too expensive.|B1|f2
+blame|đổ lỗi|Don't blame me.|B1|f2
+context|bối cảnh|In this context, it means something else.|B1|f2
+display|trưng bày; màn hình|The display is broken.|B1|f2
+elect|bầu|They elected a new leader.|B1|f2
+false|sai|True or false?|A2|f2
+funding|nguồn tài trợ|The project needs more funding.|B1|f2
+identify|nhận dạng|Can you identify the problem?|B1|f2
+incredible|không thể tin được|The view was incredible.|B1|f2
+inspire|truyền cảm hứng|She inspires me.|B1|f2
+ministry|bộ (chính phủ)|The Ministry of Transport|B1|f2
+mode|chế độ; phương thức|Switch to silent mode.|B1|f2
+obvious|rõ ràng, hiển nhiên|The answer is obvious.|B1|f2
+slowly|chậm rãi|Please speak slowly.|A2|f2
+surgery|phẫu thuật|He had surgery on his knee.|B1|f2
+trading|việc buôn bán|We are a trading company.|B1|f2
+vision|tầm nhìn; thị lực|The company has a clear vision.|B1|f2
+whenever|bất cứ khi nào|Call me whenever you want.|B1|f2
+cream|kem; màu kem|Coffee with cream, please.|A2|f2
+crisis|khủng hoảng|There was a financial crisis.|B1|f2
+editor|biên tập viên|She is the editor of a magazine.|B1|f2
+estimate|ước tính|Can you estimate the cost?|B1|f2
+giant|khổng lồ|It's a giant ship.|B1|f2
+jail|nhà tù|He went to jail.|B1|f2
+kingdom|vương quốc|The United Kingdom|B1|f2
+literature|văn học|I studied literature at university.|B1|f2
+mayor|thị trưởng|The mayor opened the bridge.|B1|f2
+minor|nhỏ, không quan trọng|It's only a minor problem.|B1|f2
+ourselves|chính chúng tôi|We did it ourselves.|A2|f2
+selection|sự lựa chọn|There's a good selection of food.|B1|f2
+serving|phần ăn|One serving is enough for me.|B1|f2
+signal|tín hiệu|There's no phone signal here.|B1|f2
+stream|dòng suối; phát trực tuyến|They stream the match online.|B1|f2
+struggle|vật lộn, chật vật|She struggled with the heavy box.|B1|f2
+theme|chủ đề|What's the theme of the party?|B1|f2
+tiny|rất nhỏ|It's a tiny room.|A2|f2
+typically|thường thì|We typically ship on Fridays.|B1|f2
+usual|thông thường|The usual, please.|A2|f2
+wave|sóng; vẫy tay|She waved goodbye.|A2|f2
+alcohol|rượu, cồn|No alcohol at work.|B1|f2
+assembly|lắp ráp; cuộc họp|Final assembly is in our factory.|B1|f2
+capable|có khả năng|She is very capable.|B1|f2
+combination|sự kết hợp|It's a good combination.|B1|f2
+conservative|bảo thủ; thận trọng|That's a conservative estimate.|B2|f2
+desire|mong muốn|He has a strong desire to win.|B1|f2
+destroy|phá hủy|The storm destroyed the roof.|B1|f2
+draft|bản nháp|Here's the first draft.|B1|f2
+drunk|say rượu|He was drunk.|B1|f2
+essential|thiết yếu|Water is essential.|B1|f2
+familiar|quen thuộc|This place looks familiar.|B1|f2
+guilty|có tội; tội lỗi|I feel guilty.|B1|f2
+ID|giấy tờ tùy thân|Can I see your ID?|A2|f2
+largely|phần lớn|It's largely my fault.|B1|f2
+perfectly|hoàn hảo|It works perfectly.|B1|f2
+recommend|giới thiệu, khuyên|Can you recommend a good hotel?|B1|f2
+refer|đề cập; chuyển đến|I'll refer you to my manager.|B1|f2
+relevant|liên quan|Send me the relevant documents.|B1|f2
+seek|tìm kiếm|They are seeking a new supplier.|B1|f2
+solo|một mình; đơn ca|She travelled solo.|B1|f2
+unable|không thể|I'm unable to attend.|B1|f2
+wing|cánh|The bird hurt its wing.|A2|f2
+bomb|quả bom|The bomb was found near the station.|B1|f2
+creative|sáng tạo|She is very creative.|B1|f2
+cycle|chu kỳ; đạp xe|I cycle to work.|B1|f2
+educational|mang tính giáo dục|It's an educational game.|B1|f2
+entertainment|giải trí|What do you do for entertainment?|B1|f2
+extreme|cực độ|The heat was extreme.|B1|f2
+hang|treo|Hang your coat here.|A2|f2
+info|thông tin (thân mật)|Thanks for the info.|A2|f2
+mainly|chủ yếu|We mainly sell to Japan.|B1|f2
+maximum|tối đa|The maximum weight is 30 kg.|B1|f2
+paint|sơn; vẽ|Paint the wall white.|A2|f2
+republic|nước cộng hòa|The Socialist Republic of Vietnam|B1|f2
+reserve|đặt trước|I'd like to reserve a table.|B1|f2
+row|hàng, dãy|We sat in the front row.|A2|f2
+scare|làm sợ|You scared me!|A2|f2
+statistic|thống kê|The statistics show growth.|B1|f2
+switch|công tắc; chuyển|Switch off the machine.|B1|f2
+territory|lãnh thổ|That's his territory.|B2|f2
+threat|mối đe dọa|The storm is a threat to shipping.|B1|f2
+appoint|bổ nhiệm|She was appointed manager.|B1|f2
+aside|sang một bên|Put it aside for now.|B1|f2
+assistance|sự trợ giúp|Do you need assistance?|B1|f2
+bell|cái chuông|Ring the bell.|A2|f2
+blow|thổi|Blow out the candles.|A2|f2
+bond|mối gắn kết; trái phiếu|They have a strong bond.|B2|f2
+circumstance|hoàn cảnh|Under no circumstances should you open it.|B1|f2
+corporation|tập đoàn|It's a large corporation.|B1|f2
+danger|nguy hiểm|Danger! Keep out.|A2|f2
+deserve|xứng đáng|You deserve a holiday.|B1|f2
+folk|người; dân gian|Thanks, folks!|B1|f2
+gender|giới tính|Please state your gender.|B1|f2
+instance|ví dụ|For instance, we could use rail.|B1|f2
+kinda|hơi, kiểu như (thân mật)|I'm kinda tired.|B1|f2
+motion|chuyển động|The video is in slow motion.|B1|f2
+prize|giải thưởng|She won first prize.|A2|f2
+reasonable|hợp lý|The price is reasonable.|B1|f2
+register|đăng ký|Register online.|B1|f2
+resolution|giải pháp; độ phân giải|We need a quick resolution.|B2|f2
+rural|nông thôn|Rural areas need better roads.|B1|f2
+typical|điển hình|It's a typical Hanoi breakfast.|B1|f2
+universe|vũ trụ|The universe is huge.|B1|f2
+warning|cảnh báo|There's a typhoon warning.|A2|f2
+admit|thừa nhận|He admitted his mistake.|B1|f2
+attitude|thái độ|She has a positive attitude.|B1|f2
+branch|chi nhánh; cành|We have a branch in Da Nang.|B1|f2
+conduct|tiến hành; hạnh kiểm|We will conduct an inspection.|B2|f2
+decade|thập kỷ|I've lived here for a decade.|B1|f2
+dedicate|cống hiến|She dedicated her life to teaching.|B1|f2
+definition|định nghĩa|What's the definition of this word?|B1|f2
+favour / favor|đặc ân; giúp đỡ|Can you do me a favor?|B1|f2
+flag|lá cờ|The Vietnamese flag is red with a yellow star.|A2|f2
+frame|khung|The frame is made of steel.|B1|f2
+heaven|thiên đường|This beach is heaven.|B1|f2
+independence|sự độc lập|Independence Day is 2 September.|B1|f2
+institution|tổ chức, cơ quan|It's a financial institution.|B2|f2
+kiss|hôn|He kissed his daughter goodnight.|A2|f2
+plot|cốt truyện; mảnh đất|The plot of the film is simple.|B1|f2
+possibility|khả năng|Is there any possibility of a delay?|B1|f2
+random|ngẫu nhiên|Pick a random box.|B1|f2
+recovery|sự hồi phục|I wish you a quick recovery.|B1|f2
+represent|đại diện|He represents our company.|B1|f2
+senator|thượng nghị sĩ|The senator gave a speech.|B2|f2
+sentence|câu; bản án|Write a sentence with this word.|A2|f2
+academic|học thuật|She has good academic results.|B1|f2
+academy|học viện|He trained at a football academy.|B1|f2
+accurate|chính xác|Is this weight accurate?|B1|f2
+achieve|đạt được|We achieved our target.|B1|f2
+assume|cho rằng|I assume you've read it.|B1|f2
+bunch|bó; nhóm|A bunch of flowers.|B1|f2
+category|loại, hạng mục|What category is this product in?|B1|f2
+cheese|phô mai|I don't like cheese.|A2|f2
+chemical|hóa chất|Store chemicals safely.|B1|f2
+competitive|cạnh tranh|Our prices are competitive.|B1|f2
+index|chỉ số; mục lục|Check the index at the back.|B1|f2
+lane|làn đường|Stay in the left lane.|A2|f2
+mess|sự bừa bộn|What a mess!|A2|f2
+navy|hải quân; màu xanh navy|He wore a navy suit.|B1|f2
+normally|thường thì|I normally get up at six.|A2|f2
+occur|xảy ra|When did the accident occur?|B1|f2
+opposition|sự phản đối; phe đối lập|There was strong opposition to the plan.|B2|f2
+permanent|lâu dài, vĩnh viễn|Is it a permanent job?|B1|f2
+personally|cá nhân tôi|Personally, I prefer tea.|B1|f2
+pleasure|niềm vui|It's a pleasure to meet you.|A2|f2
+programme|chương trình (UK)|There's a good programme on TV.|A2|f2
+representative|người đại diện|Speak to our sales representative.|B1|f2
+scheme|kế hoạch, chương trình|There's a new savings scheme.|B2|f2
+tank|bể chứa; xe tăng|Fill up the tank.|B1|f2
+tend|có xu hướng|I tend to eat too much.|B1|f2
+tight|chật; sát sao|The schedule is very tight.|B1|f2
+transportation|giao thông vận tải|Transportation costs are rising.|B1|f2
+ultimately|cuối cùng|Ultimately, it's your decision.|B2|f2
+unlike|không giống|Unlike her sister, she's quiet.|B1|f2
+weekly|hằng tuần|We have a weekly meeting.|A2|f2
+anybody|bất kỳ ai|Is anybody there?|A2|f2
+asset|tài sản|Our people are our biggest asset.|B1|f2
+button|nút|Press the red button.|A2|f2
+combat|chiến đấu|They combat crime.|B2|f2
+constitution|hiến pháp|The constitution protects our rights.|B2|f2
+consumer|người tiêu dùng|Consumers want lower prices.|B1|f2
+counter|quầy|Pay at the counter.|A2|f2
+creation|sự tạo ra|The creation of new jobs.|B1|f2
+crown|vương miện|The queen wore a crown.|B1|f2
+define|định nghĩa|Define your goals.|B1|f2
+depend|phụ thuộc|It depends on the weather.|A2|f2
+depression|trầm cảm; suy thoái|She suffers from depression.|B1|f2
+employment|việc làm|Employment is rising.|B1|f2
+exclusive|độc quyền; cao cấp|It's an exclusive offer.|B1|f2
+excuse|lời bào chữa|That's not a good excuse.|A2|f2
+expert|chuyên gia|She is an expert in customs.|B1|f2
+frequently|thường xuyên|Frequently asked questions|B1|f2
+golf|môn golf|My boss plays golf.|A2|f2
+grace|sự duyên dáng|She dances with grace.|B1|f2
+hopefully|hy vọng là|Hopefully, it won't rain.|B1|f2
+importance|tầm quan trọng|Never forget the importance of safety.|B1|f2
+lay|đặt, để|Lay the pallets on the floor.|B1|f2
+latter|cái sau|Of the two options, I prefer the latter.|B2|f2
+manufacturing|sản xuất|Manufacturing is big in Vietnam.|B1|f2
+mining|khai mỏ|Mining is dangerous work.|B1|f2
+object|đồ vật; phản đối|There's an object on the road.|B1|f2
+pattern|mẫu, hoa văn; quy luật|I like the pattern on this shirt.|B1|f2
+personnel|nhân sự|Only authorized personnel.|B1|f2
+perspective|góc nhìn|From my perspective, it's fine.|B1|f2
+pregnant|có thai|She is six months pregnant.|B1|f2
+premier|hàng đầu|It's the premier event of the year.|B2|f2
+promote|thăng chức; quảng bá|She was promoted to manager.|B1|f2
+revolution|cách mạng|The industrial revolution|B1|f2
+severe|nghiêm trọng|There was severe flooding.|B1|f2
+turkey|gà tây|We had turkey for Christmas.|A2|f2
+victim|nạn nhân|The victims received help.|B1|f2
+attend|tham dự|Will you attend the meeting?|B1|f2
+ban|cấm|Smoking is banned here.|B1|f2
+brilliant|xuất sắc; tuyệt|That's a brilliant idea!|B1|f2
+carbon|các-bon|We want to cut carbon emissions.|B1|f2
+circle|vòng tròn|Draw a circle.|A2|f2
+crash|va chạm; sập (máy)|My computer crashed.|B1|f2
+declare|khai báo; tuyên bố|Do you have anything to declare?|B1|f2
+depth|độ sâu|What's the depth of the water?|B1|f2
+deputy|phó|He is the deputy manager.|B1|f2
+earn|kiếm (tiền)|How much do you earn?|A2|f2
+electronic|điện tử|We sell electronic goods.|B1|f2
+error|lỗi|There's an error in the invoice.|A2|f2
+existence|sự tồn tại|He didn't know of its existence.|B2|f2
+expression|thành ngữ; biểu cảm|It's a common expression.|B1|f2
+interior|nội thất; bên trong|The interior of the car is clean.|B1|f2
+joy|niềm vui|She cried with joy.|B1|f2
+legislation|luật pháp|New legislation starts next year.|B2|f2
+manner|cách thức; cách cư xử|He has good manners.|B1|f2
+mate|bạn (thân mật, UK)|Cheers, mate!|B1|f2
+nearby|gần đây|Is there a café nearby?|A2|f2
+noise|tiếng ồn|Stop making noise.|A2|f2
+panel|bảng; nhóm chuyên gia|The solar panels are on the roof.|B1|f2
+personality|tính cách|He has a great personality.|B1|f2
+relief|sự nhẹ nhõm; cứu trợ|What a relief!|B1|f2
+resistance|sự kháng cự|There was some resistance to the change.|B2|f2
+retail|bán lẻ|She works in retail.|B1|f2
+shame|sự xấu hổ; tiếc|What a shame!|B1|f2
+somewhat|hơi, phần nào|I'm somewhat tired.|B1|f2
+surely|chắc chắn|Surely you know him.|B1|f2
+absolute|tuyệt đối|It was an absolute disaster.|B1|f2
+advertising|quảng cáo|They spend a lot on advertising.|B1|f2
+baseball|bóng chày|Baseball is popular in Japan.|A2|f2
+championship|giải vô địch|They won the championship.|B1|f2
+constant|liên tục|There's constant noise.|B1|f2
+dumb|ngu ngốc|That was a dumb question.|B1|f2
+empire|đế chế|The Roman Empire|B1|f2
+exciting|thú vị, hấp dẫn|It was an exciting match.|A2|f2
+expansion|sự mở rộng|The expansion of the port|B1|f2
+heavily|nặng nề|It rained heavily.|B1|f2
+hide|giấu, trốn|Where did you hide it?|A2|f2
+incident|sự cố|Please report any incident.|B1|f2
+politician|chính trị gia|He is a politician.|B1|f2
+sight|thị lực; cảnh|The sights of Hanoi are beautiful.|B1|f2
+significantly|đáng kể|Costs have risen significantly.|B1|f2
+wet|ướt|The floor is wet.|A2|f2
+widely|rộng rãi|English is widely spoken.|B1|f2
+worldwide|toàn thế giới|We ship worldwide.|B1|f2
+attractive|hấp dẫn|It's an attractive offer.|B1|f2
+bike|xe đạp|I ride my bike to school.|A2|f2
+broad|rộng|He has broad shoulders.|B1|f2
+burn|đốt cháy; bỏng|I burned my hand.|A2|f2
+closely|chặt chẽ|We work closely with the supplier.|B1|f2
+constantly|liên tục|The phone rings constantly.|B1|f2
+contest|cuộc thi|She won a singing contest.|B1|f2
+haha|haha (tiếng cười)|Haha, that's funny!|A2|f2
+hardly|hầu như không|I can hardly hear you.|B1|f2
+height|chiều cao|What's the height of the box?|A2|f2
+loud|to (âm thanh)|The music is too loud.|A2|f2
+marine|thuộc biển|Marine insurance covers the cargo.|B1|f2
+motor|động cơ|The motor is broken.|B1|f2
+officially|chính thức|The road officially opens tomorrow.|B1|f2
+peak|đỉnh; cao điểm|It's peak season now.|B1|f2
+portion|phần|A small portion of rice, please.|B1|f2
+pound|bảng Anh; pound (0,45 kg)|It weighs two pounds.|A2|f2
+princess|công chúa|The little girl dressed as a princess.|A2|f2
+protein|chất đạm|Eggs are high in protein.|B1|f2
+raw|sống, thô|Don't eat raw meat.|B1|f2
+reform|cải cách|Tax reform starts next year.|B1|f2
+respond|phản hồi|Please respond by Friday.|B1|f2
+retirement|sự nghỉ hưu|He is saving for retirement.|B1|f2
+secondary|thứ cấp; trung học|My daughter is in secondary school.|B1|f2
+solar|năng lượng mặt trời|We use solar power.|B1|f2
+somehow|bằng cách nào đó|Somehow we finished on time.|B1|f2
+suffer|chịu đựng, bị|He suffers from back pain.|B1|f2
+ultimate|cuối cùng; tối thượng|Our ultimate goal is zero accidents.|B2|f2
+unknown|không biết, vô danh|The cause is unknown.|B1|f2
+attach|đính kèm|Please attach the invoice.|B1|f2
+automatically|tự động|The door opens automatically.|B1|f2
+blind|mù; rèm|He is blind in one eye.|B1|f2
+breath|hơi thở|Take a deep breath.|A2|f2
+brief|ngắn gọn|Keep it brief.|B1|f2
+chest|ngực; rương|I have chest pain.|B1|f2
+debut|ra mắt lần đầu|It was her debut album.|B2|f2
+engage|tham gia; thu hút|Engage with your customers.|B2|f2
+external|bên ngoài|External doors must be locked.|B1|f2
+fantasy|tưởng tượng; giả tưởng|I love fantasy films.|B1|f2
+grab|chộp lấy|Let's grab a coffee.|B1|f2
+immediate|ngay lập tức|We need an immediate answer.|B1|f2
+introduction|sự giới thiệu|Thank you for the introduction.|B1|f2
+licence / license|giấy phép|Do you have a driving license?|B1|f2
+pilot|phi công|The pilot spoke to us.|A2|f2
+principal|hiệu trưởng; chính|The principal called my parents.|B1|f2
+recognize|nhận ra|I didn't recognize you.|B1|f2
+regularly|thường xuyên|Check the machine regularly.|B1|f2
+smoking|việc hút thuốc|Smoking is not allowed.|A2|f2
+survive|sống sót|They survived the storm.|B1|f2
+therapy|liệu pháp|She's having therapy for her back.|B1|f2
+witness|nhân chứng|Was there a witness?|B1|f2
+adopt|nhận nuôi; áp dụng|They adopted a new system.|B1|f2
+aim|mục tiêu; nhắm|Our aim is to reduce costs.|B1|f2
+campus|khuôn viên trường|She lives on campus.|B1|f2
+childhood|tuổi thơ|I had a happy childhood.|B1|f2
+comedy|hài kịch|I like comedy films.|A2|f2
+commander|chỉ huy|The commander gave orders.|B1|f2
+comparison|sự so sánh|Make a price comparison.|B1|f2
+defeat|đánh bại; thất bại|It was a painful defeat.|B1|f2
+democracy|dân chủ|Democracy is important.|B1|f2
+detailed|chi tiết|Send me a detailed report.|B1|f2
+entitle|cho quyền|You are entitled to a refund.|B2|f2
+exact|chính xác|What's the exact time?|A2|f2
+expose|phơi bày|Don't expose it to sunlight.|B1|f2
+injure|làm bị thương|He was injured in the accident.|B1|f2
+musical|nhạc kịch; thuộc âm nhạc|We saw a musical in London.|B1|f2
+oppose|phản đối|Many people opposed the plan.|B1|f2
+organize / organise|tổ chức, sắp xếp|Organize the files.|B1|f2
+plastic|nhựa|Use less plastic.|A2|f2
+quote|báo giá; trích dẫn|Can you send me a quote?|B1|f2
+suspect|nghi ngờ; nghi phạm|I suspect he's lying.|B1|f2
+swear|thề; chửi|Don't swear.|B1|f2
+technique|kỹ thuật|Learn the right lifting technique.|B1|f2
+trend|xu hướng|What are the latest trends?|B1|f2
+valuable|có giá trị|Keep your valuables in the safe.|B1|f2
+wealth|sự giàu có|Health is more important than wealth.|B1|f2
+wise|khôn ngoan|That was a wise decision.|B1|f2
+approval|sự chấp thuận|We need approval from the manager.|B1|f2
+aspect|khía cạnh|Consider every aspect.|B1|f2
+burning|đang cháy; bỏng rát|I smell something burning.|B1|f2
+convention|hội nghị; quy ước|There's a big convention in town.|B2|f2
+equivalent|tương đương|What's the equivalent in dong?|B1|f2
+fairly|khá; công bằng|It's fairly easy.|B1|f2
+found|thành lập; tìm thấy|The company was founded in 1998.|B1|f2
+gang|băng nhóm|A gang of teenagers.|B1|f2
+graduate|tốt nghiệp|She graduated last year.|B1|f2
+hanging|đang treo|There's a picture hanging on the wall.|B1|f2
+inner|bên trong|The inner box is broken.|B1|f2
+monthly|hằng tháng|Pay the monthly fee.|A2|f2
+neighbourhood / neighborhood|khu phố|It's a quiet neighborhood.|A2|f2
+outstanding|xuất sắc; chưa thanh toán|There is an outstanding balance.|B1|f2
+permission|sự cho phép|Ask for permission first.|B1|f2
+regulation|quy định|Follow the safety regulations.|B1|f2
+reply|trả lời|Thanks for your reply.|A2|f2
+rid|loại bỏ (get rid of)|Get rid of the old boxes.|B1|f2
+scientist|nhà khoa học|She is a scientist.|A2|f2
+tower|tòa tháp|The TV tower is very tall.|A2|f2
+visual|hình ảnh, thị giác|Use visual aids in your presentation.|B1|f2
+wheel|bánh xe|The truck has 18 wheels.|A2|f2
+barely|vừa đủ, hầu như không|I barely slept.|B1|f2
+cabinet|tủ; nội các|Put the files in the cabinet.|B1|f2
+chocolate|sô-cô-la|I love chocolate.|A2|f2
+coal|than đá|Coal is shipped from Quang Ninh.|B1|f2
+contemporary|đương đại|Contemporary art|B2|f2
+criticism|sự chỉ trích|He can't take criticism.|B1|f2
+effectively|hiệu quả|Work effectively.|B1|f2
+extensive|rộng rãi|He has extensive experience.|B2|f2
+formation|sự hình thành; đội hình|The team changed its formation.|B2|f2
+gallery|phòng trưng bày|We visited an art gallery.|A2|f2
+highway|đường cao tốc|Take the highway to Hai Phong.|A2|f2
+historic|có tính lịch sử|It was a historic moment.|B1|f2
+hunt|săn|They hunt for bargains.|B1|f2
+improvement|sự cải thiện|There's been a big improvement.|B1|f2
+inch|inch (2,54 cm)|The screen is 15 inches.|A2|f2
+initially|ban đầu|Initially, I didn't like it.|B1|f2
+junior|cấp dưới; trẻ hơn|He is a junior staff member.|B1|f2
+jury|bồi thẩm đoàn; ban giám khảo|The jury decided he was guilty.|B2|f2
+monster|quái vật|The kids love monster stories.|A2|f2
+obtain|đạt được, lấy được|You need to obtain a permit.|B1|f2
+philosophy|triết học|Our philosophy is simple: customers first.|B1|f2
+pride|niềm tự hào|She takes pride in her work.|B1|f2
+rough|thô ráp; khó khăn; ước chừng|Give me a rough idea of the cost.|B1|f2
+settlement|sự thanh toán; khu định cư|Payment settlement is in 30 days.|B2|f2
+smell|mùi; ngửi|What's that smell?|A2|f2
+speaker|loa; người nói|Turn up the speaker.|A2|f2
+surround|bao quanh|The house is surrounded by trees.|B1|f2
+tone|giọng điệu|Don't use that tone with me.|B1|f2
+topic|chủ đề|What's today's topic?|A2|f2
+universal|phổ quát|It's a universal problem.|B1|f2
+vast|rộng lớn|A vast area of land|B1|f2
+visitor|khách tham quan|Visitors must sign in.|A2|f2
+auto|ô tô; tự động|The auto industry|B1|f2
+consistent|nhất quán|Keep the quality consistent.|B1|f2
+heading|tiêu đề|Use clear headings.|B1|f2
+ignore|phớt lờ|Don't ignore the warning.|B1|f2
+meanwhile|trong khi đó|Meanwhile, the truck waited outside.|B1|f2
+naturally|một cách tự nhiên; tất nhiên|Speak naturally.|B1|f2
+necessarily|nhất thiết|It's not necessarily true.|B1|f2
+partnership|quan hệ đối tác|We have a long partnership.|B1|f2
+percentage|tỷ lệ phần trăm|What percentage is damaged?|B1|f2
+pocket|túi (quần áo)|It's in my pocket.|A2|f2
+practical|thực tế, thiết thực|It's a practical solution.|B1|f2
+primarily|chủ yếu|We primarily ship by sea.|B1|f2
+regardless|bất kể|We'll go regardless of the weather.|B1|f2
+rescue|giải cứu|They rescued the fishermen.|B1|f2
+rush|vội vàng; giờ cao điểm|Avoid the rush hour.|B1|f2
+sharp|sắc; đúng (giờ)|Be there at 8 sharp.|B1|f2
+stable|ổn định|The price is stable.|B1|f2
+symptom|triệu chứng|What are your symptoms?|B1|f2
+temporary|tạm thời|It's a temporary job.|B1|f2
+trick|mẹo; lừa|That's a good trick.|B1|f2
+audio|âm thanh|The audio is not clear.|B1|f2
