@@ -1,0 +1,518 @@
+durability|độ bền|Test the durability of the box.|B2|f8
+empress|nữ hoàng|The empress of China.|B2|f8
+endeavour|nỗ lực (Anh)|Every endeavour counts.|B2|f8
+entertainer|người làm giải trí|A street entertainer.|B1|f8
+entrust|giao phó|Entrust the task to her.|B2|f8
+fatality|ca tử vong|Road fatalities.|B2|f8
+festivity|lễ hội|Tet festivities.|B2|f8
+gasp|thở hổn hển|She gasped in surprise.|B2|f8
+glitch|trục trặc nhỏ|A system glitch.|B1|f8
+gong|cái cồng|Strike the gong.|B2|f8
+grader|học sinh lớp; máy san|A fifth grader.|B1|f8
+greasy|nhờn mỡ|Greasy food.|B1|f8
+grieve|đau buồn|Grieve for a friend.|B2|f8
+hamburger|bánh hamburger|A hamburger and fries.|A1|f8
+heed|lưu ý|Heed the warning.|B2|f8
+hideous|gớm ghiếc|A hideous building.|B2|f8
+homepage|trang chủ|Go to the homepage.|A2|f8
+hoop|vòng; rổ bóng|Shoot some hoops.|B1|f8
+imaginative|giàu trí tưởng tượng|An imaginative child.|B1|f8
+imperfect|không hoàn hảo|An imperfect world.|B1|f8
+implicit|ngầm hiểu|An implicit agreement.|B2|f8
+inlet|lạch; cửa vào|An air inlet.|B2|f8
+insensitive|vô tâm|An insensitive remark.|B2|f8
+islander|người dân đảo|Pacific islanders.|B2|f8
+keystone|đá đỉnh vòm; then chốt|The keystone of the plan.|B2|f8
+lieu|(in lieu of) thay vì|Time off in lieu.|B2|f8
+liquidity|tính thanh khoản|Market liquidity.|B2|f8
+loch|hồ (Scotland)|Loch Ness.|B2|f8
+lotion|kem dưỡng|Sun lotion.|A2|f8
+mayhem|sự hỗn loạn|Total mayhem.|B2|f8
+mens|nam (đồ)|Men's clothing.|A2|f8
+mistakenly|nhầm lẫn|Mistakenly delivered.|B2|f8
+neuroscience|khoa học thần kinh|A professor of neuroscience.|B2|f8
+nostalgic|hoài niệm|A nostalgic song.|B2|f8
+oppressive|ngột ngạt; áp bức|Oppressive heat.|B2|f8
+patronage|sự bảo trợ|Thank you for your patronage.|B2|f8
+pinnacle|đỉnh cao|The pinnacle of success.|B2|f8
+pong|mùi hôi (Anh)|What a pong!|B2|f8
+prosper|thịnh vượng|The business prospered.|B2|f8
+quake|động đất|A big quake hit Japan.|B1|f8
+qualitative|định tính|Qualitative research.|B2|f8
+racer|tay đua|A car racer.|A2|f8
+radial|xuyên tâm|Radial tyres.|B2|f8
+recap|tóm tắt lại|A quick recap.|B1|f8
+recognizable|dễ nhận ra|A recognizable logo.|B2|f8
+reconnaissance|trinh sát|A reconnaissance mission.|B2|f8
+regent|nhiếp chính|The prince regent.|B2|f8
+reluctantly|miễn cưỡng|He reluctantly agreed.|B2|f8
+rendition|bản trình bày|A lovely rendition of the song.|B2|f8
+roadside|ven đường|A roadside café.|B1|f8
+scientifically|về mặt khoa học|Scientifically proven.|B2|f8
+scramble|tranh giành; trứng bác|Scrambled eggs.|B2|f8
+secretariat|ban thư ký|The UN secretariat.|B2|f8
+shaky|run rẩy; không vững|A shaky start.|B1|f8
+sham|giả mạo|A sham marriage.|B2|f8
+shortcoming|thiếu sót|Every system has shortcomings.|B2|f8
+shred|cắt nhỏ; hủy giấy|Shred the documents.|B2|f8
+soothe|xoa dịu|Soothe the pain.|B2|f8
+spawn|đẻ trứng; xuất hiện (game)|Fish spawn in the river.|B2|f8
+stalker|kẻ đeo bám|An online stalker.|B2|f8
+stature|tầm vóc|A man of great stature.|B2|f8
+steward|tiếp viên; người quản lý|A ship's steward.|B2|f8
+stout|bia đen; mập mạp|A pint of stout.|B2|f8
+strategically|có chiến lược|Strategically located.|B2|f8
+stump|gốc cây|A tree stump.|B2|f8
+subordinate|cấp dưới|Talk to your subordinates.|B2|f8
+synagogue|giáo đường Do Thái|An old synagogue.|B2|f8
+tentative|tạm thời, dự kiến|A tentative booking.|B2|f8
+topical|có tính thời sự|A topical issue.|B2|f8
+uhh|ờ|Uhh, I forgot.|A1|f8
+uneasy|bất an|I feel uneasy.|B2|f8
+unfold|mở ra; diễn ra|Unfold the map.|B2|f8
+variance|sự chênh lệch|Budget variance.|B2|f8
+wah|oa|Wah, so beautiful!|A1|f8
+wavelength|bước sóng|On the same wavelength.|B2|f8
+acquit|tuyên trắng án|He was acquitted.|B2|f8
+admiralty|bộ hải quân|The British Admiralty.|B2|f8
+artificially|nhân tạo|Artificially sweetened.|B2|f8
+berth|bến tàu; giường ngủ|The ship is at berth 5.|B2|f8
+blackmail|tống tiền|A blackmail threat.|B2|f8
+blindness|chứng mù|Colour blindness.|B2|f8
+brightly|rực rỡ|Brightly coloured.|B1|f8
+burglary|vụ trộm đột nhập|A burglary at the warehouse.|B2|f8
+cafeteria|nhà ăn tự phục vụ|The staff cafeteria.|A2|f8
+canary|chim hoàng yến|A yellow canary.|B1|f8
+cardio|bài tập tim mạch|Thirty minutes of cardio.|B1|f8
+ceramics|đồ gốm|Vietnamese ceramics.|B1|f8
+clumsy|vụng về|I'm so clumsy.|B1|f8
+commuter|người đi làm hằng ngày|Rush-hour commuters.|B1|f8
+contingency|tình huống bất ngờ|A contingency plan.|B2|f8
+coworker|đồng nghiệp|My coworker helped me.|A2|f8
+curate|tuyển chọn|A curated list.|B2|f8
+customize|tùy chỉnh|Customize your order.|B1|f8
+daft|ngớ ngẩn (Anh)|Don't be daft.|B1|f8
+deprivation|sự thiếu thốn|Sleep deprivation.|B2|f8
+disqualify|loại|He was disqualified.|B2|f8
+diversify|đa dạng hóa|Diversify suppliers.|B2|f8
+duly|hợp lệ, đúng hạn|Duly signed.|B2|f8
+dusk|hoàng hôn|At dusk.|B1|f8
+enchant|làm say mê|The music enchanted us.|B2|f8
+environmentally|về môi trường|Environmentally friendly.|B2|f8
+everlasting|mãi mãi|Everlasting love.|B2|f8
+excellency|ngài (tôn xưng)|Your Excellency.|B2|f8
+feasibility|tính khả thi|A feasibility study.|B2|f8
+federally|thuộc liên bang|Federally funded.|B2|f8
+frenzy|sự điên cuồng|A shopping frenzy.|B2|f8
+fulfillment|sự hoàn thành; xử lý đơn hàng|An order fulfillment center.|B2|f8
+gg|chơi hay lắm (game)|GG, well played!|A2|f8
+godfather|cha đỡ đầu|My godfather.|B1|f8
+gran|bà (Anh)|My gran lives alone.|A2|f8
+groundwater|nước ngầm|Groundwater pollution.|B2|f8
+inadvertently|vô tình|Inadvertently deleted.|B2|f8
+indifferent|thờ ơ|Indifferent to others.|B2|f8
+insistence|sự khăng khăng|At his insistence.|B2|f8
+invariably|luôn luôn|Invariably late.|B2|f8
+invincible|bất khả chiến bại|They felt invincible.|B2|f8
+jubilee|lễ kỷ niệm|A golden jubilee.|B2|f8
+kinetic|động học|Kinetic energy.|B2|f8
+lash|quất; lông mi|Eye lashes.|B2|f8
+lavender|hoa oải hương|Lavender oil.|B1|f8
+lemonade|nước chanh|A glass of lemonade.|A2|f8
+lodging|chỗ ở|Food and lodging.|B2|f8
+mania|chứng cuồng|Football mania.|B2|f8
+medically|về mặt y tế|Medically fit.|B2|f8
+mule|con la|A mule carried the bags.|B2|f8
+mythical|thần thoại|A mythical creature.|B2|f8
+neutron|nơ-tron|A neutron star.|B2|f8
+newcomer|người mới đến|A newcomer to the team.|B1|f8
+orderly|ngăn nắp|An orderly queue.|B2|f8
+outset|lúc bắt đầu|From the outset.|B2|f8
+paralyze|làm tê liệt|The strike paralyzed the port.|B2|f8
+parry|đỡ, gạt|Parry the question.|B2|f8
+patio|sân hiên|Eat on the patio.|B1|f8
+peacock|con công|A beautiful peacock.|B1|f8
+postcard|bưu thiếp|Send a postcard.|A1|f8
+pow|bùm|Pow! It hit him.|A1|f8
+powerhouse|trung tâm quyền lực|An economic powerhouse.|B2|f8
+precursor|tiền thân|A precursor of modern trucks.|B2|f8
+preferable|tốt hơn|Morning is preferable.|B2|f8
+preparatory|chuẩn bị|Preparatory work.|B2|f8
+prism|lăng kính|Light through a prism.|B2|f8
+proclamation|tuyên bố|A royal proclamation.|B2|f8
+proponent|người ủng hộ|A proponent of free trade.|B2|f8
+provocative|khiêu khích|A provocative question.|B2|f8
+purposely|cố ý|Purposely late.|B2|f8
+questionnaire|bảng câu hỏi|Fill in the questionnaire.|B1|f8
+reclaim|đòi lại|Reclaim your luggage.|B2|f8
+redevelopment|tái phát triển|Port redevelopment.|B2|f8
+reflex|phản xạ|Quick reflexes.|B2|f8
+relocate|chuyển địa điểm|We relocated to Hai Phong.|B2|f8
+rematch|trận đấu lại|A rematch next week.|B1|f8
+renal|thuộc thận|Renal failure.|B2|f8
+repayment|khoản trả nợ|Loan repayments.|B2|f8
+riddle|câu đố|Solve the riddle.|B1|f8
+roach|con gián|A roach in the kitchen.|B1|f8
+roe|trứng cá|Salmon roe.|B2|f8
+rubble|gạch vụn|Buildings reduced to rubble.|B2|f8
+sapphire|ngọc bích|A sapphire ring.|B2|f8
+seam|đường may|The seam split.|B2|f8
+sectional|từng phần|A sectional sofa.|B2|f8
+sniff|hít, ngửi|The dog sniffed the bag.|B1|f8
+soar|bay vút; tăng vọt|Prices soared.|B2|f8
+soluble|hòa tan được|Water-soluble.|B2|f8
+solvent|dung môi; có khả năng trả nợ|A cleaning solvent.|B2|f8
+squid|mực|Fried squid.|A2|f8
+sturdy|chắc chắn|A sturdy box.|B1|f8
+swarm|bầy, đàn|A swarm of bees.|B2|f8
+tanker|tàu chở dầu|An oil tanker.|B2|f8
+terra|đất|Terra cotta.|B2|f8
+timetable|thời gian biểu|The bus timetable.|A2|f8
+torpedo|ngư lôi|A torpedo hit the ship.|B2|f8
+undocumented|không giấy tờ|Undocumented workers.|B2|f8
+viability|tính khả thi|Commercial viability.|B2|f8
+widen|mở rộng|Widen the road.|B1|f8
+wolverine|chồn sói|A wild wolverine.|B2|f8
+wrought|rèn|Wrought iron.|B2|f8
+yearbook|kỷ yếu|The school yearbook.|B1|f8
+yikes|ối trời|Yikes, that's scary!|A2|f8
+abbot|trụ trì|The abbot of the temple.|B2|f8
+abduction|vụ bắt cóc|A child abduction.|B2|f8
+ache|đau nhức|A headache.|A2|f8
+ancestral|thuộc tổ tiên|The ancestral home.|B2|f8
+antiquity|thời cổ đại|In antiquity.|B2|f8
+apocalyptic|tận thế|An apocalyptic film.|B2|f8
+appraisal|sự đánh giá|A staff appraisal.|B2|f8
+aqua|màu xanh nước biển|Aqua blue.|B1|f8
+autistic|tự kỷ|An autistic child.|B2|f8
+bearer|người mang|The bearer of bad news.|B2|f8
+bleak|ảm đạm|A bleak future.|B2|f8
+blender|máy xay sinh tố|Use a blender.|A2|f8
+bmi|chỉ số khối cơ thể|Check your BMI.|B1|f8
+bogus|giả|A bogus email.|B2|f8
+bruise|vết bầm|A big bruise.|B1|f8
+centric|lấy... làm trung tâm|Customer-centric.|B2|f8
+chaplain|tuyên úy|The hospital chaplain.|B2|f8
+chlorine|clo|Chlorine in the pool.|B2|f8
+chow|đồ ăn (khẩu ngữ)|Let's get some chow.|B1|f8
+chubby|mũm mĩm|A chubby baby.|A2|f8
+collusion|sự thông đồng|Price collusion.|B2|f8
+contractual|theo hợp đồng|Contractual terms.|B2|f8
+coroner|nhân viên điều tra tử thi|The coroner's report.|B2|f8
+correctional|cải huấn|A correctional facility.|B2|f8
+couldnt|không thể (viết sai của couldn't)|I couldn't find it.|A2|f8
+creamy|béo ngậy|Creamy soup.|A2|f8
+deterioration|sự xuống cấp|Deterioration of the goods.|B2|f8
+disbelief|sự hoài nghi|Shaking his head in disbelief.|B2|f8
+discreet|kín đáo|Be discreet.|B2|f8
+duet|song ca|Sing a duet.|B1|f8
+expressive|biểu cảm|Expressive eyes.|B2|f8
+fiddle|đàn vĩ cầm; nghịch|Stop fiddling with your phone.|B2|f8
+fortify|củng cố|Fortified wine.|B2|f8
+generalize|khái quát hóa|Don't generalize.|B2|f8
+glossy|bóng|Glossy paper.|B1|f8
+grit|sự gan góc; sạn|True grit.|B2|f8
+hectare|héc-ta|Ten hectares of land.|B1|f8
+homelessness|tình trạng vô gia cư|Fight homelessness.|B2|f8
+horrendous|khủng khiếp|Horrendous traffic.|B2|f8
+hound|chó săn|A hunting hound.|B2|f8
+illegitimate|bất hợp pháp|An illegitimate claim.|B2|f8
+illicit|trái phép|Illicit drugs.|B2|f8
+incompetence|sự bất tài|Gross incompetence.|B2|f8
+insomnia|chứng mất ngủ|I suffer from insomnia.|B2|f8
+interception|sự chặn|An interception in the game.|B2|f8
+invader|kẻ xâm lược|Foreign invaders.|B2|f8
+irl|ngoài đời thật|Let's meet IRL.|B1|f8
+lagoon|đầm phá|A blue lagoon.|B2|f8
+lesion|tổn thương|A skin lesion.|B2|f8
+limp|đi khập khiễng|He walks with a limp.|B2|f8
+linger|nán lại|Don't linger.|B2|f8
+linguistics|ngôn ngữ học|She studies linguistics.|B2|f8
+logically|hợp lý|Think logically.|B2|f8
+lunatic|người điên|Drives like a lunatic.|B2|f8
+lyrical|trữ tình|Lyrical music.|B2|f8
+manifestation|biểu hiện|A manifestation of stress.|B2|f8
+mead|rượu mật ong|A cup of mead.|B2|f8
+mhz|megahertz|A 900 MHz signal.|B2|f8
+migrate|di cư|Birds migrate south.|B2|f8
+mildly|nhẹ nhàng|To put it mildly.|B2|f8
+miraculous|kỳ diệu|A miraculous recovery.|B2|f8
+moan|rên rỉ, than phiền|Stop moaning!|B1|f8
+mundane|tầm thường|Mundane tasks.|B2|f8
+nay|không|Yea or nay.|B2|f8
+ngo|tổ chức phi chính phủ|An NGO in Hanoi.|B2|f8
+nutshell|(in a nutshell) tóm lại|In a nutshell, we're late.|B2|f8
+obsessive|ám ảnh|Obsessive cleaning.|B2|f8
+offseason|mùa thấp điểm|Cheaper in the offseason.|B2|f8
+overboard|rơi xuống biển; quá đà|Man overboard!|B2|f8
+pendant|mặt dây chuyền|A silver pendant.|B2|f8
+petite|nhỏ nhắn|A petite woman.|B2|f8
+poise|sự điềm tĩnh|Grace and poise.|B2|f8
+posterior|phía sau|Posterior view.|B2|f8
+pouch|túi nhỏ|A leather pouch.|B2|f8
+proficiency|sự thành thạo|English proficiency.|B2|f8
+psychotic|loạn thần|A psychotic episode.|B2|f8
+relegation|sự xuống hạng|Fighting relegation.|B2|f8
+repertoire|vốn tiết mục|A wide repertoire.|B2|f8
+repository|kho lưu trữ|A code repository.|B2|f8
+rumble|tiếng ầm ầm|The rumble of thunder.|B2|f8
+saloon|quán rượu; xe sedan|A Wild West saloon.|B2|f8
+shack|túp lều|A beach shack.|B2|f8
+sinner|kẻ có tội|Saints and sinners.|B2|f8
+sire|bệ hạ|Yes, sire.|B2|f8
+stale|ôi, cũ|Stale bread.|B1|f8
+sterile|vô trùng|Sterile equipment.|B2|f8
+stride|sải bước|Take it in your stride.|B2|f8
+stringent|nghiêm ngặt|Stringent rules.|B2|f8
+sulfur|lưu huỳnh|Low-sulfur fuel.|B2|f8
+torrent|dòng chảy xiết|A torrent of water.|B2|f8
+trough|máng; đáy|A water trough.|B2|f8
+tummy|bụng (khẩu ngữ)|My tummy hurts.|A1|f8
+unjust|bất công|An unjust law.|B2|f8
+wager|đặt cược|Place a wager.|B2|f8
+whack|đánh mạnh|Whack the ball.|B2|f8
+whoop|reo hò|Whoop with joy.|B2|f8
+accelerator|chân ga|Press the accelerator.|B1|f8
+acrylic|acrylic|Acrylic paint.|B2|f8
+anchorage|nơi neo đậu|The ship is at anchorage.|B2|f8
+annexation|sự sáp nhập|The annexation of land.|B2|f8
+ascent|sự đi lên|The plane's ascent.|B2|f8
+ballad|bản ballad|A love ballad.|B1|f8
+bigotry|sự cố chấp|Fight bigotry.|B2|f8
+biotechnology|công nghệ sinh học|Biotechnology research.|B2|f8
+bookstore|hiệu sách|A small bookstore.|A1|f8
+boomer|thế hệ bùng nổ dân số|OK, boomer.|B1|f8
+brute|kẻ vũ phu|A big brute.|B2|f8
+camouflage|ngụy trang|Camouflage clothes.|B2|f8
+chiefly|chủ yếu|Chiefly for export.|B2|f8
+childbirth|sinh nở|Death in childbirth.|B2|f8
+compliant|tuân thủ|Fully compliant with the rules.|B2|f8
+conservatism|chủ nghĩa bảo thủ|Political conservatism.|B2|f8
+continuum|chuỗi liên tục|A continuum of care.|B2|f8
+corona|vầng hào quang; virus corona|The sun's corona.|B2|f8
+cosplay|hóa trang nhân vật|A cosplay event.|B1|f8
+cowardly|hèn nhát|A cowardly attack.|B2|f8
+cpr|hồi sức tim phổi|Learn CPR.|B2|f8
+css|ngôn ngữ CSS|Style the page with CSS.|B1|f8
+dealership|đại lý (xe)|A car dealership.|B2|f8
+defy|bất chấp|Defy the odds.|B2|f8
+denote|biểu thị|Red denotes danger.|B2|f8
+densely|dày đặc|Densely populated.|B2|f8
+devoid|không có|Devoid of meaning.|B2|f8
+disparity|sự chênh lệch|Wealth disparity.|B2|f8
+diva|ngôi sao nữ kiêu kỳ|A pop diva.|B2|f8
+dlc|nội dung tải thêm (game)|New DLC for the game.|B1|f8
+eater|người ăn|A big eater.|A2|f8
+elegance|sự thanh lịch|Simple elegance.|B2|f8
+encrypt|mã hóa|Encrypt the file.|B2|f8
+extraordinarily|phi thường|Extraordinarily busy.|B2|f8
+facade|mặt tiền|The building's facade.|B2|f8
+farmhouse|nhà trang trại|An old farmhouse.|B1|f8
+fertilizer|phân bón|Organic fertilizer.|B2|f8
+flea|bọ chét|A flea market.|B1|f8
+footwear|giày dép|Footwear exports.|B1|f8
+fri|thứ Sáu (viết tắt)|Mon to Fri.|A1|f8
+goodie|đồ ngon; người tốt|A bag of goodies.|A2|f8
+haze|sương mờ; khói bụi|Morning haze.|B2|f8
+headquarter|đặt trụ sở|Headquartered in Singapore.|B2|f8
+helium|heli|A helium balloon.|B2|f8
+hemp|cây gai dầu|Hemp rope.|B2|f8
+hitch|vướng mắc; quá giang|A small hitch.|B2|f8
+hoc|(ad hoc) đặc biệt, tạm thời|An ad hoc meeting.|B2|f8
+incarnation|hóa thân|The latest incarnation.|B2|f8
+inhibitor|chất ức chế|A rust inhibitor.|B2|f8
+intrusion|sự xâm nhập|An intrusion of privacy.|B2|f8
+inverse|nghịch đảo|In inverse order.|B2|f8
+invert|đảo ngược|Invert the image.|B2|f8
+irritation|sự khó chịu|Skin irritation.|B2|f8
+keyword|từ khóa|Search by keyword.|A2|f8
+lavish|xa hoa|A lavish party.|B2|f8
+livelihood|sinh kế|Fishing is their livelihood.|B2|f8
+medic|nhân viên y tế|An army medic.|B2|f8
+miscellaneous|linh tinh, khác|Miscellaneous costs.|B2|f8
+moto|xe máy (khẩu ngữ)|Rent a moto in Hanoi.|A2|f8
+muster|tập hợp|Muster your courage.|B2|f8
+nylon|ni lông|Nylon rope.|B1|f8
+override|ghi đè, vượt quyền|Override the settings.|B2|f8
+ozone|ôzôn|The ozone layer.|B2|f8
+paranoia|chứng hoang tưởng|Pure paranoia.|B2|f8
+persecute|ngược đãi|Persecuted for his beliefs.|B2|f8
+phosphate|phốt phát|Phosphate fertilizer.|B2|f8
+php|ngôn ngữ PHP|A PHP website.|B1|f8
+physicist|nhà vật lý|A famous physicist.|B2|f8
+plurality|đa số tương đối|A plurality of votes.|B2|f8
+prehistoric|tiền sử|Prehistoric animals.|B2|f8
+pronoun|đại từ|"He" is a pronoun.|A2|f8
+proton|proton|Protons and neutrons.|B2|f8
+psyche|tâm lý|The human psyche.|B2|f8
+redesign|thiết kế lại|Redesign the label.|B2|f8
+reluctance|sự miễn cưỡng|With great reluctance.|B2|f8
+replication|sự sao chép|Data replication.|B2|f8
+rotor|cánh quạt|Helicopter rotor.|B2|f8
+sediment|trầm tích|River sediment.|B2|f8
+solitude|sự cô tịch|Enjoy the solitude.|B2|f8
+spacing|khoảng cách|Line spacing.|B2|f8
+standby|sẵn sàng; chế độ chờ|On standby.|B1|f8
+std|bệnh lây qua đường tình dục|STD testing.|B2|f8
+stronghold|thành trì|A rebel stronghold.|B2|f8
+theorist|nhà lý thuyết|A political theorist.|B2|f8
+therein|trong đó|Therein lies the problem.|B2|f8
+triangular|hình tam giác|A triangular sign.|B2|f8
+trooper|cảnh sát (bang); lính|A state trooper.|B2|f8
+truthful|trung thực|A truthful answer.|B2|f8
+turret|tháp nhỏ|A castle turret.|B2|f8
+ubiquitous|có mặt khắp nơi|Smartphones are ubiquitous.|B2|f8
+unbelievably|không thể tin nổi|Unbelievably cheap.|B2|f8
+unconventional|khác thường|An unconventional approach.|B2|f8
+unnecessarily|không cần thiết|Unnecessarily long.|B2|f8
+unnoticed|không ai để ý|It went unnoticed.|B2|f8
+untouched|nguyên vẹn|Untouched food.|B2|f8
+visionary|có tầm nhìn|A visionary leader.|B2|f8
+voodoo|tà thuật voodoo|Voodoo magic.|B2|f8
+witchcraft|phép phù thủy|Accused of witchcraft.|B2|f8
+adultery|ngoại tình|Commit adultery.|B2|f8
+agile|nhanh nhẹn; linh hoạt|An agile team.|B2|f8
+anonymously|ẩn danh|Donate anonymously.|B2|f8
+austerity|thắt lưng buộc bụng|Austerity measures.|B2|f8
+awfully|rất, cực kỳ|Awfully kind of you.|B1|f8
+bouquet|bó hoa|A bouquet of roses.|B1|f8
+candidacy|sự ứng cử|Announce his candidacy.|B2|f8
+clubhouse|nhà câu lạc bộ|The golf clubhouse.|B2|f8
+coarse|thô|Coarse sand.|B2|f8
+collegiate|thuộc đại học|Collegiate sports.|B2|f8
+commonplace|phổ biến|Online shopping is now commonplace.|B2|f8
+compute|tính toán|Compute the total.|B2|f8
+confidently|tự tin|Speak confidently.|B1|f8
+constrain|hạn chế|Constrained by budget.|B2|f8
+converter|bộ chuyển đổi|A currency converter.|B1|f8
+coop|chuồng gà; hợp tác xã|A chicken coop.|B2|f8
+coronary|mạch vành|Coronary heart disease.|B2|f8
+crook|kẻ gian|He's a crook.|B2|f8
+cucumber|dưa chuột|Cucumber salad.|A2|f8
+cupcake|bánh nướng nhỏ|A chocolate cupcake.|A2|f8
+deco|trang trí|Art deco style.|B2|f8
+directorate|ban giám đốc; tổng cục|The customs directorate.|B2|f8
+dormant|ngủ yên|A dormant volcano.|B2|f8
+emulate|noi theo|Emulate your heroes.|B2|f8
+encompass|bao gồm|The plan encompasses all areas.|B2|f8
+evasion|sự trốn tránh|Tax evasion.|B2|f8
+evergreen|thường xanh|Evergreen trees.|B2|f8
+eviction|sự trục xuất (khỏi nhà)|An eviction notice.|B2|f8
+expulsion|sự đuổi|Expulsion from school.|B2|f8
+filth|sự bẩn thỉu|Covered in filth.|B2|f8
+foliage|tán lá|Green foliage.|B2|f8
+foreclosure|tịch biên nhà|A house in foreclosure.|B2|f8
+fortnight|hai tuần|See you in a fortnight.|B1|f8
+genie|thần đèn|A genie in a lamp.|B1|f8
+goo|chất nhớp nháp|Sticky goo.|B1|f8
+heartbroken|đau khổ|She was heartbroken.|B1|f8
+helper|người giúp đỡ|A kitchen helper.|A2|f8
+hesitant|do dự|She was hesitant to ask.|B2|f8
+hubby|chồng (khẩu ngữ)|My hubby cooked dinner.|A2|f8
+hypertension|cao huyết áp|He has hypertension.|B2|f8
+immerse|đắm mình|Immerse yourself in English.|B2|f8
+immortality|sự bất tử|The secret of immortality.|B2|f8
+indefinite|vô thời hạn|An indefinite strike.|B2|f8
+insightful|sâu sắc|An insightful comment.|B2|f8
+irrespective|bất kể|Irrespective of cost.|B2|f8
+kicker|cầu thủ đá phạt; điều bất ngờ|And here's the kicker...|B2|f8
+ledge|gờ|A window ledge.|B2|f8
+malt|mạch nha|Malt whisky.|B2|f8
+mindfulness|chánh niệm|Practise mindfulness.|B2|f8
+moderator|người điều phối|The forum moderator.|B2|f8
+momma|mẹ (khẩu ngữ)|Momma's cooking.|A1|f8
+monstrous|quái dị; khổng lồ|A monstrous storm.|B2|f8
+morphology|hình thái học|Word morphology.|B2|f8
+mustache|ria mép|He has a mustache.|A2|f8
+natal|thuộc lúc sinh|Pre-natal care.|B2|f8
+novice|người mới|A novice driver.|B2|f8
+obituary|cáo phó|Read the obituary.|B2|f8
+ordination|lễ phong chức|His ordination as a priest.|B2|f8
+parity|sự ngang bằng|Price parity.|B2|f8
+persuasive|có sức thuyết phục|A persuasive argument.|B2|f8
+populous|đông dân|A populous city.|B2|f8
+postwar|hậu chiến|The postwar years.|B2|f8
+proactive|chủ động|Be proactive with customers.|B2|f8
+prob|có lẽ (khẩu ngữ)|I'll prob be late.|A2|f8
+projector|máy chiếu|Turn on the projector.|A2|f8
+prominently|nổi bật|Prominently displayed.|B2|f8
+prudent|thận trọng|A prudent decision.|B2|f8
+qualifier|vòng loại|A World Cup qualifier.|B2|f8
+ratify|phê chuẩn|Ratify the treaty.|B2|f8
+reliant|phụ thuộc|Reliant on imports.|B2|f8
+reputable|có uy tín|A reputable company.|B2|f8
+revolver|súng lục ổ quay|A loaded revolver.|B2|f8
+revolve|xoay quanh|Life revolves around work.|B2|f8
+rink|sân trượt băng|An ice rink.|B1|f8
+ripple|gợn sóng|Ripples on the water.|B2|f8
+robber|tên cướp|A bank robber.|A2|f8
+sentinel|lính gác|A silent sentinel.|B2|f8
+solemn|trang nghiêm|A solemn ceremony.|B2|f8
+spacious|rộng rãi|A spacious warehouse.|B1|f8
+substantive|thực chất|Substantive changes.|B2|f8
+substitution|sự thay thế|A late substitution.|B2|f8
+torso|thân mình|Upper torso.|B2|f8
+tremendously|vô cùng|Tremendously helpful.|B2|f8
+tumble|ngã nhào; giảm mạnh|Prices tumbled.|B2|f8
+untrue|không đúng sự thật|That's untrue.|B1|f8
+verbally|bằng lời nói|Verbally agreed.|B2|f8
+vitality|sức sống|Full of vitality.|B2|f8
+weep|khóc|She wept with joy.|B2|f8
+windshield|kính chắn gió|Clean the windshield.|B1|f8
+zodiac|cung hoàng đạo|What's your zodiac sign?|B1|f8
+abandonment|sự bỏ rơi|Abandonment of the plan.|B2|f8
+abyss|vực thẳm|Stare into the abyss.|B2|f8
+accession|sự gia nhập|Accession to the WTO.|B2|f8
+arithmetic|số học|Basic arithmetic.|B1|f8
+arson|tội phóng hỏa|Arrested for arson.|B2|f8
+astronomer|nhà thiên văn|A famous astronomer.|B2|f8
+authoritative|có thẩm quyền|An authoritative source.|B2|f8
+barren|cằn cỗi|Barren land.|B2|f8
+batsman|người đánh bóng (cricket)|A good batsman.|B2|f8
+bedding|chăn ga gối|Clean bedding.|B1|f8
+bourgeois|tư sản|Bourgeois values.|B2|f8
+bribery|sự hối lộ|Bribery and corruption.|B2|f8
+brunette|người tóc nâu|A tall brunette.|B1|f8
+bureaucratic|quan liêu|Bureaucratic delays.|B2|f8
+buzzer|chuông bấm|Press the buzzer.|B1|f8
+cactus|xương rồng|A cactus plant.|A2|f8
+cassette|băng cát-xét|An old cassette tape.|A2|f8
+characterise|đặc trưng (Anh)|Characterised by heat.|B2|f8
+childcare|chăm sóc trẻ|Childcare costs.|B1|f8
+chronological|theo thứ tự thời gian|In chronological order.|B2|f8
+cohort|nhóm, đoàn|A cohort of students.|B2|f8
+commandment|điều răn|The Ten Commandments.|B2|f8
+condense|cô đặc; rút gọn|Condensed milk.|B2|f8
+convene|triệu tập|Convene a meeting.|B2|f8
+cuddle|ôm ấp|Give me a cuddle.|B1|f8
+culprit|thủ phạm|Find the culprit.|B2|f8
+deviation|sự sai lệch|A route deviation.|B2|f8
+diffusion|sự khuếch tán|The diffusion of ideas.|B2|f8
+distrust|sự ngờ vực|Mutual distrust.|B2|f8
+entrepreneurial|có tinh thần kinh doanh|An entrepreneurial spirit.|B2|f8
+loading bay|khu vực bốc xếp|The truck is waiting at loading bay 3.|B1|f8
+stock count|kiểm kê hàng|We do a stock count every Friday.|B1|f8
+return label|nhãn gửi trả hàng|The return label is in the box.|A2|f8
+proof of delivery|bằng chứng giao hàng|Send me the proof of delivery.|B1|f8
+overtime pay|tiền làm thêm giờ|Overtime pay is 150 percent.|B1|f8
+payslip|phiếu lương|Check your payslip.|B1|f8
+lunch break|giờ nghỉ trưa|Let's talk after the lunch break.|A1|f8
+rush hour|giờ cao điểm|Avoid driving at rush hour.|A2|f8
+parking lot|bãi đỗ xe|Meet me in the parking lot.|A2|f8
+road works|công trình sửa đường|There are road works on the highway.|B1|f8
+bubble tea|trà sữa trân châu|Let's get some bubble tea.|A1|f8
+phone case|ốp điện thoại|I need a new phone case.|A1|f8
+flip-flops|dép xỏ ngón|Wear flip-flops to the beach.|A2|f8
+laundry basket|giỏ đựng đồ giặt|Put your clothes in the laundry basket.|A2|f8
+ceiling fan|quạt trần|Turn on the ceiling fan.|A2|f8
+zebra crossing|vạch qua đường|Cross at the zebra crossing.|A2|f8
+speed bump|gờ giảm tốc|Slow down for the speed bump.|B1|f8
+car wash|tiệm rửa xe|Take the car to the car wash.|A2|f8
+night market|chợ đêm|We ate at the night market.|A1|f8
+loyalty card|thẻ thành viên tích điểm|Do you have a loyalty card?|A2|f8
+gift card|thẻ quà tặng|I got a gift card for my birthday.|A2|f8
+screen time|thời gian dùng màn hình|Limit your kids' screen time.|B1|f8
+group chat|nhóm chat|I'll post it in the group chat.|A2|f8
+voice message|tin nhắn thoại|Send me a voice message.|A2|f8
+missed call|cuộc gọi nhỡ|I had three missed calls.|A2|f8
+low battery|pin yếu|My phone is on low battery.|A2|f8

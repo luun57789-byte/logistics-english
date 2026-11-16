@@ -1,0 +1,425 @@
+adhd|chứng tăng động giảm chú ý|He was diagnosed with ADHD.|B2|f7
+arbor|giàn cây|A garden arbor.|B2|f7
+astronomical|thiên văn; cực kỳ lớn|Astronomical prices.|B2|f7
+attire|trang phục|Business attire.|B2|f7
+autograph|chữ ký (người nổi tiếng)|Can I have your autograph?|B1|f7
+axle|trục xe|The truck's rear axle.|B2|f7
+barley|lúa mạch|Barley tea.|B2|f7
+botanical|thực vật học|A botanical garden.|B2|f7
+brag|khoe khoang|Stop bragging.|B1|f7
+breakout|sự bứt phá; vượt ngục|A breakout year.|B2|f7
+catchy|dễ nhớ (giai điệu)|A catchy song.|B1|f7
+ceremonial|nghi lễ|A ceremonial sword.|B2|f7
+cheque|tấm séc|Pay by cheque.|B1|f7
+choreography|biên đạo múa|Great choreography.|B2|f7
+cling|bám chặt|Cling to hope.|B2|f7
+coincide|trùng hợp|Our holidays coincide.|B2|f7
+commemorate|tưởng niệm|Commemorate the victims.|B2|f7
+concurrent|đồng thời|Concurrent sessions.|B2|f7
+crocodile|cá sấu|A crocodile farm.|A2|f7
+diaper|tã|Change the baby's diaper.|A2|f7
+differentiation|sự phân biệt|Product differentiation.|B2|f7
+divert|chuyển hướng|The ship was diverted.|B2|f7
+dubious|đáng ngờ|A dubious claim.|B2|f7
+eagerly|háo hức|Eagerly waiting.|B1|f7
+elk|nai sừng tấm|A herd of elk.|B2|f7
+enlighten|khai sáng|Please enlighten me.|B2|f7
+exhaustion|sự kiệt sức|Heat exhaustion.|B2|f7
+expectancy|tuổi thọ dự kiến|Life expectancy.|B2|f7
+famously|nổi tiếng là|As he famously said...|B2|f7
+fingerprint|dấu vân tay|Fingerprint scanner.|B1|f7
+flap|vỗ cánh; nắp|Close the box flaps.|B2|f7
+folklore|văn hóa dân gian|Vietnamese folklore.|B2|f7
+galactic|thuộc ngân hà|A galactic empire.|B2|f7
+gardener|người làm vườn|The gardener cut the grass.|A2|f7
+glee|niềm vui sướng|Shouting with glee.|B2|f7
+grassroots|cơ sở, quần chúng|A grassroots movement.|B2|f7
+gravitational|thuộc trọng lực|Gravitational force.|B2|f7
+graze|ăn cỏ; trầy xước|Cows graze in the field.|B2|f7
+gunshot|tiếng súng|A gunshot wound.|B2|f7
+hereditary|di truyền|A hereditary disease.|B2|f7
+hiatus|thời gian gián đoạn|The band is on hiatus.|B2|f7
+homestead|nhà trại|An old homestead.|B2|f7
+horribly|khủng khiếp|It went horribly wrong.|B1|f7
+horsepower|mã lực|A 300 horsepower engine.|B2|f7
+hue|sắc màu|A blue hue.|B2|f7
+icing|kem phủ bánh|Cake icing.|B1|f7
+intellect|trí tuệ|A sharp intellect.|B2|f7
+interchange|nút giao thông; trao đổi|A highway interchange.|B2|f7
+knob|núm cửa|Turn the knob.|B1|f7
+lapse|sự sơ suất; trôi qua|A lapse in concentration.|B2|f7
+launder|giặt; rửa tiền|Launder money.|B2|f7
+ledger|sổ cái|The general ledger.|B2|f7
+loaf|ổ bánh mì|A loaf of bread.|A2|f7
+loot|cướp bóc|Shops were looted.|B2|f7
+magnesium|magiê|Magnesium supplements.|B2|f7
+malware|phần mềm độc hại|Scan for malware.|B2|f7
+mimic|bắt chước|Mimic the accent.|B2|f7
+mindful|chú tâm|Be mindful of others.|B2|f7
+mural|tranh tường|A colourful mural.|B2|f7
+musk|xạ hương|Musk perfume.|B2|f7
+myriad|vô số|A myriad of options.|B2|f7
+nan|bà (khẩu ngữ Anh)|Visit nan on Sunday.|A2|f7
+nasal|thuộc mũi|Nasal spray.|B2|f7
+nautical|thuộc hàng hải|A nautical mile.|B2|f7
+neatly|gọn gàng|Neatly folded.|B1|f7
+negativity|sự tiêu cực|Avoid negativity.|B2|f7
+noteworthy|đáng chú ý|Noteworthy results.|B2|f7
+odor|mùi|A strange odor.|B2|f7
+overturn|lật; đảo ngược|The truck overturned.|B2|f7
+paddle|mái chèo|A canoe paddle.|B1|f7
+parrot|con vẹt|A talking parrot.|A2|f7
+peg|cái móc; cái kẹp|A clothes peg.|B1|f7
+pesticide|thuốc trừ sâu|Pesticide residue.|B2|f7
+plunge|lao xuống|Prices plunged.|B2|f7
+powerless|bất lực|We felt powerless.|B1|f7
+pragmatic|thực dụng|A pragmatic approach.|B2|f7
+quasi|gần như, nửa|A quasi-official body.|B2|f7
+radiant|rạng rỡ|A radiant smile.|B2|f7
+refinery|nhà máy lọc dầu|An oil refinery.|B2|f7
+remorse|sự hối hận|He showed no remorse.|B2|f7
+reopen|mở lại|The port will reopen tomorrow.|B1|f7
+revoke|thu hồi|Revoke a licence.|B2|f7
+rpm|vòng/phút|3000 rpm.|B2|f7
+sanity|sự tỉnh táo|Keep your sanity.|B2|f7
+sear|áp chảo; làm cháy sém|Sear the steak.|B2|f7
+showdown|cuộc đối đầu quyết định|A final showdown.|B2|f7
+shuffle|xáo trộn|Shuffle the cards.|B1|f7
+siding|đường nhánh (đường sắt); vách|A railway siding.|B2|f7
+simulate|mô phỏng|Simulate a fire drill.|B2|f7
+skyline|đường chân trời|The city skyline.|B1|f7
+slab|phiến, tấm|A concrete slab.|B2|f7
+supplemental|bổ sung|Supplemental information.|B2|f7
+swimmer|người bơi|A strong swimmer.|A2|f7
+techno|nhạc techno|Techno music.|B1|f7
+teller|giao dịch viên|A bank teller.|B1|f7
+theyre|họ đang (viết sai của they're)|They're coming.|A2|f7
+trance|trạng thái mê|In a trance.|B2|f7
+unconditional|vô điều kiện|Unconditional love.|B2|f7
+unforgettable|khó quên|An unforgettable trip.|B1|f7
+volatility|sự biến động|Price volatility.|B2|f7
+webcam|webcam|Turn on your webcam.|A2|f7
+wouldnt|sẽ không (viết sai của wouldn't)|I wouldn't do that.|A2|f7
+admirable|đáng ngưỡng mộ|An admirable effort.|B2|f7
+adventurous|thích phiêu lưu|An adventurous traveller.|B1|f7
+ammo|đạn dược (khẩu ngữ)|Out of ammo.|B2|f7
+analyse|phân tích (Anh)|Analyse the data.|B1|f7
+anthology|tuyển tập|A poetry anthology.|B2|f7
+anyhow|dù sao|Anyhow, let's start.|B1|f7
+ape|vượn|Apes are clever.|B1|f7
+auditor|kiểm toán viên|The auditors are here.|B2|f7
+avalanche|tuyết lở|An avalanche of emails.|B2|f7
+badger|con lửng|A badger in the woods.|B2|f7
+ballistic|thuộc đạn đạo; nổi điên|He went ballistic.|B2|f7
+banter|nói đùa|Friendly banter.|B2|f7
+bidder|người đặt giá|The highest bidder.|B2|f7
+blockbuster|phim bom tấn|A summer blockbuster.|B1|f7
+blueprint|bản thiết kế|A blueprint for success.|B2|f7
+bowler|người ném bóng|A fast bowler.|B2|f7
+cameo|vai khách mời|A cameo role.|B2|f7
+caramel|caramen|Caramel sauce.|A2|f7
+charismatic|có sức hút|A charismatic leader.|B2|f7
+chromosome|nhiễm sắc thể|X chromosome.|B2|f7
+commencement|sự bắt đầu; lễ tốt nghiệp|Commencement of works.|B2|f7
+confiscate|tịch thu|Customs confiscated the goods.|B2|f7
+contradictory|mâu thuẫn|Contradictory reports.|B2|f7
+convent|nữ tu viện|An old convent.|B2|f7
+converse|trò chuyện; ngược lại|Converse in English.|B2|f7
+corrosion|sự ăn mòn|Protect against corrosion.|B2|f7
+crib|nôi trẻ em|The baby's crib.|B1|f7
+dearly|tha thiết; đắt|Love dearly.|B2|f7
+defiance|sự thách thức|In defiance of the rules.|B2|f7
+deter|ngăn chặn|Cameras deter thieves.|B2|f7
+diner|quán ăn bình dân|A roadside diner.|B1|f7
+disposition|tính khí; sự sắp xếp|A cheerful disposition.|B2|f7
+ecstasy|sự sung sướng tột độ|In ecstasy.|B2|f7
+eleventh|thứ mười một|The eleventh hour.|A2|f7
+envoy|đặc phái viên|A peace envoy.|B2|f7
+expiration|sự hết hạn|Expiration date.|B1|f7
+expressly|rõ ràng|Expressly forbidden.|B2|f7
+fabrication|sự chế tạo; bịa đặt|Metal fabrication.|B2|f7
+fascination|sự say mê|A fascination with cars.|B2|f7
+fir|cây linh sam|Fir trees.|B2|f7
+formulation|sự trình bày; công thức|A new formulation.|B2|f7
+franc|đồng frăng|Swiss francs.|B2|f7
+frontal|phía trước|A frontal attack.|B2|f7
+goalie|thủ môn (khẩu ngữ)|The goalie saved it.|B1|f7
+gradient|độ dốc|A steep gradient.|B2|f7
+gravy|nước sốt thịt|Chicken and gravy.|B1|f7
+herring|cá trích|Smoked herring.|B2|f7
+hopper|phễu|A grain hopper.|B2|f7
+hysterical|cuồng loạn; rất buồn cười|It was hysterical!|B2|f7
+incompatible|không tương thích|Incompatible software.|B2|f7
+injunction|lệnh của tòa|A court injunction.|B2|f7
+innate|bẩm sinh|Innate talent.|B2|f7
+keynote|bài phát biểu chính|The keynote speech.|B2|f7
+learner|người học|English learners.|A2|f7
+motivational|tạo động lực|A motivational speaker.|B1|f7
+nightly|hằng đêm|Nightly news.|B1|f7
+noir|phim đen|A film noir.|B2|f7
+notwithstanding|mặc dù|Notwithstanding the delay.|B2|f7
+paralysis|tê liệt|Paralysis of the legs.|B2|f7
+patiently|kiên nhẫn|Wait patiently.|B1|f7
+paw|bàn chân thú|A dog's paw.|A2|f7
+pianist|nghệ sĩ piano|A talented pianist.|B1|f7
+pickle|dưa chua|Cucumber pickles.|A2|f7
+pilgrim|người hành hương|Pilgrims at the pagoda.|B2|f7
+placebo|giả dược|The placebo effect.|B2|f7
+progressively|dần dần|Progressively worse.|B2|f7
+propel|đẩy đi|Propel the boat.|B2|f7
+psych|chuẩn bị tinh thần (khẩu ngữ)|Psych yourself up.|B2|f7
+punt|cú đá bóng; đặt cược|A long punt.|B2|f7
+raptor|chim săn mồi|Birds of prey, or raptors.|B2|f7
+reinforcement|sự tăng cường|Steel reinforcement.|B2|f7
+repetition|sự lặp lại|Learn by repetition.|B1|f7
+restrain|kiềm chế|Restrain yourself.|B2|f7
+retrospective|hồi tưởng; nhìn lại|A team retrospective.|B2|f7
+righteousness|sự chính trực|Righteousness and justice.|B2|f7
+rinse|tráng, súc|Rinse the glasses.|B1|f7
+scalp|da đầu|An itchy scalp.|B2|f7
+shutter|cửa chớp; màn trập|Close the shutters.|B2|f7
+sooo|quá (nhấn mạnh)|I'm sooo tired.|A1|f7
+sparrow|chim sẻ|A little sparrow.|B1|f7
+speculate|suy đoán|Don't speculate.|B2|f7
+spinach|rau chân vịt|Spinach soup.|A2|f7
+squat|ngồi xổm; bài squat|Do twenty squats.|B1|f7
+stew|món hầm|Beef stew.|A2|f7
+sublime|tuyệt diệu|A sublime view.|B2|f7
+subtitle|phụ đề|Turn on English subtitles.|A2|f7
+sweetness|sự ngọt ngào|Natural sweetness.|B1|f7
+tequila|rượu tequila|A shot of tequila.|B1|f7
+terrestrial|trên mặt đất|Terrestrial TV.|B2|f7
+thinker|nhà tư tưởng|A great thinker.|B2|f7
+thorn|gai|A rose has thorns.|B2|f7
+ufo|vật thể bay không xác định|Did you see a UFO?|A2|f7
+unnatural|không tự nhiên|An unnatural colour.|B2|f7
+unstoppable|không thể ngăn cản|An unstoppable team.|B2|f7
+upfront|trả trước; thẳng thắn|Pay upfront.|B2|f7
+urgently|khẩn cấp|We urgently need help.|B1|f7
+virginity|sự trinh tiết|Lose virginity.|B2|f7
+voucher|phiếu mua hàng|A gift voucher.|A2|f7
+waive|miễn|Waive the fee.|B2|f7
+wharf|cầu cảng|Unload at the wharf.|B2|f7
+wrestle|vật lộn|Wrestle with a problem.|B2|f7
+aggravate|làm trầm trọng|Aggravate the injury.|B2|f7
+ahhh|á (thán từ)|Ahhh, that's better.|A1|f7
+alto|giọng nữ trầm|An alto singer.|B2|f7
+anomaly|sự bất thường|A data anomaly.|B2|f7
+aperture|khẩu độ; lỗ|Camera aperture.|B2|f7
+apostle|tông đồ|The twelve apostles.|B2|f7
+apprenticeship|thời gian học nghề|A four-year apprenticeship.|B2|f7
+biodiversity|đa dạng sinh học|Protect biodiversity.|B2|f7
+biomedical|y sinh|Biomedical research.|B2|f7
+breadth|bề rộng|Length and breadth.|B2|f7
+buster|người phá; ông bạn|Crime buster.|B2|f7
+cascade|thác nhỏ|A cascade of water.|B2|f7
+char|nướng cháy xém|Char the peppers.|B2|f7
+connector|đầu nối|A USB connector.|B1|f7
+containment|sự ngăn chặn|Containment of the fire.|B2|f7
+coupling|khớp nối|A trailer coupling.|B2|f7
+crate|thùng gỗ|A crate of beer.|B1|f7
+crave|thèm|I crave sweets.|B2|f7
+dangerously|nguy hiểm|Dangerously close.|B1|f7
+denounce|tố cáo|Denounce violence.|B2|f7
+dilute|pha loãng|Dilute with water.|B2|f7
+eddy|dòng xoáy|A water eddy.|B2|f7
+elusive|khó nắm bắt|An elusive goal.|B2|f7
+espionage|hoạt động gián điệp|Industrial espionage.|B2|f7
+existential|hiện sinh|An existential crisis.|B2|f7
+experimentation|sự thử nghiệm|Lots of experimentation.|B2|f7
+extremist|kẻ cực đoan|Extremist groups.|B2|f7
+flashback|đoạn hồi tưởng|A flashback scene.|B2|f7
+fluctuation|sự dao động|Price fluctuations.|B2|f7
+funnel|cái phễu|Pour it through a funnel.|B2|f7
+gloss|độ bóng|Lip gloss.|B2|f7
+grading|chấm điểm; phân loại|Grading the products.|B2|f7
+graft|ghép|A skin graft.|B2|f7
+grumpy|cáu kỉnh|A grumpy old man.|B1|f7
+guise|vỏ bọc|Under the guise of help.|B2|f7
+halve|chia đôi|Halve the cost.|B2|f7
+heighten|nâng cao|Heighten security.|B2|f7
+hush|im lặng|Hush, the baby's sleeping.|B2|f7
+imitation|sự bắt chước; đồ giả|Imitation leather.|B2|f7
+immersion|sự đắm chìm|Language immersion.|B2|f7
+inconvenient|bất tiện|An inconvenient time.|B1|f7
+intrinsic|bản chất|Intrinsic value.|B2|f7
+irresistible|không cưỡng lại được|Irresistible food.|B2|f7
+landslide|sạt lở đất; thắng lớn|A landslide blocked the road.|B2|f7
+lcd|màn hình LCD|An LCD screen.|B1|f7
+leash|dây xích chó|Keep your dog on a leash.|B1|f7
+makeover|sự thay đổi diện mạo|A home makeover.|B1|f7
+memorandum|bản ghi nhớ|A memorandum of understanding.|B2|f7
+mermaid|nàng tiên cá|The Little Mermaid.|A2|f7
+moderation|sự điều độ|Drink in moderation.|B2|f7
+nano|siêu nhỏ|Nano technology.|B2|f7
+nobility|giới quý tộc|The nobility.|B2|f7
+notation|ký hiệu|Musical notation.|B2|f7
+onstage|trên sân khấu|She went onstage.|B2|f7
+ordeal|thử thách khắc nghiệt|A terrible ordeal.|B2|f7
+ox|con bò đực|As strong as an ox.|B1|f7
+painfully|đau đớn|Painfully slow.|B2|f7
+paranormal|siêu linh|Paranormal activity.|B2|f7
+pear|quả lê|A juicy pear.|A1|f7
+piston|pít-tông|Engine pistons.|B2|f7
+politely|lịch sự|Ask politely.|A2|f7
+pollen|phấn hoa|Pollen allergy.|B2|f7
+puberty|tuổi dậy thì|Going through puberty.|B2|f7
+reggae|nhạc reggae|Reggae music.|B1|f7
+respectfully|một cách tôn trọng|Respectfully, I disagree.|B2|f7
+rethink|nghĩ lại|Let's rethink the plan.|B2|f7
+reviewer|người đánh giá|Online reviewers.|B1|f7
+rewrite|viết lại|Rewrite the email.|B1|f7
+rodeo|rodeo|A rodeo show.|B2|f7
+slit|khe hở|A slit in the box.|B2|f7
+sob|nức nở|She sobbed.|B2|f7
+stocking|tất dài|Christmas stockings.|B1|f7
+taboo|điều cấm kỵ|A social taboo.|B2|f7
+teaser|đoạn giới thiệu ngắn|A movie teaser.|B1|f7
+throttle|bướm ga|Full throttle.|B2|f7
+trendy|hợp mốt|A trendy café.|A2|f7
+turbulent|hỗn loạn|Turbulent times.|B2|f7
+unbearable|không chịu nổi|Unbearable heat.|B2|f7
+underage|vị thành niên|Underage drinking.|B2|f7
+unleash|giải phóng|Unleash your potential.|B2|f7
+vaguely|mơ hồ|I vaguely remember.|B2|f7
+vortex|xoáy|A vortex of water.|B2|f7
+wand|đũa thần|A magic wand.|B1|f7
+wanderer|người lang thang|A lonely wanderer.|B2|f7
+advert|quảng cáo (Anh)|A TV advert.|A2|f7
+ain|không (ain't, khẩu ngữ)|It ain't easy.|B1|f7
+alias|bí danh|He used an alias.|B2|f7
+applaud|vỗ tay khen|Applaud the winners.|B2|f7
+baptize|rửa tội|He was baptized.|B2|f7
+boredom|sự buồn chán|Out of boredom.|B1|f7
+breeder|người nhân giống|A dog breeder.|B2|f7
+brilliantly|xuất sắc|She did brilliantly.|B1|f7
+brunch|bữa nửa buổi|Sunday brunch.|A2|f7
+burgundy|màu đỏ rượu vang|A burgundy dress.|B2|f7
+changer|thiết bị thay đổi|A game changer.|B2|f7
+chem|môn hóa (khẩu ngữ)|A chem test.|A2|f7
+chestnut|hạt dẻ|Roasted chestnuts.|B1|f7
+cleanup|việc dọn dẹp|A beach cleanup.|B1|f7
+concise|ngắn gọn|A concise report.|B2|f7
+confinement|sự giam giữ|Solitary confinement.|B2|f7
+consultancy|công ty tư vấn|A logistics consultancy.|B2|f7
+contraction|sự co lại|Muscle contraction.|B2|f7
+convergence|sự hội tụ|Convergence of ideas.|B2|f7
+deduction|khoản khấu trừ; suy luận|Tax deduction.|B2|f7
+despicable|đê tiện|A despicable act.|B2|f7
+detachment|sự tách rời; phân đội|A police detachment.|B2|f7
+dialog|hội thoại; hộp thoại|A dialog box.|B1|f7
+digestive|tiêu hóa|The digestive system.|B2|f7
+disclaimer|lời từ chối trách nhiệm|Read the disclaimer.|B2|f7
+discriminatory|phân biệt đối xử|Discriminatory practices.|B2|f7
+disruptive|gây rối|Disruptive behaviour.|B2|f7
+endlessly|không ngừng|Talk endlessly.|B2|f7
+epilepsy|động kinh|He has epilepsy.|B2|f7
+estimation|sự ước tính|Cost estimation.|B2|f7
+ethanol|etanol|Ethanol fuel.|B2|f7
+excavation|sự đào bới|Archaeological excavation.|B2|f7
+feeder|máng ăn; tàu gom hàng|A feeder vessel.|B2|f7
+flashlight|đèn pin|Bring a flashlight.|A2|f7
+flatter|tâng bốc|Don't flatter me.|B2|f7
+forcibly|bằng vũ lực|Forcibly removed.|B2|f7
+garland|vòng hoa|A garland of flowers.|B2|f7
+globalization|toàn cầu hóa|The effects of globalization.|B2|f7
+grail|chén thánh|The holy grail.|B2|f7
+graphical|bằng đồ họa|Graphical interface.|B2|f7
+groundbreaking|đột phá|Groundbreaking research.|B2|f7
+grouping|sự phân nhóm|Customer groupings.|B2|f7
+holiness|sự thánh thiện|His Holiness.|B2|f7
+humiliate|làm nhục|Don't humiliate him.|B2|f7
+illustrator|họa sĩ minh họa|A book illustrator.|B2|f7
+imbalance|sự mất cân bằng|Trade imbalance.|B2|f7
+immoral|vô đạo đức|An immoral act.|B2|f7
+implicate|liên lụy|Implicated in the crime.|B2|f7
+inefficient|kém hiệu quả|An inefficient process.|B2|f7
+instrumentation|thiết bị đo|Engine instrumentation.|B2|f7
+intensify|tăng cường|The storm intensified.|B2|f7
+intolerance|sự không dung nạp|Lactose intolerance.|B2|f7
+jeez|trời đất (thán từ)|Jeez, that's expensive!|A2|f7
+juror|bồi thẩm viên|The jurors agreed.|B2|f7
+ketchup|tương cà|Fries with ketchup.|A1|f7
+leukemia|bệnh bạch cầu|She has leukemia.|B2|f7
+lineage|dòng dõi|Royal lineage.|B2|f7
+liter|lít|A liter of milk.|A2|f7
+manpower|nhân lực|We lack manpower.|B2|f7
+martyr|liệt sĩ|A national martyr.|B2|f7
+mitigation|sự giảm nhẹ|Risk mitigation.|B2|f7
+motorway|đường cao tốc (Anh)|Take the motorway.|B1|f7
+obscene|tục tĩu|An obscene gesture.|B2|f7
+occupant|người ở; người ngồi|The car's occupants.|B2|f7
+octopus|bạch tuộc|Grilled octopus.|A2|f7
+onward|tiến lên|Onward travel.|B2|f7
+opium|thuốc phiện|The opium trade.|B2|f7
+ovarian|thuộc buồng trứng|Ovarian cancer.|B2|f7
+peck|mổ|The bird pecked the bread.|B2|f7
+penal|thuộc hình phạt|The penal code.|B2|f7
+petal|cánh hoa|Rose petals.|B1|f7
+plank|tấm ván; bài plank|Hold a plank.|B1|f7
+plight|cảnh ngộ|The plight of refugees.|B2|f7
+postseason|sau mùa giải|Postseason games.|B2|f7
+preside|chủ trì|Preside over the meeting.|B2|f7
+privy|được biết bí mật|Privy to the details.|B2|f7
+propulsion|lực đẩy|Jet propulsion.|B2|f7
+raft|bè|A bamboo raft.|B1|f7
+rejoice|vui mừng|Rejoice in the victory.|B2|f7
+relic|di vật|A relic of the past.|B2|f7
+sandal|dép xăng-đan|Leather sandals.|A2|f7
+serpent|con rắn|A sea serpent.|B2|f7
+sesame|vừng|Sesame oil.|B1|f7
+siren|còi báo động|A police siren.|B1|f7
+sleeper|người ngủ; toa giường nằm|A sleeper train.|B1|f7
+smear|bôi; bôi nhọ|A smear campaign.|B2|f7
+snowy|có tuyết|A snowy day.|A2|f7
+soooo|quá trời|Soooo good!|A1|f7
+spectral|thuộc quang phổ; ma quái|Spectral analysis.|B2|f7
+stabilize|ổn định|Stabilize prices.|B2|f7
+standing|vị thế; đứng|Good standing.|B2|f7
+statesman|chính khách|A great statesman.|B2|f7
+stink|bốc mùi|It stinks in here.|B1|f7
+stormy|có bão|Stormy weather.|A2|f7
+subcommittee|tiểu ban|A subcommittee meeting.|B2|f7
+suffice|đủ|That will suffice.|B2|f7
+swat|đập (ruồi)|Swat a fly.|B2|f7
+swine|lợn|Swine flu.|B2|f7
+symbolism|chủ nghĩa tượng trưng|Religious symbolism.|B2|f7
+tangle|rối|Tangled wires.|B2|f7
+tram|xe điện|Take the tram.|A2|f7
+tryin|đang cố (khẩu ngữ)|I'm tryin'!|A2|f7
+underworld|thế giới ngầm|The criminal underworld.|B2|f7
+vertically|theo chiều dọc|Stack vertically.|B2|f7
+vigorous|mạnh mẽ|Vigorous exercise.|B2|f7
+wrongly|sai|Wrongly addressed.|B2|f7
+yum|ngon|Yum, pizza!|A1|f7
+alcoholism|chứng nghiện rượu|He fought alcoholism.|B2|f7
+amplifier|bộ khuếch đại|A guitar amplifier.|B2|f7
+atheism|thuyết vô thần|A book about atheism.|B2|f7
+audible|nghe được|Barely audible.|B2|f7
+avocado|quả bơ|Avocado smoothie.|A2|f7
+bathtub|bồn tắm|Fill the bathtub.|A2|f7
+beep|tiếng bíp|The scanner beeps.|A2|f7
+beneficiary|người thụ hưởng|The beneficiary of the L/C.|B2|f7
+bitterness|sự cay đắng|Bitterness and anger.|B2|f7
+blatant|trắng trợn|A blatant lie.|B2|f7
+brat|đứa trẻ hư|A spoiled brat.|B1|f7
+bunk|giường tầng|Bunk beds.|B1|f7
+candid|thẳng thắn|A candid answer.|B2|f7
+caretaker|người trông coi|The building caretaker.|B2|f7
+cervical|cổ tử cung; cổ|Cervical cancer.|B2|f7
+clamp|cái kẹp|Use a clamp.|B2|f7
+competitiveness|tính cạnh tranh|Export competitiveness.|B2|f7
+confederation|liên minh|A confederation of states.|B2|f7
+confidentiality|tính bảo mật|A confidentiality agreement.|B2|f7
+contradiction|sự mâu thuẫn|A contradiction in terms.|B2|f7
+coronation|lễ đăng quang|The king's coronation.|B2|f7
+cracker|bánh quy giòn|Cheese and crackers.|A2|f7
+cunning|xảo quyệt|A cunning plan.|B2|f7
+depiction|sự miêu tả|A depiction of village life.|B2|f7
+deplete|làm cạn kiệt|Deplete the stock.|B2|f7
+diabetic|bị tiểu đường|Diabetic patients.|B2|f7
+diaspora|cộng đồng hải ngoại|The Vietnamese diaspora.|B2|f7
+digitally|bằng kỹ thuật số|Digitally signed.|B2|f7
+discord|sự bất hòa|Family discord.|B2|f7
+divinity|thần thánh|Divinity school.|B2|f7
+donut|bánh vòng|A chocolate donut.|A2|f7
