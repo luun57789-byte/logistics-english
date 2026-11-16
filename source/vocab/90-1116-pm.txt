@@ -1,0 +1,61 @@
+cargo ready date|ngày hàng sẵn sàng|The cargo ready date is next Monday.|B1|sc
+buffer stock|hàng dự trữ an toàn|Keep some buffer stock before Tet.|B1|wh
+bin location|vị trí ô kệ|Scan the bin location before you pick.|B1|wh
+transshipment port|cảng chuyển tải|Singapore is the transshipment port.|B2|oc
+empty container return|trả container rỗng|The empty container return is at Dinh Vu depot.|B1|oc
+container seal number|số chì container|Please check the container seal number.|B1|oc
+draft bill of lading|bản nháp vận đơn|Please confirm the draft bill of lading today.|B1|dc
+customs inspection|kiểm hóa hải quan|The container was selected for customs inspection.|B1|cu
+re-delivery|giao lại hàng|The customer was out, so we arranged a re-delivery.|A2|op
+missing carton|thùng hàng bị thiếu|There is one missing carton in this shipment.|A2|op
+air waybill number|số vận đơn hàng không|Send me the air waybill number to track it.|B1|af
+truck plate number|biển số xe tải|What is the truck plate number?|A2|td
+gross weight|trọng lượng cả bì|The gross weight is 1,200 kilos.|A2|mt
+laundry detergent|bột/nước giặt|We've run out of laundry detergent.|A2|dl
+power cut|cúp điện|There was a power cut last night.|A2|dl
+leftovers|đồ ăn thừa|We had leftovers for lunch.|A2|fo
+takeaway|đồ ăn mang đi|Let's get a takeaway tonight.|A2|fo
+penalty kick|quả phạt đền|He missed the penalty kick.|A2|sp
+carry-on bag|hành lý xách tay|Only one carry-on bag is allowed.|A2|tv
+heavy rain|mưa to|Heavy rain is expected this afternoon.|A2|ws
+shift handover|giao ca|Write the notes at shift handover.|B1|fc
+to-do list|danh sách việc cần làm|I'll add it to my to-do list.|A2|wk
+calm down|bình tĩnh lại|Calm down, it's not your fault.|A2|cm
+cheer up|vui lên|Cheer up! It will be fine.|A2|cm
+on sale|đang giảm giá|These shoes are on sale.|A2|sh
+change (money back)|tiền thối lại|Here's your change.|A1|sh
+in a while|lát nữa|I'll call you back in a while.|A2|tm
+half an hour|nửa tiếng|The bus comes in half an hour.|A1|tm
+street festival|lễ hội đường phố|There's a street festival this weekend.|A2|gt
+karaoke night|buổi hát karaoke|We're having a karaoke night on Friday.|A2|gt
+That works for me.|Vậy được đấy, mình thấy ổn.|Meet at 3? That works for me.|A2|kn
+Let me double-check.|Để mình kiểm tra lại.|Let me double-check the ETA.|B1|kn
+Fingers crossed!|Cầu mong may mắn!|The test is tomorrow. Fingers crossed!|B1|kn
+I'll keep you posted.|Mình sẽ báo bạn khi có tin.|I'll keep you posted on the shipment.|B1|kn
+Long story short...|Nói ngắn gọn là…|Long story short, we missed the ship.|B1|kn
+Sounds like a plan.|Nghe được đấy, chốt vậy nhé.|Lunch at noon? Sounds like a plan.|A2|kn
+put-away time|thời gian cất hàng lên kệ|Put-away time is about two hours.|B1|wh
+rolled cargo|hàng bị rớt tàu (rolled)|Our cargo was rolled to the next vessel.|B2|oc
+amended invoice|hóa đơn đã sửa|Please send an amended invoice.|B1|dc
+duty payment|nộp thuế nhập khẩu|Duty payment must be made before release.|B1|cu
+storage charges|phí lưu kho|Storage charges start after five free days.|B1|in
+cargo cut-off|giờ cắt máng hàng|The cargo cut-off is Thursday noon.|B1|af
+proof photo|ảnh xác nhận giao hàng|The driver took a proof photo at the door.|A2|td
+payment reminder|nhắc thanh toán|We sent a payment reminder yesterday.|B1|fi
+net weight per carton|trọng lượng tịnh mỗi thùng|The net weight per carton is 9 kilos.|B1|mt
+status update|cập nhật tình trạng|Can you give me a status update?|A2|it
+dish rack|giá úp bát|Put the plates on the dish rack.|A2|dl
+spare key|chìa khóa dự phòng|I left a spare key with my neighbour.|A2|dl
+blocked nose|nghẹt mũi|I've got a blocked nose.|A2|hl
+cool down (after sport)|thả lỏng sau tập|Stretch to cool down after the game.|A2|sp
+muggy|oi bức|It's so muggy today.|B1|ws
+quality check point|điểm kiểm tra chất lượng|Every product stops at the quality check point.|B1|fc
+work from home|làm việc tại nhà|I work from home on Fridays.|A2|wk
+sign out|đăng xuất; ký sổ ra về|Remember to sign out when you leave.|A2|tc
+phone wallpaper|hình nền điện thoại|I changed my phone wallpaper.|A2|tc
+pick someone up|đón ai đó|Can you pick me up at the airport?|A2|vb
+raincoat (poncho)|áo mưa trùm|Buy a poncho at the market.|A2|pp
+next-door neighbour|hàng xóm sát vách|Our next-door neighbour has a dog.|A2|pp
+Hang in there!|Cố lên nhé!|The project is almost over. Hang in there!|B1|kn
+I'm heading out.|Mình đi đây.|I'm heading out, see you tomorrow.|A2|kn
+No rush.|Không gấp đâu.|Reply when you can, no rush.|A2|kn
