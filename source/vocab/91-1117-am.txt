@@ -1,0 +1,57 @@
+cargo pickup|lấy hàng tại kho người gửi|The cargo pickup is at 9 a.m. tomorrow.|A2|sc
+supplier delay|nhà cung cấp giao chậm|The supplier delay pushed our shipment back a week.|B1|sc
+receiving area|khu vực nhận hàng|Leave the pallets in the receiving area.|A2|wh
+damaged pallet|pallet bị hỏng|Take a photo of the damaged pallet.|A2|wh
+cargo manifest|bản lược khai hàng hóa|The cargo manifest must be sent before arrival.|B1|dc
+shipping instructions|hướng dẫn gửi hàng (SI)|Please send the shipping instructions by Wednesday.|B1|dc
+freight quote|báo giá cước|Can you send me a freight quote to Busan?|A2|in
+port congestion surcharge|phụ phí tắc nghẽn cảng|There is a port congestion surcharge this month.|B2|in
+wrong address|sai địa chỉ|The parcel went to the wrong address.|A2|op
+cash on delivery|thanh toán khi nhận hàng|Most customers pay cash on delivery.|A2|ec
+order cancellation|hủy đơn hàng|We received an order cancellation this morning.|B1|ec
+non-conformity|sự không phù hợp (chất lượng)|The auditor found one non-conformity.|B2|hs
+bin bag|túi rác|We need more bin bags.|A2|dl
+instant noodles|mì ăn liền|I had instant noodles for dinner.|A1|fo
+side dish|món ăn kèm|Would you like a side dish?|A2|fo
+painkiller|thuốc giảm đau|Take a painkiller and rest.|A2|hl
+jog|chạy bộ chậm|I jog around the lake every morning.|A2|sp
+draw (in a match)|trận hòa|The match ended in a draw.|A2|sp
+boarding gate|cửa lên máy bay|Go to boarding gate 12.|A2|tv
+drizzle|mưa phùn|It's only a light drizzle.|B1|ws
+thunderstorm|giông bão|There's a thunderstorm coming.|A2|ws
+machine operator|công nhân vận hành máy|The machine operator stopped the line.|A2|fc
+deadline extension|gia hạn thời hạn|Can I ask for a deadline extension?|B1|wk
+sick note|giấy nghỉ ốm|Please bring a sick note from the doctor.|B1|wk
+apologize|xin lỗi|I want to apologize for the mistake.|A2|cm
+small talk|chuyện xã giao|I'm not good at small talk.|B1|cm
+price tag|nhãn giá|There's no price tag on this shirt.|A2|sh
+refund policy|chính sách hoàn tiền|What's your refund policy?|B1|sh
+run out of|hết (cái gì)|We've run out of milk.|A2|vb
+turn down|vặn nhỏ; từ chối|Can you turn down the music?|B1|vb
+password reset|đặt lại mật khẩu|I need a password reset.|A2|tc
+software update|cập nhật phần mềm|Install the software update tonight.|A2|tc
+roommate (flatmate)|bạn ở cùng nhà|My flatmate is from Hue.|A2|pp
+hoodie|áo hoodie|I wear a hoodie when it's cold.|A1|pp
+fireworks show|màn bắn pháo hoa|We watched the fireworks show at midnight.|A2|gt
+board game|trò chơi cờ bàn|Let's play a board game tonight.|A2|gt
+Just in case.|Phòng khi cần.|Take an umbrella, just in case.|A2|kn
+Count me in!|Cho mình tham gia với!|Going for lunch? Count me in!|A2|kn
+I didn't catch that.|Mình nghe chưa rõ.|Sorry, I didn't catch that.|A2|kn
+Take your time.|Cứ từ từ.|There's no hurry, take your time.|A2|kn
+Keep up the good work.|Cứ làm tốt như vậy nhé.|Great report. Keep up the good work.|B1|kn
+inspection fee|phí kiểm hóa|The inspection fee is paid by the importer.|B1|cu
+fuel surcharge|phụ phí nhiên liệu|The fuel surcharge went up this month.|B1|fi
+cold box|thùng giữ lạnh|Pack the vaccines in a cold box.|B1|cc
+floor cloth|giẻ lau sàn|Use a floor cloth to dry it.|A2|dl
+flu shot|tiêm phòng cúm|I got a flu shot last week.|A2|hl
+hand luggage|hành lý xách tay|Keep your passport in your hand luggage.|A2|tv
+shift supervisor|giám sát ca|Ask the shift supervisor.|A2|fc
+next weekend|cuối tuần sau|Are you free next weekend?|A1|tm
+group photo|ảnh chụp nhóm|Let's take a group photo.|A1|gt
+I'm all set.|Mình sẵn sàng rồi.|Bags packed, I'm all set.|A2|kn
+Long time no talk.|Lâu rồi không nói chuyện.|Hey! Long time no talk.|A2|kn
+I'll get back to you.|Mình sẽ trả lời bạn sau.|Let me check, I'll get back to you.|A2|kn
+Good call.|Quyết định đúng đấy.|You booked early? Good call.|B1|kn
+carton count|số lượng thùng|Please confirm the carton count.|A2|wh
+safety goggles|kính bảo hộ|Put on your safety goggles.|A2|hs
+No problem at all.|Không vấn đề gì cả.|Can you help me? No problem at all.|A2|kn
