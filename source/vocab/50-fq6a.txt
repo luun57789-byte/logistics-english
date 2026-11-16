@@ -1,0 +1,553 @@
+persona|hình tượng, vai|His online persona is very different.|B2|f6
+plaque|tấm biển; cao răng|A plaque on the wall.|B2|f6
+poetic|thơ mộng|A poetic view.|B2|f6
+preach|thuyết giảng|Don't preach to me.|B2|f6
+purity|sự tinh khiết|The purity of the water.|B2|f6
+realism|chủ nghĩa hiện thực|The film has great realism.|B2|f6
+scoop|muỗng múc; tin sốt dẻo|Two scoops of ice cream.|B1|f6
+scrub|cọ rửa|Scrub the floor.|B1|f6
+sew|may, khâu|Can you sew a button?|A2|f6
+shale|đá phiến sét|Shale gas.|B2|f6
+shin|ống quyển|He kicked me in the shin.|B2|f6
+shooting|vụ nổ súng; quay phim|A photo shooting.|B1|f6
+simplify|đơn giản hóa|Simplify the process.|B1|f6
+solicitor|luật sư (Anh)|Talk to your solicitor.|B2|f6
+sophomore|sinh viên năm hai|She's a sophomore.|B2|f6
+squadron|phi đội|An air squadron.|B2|f6
+squirrel|con sóc|A squirrel in the tree.|A2|f6
+stigma|sự kỳ thị|Mental health stigma.|B2|f6
+taco|bánh taco|Fish tacos.|A2|f6
+takeover|sự tiếp quản|A company takeover.|B2|f6
+traitor|kẻ phản bội|He's a traitor.|B2|f6
+underestimate|đánh giá thấp|Don't underestimate the traffic.|B2|f6
+uni|đại học (khẩu ngữ)|She's at uni.|A2|f6
+wallpaper|giấy dán tường; hình nền|Change the wallpaper.|A2|f6
+willow|cây liễu|A willow by the river.|B2|f6
+addict|người nghiện|A coffee addict.|B1|f6
+ale|bia ale|A pint of ale.|B2|f6
+archaeological|thuộc khảo cổ|An archaeological site.|B2|f6
+betrayal|sự phản bội|A story of betrayal.|B2|f6
+cardiovascular|tim mạch|Cardiovascular exercise.|B2|f6
+chic|thanh lịch|A chic café.|B2|f6
+clone|bản sao|A phone clone.|B2|f6
+communal|chung, công cộng|A communal kitchen.|B2|f6
+consortium|tập đoàn liên doanh|A shipping consortium.|B2|f6
+countdown|đếm ngược|The countdown to New Year.|A2|f6
+disastrous|thảm khốc|A disastrous result.|B2|f6
+drummer|người chơi trống|The band's drummer.|A2|f6
+durable|bền|Durable packaging.|B2|f6
+efficacy|hiệu quả|The efficacy of the drug.|B2|f6
+exaggerate|phóng đại|Don't exaggerate!|B1|f6
+exclusion|sự loại trừ|Exclusion from the list.|B2|f6
+freelance|làm tự do|A freelance designer.|B1|f6
+gin|rượu gin|Gin and tonic.|B1|f6
+greeting|lời chào|Season's greetings.|A2|f6
+honeymoon|tuần trăng mật|They went to Phu Quoc on honeymoon.|A2|f6
+ignition|bộ đánh lửa; ổ khóa xe|Turn the key in the ignition.|B2|f6
+impair|làm suy yếu|Alcohol impairs driving.|B2|f6
+investigative|điều tra|Investigative journalism.|B2|f6
+jewel|đồ trang sức, đá quý|A precious jewel.|B1|f6
+mutually|lẫn nhau|Mutually beneficial.|B2|f6
+navigate|định hướng, điều hướng|Navigate the website.|B2|f6
+obese|béo phì|Obese patients.|B2|f6
+outreach|tiếp cận cộng đồng|Community outreach.|B2|f6
+pandemic|đại dịch|The pandemic changed shipping.|B1|f6
+perimeter|chu vi; vành đai|The perimeter fence.|B2|f6
+pike|cá chó; giáo|They caught a pike.|B2|f6
+preacher|người thuyết giáo|A preacher at church.|B2|f6
+protector|người bảo vệ|A screen protector.|B1|f6
+pulp|cùi; bột giấy|Wood pulp.|B2|f6
+ransom|tiền chuộc|A ransom demand.|B2|f6
+reel|cuộn|A reel of tape.|B2|f6
+rehearsal|buổi diễn tập|A dress rehearsal.|B1|f6
+revive|hồi sinh|Revive the economy.|B2|f6
+rigorous|nghiêm ngặt|Rigorous checks.|B2|f6
+scenery|phong cảnh|Beautiful scenery.|A2|f6
+sensory|thuộc giác quan|Sensory overload.|B2|f6
+sidewalk|vỉa hè|Walk on the sidewalk.|A2|f6
+skeptical|hoài nghi|I'm skeptical about it.|B2|f6
+sleepy|buồn ngủ|I feel sleepy.|A2|f6
+smoothly|suôn sẻ|Everything went smoothly.|B1|f6
+staple|ghim; nhu yếu phẩm|Rice is a staple food.|B2|f6
+stereotype|khuôn mẫu, định kiến|A cultural stereotype.|B2|f6
+suppression|sự đàn áp|Suppression of the news.|B2|f6
+sushi|sushi|Let's have sushi.|A2|f6
+swell|sưng lên|My ankle swelled up.|B2|f6
+terminology|thuật ngữ|Shipping terminology.|B2|f6
+theatrical|thuộc sân khấu|A theatrical show.|B2|f6
+timer|đồng hồ hẹn giờ|Set a timer.|A2|f6
+traveller|du khách (Anh)|A frequent traveller.|A2|f6
+turnout|số người tham dự|A big turnout.|B2|f6
+unanimous|nhất trí|A unanimous decision.|B2|f6
+unpredictable|khó đoán|Unpredictable weather.|B1|f6
+validation|sự xác nhận|Data validation.|B2|f6
+vengeance|sự báo thù|With a vengeance.|B2|f6
+visually|về mặt thị giác|Visually impaired.|B2|f6
+activism|hoạt động xã hội|Climate activism.|B2|f6
+advent|sự ra đời|The advent of the internet.|B2|f6
+airborne|trên không|Airborne particles.|B2|f6
+alas|than ôi|Alas, it was too late.|B2|f6
+aww|ôi dễ thương quá|Aww, that's sweet!|A2|f6
+barracks|doanh trại|Army barracks.|B2|f6
+believer|người tin|A firm believer in hard work.|B2|f6
+bunker|hầm trú ẩn|A war bunker.|B2|f6
+caffeine|cafein|Too much caffeine.|B1|f6
+chaotic|hỗn loạn|The port was chaotic.|B2|f6
+commercially|về thương mại|Commercially available.|B2|f6
+coward|kẻ hèn nhát|Don't be a coward.|B1|f6
+dammit|chết tiệt (khẩu ngữ)|Dammit, I missed the bus!|B1|f6
+dent|vết lõm|A dent in the car.|B1|f6
+diminish|giảm bớt|Demand has diminished.|B2|f6
+dove|chim bồ câu|A white dove.|B1|f6
+dusty|bụi bặm|A dusty road.|A2|f6
+enlightenment|sự giác ngộ|Spiritual enlightenment.|B2|f6
+focal|trọng tâm|A focal point.|B2|f6
+gala|buổi dạ tiệc|A charity gala.|B2|f6
+garrison|đồn trú|A military garrison.|B2|f6
+gladly|sẵn lòng|I'd gladly help.|B1|f6
+goodwill|thiện chí|A gesture of goodwill.|B2|f6
+gradual|dần dần|A gradual change.|B2|f6
+harness|dây an toàn; khai thác|Wear a safety harness.|B2|f6
+hashtag|thẻ bắt đầu bằng dấu #|Use the hashtag.|A2|f6
+heartbeat|nhịp tim|A fast heartbeat.|B1|f6
+heh|hì (thán từ)|Heh, nice try.|A2|f6
+honourable|đáng kính (Anh)|An honourable man.|B2|f6
+imminent|sắp xảy ra|An imminent storm.|B2|f6
+inaugural|khai mạc, đầu tiên|The inaugural flight.|B2|f6
+insulation|vật liệu cách nhiệt|Roof insulation.|B2|f6
+intern|thực tập sinh|A summer intern.|B1|f6
+irresponsible|vô trách nhiệm|An irresponsible driver.|B1|f6
+lag|độ trễ|Time lag.|B2|f6
+lender|người cho vay|A money lender.|B2|f6
+locality|địa phương|In this locality.|B2|f6
+lure|dụ dỗ|Lure customers in.|B2|f6
+malicious|ác ý|Malicious software.|B2|f6
+mattress|nệm|A new mattress.|A2|f6
+mist|sương mù nhẹ|Morning mist.|B1|f6
+mole|nốt ruồi; chuột chũi|A mole on his face.|B2|f6
+monarchy|chế độ quân chủ|A constitutional monarchy.|B2|f6
+muscular|cơ bắp|A muscular man.|B1|f6
+neutrality|sự trung lập|Political neutrality.|B2|f6
+partition|vách ngăn|An office partition.|B2|f6
+peculiar|kỳ lạ|A peculiar smell.|B2|f6
+proprietary|độc quyền|Proprietary software.|B2|f6
+prostate|tuyến tiền liệt|Prostate cancer.|B2|f6
+protagonist|nhân vật chính|The protagonist of the novel.|B2|f6
+rant|nói lảm nhảm|Stop ranting.|B2|f6
+rash|phát ban; hấp tấp|A skin rash.|B1|f6
+replica|bản sao|A replica of the ship.|B2|f6
+reside|cư trú|He resides in Hanoi.|B2|f6
+ripe|chín|Ripe mangoes.|A2|f6
+riverside|bờ sông|A riverside restaurant.|B1|f6
+sane|tỉnh táo|No sane person would do that.|B2|f6
+savior|vị cứu tinh|You're my savior!|B2|f6
+scenic|có cảnh đẹp|A scenic route.|B1|f6
+sip|nhấp, uống từng ngụm|Take a sip.|B1|f6
+snail|con ốc sên|As slow as a snail.|A2|f6
+statistically|về mặt thống kê|Statistically, it's rare.|B2|f6
+stimulate|kích thích|Stimulate growth.|B2|f6
+strangely|kỳ lạ|Strangely quiet.|B1|f6
+susceptible|dễ bị|Susceptible to damage.|B2|f6
+translator|phiên dịch viên|We need a translator.|A2|f6
+tutor|gia sư|An English tutor.|A2|f6
+unsafe|không an toàn|Unsafe loading.|B1|f6
+verge|bờ, ven; sắp|On the verge of tears.|B2|f6
+vibrant|sôi động|A vibrant city.|B2|f6
+yeast|men|Bread yeast.|B1|f6
+absorption|sự hấp thụ|Water absorption.|B2|f6
+acne|mụn trứng cá|Teen acne.|B1|f6
+aspiration|khát vọng|Career aspirations.|B2|f6
+assassin|sát thủ|A hired assassin.|B2|f6
+backlash|phản ứng dữ dội|Public backlash.|B2|f6
+bbq|tiệc nướng|A BBQ in the garden.|A2|f6
+blockchain|chuỗi khối|Blockchain for shipping documents.|B2|f6
+brewery|nhà máy bia|A local brewery.|B2|f6
+bulb|bóng đèn; củ|A light bulb.|A2|f6
+cardboard|bìa các-tông|A cardboard box.|A2|f6
+casually|tình cờ; giản dị|Dress casually.|B1|f6
+chew|nhai|Chew your food.|A2|f6
+collateral|tài sản thế chấp|Use the house as collateral.|B2|f6
+congestion|tắc nghẽn|Port congestion.|B2|f6
+creditor|chủ nợ|Pay the creditors.|B2|f6
+criticise|phê bình (Anh)|Don't criticise him.|B1|f6
+crossover|sự giao thoa|A crossover car.|B2|f6
+crunch|kêu giòn; khủng hoảng|A budget crunch.|B2|f6
+daytime|ban ngày|Daytime traffic.|A2|f6
+demise|sự sụp đổ|The demise of the company.|B2|f6
+dependence|sự phụ thuộc|Dependence on imports.|B2|f6
+dictator|kẻ độc tài|A cruel dictator.|B2|f6
+dime|đồng 10 xu|It's not worth a dime.|B1|f6
+dire|thảm khốc|Dire need.|B2|f6
+disagreement|sự bất đồng|A disagreement over price.|B1|f6
+disciple|môn đồ|A disciple of the master.|B2|f6
+disregard|coi thường|Disregard the warning.|B2|f6
+dominion|quyền thống trị|Dominion over the land.|B2|f6
+downhill|xuống dốc|Walk downhill.|B1|f6
+dreadful|kinh khủng|Dreadful weather.|B1|f6
+drunken|say rượu|A drunken man.|B1|f6
+earnest|nghiêm túc|In earnest.|B2|f6
+erase|xóa|Erase the board.|B1|f6
+evacuate|sơ tán|Evacuate the building.|B2|f6
+extinct|tuyệt chủng|Dinosaurs are extinct.|B1|f6
+freezer|tủ đông|Put it in the freezer.|A2|f6
+genetically|về mặt di truyền|Genetically modified.|B2|f6
+hare|thỏ rừng|The tortoise and the hare.|B1|f6
+herein|tại đây (văn bản)|The terms herein.|B2|f6
+honorary|danh dự|An honorary member.|B2|f6
+immature|non nớt|Immature behaviour.|B1|f6
+imperative|cấp bách|It is imperative to act now.|B2|f6
+ineffective|không hiệu quả|An ineffective method.|B2|f6
+knit|đan|She knits sweaters.|B1|f6
+manly|nam tính|A manly voice.|B1|f6
+maternity|thai sản|Maternity leave.|B2|f6
+meaning|ý nghĩa|What's the meaning of this word?|A1|f6
+misconduct|hành vi sai trái|Gross misconduct.|B2|f6
+morale|tinh thần|Team morale is high.|B2|f6
+needless|không cần thiết|Needless to say.|B2|f6
+nerd|mọt sách|A computer nerd.|A2|f6
+novelty|sự mới lạ|The novelty wore off.|B2|f6
+optimism|sự lạc quan|There's cautious optimism.|B2|f6
+optimization|sự tối ưu hóa|Route optimization.|B2|f6
+oxide|ôxít|Iron oxide.|B2|f6
+peasant|nông dân|Peasant farmers.|B2|f6
+peripheral|ngoại vi|Peripheral devices.|B2|f6
+pint|panh (~0,5 lít)|A pint of milk.|B1|f6
+plead|cầu xin; biện hộ|He pleaded guilty.|B2|f6
+poop|phân (khẩu ngữ)|Pick up the dog poop.|A2|f6
+ppl|người (viết tắt)|Lots of ppl came.|A2|f6
+prevalence|sự phổ biến|The prevalence of the disease.|B2|f6
+provisional|tạm thời|A provisional booking.|B2|f6
+repay|trả lại|Repay the loan.|B1|f6
+saturate|bão hòa|The market is saturated.|B2|f6
+shove|xô, đẩy|Don't shove!|B2|f6
+sms|tin nhắn SMS|Send an SMS.|A2|f6
+soak|ngâm|Soak the rice.|B1|f6
+softball|bóng mềm|A softball game.|B1|f6
+southeastern|đông nam|Southeastern Asia.|B1|f6
+spectator|khán giả|Thousands of spectators.|B1|f6
+storytelling|kể chuyện|The art of storytelling.|B1|f6
+stumble|vấp|He stumbled on the step.|B2|f6
+stupidity|sự ngu ngốc|Pure stupidity.|B1|f6
+suppress|kìm nén, đàn áp|Suppress a laugh.|B2|f6
+tangible|hữu hình|Tangible results.|B2|f6
+tilt|nghiêng|Tilt your head.|B2|f6
+trivial|tầm thường|A trivial matter.|B2|f6
+unofficial|không chính thức|Unofficial results.|B1|f6
+veil|mạng che mặt|A wedding veil.|B2|f6
+versatile|đa năng|A versatile tool.|B2|f6
+wed|kết hôn|They wed in June.|B2|f6
+anthropology|nhân chủng học|She studies anthropology.|B2|f6
+artery|động mạch|A blocked artery.|B2|f6
+bamboo|tre|Bamboo furniture.|A2|f6
+basil|húng quế|Thai basil.|B1|f6
+booze|rượu (khẩu ngữ)|Too much booze.|B1|f6
+calibre|tầm cỡ|High calibre staff.|B2|f6
+cellphone|điện thoại di động|Turn off your cellphone.|A1|f6
+chord|hợp âm|A guitar chord.|B2|f6
+concession|sự nhượng bộ|Make concessions.|B2|f6
+corporal|hạ sĩ; thân thể|Corporal punishment.|B2|f6
+courtyard|sân trong|A quiet courtyard.|B1|f6
+crest|đỉnh; huy hiệu|The crest of the wave.|B2|f6
+ding|tiếng đinh đong|The bell went ding.|A2|f6
+deception|sự lừa dối|Deception and lies.|B2|f6
+decor|đồ trang trí nội thất|Nice decor.|B1|f6
+derivative|phái sinh|A derivative product.|B2|f6
+discomfort|sự khó chịu|Some discomfort after surgery.|B2|f6
+drastically|mạnh mẽ, đáng kể|Prices fell drastically.|B2|f6
+driveway|lối xe vào nhà|Park in the driveway.|B1|f6
+duel|cuộc đấu tay đôi|A duel at dawn.|B2|f6
+elf|yêu tinh|Santa's elves.|B1|f6
+ev|xe điện (EV)|An EV charging station.|B1|f6
+evenly|đều|Spread the load evenly.|B1|f6
+exemption|sự miễn trừ|Tax exemption.|B2|f6
+fashionable|hợp thời trang|A fashionable area.|A2|f6
+fetch|đi lấy về|Fetch me a pen.|B1|f6
+fisherman|ngư dân|Local fishermen.|A2|f6
+formidable|đáng gờm|A formidable opponent.|B2|f6
+furnish|trang bị nội thất|A furnished flat.|B2|f6
+fuzzy|mờ, xù|A fuzzy photo.|B1|f6
+gothic|kiểu Gothic|A gothic church.|B2|f6
+grenade|lựu đạn|A hand grenade.|B2|f6
+hamlet|xóm nhỏ|A small hamlet.|B2|f6
+helm|bánh lái|At the helm.|B2|f6
+html|ngôn ngữ HTML|Write the page in HTML.|B1|f6
+hugely|rất lớn|Hugely popular.|B2|f6
+hypocrisy|sự đạo đức giả|Pure hypocrisy.|B2|f6
+inaccurate|không chính xác|Inaccurate data.|B1|f6
+inception|sự khởi đầu|Since its inception.|B2|f6
+incompetent|bất tài|An incompetent manager.|B2|f6
+indefinitely|vô thời hạn|Delayed indefinitely.|B2|f6
+intervene|can thiệp|The police intervened.|B2|f6
+kin|họ hàng|Next of kin.|B2|f6
+legislator|nhà lập pháp|State legislators.|B2|f6
+lobster|tôm hùm|Grilled lobster.|A2|f6
+loneliness|sự cô đơn|Loneliness is hard.|B1|f6
+malaria|bệnh sốt rét|Malaria is spread by mosquitoes.|B2|f6
+manifesto|tuyên ngôn|The party manifesto.|B2|f6
+maze|mê cung|A garden maze.|B1|f6
+monastery|tu viện|A mountain monastery.|B2|f6
+mutation|đột biến|A gene mutation.|B2|f6
+narrowly|suýt soát|We narrowly missed the train.|B2|f6
+negligence|sự cẩu thả|Medical negligence.|B2|f6
+nexus|mối liên kết|A transport nexus.|B2|f6
+nightclub|hộp đêm|A busy nightclub.|A2|f6
+numerical|thuộc số|In numerical order.|B2|f6
+obsolete|lỗi thời|Obsolete equipment.|B2|f6
+optic|thuộc quang học|Fibre optic cable.|B2|f6
+panda|gấu trúc|A giant panda.|A2|f6
+pea|đậu Hà Lan|Green peas.|A2|f6
+posture|tư thế|Good posture.|B2|f6
+preseason|trước mùa giải|A preseason game.|B2|f6
+resonance|sự cộng hưởng|Emotional resonance.|B2|f6
+ruthless|tàn nhẫn|A ruthless boss.|B2|f6
+salvage|cứu hộ, trục vớt|Salvage the cargo.|B2|f6
+samurai|võ sĩ samurai|A samurai movie.|B1|f6
+satire|châm biếm|Political satire.|B2|f6
+slash|chém; giảm mạnh; dấu gạch chéo|Slash prices.|B2|f6
+spaghetti|mì spaghetti|Spaghetti with tomato sauce.|A2|f6
+speedy|nhanh chóng|A speedy recovery.|B1|f6
+standpoint|quan điểm|From a cost standpoint.|B2|f6
+sway|đung đưa; tác động|The trees swayed.|B2|f6
+torque|mô-men xoắn|Engine torque.|B2|f6
+unconstitutional|vi hiến|An unconstitutional law.|B2|f6
+undermine|làm suy yếu|Don't undermine your team.|B2|f6
+vacancy|chỗ trống|Job vacancies.|B1|f6
+veto|quyền phủ quyết|He vetoed the plan.|B2|f6
+vocational|dạy nghề|Vocational training.|B2|f6
+withstand|chịu được|Boxes that withstand rain.|B2|f6
+woodland|rừng cây|A walk in the woodland.|B1|f6
+zinc|kẽm|Zinc tablets.|B2|f6
+adequately|đầy đủ|Adequately packed.|B2|f6
+amazingly|đáng kinh ngạc|Amazingly fast.|B1|f6
+approximate|xấp xỉ|The approximate weight.|B1|f6
+bam|bùm (thán từ)|And then, bam! It broke.|A2|f6
+bargaining|sự mặc cả|Collective bargaining.|B2|f6
+baton|gậy chỉ huy; gậy tiếp sức|Pass the baton.|B2|f6
+breakup|sự chia tay|A bad breakup.|B1|f6
+brew|pha, ủ|Brew some tea.|B1|f6
+bulldog|chó bulldog|A cute bulldog.|A2|f6
+camel|lạc đà|A camel ride.|A2|f6
+cater|cung cấp đồ ăn; đáp ứng|We cater for all needs.|B2|f6
+chunk|khúc, miếng lớn|A chunk of meat.|B1|f6
+cocoa|ca cao|Hot cocoa.|A2|f6
+comet|sao chổi|A bright comet.|B1|f6
+compartment|ngăn, khoang|The luggage compartment.|B1|f6
+contestant|thí sinh|A game show contestant.|B1|f6
+cove|vịnh nhỏ|A quiet cove.|B2|f6
+cozy|ấm cúng|A cozy café.|A2|f6
+culturally|về mặt văn hóa|Culturally rich.|B2|f6
+deficiency|sự thiếu hụt|Vitamin deficiency.|B2|f6
+deport|trục xuất|He was deported.|B2|f6
+dictatorship|chế độ độc tài|A military dictatorship.|B2|f6
+disrespectful|vô lễ|Don't be disrespectful.|B1|f6
+dread|sợ hãi|I dread Monday mornings.|B2|f6
+dummy|hình nộm; ngốc|A shop dummy.|B1|f6
+electorate|cử tri|The electorate decided.|B2|f6
+erosion|sự xói mòn|Soil erosion.|B2|f6
+expo|triển lãm|A trade expo.|B1|f6
+flank|sườn|The left flank.|B2|f6
+flare|pháo sáng; bùng lên|A distress flare.|B2|f6
+flirt|tán tỉnh|Stop flirting!|B1|f6
+forex|ngoại hối|The forex market.|B2|f6
+gamer|game thủ|A keen gamer.|A2|f6
+goodnight|chúc ngủ ngon|Goodnight, sleep well.|A1|f6
+incidence|tỷ lệ mắc|A high incidence of theft.|B2|f6
+intimacy|sự thân mật|Emotional intimacy.|B2|f6
+kitten|mèo con|A cute kitten.|A2|f6
+lever|đòn bẩy; tay gạt|Pull the lever.|B1|f6
+mileage|số dặm đã đi|Low mileage.|B2|f6
+multiplayer|nhiều người chơi|A multiplayer game.|A2|f6
+mutant|đột biến|Mutant genes.|B2|f6
+mythology|thần thoại|Greek mythology.|B1|f6
+neon|đèn neon|Neon lights.|B1|f6
+nun|nữ tu|A Catholic nun.|B1|f6
+nutritional|dinh dưỡng|Nutritional value.|B2|f6
+ow|ối (đau)|Ow! That hurts.|A1|f6
+pedal|bàn đạp|The brake pedal.|B1|f6
+pest|sâu bọ, vật gây hại|Pest control.|B1|f6
+pillar|cột trụ|A stone pillar.|B1|f6
+plausible|hợp lý|A plausible reason.|B2|f6
+poly|nhựa poly; đa|Poly bags.|B2|f6
+polymer|polime|Polymer packaging.|B2|f6
+precipitation|lượng mưa|Heavy precipitation.|B2|f6
+pup|chó con|A cute pup.|A2|f6
+query|thắc mắc, truy vấn|If you have any queries, call us.|B2|f6
+restraint|sự kiềm chế|Show restraint.|B2|f6
+rift|vết nứt; rạn nứt|A rift between them.|B2|f6
+salesman|nhân viên bán hàng|A car salesman.|A2|f6
+scarlet|đỏ tươi|A scarlet dress.|B2|f6
+sewer|cống|The sewer is blocked.|B2|f6
+smack|đánh, tát|A smack on the head.|B2|f6
+southwestern|tây nam|The southwestern region.|B1|f6
+spokesperson|người phát ngôn|A company spokesperson.|B2|f6
+stalk|cuống; rình rập|Celery stalks.|B2|f6
+standardize|tiêu chuẩn hóa|Standardize the forms.|B2|f6
+stitch|mũi khâu|Five stitches.|B1|f6
+substrate|chất nền|A growing substrate.|B2|f6
+supremacy|quyền tối cao|Air supremacy.|B2|f6
+theoretically|về lý thuyết|Theoretically possible.|B2|f6
+thirst|cơn khát|Quench your thirst.|B1|f6
+transitional|chuyển tiếp|A transitional period.|B2|f6
+tuna|cá ngừ|Tuna salad.|A2|f6
+unused|chưa dùng|Unused tickets.|B1|f6
+viewpoint|quan điểm|From my viewpoint.|B1|f6
+vinegar|giấm|Rice vinegar.|A2|f6
+wig|tóc giả|She wears a wig.|B1|f6
+affiliation|sự liên kết|Political affiliation.|B2|f6
+aggressively|mạnh mẽ, hung hăng|Drive aggressively.|B2|f6
+allergy|dị ứng|A food allergy.|A2|f6
+amnesty|sự ân xá|An amnesty for prisoners.|B2|f6
+assertion|sự khẳng định|His assertion was wrong.|B2|f6
+astronomy|thiên văn học|Interested in astronomy.|B1|f6
+atop|ở trên đỉnh|Atop the hill.|B2|f6
+attic|gác mái|Boxes in the attic.|B1|f6
+autobiography|tự truyện|His autobiography.|B1|f6
+broadcaster|đài phát thanh, người phát thanh|A TV broadcaster.|B2|f6
+cache|bộ nhớ đệm|Clear the cache.|B1|f6
+carrot|cà rốt|Carrot cake.|A1|f6
+coherent|mạch lạc|A coherent plan.|B2|f6
+comfy|thoải mái (khẩu ngữ)|A comfy chair.|A2|f6
+comrade|đồng chí|My old comrade.|B2|f6
+concede|thừa nhận; chịu thua|He conceded defeat.|B2|f6
+condo|căn hộ chung cư|A beach condo.|B1|f6
+crooked|cong; gian dối|A crooked picture.|B2|f6
+cultivation|sự trồng trọt|Rice cultivation.|B2|f6
+discontinue|ngừng sản xuất|The model was discontinued.|B2|f6
+displacement|sự di dời; dung tích|Engine displacement.|B2|f6
+disrespect|sự thiếu tôn trọng|No disrespect, but...|B1|f6
+distort|bóp méo|Distort the truth.|B2|f6
+diver|thợ lặn|A deep-sea diver.|A2|f6
+drastic|quyết liệt|Drastic changes.|B2|f6
+edible|ăn được|Edible flowers.|B2|f6
+enhancement|sự nâng cao|Security enhancement.|B2|f6
+fax|fax|Send a fax.|A2|f6
+flick|búng; lướt|Flick through a magazine.|B2|f6
+funky|sôi động; lạ|Funky music.|B1|f6
+gag|trò đùa|A running gag.|B2|f6
+gee|chà (thán từ)|Gee, thanks!|A2|f6
+gigantic|khổng lồ|A gigantic ship.|B1|f6
+groom|chú rể; chải chuốt|The bride and groom.|B1|f6
+guitarist|người chơi guitar|A great guitarist.|A2|f6
+halftime|giờ nghỉ giữa hiệp|At halftime it was 1–0.|B1|f6
+hash|băm; món băm|Hash browns.|B2|f6
+hydro|thủy điện|Hydro power.|B2|f6
+inactive|không hoạt động|An inactive account.|B1|f6
+lawful|hợp pháp|Lawful business.|B2|f6
+lawmaker|nhà lập pháp|Lawmakers voted.|B2|f6
+leftist|cánh tả|Leftist parties.|B2|f6
+legitimacy|tính hợp pháp|The legitimacy of the deal.|B2|f6
+lizard|thằn lằn|A lizard on the wall.|A2|f6
+maximize|tối đa hóa|Maximize container space.|B2|f6
+morally|về mặt đạo đức|Morally wrong.|B2|f6
+organizer|người tổ chức|The event organizer.|B1|f6
+paradox|nghịch lý|It's a paradox.|B2|f6
+peacefully|yên bình|Sleep peacefully.|B1|f6
+periodic|định kỳ|Periodic checks.|B2|f6
+podium|bục|On the podium.|B2|f6
+puck|quả bóng khúc côn cầu|An ice hockey puck.|B2|f6
+reconsider|xem xét lại|Please reconsider.|B2|f6
+refrain|kiềm chế|Please refrain from smoking.|B2|f6
+reproduce|tái tạo; sinh sản|Reproduce the error.|B2|f6
+rite|nghi thức|A religious rite.|B2|f6
+rum|rượu rum|A glass of rum.|B1|f6
+safari|chuyến đi xem thú|A safari in Kenya.|A2|f6
+scaling|mở rộng quy mô|Scaling up production.|B2|f6
+scorer|người ghi bàn|The top scorer.|B1|f6
+seldom|hiếm khi|I seldom eat out.|B1|f6
+sis|chị, em gái (khẩu ngữ)|Hey sis!|A2|f6
+soy|đậu nành|Soy sauce.|A2|f6
+squash|môn bóng quần; bí|Play squash.|B1|f6
+statewide|toàn bang|A statewide ban.|B2|f6
+stationary|đứng yên|A stationary truck.|B2|f6
+subdivision|sự chia nhỏ|A housing subdivision.|B2|f6
+tar|nhựa đường|Tar on the road.|B2|f6
+temporal|thuộc thời gian|Temporal changes.|B2|f6
+tracker|thiết bị theo dõi|A GPS tracker.|B1|f6
+turbine|tua-bin|Wind turbines.|B2|f6
+unavailable|không có sẵn|The item is unavailable.|B1|f6
+universally|phổ biến khắp nơi|Universally accepted.|B2|f6
+unlucky|xui xẻo|Unlucky number.|A2|f6
+uv|tia cực tím|UV protection.|B1|f6
+vomit|nôn|He vomited on the boat.|B1|f6
+warden|cai ngục; người quản lý|A traffic warden.|B2|f6
+warp|cong vênh|The wood warped.|B2|f6
+whisky|rượu whisky|Scotch whisky.|B1|f6
+womb|tử cung|In the womb.|B2|f6
+yogurt|sữa chua|Strawberry yogurt.|A2|f6
+abolish|bãi bỏ|Abolish the fee.|B2|f6
+alpine|thuộc núi cao|Alpine lakes.|B2|f6
+ambient|xung quanh|Ambient temperature.|B2|f6
+aquatic|dưới nước|Aquatic plants.|B2|f6
+armored|bọc thép|An armored truck.|B2|f6
+assert|khẳng định|Assert your rights.|B2|f6
+atheist|người vô thần|He's an atheist.|B2|f6
+bandwidth|băng thông|Not enough bandwidth.|B2|f6
+barbecue|tiệc nướng|A beach barbecue.|A2|f6
+beforehand|trước|Call me beforehand.|B1|f6
+bipolar|lưỡng cực|Bipolar disorder.|B2|f6
+bladder|bàng quang|A full bladder.|B2|f6
+blossom|hoa (cây ăn quả); nở|Peach blossom at Tet.|B1|f6
+caravan|nhà lưu động|A caravan holiday.|B1|f6
+chant|hô vang|Fans chanted his name.|B2|f6
+compress|nén|Compress the file.|B2|f6
+computational|tính toán|Computational power.|B2|f6
+conceptual|thuộc khái niệm|A conceptual model.|B2|f6
+damp|ẩm ướt|Damp clothes.|B1|f6
+debit|ghi nợ|A debit card.|B1|f6
+demolition|sự phá dỡ|Demolition work.|B2|f6
+differentiate|phân biệt|Differentiate the two.|B2|f6
+dim|mờ, tối|A dim light.|B1|f6
+discourage|làm nản lòng|Don't discourage him.|B1|f6
+donkey|con lừa|A donkey ride.|A2|f6
+downstream|hạ lưu|Downstream of the dam.|B2|f6
+earring|bông tai|Gold earrings.|A2|f6
+empirical|thực nghiệm|Empirical evidence.|B2|f6
+enlarge|phóng to|Enlarge the photo.|B1|f6
+faulty|bị lỗi|A faulty product.|B1|f6
+fertile|màu mỡ|Fertile land.|B2|f6
+feud|mối thù|A family feud.|B2|f6
+filmmaker|nhà làm phim|A young filmmaker.|B1|f6
+furnace|lò nung|A steel furnace.|B2|f6
+fuse|cầu chì; hợp nhất|A blown fuse.|B2|f6
+fuss|sự ồn ào, làm rối|Don't make a fuss.|B1|f6
+gale|gió mạnh|A gale warning.|B2|f6
+generosity|sự hào phóng|Thank you for your generosity.|B2|f6
+gluten|gluten|Gluten-free bread.|B2|f6
+gorilla|khỉ đột|A big gorilla.|A2|f6
+heavyweight|hạng nặng|A heavyweight boxer.|B2|f6
+humane|nhân đạo|Humane treatment.|B2|f6
+inflict|gây ra|Inflict damage.|B2|f6
+lotus|hoa sen|A lotus pond.|A2|f6
+loosely|lỏng lẻo|Loosely tied.|B2|f6
+mantle|lớp vỏ; trách nhiệm|Take on the mantle.|B2|f6
+mascot|linh vật|The team mascot.|A2|f6
+metabolic|chuyển hóa|Metabolic rate.|B2|f6
+midfield|khu giữa sân|He plays in midfield.|B1|f6
+militant|chiến binh; hiếu chiến|Militant groups.|B2|f6
+nostalgia|nỗi nhớ quá khứ|A feeling of nostalgia.|B2|f6
+paperback|sách bìa mềm|A paperback book.|B1|f6
+pave|lát đường|Pave the way.|B2|f6
+pavilion|nhà rạp, gian hàng|The Vietnam pavilion at the fair.|B2|f6
+perk|phúc lợi|Job perks.|B2|f6
+pointer|kim chỉ; lời khuyên|A few pointers.|B1|f6
+presume|cho rằng|I presume so.|B2|f6
+rec|giải trí (khẩu ngữ)|The rec center.|B1|f6
+rectangular|hình chữ nhật|A rectangular box.|B1|f6
+regulator|cơ quan quản lý|The market regulator.|B2|f6
+restructuring|sự tái cấu trúc|Company restructuring.|B2|f6
+sabotage|phá hoại|Sabotage the plan.|B2|f6
+sarcasm|sự mỉa mai|Was that sarcasm?|B2|f6
+seeker|người tìm kiếm|Job seekers.|B2|f6
+sexist|phân biệt giới tính|A sexist joke.|B2|f6
+shutdown|sự đóng cửa|A factory shutdown.|B2|f6
+surpass|vượt qua|Sales surpassed targets.|B2|f6
+tally|bảng tính điểm; khớp|The numbers tally.|B2|f6
+tuck|nhét|Tuck in your shirt.|B2|f6
+unanimously|nhất trí|Passed unanimously.|B2|f6
+undefeated|bất bại|An undefeated team.|B2|f6
+unfamiliar|không quen|An unfamiliar place.|B1|f6
+vastly|rất nhiều|Vastly better.|B2|f6
+vile|ghê tởm|A vile smell.|B2|f6
+violently|dữ dội|Shake violently.|B2|f6
+wedge|cái nêm|A door wedge.|B2|f6
+wisely|khôn ngoan|Spend wisely.|B1|f6

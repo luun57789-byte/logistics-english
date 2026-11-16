@@ -1234,7 +1234,7 @@ const HAS_GPU=!!navigator.gpu;
 function chatEngines(){const a=[];if(SAMPLE)a.push(["claude","Claude · tự nhiên nhất (cần claude.ai)"]);
   a.push(["local","AI chạy trên máy bạn · không cần Claude"]);a.push(["basic","Hỏi đáp có sẵn · máy nào cũng chạy, không cần mạng"]);return a}
 function chatPickEng(){const ok=chatEngines().map(e=>e[0]),prev=chat.eng;
-  chat.eng=S.chatEng&&ok.includes(S.chatEng)?S.chatEng:SAMPLE?"claude":HAS_GPU&&!chat.noGpu?"local":"basic";
+  chat.eng=chat.picked&&ok.includes(chat.picked)?chat.picked:SAMPLE?"claude":S.chatEng&&ok.includes(S.chatEng)?S.chatEng:HAS_GPU&&!chat.noGpu?"local":"basic";
   if(prev&&prev!==chat.eng)chat.turns=[];}
 async function llmGpu(){if(!navigator.gpu)return null;try{return await navigator.gpu.requestAdapter()}catch(e){return null}}
 async function llmLib(){if(!LLM.lib)LLM.lib=await import(WEBLLM_URL);return LLM.lib}
@@ -1272,7 +1272,7 @@ function chatView(){
   app.innerHTML=`<div class="view-head"><span class="eyebrow">Trò chuyện với AI · nói và nghe tiếng Anh</span><h2>Luyện nói với chatbot</h2><p class="lead">Bấm micro và nói tiếng Anh (hoặc gõ). Chatbot trả lời bằng giọng đọc, sửa câu của bạn nếu sai. Bấm “Gợi ý” nếu chưa biết nói gì.</p></div>
   <div class="bar"><label class="note" for="ceng" style="align-self:center">Chatbot chạy bằng</label><select id="ceng" class="pill">${chatEngines().map(([k,t])=>`<option value="${k}" ${k===eng?"selected":""}>${esc(t)}</option>`).join("")}</select></div>
   <div id="chatbody"></div>`;
-  $("#ceng").onchange=e=>{chat.ctl&&chat.ctl.abort();chat.eng=e.target.value;S.chatEng=chat.eng;save();chat.turns=[];chatView()};
+  $("#ceng").onchange=e=>{chat.ctl&&chat.ctl.abort();chat.eng=chat.picked=e.target.value;S.chatEng=chat.eng;save();chat.turns=[];chatView()};
   if(eng==="local"&&!LLM.eng){$("#chatbody").innerHTML=llmPanel();
     $("#chatbody").querySelectorAll("[data-llm]").forEach(b=>b.onclick=()=>llmLoad(+b.dataset.llm));
     if(HAS_GPU&&!LLM.loading&&!LLM.checked){LLM.checked=true;llmGpu().then(ad=>{if(!ad){LLM.err="Máy hoặc trình duyệt này chưa bật WebGPU nên chưa chạy được AI trên máy. Bạn đang được chuyển sang chế độ “Hỏi đáp có sẵn”; có thể thử Chrome hoặc Edge bản mới trên máy tính.";chat.noGpu=true;if(location.hash==="#tro-chuyen")chatView();return}
