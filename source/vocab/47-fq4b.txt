@@ -1,0 +1,540 @@
+shook|đã lắc, rung (quá khứ của shake)|He shook my hand and smiled.|A2|f4
+inning|hiệp (bóng chày)|We left after the fifth inning.|B1|f4
+pee|đi tiểu (khẩu ngữ)|The kid needs to pee before we leave.|A2|f4
+touchdown|bàn chạm đất (bóng bầu dục); lúc máy bay hạ cánh|The plane made a smooth touchdown.|B1|f4
+sanction|lệnh trừng phạt; phê chuẩn|New sanctions hit the shipping companies.|B2|f4
+sensitivity|sự nhạy cảm|Handle this topic with sensitivity.|B2|f4
+sigh|thở dài|She gave a long sigh and sat down.|B1|f4
+sixteen|mười sáu|My son is sixteen years old.|A1|f4
+spouse|vợ hoặc chồng|You can bring your spouse to the party.|B1|f4
+synthetic|tổng hợp, nhân tạo|This jacket is made of synthetic fabric.|B2|f4
+tense|căng thẳng; thì (ngữ pháp)|The meeting was very tense.|B1|f4
+terrify|làm khiếp sợ|Big dogs terrify my little sister.|B1|f4
+trader|người buôn bán, thương nhân|He works as a trader at the market.|B1|f4
+vegan|người ăn chay thuần|Do you have any vegan dishes?|B1|f4
+wilderness|vùng hoang dã|They spent a week in the wilderness.|B2|f4
+aggregate|tổng cộng; cốt liệu (xây dựng)|The aggregate cost was higher than planned.|B2|f4
+anatomy|giải phẫu học|She studies human anatomy.|B2|f4
+applicant|người nộp đơn|We had fifty applicants for the job.|B1|f4
+automobile|ô tô|He works in the automobile industry.|B1|f4
+cement|xi măng|The truck is carrying bags of cement.|B1|f4
+composite|vật liệu tổng hợp; hỗn hợp|The boat is made of composite material.|B2|f4
+consequently|do đó, vì vậy|The truck broke down; consequently, we were late.|B2|f4
+decorate|trang trí|We decorated the office for the new year.|A2|f4
+delegate|đại biểu; giao việc|A good manager knows how to delegate.|B2|f4
+dull|buồn tẻ; cùn, xỉn|The meeting was long and dull.|B1|f4
+fare|giá vé|How much is the bus fare to the city?|A2|f4
+generator|máy phát điện|The factory has a backup generator.|B1|f4
+grind|xay, nghiền|I grind the coffee beans every morning.|B1|f4
+grove|lùm cây, vườn cây|They walked through an orange grove.|B2|f4
+gum|kẹo cao su; nướu răng|Can I have a piece of gum?|A2|f4
+idol|thần tượng|He was my childhood idol.|B1|f4
+illusion|ảo tưởng, ảo giác|Don't have any illusions about the job.|B2|f4
+incorrect|không đúng, sai|The address on the label is incorrect.|A2|f4
+junction|ngã ba, nút giao|Turn left at the next junction.|B1|f4
+leap|nhảy vọt|The cat leapt onto the table.|B1|f4
+masse|(en masse) cả loạt, hàng loạt|The workers left en masse at five.|B2|f4
+motive|động cơ (lý do)|What was his motive for leaving?|B2|f4
+optimal|tối ưu|We need the optimal route for delivery.|B2|f4
+postal|thuộc bưu điện|Please write your postal code.|B1|f4
+prep|chuẩn bị (khẩu ngữ, viết tắt của preparation)|Meal prep saves me a lot of time.|B1|f4
+profound|sâu sắc|The trip had a profound effect on me.|B2|f4
+prosecutor|công tố viên|The prosecutor asked for a long sentence.|B2|f4
+rebellion|cuộc nổi loạn|Teen rebellion is quite normal.|B2|f4
+recipient|người nhận|Write the recipient's name on the parcel.|B1|f4
+risky|mạo hiểm, rủi ro|Driving in this storm is risky.|B1|f4
+robust|chắc chắn, bền vững|We need a robust packing method.|B2|f4
+scam|trò lừa đảo|That email is a scam. Don't click it.|B1|f4
+shareholder|cổ đông|The shareholders will meet in May.|B2|f4
+simulation|sự mô phỏng|Pilots train with flight simulations.|B2|f4
+sober|tỉnh táo, không say|You must be sober to drive.|B1|f4
+spice|gia vị|This soup needs more spice.|A2|f4
+squeeze|vắt, ép, bóp|Squeeze some lemon on the fish.|B1|f4
+supervision|sự giám sát|New workers need close supervision.|B1|f4
+swap|đổi, trao đổi|Can we swap shifts on Friday?|B1|f4
+terrain|địa hình|The truck can handle rough terrain.|B2|f4
+thrill|sự hồi hộp, phấn khích|Riding a roller coaster is a real thrill.|B1|f4
+trio|bộ ba|A jazz trio played at the wedding.|B2|f4
+unconscious|bất tỉnh; vô thức|He fell and was unconscious for a minute.|B1|f4
+vibe|không khí, cảm giác (khẩu ngữ)|I love the vibe of this café.|B1|f4
+virtue|đức tính|Patience is a virtue.|B2|f4
+wi-fi|mạng wifi|What's the wi-fi password?|A1|f4
+workforce|lực lượng lao động|The warehouse workforce has grown to 200.|B2|f4
+zombie|thây ma, xác sống|We watched a zombie movie last night.|B1|f4
+arise|nảy sinh, phát sinh|Call me if any problems arise.|B2|f4
+automotive|thuộc ô tô|She works for an automotive parts supplier.|B2|f4
+battlefield|chiến trường|The old battlefield is now a park.|B2|f4
+bloom|nở hoa|The roses bloom in spring.|B1|f4
+bundle|bó, gói|Tie the cables in a bundle.|B1|f4
+butterfly|con bướm|A butterfly landed on my hand.|A2|f4
+casualty|thương vong|There were no casualties in the fire.|B2|f4
+clown|chú hề|The kids laughed at the clown.|A2|f4
+conjunction|liên từ; sự kết hợp|"And" and "but" are conjunctions.|B2|f4
+costly|tốn kém|A mistake like that can be costly.|B1|f4
+decorate (room)|trang hoàng (căn phòng)|We need to decorate the living room.|A2|f4
+descent|sự đi xuống; dòng dõi|The plane began its descent.|B2|f4
+desktop|máy tính để bàn; màn hình nền|Save the file to your desktop.|A2|f4
+dial|quay số; mặt số|Dial 0 for reception.|A2|f4
+directory|danh bạ; thư mục|Look up the number in the phone directory.|B1|f4
+discharge|xuất viện; dỡ hàng; xả|The ship will discharge its cargo tomorrow.|B2|f4
+dodge|né, tránh|He dodged the question.|B1|f4
+elimination|sự loại bỏ|Elimination of waste saves money.|B2|f4
+ginger|gừng|Add some ginger to the tea.|A2|f4
+guild|hội, phường hội|He joined the writers' guild.|B2|f4
+halt|dừng lại|Work came to a halt because of the rain.|B2|f4
+imaging|chụp ảnh (y tế), tạo ảnh|The hospital has new imaging equipment.|B2|f4
+inability|sự không có khả năng|His inability to listen is a problem.|B2|f4
+incoming|đến, gửi đến|Check all incoming shipments.|B1|f4
+jar|lọ, hũ|Pass me the jar of honey.|A2|f4
+litigation|kiện tụng|The case may end in litigation.|B2|f4
+mentor|người hướng dẫn, cố vấn|My first boss was a great mentor.|B1|f4
+merchandise|hàng hóa|All merchandise is on sale this week.|B1|f4
+miner|thợ mỏ|His father was a coal miner.|B1|f4
+monk|nhà sư|We met a monk at the temple.|B1|f4
+norm|chuẩn mực|Working from home is now the norm.|B2|f4
+offend|xúc phạm|I didn't mean to offend you.|B1|f4
+orthodox|chính thống|He has an orthodox approach to teaching.|B2|f4
+overhead|chi phí chung; trên đầu|Rent is our biggest overhead.|B2|f4
+painter|thợ sơn; họa sĩ|We hired a painter for the house.|A2|f4
+pierce|xuyên qua, xỏ (lỗ)|She had her ears pierced.|B2|f4
+pistol|súng ngắn|The police officer carried a pistol.|B2|f4
+prone|dễ bị, có thiên hướng|This area is prone to flooding.|B2|f4
+readily|sẵn sàng, dễ dàng|Spare parts are readily available.|B2|f4
+regiment|trung đoàn|He served in the army regiment.|B2|f4
+reunion|cuộc hội ngộ|We have a family reunion every summer.|B1|f4
+revival|sự hồi sinh|The town saw an economic revival.|B2|f4
+sanctuary|nơi trú ẩn; khu bảo tồn|We visited a bird sanctuary.|B2|f4
+sensor|cảm biến|The door has a motion sensor.|B1|f4
+siege|cuộc vây hãm|The city was under siege for months.|B2|f4
+sixty|sáu mươi|The box weighs sixty kilos.|A1|f4
+sleeve|tay áo|Roll up your sleeves.|A2|f4
+soundtrack|nhạc phim|I love the soundtrack of that movie.|B1|f4
+spine|cột sống; gáy sách|Lift with your legs to protect your spine.|B1|f4
+steer|lái, điều khiển|He steered the truck into the dock.|B1|f4
+tenure|nhiệm kỳ; thời gian giữ chức|During her tenure, sales doubled.|B2|f4
+texture|kết cấu, bề mặt|I like the texture of this fabric.|B2|f4
+thankful|biết ơn|I'm thankful for your help.|B1|f4
+treasurer|thủ quỹ|She is the club treasurer.|B2|f4
+triangle|hình tam giác|Put the warning triangle behind the truck.|A2|f4
+unclear|không rõ ràng|The instructions are unclear.|B1|f4
+wizard|phù thủy (nam); trình hướng dẫn|Follow the setup wizard to install it.|B1|f4
+absorb|hấp thụ|This cloth absorbs water quickly.|B1|f4
+admin|việc hành chính (khẩu ngữ)|I spend an hour a day on admin.|B1|f4
+affection|tình cảm, sự yêu mến|He shows a lot of affection for his kids.|B2|f4
+airplane|máy bay|The airplane landed on time.|A1|f4
+altitude|độ cao|We are flying at an altitude of 10,000 meters.|B2|f4
+bake|nướng (bánh)|My mother bakes bread on Sundays.|A2|f4
+baking|việc nướng bánh|Baking is my favorite hobby.|A2|f4
+beautifully|một cách đẹp đẽ|She sings beautifully.|A2|f4
+biblical|thuộc Kinh Thánh|It was a flood of biblical size.|B2|f4
+competent|có năng lực|She is a competent driver.|B2|f4
+crane|cần cẩu; con sếu|The crane lifted the container off the ship.|B1|f4
+debris|mảnh vụn, rác|Clear the debris from the road.|B2|f4
+delegation|phái đoàn; sự ủy quyền|A delegation from Japan visited the port.|B2|f4
+demographic|nhân khẩu học|Young people are our main demographic.|B2|f4
+donor|người hiến tặng|She is a blood donor.|B2|f4
+enroll|ghi danh, đăng ký học|I enrolled in an English course.|B1|f4
+enrollment|sự ghi danh|Enrollment ends on Friday.|B2|f4
+exceed|vượt quá|Do not exceed the weight limit.|B2|f4
+fierce|dữ dội, khốc liệt|Competition is fierce in this market.|B2|f4
+gratitude|lòng biết ơn|I want to express my gratitude.|B2|f4
+hail|mưa đá; vẫy (taxi)|Let's hail a taxi.|B2|f4
+illustration|hình minh họa|The book has many illustrations.|B1|f4
+indicator|chỉ số; đèn xi nhan|Use your indicator before turning.|B2|f4
+inequality|sự bất bình đẳng|Income inequality is growing.|B2|f4
+interpret|giải thích; phiên dịch|Can you interpret for me at the meeting?|B2|f4
+leisure|thời gian rảnh, giải trí|What do you do in your leisure time?|B1|f4
+lounge|phòng chờ, phòng khách|Wait in the airport lounge.|B1|f4
+luckily|may mắn thay|Luckily, nobody was hurt.|A2|f4
+manuscript|bản thảo|She sent her manuscript to a publisher.|B2|f4
+mint|bạc hà; mới tinh|Would you like a mint?|A2|f4
+molecule|phân tử|Water molecules are very small.|B2|f4
+outline|đề cương; phác thảo|Give me a short outline of the plan.|B1|f4
+pasta|mì Ý|We had pasta for dinner.|A1|f4
+reliability|độ tin cậy|Reliability is key for our delivery service.|B2|f4
+runway|đường băng|The plane is waiting on the runway.|B1|f4
+sculpture|tác phẩm điêu khắc|There is a big sculpture in the park.|B1|f4
+showcase|trưng bày, giới thiệu|The fair showcases new products.|B2|f4
+subsidiary|công ty con|They opened a subsidiary in Vietnam.|B2|f4
+tenth|thứ mười|Today is our tenth anniversary.|A2|f4
+underwater|dưới nước|We took photos underwater.|B1|f4
+velocity|vận tốc|The wind velocity is very high today.|B2|f4
+wax|sáp|Candles are made of wax.|B1|f4
+yay|hoan hô (thán từ)|Yay! We won!|A2|f4
+accountability|trách nhiệm giải trình|We need more accountability in the team.|B2|f4
+aerial|trên không|The aerial photos show the whole port.|B2|f4
+alcoholic|có cồn; người nghiện rượu|Do you have any non-alcoholic drinks?|B1|f4
+amaze|làm kinh ngạc|Her skills amaze me.|B1|f4
+ambition|hoài bão, tham vọng|My ambition is to run my own company.|B1|f4
+ammunition|đạn dược|The soldiers ran out of ammunition.|B2|f4
+anthem|quốc ca, bài ca|They played the national anthem.|B1|f4
+automate|tự động hóa|We want to automate the packing line.|B2|f4
+catalog|danh mục, ca-ta-lô|Check the catalog for prices.|B1|f4
+charitable|từ thiện|She gives money to charitable causes.|B2|f4
+collector|người sưu tầm; người thu|He is a stamp collector.|B1|f4
+compliment|lời khen|Thanks for the compliment!|B1|f4
+continually|liên tục|The phone rang continually all day.|B2|f4
+coordinator|điều phối viên|Ask the shipping coordinator.|B1|f4
+deployment|sự triển khai|The deployment of the new system is next week.|B2|f4
+enjoyable|thú vị, dễ chịu|It was an enjoyable trip.|B1|f4
+exotic|kỳ lạ, ngoại lai|We tried some exotic fruits.|B1|f4
+exterior|bên ngoài|They painted the exterior of the house.|B2|f4
+feminine|nữ tính|She likes feminine clothes.|B2|f4
+firearm|súng|Firearms are not allowed on board.|B2|f4
+fountain|đài phun nước|Let's meet at the fountain.|A2|f4
+fury|cơn giận dữ|He was shaking with fury.|B2|f4
+genocide|tội diệt chủng|The museum tells the story of the genocide.|B2|f4
+glance|liếc nhìn|She glanced at her watch.|B1|f4
+glow|phát sáng, ánh sáng|The lamp gave a warm glow.|B1|f4
+hay|cỏ khô|The farmer stacked the hay.|B1|f4
+humanitarian|nhân đạo|They sent humanitarian aid.|B2|f4
+immunity|miễn dịch|Vaccines build immunity.|B2|f4
+inherit|thừa kế|She inherited the house from her aunt.|B2|f4
+liberation|sự giải phóng|They celebrated Liberation Day.|B2|f4
+likelihood|khả năng xảy ra|What is the likelihood of a delay?|B2|f4
+lone|đơn độc|A lone truck waited at the gate.|B2|f4
+massacre|cuộc thảm sát|The massacre shocked the world.|B2|f4
+meme|ảnh chế, meme|He sent me a funny meme.|B1|f4
+necessity|sự cần thiết|A car is a necessity here.|B2|f4
+nickname|biệt danh|My nickname at school was "Bean".|A2|f4
+observer|người quan sát|Observers watched the election.|B2|f4
+offshore|ngoài khơi; ở nước ngoài|They work on an offshore oil rig.|B2|f4
+optional|tùy chọn|Insurance is optional.|B1|f4
+pioneer|người tiên phong|He was a pioneer in online shopping.|B2|f4
+plaza|quảng trường|The plaza is full of people at night.|B1|f4
+prescribe|kê đơn|The doctor prescribed some medicine.|B1|f4
+prosperity|sự thịnh vượng|We wish you health and prosperity.|B2|f4
+recreational|giải trí|The park has recreational areas.|B2|f4
+refuge|nơi ẩn náu|They took refuge from the storm.|B2|f4
+renewable|tái tạo|Solar power is a renewable energy.|B2|f4
+sphere|hình cầu; lĩnh vực|The Earth is almost a sphere.|B2|f4
+suburban|ngoại ô|They live in a suburban area.|B2|f4
+terribly|tệ hại; cực kỳ|I'm terribly sorry.|B1|f4
+territorial|thuộc lãnh thổ|Dogs can be very territorial.|B2|f4
+thriller|phim/truyện ly kỳ|Let's watch a thriller tonight.|B1|f4
+toss|tung, ném nhẹ|Toss me the keys.|B1|f4
+turtle|con rùa|We saw a sea turtle on the beach.|A2|f4
+verbal|bằng lời nói|We have a verbal agreement.|B2|f4
+violate|vi phạm|Don't violate the safety rules.|B2|f4
+wool|len|This sweater is made of wool.|A2|f4
+accountable|chịu trách nhiệm|Managers are accountable for safety.|B2|f4
+advocacy|sự vận động, ủng hộ|She works in health advocacy.|B2|f4
+aftermath|hậu quả|In the aftermath of the storm, roads were closed.|B2|f4
+aggression|sự gây hấn|Aggression at work is not allowed.|B2|f4
+analyze|phân tích|We analyze the sales data every month.|B1|f4
+arguably|có thể nói là|He is arguably the best driver we have.|B2|f4
+balloon|bóng bay|The kids are playing with balloons.|A2|f4
+blunt|thẳng thừng; cùn|To be blunt, your work is late.|B2|f4
+brigade|lữ đoàn; đội|Call the fire brigade!|B2|f4
+burial|sự chôn cất|The burial took place on Monday.|B2|f4
+cardinal|hồng y; cơ bản|Safety is the cardinal rule here.|B2|f4
+champ|nhà vô địch (khẩu ngữ)|Good job, champ!|B1|f4
+champagne|rượu sâm panh|Let's open a bottle of champagne.|B1|f4
+chorus|điệp khúc; dàn hợp xướng|Everyone sang the chorus.|B1|f4
+chrome|crôm (kim loại)|The car has chrome wheels.|B2|f4
+clarity|sự rõ ràng|We need more clarity on the deadline.|B2|f4
+confidential|bí mật, mật|This report is confidential.|B2|f4
+coordination|sự phối hợp|Good coordination between teams is key.|B2|f4
+discretion|sự thận trọng; quyền tự quyết|Use your discretion.|B2|f4
+ditch|mương; bỏ (khẩu ngữ)|The car ended up in a ditch.|B1|f4
+dome|mái vòm|The church has a golden dome.|B2|f4
+drought|hạn hán|The drought ruined the crops.|B2|f4
+elevation|độ cao so với mực nước biển|The town is at an elevation of 1,500 meters.|B2|f4
+esteem|sự quý trọng|She is held in high esteem.|B2|f4
+fog|sương mù|The fog delayed all flights.|A2|f4
+gesture|cử chỉ|It was a kind gesture.|B1|f4
+gosh|trời ơi (thán từ)|Oh gosh, I forgot my keys!|A2|f4
+historian|nhà sử học|My uncle is a historian.|B1|f4
+horizontal|nằm ngang|Keep the box horizontal.|B2|f4
+hospitality|lòng hiếu khách; ngành khách sạn nhà hàng|Thank you for your hospitality.|B2|f4
+hostage|con tin|They held three people hostage.|B2|f4
+individually|riêng lẻ, từng cái|Wrap each glass individually.|B1|f4
+inevitably|không thể tránh khỏi|Inevitably, prices went up.|B2|f4
+lad|chàng trai (khẩu ngữ Anh)|He's a nice lad.|B1|f4
+listing|danh sách; tin đăng|I saw the job listing online.|B1|f4
+literacy|khả năng đọc viết|Computer literacy is important today.|B2|f4
+migrant|người di cư|Many migrant workers live here.|B2|f4
+mislead|làm hiểu sai, lừa dối|The ad was misleading.|B2|f4
+moisture|độ ẩm|Keep the goods away from moisture.|B2|f4
+monument|đài tưởng niệm|We visited the war monument.|B1|f4
+mortality|tỷ lệ tử vong|Infant mortality has fallen.|B2|f4
+obsession|nỗi ám ảnh, sự say mê|Football is his obsession.|B2|f4
+opt|chọn|Many workers opt for the night shift.|B2|f4
+peanut|đậu phộng|I'm allergic to peanuts.|A2|f4
+persistent|dai dẳng; kiên trì|She has a persistent cough.|B2|f4
+petroleum|dầu mỏ|Petroleum prices are rising.|B2|f4
+pharmaceutical|thuộc dược phẩm|He works for a pharmaceutical company.|B2|f4
+progression|sự tiến triển|There is good career progression here.|B2|f4
+rack|giá, kệ|Put the boxes on the rack.|B1|f4
+rebuild|xây lại|They rebuilt the bridge after the flood.|B1|f4
+recording|bản ghi âm|Listen to the recording again.|A2|f4
+reservoir|hồ chứa nước|The reservoir is almost empty.|B2|f4
+sensation|cảm giác; sự náo động|I had a burning sensation in my hand.|B2|f4
+shaft|trục; giếng (thang máy, mỏ)|The motor shaft is broken.|B2|f4
+shepherd|người chăn cừu|The shepherd watched his sheep.|B1|f4
+shuttle|xe/chuyến đưa đón|Take the shuttle bus to the airport.|B1|f4
+slope|dốc|Drive slowly down the slope.|B1|f4
+spotlight|đèn sân khấu; sự chú ý|She loves being in the spotlight.|B2|f4
+stab|đâm|He was stabbed in a fight.|B2|f4
+stern|nghiêm khắc; đuôi tàu|The teacher gave him a stern look.|B2|f4
+stiff|cứng; mỏi|My neck is stiff.|B1|f4
+striker|tiền đạo|Our striker scored two goals.|B1|f4
+terrific|tuyệt vời|You did a terrific job!|B1|f4
+trafficking|buôn lậu|Drug trafficking is a serious crime.|B2|f4
+transparency|sự minh bạch|Customers want more transparency on prices.|B2|f4
+unemployed|thất nghiệp|He has been unemployed for six months.|B1|f4
+unlock|mở khóa|Unlock the door, please.|A2|f4
+vault|kho bạc, hầm|The money is kept in a vault.|B2|f4
+vet|bác sĩ thú y|I took my dog to the vet.|A2|f4
+wagon|toa xe; xe goòng|Load the goods onto the wagon.|B1|f4
+adverse|bất lợi|Adverse weather delayed the ship.|B2|f4
+awhile|một lúc|Stay awhile and have some tea.|B1|f4
+biography|tiểu sử|I'm reading a biography of Ho Chi Minh.|B1|f4
+broker|người môi giới|Our customs broker will handle the papers.|B1|f4
+browser|trình duyệt|Open the link in your browser.|A2|f4
+cellular|thuộc tế bào; di động|Cellular data is expensive abroad.|B2|f4
+cocktail|cốc-tai|Would you like a cocktail?|B1|f4
+conditioning|sự điều hòa; rèn luyện thể lực|The air conditioning is broken.|B1|f4
+counseling|sự tư vấn|She gets counseling for stress.|B2|f4
+destructive|có tính phá hoại|The storm was very destructive.|B2|f4
+dislike|không thích|I dislike waiting in line.|A2|f4
+embed|nhúng, gắn vào|You can embed the video in the page.|B2|f4
+farewell|lời chia tay|We had a farewell party for him.|B1|f4
+fist|nắm đấm|He banged his fist on the table.|B1|f4
+fond|thích, mến|I'm very fond of my cousins.|B1|f4
+foolish|ngớ ngẩn|It was foolish of me to forget.|B1|f4
+frog|con ếch|We heard frogs at night.|A2|f4
+hawk|chim ưng|A hawk flew over the field.|B1|f4
+heir|người thừa kế|He is the heir to the business.|B2|f4
+imprisonment|sự bỏ tù|He got five years' imprisonment.|B2|f4
+landmark|địa danh, cột mốc|The tower is a famous landmark.|B1|f4
+liable|chịu trách nhiệm pháp lý|The carrier is liable for the damage.|B2|f4
+midst|giữa|We are in the midst of moving house.|B2|f4
+misery|sự khổ sở|The flood caused great misery.|B2|f4
+module|học phần; mô-đun|This course has six modules.|B2|f4
+mommy|mẹ (trẻ con gọi)|Mommy, can I have ice cream?|A1|f4
+mosque|nhà thờ Hồi giáo|There's a mosque near the market.|B1|f4
+moss|rêu|The stones were covered in moss.|B1|f4
+nursery|nhà trẻ; vườn ươm|My daughter goes to nursery.|A2|f4
+plague|bệnh dịch|The city was hit by plague.|B2|f4
+positively|một cách tích cực|Think positively.|B1|f4
+rogue|kẻ lừa đảo; bất hảo|A rogue app stole his data.|B2|f4
+sharply|đột ngột; sắc bén|Prices rose sharply.|B2|f4
+sincerely|chân thành|Yours sincerely, Nam.|B1|f4
+solidarity|sự đoàn kết|The workers showed solidarity.|B2|f4
+specialty|đặc sản; chuyên môn|Pho is a specialty of Hanoi.|B1|f4
+supernatural|siêu nhiên|Do you believe in the supernatural?|B2|f4
+thirteen|mười ba|There are thirteen pallets.|A1|f4
+tomb|ngôi mộ, lăng mộ|We visited the king's tomb.|B1|f4
+trademark|nhãn hiệu|The logo is a registered trademark.|B2|f4
+trim|cắt tỉa|Just a trim, please.|B1|f4
+voyage|chuyến đi biển|The voyage took three weeks.|B1|f4
+abbey|tu viện|We visited an old abbey.|B2|f4
+adjustment|sự điều chỉnh|We made a small adjustment to the schedule.|B1|f4
+baron|nam tước; trùm|He's a media baron.|B2|f4
+bomber|máy bay ném bom; kẻ đánh bom|The bomber was arrested.|B2|f4
+bunny|con thỏ (cách gọi trẻ con)|The kids love the bunny.|A1|f4
+candle|nến|Light a candle.|A2|f4
+carve|chạm khắc; cắt (thịt)|He carved the chicken.|B1|f4
+choir|dàn hợp xướng|She sings in the church choir.|B1|f4
+clutch|bộ ly hợp; nắm chặt|Press the clutch before changing gear.|B1|f4
+coconut|quả dừa|I'd like some coconut water.|A2|f4
+comprise|bao gồm|The team comprises ten people.|B2|f4
+confession|lời thú tội|He made a full confession.|B2|f4
+corridor|hành lang|The office is at the end of the corridor.|B1|f4
+credibility|sự đáng tin|The company lost credibility.|B2|f4
+critically|một cách nghiêm trọng; phê phán|He is critically ill.|B2|f4
+distract|làm sao nhãng|Don't distract the driver.|B1|f4
+dolphin|cá heo|We saw dolphins from the boat.|A2|f4
+fourteen|mười bốn|The trip takes fourteen days.|A1|f4
+geometry|hình học|I was bad at geometry at school.|B1|f4
+gossip|chuyện ngồi lê, buôn chuyện|Don't listen to office gossip.|B1|f4
+grandparent|ông bà|My grandparents live in the country.|A2|f4
+haul|kéo; chuyến chở|Long-haul flights are tiring.|B1|f4
+header|tiêu đề đầu trang; cú đánh đầu|Put the date in the header.|B1|f4
+headphone|tai nghe|I left my headphones at home.|A2|f4
+immense|to lớn|The warehouse is immense.|B2|f4
+interfere|can thiệp|Don't interfere in their argument.|B2|f4
+investigator|điều tra viên|An investigator checked the accident.|B2|f4
+juvenile|vị thành niên|He went to a juvenile court.|B2|f4
+karma|nghiệp, quả báo|That's karma!|B1|f4
+leverage|đòn bẩy; tận dụng|We can leverage our size to cut costs.|B2|f4
+lining|lớp lót|The coat has a warm lining.|B2|f4
+mankind|nhân loại|It's a big step for mankind.|B2|f4
+mapping|việc lập bản đồ|Mapping the warehouse took a week.|B2|f4
+metric|hệ mét; chỉ số đo|We use the metric system.|B2|f4
+militia|dân quân|The militia guarded the village.|B2|f4
+node|nút, điểm nối|Each hub is a node in our network.|B2|f4
+obstacle|chướng ngại vật|There's an obstacle on the road.|B1|f4
+opener|cái mở (nắp, hộp)|Where's the bottle opener?|A2|f4
+overwhelm|làm choáng ngợp|Don't overwhelm new staff with information.|B2|f4
+performer|người biểu diễn|The street performers were great.|B1|f4
+pointless|vô ích|It's pointless to argue.|B1|f4
+prompt|nhanh chóng; nhắc|Thank you for your prompt reply.|B1|f4
+proximity|sự gần gũi|The warehouse is in close proximity to the port.|B2|f4
+qualification|bằng cấp, trình độ|What qualifications do you have?|B1|f4
+render|làm cho; kết xuất|The heavy rain rendered the road unsafe.|B2|f4
+sadness|nỗi buồn|There was sadness in her eyes.|A2|f4
+selective|có chọn lọc|Be selective about what you buy.|B2|f4
+shiny|sáng bóng|He bought a shiny new car.|A2|f4
+socialism|chủ nghĩa xã hội|They studied socialism at university.|B2|f4
+stressful|căng thẳng|Moving house is stressful.|B1|f4
+tenant|người thuê nhà|The tenant pays rent every month.|B1|f4
+terrace|sân thượng, hiên|Let's sit on the terrace.|B1|f4
+thief|kẻ trộm|The thief took my phone.|A2|f4
+tribunal|tòa án đặc biệt|The case went to a tribunal.|B2|f4
+undoubtedly|chắc chắn|She is undoubtedly the best.|B2|f4
+villain|nhân vật phản diện|The villain dies at the end.|B1|f4
+whistle|còi; huýt sáo|The referee blew the whistle.|A2|f4
+yearly|hằng năm|We have a yearly check-up.|B1|f4
+abusive|lăng mạ, ngược đãi|Abusive language is not allowed.|B2|f4
+appetite|sự thèm ăn|I have no appetite today.|B1|f4
+backyard|sân sau|The kids play in the backyard.|A2|f4
+billboard|bảng quảng cáo lớn|There's a huge billboard on the highway.|B1|f4
+calculation|phép tính|Let me check my calculations.|B1|f4
+conceive|hình dung; thụ thai|I can't conceive of a better plan.|B2|f4
+damned|chết tiệt (khẩu ngữ)|The damned printer is broken again.|B1|f4
+dissolve|hòa tan; giải tán|Dissolve the sugar in hot water.|B1|f4
+dynasty|triều đại|The Nguyen dynasty ruled from Hue.|B2|f4
+economist|nhà kinh tế học|Economists expect prices to fall.|B2|f4
+endorse|tán thành; quảng bá|The famous player endorses this shoe.|B2|f4
+extensively|rộng rãi|He has travelled extensively in Asia.|B2|f4
+forehead|trán|He wiped his forehead.|A2|f4
+forgiveness|sự tha thứ|I ask for your forgiveness.|B2|f4
+gem|đá quý; người/vật quý|This little café is a real gem.|B1|f4
+haunt|ám ảnh; ma ám|People say the house is haunted.|B2|f4
+hypothesis|giả thuyết|Let's test the hypothesis.|B2|f4
+illegally|bất hợp pháp|He parked illegally.|B1|f4
+incline|dốc; có khuynh hướng|I'm inclined to agree.|B2|f4
+informal|thân mật, không trang trọng|It's an informal meeting.|B1|f4
+marker|bút dạ; dấu|Write the code with a marker.|A2|f4
+marsh|đầm lầy|Birds live in the marsh.|B2|f4
+marshal|cảnh sát trưởng; điều phối|The marshals directed the traffic.|B2|f4
+maturity|sự trưởng thành; đáo hạn|She shows great maturity.|B2|f4
+messy|bừa bộn|My desk is so messy.|A2|f4
+optimistic|lạc quan|I'm optimistic about the future.|B1|f4
+owl|con cú|I'm a night owl.|A2|f4
+problematic|có vấn đề|This route is problematic in winter.|B2|f4
+processor|bộ xử lý|This laptop has a fast processor.|B1|f4
+promotional|khuyến mãi|We have promotional prices this week.|B2|f4
+prospective|tương lai, tiềm năng|We met a prospective client.|B2|f4
+psychiatric|thuộc tâm thần|He needs psychiatric help.|B2|f4
+renaissance|thời Phục hưng; sự phục hồi|The city is having a renaissance.|B2|f4
+repeal|bãi bỏ (luật)|They want to repeal the tax.|B2|f4
+roast|quay, nướng|We had roast chicken.|A2|f4
+saga|câu chuyện dài|The delivery became a long saga.|B2|f4
+salon|tiệm làm tóc, thẩm mỹ|She went to the hair salon.|A2|f4
+seventeen|mười bảy|She is seventeen.|A1|f4
+sodium|natri|This food is high in sodium.|B2|f4
+surplus|thặng dư, dư thừa|We have a surplus of stock.|B2|f4
+swallow|nuốt; chim én|Swallow the pill with water.|B1|f4
+systematic|có hệ thống|We need a systematic approach.|B2|f4
+transmit|truyền, phát|The sensor transmits data every minute.|B2|f4
+unacceptable|không thể chấp nhận|This delay is unacceptable.|B1|f4
+unaware|không biết|I was unaware of the problem.|B2|f4
+uncommon|không phổ biến|It's not uncommon to wait an hour.|B2|f4
+underway|đang tiến hành|Work is already underway.|B2|f4
+unify|thống nhất|We need to unify our systems.|B2|f4
+unstable|không ổn định|The stack of boxes is unstable.|B1|f4
+vague|mơ hồ|His answer was vague.|B2|f4
+zip|khóa kéo; nén file|Can you zip the files and send them?|A2|f4
+abundance|sự phong phú|There's an abundance of fresh fruit here.|B2|f4
+ant|con kiến|There are ants in the kitchen.|A2|f4
+antique|đồ cổ|She collects antique furniture.|B1|f4
+autonomy|sự tự chủ|Teams have more autonomy now.|B2|f4
+behavioral|thuộc hành vi|We look at behavioral data.|B2|f4
+breeze|làn gió nhẹ; dễ như ăn kẹo|The test was a breeze.|B1|f4
+carnival|lễ hội|The carnival comes every summer.|B1|f4
+commodity|hàng hóa (nguyên liệu)|Coffee is a major commodity.|B2|f4
+congressman|nghị sĩ|The congressman gave a speech.|B2|f4
+cooperative|hợp tác xã; hợp tác|The workers are very cooperative.|B2|f4
+coral|san hô|The coral reef is beautiful.|B1|f4
+correlation|sự tương quan|There's a correlation between price and demand.|B2|f4
+correspondent|phóng viên|She is a foreign correspondent.|B2|f4
+coupon|phiếu giảm giá|Use this coupon to save 10%.|A2|f4
+curtain|rèm cửa|Close the curtains, please.|A2|f4
+dough|bột nhào|Knead the dough for ten minutes.|B1|f4
+endangered|có nguy cơ tuyệt chủng|Tigers are an endangered species.|B1|f4
+envelope|phong bì|Put the letter in an envelope.|A2|f4
+fade|phai, mờ dần|The colors fade in the sun.|B1|f4
+fatigue|sự mệt mỏi|Driver fatigue causes accidents.|B2|f4
+fellowship|tình bằng hữu; học bổng nghiên cứu|She got a research fellowship.|B2|f4
+fictional|hư cấu|The story is fictional.|B1|f4
+fringe|tóc mái; rìa|She has a short fringe.|B2|f4
+fulfill|hoàn thành, đáp ứng|We fulfill orders within 24 hours.|B2|f4
+granite|đá granit|The kitchen has granite counters.|B2|f4
+handbook|sổ tay hướng dẫn|Read the staff handbook.|B1|f4
+instinct|bản năng|Trust your instinct.|B2|f4
+irony|sự trớ trêu|The irony is that he was never late before.|B2|f4
+judiciary|ngành tư pháp|The judiciary is independent.|B2|f4
+legion|quân đoàn; vô số|He served in the legion.|B2|f4
+lethal|gây chết người|The chemical is lethal.|B2|f4
+lime|chanh xanh; vôi|Add a slice of lime.|A2|f4
+lively|sôi nổi|The market is very lively.|B1|f4
+maid|người giúp việc|The hotel maid cleaned the room.|A2|f4
+maple|cây phong|Maple syrup is sweet.|B1|f4
+midfielder|tiền vệ|He plays as a midfielder.|B1|f4
+mindset|lối tư duy|You need a positive mindset.|B2|f4
+mortal|phải chết; trần tục|We are all mortal.|B2|f4
+nonprofit|phi lợi nhuận|She works for a nonprofit.|B2|f4
+operative|có hiệu lực; nhân viên|The rule is operative from today.|B2|f4
+prestigious|danh tiếng|She went to a prestigious university.|B2|f4
+radius|bán kính|We deliver within a 10 km radius.|B2|f4
+relay|chạy tiếp sức; chuyển tiếp|Please relay the message to your boss.|B2|f4
+rig|giàn khoan; dàn dựng|He works on an oil rig.|B2|f4
+scroll|cuộn (màn hình)|Scroll down to see more.|A2|f4
+sovereignty|chủ quyền|They defend national sovereignty.|B2|f4
+stunt|pha nguy hiểm|Don't try this stunt at home.|B2|f4
+sunlight|ánh nắng|Keep it out of direct sunlight.|A2|f4
+surf|lướt sóng; lướt web|We surfed at the beach.|A2|f4
+symbolic|mang tính biểu tượng|It's a symbolic gesture.|B2|f4
+sync|đồng bộ|Sync your phone with your laptop.|B1|f4
+taxpayer|người nộp thuế|Taxpayers will pay for the new road.|B2|f4
+tempt|cám dỗ|Don't tempt me with cake!|B1|f4
+thrust|lực đẩy; đẩy mạnh|He thrust the papers into my hand.|B2|f4
+trilogy|bộ ba (phim, sách)|I've seen the whole trilogy.|B2|f4
+wheelchair|xe lăn|The building has wheelchair access.|A2|f4
+yourselves|chính các bạn|Help yourselves to some food.|A2|f4
+accusation|lời buộc tội|He denied the accusation.|B2|f4
+arbitrary|tùy tiện|The rule seems arbitrary.|B2|f4
+autonomous|tự hành, tự trị|Autonomous trucks are being tested.|B2|f4
+bait|mồi|He put bait on the hook.|B2|f4
+bark|sủa; vỏ cây|The dog barks at strangers.|A2|f4
+blogger|người viết blog|She's a travel blogger.|A2|f4
+brotherhood|tình anh em|They have a strong brotherhood.|B2|f4
+builder|thợ xây|The builders start at 7 a.m.|A2|f4
+carriage|toa xe; sự vận chuyển|Carriage costs are included.|B2|f4
+censorship|sự kiểm duyệt|There is strict censorship of films.|B2|f4
+clarify|làm rõ|Could you clarify that point?|B1|f4
+compilation|tuyển tập|It's a compilation of old songs.|B2|f4
+composer|nhà soạn nhạc|Mozart was a great composer.|B1|f4
+constitute|cấu thành|Women constitute half of the workforce.|B2|f4
+correspondence|thư từ|Keep all correspondence with the client.|B2|f4
+desirable|đáng mong muốn|Experience is desirable but not required.|B2|f4
+devastate|tàn phá; làm suy sụp|The fire devastated the factory.|B2|f4
+diagram|sơ đồ|Look at the diagram on page 5.|B1|f4
+erect|dựng lên; thẳng đứng|They erected a tent.|B2|f4
+explorer|nhà thám hiểm|He's a famous explorer.|B1|f4
+favorable|thuận lợi|The weather is favorable for sailing.|B2|f4
+flaw|khuyết điểm|There's a flaw in the design.|B2|f4
+gasoline|xăng|Gasoline prices went up again.|B1|f4
+geographical|thuộc địa lý|The geographical location is perfect.|B2|f4
+governmental|thuộc chính phủ|It's a governmental agency.|B2|f4
+grandson|cháu trai (của ông bà)|My grandson is five.|A2|f4
+incomplete|không đầy đủ|The form is incomplete.|B1|f4
+interrupt|ngắt lời|Sorry to interrupt, but the truck is here.|B1|f4
+ivory|ngà voi|The ivory trade is illegal.|B2|f4
+lengthy|dài dòng|It was a lengthy meeting.|B2|f4
+levy|thuế; đánh thuế|They levy a tax on imports.|B2|f4
+manipulation|sự thao túng|Price manipulation is illegal.|B2|f4
+mock|chế giễu; thi thử|We have a mock exam on Friday.|B2|f4
+niche|thị trường ngách|They found a niche in the market.|B2|f4
+obscure|mù mờ, ít người biết|It's an obscure band.|B2|f4
+porch|hiên nhà|They sat on the porch.|B1|f4
+portray|miêu tả, khắc họa|The film portrays life in the city.|B2|f4
+proposition|đề xuất|That's an interesting proposition.|B2|f4
+reading|việc đọc; chỉ số đo|Take a meter reading.|A2|f4
+recession|suy thoái kinh tế|Many businesses closed during the recession.|B2|f4
+rim|vành, mép|The cup has a gold rim.|B2|f4
+secondly|thứ hai là|Firstly, it's cheap. Secondly, it's fast.|B1|f4
+spinal|thuộc cột sống|He had a spinal injury.|B2|f4

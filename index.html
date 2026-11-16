@@ -123,6 +123,7 @@ button.card:hover{border-color:var(--steel)}
 .chat.show-vi .msg .vi{display:block}
 .msg .fix{margin-top:8px;padding-top:8px;border-top:1px solid color-mix(in srgb,var(--surface) 35%,transparent);font-size:.88rem}
 .msg.me .linkish{color:inherit}
+.llm-prog{height:10px;border-radius:6px;background:var(--line);overflow:hidden;margin:8px 0 4px}.llm-prog div{height:100%;background:var(--navy);transition:width .3s}
 .chat-hints{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
 .hint{display:flex;flex-direction:column;gap:2px;text-align:left;background:var(--chip);border:1px solid var(--line);border-radius:var(--r);padding:8px 12px;color:var(--ink);font:inherit;cursor:pointer;max-width:100%}
 .chat-in{gap:10px}
@@ -238,7 +239,7 @@ footer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px soli
 </header>
 
 <main class="wrap" id="app"></main>
-<footer class="wrap"><b>Phiên bản 16/11/2026 08:28 · 5887 từ, có IPA UK/US</b> · Âm thanh dùng giọng tiếng Anh có sẵn trên máy bạn; nếu không nghe thấy, hãy kiểm tra âm lượng và chế độ im lặng. Chấm phát âm dựa trên việc máy nhận ra đúng từ bạn đọc, nên đọc chậm, rõ ở nơi yên tĩnh. Tiến độ học lưu trên trình duyệt này. Video mở trên YouTube ở tab mới.</footer>
+<footer class="wrap"><b>Phiên bản 16/11/2026 08:42 · 6427 từ, có IPA UK/US</b> · Âm thanh dùng giọng tiếng Anh có sẵn trên máy bạn; nếu không nghe thấy, hãy kiểm tra âm lượng và chế độ im lặng. Chấm phát âm dựa trên việc máy nhận ra đúng từ bạn đọc, nên đọc chậm, rõ ở nơi yên tĩnh. Tiến độ học lưu trên trình duyệt này. Video mở trên YouTube ở tab mới.</footer>
 
 <script>
 const ICON={
@@ -6180,7 +6181,547 @@ quarterback|tiền vệ (bóng bầu dục)|The quarterback threw the ball.|B2|f
 ref|trọng tài (thân mật)|The ref gave a penalty.|B1|f4|/ˈrɛf/|/ˈrɛf/
 relieve|làm dịu|Relieve pain|B1|f4|/rɪˈliːv/|/rɪˈliːv/
 rhetoric|lời lẽ hoa mỹ|Political rhetoric|B2|f4|/ˈrɛtəˌrɪk/|/ˈrɛtəˌrɪk/
-salvation|sự cứu rỗi|Salvation Army|B2|f4|/sælˈveɪʃən/|/sælˈveɪʃən/`;
+salvation|sự cứu rỗi|Salvation Army|B2|f4|/sælˈveɪʃən/|/sælˈveɪʃən/
+shook|đã lắc, rung (quá khứ của shake)|He shook my hand and smiled.|A2|f4|/ˈʃʊk/|/ˈʃʊk/
+inning|hiệp (bóng chày)|We left after the fifth inning.|B1|f4|/ˈɪnɪŋ/|/ˈɪnɪŋ/
+pee|đi tiểu (khẩu ngữ)|The kid needs to pee before we leave.|A2|f4|/ˈpiː/|/ˈpiː/
+touchdown|bàn chạm đất (bóng bầu dục); lúc máy bay hạ cánh|The plane made a smooth touchdown.|B1|f4|/ˈtʌtʃdaʊn/|/ˈtʌtʃdaʊn/
+sanction|lệnh trừng phạt; phê chuẩn|New sanctions hit the shipping companies.|B2|f4|/ˈsæŋkʃən/|/ˈsæŋkʃən/
+sensitivity|sự nhạy cảm|Handle this topic with sensitivity.|B2|f4|/ˌsɛnsɪˈtɪvɪti/|/ˌsɛnsɪˈtɪvɪti/
+sigh|thở dài|She gave a long sigh and sat down.|B1|f4|/ˈsaɪ/|/ˈsaɪ/
+sixteen|mười sáu|My son is sixteen years old.|A1|f4|/ˈsɪkstiːn/|/ˈsɪkstiːn/
+spouse|vợ hoặc chồng|You can bring your spouse to the party.|B1|f4|/ˈspaʊs/|/ˈspaʊs/
+synthetic|tổng hợp, nhân tạo|This jacket is made of synthetic fabric.|B2|f4|/sɪnˈθɛtɪk/|/sɪnˈθɛtɪk/
+tense|căng thẳng; thì (ngữ pháp)|The meeting was very tense.|B1|f4|/ˈtɛns/|/ˈtɛns/
+terrify|làm khiếp sợ|Big dogs terrify my little sister.|B1|f4|/ˈtɛrɪˌfaɪ/|/ˈtɛrɪˌfaɪ/
+trader|người buôn bán, thương nhân|He works as a trader at the market.|B1|f4|/ˈtreɪdə/|/ˈtreɪdər/
+vegan|người ăn chay thuần|Do you have any vegan dishes?|B1|f4|/ˈviːɡən/|/ˈviːɡən/
+wilderness|vùng hoang dã|They spent a week in the wilderness.|B2|f4|/ˈwɪldənəs/|/ˈwɪldərnəs/
+aggregate|tổng cộng; cốt liệu (xây dựng)|The aggregate cost was higher than planned.|B2|f4|/ˈæɡrɪˌɡeɪt/|/ˈæɡrɪˌɡeɪt/
+anatomy|giải phẫu học|She studies human anatomy.|B2|f4|/əˈnætəmi/|/əˈnætəmi/
+applicant|người nộp đơn|We had fifty applicants for the job.|B1|f4|/ˈæplɪkənt/|/ˈæplɪkənt/
+automobile|ô tô|He works in the automobile industry.|B1|f4|/ˈɔːtəməˌbiəl/|/ˈɔːtəməˌbiəl/
+cement|xi măng|The truck is carrying bags of cement.|B1|f4|/sɪˈmɛnt/|/sɪˈmɛnt/
+composite|vật liệu tổng hợp; hỗn hợp|The boat is made of composite material.|B2|f4|/ˈkɒmpəˌzɪt/|/kəmˈpɑːzɪt/
+consequently|do đó, vì vậy|The truck broke down; consequently, we were late.|B2|f4|/ˈkɒnsɪkwəntli/|/ˈkɑːnsɪkwəntli/
+decorate|trang trí|We decorated the office for the new year.|A2|f4|/ˈdɛkəˌreɪt/|/ˈdɛkəˌreɪt/
+delegate|đại biểu; giao việc|A good manager knows how to delegate.|B2|f4|/ˈdɛlɪˌɡeɪt/|/ˈdɛlɪˌɡeɪt/
+dull|buồn tẻ; cùn, xỉn|The meeting was long and dull.|B1|f4|/ˈdʌl/|/ˈdʌl/
+fare|giá vé|How much is the bus fare to the city?|A2|f4|/ˈfeə/|/ˈfɛr/
+generator|máy phát điện|The factory has a backup generator.|B1|f4|/ˈdʒɛnəˌreɪtə/|/ˈdʒɛnəˌreɪtər/
+grind|xay, nghiền|I grind the coffee beans every morning.|B1|f4|/ˈɡraɪnd/|/ˈɡraɪnd/
+grove|lùm cây, vườn cây|They walked through an orange grove.|B2|f4|/ˈɡrəʊv/|/ˈɡroʊv/
+gum|kẹo cao su; nướu răng|Can I have a piece of gum?|A2|f4|/ˈɡʌm/|/ˈɡʌm/
+idol|thần tượng|He was my childhood idol.|B1|f4|/ˈaɪdəl/|/ˈaɪdəl/
+illusion|ảo tưởng, ảo giác|Don't have any illusions about the job.|B2|f4|/ɪˈluːʒən/|/ɪˈluːʒən/
+incorrect|không đúng, sai|The address on the label is incorrect.|A2|f4|/ɪŋkəˈrɛkt/|/ɪŋkəˈrɛkt/
+junction|ngã ba, nút giao|Turn left at the next junction.|B1|f4|/ˈdʒʌŋkʃən/|/ˈdʒʌŋkʃən/
+leap|nhảy vọt|The cat leapt onto the table.|B1|f4|/ˈliːp/|/ˈliːp/
+masse|(en masse) cả loạt, hàng loạt|The workers left en masse at five.|B2|f4|/ˈmæs/|/ˈmæs/
+motive|động cơ (lý do)|What was his motive for leaving?|B2|f4|/ˈməʊtɪv/|/ˈmoʊtɪv/
+optimal|tối ưu|We need the optimal route for delivery.|B2|f4|/ˈɒptɪməl/|/ˈɑːptɪməl/
+postal|thuộc bưu điện|Please write your postal code.|B1|f4|/ˈpəʊstəl/|/ˈpoʊstəl/
+prep|chuẩn bị (khẩu ngữ, viết tắt của preparation)|Meal prep saves me a lot of time.|B1|f4|/ˈprɛp/|/ˈprɛp/
+profound|sâu sắc|The trip had a profound effect on me.|B2|f4|/prəˈfaʊnd/|/prəˈfaʊnd/
+prosecutor|công tố viên|The prosecutor asked for a long sentence.|B2|f4|/ˈprɒsɪˌkjuːtə/|/ˈprɑːsɪˌkjuːtər/
+rebellion|cuộc nổi loạn|Teen rebellion is quite normal.|B2|f4|/rɪˈbɛliən/|/rɪˈbɛliən/
+recipient|người nhận|Write the recipient's name on the parcel.|B1|f4|/rɪˈsɪpiənt/|/rɪˈsɪpiənt/
+risky|mạo hiểm, rủi ro|Driving in this storm is risky.|B1|f4|/ˈrɪski/|/ˈrɪski/
+robust|chắc chắn, bền vững|We need a robust packing method.|B2|f4|/rəʊˈbʌst/|/roʊˈbʌst/
+scam|trò lừa đảo|That email is a scam. Don't click it.|B1|f4|/ˈskæm/|/ˈskæm/
+shareholder|cổ đông|The shareholders will meet in May.|B2|f4|/ˈʃeəhəʊldə/|/ˈʃɛrhoʊldər/
+simulation|sự mô phỏng|Pilots train with flight simulations.|B2|f4|/ˌsɪmjʊˈleɪʃən/|/ˌsɪmjʊˈleɪʃən/
+sober|tỉnh táo, không say|You must be sober to drive.|B1|f4|/ˈsəʊbə/|/ˈsoʊbər/
+spice|gia vị|This soup needs more spice.|A2|f4|/ˈspaɪs/|/ˈspaɪs/
+squeeze|vắt, ép, bóp|Squeeze some lemon on the fish.|B1|f4|/ˈskwiːz/|/ˈskwiːz/
+supervision|sự giám sát|New workers need close supervision.|B1|f4|/suːpəˈvɪʒən/|/suːpərˈvɪʒən/
+swap|đổi, trao đổi|Can we swap shifts on Friday?|B1|f4|/ˈswɒp/|/ˈswɑːp/
+terrain|địa hình|The truck can handle rough terrain.|B2|f4|/təˈreɪn/|/təˈreɪn/
+thrill|sự hồi hộp, phấn khích|Riding a roller coaster is a real thrill.|B1|f4|/ˈθrɪl/|/ˈθrɪl/
+trio|bộ ba|A jazz trio played at the wedding.|B2|f4|/ˈtriːəʊ/|/ˈtriːoʊ/
+unconscious|bất tỉnh; vô thức|He fell and was unconscious for a minute.|B1|f4|/ʌŋˈkɒnʃəs/|/ʌŋˈkɑːnʃəs/
+vibe|không khí, cảm giác (khẩu ngữ)|I love the vibe of this café.|B1|f4|/ˈvaɪb/|/ˈvaɪb/
+virtue|đức tính|Patience is a virtue.|B2|f4|/ˈvɜːtʃuː/|/ˈvɜːrtʃuː/
+wi-fi|mạng wifi|What's the wi-fi password?|A1|f4|/ˈwaɪ ˌfaɪ/|/ˈwaɪ ˌfaɪ/
+workforce|lực lượng lao động|The warehouse workforce has grown to 200.|B2|f4|/ˈwɜːkfɔːs/|/ˈwɜːrkfɔːrs/
+zombie|thây ma, xác sống|We watched a zombie movie last night.|B1|f4|/ˈzɒmbi/|/ˈzɑːmbi/
+arise|nảy sinh, phát sinh|Call me if any problems arise.|B2|f4|/əˈraɪz/|/əˈraɪz/
+automotive|thuộc ô tô|She works for an automotive parts supplier.|B2|f4|/ˌɔːtəʊˈməʊtɪv/|/ˌɔːtoʊˈmoʊtɪv/
+battlefield|chiến trường|The old battlefield is now a park.|B2|f4|/ˈbætəlˌfiːld/|/ˈbætəlˌfiːld/
+bloom|nở hoa|The roses bloom in spring.|B1|f4|/ˈbluːm/|/ˈbluːm/
+bundle|bó, gói|Tie the cables in a bundle.|B1|f4|/ˈbʌndəl/|/ˈbʌndəl/
+butterfly|con bướm|A butterfly landed on my hand.|A2|f4|/ˈbʌtəˌflaɪ/|/ˈbʌtərˌflaɪ/
+casualty|thương vong|There were no casualties in the fire.|B2|f4|/ˈkæʒuːəlti/|/ˈkæʒuːəlti/
+clown|chú hề|The kids laughed at the clown.|A2|f4|/ˈklaʊn/|/ˈklaʊn/
+conjunction|liên từ; sự kết hợp|"And" and "but" are conjunctions.|B2|f4|/kənˈdʒʌŋkʃən/|/kənˈdʒʌŋkʃən/
+costly|tốn kém|A mistake like that can be costly.|B1|f4|/ˈkɒstli/|/ˈkɔstli/
+decorate (room)|trang hoàng (căn phòng)|We need to decorate the living room.|A2|f4|/ˈdɛkəˌreɪt/|/ˈdɛkəˌreɪt/
+descent|sự đi xuống; dòng dõi|The plane began its descent.|B2|f4|/dɪˈsɛnt/|/dɪˈsɛnt/
+desktop|máy tính để bàn; màn hình nền|Save the file to your desktop.|A2|f4|/ˈdɛsktɒp/|/ˈdɛsktɑːp/
+dial|quay số; mặt số|Dial 0 for reception.|A2|f4|/ˈdaɪəl/|/ˈdaɪəl/
+directory|danh bạ; thư mục|Look up the number in the phone directory.|B1|f4|/daɪˈrɛktəri/|/dɪˈrɛktəri/
+discharge|xuất viện; dỡ hàng; xả|The ship will discharge its cargo tomorrow.|B2|f4|/dɪsˈtʃɑːdʒ/|/dɪsˈtʃɑːrdʒ/
+dodge|né, tránh|He dodged the question.|B1|f4|/ˈdɒdʒ/|/ˈdɑːdʒ/
+elimination|sự loại bỏ|Elimination of waste saves money.|B2|f4|/ɪˌlɪmɪˈneɪʃən/|/ɪˌlɪmɪˈneɪʃən/
+ginger|gừng|Add some ginger to the tea.|A2|f4|/ˈdʒɪndʒə/|/ˈdʒɪndʒər/
+guild|hội, phường hội|He joined the writers' guild.|B2|f4|/ˈɡɪld/|/ˈɡɪld/
+halt|dừng lại|Work came to a halt because of the rain.|B2|f4|/ˈhɒlt/|/ˈhɔlt/
+imaging|chụp ảnh (y tế), tạo ảnh|The hospital has new imaging equipment.|B2|f4|/ˈɪmɪdʒɪŋ/|/ˈɪmɪdʒɪŋ/
+inability|sự không có khả năng|His inability to listen is a problem.|B2|f4|/ɪnəˈbɪləti/|/ɪnəˈbɪləti/
+incoming|đến, gửi đến|Check all incoming shipments.|B1|f4|/ˈɪŋkʌˌmɪŋ/|/ˈɪŋkʌˌmɪŋ/
+jar|lọ, hũ|Pass me the jar of honey.|A2|f4|/ˈdʒɑː/|/ˈdʒɑːr/
+litigation|kiện tụng|The case may end in litigation.|B2|f4|/ˌlɪtɪˈɡeɪʃən/|/ˌlɪtɪˈɡeɪʃən/
+mentor|người hướng dẫn, cố vấn|My first boss was a great mentor.|B1|f4|/ˈmɛntɔː/|/ˈmɛntɔːr/
+merchandise|hàng hóa|All merchandise is on sale this week.|B1|f4|/ˈmɜːtʃənˌdaɪz/|/ˈmɜːrtʃənˌdaɪz/
+miner|thợ mỏ|His father was a coal miner.|B1|f4|/ˈmaɪnə/|/ˈmaɪnər/
+monk|nhà sư|We met a monk at the temple.|B1|f4|/ˈmʌŋk/|/ˈmʌŋk/
+norm|chuẩn mực|Working from home is now the norm.|B2|f4|/ˈnɔːm/|/ˈnɔːrm/
+offend|xúc phạm|I didn't mean to offend you.|B1|f4|/əˈfɛnd/|/əˈfɛnd/
+orthodox|chính thống|He has an orthodox approach to teaching.|B2|f4|/ˈɔːθəˌdɒks/|/ˈɔːrθəˌdɑːks/
+overhead|chi phí chung; trên đầu|Rent is our biggest overhead.|B2|f4|/ˌəʊvəˈhɛd/|/ˌoʊvərˈhɛd/
+painter|thợ sơn; họa sĩ|We hired a painter for the house.|A2|f4|/ˈpeɪntə/|/ˈpeɪntər/
+pierce|xuyên qua, xỏ (lỗ)|She had her ears pierced.|B2|f4|/ˈpiəs/|/ˈpɪrs/
+pistol|súng ngắn|The police officer carried a pistol.|B2|f4|/ˈpɪstəl/|/ˈpɪstəl/
+prone|dễ bị, có thiên hướng|This area is prone to flooding.|B2|f4|/ˈprəʊn/|/ˈproʊn/
+readily|sẵn sàng, dễ dàng|Spare parts are readily available.|B2|f4|/ˈrɛdili/|/ˈrɛdili/
+regiment|trung đoàn|He served in the army regiment.|B2|f4|/ˈrɛdʒɪmənt/|/ˈrɛdʒɪmənt/
+reunion|cuộc hội ngộ|We have a family reunion every summer.|B1|f4|/ˌriːˈjuːniən/|/ˌriːˈjuːniən/
+revival|sự hồi sinh|The town saw an economic revival.|B2|f4|/rɪˈvaɪvəl/|/rɪˈvaɪvəl/
+sanctuary|nơi trú ẩn; khu bảo tồn|We visited a bird sanctuary.|B2|f4|/ˈsæŋktjuːəri/|/ˈsæŋktjuːˌɛri/
+sensor|cảm biến|The door has a motion sensor.|B1|f4|/ˈsɛnsə/|/ˈsɛnsər/
+siege|cuộc vây hãm|The city was under siege for months.|B2|f4|/ˈsiːdʒ/|/ˈsiːdʒ/
+sixty|sáu mươi|The box weighs sixty kilos.|A1|f4|/ˈsɪksti/|/ˈsɪksti/
+sleeve|tay áo|Roll up your sleeves.|A2|f4|/ˈsliːv/|/ˈsliːv/
+soundtrack|nhạc phim|I love the soundtrack of that movie.|B1|f4|/ˈsaʊndtræk/|/ˈsaʊndtræk/
+spine|cột sống; gáy sách|Lift with your legs to protect your spine.|B1|f4|/ˈspaɪn/|/ˈspaɪn/
+steer|lái, điều khiển|He steered the truck into the dock.|B1|f4|/ˈstiə/|/ˈstɪr/
+tenure|nhiệm kỳ; thời gian giữ chức|During her tenure, sales doubled.|B2|f4|/ˈtɛnjə/|/ˈtɛnjər/
+texture|kết cấu, bề mặt|I like the texture of this fabric.|B2|f4|/ˈtɛkstʃə/|/ˈtɛkstʃər/
+thankful|biết ơn|I'm thankful for your help.|B1|f4|/ˈθæŋkfəl/|/ˈθæŋkfəl/
+treasurer|thủ quỹ|She is the club treasurer.|B2|f4|/ˈtrɛʒərə/|/ˈtrɛʒərər/
+triangle|hình tam giác|Put the warning triangle behind the truck.|A2|f4|/ˈtraɪæŋɡəl/|/ˈtraɪæŋɡəl/
+unclear|không rõ ràng|The instructions are unclear.|B1|f4|/ʌŋˈkliə/|/ʌŋˈklɪr/
+wizard|phù thủy (nam); trình hướng dẫn|Follow the setup wizard to install it.|B1|f4|/ˈwɪzəd/|/ˈwɪzərd/
+absorb|hấp thụ|This cloth absorbs water quickly.|B1|f4|/əbˈsɔːb/|/əbˈsɔːrb/
+admin|việc hành chính (khẩu ngữ)|I spend an hour a day on admin.|B1|f4|/ˈædmɪn/|/ˈædmɪn/
+affection|tình cảm, sự yêu mến|He shows a lot of affection for his kids.|B2|f4|/əˈfɛkʃən/|/əˈfɛkʃən/
+airplane|máy bay|The airplane landed on time.|A1|f4|/ˈeəpleɪn/|/ˈɛrpleɪn/
+altitude|độ cao|We are flying at an altitude of 10,000 meters.|B2|f4|/ˈæltɪˌtjuːd/|/ˈæltɪˌtuːd/
+bake|nướng (bánh)|My mother bakes bread on Sundays.|A2|f4|/ˈbeɪk/|/ˈbeɪk/
+baking|việc nướng bánh|Baking is my favorite hobby.|A2|f4|/ˈbeɪkɪŋ/|/ˈbeɪkɪŋ/
+beautifully|một cách đẹp đẽ|She sings beautifully.|A2|f4|/ˈbjuːtɪfəli/|/ˈbjuːtɪfəli/
+biblical|thuộc Kinh Thánh|It was a flood of biblical size.|B2|f4|/ˈbɪblɪkəl/|/ˈbɪblɪkəl/
+competent|có năng lực|She is a competent driver.|B2|f4|/ˈkɒmpɪtənt/|/ˈkɑːmpɪtənt/
+crane|cần cẩu; con sếu|The crane lifted the container off the ship.|B1|f4|/ˈkreɪn/|/ˈkreɪn/
+debris|mảnh vụn, rác|Clear the debris from the road.|B2|f4|/ˈdɛbriː/|/dəˈbriː/
+delegation|phái đoàn; sự ủy quyền|A delegation from Japan visited the port.|B2|f4|/ˌdɛlɪˈɡeɪʃən/|/ˌdɛlɪˈɡeɪʃən/
+demographic|nhân khẩu học|Young people are our main demographic.|B2|f4|/ˌdɛməɡˈræfɪk/|/ˌdɛməɡˈræfɪk/
+donor|người hiến tặng|She is a blood donor.|B2|f4|/ˈdəʊnə/|/ˈdoʊnər/
+enroll|ghi danh, đăng ký học|I enrolled in an English course.|B1|f4|/ɛnˈrəʊl/|/ɛnˈroʊl/
+enrollment|sự ghi danh|Enrollment ends on Friday.|B2|f4|/ɛnˈrəʊlmənt/|/ɛnˈroʊlmənt/
+exceed|vượt quá|Do not exceed the weight limit.|B2|f4|/ɛkˈsiːd/|/ɛkˈsiːd/
+fierce|dữ dội, khốc liệt|Competition is fierce in this market.|B2|f4|/ˈfiəs/|/ˈfɪrs/
+gratitude|lòng biết ơn|I want to express my gratitude.|B2|f4|/ˈɡrætɪˌtjuːd/|/ˈɡrætɪˌtuːd/
+hail|mưa đá; vẫy (taxi)|Let's hail a taxi.|B2|f4|/ˈheɪl/|/ˈheɪl/
+illustration|hình minh họa|The book has many illustrations.|B1|f4|/ˌɪləˈstreɪʃən/|/ˌɪləˈstreɪʃən/
+indicator|chỉ số; đèn xi nhan|Use your indicator before turning.|B2|f4|/ˈɪndɪˌkeɪtə/|/ˈɪndɪˌkeɪtər/
+inequality|sự bất bình đẳng|Income inequality is growing.|B2|f4|/ɪniːˈkwɒlɪti/|/ɪniːˈkwɔlɪti/
+interpret|giải thích; phiên dịch|Can you interpret for me at the meeting?|B2|f4|/ɪnˈtɜːprɪt/|/ɪnˈtɜːrprɪt/
+leisure|thời gian rảnh, giải trí|What do you do in your leisure time?|B1|f4|/ˈlɛʒə/|/ˈliːʒər/
+lounge|phòng chờ, phòng khách|Wait in the airport lounge.|B1|f4|/ˈlaʊndʒ/|/ˈlaʊndʒ/
+luckily|may mắn thay|Luckily, nobody was hurt.|A2|f4|/ˈlʌkili/|/ˈlʌkili/
+manuscript|bản thảo|She sent her manuscript to a publisher.|B2|f4|/ˈmænjuːˌskrɪpt/|/ˈmænjuːˌskrɪpt/
+mint|bạc hà; mới tinh|Would you like a mint?|A2|f4|/ˈmɪnt/|/ˈmɪnt/
+molecule|phân tử|Water molecules are very small.|B2|f4|/ˈmɒlɪˌkjuːl/|/ˈmɑːlɪˌkjuːl/
+outline|đề cương; phác thảo|Give me a short outline of the plan.|B1|f4|/ˈaʊtlaɪn/|/ˈaʊtlaɪn/
+pasta|mì Ý|We had pasta for dinner.|A1|f4|/ˈpæstə/|/ˈpɑːstə/
+reliability|độ tin cậy|Reliability is key for our delivery service.|B2|f4|/rɪˌlaɪəˈbɪlɪti/|/rɪˌlaɪəˈbɪlɪti/
+runway|đường băng|The plane is waiting on the runway.|B1|f4|/ˈrʌnweɪ/|/ˈrʌnweɪ/
+sculpture|tác phẩm điêu khắc|There is a big sculpture in the park.|B1|f4|/ˈskʌlptʃə/|/ˈskʌlptʃər/
+showcase|trưng bày, giới thiệu|The fair showcases new products.|B2|f4|/ˈʃəʊkeɪs/|/ˈʃoʊkeɪs/
+subsidiary|công ty con|They opened a subsidiary in Vietnam.|B2|f4|/sʌbˈsɪdjəri/|/sʌbˈsɪdjəri/
+tenth|thứ mười|Today is our tenth anniversary.|A2|f4|/ˈtɛnθ/|/ˈtɛnθ/
+underwater|dưới nước|We took photos underwater.|B1|f4|/ˌʌndəˈwɔːtə/|/ˌʌndərˈwɔːtər/
+velocity|vận tốc|The wind velocity is very high today.|B2|f4|/vəˈlɒsɪti/|/vəˈlɑːsɪti/
+wax|sáp|Candles are made of wax.|B1|f4|/ˈwæks/|/ˈwæks/
+yay|hoan hô (thán từ)|Yay! We won!|A2|f4|/ˈjeɪ/|/ˈjeɪ/
+accountability|trách nhiệm giải trình|We need more accountability in the team.|B2|f4|/əˌkaʊntəˈbɪlɪti/|/əˌkaʊntəˈbɪlɪti/
+aerial|trên không|The aerial photos show the whole port.|B2|f4|/ˈeərɪəl/|/ˈɛrɪəl/
+alcoholic|có cồn; người nghiện rượu|Do you have any non-alcoholic drinks?|B1|f4|/ˌælkəˈhɒlɪk/|/ˌælkəˈhɑːlɪk/
+amaze|làm kinh ngạc|Her skills amaze me.|B1|f4|/əˈmeɪz/|/əˈmeɪz/
+ambition|hoài bão, tham vọng|My ambition is to run my own company.|B1|f4|/æmˈbɪʃən/|/æmˈbɪʃən/
+ammunition|đạn dược|The soldiers ran out of ammunition.|B2|f4|/ˌæmjuːˈnɪʃən/|/ˌæmjuːˈnɪʃən/
+anthem|quốc ca, bài ca|They played the national anthem.|B1|f4|/ˈænθəm/|/ˈænθəm/
+automate|tự động hóa|We want to automate the packing line.|B2|f4|/ˈɔːtəˌmeɪt/|/ˈɔːtəˌmeɪt/
+catalog|danh mục, ca-ta-lô|Check the catalog for prices.|B1|f4|/ˈkætəˌlɒɡ/|/ˈkætəˌlɑːɡ/
+charitable|từ thiện|She gives money to charitable causes.|B2|f4|/ˈtʃærɪtəbəl/|/ˈtʃærɪtəbəl/
+collector|người sưu tầm; người thu|He is a stamp collector.|B1|f4|/kəˈlɛktə/|/kəˈlɛktər/
+compliment|lời khen|Thanks for the compliment!|B1|f4|/ˈkɒmplɪmənt/|/ˈkɑːmplɪmənt/
+continually|liên tục|The phone rang continually all day.|B2|f4|/kənˈtɪnjuːəli/|/kənˈtɪnjuːəli/
+coordinator|điều phối viên|Ask the shipping coordinator.|B1|f4|/kəʊˈɔːdɪˌneɪtə/|/koʊˈɔːrdɪˌneɪtər/
+deployment|sự triển khai|The deployment of the new system is next week.|B2|f4|/dɪˈplɔɪmənt/|/dɪˈplɔɪmənt/
+enjoyable|thú vị, dễ chịu|It was an enjoyable trip.|B1|f4|/ɛnˈdʒɔɪəbəl/|/ɛnˈdʒɔɪəbəl/
+exotic|kỳ lạ, ngoại lai|We tried some exotic fruits.|B1|f4|/ɛɡˈzɒtɪk/|/ɛɡˈzɑːtɪk/
+exterior|bên ngoài|They painted the exterior of the house.|B2|f4|/ɛkˈstiəriə/|/ɛkˈstɪriər/
+feminine|nữ tính|She likes feminine clothes.|B2|f4|/ˈfɛmɪˌnɪn/|/ˈfɛmɪˌnɪn/
+firearm|súng|Firearms are not allowed on board.|B2|f4|/ˈfaɪərɑːm/|/ˈfaɪərɑːrm/
+fountain|đài phun nước|Let's meet at the fountain.|A2|f4|/ˈfaʊntɪn/|/ˈfaʊntɪn/
+fury|cơn giận dữ|He was shaking with fury.|B2|f4|/ˈfjʊəri/|/ˈfjʊri/
+genocide|tội diệt chủng|The museum tells the story of the genocide.|B2|f4|/ˈdʒɛnəˌsaɪd/|/ˈdʒɛnəˌsaɪd/
+glance|liếc nhìn|She glanced at her watch.|B1|f4|/ˈɡlæns/|/ˈɡlæns/
+glow|phát sáng, ánh sáng|The lamp gave a warm glow.|B1|f4|/ˈɡləʊ/|/ˈɡloʊ/
+hay|cỏ khô|The farmer stacked the hay.|B1|f4|/ˈheɪ/|/ˈheɪ/
+humanitarian|nhân đạo|They sent humanitarian aid.|B2|f4|/ˌhjuːmənɪˈteəriən/|/ˌhjuːmənɪˈtɛriən/
+immunity|miễn dịch|Vaccines build immunity.|B2|f4|/ɪˈmjuːnɪti/|/ɪˈmjuːnɪti/
+inherit|thừa kế|She inherited the house from her aunt.|B2|f4|/ɪnˈhɛrɪt/|/ɪnˈhɛrɪt/
+liberation|sự giải phóng|They celebrated Liberation Day.|B2|f4|/ˌlɪbəˈreɪʃən/|/ˌlɪbəˈreɪʃən/
+likelihood|khả năng xảy ra|What is the likelihood of a delay?|B2|f4|/ˈlaɪkliˌhʊd/|/ˈlaɪkliˌhʊd/
+lone|đơn độc|A lone truck waited at the gate.|B2|f4|/ˈləʊn/|/ˈloʊn/
+massacre|cuộc thảm sát|The massacre shocked the world.|B2|f4|/ˈmæsəkə/|/ˈmæsəkər/
+meme|ảnh chế, meme|He sent me a funny meme.|B1|f4|/ˈmiːm/|/ˈmiːm/
+necessity|sự cần thiết|A car is a necessity here.|B2|f4|/nəˈsɛsɪti/|/nəˈsɛsɪti/
+nickname|biệt danh|My nickname at school was "Bean".|A2|f4|/ˈnɪkneɪm/|/ˈnɪkneɪm/
+observer|người quan sát|Observers watched the election.|B2|f4|/ɒbˈzɜːvə/|/əbˈzɜːrvər/
+offshore|ngoài khơi; ở nước ngoài|They work on an offshore oil rig.|B2|f4|/ˈɒfʃɔː/|/ˈɔfʃɔːr/
+optional|tùy chọn|Insurance is optional.|B1|f4|/ˈɒpʃənəl/|/ˈɑːpʃənəl/
+pioneer|người tiên phong|He was a pioneer in online shopping.|B2|f4|/paɪəˈniə/|/paɪəˈnɪr/
+plaza|quảng trường|The plaza is full of people at night.|B1|f4|/ˈplɑːzə/|/ˈplɑːzə/
+prescribe|kê đơn|The doctor prescribed some medicine.|B1|f4|/prɪˈskraɪb/|/prɪˈskraɪb/
+prosperity|sự thịnh vượng|We wish you health and prosperity.|B2|f4|/prəˈspɛrɪti/|/prəˈspɛrɪti/
+recreational|giải trí|The park has recreational areas.|B2|f4|/ˌrɛkriːˈeɪʃənəl/|/ˌrɛkriːˈeɪʃənəl/
+refuge|nơi ẩn náu|They took refuge from the storm.|B2|f4|/ˈrɛfjuːdʒ/|/ˈrɛfjuːdʒ/
+renewable|tái tạo|Solar power is a renewable energy.|B2|f4|/rɪˈnjuːəbəl/|/rɪˈnuːəbəl/
+sphere|hình cầu; lĩnh vực|The Earth is almost a sphere.|B2|f4|/ˈsfiə/|/ˈsfɪr/
+suburban|ngoại ô|They live in a suburban area.|B2|f4|/səˈbɜːbən/|/səˈbɜːrbən/
+terribly|tệ hại; cực kỳ|I'm terribly sorry.|B1|f4|/ˈtɛrɪbli/|/ˈtɛrɪbli/
+territorial|thuộc lãnh thổ|Dogs can be very territorial.|B2|f4|/ˌtɛrɪˈtɔːrɪəl/|/ˌtɛrɪˈtɔːrɪəl/
+thriller|phim/truyện ly kỳ|Let's watch a thriller tonight.|B1|f4|/ˈθrɪlə/|/ˈθrɪlər/
+toss|tung, ném nhẹ|Toss me the keys.|B1|f4|/ˈtɒs/|/ˈtɔs/
+turtle|con rùa|We saw a sea turtle on the beach.|A2|f4|/ˈtɜːtəl/|/ˈtɜːrtəl/
+verbal|bằng lời nói|We have a verbal agreement.|B2|f4|/ˈvɜːbəl/|/ˈvɜːrbəl/
+violate|vi phạm|Don't violate the safety rules.|B2|f4|/ˈvaɪəleɪt/|/ˈvaɪəleɪt/
+wool|len|This sweater is made of wool.|A2|f4|/ˈwʊl/|/ˈwʊl/
+accountable|chịu trách nhiệm|Managers are accountable for safety.|B2|f4|/əˈkaʊntəbəl/|/əˈkaʊntəbəl/
+advocacy|sự vận động, ủng hộ|She works in health advocacy.|B2|f4|/ˈædvəkəsi/|/ˈædvəkəsi/
+aftermath|hậu quả|In the aftermath of the storm, roads were closed.|B2|f4|/ˈæftəˌmæθ/|/ˈæftərˌmæθ/
+aggression|sự gây hấn|Aggression at work is not allowed.|B2|f4|/əɡˈrɛʃən/|/əɡˈrɛʃən/
+analyze|phân tích|We analyze the sales data every month.|B1|f4|/ˈænəˌlaɪz/|/ˈænəˌlaɪz/
+arguably|có thể nói là|He is arguably the best driver we have.|B2|f4|/ˈɑːɡjuːəbli/|/ˈɑːrɡjuːəbli/
+balloon|bóng bay|The kids are playing with balloons.|A2|f4|/bəˈluːn/|/bəˈluːn/
+blunt|thẳng thừng; cùn|To be blunt, your work is late.|B2|f4|/ˈblʌnt/|/ˈblʌnt/
+brigade|lữ đoàn; đội|Call the fire brigade!|B2|f4|/brɪˈɡeɪd/|/brɪˈɡeɪd/
+burial|sự chôn cất|The burial took place on Monday.|B2|f4|/ˈbɛrɪəl/|/ˈbɛrɪəl/
+cardinal|hồng y; cơ bản|Safety is the cardinal rule here.|B2|f4|/ˈkɑːdɪnəl/|/ˈkɑːrdɪnəl/
+champ|nhà vô địch (khẩu ngữ)|Good job, champ!|B1|f4|/ˈtʃæmp/|/ˈtʃæmp/
+champagne|rượu sâm panh|Let's open a bottle of champagne.|B1|f4|/ʃæmˈpeɪn/|/ʃæmˈpeɪn/
+chorus|điệp khúc; dàn hợp xướng|Everyone sang the chorus.|B1|f4|/ˈkɔːrəs/|/ˈkɔːrəs/
+chrome|crôm (kim loại)|The car has chrome wheels.|B2|f4|/ˈkrəʊm/|/ˈkroʊm/
+clarity|sự rõ ràng|We need more clarity on the deadline.|B2|f4|/ˈklærɪti/|/ˈklærɪti/
+confidential|bí mật, mật|This report is confidential.|B2|f4|/ˌkɒnfɪˈdɛnʃəl/|/ˌkɑːnfɪˈdɛnʃəl/
+coordination|sự phối hợp|Good coordination between teams is key.|B2|f4|/kəʊˈɔːdɪˈneɪʃən/|/koʊˈɔːrdɪˈneɪʃən/
+discretion|sự thận trọng; quyền tự quyết|Use your discretion.|B2|f4|/dɪˈskrɛʃən/|/dɪˈskrɛʃən/
+ditch|mương; bỏ (khẩu ngữ)|The car ended up in a ditch.|B1|f4|/ˈdɪtʃ/|/ˈdɪtʃ/
+dome|mái vòm|The church has a golden dome.|B2|f4|/ˈdəʊm/|/ˈdoʊm/
+drought|hạn hán|The drought ruined the crops.|B2|f4|/ˈdraʊt/|/ˈdraʊt/
+elevation|độ cao so với mực nước biển|The town is at an elevation of 1,500 meters.|B2|f4|/ˌɛlɪˈveɪʃən/|/ˌɛlɪˈveɪʃən/
+esteem|sự quý trọng|She is held in high esteem.|B2|f4|/ɛˈstiːm/|/ɛˈstiːm/
+fog|sương mù|The fog delayed all flights.|A2|f4|/ˈfɒɡ/|/ˈfɑːɡ/
+gesture|cử chỉ|It was a kind gesture.|B1|f4|/ˈdʒɛstʃə/|/ˈdʒɛstʃər/
+gosh|trời ơi (thán từ)|Oh gosh, I forgot my keys!|A2|f4|/ˈɡɒʃ/|/ˈɡɑːʃ/
+historian|nhà sử học|My uncle is a historian.|B1|f4|/hɪˈstɔːriən/|/hɪˈstɔːriən/
+horizontal|nằm ngang|Keep the box horizontal.|B2|f4|/ˌhɒrɪˈzɒntəl/|/ˌhɔːrɪˈzɔntəl/
+hospitality|lòng hiếu khách; ngành khách sạn nhà hàng|Thank you for your hospitality.|B2|f4|/ˌhɒspɪˈtælɪti/|/ˌhɑːspɪˈtælɪti/
+hostage|con tin|They held three people hostage.|B2|f4|/ˈhɒstɪdʒ/|/ˈhɑːstɪdʒ/
+individually|riêng lẻ, từng cái|Wrap each glass individually.|B1|f4|/ˌɪndɪˈvɪdʒuːəli/|/ˌɪndɪˈvɪdʒuːəli/
+inevitably|không thể tránh khỏi|Inevitably, prices went up.|B2|f4|/ɪˈnɛvɪtəbli/|/ɪˈnɛvɪtəbli/
+lad|chàng trai (khẩu ngữ Anh)|He's a nice lad.|B1|f4|/ˈlæd/|/ˈlæd/
+listing|danh sách; tin đăng|I saw the job listing online.|B1|f4|/ˈlɪstɪŋ/|/ˈlɪstɪŋ/
+literacy|khả năng đọc viết|Computer literacy is important today.|B2|f4|/ˈlɪtərəsi/|/ˈlɪtərəsi/
+migrant|người di cư|Many migrant workers live here.|B2|f4|/ˈmaɪɡrənt/|/ˈmaɪɡrənt/
+mislead|làm hiểu sai, lừa dối|The ad was misleading.|B2|f4|/mɪˈsliːd/|/mɪˈsliːd/
+moisture|độ ẩm|Keep the goods away from moisture.|B2|f4|/ˈmɔɪstʃə/|/ˈmɔɪstʃər/
+monument|đài tưởng niệm|We visited the war monument.|B1|f4|/ˈmɒnjuːmənt/|/ˈmɑːnjuːmənt/
+mortality|tỷ lệ tử vong|Infant mortality has fallen.|B2|f4|/mɔːˈtælɪti/|/mɔːrˈtælɪti/
+obsession|nỗi ám ảnh, sự say mê|Football is his obsession.|B2|f4|/ɒbˈsɛʃən/|/əbˈsɛʃən/
+opt|chọn|Many workers opt for the night shift.|B2|f4|/ˈɒpt/|/ˈɑːpt/
+peanut|đậu phộng|I'm allergic to peanuts.|A2|f4|/ˈpiːnʌt/|/ˈpiːnʌt/
+persistent|dai dẳng; kiên trì|She has a persistent cough.|B2|f4|/pəˈsɪstənt/|/pərˈsɪstənt/
+petroleum|dầu mỏ|Petroleum prices are rising.|B2|f4|/pəˈtrəʊliːəm/|/pəˈtroʊliːəm/
+pharmaceutical|thuộc dược phẩm|He works for a pharmaceutical company.|B2|f4|/ˌfɑːməˈsuːtɪkəl/|/ˌfɑːrməˈsuːtɪkəl/
+progression|sự tiến triển|There is good career progression here.|B2|f4|/prəɡˈrɛʃən/|/prəɡˈrɛʃən/
+rack|giá, kệ|Put the boxes on the rack.|B1|f4|/ˈræk/|/ˈræk/
+rebuild|xây lại|They rebuilt the bridge after the flood.|B1|f4|/rɪˈbɪld/|/rɪˈbɪld/
+recording|bản ghi âm|Listen to the recording again.|A2|f4|/rɪˈkɔːdɪŋ/|/rɪˈkɔːrdɪŋ/
+reservoir|hồ chứa nước|The reservoir is almost empty.|B2|f4|/ˈrɛzəvˌwɑː/|/ˈrɛzərvˌwɑːr/
+sensation|cảm giác; sự náo động|I had a burning sensation in my hand.|B2|f4|/sɛnˈseɪʃən/|/sɛnˈseɪʃən/
+shaft|trục; giếng (thang máy, mỏ)|The motor shaft is broken.|B2|f4|/ˈʃæft/|/ˈʃæft/
+shepherd|người chăn cừu|The shepherd watched his sheep.|B1|f4|/ˈʃɛpəd/|/ˈʃɛpərd/
+shuttle|xe/chuyến đưa đón|Take the shuttle bus to the airport.|B1|f4|/ˈʃʌtəl/|/ˈʃʌtəl/
+slope|dốc|Drive slowly down the slope.|B1|f4|/ˈsləʊp/|/ˈsloʊp/
+spotlight|đèn sân khấu; sự chú ý|She loves being in the spotlight.|B2|f4|/ˈspɒtlaɪt/|/ˈspɑːtlaɪt/
+stab|đâm|He was stabbed in a fight.|B2|f4|/ˈstæb/|/ˈstæb/
+stern|nghiêm khắc; đuôi tàu|The teacher gave him a stern look.|B2|f4|/ˈstɜːn/|/ˈstɜːrn/
+stiff|cứng; mỏi|My neck is stiff.|B1|f4|/ˈstɪf/|/ˈstɪf/
+striker|tiền đạo|Our striker scored two goals.|B1|f4|/ˈstraɪkə/|/ˈstraɪkər/
+terrific|tuyệt vời|You did a terrific job!|B1|f4|/təˈrɪfɪk/|/təˈrɪfɪk/
+trafficking|buôn lậu|Drug trafficking is a serious crime.|B2|f4|/ˈtræfɪkɪŋ/|/ˈtræfɪkɪŋ/
+transparency|sự minh bạch|Customers want more transparency on prices.|B2|f4|/trænˈspærənsi/|/trænˈspærənsi/
+unemployed|thất nghiệp|He has been unemployed for six months.|B1|f4|/ʌnɛmˈplɔɪd/|/ʌnɛmˈplɔɪd/
+unlock|mở khóa|Unlock the door, please.|A2|f4|/ʌnˈlɒk/|/ʌnˈlɑːk/
+vault|kho bạc, hầm|The money is kept in a vault.|B2|f4|/ˈvɒlt/|/ˈvɔlt/
+vet|bác sĩ thú y|I took my dog to the vet.|A2|f4|/ˈvɛt/|/ˈvɛt/
+wagon|toa xe; xe goòng|Load the goods onto the wagon.|B1|f4|/ˈwæɡən/|/ˈwæɡən/
+adverse|bất lợi|Adverse weather delayed the ship.|B2|f4|/ædˈvɜːs/|/ædˈvɜːrs/
+awhile|một lúc|Stay awhile and have some tea.|B1|f4|/əˈwaɪl/|/əˈwaɪl/
+biography|tiểu sử|I'm reading a biography of Ho Chi Minh.|B1|f4|/baɪˈɒɡrəfi/|/baɪˈɑːɡrəfi/
+broker|người môi giới|Our customs broker will handle the papers.|B1|f4|/ˈbrəʊkə/|/ˈbroʊkər/
+browser|trình duyệt|Open the link in your browser.|A2|f4|/ˈbraʊzə/|/ˈbraʊzər/
+cellular|thuộc tế bào; di động|Cellular data is expensive abroad.|B2|f4|/ˈsɛljʊlə/|/ˈsɛljʊlər/
+cocktail|cốc-tai|Would you like a cocktail?|B1|f4|/ˈkɒkteɪl/|/ˈkɑːkteɪl/
+conditioning|sự điều hòa; rèn luyện thể lực|The air conditioning is broken.|B1|f4|/kənˈdɪʃənɪŋ/|/kənˈdɪʃənɪŋ/
+counseling|sự tư vấn|She gets counseling for stress.|B2|f4|/ˈkaʊnsəlɪŋ/|/ˈkaʊnsəlɪŋ/
+destructive|có tính phá hoại|The storm was very destructive.|B2|f4|/dɪˈstrʌktɪv/|/dɪˈstrʌktɪv/
+dislike|không thích|I dislike waiting in line.|A2|f4|/dɪˈslaɪk/|/dɪˈslaɪk/
+embed|nhúng, gắn vào|You can embed the video in the page.|B2|f4|/ɛmˈbɛd/|/ɛmˈbɛd/
+farewell|lời chia tay|We had a farewell party for him.|B1|f4|/feəˈwɛl/|/fɛrˈwɛl/
+fist|nắm đấm|He banged his fist on the table.|B1|f4|/ˈfɪst/|/ˈfɪst/
+fond|thích, mến|I'm very fond of my cousins.|B1|f4|/ˈfɒnd/|/ˈfɑːnd/
+foolish|ngớ ngẩn|It was foolish of me to forget.|B1|f4|/ˈfuːlɪʃ/|/ˈfuːlɪʃ/
+frog|con ếch|We heard frogs at night.|A2|f4|/ˈfrɒɡ/|/ˈfrɑːɡ/
+hawk|chim ưng|A hawk flew over the field.|B1|f4|/ˈhɔːk/|/ˈhɔːk/
+heir|người thừa kế|He is the heir to the business.|B2|f4|/ˈeə/|/ˈɛr/
+imprisonment|sự bỏ tù|He got five years' imprisonment.|B2|f4|/ɪmˈprɪzənmənt/|/ɪmˈprɪzənmənt/
+landmark|địa danh, cột mốc|The tower is a famous landmark.|B1|f4|/ˈlændmɑːk/|/ˈlændmɑːrk/
+liable|chịu trách nhiệm pháp lý|The carrier is liable for the damage.|B2|f4|/ˈlaɪəbəl/|/ˈlaɪəbəl/
+midst|giữa|We are in the midst of moving house.|B2|f4|/ˈmɪdst/|/ˈmɪdst/
+misery|sự khổ sở|The flood caused great misery.|B2|f4|/ˈmɪzəri/|/ˈmɪzəri/
+module|học phần; mô-đun|This course has six modules.|B2|f4|/ˈmɒdjuːl/|/ˈmɑːdʒuːl/
+mommy|mẹ (trẻ con gọi)|Mommy, can I have ice cream?|A1|f4|/ˈmɒmi/|/ˈmɑːmi/
+mosque|nhà thờ Hồi giáo|There's a mosque near the market.|B1|f4|/ˈmɒsk/|/ˈmɑːsk/
+moss|rêu|The stones were covered in moss.|B1|f4|/ˈmɒs/|/ˈmɔs/
+nursery|nhà trẻ; vườn ươm|My daughter goes to nursery.|A2|f4|/ˈnɜːsəri/|/ˈnɜːrsəri/
+plague|bệnh dịch|The city was hit by plague.|B2|f4|/ˈpleɪɡ/|/ˈpleɪɡ/
+positively|một cách tích cực|Think positively.|B1|f4|/ˈpɒzɪˌtɪvli/|/ˈpɑːzɪˌtɪvli/
+rogue|kẻ lừa đảo; bất hảo|A rogue app stole his data.|B2|f4|/ˈrəʊɡ/|/ˈroʊɡ/
+sharply|đột ngột; sắc bén|Prices rose sharply.|B2|f4|/ˈʃɑːpli/|/ˈʃɑːrpli/
+sincerely|chân thành|Yours sincerely, Nam.|B1|f4|/sɪnˈsiəli/|/sɪnˈsɪrli/
+solidarity|sự đoàn kết|The workers showed solidarity.|B2|f4|/ˌsɒlɪˈdærɪti/|/ˌsɑːlɪˈdærɪti/
+specialty|đặc sản; chuyên môn|Pho is a specialty of Hanoi.|B1|f4|/ˈspɛʃəlti/|/ˈspɛʃəlti/
+supernatural|siêu nhiên|Do you believe in the supernatural?|B2|f4|/ˌsuːpəˈnætʃərəl/|/ˌsuːpərˈnætʃərəl/
+thirteen|mười ba|There are thirteen pallets.|A1|f4|/ˈθɜːtiːn/|/ˈθɜːrtiːn/
+tomb|ngôi mộ, lăng mộ|We visited the king's tomb.|B1|f4|/ˈtuːm/|/ˈtuːm/
+trademark|nhãn hiệu|The logo is a registered trademark.|B2|f4|/ˈtreɪdmɑːk/|/ˈtreɪdmɑːrk/
+trim|cắt tỉa|Just a trim, please.|B1|f4|/ˈtrɪm/|/ˈtrɪm/
+voyage|chuyến đi biển|The voyage took three weeks.|B1|f4|/ˈvɔɪɪdʒ/|/ˈvɔɪɪdʒ/
+abbey|tu viện|We visited an old abbey.|B2|f4|/ˈæbi/|/ˈæbi/
+adjustment|sự điều chỉnh|We made a small adjustment to the schedule.|B1|f4|/əˈdʒʌstmənt/|/əˈdʒʌstmənt/
+baron|nam tước; trùm|He's a media baron.|B2|f4|/ˈbærən/|/ˈbærən/
+bomber|máy bay ném bom; kẻ đánh bom|The bomber was arrested.|B2|f4|/ˈbɒmə/|/ˈbɑːmər/
+bunny|con thỏ (cách gọi trẻ con)|The kids love the bunny.|A1|f4|/ˈbʌni/|/ˈbʌni/
+candle|nến|Light a candle.|A2|f4|/ˈkændəl/|/ˈkændəl/
+carve|chạm khắc; cắt (thịt)|He carved the chicken.|B1|f4|/ˈkɑːv/|/ˈkɑːrv/
+choir|dàn hợp xướng|She sings in the church choir.|B1|f4|/ˈkwaɪə/|/ˈkwaɪər/
+clutch|bộ ly hợp; nắm chặt|Press the clutch before changing gear.|B1|f4|/ˈklʌtʃ/|/ˈklʌtʃ/
+coconut|quả dừa|I'd like some coconut water.|A2|f4|/ˈkəʊkəˌnʌt/|/ˈkoʊkəˌnʌt/
+comprise|bao gồm|The team comprises ten people.|B2|f4|/kəmˈpraɪz/|/kəmˈpraɪz/
+confession|lời thú tội|He made a full confession.|B2|f4|/kənˈfɛʃən/|/kənˈfɛʃən/
+corridor|hành lang|The office is at the end of the corridor.|B1|f4|/ˈkɒrɪˌdɔː/|/ˈkɔrɪˌdɔːr/
+credibility|sự đáng tin|The company lost credibility.|B2|f4|/ˌkrɛdɪˈbɪlɪti/|/ˌkrɛdɪˈbɪlɪti/
+critically|một cách nghiêm trọng; phê phán|He is critically ill.|B2|f4|/ˈkrɪtɪkli/|/ˈkrɪtɪkli/
+distract|làm sao nhãng|Don't distract the driver.|B1|f4|/dɪˈstrækt/|/dɪˈstrækt/
+dolphin|cá heo|We saw dolphins from the boat.|A2|f4|/ˈdɒlfɪn/|/ˈdɑːlfɪn/
+fourteen|mười bốn|The trip takes fourteen days.|A1|f4|/ˈfɔːtiːn/|/ˈfɔːrtiːn/
+geometry|hình học|I was bad at geometry at school.|B1|f4|/dʒiˈɒmətri/|/dʒiˈɑːmətri/
+gossip|chuyện ngồi lê, buôn chuyện|Don't listen to office gossip.|B1|f4|/ˈɡɒsɪp/|/ˈɡɑːsɪp/
+grandparent|ông bà|My grandparents live in the country.|A2|f4|/ˈɡrændpeərənt/|/ˈɡrændpɛrənt/
+haul|kéo; chuyến chở|Long-haul flights are tiring.|B1|f4|/ˈhɔːl/|/ˈhɔːl/
+header|tiêu đề đầu trang; cú đánh đầu|Put the date in the header.|B1|f4|/ˈhɛdə/|/ˈhɛdər/
+headphone|tai nghe|I left my headphones at home.|A2|f4|/ˈhɛdfəʊn/|/ˈhɛdfoʊn/
+immense|to lớn|The warehouse is immense.|B2|f4|/ɪˈmɛns/|/ɪˈmɛns/
+interfere|can thiệp|Don't interfere in their argument.|B2|f4|/ˌɪntəˈfiə/|/ˌɪntəˈfɪr/
+investigator|điều tra viên|An investigator checked the accident.|B2|f4|/ɪnˈvɛstɪˌɡeɪtə/|/ɪnˈvɛstɪˌɡeɪtər/
+juvenile|vị thành niên|He went to a juvenile court.|B2|f4|/ˈdʒuːvəˌnaɪl/|/ˈdʒuːvəˌnaɪl/
+karma|nghiệp, quả báo|That's karma!|B1|f4|/ˈkɑːmə/|/ˈkɑːrmə/
+leverage|đòn bẩy; tận dụng|We can leverage our size to cut costs.|B2|f4|/ˈliːvərɪdʒ/|/ˈlɛvərɪdʒ/
+lining|lớp lót|The coat has a warm lining.|B2|f4|/ˈlaɪnɪŋ/|/ˈlaɪnɪŋ/
+mankind|nhân loại|It's a big step for mankind.|B2|f4|/mæŋˈkaɪnd/|/mæŋˈkaɪnd/
+mapping|việc lập bản đồ|Mapping the warehouse took a week.|B2|f4|/ˈmæpɪŋ/|/ˈmæpɪŋ/
+metric|hệ mét; chỉ số đo|We use the metric system.|B2|f4|/ˈmɛtrɪk/|/ˈmɛtrɪk/
+militia|dân quân|The militia guarded the village.|B2|f4|/məˈlɪʃə/|/məˈlɪʃə/
+node|nút, điểm nối|Each hub is a node in our network.|B2|f4|/ˈnəʊd/|/ˈnoʊd/
+obstacle|chướng ngại vật|There's an obstacle on the road.|B1|f4|/ˈɒbstəkəl/|/ˈɑːbstəkəl/
+opener|cái mở (nắp, hộp)|Where's the bottle opener?|A2|f4|/ˈəʊpənə/|/ˈoʊpənər/
+overwhelm|làm choáng ngợp|Don't overwhelm new staff with information.|B2|f4|/ˌəʊvəˈwɛlm/|/ˌoʊvərˈwɛlm/
+performer|người biểu diễn|The street performers were great.|B1|f4|/pəˈfɔːmə/|/pərˈfɔːrmər/
+pointless|vô ích|It's pointless to argue.|B1|f4|/ˈpɔɪntləs/|/ˈpɔɪntləs/
+prompt|nhanh chóng; nhắc|Thank you for your prompt reply.|B1|f4|/ˈprɒmpt/|/ˈprɑːmpt/
+proximity|sự gần gũi|The warehouse is in close proximity to the port.|B2|f4|/prɒkˈsɪmɪti/|/prɑːkˈsɪmɪti/
+qualification|bằng cấp, trình độ|What qualifications do you have?|B1|f4|/ˌkwɒlɪfɪˈkeɪʃən/|/ˌkwɔlɪfɪˈkeɪʃən/
+render|làm cho; kết xuất|The heavy rain rendered the road unsafe.|B2|f4|/ˈrɛndə/|/ˈrɛndər/
+sadness|nỗi buồn|There was sadness in her eyes.|A2|f4|/ˈsædnəs/|/ˈsædnəs/
+selective|có chọn lọc|Be selective about what you buy.|B2|f4|/sɪˈlɛktɪv/|/sɪˈlɛktɪv/
+shiny|sáng bóng|He bought a shiny new car.|A2|f4|/ˈʃaɪni/|/ˈʃaɪni/
+socialism|chủ nghĩa xã hội|They studied socialism at university.|B2|f4|/ˈsəʊʃəˌlɪzəm/|/ˈsoʊʃəˌlɪzəm/
+stressful|căng thẳng|Moving house is stressful.|B1|f4|/ˈstrɛsfəl/|/ˈstrɛsfəl/
+tenant|người thuê nhà|The tenant pays rent every month.|B1|f4|/ˈtɛnənt/|/ˈtɛnənt/
+terrace|sân thượng, hiên|Let's sit on the terrace.|B1|f4|/ˈtɛrɪs/|/ˈtɛrɪs/
+thief|kẻ trộm|The thief took my phone.|A2|f4|/ˈθiːf/|/ˈθiːf/
+tribunal|tòa án đặc biệt|The case went to a tribunal.|B2|f4|/traɪˈbjuːnəl/|/traɪˈbjuːnəl/
+undoubtedly|chắc chắn|She is undoubtedly the best.|B2|f4|/ʌnˈdaʊtɪdli/|/ʌnˈdaʊtɪdli/
+villain|nhân vật phản diện|The villain dies at the end.|B1|f4|/ˈvɪlən/|/ˈvɪlən/
+whistle|còi; huýt sáo|The referee blew the whistle.|A2|f4|/ˈwɪsəl/|/ˈwɪsəl/
+yearly|hằng năm|We have a yearly check-up.|B1|f4|/ˈjiəli/|/ˈjɪrli/
+abusive|lăng mạ, ngược đãi|Abusive language is not allowed.|B2|f4|/əˈbjuːsɪv/|/əˈbjuːsɪv/
+appetite|sự thèm ăn|I have no appetite today.|B1|f4|/ˈæpɪˌtaɪt/|/ˈæpɪˌtaɪt/
+backyard|sân sau|The kids play in the backyard.|A2|f4|/ˈbækjɑːd/|/ˈbækjɑːrd/
+billboard|bảng quảng cáo lớn|There's a huge billboard on the highway.|B1|f4|/ˈbɪlbɔːd/|/ˈbɪlbɔːrd/
+calculation|phép tính|Let me check my calculations.|B1|f4|/ˌkælkjʊˈleɪʃən/|/ˌkælkjʊˈleɪʃən/
+conceive|hình dung; thụ thai|I can't conceive of a better plan.|B2|f4|/kənˈsiːv/|/kənˈsiːv/
+damned|chết tiệt (khẩu ngữ)|The damned printer is broken again.|B1|f4|/ˈdæmd/|/ˈdæmd/
+dissolve|hòa tan; giải tán|Dissolve the sugar in hot water.|B1|f4|/dɪˈsɒlv/|/dɪˈsɑːlv/
+dynasty|triều đại|The Nguyen dynasty ruled from Hue.|B2|f4|/ˈdɪnəsti/|/ˈdaɪnəsti/
+economist|nhà kinh tế học|Economists expect prices to fall.|B2|f4|/ɪˈkɒnəˌmɪst/|/ɪˈkɑːnəˌmɪst/
+endorse|tán thành; quảng bá|The famous player endorses this shoe.|B2|f4|/ɛnˈdɔːs/|/ɛnˈdɔːrs/
+extensively|rộng rãi|He has travelled extensively in Asia.|B2|f4|/ɛkˈstɛnsɪvli/|/ɛkˈstɛnsɪvli/
+forehead|trán|He wiped his forehead.|A2|f4|/ˈfɔːhɛd/|/ˈfɔːrhɛd/
+forgiveness|sự tha thứ|I ask for your forgiveness.|B2|f4|/fəˈɡɪvnəs/|/fərˈɡɪvnəs/
+gem|đá quý; người/vật quý|This little café is a real gem.|B1|f4|/ˈdʒɛm/|/ˈdʒɛm/
+haunt|ám ảnh; ma ám|People say the house is haunted.|B2|f4|/ˈhɔːnt/|/ˈhɔːnt/
+hypothesis|giả thuyết|Let's test the hypothesis.|B2|f4|/haɪˈpɒθəˌsɪs/|/haɪˈpɑːθəˌsɪs/
+illegally|bất hợp pháp|He parked illegally.|B1|f4|/ɪˈliːɡəli/|/ɪˈliːɡəli/
+incline|dốc; có khuynh hướng|I'm inclined to agree.|B2|f4|/ɪŋˈklaɪn/|/ɪŋˈklaɪn/
+informal|thân mật, không trang trọng|It's an informal meeting.|B1|f4|/ɪnˈfɔːməl/|/ɪnˈfɔːrməl/
+marker|bút dạ; dấu|Write the code with a marker.|A2|f4|/ˈmɑːkə/|/ˈmɑːrkər/
+marsh|đầm lầy|Birds live in the marsh.|B2|f4|/ˈmɑːʃ/|/ˈmɑːrʃ/
+marshal|cảnh sát trưởng; điều phối|The marshals directed the traffic.|B2|f4|/ˈmɑːʃəl/|/ˈmɑːrʃəl/
+maturity|sự trưởng thành; đáo hạn|She shows great maturity.|B2|f4|/məˈtʃʊərɪti/|/məˈtʃʊrɪti/
+messy|bừa bộn|My desk is so messy.|A2|f4|/ˈmɛsi/|/ˈmɛsi/
+optimistic|lạc quan|I'm optimistic about the future.|B1|f4|/ˌɒptɪˈmɪstɪk/|/ˌɑːptɪˈmɪstɪk/
+owl|con cú|I'm a night owl.|A2|f4|/ˈaʊl/|/ˈaʊl/
+problematic|có vấn đề|This route is problematic in winter.|B2|f4|/ˌprɒbəlˈmætɪk/|/ˌprɑːbəlˈmætɪk/
+processor|bộ xử lý|This laptop has a fast processor.|B1|f4|/ˈprəʊsɛsə/|/ˈprɑːsɛsər/
+promotional|khuyến mãi|We have promotional prices this week.|B2|f4|/prəˈməʊʃənəl/|/prəˈmoʊʃənəl/
+prospective|tương lai, tiềm năng|We met a prospective client.|B2|f4|/prəˈspɛktɪv/|/prəˈspɛktɪv/
+psychiatric|thuộc tâm thần|He needs psychiatric help.|B2|f4|/ˌsaɪkɪˈætrɪk/|/ˌsaɪkɪˈætrɪk/
+renaissance|thời Phục hưng; sự phục hồi|The city is having a renaissance.|B2|f4|/rɪˈneɪsəns/|/ˈrɛnəˌsɑːns/
+repeal|bãi bỏ (luật)|They want to repeal the tax.|B2|f4|/rɪˈpiːl/|/rɪˈpiːl/
+roast|quay, nướng|We had roast chicken.|A2|f4|/ˈrəʊst/|/ˈroʊst/
+saga|câu chuyện dài|The delivery became a long saga.|B2|f4|/ˈsɑːɡə/|/ˈsɑːɡə/
+salon|tiệm làm tóc, thẩm mỹ|She went to the hair salon.|A2|f4|/ˈsælɒn/|/səˈlɑːn/
+seventeen|mười bảy|She is seventeen.|A1|f4|/ˈsɛvənˌtiːn/|/ˈsɛvənˌtiːn/
+sodium|natri|This food is high in sodium.|B2|f4|/ˈsəʊdiəm/|/ˈsoʊdiəm/
+surplus|thặng dư, dư thừa|We have a surplus of stock.|B2|f4|/ˈsɜːpləs/|/ˈsɜːrplʌs/
+swallow|nuốt; chim én|Swallow the pill with water.|B1|f4|/ˈswɒləʊ/|/ˈswɔloʊ/
+systematic|có hệ thống|We need a systematic approach.|B2|f4|/ˌsɪstəˈmætɪk/|/ˌsɪstəˈmætɪk/
+transmit|truyền, phát|The sensor transmits data every minute.|B2|f4|/trænˈsmɪt/|/trænˈsmɪt/
+unacceptable|không thể chấp nhận|This delay is unacceptable.|B1|f4|/ʌnəkˈsɛptəbəl/|/ʌnəkˈsɛptəbəl/
+unaware|không biết|I was unaware of the problem.|B2|f4|/ˌʌnəˈweə/|/ˌʌnəˈwɛr/
+uncommon|không phổ biến|It's not uncommon to wait an hour.|B2|f4|/ʌŋˈkɒmən/|/ʌŋˈkɑːmən/
+underway|đang tiến hành|Work is already underway.|B2|f4|/ˌʌndəˈweɪ/|/ˌʌndərˈweɪ/
+unify|thống nhất|We need to unify our systems.|B2|f4|/ˈjuːnɪˌfaɪ/|/ˈjuːnɪˌfaɪ/
+unstable|không ổn định|The stack of boxes is unstable.|B1|f4|/ʌnˈsteɪbəl/|/ʌnˈsteɪbəl/
+vague|mơ hồ|His answer was vague.|B2|f4|/ˈveɪɡ/|/ˈveɪɡ/
+zip|khóa kéo; nén file|Can you zip the files and send them?|A2|f4|/ˈzɪp/|/ˈzɪp/
+abundance|sự phong phú|There's an abundance of fresh fruit here.|B2|f4|/əˈbʌndəns/|/əˈbʌndəns/
+ant|con kiến|There are ants in the kitchen.|A2|f4|/ˈænt/|/ˈænt/
+antique|đồ cổ|She collects antique furniture.|B1|f4|/ænˈtiːk/|/ænˈtiːk/
+autonomy|sự tự chủ|Teams have more autonomy now.|B2|f4|/ɔːˈtɒnəmi/|/ɔːˈtɑːnəmi/
+behavioral|thuộc hành vi|We look at behavioral data.|B2|f4|/bɪˈheɪvjərəl/|/bɪˈheɪvjərəl/
+breeze|làn gió nhẹ; dễ như ăn kẹo|The test was a breeze.|B1|f4|/ˈbriːz/|/ˈbriːz/
+carnival|lễ hội|The carnival comes every summer.|B1|f4|/ˈkɑːnɪvəl/|/ˈkɑːrnɪvəl/
+commodity|hàng hóa (nguyên liệu)|Coffee is a major commodity.|B2|f4|/kəˈmɒdɪti/|/kəˈmɑːdɪti/
+congressman|nghị sĩ|The congressman gave a speech.|B2|f4|/ˈkɒŋɡrɛsmən/|/ˈkɑːŋɡrəsmən/
+cooperative|hợp tác xã; hợp tác|The workers are very cooperative.|B2|f4|/kəʊˈɒpərəˌtɪv/|/koʊˈɑːpərəˌtɪv/
+coral|san hô|The coral reef is beautiful.|B1|f4|/ˈkɒrəl/|/ˈkɔːrəl/
+correlation|sự tương quan|There's a correlation between price and demand.|B2|f4|/ˌkɒrɪˈleɪʃən/|/ˌkɔrɪˈleɪʃən/
+correspondent|phóng viên|She is a foreign correspondent.|B2|f4|/ˌkɒrɪˈspɒndənt/|/ˌkɔːrɪˈspɑːndənt/
+coupon|phiếu giảm giá|Use this coupon to save 10%.|A2|f4|/ˈkuːpɒn/|/ˈkuːpɑːn/
+curtain|rèm cửa|Close the curtains, please.|A2|f4|/ˈkɜːtən/|/ˈkɜːrtən/
+dough|bột nhào|Knead the dough for ten minutes.|B1|f4|/ˈdəʊ/|/ˈdoʊ/
+endangered|có nguy cơ tuyệt chủng|Tigers are an endangered species.|B1|f4|/ɛnˈdeɪndʒəd/|/ɛnˈdeɪndʒərd/
+envelope|phong bì|Put the letter in an envelope.|A2|f4|/ˈɛnvəˌləʊp/|/ˈɑːnvəˌloʊp/
+fade|phai, mờ dần|The colors fade in the sun.|B1|f4|/ˈfeɪd/|/ˈfeɪd/
+fatigue|sự mệt mỏi|Driver fatigue causes accidents.|B2|f4|/fəˈtiːɡ/|/fəˈtiːɡ/
+fellowship|tình bằng hữu; học bổng nghiên cứu|She got a research fellowship.|B2|f4|/ˈfɛləʊˌʃɪp/|/ˈfɛloʊˌʃɪp/
+fictional|hư cấu|The story is fictional.|B1|f4|/ˈfɪkʃənəl/|/ˈfɪkʃənəl/
+fringe|tóc mái; rìa|She has a short fringe.|B2|f4|/ˈfrɪndʒ/|/ˈfrɪndʒ/
+fulfill|hoàn thành, đáp ứng|We fulfill orders within 24 hours.|B2|f4|/fʊlˈfɪl/|/fʊlˈfɪl/
+granite|đá granit|The kitchen has granite counters.|B2|f4|/ˈɡrænɪt/|/ˈɡrænɪt/
+handbook|sổ tay hướng dẫn|Read the staff handbook.|B1|f4|/ˈhændbʊk/|/ˈhændbʊk/
+instinct|bản năng|Trust your instinct.|B2|f4|/ˈɪnstɪŋkt/|/ˈɪnstɪŋkt/
+irony|sự trớ trêu|The irony is that he was never late before.|B2|f4|/ˈaɪrəni/|/ˈaɪrəni/
+judiciary|ngành tư pháp|The judiciary is independent.|B2|f4|/dʒuːˈdɪʃəri/|/dʒuːˈdɪʃəri/
+legion|quân đoàn; vô số|He served in the legion.|B2|f4|/ˈliːdʒən/|/ˈliːdʒən/
+lethal|gây chết người|The chemical is lethal.|B2|f4|/ˈliːθəl/|/ˈliːθəl/
+lime|chanh xanh; vôi|Add a slice of lime.|A2|f4|/ˈlaɪm/|/ˈlaɪm/
+lively|sôi nổi|The market is very lively.|B1|f4|/ˈlaɪvlɪ/|/ˈlaɪvli/
+maid|người giúp việc|The hotel maid cleaned the room.|A2|f4|/ˈmeɪd/|/ˈmeɪd/
+maple|cây phong|Maple syrup is sweet.|B1|f4|/ˈmeɪpəl/|/ˈmeɪpəl/
+midfielder|tiền vệ|He plays as a midfielder.|B1|f4|/ˈmɪdfiːldə/|/ˈmɪdfiːldər/
+mindset|lối tư duy|You need a positive mindset.|B2|f4|/ˈmaɪndsɛt/|/ˈmaɪndsɛt/
+mortal|phải chết; trần tục|We are all mortal.|B2|f4|/ˈmɔːtəl/|/ˈmɔːrtəl/
+nonprofit|phi lợi nhuận|She works for a nonprofit.|B2|f4|/ˌnɒnˈprɒfɪt/|/ˌnɑːnˈprɑːfɪt/
+operative|có hiệu lực; nhân viên|The rule is operative from today.|B2|f4|/ˈɒpərəˌtɪv/|/ˈɑːpərəˌtɪv/
+prestigious|danh tiếng|She went to a prestigious university.|B2|f4|/prɛˈstɪdʒəs/|/prɛˈstɪdʒəs/
+radius|bán kính|We deliver within a 10 km radius.|B2|f4|/ˈreɪdɪəs/|/ˈreɪdɪəs/
+relay|chạy tiếp sức; chuyển tiếp|Please relay the message to your boss.|B2|f4|/ˈriːleɪ/|/ˈriːleɪ/
+rig|giàn khoan; dàn dựng|He works on an oil rig.|B2|f4|/ˈrɪɡ/|/ˈrɪɡ/
+scroll|cuộn (màn hình)|Scroll down to see more.|A2|f4|/ˈskrəʊl/|/ˈskroʊl/
+sovereignty|chủ quyền|They defend national sovereignty.|B2|f4|/ˈsɒvəˌrɪnti/|/ˈsɑːvəˌrɪnti/
+stunt|pha nguy hiểm|Don't try this stunt at home.|B2|f4|/ˈstʌnt/|/ˈstʌnt/
+sunlight|ánh nắng|Keep it out of direct sunlight.|A2|f4|/ˈsʌnlaɪt/|/ˈsʌnlaɪt/
+surf|lướt sóng; lướt web|We surfed at the beach.|A2|f4|/ˈsɜːf/|/ˈsɜːrf/
+symbolic|mang tính biểu tượng|It's a symbolic gesture.|B2|f4|/sɪmˈbɒlɪk/|/sɪmˈbɑːlɪk/
+sync|đồng bộ|Sync your phone with your laptop.|B1|f4|/ˈsɪŋk/|/ˈsɪŋk/
+taxpayer|người nộp thuế|Taxpayers will pay for the new road.|B2|f4|/ˈtækspeɪə/|/ˈtækspeɪər/
+tempt|cám dỗ|Don't tempt me with cake!|B1|f4|/ˈtɛmpt/|/ˈtɛmpt/
+thrust|lực đẩy; đẩy mạnh|He thrust the papers into my hand.|B2|f4|/ˈθrʌst/|/ˈθrʌst/
+trilogy|bộ ba (phim, sách)|I've seen the whole trilogy.|B2|f4|/ˈtrɪlədʒi/|/ˈtrɪlədʒi/
+wheelchair|xe lăn|The building has wheelchair access.|A2|f4|/ˈwiːltʃeə/|/ˈwiːltʃɛr/
+yourselves|chính các bạn|Help yourselves to some food.|A2|f4|/jɔːˈsɛlvz/|/jɔːrˈsɛlvz/
+accusation|lời buộc tội|He denied the accusation.|B2|f4|/ˌækjuːˈzeɪʃən/|/ˌækjuːˈzeɪʃən/
+arbitrary|tùy tiện|The rule seems arbitrary.|B2|f4|/ˈɑːbɪtrəri/|/ˈɑːrbɪˌtrɛri/
+autonomous|tự hành, tự trị|Autonomous trucks are being tested.|B2|f4|/ɔːˈtɒnəməs/|/ɔːˈtɑːnəməs/
+bait|mồi|He put bait on the hook.|B2|f4|/ˈbeɪt/|/ˈbeɪt/
+bark|sủa; vỏ cây|The dog barks at strangers.|A2|f4|/ˈbɑːk/|/ˈbɑːrk/
+blogger|người viết blog|She's a travel blogger.|A2|f4|/ˈblɒɡə/|/ˈblɑːɡər/
+brotherhood|tình anh em|They have a strong brotherhood.|B2|f4|/ˈbrʌðəˌhʊd/|/ˈbrʌðərˌhʊd/
+builder|thợ xây|The builders start at 7 a.m.|A2|f4|/ˈbɪldə/|/ˈbɪldər/
+carriage|toa xe; sự vận chuyển|Carriage costs are included.|B2|f4|/ˈkærɪdʒ/|/ˈkærɪdʒ/
+censorship|sự kiểm duyệt|There is strict censorship of films.|B2|f4|/ˈsɛnsəˌʃɪp/|/ˈsɛnsərˌʃɪp/
+clarify|làm rõ|Could you clarify that point?|B1|f4|/ˈklærɪˌfaɪ/|/ˈklærɪˌfaɪ/
+compilation|tuyển tập|It's a compilation of old songs.|B2|f4|/ˌkɒmpɪˈleɪʃən/|/ˌkɑːmpɪˈleɪʃən/
+composer|nhà soạn nhạc|Mozart was a great composer.|B1|f4|/kəmˈpəʊzə/|/kəmˈpoʊzər/
+constitute|cấu thành|Women constitute half of the workforce.|B2|f4|/ˈkɒnstɪˌtjuːt/|/ˈkɑːnstɪˌtuːt/
+correspondence|thư từ|Keep all correspondence with the client.|B2|f4|/ˌkɒrɪˈspɒndəns/|/ˌkɔːrɪˈspɑːndəns/
+desirable|đáng mong muốn|Experience is desirable but not required.|B2|f4|/dɪˈzaɪərəbəl/|/dɪˈzaɪərəbəl/
+devastate|tàn phá; làm suy sụp|The fire devastated the factory.|B2|f4|/ˈdɛvɪˌsteɪt/|/ˈdɛvɪˌsteɪt/
+diagram|sơ đồ|Look at the diagram on page 5.|B1|f4|/ˈdaɪəɡˌræm/|/ˈdaɪəɡˌræm/
+erect|dựng lên; thẳng đứng|They erected a tent.|B2|f4|/ɪˈrɛkt/|/ɪˈrɛkt/
+explorer|nhà thám hiểm|He's a famous explorer.|B1|f4|/ɛkˈsplɔːrə/|/ɛkˈsplɔːrər/
+favorable|thuận lợi|The weather is favorable for sailing.|B2|f4|/ˈfeɪvərəbəl/|/ˈfeɪvərəbəl/
+flaw|khuyết điểm|There's a flaw in the design.|B2|f4|/ˈflɔː/|/ˈflɔː/
+gasoline|xăng|Gasoline prices went up again.|B1|f4|/ˈɡæsəˌliːn/|/ˈɡæsəˌliːn/
+geographical|thuộc địa lý|The geographical location is perfect.|B2|f4|/ˌdʒɪəɡˈræfɪkəl/|/ˌdʒɪəɡˈræfɪkəl/
+governmental|thuộc chính phủ|It's a governmental agency.|B2|f4|/ˌɡʌvənˈmɛntəl/|/ˌɡʌvərnˈmɛntəl/
+grandson|cháu trai (của ông bà)|My grandson is five.|A2|f4|/ˈɡrændsʌn/|/ˈɡrændsʌn/
+incomplete|không đầy đủ|The form is incomplete.|B1|f4|/ɪŋkəmˈpliːt/|/ɪŋkəmˈpliːt/
+interrupt|ngắt lời|Sorry to interrupt, but the truck is here.|B1|f4|/ˈɪntəˌrʌpt/|/ˈɪntəˌrʌpt/
+ivory|ngà voi|The ivory trade is illegal.|B2|f4|/ˈaɪvəri/|/ˈaɪvəri/
+lengthy|dài dòng|It was a lengthy meeting.|B2|f4|/ˈlɛŋθi/|/ˈlɛŋθi/
+levy|thuế; đánh thuế|They levy a tax on imports.|B2|f4|/ˈlɛvi/|/ˈlɛvi/
+manipulation|sự thao túng|Price manipulation is illegal.|B2|f4|/məˌnɪpjʊˈleɪʃən/|/məˌnɪpjʊˈleɪʃən/
+mock|chế giễu; thi thử|We have a mock exam on Friday.|B2|f4|/ˈmɒk/|/ˈmɑːk/
+niche|thị trường ngách|They found a niche in the market.|B2|f4|/ˈniːʃ/|/ˈnɪtʃ/
+obscure|mù mờ, ít người biết|It's an obscure band.|B2|f4|/ɒbˈskjʊə/|/əbˈskjʊr/
+porch|hiên nhà|They sat on the porch.|B1|f4|/ˈpɔːtʃ/|/ˈpɔːrtʃ/
+portray|miêu tả, khắc họa|The film portrays life in the city.|B2|f4|/pɔːˈtreɪ/|/pɔːrˈtreɪ/
+proposition|đề xuất|That's an interesting proposition.|B2|f4|/ˌprɒpəˈzɪʃən/|/ˌprɑːpəˈzɪʃən/
+reading|việc đọc; chỉ số đo|Take a meter reading.|A2|f4|/ˈriːdɪŋ/|/ˈriːdɪŋ/
+recession|suy thoái kinh tế|Many businesses closed during the recession.|B2|f4|/rɪˈsɛʃən/|/rɪˈsɛʃən/
+rim|vành, mép|The cup has a gold rim.|B2|f4|/ˈrɪm/|/ˈrɪm/
+secondly|thứ hai là|Firstly, it's cheap. Secondly, it's fast.|B1|f4|/ˈsɛkəndli/|/ˈsɛkəndli/
+spinal|thuộc cột sống|He had a spinal injury.|B2|f4|/ˈspaɪnəl/|/ˈspaɪnəl/`;
 const VOCAB=RAW.trim().split("\n").map((l,i)=>{const [term,vi,ex,level,topic,uk,us]=l.split("|");return{id:"w"+i,term,vi,ex,level,topic,uk:uk||"",us:us||""}});
 
 /* ============ LISTENING ============ */
@@ -6691,22 +7232,23 @@ function videoView(){
 
 /* ============ CAPABILITIES ============ */
 let DICT=null,DL=null,SAMPLE=null;
-/* standalone: browser speech recognition adapter with the same shape as Claude's dictation */
-(function(){const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR)return;
+/* browser speech recognition (Chrome, Edge, Safari): same shape as Claude's dictation, so scoring works without Claude */
+function browserDict(){const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR)return null;
   let rec=null,state="idle",P=[],F=[],ST=[],stopWait=null;
   const emit=(a,e)=>a.slice().forEach(f=>{try{f(e)}catch(x){}});
   const set=(s,reason)=>{state=s;emit(ST,reason?{state:s,reason}:{state:s})};
   const sub=(a,f)=>{a.push(f);return()=>{const i=a.indexOf(f);if(i>=0)a.splice(i,1)}};
-  DICT={active:()=>state!=="idle",onPartial:f=>sub(P,f),onFinal:f=>sub(F,f),onState:f=>sub(ST,f),
+  return{local:true,active:()=>state!=="idle",onPartial:f=>sub(P,f),onFinal:f=>sub(F,f),onState:f=>sub(ST,f),
     start(o){return new Promise((res,rej)=>{if(state!=="idle")return res();
       rec=new SR();rec.lang="en-US";rec.continuous=true;rec.interimResults=true;let reason="stopped",started=false;
       rec.onstart=()=>{started=true;set("listening");res()};
       rec.onresult=e=>{let interim="";for(let i=e.resultIndex;i<e.results.length;i++){const r=e.results[i];if(r.isFinal)emit(F,{text:" "+r[0].transcript});else interim+=r[0].transcript}emit(P,{text:interim})};
-      rec.onerror=e=>{reason=e.error==="not-allowed"||e.error==="service-not-allowed"?"not_granted":e.error==="no-speech"||e.error==="aborted"?"stopped":"upstream_error";if(!started)rej({code:reason==="stopped"?"stopped":reason,message:e.error})};
+      rec.onerror=e=>{reason=e.error==="not-allowed"||e.error==="service-not-allowed"?"not_granted":e.error==="no-speech"||e.error==="aborted"?"stopped":e.error==="network"?"upstream_error":"upstream_error";if(!started)rej({code:reason==="stopped"?"stopped":reason,message:e.error})};
       rec.onend=()=>{rec=null;set("idle",reason);if(stopWait){stopWait();stopWait=null}};
       set("starting");try{rec.start()}catch(e){set("idle","upstream_error");rej({code:"upstream_error",message:String(e)})}})},
-    stop(){return new Promise(r=>{if(!rec)return r();stopWait=r;set("finishing");try{rec.stop()}catch(e){r()}})}};
-})();
+    stop(){return new Promise(r=>{if(!rec)return r();stopWait=r;set("finishing");try{rec.stop()}catch(e){r()}})}}}
+DICT=browserDict();
+DICT=browserDict();
 DL={save({filename}){const a=document.createElement("a");a.href="tu-vung-logistics.pdf";a.download=filename;document.body.appendChild(a);a.click();a.remove();return Promise.resolve()}};
 if("serviceWorker" in navigator&&location.protocol.startsWith("http")){navigator.serviceWorker.register("sw.js").then(r=>r.update()).catch(()=>{});let rl=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(!rl){rl=true;location.reload()}})}
 async function savePdf(){
@@ -6764,7 +7306,7 @@ function drawPron(){
     <p class="pron-target">${esc(target)}</p>${pron.mode==="word"?ipaHtml(w):""}<p class="note">${esc(w.vi)}</p>
     <div class="bar" style="margin:0"><button class="btn ghost" id="pmodel">▶ Nghe mẫu</button><button class="btn ghost" id="pslow">▶ Nghe chậm</button>
       <button class="btn warn mic" id="pmic" ${DICT?"":"disabled"}>● Bấm để nói</button></div>
-    <p class="note" id="pstate">${DICT?"Bấm nút, đọc to rõ ràng, app tự chấm khi bạn ngừng nói.":"Trình duyệt này chưa hỗ trợ nhận giọng nói. Hãy mở app bằng Chrome (máy tính hoặc Android), Edge, hoặc Safari trên iPhone. Bạn vẫn nghe mẫu và tự luyện được."}</p>
+    <p class="note" id="pstate">${DICT?"Bấm nút, đọc to rõ ràng, app tự chấm khi bạn ngừng nói.":"Trình duyệt này chưa nhận được giọng nói. Hãy mở app bằng Chrome (máy tính hoặc Android), Edge, hoặc Safari trên iPhone. Bạn vẫn nghe mẫu và tự luyện được."}</p>
     <p class="heard" id="pheard"></p><div id="presult"></div>
     <div class="bar" style="margin:0"><button class="btn ghost" id="pprev" ${pron.i?"":"disabled"}>← Trước</button><button class="btn" id="pnext">${pron.i+1<pron.list.length?"Tiếp →":"Bộ mới"}</button></div></div>`;
   $("#pmodel").onclick=()=>{stopSpeech();say(target,0.9)};
@@ -6803,7 +7345,7 @@ function drawPron(){
 }
 
 /* ============ SHARED MIC SCORER ============ */
-const NO_MIC="Phần chấm điểm cần micro. Trên claude.ai hãy dùng Chrome/Edge máy tính hoặc ứng dụng Claude; bản web mở bằng Chrome hoặc Edge. Bạn vẫn nghe mẫu và tự luyện được.";
+const NO_MIC="Trình duyệt này chưa nhận được giọng nói. Hãy mở app bằng Chrome (máy tính hoặc Android), Edge, hoặc Safari trên iPhone. Bạn vẫn nghe mẫu và tự luyện được.";
 function scoreHtml(r,extra){const cls=r.score>=85?"good":r.score>=60?"mid":"low";
   return `<div class="pron-score ${cls}"><b>${r.score}</b><span>/100 · ${r.score>=85?"Rất tốt":r.score>=60?"Khá, luyện thêm các từ màu đỏ":"Cần luyện lại: nghe chậm rồi đọc theo"}</span></div>${extra||""}
   <p class="pron-words">${r.words.map(([t,v])=>`<span class="${v>=.95?"ok":v>=.6?"near":"miss"}">${esc(t)}</span>`).join(" ")}</p>`}
@@ -7003,7 +7545,267 @@ const CHAT_SCEN=[
  {id:"shop",t:"Shopping for clothes",vi:"Mua quần áo",role:"a shop assistant in a clothes store in New York",open:"Hi! Are you looking for anything in particular today?"},
  {id:"dir",t:"Asking for directions",vi:"Hỏi đường",role:"a local person in Manchester whom the learner stops on the street to ask for directions",open:"Sorry, did you need some help? You look a bit lost."}
 ];
-let chat={scen:"free",level:"B1",turns:[],busy:false,voice:true,ctl:null,showVi:false};
+/* ============ BASIC CHAT (no AI): question bank ============ */
+// each q: [question, vietnamese, bot's own answer (used when learner asks "and you?"), [sample answer 1, sample answer 2]]
+const BASIC_TOPICS=[
+ {id:"me",t:"Getting to know you",vi:"Làm quen",q:[
+  ["So, what's your name, and where are you from?","Bạn tên gì, và bạn đến từ đâu?","I'm Sam, and I'm from Manchester in the UK.",["My name is Minh, and I'm from Hai Phong.","I'm Lan. I'm from a small town near Hanoi."]],
+  ["What do you do for a living?","Bạn làm nghề gì?","I work in customer service for a shipping company.",["I work in logistics. I'm a shipping coordinator.","I work in a warehouse near the port."]],
+  ["How long have you been learning English?","Bạn học tiếng Anh bao lâu rồi?","Well, it's my first language, but I've been learning Spanish for two years.",["I've been learning English for about three years.","I started last year, so not very long."]],
+  ["Why do you want to improve your English?","Tại sao bạn muốn cải thiện tiếng Anh?","I think learning languages opens a lot of doors.",["I need English for my job because I talk to foreign customers.","I want to get a better job and travel more."]],
+  ["What do you like doing in your free time?","Lúc rảnh bạn thích làm gì?","I love cooking and going for long walks.",["I like watching football and playing games on my phone.","I usually go to a café with my friends."]],
+  ["Do you live with your family?","Bạn có sống cùng gia đình không?","No, I live with two friends in a flat.",["Yes, I live with my parents and my younger brother.","No, I rent a small room near my office."]],
+  ["What's one thing you're really good at?","Có điều gì bạn rất giỏi không?","I'm pretty good at remembering names.",["I'm good at solving problems at work.","I think I'm good at cooking noodles."]]]},
+ {id:"day",t:"Daily routine",vi:"Thói quen hằng ngày",q:[
+  ["What time do you usually get up?","Bạn thường dậy lúc mấy giờ?","I usually get up at about seven.",["I usually get up at six o'clock.","On weekdays I get up at half past five."]],
+  ["What do you usually have for breakfast?","Bạn thường ăn sáng món gì?","Just toast and a big cup of tea.",["I usually have pho or bread with eggs.","I often skip breakfast because I'm in a hurry."]],
+  ["How do you get to work?","Bạn đi làm bằng gì?","I take the bus, it's about twenty minutes.",["I go to work by motorbike.","I take the company bus."]],
+  ["What's the busiest part of your day?","Lúc nào trong ngày bạn bận nhất?","The mornings, definitely. Everyone needs something at nine a.m.!",["The morning is the busiest because many trucks arrive.","Late afternoon, when we close the shipments."]],
+  ["What do you usually do after work?","Sau giờ làm bạn thường làm gì?","I usually go to the gym or just relax at home.",["I cook dinner and watch TV with my family.","I play badminton with my friends."]],
+  ["What time do you go to bed?","Bạn đi ngủ lúc mấy giờ?","Around eleven, but sometimes much later.",["I usually go to bed at eleven.","Quite late, around midnight."]],
+  ["What's your favorite day of the week, and why?","Ngày nào trong tuần bạn thích nhất, vì sao?","Friday evening, because the weekend is just starting.",["Saturday, because I can sleep late.","Sunday, because I spend time with my family."]]]},
+ {id:"work",t:"Work and logistics",vi:"Công việc và logistics",q:[
+  ["What does your company do?","Công ty bạn làm gì?","We move goods by sea from Asia to Europe.",["We are a freight forwarder. We ship goods to the US and Europe.","We run a warehouse and deliver goods for online shops."]],
+  ["What do you do on a typical day at work?","Một ngày làm việc bình thường của bạn thế nào?","I answer customer emails and track shipments.",["I check bookings, send documents and talk to customers.","I check the goods, count the boxes and load the trucks."]],
+  ["What's the hardest part of your job?","Phần khó nhất trong công việc của bạn là gì?","Dealing with angry customers when things are late.",["When shipments are delayed and customers are angry.","Writing emails in English quickly."]],
+  ["Do you often use English at work?","Bạn có hay dùng tiếng Anh ở chỗ làm không?","Every day, of course, but I'm learning some Vietnamese too!",["Yes, I write emails in English every day.","Not much, but I need it for meetings with foreign customers."]],
+  ["How do you deal with a delayed shipment?","Bạn xử lý lô hàng bị trễ thế nào?","First I find out why, then I call the customer with a new ETA.",["I check the reason, tell the customer and give a new ETA.","I call the carrier and try to find another option."]],
+  ["Do you like working in a team?","Bạn có thích làm việc nhóm không?","Yes, I love it. Good teams make work fun.",["Yes, my team is very friendly and helpful.","It depends. Sometimes I prefer working alone."]],
+  ["Where do you see yourself in five years?","Bạn thấy mình ở đâu sau năm năm nữa?","Maybe running my own small business, who knows?",["I'd like to be a team leader.","I hope to work for an international company."]]]},
+ {id:"food",t:"Food and drink",vi:"Ăn uống",q:[
+  ["What's your favorite food?","Món ăn yêu thích của bạn là gì?","I love a good curry. The spicier, the better.",["I love bun cha. It's a famous dish from Hanoi.","My favorite food is my mother's fried fish."]],
+  ["Can you cook? What can you make?","Bạn có biết nấu ăn không? Bạn nấu được món gì?","Yes, I can make a pretty decent pasta.",["Yes, I can cook simple dishes like fried rice.","Not really. I can only boil eggs!"]],
+  ["Do you prefer eating out or eating at home?","Bạn thích ăn ngoài hay ăn ở nhà hơn?","Eating at home during the week, eating out at weekends.",["I prefer eating at home because it's healthier.","I eat out a lot because I don't have time to cook."]],
+  ["What do you usually drink in the morning?","Buổi sáng bạn thường uống gì?","Tea with milk. I'm very British!",["I drink iced coffee with milk.","Just a glass of water and some green tea."]],
+  ["Is there any food you don't like?","Có món nào bạn không thích không?","I really don't like olives.",["I don't like durian. The smell is too strong.","I don't eat very spicy food."]],
+  ["What Vietnamese dish should a visitor try first?","Khách nước ngoài nên thử món Việt nào đầu tiên?","I've heard banh mi is amazing. Is that right?",["They should try pho. It's delicious.","I think banh xeo is great for visitors."]],
+  ["Do you ever cook for your friends?","Bạn có hay nấu ăn cho bạn bè không?","Sometimes. I had a dinner party last month.",["Yes, sometimes we have a hot pot party at my house.","No, my friends cook for me!"]]]},
+ {id:"travel",t:"Travel and holidays",vi:"Du lịch và kỳ nghỉ",q:[
+  ["Do you like travelling?","Bạn có thích đi du lịch không?","I love it. I try to go somewhere new every year.",["Yes, I love travelling to new places.","Yes, but I don't have much time for it."]],
+  ["Where did you go on your last holiday?","Kỳ nghỉ gần nhất bạn đã đi đâu?","I went to Portugal with my sister. It was lovely.",["I went to Da Nang with my family.","I stayed at home and relaxed."]],
+  ["Do you prefer the beach or the mountains?","Bạn thích biển hay núi hơn?","The mountains. I'm not great in the hot sun.",["I prefer the beach because I love swimming.","The mountains, because it's cool and quiet."]],
+  ["Which country would you most like to visit?","Bạn muốn đến nước nào nhất?","Japan. The food, the culture, everything.",["I'd love to visit Japan.","I want to go to Australia to see kangaroos."]],
+  ["What do you always pack when you travel?","Khi đi du lịch bạn luôn mang theo gì?","A good book and a phone charger.",["I always pack my phone charger and some medicine.","A jacket, because the weather can change."]],
+  ["Have you ever had a problem on a trip?","Bạn đã bao giờ gặp sự cố khi đi du lịch chưa?","Once I missed my flight because of traffic. Nightmare!",["Yes, once my bag got lost at the airport.","Yes, our bus broke down on the way."]],
+  ["Do you like planning trips or being spontaneous?","Bạn thích lên kế hoạch hay đi ngẫu hứng?","I plan the big things and leave the rest to luck.",["I like planning everything before I go.","I like being spontaneous. It's more fun."]]]},
+ {id:"sport",t:"Sport and health",vi:"Thể thao và sức khỏe",q:[
+  ["Do you play any sports?","Bạn có chơi môn thể thao nào không?","I play five-a-side football on Tuesdays.",["Yes, I play badminton twice a week.","Not really, but I go jogging sometimes."]],
+  ["Which sport do you like watching?","Bạn thích xem môn thể thao nào?","Football, of course. I'm a big fan.",["I like watching football, especially the Vietnam team.","I enjoy watching tennis."]],
+  ["How do you stay healthy?","Bạn giữ sức khỏe thế nào?","I try to walk a lot and eat my vegetables.",["I try to eat well and sleep enough.","I go to the gym three times a week."]],
+  ["Do you get enough sleep?","Bạn có ngủ đủ giấc không?","Not really. I stay up too late watching videos.",["Not really, I only sleep about six hours.","Yes, I usually sleep seven or eight hours."]],
+  ["What do you do when you feel stressed?","Khi căng thẳng bạn làm gì?","I go for a walk or call a friend.",["I listen to music or go for a walk.","I talk to my friends or play games."]],
+  ["Have you ever run a race or played in a match?","Bạn đã từng chạy đua hay thi đấu chưa?","I did a 10 k run last year. I was so slow!",["Yes, I played in a football match at work.","No, but I want to try a 5 k run."]],
+  ["Is there a sport you'd like to learn?","Có môn thể thao nào bạn muốn học không?","Surfing. It looks amazing.",["I'd like to learn swimming properly.","I want to learn tennis."]]]},
+ {id:"fun",t:"Hobbies and entertainment",vi:"Sở thích và giải trí",q:[
+  ["What kind of music do you like?","Bạn thích thể loại nhạc nào?","I like a bit of everything, but mostly rock.",["I like pop music and some K-pop.","I like Vietnamese ballads."]],
+  ["Have you seen any good films recently?","Gần đây bạn có xem phim nào hay không?","Yes, a really funny comedy about a family holiday.",["Yes, I watched an action movie last weekend.","Not really. I've been too busy."]],
+  ["Do you prefer films or TV series?","Bạn thích phim lẻ hay phim bộ hơn?","Series. I love getting into a long story.",["I prefer TV series because the story is longer.","Films, because I don't have much time."]],
+  ["What apps do you use the most?","Bạn dùng ứng dụng nào nhiều nhất?","Probably maps and messages.",["I use Facebook and Zalo the most.","YouTube, for music and videos."]],
+  ["Do you read books?","Bạn có đọc sách không?","Yes, mostly on the train to work.",["Sometimes, I like books about business.","Not often. I prefer watching videos."]],
+  ["Is there a new hobby you'd like to start?","Bạn có muốn bắt đầu sở thích mới nào không?","I'd love to learn the guitar.",["I'd like to learn to play the guitar.","I want to try photography."]],
+  ["What did you do last weekend?","Cuối tuần trước bạn đã làm gì?","I met some friends for lunch and watched a match.",["I visited my grandparents in the countryside.","I stayed at home and cleaned my room."]]]},
+ {id:"home",t:"Family and home",vi:"Gia đình và nhà cửa",q:[
+  ["How many people are there in your family?","Gia đình bạn có mấy người?","Four: my parents, my sister and me.",["There are four people in my family.","Five, including my grandmother."]],
+  ["Who are you closest to in your family?","Bạn thân với ai nhất trong gia đình?","My sister. We talk every day.",["My mother. She always listens to me.","My older brother. He helps me a lot."]],
+  ["Can you describe your home?","Bạn mô tả nhà của bạn được không?","It's a small flat with a tiny balcony.",["It's a small house with three rooms.","I live in an apartment on the tenth floor."]],
+  ["What's your favorite room at home, and why?","Phòng nào trong nhà bạn thích nhất, vì sao?","The kitchen. That's where everyone chats.",["My bedroom, because it's quiet.","The living room, because we watch TV together."]],
+  ["Who does the housework in your home?","Ai làm việc nhà ở nhà bạn?","We share it, but I always do the washing up.",["My mother does most of it, but I help on weekends.","We share it. I do the cooking."]],
+  ["Do you have any pets?","Bạn có nuôi thú cưng không?","I have a lazy old cat called Biscuit.",["Yes, I have a dog. His name is Lucky.","No, but I'd like a cat."]],
+  ["What do you usually do with your family at Tet?","Tết bạn thường làm gì với gia đình?","I'd love to experience Tet one day. What's it like?",["We clean the house, cook and visit our relatives.","We go back to our hometown and eat together."]]]},
+ {id:"shop",t:"Shopping and money",vi:"Mua sắm và tiền bạc",q:[
+  ["Do you like shopping?","Bạn có thích mua sắm không?","Only for food. Clothes shopping makes me tired.",["Yes, I love shopping for clothes.","Not really. I only buy what I need."]],
+  ["Do you shop online or in stores?","Bạn mua hàng trên mạng hay ở cửa hàng?","Mostly online. It's so easy.",["Mostly online, because it's cheaper and faster.","I prefer stores, so I can see the products."]],
+  ["What was the last thing you bought?","Món gần nhất bạn mua là gì?","A new pair of running shoes.",["I bought a new phone case.","I bought some fruit at the market."]],
+  ["Are you good at saving money?","Bạn có giỏi tiết kiệm tiền không?","Not really. Coffee takes all my money!",["Yes, I save a little every month.","Not really. I spend too much on food."]],
+  ["Have you ever returned something you bought?","Bạn đã bao giờ trả lại hàng đã mua chưa?","Yes, a jacket that was the wrong size.",["Yes, my shoes were too small, so I returned them.","No, never."]],
+  ["Do you bargain at markets?","Bạn có mặc cả ở chợ không?","I'm terrible at it. I always pay too much.",["Yes, always! It's normal in Vietnam.","Sometimes, but I'm not very good at it."]],
+  ["What would you buy if you won a lot of money?","Nếu trúng nhiều tiền, bạn sẽ mua gì?","A little house by the sea.",["I would buy a house for my parents.","I would travel around the world."]]]},
+ {id:"plans",t:"Weather, plans and dreams",vi:"Thời tiết, kế hoạch và ước mơ",q:[
+  ["What's the weather like where you are today?","Hôm nay chỗ bạn thời tiết thế nào?","It's grey and rainy here. Typical!",["It's hot and sunny today.","It's raining quite heavily."]],
+  ["What's your favorite season?","Bạn thích mùa nào nhất?","Autumn. I love the colours and the cool air.",["I like autumn because it's cool.","Summer, because I can go to the beach."]],
+  ["What are you doing this weekend?","Cuối tuần này bạn định làm gì?","I'm going to a friend's birthday party.",["I'm going to visit my parents.","I'm going to relax and watch some movies."]],
+  ["Do you have any plans for next year?","Bạn có kế hoạch gì cho năm sau không?","I want to run a half marathon.",["I want to pass an English test.","I'm planning to change my job."]],
+  ["What's a dream you've had since you were a child?","Ước mơ từ nhỏ của bạn là gì?","I always wanted to be a pilot.",["I always wanted to travel to Europe.","I wanted to be a teacher."]],
+  ["If you could live anywhere, where would you live?","Nếu được sống ở bất cứ đâu, bạn sẽ sống ở đâu?","Somewhere warm by the sea, like Spain.",["I would live in Da Lat because it's cool and beautiful.","I'd like to live in Singapore."]],
+  ["What makes you happy?","Điều gì làm bạn vui?","Good food, good friends and a sunny day.",["Spending time with my family makes me happy.","When I learn something new."]]]}
+];
+const BASIC_ACK={
+ pos:[["That's great!","Hay quá!"],["Nice! I like that too.","Hay đấy! Mình cũng thích thế."],["Sounds lovely!","Nghe tuyệt đấy!"],["Oh, that's cool!","Ồ, hay thật!"],["Good for you!","Tốt quá!"]],
+ neg:[["Oh, I'm sorry to hear that.","Ồ, tiếc quá."],["I understand. That can be hard.","Mình hiểu. Chuyện đó có thể khó khăn."],["Fair enough.","Cũng hợp lý."],["Oh no! That's not easy.","Ôi, không dễ chút nào."]],
+ mid:[["I see.","Mình hiểu rồi."],["Oh, really? Interesting.","Ồ, thật à? Thú vị đấy."],["That's interesting!","Thú vị thật!"],["Right, I get it.","À, mình hiểu rồi."],["Cool!","Hay đấy!"],["Oh, nice.","Ồ, hay đấy."]]};
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+function basicStart(){const tp=BASIC_TOPICS.find(t=>t.id===chat.btopic)||BASIC_TOPICS[0];chat.bi=0;
+  chat.turns=[{role:"assistant",content:"Hi! Let's chat about "+tp.t.toLowerCase()+". "+tp.q[0][0],vi:"Chào bạn! Mình nói chuyện về chủ đề "+tp.vi.toLowerCase()+" nhé. "+tp.q[0][1],qi:0}]}
+function basicReply(text){
+  const tp=BASIC_TOPICS.find(t=>t.id===chat.btopic)||BASIC_TOPICS[0],cur=tp.q[chat.bi]||tp.q[0],t=norm(text),words=t.split(" ").filter(Boolean);
+  const vn=/[ăâđêôơưạảấầẩẫậắằẳẵặẹẻẽếềểễệỉịọỏốồổỗộớờởỡợụủứừửữựỳỵỷỹáàãéèíìóòõúùýđ]/i.test(text);
+  const next=()=>{chat.bi++;if(chat.bi<tp.q.length)return[tp.q[chat.bi][0],tp.q[chat.bi][1]];
+    const ni=(BASIC_TOPICS.indexOf(tp)+1)%BASIC_TOPICS.length,nt=BASIC_TOPICS[ni];chat.btopic=nt.id;chat.bi=0;
+    return["That was a great chat! Let's try a new topic: "+nt.t.toLowerCase()+". "+nt.q[0][0],"Nói chuyện vui quá! Mình sang chủ đề mới: "+nt.vi.toLowerCase()+". "+nt.q[0][1]]};
+  if(vn)return{en:"Let's try that in English! You could say something like: "+cur[3][0],vi:"Mình thử nói bằng tiếng Anh nhé! Bạn có thể nói kiểu như: "+cur[3][0]};
+  if(/\b(bye|goodbye|see you|good night)\b/.test(t))return{en:"Bye! It was really nice talking to you. Come back any time!",vi:"Tạm biệt! Nói chuyện với bạn vui lắm. Lúc nào rảnh lại vào nhé!",end:true};
+  if(/^(sorry|pardon|what|sorry what|excuse me|again|come again)$/.test(t)||(/(say (that|it) again|repeat|i don'?t understand|more slowly)/.test(t)&&words.length<=8))
+    return{en:"No problem. "+cur[0],vi:"Không sao. "+cur[1],slow:true};
+  let pre=[],asked=false;
+  if(/^(hi|hello|hey)\b/.test(t))pre.push(["Hi there!","Chào bạn!"]);
+  if(/how are you|how's it going|how are things/.test(t))pre.push(["I'm doing well, thanks for asking!","Mình khỏe, cảm ơn bạn đã hỏi!"]);
+  if(/\b(thank you|thanks)\b/.test(t))pre.push(["You're welcome!","Không có gì!"]);
+  if(/\b(and you|what about you|how about you|and yourself)\b/.test(t)){pre.push([cur[2],""]);asked=true}
+  else if(/\?\s*$/.test(text.trim())||/^(what|where|when|why|how|who|which|do you|does|did you|are you|is it|can you|could you|would you|have you)\b/.test(t))
+    {pre.push(["Good question! I'm a simple practice bot, so I can't really answer that, but let's keep talking.","Câu hỏi hay! Mình là chatbot luyện tập đơn giản nên chưa trả lời được câu đó, mình nói tiếp nhé."]);asked=true}
+  if(!asked&&!pre.length&&words.length<3)
+    return{en:"Can you say a bit more? Try a full sentence, for example: "+cur[3][0],vi:"Bạn nói thêm chút nữa được không? Thử nói cả câu, ví dụ: "+cur[3][0]};
+  if(!asked&&words.length>=3){const kind=/\b(not|don't|dont|never|hate|bad|tired|sad|difficult|hard|boring|sick|stress|stressed|problem|angry|expensive|late)\b/.test(t)?"neg":/\b(love|like|great|good|happy|enjoy|fun|nice|beautiful|delicious|best|favorite|favourite|interesting|amazing)\b/.test(t)?"pos":"mid";pre.push(pick(BASIC_ACK[kind]))}
+  const [nq,nqv]=next();
+  return{en:pre.map(p=>p[0]).join(" ")+" "+nq,vi:pre.map(p=>p[1]).filter(Boolean).join(" ")+" "+nqv};
+}
+
+let chat={scen:"free",level:"B1",turns:[],busy:false,voice:true,ctl:null,showVi:false,eng:"",btopic:"me",bi:0};
+/* ---- in-browser AI (WebLLM): runs on the learner's own device, no Claude needed ---- */
+const WEBLLM_URL="https://cdn.jsdelivr.net/npm/@mlc-ai/web-llm@0.2.86/+esm";
+const LLM_MODELS=[{id:"Llama-3.2-1B-Instruct",t:"Nhẹ, nhanh",size:"khoảng 0,9 GB"},{id:"Llama-3.2-3B-Instruct",t:"Nói tự nhiên hơn",size:"khoảng 2 GB, cần máy mạnh"}];
+const LLM={eng:null,mi:-1,loading:false,pct:0,msg:"",err:"",lib:null,cached:{}};
+const HAS_GPU=!!navigator.gpu;
+function chatEngines(){const a=[];if(SAMPLE)a.push(["claude","Claude · tự nhiên nhất (cần claude.ai)"]);
+  a.push(["local","AI chạy trên máy bạn · không cần Claude"]);a.push(["basic","Hỏi đáp có sẵn · máy nào cũng chạy, không cần mạng"]);return a}
+function chatPickEng(){const ok=chatEngines().map(e=>e[0]),prev=chat.eng;
+  chat.eng=S.chatEng&&ok.includes(S.chatEng)?S.chatEng:SAMPLE?"claude":HAS_GPU&&!chat.noGpu?"local":"basic";
+  if(prev&&prev!==chat.eng)chat.turns=[];}
+async function llmGpu(){if(!navigator.gpu)return null;try{return await navigator.gpu.requestAdapter()}catch(e){return null}}
+async function llmLib(){if(!LLM.lib)LLM.lib=await import(WEBLLM_URL);return LLM.lib}
+async function llmModelId(mi){const ad=await llmGpu();if(!ad)throw{code:"nogpu"};return LLM_MODELS[mi].id+(ad.features&&ad.features.has("shader-f16")?"-q4f16_1-MLC":"-q4f32_1-MLC")}
+async function llmCheckCache(){try{const w=await llmLib();for(let i=0;i<LLM_MODELS.length;i++){LLM.cached[i]=await w.hasModelInCache(await llmModelId(i))}}catch(e){}}
+async function llmLoad(mi){
+  if(LLM.loading)return;LLM.loading=true;LLM.err="";LLM.pct=0;LLM.msg="Đang chuẩn bị…";llmDrawLoad();
+  try{const id=await llmModelId(mi);const w=await llmLib();
+    if(LLM.eng){try{await LLM.eng.unload()}catch(e){}LLM.eng=null}
+    LLM.eng=await w.CreateMLCEngine(id,{initProgressCallback:p=>{LLM.pct=Math.round((p.progress||0)*100);LLM.msg=String(p.text||"");llmDrawLoad()}});
+    LLM.mi=mi;LLM.cached[mi]=true;S.llm=mi;save();
+  }catch(e){LLM.eng=null;LLM.err=e&&e.code==="nogpu"?"Máy hoặc trình duyệt này chưa hỗ trợ WebGPU nên chưa chạy được AI trên máy. Hãy dùng Chrome hoặc Edge bản mới trên máy tính (hoặc Chrome trên điện thoại Android đời mới), hoặc chọn chế độ “Hỏi đáp có sẵn”."
+      :"Chưa tải được AI ("+String(e&&e.message||e).slice(0,140)+"). Kiểm tra mạng và dung lượng trống rồi thử lại. Nếu bạn đang mở app trong claude.ai, hãy mở bản web để dùng AI trên máy."}
+  finally{LLM.loading=false;if(location.hash==="#tro-chuyen")chatView()}
+}
+function llmDrawLoad(){const b=$("#llmbar"),m=$("#llmmsg");if(b)b.style.width=LLM.pct+"%";if(m)m.textContent=LLM.pct+"% · "+LLM.msg.replace(/\[.*?\]\s*/,"").slice(0,120)}
+function llmPanel(){
+  const pick=S.llm>=0&&S.llm<LLM_MODELS.length?S.llm:0;
+  return `<div class="panel"><p><b>AI chạy ngay trên máy bạn</b></p>
+  <p class="note">Bộ não AI được tải về trình duyệt một lần (lần sau mở lại nhanh, không tải lại), sau đó trò chuyện không cần Claude, không cần tài khoản. Cần Chrome hoặc Edge bản mới, máy có card đồ họa (WebGPU). Máy tính phổ thông dùng bản Nhẹ; điện thoại chỉ chạy được trên máy Android đời mới.</p>
+  ${HAS_GPU?"":`<p class="note bad-msg">Trình duyệt này chưa có WebGPU nên chưa chạy được AI trên máy. Bạn chọn “Hỏi đáp có sẵn” ở ô trên để luyện nói ngay.</p>`}
+  <div class="bar">${LLM_MODELS.map((m,i)=>`<button class="btn ${i===pick?"":"ghost"}" data-llm="${i}" ${HAS_GPU&&!LLM.loading?"":"disabled"}>${LLM.cached[i]?"▶ Mở":"⤓ Tải"} AI ${esc(m.t)} · ${esc(m.size)}${LLM.cached[i]?" (đã tải)":""}</button>`).join("")}</div>
+  ${LLM.loading?`<div class="llm-prog"><div id="llmbar" style="width:${LLM.pct}%"></div></div><p class="note" id="llmmsg">${LLM.pct}% · ${esc(LLM.msg)}</p><p class="note">Lần đầu có thể mất vài phút tùy tốc độ mạng. Đừng đóng trang.</p>`:""}
+  ${LLM.err?`<p class="note bad-msg">${esc(LLM.err)}</p>`:""}</div>`}
+function localRules(){const sc=CHAT_SCEN.find(s=>s.id===chat.scen);
+  return `You are chatting with a Vietnamese adult who is practising spoken English. You are ${sc.role}. ${sc.free?"Talk about anything they want, follow their topic, share your own opinions and small stories, and answer their questions correctly.":"Stay in this role."}
+Speak like a real, friendly native speaker: natural everyday English with contractions. Never say you are an AI or a language model.
+${chat.level==="A2"?"Use very simple words and short sentences.":chat.level==="B1"?"Use clear, everyday English.":"Speak naturally, with some idioms."}
+Keep every reply short: 1 to 3 sentences, under 45 words, because it is read aloud. Ask a follow-up question when it feels natural. Do not correct the learner's grammar. No lists, no emojis, no markdown.
+Your first line in this conversation was: "${chat.turns[0]?chat.turns[0].content:sc.open}"`}
+/* ---- view ---- */
+function chatView(){
+  stopSpeech();stopMic();chatPickEng();
+  const eng=chat.eng;
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">Trò chuyện với AI · nói và nghe tiếng Anh</span><h2>Luyện nói với chatbot</h2><p class="lead">Bấm micro và nói tiếng Anh (hoặc gõ). Chatbot trả lời bằng giọng đọc, sửa câu của bạn nếu sai. Bấm “Gợi ý” nếu chưa biết nói gì.</p></div>
+  <div class="bar"><label class="note" for="ceng" style="align-self:center">Chatbot chạy bằng</label><select id="ceng" class="pill">${chatEngines().map(([k,t])=>`<option value="${k}" ${k===eng?"selected":""}>${esc(t)}</option>`).join("")}</select></div>
+  <div id="chatbody"></div>`;
+  $("#ceng").onchange=e=>{chat.ctl&&chat.ctl.abort();chat.eng=e.target.value;S.chatEng=chat.eng;save();chat.turns=[];chatView()};
+  if(eng==="local"&&!LLM.eng){$("#chatbody").innerHTML=llmPanel();
+    $("#chatbody").querySelectorAll("[data-llm]").forEach(b=>b.onclick=()=>llmLoad(+b.dataset.llm));
+    if(HAS_GPU&&!LLM.loading&&!LLM.checked){LLM.checked=true;llmGpu().then(ad=>{if(!ad){LLM.err="Máy hoặc trình duyệt này chưa bật WebGPU nên chưa chạy được AI trên máy. Bạn đang được chuyển sang chế độ “Hỏi đáp có sẵn”; có thể thử Chrome hoặc Edge bản mới trên máy tính.";chat.noGpu=true;if(location.hash==="#tro-chuyen")chatView();return}
+      llmCheckCache().then(()=>{if(location.hash!=="#tro-chuyen"||chat.eng!=="local"||LLM.eng||LLM.loading)return;
+      const mi=S.llm>=0?S.llm:-1;if(mi>=0&&LLM.cached[mi]&&!LLM.err)llmLoad(mi);else chatView()})})}
+    return}
+  const basic=eng==="basic";
+  $("#chatbody").innerHTML=`<div class="bar">${basic
+     ?`<select id="cbt" class="pill">${BASIC_TOPICS.map(t=>`<option value="${t.id}" ${t.id===chat.btopic?"selected":""}>${esc(t.t)} · ${esc(t.vi)}</option>`).join("")}</select>`
+     :`<select id="csc" class="pill">${CHAT_SCEN.map(s=>`<option value="${s.id}" ${s.id===chat.scen?"selected":""}>${esc(s.t)} · ${esc(s.vi)}</option>`).join("")}</select>
+   <select id="clv" class="pill">${["A2","B1","B2"].map(l=>`<option ${l===chat.level?"selected":""}>${l}</option>`).join("")}</select>`}
+   <button class="pill" id="cvo" aria-pressed="${chat.voice}">🔊 Tự đọc câu trả lời</button>${eng==="local"?"":`<button class="pill" id="cvi" aria-pressed="${chat.showVi}">Hiện tiếng Việt</button>`}<button class="pill" id="cnew">↺ Hội thoại mới</button></div>
+  ${basic&&LLM.err?`<p class="note bad-msg">${esc(LLM.err)}</p>`:""}${basic?`<p class="note">Chế độ hỏi đáp có sẵn: chatbot hỏi bạn lần lượt các câu theo chủ đề, bạn trả lời bằng giọng nói. Chạy trên mọi máy, không cần AI, nhưng không hiểu hết ý bạn và không sửa lỗi ngữ pháp. Muốn trò chuyện tự do, chọn AI ở ô trên.</p>`
+   :eng==="local"?`<p class="note">AI trên máy (${esc(LLM_MODELS[LLM.mi]?LLM_MODELS[LLM.mi].t:"")}): trò chuyện được mọi chủ đề, không cần Claude. AI nhỏ nên đôi khi trả lời chưa chuẩn; câu sửa lỗi chỉ là gợi ý.</p>`:""}
+  <div class="chat" id="clog" aria-live="polite"></div>
+  <div class="chat-hints" id="chint"></div>
+  <div class="panel chat-in"><div id="cmic">${micBox}</div>
+   <div class="chat-row"><input id="ctext" class="search" placeholder="Hoặc gõ câu tiếng Anh rồi Enter…" autocomplete="off"><button class="btn" id="csend">Gửi</button><button class="btn ghost" id="chelp">💡 Gợi ý</button><button class="btn ghost" id="cstop" hidden>■ Dừng</button></div></div>`;
+  $("#cmic .mresult").remove();
+  if(basic)$("#cbt").onchange=e=>{chat.btopic=e.target.value;basicStart();drawChat();if(chat.voice)say(chat.turns[0].content,0.92)};
+  else{$("#csc").onchange=e=>{chat.scen=e.target.value;chat.turns=[];chatView()};$("#clv").onchange=e=>{chat.level=e.target.value}}
+  $("#cvo").onclick=()=>{chat.voice=!chat.voice;$("#cvo").setAttribute("aria-pressed",chat.voice);if(!chat.voice)stopSpeech()};
+  if($("#cvi"))$("#cvi").onclick=()=>{chat.showVi=!chat.showVi;$("#cvi").setAttribute("aria-pressed",chat.showVi);$("#clog").classList.toggle("show-vi",chat.showVi)};
+  $("#cnew").onclick=()=>{chat.ctl&&chat.ctl.abort();chat.turns=[];chatView()};
+  $("#csend").onclick=()=>{const v=$("#ctext").value.trim();if(v){$("#ctext").value="";chatSend(v)}};
+  $("#ctext").onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();$("#csend").click()}};
+  $("#chelp").onclick=chatHints;
+  $("#cstop").onclick=()=>{chat.ctl&&chat.ctl.abort();if(LLM.eng&&chat.eng==="local")try{LLM.eng.interruptGenerate()}catch(e){}stopSpeech()};
+  if(!chat.turns.length){if(basic)basicStart();else{const sc=CHAT_SCEN.find(s=>s.id===chat.scen);chat.turns=[{role:"assistant",content:sc.open,vi:"",fix:""}]}}
+  drawChat();
+  chatMic();
+}
+const CHAT_ERR={not_granted:"Bạn chưa cho phép app dùng Claude. Mở lại mục này và bấm Cho phép khi được hỏi.",sampling_disabled:"Tài khoản này chưa dùng được Claude cho app.",rate_limited:"Đang gửi quá nhanh hoặc hết lượt dùng, đợi một lát rồi thử lại.",session_expired:"Bạn cần đăng nhập lại claude.ai.",refused:"Chatbot không trả lời được câu này, thử nói cách khác."};
+const cleanLLM=s=>String(s||"").replace(/\*+/g,"").replace(/^\s*(assistant|partner)\s*:\s*/i,"").trim();
+async function chatSend(text){
+  if(chat.busy)return;chat.busy=true;chat.err="";$("#chint").innerHTML="";
+  stopSpeech();
+  const me={role:"user",content:text};chat.turns.push(me);
+  const bot={role:"assistant",content:"",pending:true};chat.turns.push(bot);drawChat();
+  $("#cstop").hidden=false;$("#csend").disabled=true;
+  chat.ctl=new AbortController();const sig=chat.ctl.signal;
+  try{
+    if(chat.eng==="basic"){
+      await new Promise(r=>setTimeout(r,350));
+      const r=basicReply(text);bot.content=r.en.replace(/\s+/g," ").trim();bot.vi=r.vi.replace(/\s+/g," ").trim();bot.pending=false;
+      drawChat();if(chat.voice)say(bot.content,r.slow?0.8:0.92);
+    }else if(chat.eng==="local"){
+      if(!LLM.eng)throw{code:"no_llm"};
+      const hist=chat.turns.filter(t=>!t.pending).slice(1).slice(-14).map(t=>({role:t.role,content:t.content}));
+      while(hist.length&&hist[0].role!=="user")hist.shift();
+      const stream=await LLM.eng.chat.completions.create({messages:[{role:"system",content:localRules()},...hist],stream:true,temperature:0.8,top_p:0.9,max_tokens:140});
+      let last=0;
+      for await(const c of stream){if(sig.aborted)break;bot.content+=(c.choices[0]&&c.choices[0].delta&&c.choices[0].delta.content)||"";
+        if(Date.now()-last>120){last=Date.now();drawChat()}}
+      bot.content=cleanLLM(bot.content)||"Sorry, could you say that again?";bot.pending=false;drawChat();
+      if(chat.voice&&!sig.aborted)say(bot.content,0.95);
+      const wc=norm(text).split(" ").filter(Boolean).length;
+      if(wc>=3&&wc<=40&&!sig.aborted&&!/[ăâđêôơưạảấầẩẫậắằẳẵặẹẻẽếềểễệịọỏốồổỗộớờởỡợụủứừửữựỳỵỷỹ]/i.test(text)){
+        try{const r=await LLM.eng.chat.completions.create({messages:[{role:"system",content:"You are an English teacher. Fix grammar and word-choice mistakes in the learner's sentence so it sounds natural, keeping the same meaning. Ignore capital letters and punctuation. If the sentence is already correct and natural, reply with exactly OK. Reply with only the corrected sentence or OK."},{role:"user",content:text}],temperature:0,max_tokens:80});
+          let fix=cleanLLM(r.choices[0].message.content).replace(/^["“']|["”']$/g,"").split("\n")[0].trim();
+          if(fix&&!/^ok\.?$/i.test(fix)&&norm(fix)!==norm(text)&&fix.length<text.length*2+20&&!/^(the|your) sentence/i.test(fix)){me.fix=fix;me.tip="";drawChat()}
+        }catch(e){}}
+    }else{
+      const hist=chat.turns.filter(t=>!t.pending).slice(-30).map(t=>({role:t.role,content:t.content}));
+      while(hist.length&&hist[0].role!=="user")hist.shift();
+      const input=[{role:"user",content:chatRules()+"\n\nThe conversation starts now. Your opening line was: \""+chat.turns[0].content+"\""},...hist];
+      const r=await SAMPLE.json(input,{modelTier:"quick",cache:false,signal:sig});
+      bot.content=String(r&&r.reply||"").trim()||"Sorry, could you say that again?";bot.vi=String(r&&r.reply_vi||"");bot.pending=false;
+      const fix=String(r&&r.fix||"").trim();if(fix&&norm(fix)!==norm(text)){me.fix=fix;me.tip=String(r.tip_vi||"")}
+      drawChat();if(chat.voice)say(bot.content,0.95);
+    }
+  }catch(e){const c=e&&e.code;
+    if(c==="cancelled"&&bot.content){bot.pending=false}
+    else{chat.turns.pop();chat.err=c==="cancelled"?"":c==="no_llm"?"AI trên máy chưa được mở. Chọn lại chế độ ở ô trên.":(CHAT_ERR[c]||"Có lỗi, bấm Gửi để thử lại.");
+      if(c!=="cancelled"){chat.turns.pop();$("#ctext").value=text}}
+    drawChat()}
+  finally{chat.busy=false;const s=$("#cstop");if(s)s.hidden=true;const b=$("#csend");if(b)b.disabled=false}
+}
+function showHints(box,a){box.innerHTML=a.slice(0,3).map((h,i)=>`<button class="hint" data-h="${i}"><b>${esc(h.en||"")}</b>${h.vi?`<span class="note">${esc(h.vi)}</span>`:""}</button>`).join("");
+  box.querySelectorAll("[data-h]").forEach(b=>b.onclick=()=>{const h=a[+b.dataset.h];stopSpeech();say(String(h.en),0.9);$("#ctext").value=String(h.en);$("#ctext").focus()})}
+async function chatHints(){
+  if(chat.busy)return;const box=$("#chint");
+  if(chat.eng==="basic"){const tp=BASIC_TOPICS.find(t=>t.id===chat.btopic)||BASIC_TOPICS[0],q=tp.q[chat.bi]||tp.q[0];
+    showHints(box,[...q[3].map(en=>({en})),{en:"And you?",vi:"Còn bạn thì sao?"}]);return}
+  box.innerHTML=`<span class="note">Đang gợi ý…</span>`;
+  const sc=CHAT_SCEN.find(s=>s.id===chat.scen);
+  const last=chat.turns.filter(t=>!t.pending).slice(-6).map(t=>(t.role==="user"?"Learner: ":"Partner: ")+t.content).join("\n");
+  try{
+    if(chat.eng==="local"){if(!LLM.eng||chat.busy)return;chat.busy=true;
+      try{const r=await LLM.eng.chat.completions.create({messages:[{role:"system",content:"You help a Vietnamese learner of English. Write exactly 3 different short, natural things the LEARNER could say next in this conversation, at "+chat.level+" level. One per line. No numbers, no quotes, no explanations."},{role:"user",content:last}],temperature:0.9,max_tokens:110});
+        const a=cleanLLM(r.choices[0].message.content).split("\n").map(s=>s.replace(/^\s*([-•*]|\d+[.)])\s*/,"").replace(/^["“]|["”]$/g,"").trim()).filter(s=>s&&s.length<160).slice(0,3).map(en=>({en}));
+        if(a.length)showHints(box,a);else box.innerHTML=`<span class="note">Chưa lấy được gợi ý, thử lại.</span>`}finally{chat.busy=false}
+      return}
+    const a=await SAMPLE.json(`A Vietnamese learner (CEFR ${chat.level}) is practising English in this role-play: the partner is ${sc.role}.\nConversation so far:\n${last}\n\nSuggest 3 different natural things the LEARNER could say next, short and at ${chat.level} level. Reply with only a JSON array of 3 objects: [{"en": "...", "vi": "Vietnamese meaning"}].`,{modelTier:"quick",cache:false});
+    showHints(box,Array.isArray(a)?a:[]);
+  }catch(e){box.innerHTML=`<span class="note">${esc(CHAT_ERR[e&&e.code]||"Chưa lấy được gợi ý, thử lại.")}</span>`}
+}
+
 function chatRules(){const sc=CHAT_SCEN.find(s=>s.id===chat.scen);
   return `You are an English conversation partner inside a language-learning app for Vietnamese adults who work in logistics.
 Role-play: you are ${sc.role}. ${sc.free?"This is open conversation: follow the learner wherever they go, change topic whenever they do, share your own opinions and small stories like a real person, and give a real, correct answer to any question (facts, advice, explanations, how-to). Never refuse a normal topic and never say you are only here to practise.":"Stay in this role."} Talk like a real native speaker: natural, warm, everyday spoken English with common contractions and idioms, never robotic, never like a teacher.
@@ -7012,36 +7814,10 @@ Replies are spoken aloud, so keep them conversational: usually 1-3 sentences (un
 The learner may speak through a microphone, so ignore small speech-recognition errors and missing punctuation.
 Reply with only a JSON object: {"reply": your spoken reply in English, "reply_vi": a natural Vietnamese translation of your reply, "fix": a corrected, natural version of the learner's LAST message if it had a grammar or word-choice mistake, otherwise "", "tip_vi": if fix is not empty, one short explanation in Vietnamese of the mistake, otherwise ""}.`}
 let chatEls=null;
-function chatView(){
-  stopSpeech();stopMic();
-  app.innerHTML=`<div class="view-head"><span class="eyebrow">Trò chuyện với AI · nói và nghe tiếng Anh</span><h2>Luyện nói với chatbot</h2><p class="lead">Chọn tình huống, bấm micro và nói tiếng Anh (hoặc gõ). Chatbot trả lời bằng giọng như người bản xứ, sửa câu của bạn nếu sai và giải thích bằng tiếng Việt. Bấm “Gợi ý” nếu chưa biết nói gì.</p></div>
-  <div id="chatbody"></div>`;
-  if(!SAMPLE){$("#chatbody").innerHTML=`<div class="panel"><p><b>Chatbot chỉ chạy trong bản app trên claude.ai.</b></p><p class="note">Chatbot dùng Claude trong tài khoản của bạn, nên cần mở app tại claude.ai (Chrome hoặc Edge trên máy tính, hoặc ứng dụng Claude trên máy tính) để vừa nói vừa nghe được. Bản web độc lập không kết nối được Claude. Nếu bạn đang ở claude.ai mà vẫn thấy dòng này, hãy đợi vài giây rồi mở lại mục này.</p><a class="btn" style="align-self:flex-start;text-decoration:none" href="https://claude.ai/artifact/T3nWZdTyecawKScHHC5cc1" target="_blank" rel="noopener">Mở app trên claude.ai ↗</a></div>`;return}
-  $("#chatbody").innerHTML=`<div class="bar"><select id="csc" class="pill">${CHAT_SCEN.map(s=>`<option value="${s.id}" ${s.id===chat.scen?"selected":""}>${esc(s.t)} · ${esc(s.vi)}</option>`).join("")}</select>
-   <select id="clv" class="pill">${["A2","B1","B2"].map(l=>`<option ${l===chat.level?"selected":""}>${l}</option>`).join("")}</select>
-   <button class="pill" id="cvo" aria-pressed="${chat.voice}">🔊 Tự đọc câu trả lời</button><button class="pill" id="cvi" aria-pressed="${chat.showVi}">Hiện tiếng Việt</button><button class="pill" id="cnew">↺ Hội thoại mới</button></div>
-  <div class="chat" id="clog" aria-live="polite"></div>
-  <div class="chat-hints" id="chint"></div>
-  <div class="panel chat-in"><div id="cmic">${micBox.replace("● Bấm để nói","● Bấm để nói")}</div>
-   <div class="chat-row"><input id="ctext" class="search" placeholder="Hoặc gõ câu tiếng Anh rồi Enter…" autocomplete="off"><button class="btn" id="csend">Gửi</button><button class="btn ghost" id="chelp">💡 Gợi ý</button><button class="btn ghost" id="cstop" hidden>■ Dừng</button></div></div>`;
-  $("#cmic .mresult").remove();
-  $("#csc").onchange=e=>{chat.scen=e.target.value;chat.turns=[];chatView()};
-  $("#clv").onchange=e=>{chat.level=e.target.value};
-  $("#cvo").onclick=()=>{chat.voice=!chat.voice;$("#cvo").setAttribute("aria-pressed",chat.voice);if(!chat.voice)stopSpeech()};
-  $("#cvi").onclick=()=>{chat.showVi=!chat.showVi;$("#cvi").setAttribute("aria-pressed",chat.showVi);$("#clog").classList.toggle("show-vi",chat.showVi)};
-  $("#cnew").onclick=()=>{chat.ctl&&chat.ctl.abort();chat.turns=[];chatView()};
-  $("#csend").onclick=()=>{const v=$("#ctext").value.trim();if(v){$("#ctext").value="";chatSend(v)}};
-  $("#ctext").onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();$("#csend").click()}};
-  $("#chelp").onclick=chatHints;
-  $("#cstop").onclick=()=>{chat.ctl&&chat.ctl.abort();stopSpeech()};
-  if(!chat.turns.length){const sc=CHAT_SCEN.find(s=>s.id===chat.scen);chat.turns=[{role:"assistant",content:sc.open,vi:"",fix:""}]}
-  drawChat();
-  chatMic();
-}
 function chatMic(){
   const root=$("#cmic"),btn=root.querySelector(".mic"),st=root.querySelector(".mstate"),hd=root.querySelector(".heard");
   unsub.forEach(f=>{try{f()}catch(e){}});unsub=[];
-  if(!DICT){btn.disabled=true;st.textContent="Micro chưa dùng được ở trình duyệt này (cần Chrome/Edge trên máy tính hoặc ứng dụng Claude). Bạn vẫn gõ để trò chuyện được.";return}
+  if(!DICT){btn.disabled=true;st.textContent="Trình duyệt này chưa nhận được giọng nói (dùng Chrome, Edge hoặc Safari trên iPhone). Bạn vẫn gõ để trò chuyện được.";return}
   st.textContent="Bấm micro và nói; app tự gửi khi bạn ngừng nói khoảng 1,5 giây.";
   let heard="",timer=null;
   unsub.push(DICT.onPartial(({text})=>{hd.textContent=(heard+" "+text).trim()}));
@@ -7065,35 +7841,6 @@ function drawChat(){
   log.querySelectorAll("[data-fs]").forEach(b=>b.onclick=()=>{stopSpeech();say(chat.turns[+b.dataset.fs].fix,0.9)});
   log.scrollTop=log.scrollHeight;
   const last=log.lastElementChild;if(last&&last.scrollIntoView)last.scrollIntoView({block:"nearest"});
-}
-const CHAT_ERR={not_granted:"Bạn chưa cho phép app dùng Claude. Mở lại mục này và bấm Cho phép khi được hỏi.",sampling_disabled:"Tài khoản này chưa dùng được Claude cho app.",rate_limited:"Đang gửi quá nhanh hoặc hết lượt dùng, đợi một lát rồi thử lại.",session_expired:"Bạn cần đăng nhập lại claude.ai.",refused:"Chatbot không trả lời được câu này, thử nói cách khác."};
-async function chatSend(text){
-  if(chat.busy)return;chat.busy=true;chat.err="";$("#chint").innerHTML="";
-  stopSpeech();
-  const me={role:"user",content:text};chat.turns.push(me);
-  const bot={role:"assistant",content:"",pending:true};chat.turns.push(bot);drawChat();
-  $("#cstop").hidden=false;$("#csend").disabled=true;
-  const hist=chat.turns.filter(t=>!t.pending).slice(-30).map(t=>({role:t.role,content:t.content}));
-  while(hist.length&&hist[0].role!=="user")hist.shift();
-  const input=[{role:"user",content:chatRules()+"\n\nThe conversation starts now. Your opening line was: \""+chat.turns[0].content+"\""},...hist];
-  chat.ctl=new AbortController();
-  try{
-    const r=await SAMPLE.json(input,{modelTier:"quick",cache:false,signal:chat.ctl.signal});
-    bot.content=String(r&&r.reply||"").trim()||"Sorry, could you say that again?";bot.vi=String(r&&r.reply_vi||"");bot.pending=false;
-    const fix=String(r&&r.fix||"").trim();if(fix&&norm(fix)!==norm(text)){me.fix=fix;me.tip=String(r.tip_vi||"")}
-    drawChat();if(chat.voice)say(bot.content,0.95);
-  }catch(e){chat.turns.pop();chat.err=e&&e.code==="cancelled"?"":(CHAT_ERR[e&&e.code]||"Có lỗi kết nối, bấm Gửi để thử lại.");
-    if(e&&e.code!=="cancelled"){chat.turns.pop();$("#ctext").value=text}drawChat()}
-  finally{chat.busy=false;const s=$("#cstop");if(s)s.hidden=true;const b=$("#csend");if(b)b.disabled=false}
-}
-async function chatHints(){
-  if(chat.busy)return;const box=$("#chint");box.innerHTML=`<span class="note">Đang gợi ý…</span>`;
-  const sc=CHAT_SCEN.find(s=>s.id===chat.scen);
-  const last=chat.turns.filter(t=>!t.pending).slice(-6).map(t=>(t.role==="user"?"Learner: ":"Partner: ")+t.content).join("\n");
-  try{const a=await SAMPLE.json(`A Vietnamese learner (CEFR ${chat.level}) is practising English in this role-play: the partner is ${sc.role}.\nConversation so far:\n${last}\n\nSuggest 3 different natural things the LEARNER could say next, short and at ${chat.level} level. Reply with only a JSON array of 3 objects: [{"en": "...", "vi": "Vietnamese meaning"}].`,{modelTier:"quick",cache:false});
-    box.innerHTML=(Array.isArray(a)?a:[]).slice(0,3).map((h,i)=>`<button class="hint" data-h="${i}"><b>${esc(h.en||"")}</b><span class="note">${esc(h.vi||"")}</span></button>`).join("")||"";
-    box.querySelectorAll("[data-h]").forEach(b=>b.onclick=()=>{const h=a[+b.dataset.h];stopSpeech();say(String(h.en),0.9);$("#ctext").value=String(h.en);$("#ctext").focus()});
-  }catch(e){box.innerHTML=`<span class="note">${esc(CHAT_ERR[e&&e.code]||"Chưa lấy được gợi ý, thử lại.")}</span>`}
 }
 
 /* ============ DIALOGUE SCENES ============ */
