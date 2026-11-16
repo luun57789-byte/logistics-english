@@ -104,6 +104,20 @@ button.card:hover{border-color:var(--steel)}
 .opt.right{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
 .opt.wrong{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
 .score{font-family:var(--f-display);font-weight:800;font-size:1.2rem}
+.chat{display:flex;flex-direction:column;gap:10px;max-height:min(60vh,560px);overflow-y:auto;padding:4px 2px;margin-bottom:12px}
+.msg{display:flex;gap:6px;align-items:flex-end;max-width:88%}
+.msg.me{align-self:flex-end;flex-direction:row-reverse}
+.msg .bubble{padding:10px 14px;border-radius:14px;background:var(--surface);border:1px solid var(--line);font-size:1rem;line-height:1.5}
+.msg.me .bubble{background:var(--navy);color:var(--surface);border-color:var(--navy)}
+.msg .vi{display:none;margin-top:6px;font-size:.85rem;color:var(--muted)}
+.chat.show-vi .msg .vi{display:block}
+.msg .fix{margin-top:8px;padding-top:8px;border-top:1px solid color-mix(in srgb,var(--surface) 35%,transparent);font-size:.88rem}
+.msg.me .linkish{color:inherit}
+.chat-hints{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.hint{display:flex;flex-direction:column;gap:2px;text-align:left;background:var(--chip);border:1px solid var(--line);border-radius:var(--r);padding:8px 12px;color:var(--ink);font:inherit;cursor:pointer;max-width:100%}
+.chat-in{gap:10px}
+.chat-row{display:flex;gap:8px;flex-wrap:wrap}
+.chat-row .search{flex:1 1 220px;min-width:0}
 .gtable{border-collapse:collapse;width:100%;font-size:.92rem}
 .gtable th,.gtable td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
 .gtable th{font-family:var(--f-mono);font-size:.72rem;color:var(--muted);font-weight:500}
@@ -192,11 +206,12 @@ footer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px soli
 <header class="gate">
   <div class="wrap">
     <div class="gate-top">
-      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><div><h1>Logistics English Dock</h1><small>LOGISTICS · ĐỜI SỐNG · GIAO TIẾP · A2 → B2</small></div></div>
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><div><h1>Logistics English Dock</h1><small>LOGISTICS · ĐỜI SỐNG · A2–B2</small></div></div>
       <div class="stats" id="stats"></div>
     </div>
     <nav class="tabs" aria-label="Mục học">
       <a href="#tu-vung">Từ vựng</a>
+      <a href="#tro-chuyen">Trò chuyện AI</a>
       <a href="#nghe">Nghe</a>
       <a href="#doc">Đọc</a>
       <a href="#viet">Viết</a>
@@ -468,6 +483,57 @@ const GRAMMAR=[
   qs:[["Would you mind ___ the window?",["open","opening","to open"],1,"Would you mind + V-ing."],["I'd like ___ a room for two nights.",["book","booking","to book"],2,"I'd like + to V."],["___ I help you with your bags?",["Shall","Will","Do"],0,"Đề nghị giúp: Shall I…?"],["Do you know where ___?",["is the station","the station is","the station"],1,"Câu hỏi gián tiếp: chủ ngữ trước động từ."],["___ you send it again, please?",["Could","Should","Must"],0,"Nhờ lịch sự: Could you…?"],["Would you like ___ tea?",["some","any","many"],0,"Lời mời dùng some."]]}
 ];
 
+GRAMMAR.push(
+ {id:"g13",level:"A2",title:"There is / There are",vi:"Có (cái gì ở đâu)",intro:"Dùng để nói có cái gì tồn tại ở một nơi. There is + danh từ số ít hoặc không đếm được; There are + danh từ số nhiều.",
+  rules:[["There is + N số ít","There is a bank near my house.","Có một…"],["There are + N số nhiều","There are twelve pallets on the truck.","Có nhiều…"],["There isn't / aren't any","There aren't any boxes left.","Phủ định"],["Is there / Are there…?","Is there a pharmacy near here?","Câu hỏi"],["There was / were","There was a lot of traffic.","Quá khứ"]],
+  qs:[["___ a problem with the invoice.",["There is","There are","It is"],0,"a problem số ít: There is."],["___ any eggs in the fridge?",["Is there","Are there","There are"],1,"eggs số nhiều, câu hỏi: Are there."],["There ___ much traffic yesterday.",["wasn't","weren't","isn't"],0,"traffic không đếm được, quá khứ: wasn't."],["There ___ three people in the meeting room.",["is","are","be"],1,"three people số nhiều: are."],["___ there a lift in this building?",["Are","Is","Does"],1,"a lift số ít: Is there."],["There ___ some milk on the table.",["are","is","have"],1,"milk không đếm được: is."]]},
+ {id:"g14",level:"A2",title:"Articles: a, an, the",vi:"Mạo từ a, an, the",intro:"a/an cho vật số ít được nhắc lần đầu hoặc không xác định; the cho vật đã biết, duy nhất hoặc đã nhắc trước đó. an đứng trước âm nguyên âm.",
+  rules:[["a + phụ âm","a truck, a university, a European company","Theo ÂM, không theo chữ"],["an + nguyên âm","an invoice, an hour, an MBA","hour đọc âm /aʊ/"],["the + đã biết","Please close the door.","Người nghe biết là cái nào"],["the + duy nhất","the sun, the port of Hai Phong","Chỉ có một"],["Không mạo từ","I like coffee. Trucks are expensive.","Nói chung chung"]],
+  qs:[["I need ___ umbrella.",["a","an","the"],1,"umbrella bắt đầu bằng âm nguyên âm: an."],["She works at ___ university in Hanoi.",["a","an","the"],0,"university đọc /juː/ (phụ âm): a."],["Can you open ___ window? It's hot in here.",["a","an","the"],2,"Người nghe biết cửa sổ nào: the."],["I'll call you in ___ hour.",["a","an","the"],1,"hour có h câm: an."],["___ sun is very strong today.",["A","The","An"],1,"Duy nhất: the sun."],["I don't drink ___ coffee in the evening.",["a","the","(không có)"],2,"Nói chung chung, không đếm được: không dùng mạo từ."]]},
+ {id:"g15",level:"A2",title:"Prepositions of place",vi:"Giới từ chỉ nơi chốn",intro:"in: bên trong không gian; on: trên bề mặt, trên đường, tầng; at: tại một điểm, địa chỉ cụ thể.",
+  rules:[["in","in the warehouse, in Hanoi, in the box","Bên trong"],["on","on the table, on the second floor, on Le Loi Street","Trên bề mặt / tầng / tên đường"],["at","at the door, at 25 Le Loi Street, at the airport","Một điểm cụ thể"],["next to / opposite / between","The bank is opposite the hotel.","Vị trí so với vật khác"],["in front of / behind","Park in front of dock 3.","Phía trước / sau"]],
+  qs:[["The documents are ___ the drawer.",["on","in","at"],1,"Bên trong ngăn kéo: in."],["My office is ___ the third floor.",["in","on","at"],1,"Tầng: on."],["I'll meet you ___ the airport.",["at","on","in"],0,"Một điểm gặp: at."],["She lives ___ Tran Phu Street.",["at","in","on"],2,"Tên đường không số nhà: on."],["The keys are ___ the table.",["in","on","at"],1,"Trên bề mặt bàn: on."],["The café is ___ the bank and the post office.",["between","opposite","next"],0,"Ở giữa hai vật: between."]]},
+ {id:"g16",level:"B1",title:"Past continuous",vi:"Thì quá khứ tiếp diễn",intro:"Diễn tả việc đang xảy ra tại một thời điểm trong quá khứ, hoặc đang xảy ra thì việc khác xen vào (when + quá khứ đơn).",
+  rules:[["was/were + V-ing","I was having lunch at 12.","Đang làm lúc đó"],["while + quá khứ tiếp diễn","While I was driving, it started to rain.","Hai việc song song / bị xen vào"],["when + quá khứ đơn","I was sleeping when the phone rang.","Việc xen vào dùng quá khứ đơn"],["Phủ định / câu hỏi","Were you working yesterday at 8?","was not / were not"]],
+  qs:[["I ___ TV when you called.",["watched","was watching","am watching"],1,"Đang xem thì bị xen vào: was watching."],["They ___ the truck when the forklift broke down.",["were loading","loaded","was loading"],0,"They + were + V-ing."],["What ___ you doing at 9 last night?",["did","were","was"],1,"Câu hỏi quá khứ tiếp diễn với you: were."],["While she was cooking, the lights ___ out.",["were going","went","go"],1,"Việc xen vào: quá khứ đơn."],["It ___ raining when we left the office.",["was","were","is"],0,"It + was + V-ing."],["He wasn't ___ attention in the meeting.",["pay","paid","paying"],2,"was not + V-ing."]]},
+ {id:"g17",level:"B1",title:"Used to",vi:"Đã từng (thói quen trong quá khứ)",intro:"used to + V nói về thói quen hoặc tình trạng trong quá khứ nay không còn. Khác với be used to + V-ing (quen với).",
+  rules:[["used to + V","I used to live in Hue.","Trước đây (giờ không còn)"],["didn't use to + V","She didn't use to drink coffee.","Phủ định"],["Did you use to…?","Did you use to play football?","Câu hỏi"],["be used to + V-ing","I'm used to working night shifts.","Quen với việc gì"]],
+  qs:[["I ___ smoke, but I stopped two years ago.",["used to","use to","am used to"],0,"Thói quen trong quá khứ: used to."],["Did you ___ live near the port?",["used to","use to","using to"],1,"Sau did dùng use to."],["She's ___ getting up early. She does it every day.",["used to","use to","using"],0,"Quen với: be used to + V-ing."],["We ___ have a car when I was a child.",["didn't use to","didn't used to","weren't used to"],0,"Phủ định: didn't use to."],["I'm not used to ___ on the left.",["drive","driving","drove"],1,"be used to + V-ing."],["There ___ be a market here, but now it's a mall.",["used to","is used to","use"],0,"Tình trạng trước đây: used to."]]},
+ {id:"g18",level:"B1",title:"Gerunds and infinitives",vi:"V-ing hay to V",intro:"Một số động từ đi với V-ing (enjoy, finish, avoid, mind, suggest), một số đi với to V (want, need, decide, plan, hope, agree). Sau giới từ luôn dùng V-ing.",
+  rules:[["enjoy / finish / avoid + V-ing","I enjoy travelling.","Động từ + V-ing"],["want / decide / plan + to V","We decided to change the supplier.","Động từ + to V"],["giới từ + V-ing","Thank you for helping me.","for, about, in, of, without…"],["V-ing làm chủ ngữ","Swimming is good exercise.","Danh động từ"],["stop + V-ing / to V","He stopped smoking. He stopped to buy water.","Khác nghĩa"]],
+  qs:[["I enjoy ___ to music.",["listen","to listen","listening"],2,"enjoy + V-ing."],["We need ___ the shipment today.",["confirm","to confirm","confirming"],1,"need + to V."],["Have you finished ___ the report?",["writing","to write","write"],0,"finish + V-ing."],["She's interested in ___ in logistics.",["work","to work","working"],2,"Sau giới từ in: V-ing."],["They agreed ___ the price.",["lowering","to lower","lower"],1,"agree + to V."],["Would you mind ___ me later?",["call","to call","calling"],2,"mind + V-ing."]]},
+ {id:"g19",level:"B1",title:"Relative clauses: who, which, that, where",vi:"Mệnh đề quan hệ",intro:"Dùng để nói rõ người hoặc vật nào. who cho người, which cho vật, that cho cả hai (mệnh đề xác định), where cho nơi chốn, whose cho sở hữu.",
+  rules:[["who","The driver who delivered the goods was late.","Người"],["which / that","This is the container which arrived yesterday.","Vật"],["where","That's the warehouse where I work.","Nơi chốn"],["whose","The customer whose order was late called again.","Sở hữu"],["Bỏ đại từ","The book (that) you gave me is great.","Khi nó là tân ngữ"]],
+  qs:[["The woman ___ lives next door is a nurse.",["which","who","where"],1,"Người: who."],["This is the phone ___ I bought yesterday.",["who","which","where"],1,"Vật: which/that."],["That's the hotel ___ we stayed last year.",["which","where","who"],1,"Nơi chốn: where."],["The man ___ car was stolen called the police.",["who","whose","which"],1,"Sở hữu: whose."],["Do you know the company ___ makes these parts?",["that","who","where"],0,"Vật/công ty: that/which."],["The supplier ___ we use is in Korea.",["where","whose","that"],2,"Vật, làm tân ngữ: that (có thể bỏ)."]]},
+ {id:"g20",level:"B1",title:"Second conditional",vi:"Câu điều kiện loại 2",intro:"Nói về điều không có thật hoặc khó xảy ra ở hiện tại/tương lai. If + quá khứ đơn, would + V. Với to be thường dùng were cho mọi ngôi.",
+  rules:[["If + quá khứ đơn, would + V","If I had more time, I would learn Japanese.","Giả định"],["If I were you, I'd…","If I were you, I'd call the customer.","Lời khuyên"],["could / might","If we left now, we could catch the train.","Khả năng"],["Câu hỏi","What would you do if you won the lottery?","Hỏi giả định"]],
+  qs:[["If I ___ rich, I would travel the world.",["am","were","will be"],1,"Giả định với to be: were."],["If she knew the answer, she ___ tell us.",["will","would","can"],1,"Mệnh đề chính: would."],["If I were you, I ___ take the job.",["would","will","did"],0,"Lời khuyên: I'd = I would."],["What would you do if you ___ your passport?",["lose","lost","will lose"],1,"Mệnh đề If: quá khứ đơn."],["We ___ more if the freight rate were lower.",["would ship","will ship","shipped"],0,"would + V."],["If he ___ a car, he wouldn't take the bus.",["has","had","would have"],1,"Giả định hiện tại: had."]]},
+ {id:"g21",level:"B1",title:"Reported speech",vi:"Câu tường thuật",intro:"Khi kể lại lời người khác, động từ thường lùi một thì và đổi đại từ, trạng từ thời gian.",
+  rules:[["said (that) + lùi thì","\"I am busy.\" → He said he was busy.","am/is → was"],["will → would","\"I'll call you.\" → She said she would call me.","Tương lai"],["told + người + (that)","He told me (that) the truck was late.","told cần tân ngữ"],["asked if / wh-","She asked if I was ready. He asked where I lived.","Câu hỏi: không đảo ngữ"],["told / asked + to V","The manager told us to wait.","Mệnh lệnh"]],
+  qs:[["\"I'm tired.\" → She said she ___ tired.",["is","was","be"],1,"Lùi thì: is → was."],["\"We will send it tomorrow.\" → They said they ___ send it the next day.",["will","would","are"],1,"will → would."],["He ___ me that the meeting was cancelled.",["said","told","asked"],1,"told + người."],["She asked me where I ___.",["lived","did live","do live"],0,"Câu hỏi tường thuật không đảo ngữ."],["The boss told us ___ late.",["not to be","don't be","not be"],0,"Mệnh lệnh phủ định: told + not to V."],["He asked ___ I could help him.",["that","if","what"],1,"Câu hỏi Yes/No: asked if."]]},
+ {id:"g22",level:"B1",title:"Present perfect continuous",vi:"Thì hiện tại hoàn thành tiếp diễn",intro:"Nhấn mạnh một việc bắt đầu trong quá khứ và vẫn đang tiếp diễn, hoặc vừa dừng và còn để lại dấu hiệu.",
+  rules:[["have/has been + V-ing","I have been waiting for an hour.","Kéo dài đến giờ"],["How long have you been…?","How long have you been learning English?","Câu hỏi"],["Dấu hiệu","for, since, all day, how long","Thời gian kéo dài"],["Kết quả hiện tại","You're wet. Have you been running?","Còn để lại dấu hiệu"]],
+  qs:[["I ___ for the bus for 30 minutes.",["wait","have been waiting","am waited"],1,"Kéo dài đến bây giờ: have been waiting."],["How long ___ she been working here?",["has","have","is"],0,"She: has."],["They have been ___ the container since 8 a.m.",["load","loading","loaded"],1,"have been + V-ing."],["It ___ raining all day.",["has been","have been","is been"],0,"It: has been."],["We've been learning English ___ two years.",["since","for","from"],1,"for + khoảng thời gian."],["Your eyes are red. ___ you been crying?",["Have","Has","Are"],0,"You: Have."]]},
+ {id:"g23",level:"B1",title:"Too and enough; so and such",vi:"Quá / đủ; rất… đến nỗi",intro:"too + adj (quá, gây vấn đề); adj + enough (đủ); enough + N. so + adj; such + (a) adj + N.",
+  rules:[["too + adj (+ to V)","This box is too heavy to lift.","Quá"],["adj + enough","He isn't old enough to drive.","Đủ (sau tính từ)"],["enough + N","We don't have enough pallets.","Đủ (trước danh từ)"],["so + adj","The traffic was so bad.","Rất"],["such (a) + adj + N","It was such a long day.","Rất (có danh từ)"]],
+  qs:[["This coffee is ___ hot to drink.",["too","enough","so"],0,"Quá, không uống được: too."],["Is the room big ___ for ten people?",["too","enough","such"],1,"adj + enough."],["We don't have ___ time.",["too","enough","so"],1,"enough + N."],["It was ___ a nice day that we went to the beach.",["so","such","too"],1,"such + a + adj + N."],["The film was ___ boring that I fell asleep.",["such","so","too"],1,"so + adj."],["He's not tall ___ to play basketball.",["too","enough","so"],1,"adj + enough."]]},
+ {id:"g24",level:"B1",title:"Question tags",vi:"Câu hỏi đuôi",intro:"Thêm đuôi ngắn vào cuối câu để xác nhận. Câu khẳng định → đuôi phủ định; câu phủ định → đuôi khẳng định. Dùng trợ động từ của câu chính.",
+  rules:[["Khẳng định, đuôi phủ định","You're coming, aren't you?","be"],["Phủ định, đuôi khẳng định","She doesn't eat meat, does she?","do/does"],["Quá khứ","They left early, didn't they?","did"],["Modal","You can drive, can't you?","can/will/should"],["Đặc biệt","I'm right, aren't I? Let's go, shall we?","Cần nhớ"]],
+  qs:[["It's hot today, ___?",["isn't it","is it","doesn't it"],0,"It's (khẳng định) → isn't it."],["You work in logistics, ___?",["aren't you","don't you","do you"],1,"Động từ thường → don't you."],["She didn't call, ___?",["did she","didn't she","does she"],0,"Phủ định quá khứ → did she."],["They can speak English, ___?",["can they","can't they","don't they"],1,"can → can't they."],["Let's start, ___?",["will we","shall we","don't we"],1,"Let's → shall we."],["You've finished, ___?",["haven't you","didn't you","have you"],0,"have → haven't you."]]},
+ {id:"g25",level:"B1",title:"Linking words",vi:"Từ nối: because, so, but, although, however",intro:"Nối ý cho câu nói và email mạch lạc hơn.",
+  rules:[["because / because of","We're late because of the traffic.","Lý do (because + mệnh đề, because of + N)"],["so","It was raining, so we stayed home.","Kết quả"],["but / although","Although it was expensive, we bought it.","Đối lập"],["however","The goods arrived. However, two boxes were damaged.","Đối lập, đầu câu, có dấu phẩy"],["first, then, finally","First, check the list. Then sign it.","Trình tự"]],
+  qs:[["The flight was delayed ___ bad weather.",["because","because of","so"],1,"Trước danh từ: because of."],["I was tired, ___ I went to bed early.",["so","because","although"],0,"Kết quả: so."],["___ it was late, she kept working.",["Because","Although","So"],1,"Đối lập: Although."],["The price is good. ___, the delivery time is too long.",["However","Because","So"],0,"Đối lập đầu câu: However."],["We cancelled the order ___ the supplier was too slow.",["because","because of","however"],0,"Trước mệnh đề: because."],["___, scan the barcode. Then put the box on the shelf.",["Finally","First","However"],1,"Trình tự: First."]]},
+ {id:"g26",level:"B2",title:"Third conditional",vi:"Câu điều kiện loại 3",intro:"Nói về điều đã không xảy ra trong quá khứ và kết quả tưởng tượng. If + had + V3, would have + V3. Hay dùng khi rút kinh nghiệm.",
+  rules:[["If + had V3, would have V3","If we had booked earlier, we would have got space.","Giả định quá khứ"],["could have / might have","If you had told me, I could have helped.","Khả năng trong quá khứ"],["Phủ định","If it hadn't rained, the truck wouldn't have been late.","hadn't / wouldn't have"],["should have V3","We should have checked the documents.","Lẽ ra nên"]],
+  qs:[["If I ___ the alarm, I wouldn't have been late.",["heard","had heard","would hear"],1,"If + had + V3."],["If they had left earlier, they ___ the train.",["would catch","would have caught","caught"],1,"would have + V3."],["We ___ the shipment if we had known about the strike.",["would have delayed","would delay","delayed"],0,"would have + V3."],["If she hadn't helped me, I ___ finished.",["wouldn't have","won't have","didn't"],0,"wouldn't have + V3."],["You should have ___ me earlier.",["tell","told","telling"],1,"should have + V3."],["If the forklift driver had been careful, the accident ___.",["wouldn't happen","wouldn't have happened","didn't happen"],1,"Kết quả giả định quá khứ."]]},
+ {id:"g27",level:"B2",title:"Modal verbs of deduction",vi:"Phỏng đoán: must, might, can't",intro:"Đoán điều gì chắc chắn, có thể hoặc không thể đúng. Hiện tại: modal + V; quá khứ: modal + have + V3.",
+  rules:[["must + V","He must be tired. He worked all night.","Chắc chắn đúng"],["might / may / could + V","The truck might be stuck in traffic.","Có thể"],["can't + V","That can't be right. It's too cheap.","Chắc chắn không"],["must have V3","She must have forgotten.","Chắc hẳn đã"],["can't have V3","He can't have seen the email.","Không thể đã"]],
+  qs:[["She's been working for 12 hours. She ___ be exhausted.",["must","can't","might not"],0,"Chắc chắn: must."],["That ___ be Minh. He's in Japan this week.",["must","can't","might"],1,"Chắc chắn không: can't."],["I'm not sure where Lan is. She ___ be at lunch.",["must","might","can't"],1,"Không chắc: might."],["The container is empty. Someone ___ unloaded it.",["must have","can't have","must"],0,"Chắc hẳn đã: must have + V3."],["He ___ have sent the invoice. I didn't receive anything.",["must","can't","should"],1,"Không thể đã: can't have."],["Take an umbrella. It ___ rain later.",["could","must have","can't"],0,"Có thể: could."]]},
+ {id:"g28",level:"B2",title:"Phrasal verbs at work",vi:"Cụm động từ dùng ở công ty",intro:"Người bản xứ dùng cụm động từ rất nhiều khi nói và viết email. Học theo cụm và câu ví dụ.",
+  rules:[["follow up (on)","I'm following up on my email from Monday.","Hỏi lại, theo dõi tiếp"],["sort out","We need to sort out the payment problem.","Giải quyết"],["put off","They put off the meeting until Friday.","Hoãn"],["look into","I'll look into it and get back to you.","Xem xét, tìm hiểu"],["run out of","We've run out of packing tape.","Hết"],["fill in / fill out","Please fill in this form.","Điền"]],
+  qs:[["I'll ___ the problem and call you back.",["look into","look after","look up"],0,"Tìm hiểu: look into."],["We have ___ pallets. Can you order more?",["run out of","run into","run over"],0,"Hết: run out of."],["Just ___ on my last email about the booking.",["following up","filling in","putting off"],0,"Hỏi lại: following up."],["The meeting was ___ until next week.",["put off","put on","put out"],0,"Hoãn: put off."],["Can you ___ this form, please?",["fill in","fill up","full in"],0,"Điền: fill in."],["Don't worry, we'll ___ the problem today.",["sort out","sort in","sort up"],0,"Giải quyết: sort out."]]}
+);
+
 /* ============ STATE ============ */
 const KEY="logi-eng-v1";
 let S={box:{},star:{},done:{},best:0,drafts:{}};
@@ -720,8 +786,9 @@ function videoView(){
 }
 
 /* ============ CAPABILITIES ============ */
-let DICT=null,DL=null;
-(async()=>{try{if(window.claude&&claude.use){[DICT,DL,TTS]=await Promise.all([claude.use("dictation").catch(()=>null),claude.use("downloads").catch(()=>null),claude.use("tts").catch(()=>null)]);
+let DICT=null,DL=null,SAMPLE=null;
+(async()=>{try{if(window.claude&&claude.use){[DICT,DL,TTS,SAMPLE]=await Promise.all([claude.use("dictation").catch(()=>null),claude.use("downloads").catch(()=>null),claude.use("tts").catch(()=>null),claude.use("sample").catch(()=>null)]);
+  if(["#tro-chuyen","#shadowing","#doc-to","#chinh-ta"].includes(location.hash))route();
   if(location.hash==="#phat-am")route()}}catch(e){}})();
 async function savePdf(){
   const m=$("#pdfmsg");
@@ -1005,6 +1072,112 @@ function drawDic(){
   setTimeout(()=>play(0.9),250);
 }
 
+/* ============ AI CHAT PARTNER ============ */
+const CHAT_SCEN=[
+ {id:"free",t:"Free conversation",vi:"Nói chuyện tự do",role:"a friendly native English speaker who is the learner's new friend",open:"Hey! Nice to meet you. How's your day going?"},
+ {id:"small",t:"Small talk with a colleague",vi:"Tán gẫu với đồng nghiệp",role:"a friendly British colleague chatting in the office kitchen during a coffee break",open:"Morning! Did you have a good weekend?"},
+ {id:"cust",t:"Customer call: late shipment",vi:"Khách hỏi về lô hàng trễ",role:"an American customer calling a Vietnamese freight forwarder because their shipment to Los Angeles is late; you are polite but want clear answers about the new ETA and costs",open:"Hi, this is Sarah from Bright Home in LA. Our container was supposed to arrive yesterday. What's going on?"},
+ {id:"fwd",t:"Booking with a forwarder",vi:"Đặt chỗ với forwarder",role:"a sales person at a freight forwarder in Singapore; the learner is a shipper who wants to book a container; ask about cargo, volume, dates and Incoterms",open:"Hello, thanks for calling Lion Freight. How can I help you today?"},
+ {id:"intv",t:"Job interview",vi:"Phỏng vấn xin việc",role:"an HR manager interviewing the learner for a logistics coordinator job at an international company; ask one interview question at a time",open:"Good morning, thanks for coming in. Could you start by telling me a little about yourself?"},
+ {id:"rest",t:"At a restaurant",vi:"Ở nhà hàng",role:"a waiter at a restaurant in London",open:"Good evening! Table for one? Here's the menu. Can I get you something to drink?"},
+ {id:"hotel",t:"Hotel check-in",vi:"Nhận phòng khách sạn",role:"a hotel receptionist in Sydney; the learner is a guest checking in",open:"Hi there, welcome to the Harbour Hotel. Are you checking in?"},
+ {id:"doc",t:"At the doctor's",vi:"Đi khám bệnh",role:"a GP doctor in the UK; the learner is a patient; ask about symptoms and give simple advice (no real medical diagnosis)",open:"Hello, come in and take a seat. So, what seems to be the problem today?"},
+ {id:"shop",t:"Shopping for clothes",vi:"Mua quần áo",role:"a shop assistant in a clothes store in New York",open:"Hi! Are you looking for anything in particular today?"},
+ {id:"dir",t:"Asking for directions",vi:"Hỏi đường",role:"a local person in Manchester whom the learner stops on the street to ask for directions",open:"Sorry, did you need some help? You look a bit lost."}
+];
+let chat={scen:"free",level:"B1",turns:[],busy:false,voice:true,ctl:null,showVi:false};
+function chatRules(){const sc=CHAT_SCEN.find(s=>s.id===chat.scen);
+  return `You are an English conversation partner inside a language-learning app for Vietnamese adults who work in logistics.
+Role-play: you are ${sc.role}. Stay in this role and talk like a real native speaker: natural, warm, everyday spoken English with common contractions and idioms, never robotic.
+The learner's level is ${chat.level} (CEFR). ${chat.level==="A2"?"Use short simple sentences and very common words.":chat.level==="B1"?"Use clear everyday English, 1-3 sentences.":"Speak naturally at normal native level, with some idioms."}
+Keep each reply short (1-3 sentences, under 45 words) because it will be spoken aloud, and usually end with a question to keep the conversation going.
+The learner may speak through a microphone, so ignore small speech-recognition errors and missing punctuation.
+Reply with only a JSON object: {"reply": your spoken reply in English, "reply_vi": a natural Vietnamese translation of your reply, "fix": a corrected, natural version of the learner's LAST message if it had a grammar or word-choice mistake, otherwise "", "tip_vi": if fix is not empty, one short explanation in Vietnamese of the mistake, otherwise ""}.`}
+let chatEls=null;
+function chatView(){
+  stopSpeech();stopMic();
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">Trò chuyện với AI · nói và nghe tiếng Anh</span><h2>Luyện nói với chatbot</h2><p class="lead">Chọn tình huống, bấm micro và nói tiếng Anh (hoặc gõ). Chatbot trả lời bằng giọng như người bản xứ, sửa câu của bạn nếu sai và giải thích bằng tiếng Việt. Bấm “Gợi ý” nếu chưa biết nói gì.</p></div>
+  <div id="chatbody"></div>`;
+  if(!SAMPLE){$("#chatbody").innerHTML=`<div class="panel"><p><b>Chatbot chỉ chạy trong bản app trên claude.ai.</b></p><p class="note">Chatbot dùng Claude trong tài khoản của bạn, nên cần mở app tại claude.ai (Chrome hoặc Edge trên máy tính, hoặc ứng dụng Claude trên máy tính) để vừa nói vừa nghe được. Bản web độc lập không kết nối được Claude. Nếu bạn đang ở claude.ai mà vẫn thấy dòng này, hãy đợi vài giây rồi mở lại mục này.</p><a class="btn" style="align-self:flex-start;text-decoration:none" href="https://claude.ai/artifact/T3nWZdTyecawKScHHC5cc1" target="_blank" rel="noopener">Mở app trên claude.ai ↗</a></div>`;return}
+  $("#chatbody").innerHTML=`<div class="bar"><select id="csc" class="pill">${CHAT_SCEN.map(s=>`<option value="${s.id}" ${s.id===chat.scen?"selected":""}>${esc(s.t)} · ${esc(s.vi)}</option>`).join("")}</select>
+   <select id="clv" class="pill">${["A2","B1","B2"].map(l=>`<option ${l===chat.level?"selected":""}>${l}</option>`).join("")}</select>
+   <button class="pill" id="cvo" aria-pressed="${chat.voice}">🔊 Tự đọc câu trả lời</button><button class="pill" id="cvi" aria-pressed="${chat.showVi}">Hiện tiếng Việt</button><button class="pill" id="cnew">↺ Hội thoại mới</button></div>
+  <div class="chat" id="clog" aria-live="polite"></div>
+  <div class="chat-hints" id="chint"></div>
+  <div class="panel chat-in"><div id="cmic">${micBox.replace("● Bấm để nói","● Bấm để nói")}</div>
+   <div class="chat-row"><input id="ctext" class="search" placeholder="Hoặc gõ câu tiếng Anh rồi Enter…" autocomplete="off"><button class="btn" id="csend">Gửi</button><button class="btn ghost" id="chelp">💡 Gợi ý</button><button class="btn ghost" id="cstop" hidden>■ Dừng</button></div></div>`;
+  $("#cmic .mresult").remove();
+  $("#csc").onchange=e=>{chat.scen=e.target.value;chat.turns=[];chatView()};
+  $("#clv").onchange=e=>{chat.level=e.target.value};
+  $("#cvo").onclick=()=>{chat.voice=!chat.voice;$("#cvo").setAttribute("aria-pressed",chat.voice);if(!chat.voice)stopSpeech()};
+  $("#cvi").onclick=()=>{chat.showVi=!chat.showVi;$("#cvi").setAttribute("aria-pressed",chat.showVi);$("#clog").classList.toggle("show-vi",chat.showVi)};
+  $("#cnew").onclick=()=>{chat.ctl&&chat.ctl.abort();chat.turns=[];chatView()};
+  $("#csend").onclick=()=>{const v=$("#ctext").value.trim();if(v){$("#ctext").value="";chatSend(v)}};
+  $("#ctext").onkeydown=e=>{if(e.key==="Enter"){e.preventDefault();$("#csend").click()}};
+  $("#chelp").onclick=chatHints;
+  $("#cstop").onclick=()=>{chat.ctl&&chat.ctl.abort();stopSpeech()};
+  if(!chat.turns.length){const sc=CHAT_SCEN.find(s=>s.id===chat.scen);chat.turns=[{role:"assistant",content:sc.open,vi:"",fix:""}]}
+  drawChat();
+  chatMic();
+}
+function chatMic(){
+  const root=$("#cmic"),btn=root.querySelector(".mic"),st=root.querySelector(".mstate"),hd=root.querySelector(".heard");
+  unsub.forEach(f=>{try{f()}catch(e){}});unsub=[];
+  if(!DICT){btn.disabled=true;st.textContent="Micro chưa dùng được ở trình duyệt này (cần Chrome/Edge trên máy tính hoặc ứng dụng Claude). Bạn vẫn gõ để trò chuyện được.";return}
+  st.textContent="Bấm micro và nói; app tự gửi khi bạn ngừng nói khoảng 1,5 giây.";
+  let heard="",timer=null;
+  unsub.push(DICT.onPartial(({text})=>{hd.textContent=(heard+" "+text).trim()}));
+  unsub.push(DICT.onFinal(({text})=>{heard+=" "+text;hd.textContent=heard.trim();clearTimeout(timer);timer=setTimeout(()=>DICT.stop(),1500)}));
+  unsub.push(DICT.onState(({state,reason})=>{
+    if(state==="idle"){btn.textContent="● Bấm để nói";btn.classList.remove("on");clearTimeout(timer);
+      if(reason==="not_granted"){st.textContent="Micro chưa được cho phép. Bạn vẫn gõ được.";btn.disabled=true;return}
+      const t=heard.trim();heard="";hd.textContent="";if(t)chatSend(t);else st.textContent="Chưa nghe thấy gì, thử lại nhé."}
+    else if(state==="listening"){btn.textContent="■ Gửi ngay";btn.classList.add("on");st.textContent="Đang nghe… nói tiếng Anh nhé."}}));
+  btn.onclick=()=>{if(DICT.active()){DICT.stop().catch(()=>{});return}stopSpeech();heard="";hd.textContent="";
+    DICT.start({language:"en"}).catch(e=>{const c=e&&e.code;st.textContent=c==="not_granted"?"Bạn chưa cho phép dùng micro.":c==="dismissed"?"Bấm lại nút để cho phép micro.":c==="stopped"?"":"Không mở được micro, thử lại."})};
+}
+function drawChat(){
+  const log=$("#clog");if(!log)return;
+  log.classList.toggle("show-vi",chat.showVi);
+  log.innerHTML=chat.turns.map((t,i)=>t.role==="assistant"
+    ?`<div class="msg bot"><div class="bubble">${t.pending?`<span class="note">${t.content?esc(t.content):"Đang nghĩ…"}</span>`:esc(t.content)}${t.vi?`<div class="vi">${esc(t.vi)}</div>`:""}</div>${t.pending?"":`<button class="icon-btn" aria-label="Nghe lại" data-rs="${i}">${ICON.speak}</button>`}</div>`
+    :`<div class="msg me"><div class="bubble">${esc(t.content)}${t.fix?`<div class="fix">✎ Nói tự nhiên hơn: <b>${esc(t.fix)}</b>${t.tip?`<br><span>${esc(t.tip)}</span>`:""} <button class="linkish" data-fs="${i}">🔊</button></div>`:""}</div></div>`).join("")
+    +(chat.err?`<p class="note bad-msg">${esc(chat.err)}</p>`:"");
+  log.querySelectorAll("[data-rs]").forEach(b=>b.onclick=()=>{stopSpeech();say(chat.turns[+b.dataset.rs].content,0.95)});
+  log.querySelectorAll("[data-fs]").forEach(b=>b.onclick=()=>{stopSpeech();say(chat.turns[+b.dataset.fs].fix,0.9)});
+  log.scrollTop=log.scrollHeight;
+  const last=log.lastElementChild;if(last&&last.scrollIntoView)last.scrollIntoView({block:"nearest"});
+}
+const CHAT_ERR={not_granted:"Bạn chưa cho phép app dùng Claude. Mở lại mục này và bấm Cho phép khi được hỏi.",sampling_disabled:"Tài khoản này chưa dùng được Claude cho app.",rate_limited:"Đang gửi quá nhanh hoặc hết lượt dùng, đợi một lát rồi thử lại.",session_expired:"Bạn cần đăng nhập lại claude.ai.",refused:"Chatbot không trả lời được câu này, thử nói cách khác."};
+async function chatSend(text){
+  if(chat.busy)return;chat.busy=true;chat.err="";$("#chint").innerHTML="";
+  stopSpeech();
+  const me={role:"user",content:text};chat.turns.push(me);
+  const bot={role:"assistant",content:"",pending:true};chat.turns.push(bot);drawChat();
+  $("#cstop").hidden=false;$("#csend").disabled=true;
+  const hist=chat.turns.filter(t=>!t.pending).slice(-16).map(t=>({role:t.role,content:t.content}));
+  while(hist.length&&hist[0].role!=="user")hist.shift();
+  const input=[{role:"user",content:chatRules()+"\n\nThe conversation starts now. Your opening line was: \""+chat.turns[0].content+"\""},...hist];
+  chat.ctl=new AbortController();
+  try{
+    const r=await SAMPLE.json(input,{modelTier:"quick",cache:false,signal:chat.ctl.signal});
+    bot.content=String(r&&r.reply||"").trim()||"Sorry, could you say that again?";bot.vi=String(r&&r.reply_vi||"");bot.pending=false;
+    const fix=String(r&&r.fix||"").trim();if(fix&&norm(fix)!==norm(text)){me.fix=fix;me.tip=String(r.tip_vi||"")}
+    drawChat();if(chat.voice)say(bot.content,0.95);
+  }catch(e){chat.turns.pop();chat.err=e&&e.code==="cancelled"?"":(CHAT_ERR[e&&e.code]||"Có lỗi kết nối, bấm Gửi để thử lại.");
+    if(e&&e.code!=="cancelled"){chat.turns.pop();$("#ctext").value=text}drawChat()}
+  finally{chat.busy=false;const s=$("#cstop");if(s)s.hidden=true;const b=$("#csend");if(b)b.disabled=false}
+}
+async function chatHints(){
+  if(chat.busy)return;const box=$("#chint");box.innerHTML=`<span class="note">Đang gợi ý…</span>`;
+  const sc=CHAT_SCEN.find(s=>s.id===chat.scen);
+  const last=chat.turns.filter(t=>!t.pending).slice(-6).map(t=>(t.role==="user"?"Learner: ":"Partner: ")+t.content).join("\n");
+  try{const a=await SAMPLE.json(`A Vietnamese learner (CEFR ${chat.level}) is practising English in this role-play: the partner is ${sc.role}.\nConversation so far:\n${last}\n\nSuggest 3 different natural things the LEARNER could say next, short and at ${chat.level} level. Reply with only a JSON array of 3 objects: [{"en": "...", "vi": "Vietnamese meaning"}].`,{modelTier:"quick",cache:false});
+    box.innerHTML=(Array.isArray(a)?a:[]).slice(0,3).map((h,i)=>`<button class="hint" data-h="${i}"><b>${esc(h.en||"")}</b><span class="note">${esc(h.vi||"")}</span></button>`).join("")||"";
+    box.querySelectorAll("[data-h]").forEach(b=>b.onclick=()=>{const h=a[+b.dataset.h];stopSpeech();say(String(h.en),0.9);$("#ctext").value=String(h.en);$("#ctext").focus()});
+  }catch(e){box.innerHTML=`<span class="note">${esc(CHAT_ERR[e&&e.code]||"Chưa lấy được gợi ý, thử lại.")}</span>`}
+}
+
 /* ============ DIALOGUE SCENES ============ */
 // Each line: [speakerIndex, english with {vocab} or {shown|vocab term}, vietnamese]
 const SCENES=[
@@ -1126,7 +1299,7 @@ function openScene(s){
 
 /* ============ ROUTER ============ */
 let pendingOpen=null;
-const ROUTES={"tu-vung":vocabView,"nghe":()=>listIndex("nghe"),"doc":()=>listIndex("doc"),"viet":()=>listIndex("viet"),"on-tap":reviewView,"phat-am":pronView,"hoi-thoai":scenesIndex,"video":videoView,"shadowing":shadowView,"doc-to":readAloudView,"ngu-phap":grammarView,"chinh-ta":dictView};
+const ROUTES={"tu-vung":vocabView,"nghe":()=>listIndex("nghe"),"doc":()=>listIndex("doc"),"viet":()=>listIndex("viet"),"on-tap":reviewView,"phat-am":pronView,"hoi-thoai":scenesIndex,"video":videoView,"shadowing":shadowView,"doc-to":readAloudView,"ngu-phap":grammarView,"chinh-ta":dictView,"tro-chuyen":chatView};
 function route(){
   stopSpeech();try{if(DICT&&DICT.active())DICT.stop()}catch(e){}
   const h=(location.hash||"#tu-vung").slice(1);const r=ROUTES[h]?h:"tu-vung";
