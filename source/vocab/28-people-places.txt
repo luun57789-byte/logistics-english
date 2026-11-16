@@ -1,0 +1,145 @@
+people|mọi người|Many people work here.|A2|pp
+person|người|She is a very nice person.|A2|pp
+man|đàn ông|The man in the blue shirt is my boss.|A2|pp
+woman|phụ nữ|The woman at the desk can help you.|A2|pp
+boy|cậu bé|The boy is playing football.|A2|pp
+girl|cô bé|The girl is reading a book.|A2|pp
+guy|anh chàng|He's a nice guy.|A2|pp
+stranger|người lạ|Don't talk to strangers.|A2|pp
+guest|khách|We have guests tonight.|A2|pp
+customer|khách hàng|The customer is always right.|A2|pp
+owner|chủ sở hữu|The owner of the café is my friend.|A2|pp
+boyfriend|bạn trai|Her boyfriend is a chef.|A2|pp
+girlfriend|bạn gái|I'm meeting my girlfriend tonight.|A2|pp
+classmate|bạn cùng lớp|He was my classmate at school.|A2|pp
+student|học sinh, sinh viên|I'm a university student.|A2|pp
+teacher|giáo viên|My teacher is very patient.|A2|pp
+police officer|cảnh sát|Ask the police officer for help.|A2|pp
+firefighter|lính cứu hỏa|The firefighters arrived quickly.|A2|pp
+farmer|nông dân|My grandfather is a farmer.|A2|pp
+chef|đầu bếp|The chef cooks amazing food.|A2|pp
+shop assistant|nhân viên bán hàng|Ask the shop assistant.|A2|pp
+security guard|bảo vệ|The security guard checks our bags.|A2|pp
+cleaner|nhân viên vệ sinh|The cleaner comes every morning.|A2|pp
+lawyer|luật sư|You should talk to a lawyer.|B1|pp
+accountant|kế toán|She works as an accountant.|A2|pp
+businessman|doanh nhân|He is a successful businessman.|A2|pp
+age|tuổi|What's your age?|A2|pp
+years old|tuổi|I'm twenty-five years old.|A2|pp
+born|được sinh ra|I was born in Nam Dinh.|A2|pp
+hometown|quê nhà|My hometown is in Thanh Hoa.|A2|pp
+address|địa chỉ|What's your address?|A2|pp
+nationality|quốc tịch|What's your nationality?|A2|pp
+Vietnamese|người/tiếng Việt|I'm Vietnamese.|A2|pp
+foreigner|người nước ngoài|Many foreigners live in Da Nang.|A2|pp
+country|đất nước|Which country are you from?|A2|pp
+capital|thủ đô|Hanoi is the capital of Vietnam.|A2|pp
+province|tỉnh|Quang Ninh province is in the north.|B1|pp
+village|làng|My grandparents live in a small village.|A2|pp
+town|thị trấn|It's a quiet little town.|A2|pp
+street|đường phố|I live on Tran Hung Dao Street.|A2|pp
+road|con đường|The road is very busy.|A2|pp
+alley|ngõ, hẻm|My house is in a small alley.|A2|pp
+corner|góc (đường)|The café is on the corner.|A2|pp
+bridge|cây cầu|Cross the bridge and turn left.|A2|pp
+park|công viên|Let's walk in the park.|A2|pp
+square|quảng trường|There's a concert in the square.|A2|pp
+bank|ngân hàng|The bank opens at eight.|A2|pp
+post office|bưu điện|Where is the post office?|A2|pp
+police station|đồn cảnh sát|Report it to the police station.|A2|pp
+library|thư viện|I study at the library.|A2|pp
+school|trường học|My children go to school by bus.|A2|pp
+university|trường đại học|She studies at Hanoi University.|A2|pp
+church|nhà thờ|There is an old church in the centre.|A2|pp
+cinema|rạp chiếu phim|Let's go to the cinema tonight.|A2|pp
+theatre|nhà hát|The theatre is beautiful.|A2|pp
+café|quán cà phê|Let's meet at the café.|A2|pp
+bar|quán bar|They went to a bar after work.|A2|pp
+bakery|tiệm bánh|The bakery sells fresh bread.|A2|pp
+hairdresser|tiệm cắt tóc|I go to the hairdresser every month.|A2|pp
+petrol station|trạm xăng|Stop at the petrol station.|A2|pp
+zoo|sở thú|The kids love the zoo.|A2|pp
+building|tòa nhà|Our office is in that tall building.|A2|pp
+entrance|lối vào|The entrance is on the left.|A2|pp
+exit|lối ra|Where is the exit?|A2|pp
+upstairs|tầng trên|The bathroom is upstairs.|A2|pp
+downstairs|tầng dưới|The kitchen is downstairs.|A2|pp
+inside|bên trong|Let's wait inside.|A2|pp
+outside|bên ngoài|It's raining outside.|A2|pp
+in front of|phía trước|Park in front of the house.|A2|pp
+behind|phía sau|The garden is behind the house.|A2|pp
+between|ở giữa|The bank is between the café and the shop.|A2|pp
+above|ở trên|There's a fan above the bed.|A2|pp
+below|ở dưới|Write your name below.|A2|pp
+under|bên dưới|The cat is under the table.|A2|pp
+around|xung quanh|There are shops around the hotel.|A2|pp
+here|ở đây|Come here.|A2|pp
+there|ở đó|Put it over there.|A2|pp
+everywhere|khắp mọi nơi|I looked everywhere for my keys.|A2|pp
+somewhere|đâu đó|Let's go somewhere quiet.|A2|pp
+north|phía bắc|Sapa is in the north.|A2|pp
+south|phía nam|Can Tho is in the south.|A2|pp
+east|phía đông|The sun rises in the east.|A2|pp
+west|phía tây|The sun sets in the west.|A2|pp
+centre|trung tâm|The hotel is in the city centre.|A2|pp
+appearance|ngoại hình|Don't judge by appearance.|B1|pp
+hair|tóc|She has long black hair.|A2|pp
+slim|mảnh mai|She is tall and slim.|A2|pp
+fat|béo|My cat is getting fat.|A2|pp
+handsome|đẹp trai|He is very handsome.|A2|pp
+pretty|xinh|What a pretty dress!|A2|pp
+cute|dễ thương|Your baby is so cute.|A2|pp
+smart|thông minh; lịch sự (trang phục)|She is a smart student.|A2|pp
+clever|lanh lợi|What a clever idea!|A2|pp
+funny|hài hước|He's very funny.|A2|pp
+serious|nghiêm túc|Are you serious?|A2|pp
+lazy|lười|Don't be lazy.|A2|pp
+hard-working|chăm chỉ|Vietnamese workers are hard-working.|A2|pp
+generous|hào phóng|He is very generous with his friends.|B1|pp
+selfish|ích kỷ|Don't be selfish. Share it.|B1|pp
+helpful|hay giúp đỡ|The staff were very helpful.|A2|pp
+calm|bình tĩnh|Stay calm.|A2|pp
+cheerful|vui vẻ|She is always cheerful.|B1|pp
+strict|nghiêm khắc|My father is very strict.|B1|pp
+outgoing|hướng ngoại|He's outgoing and loves parties.|B1|pp
+reliable|đáng tin cậy|He is a reliable worker.|B1|pp
+lonely|cô đơn|I felt lonely in a new city.|A2|pp
+jealous|ghen tị|Don't be jealous.|B1|pp
+scared|sợ hãi|I'm scared of dogs.|A2|pp
+upset|buồn bực|She was upset about the news.|B1|pp
+disappointed|thất vọng|I was disappointed with the result.|B1|pp
+satisfied|hài lòng|Are you satisfied with the service?|B1|pp
+grateful|biết ơn|I'm grateful for your help.|B1|pp
+busy (place)|đông người, nhộn nhịp|The market is busy in the morning.|A2|pp
+peaceful|yên bình|The countryside is peaceful.|B1|pp
+clothes shop|cửa hàng quần áo|There's a new clothes shop near here.|A2|pp
+coat|áo khoác dài|Wear a coat; it's cold.|A2|pp
+sweater|áo len|This sweater is warm.|A2|pp
+shorts|quần soóc|I wear shorts at home.|A2|pp
+underwear|đồ lót|Pack enough underwear for the trip.|A2|pp
+pyjamas|đồ ngủ|The kids are in their pyjamas.|A2|pp
+raincoat|áo mưa|Take your raincoat; it's raining.|A2|pp
+cap|mũ lưỡi trai|He always wears a cap.|A2|pp
+belt|thắt lưng|This belt is too long.|A2|pp
+tie|cà vạt|You need to wear a tie.|A2|pp
+scarf|khăn quàng|It's cold; wear a scarf.|A2|pp
+boots|ủng, bốt|Wear boots in the rain.|A2|pp
+slippers|dép đi trong nhà|Put on your slippers.|A2|pp
+bag|túi|My bag is very heavy.|A2|pp
+handbag|túi xách tay|She bought a new handbag.|A2|pp
+jewellery|trang sức|She doesn't wear much jewellery.|B1|pp
+ring|nhẫn|He gave her a gold ring.|A2|pp
+necklace|vòng cổ|What a beautiful necklace!|A2|pp
+colour|màu sắc|What's your favourite colour?|A2|pp
+red|màu đỏ|Red is a lucky colour in Vietnam.|A2|pp
+blue|màu xanh dương|The sky is blue.|A2|pp
+green|màu xanh lá|I love green tea.|A2|pp
+yellow|màu vàng|The taxi is yellow.|A2|pp
+black|màu đen|I'd like a black coffee.|A2|pp
+white|màu trắng|She wore a white dress.|A2|pp
+grey|màu xám|The sky is grey today.|A2|pp
+brown|màu nâu|He has brown eyes.|A2|pp
+pink|màu hồng|My daughter loves pink.|A2|pp
+purple|màu tím|Hue is famous for purple áo dài.|A2|pp
+dark|tối, sẫm|It gets dark at six.|A2|pp
+bright|sáng|The room is bright and clean.|A2|pp

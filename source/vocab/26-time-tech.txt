@@ -1,0 +1,129 @@
+time|thời gian|What time is it?|A2|tm
+hour|giờ (tiếng)|The trip takes two hours.|A2|tm
+minute|phút|Wait a minute.|A2|tm
+second (time)|giây|It only takes a second.|A2|tm
+half past|rưỡi (giờ)|It's half past seven.|A2|tm
+quarter past|giờ mười lăm|The bus comes at quarter past eight.|A2|tm
+quarter to|kém mười lăm|It's quarter to five.|A2|tm
+o'clock|giờ đúng|The class starts at nine o'clock.|A2|tm
+a.m. / p.m.|sáng / chiều tối|The shop opens at 8 a.m.|A2|tm
+morning|buổi sáng|Good morning!|A2|tm
+afternoon|buổi chiều|See you this afternoon.|A2|tm
+evening|buổi tối|We usually relax in the evening.|A2|tm
+night|đêm|I couldn't sleep last night.|A2|tm
+midnight|nửa đêm|The party ended at midnight.|A2|tm
+noon|buổi trưa (12 giờ)|Let's meet at noon.|A2|tm
+day|ngày|Have a nice day!|A2|tm
+week|tuần|I work five days a week.|A2|tm
+month|tháng|My rent is paid every month.|A2|tm
+year|năm|I started working here last year.|A2|tm
+today|hôm nay|Today is Monday.|A2|tm
+tomorrow|ngày mai|See you tomorrow.|A2|tm
+yesterday|hôm qua|I called you yesterday.|A2|tm
+tonight|tối nay|What are you doing tonight?|A2|tm
+the day after tomorrow|ngày kia|We leave the day after tomorrow.|A2|tm
+the day before yesterday|hôm kia|I saw him the day before yesterday.|A2|tm
+last week|tuần trước|I was sick last week.|A2|tm
+next month|tháng sau|We'll move next month.|A2|tm
+weekday|ngày thường|I work on weekdays.|A2|tm
+Monday|thứ Hai|The office is closed on Monday.|A2|tm
+Tuesday|thứ Ba|I have English class on Tuesday.|A2|tm
+Wednesday|thứ Tư|Let's meet on Wednesday.|A2|tm
+Thursday|thứ Năm|The report is due on Thursday.|A2|tm
+Friday|thứ Sáu|Thank God it's Friday!|A2|tm
+Saturday|thứ Bảy|We go shopping on Saturday.|A2|tm
+Sunday|Chủ nhật|I rest on Sunday.|A2|tm
+January|tháng Một|My birthday is in January.|A2|tm
+February|tháng Hai|Tet is usually in February.|A2|tm
+March|tháng Ba|The project starts in March.|A2|tm
+April|tháng Tư|It gets hot in April.|A2|tm
+May|tháng Năm|The rainy season starts in May.|A2|tm
+June|tháng Sáu|School ends in June.|A2|tm
+July|tháng Bảy|We go to the beach in July.|A2|tm
+August|tháng Tám|August is very hot.|A2|tm
+September|tháng Chín|National Day is on 2 September.|A2|tm
+October|tháng Mười|It's cooler in October.|A2|tm
+November|tháng Mười Một|Teachers' Day is in November.|A2|tm
+December|tháng Mười Hai|Christmas is in December.|A2|tm
+date|ngày tháng|What's the date today?|A2|tm
+calendar|lịch|Check the calendar.|A2|tm
+century|thế kỷ|This temple is from the 11th century.|B1|tm
+past|quá khứ|Forget the past.|A2|tm
+present (time)|hiện tại|Live in the present.|B1|tm
+future|tương lai|What are your plans for the future?|A2|tm
+ago|cách đây|I moved here two years ago.|A2|tm
+before|trước khi|Wash your hands before eating.|A2|tm
+after|sau khi|Call me after work.|A2|tm
+during|trong suốt|Don't use your phone during the meeting.|A2|tm
+until|cho đến khi|Wait until I come back.|A2|tm
+since|từ khi|I've lived here since 2020.|B1|tm
+recently|gần đây|I haven't seen him recently.|B1|tm
+nowadays|ngày nay|Nowadays everyone has a smartphone.|B1|tm
+in a hurry|đang vội|Sorry, I'm in a hurry.|A2|tm
+number|số|What's your phone number?|A2|tm
+zero|số không|Dial zero for reception.|A2|tm
+hundred|trăm|There are a hundred people here.|A2|tm
+thousand|nghìn|It costs fifty thousand dong.|A2|tm
+million|triệu|My salary is ten million dong.|A2|tm
+billion|tỷ|The project cost two billion dong.|B1|tm
+first|thứ nhất|This is my first time in Da Nang.|A2|tm
+second (order)|thứ hai|He finished second.|A2|tm
+third|thứ ba|My office is on the third floor.|A2|tm
+last|cuối cùng; vừa qua|This is the last bus.|A2|tm
+half|một nửa|Half of the class is absent.|A2|tm
+double|gấp đôi|The price has doubled.|A2|tm
+percent|phần trăm|Prices rose by five percent.|A2|tm
+pair|đôi, cặp|I bought a pair of shoes.|A2|tm
+dozen|tá (12)|A dozen eggs, please.|A2|tm
+smartphone|điện thoại thông minh|Almost everyone has a smartphone.|A2|tc
+laptop|máy tính xách tay|I bring my laptop to work.|A2|tc
+tablet (device)|máy tính bảng|My son watches cartoons on a tablet.|A2|tc
+screen|màn hình|The screen is cracked.|A2|tc
+keyboard|bàn phím|The keyboard doesn't work.|A2|tc
+mouse (computer)|chuột máy tính|I need a new mouse.|A2|tc
+headphones|tai nghe|Use headphones on the bus.|A2|tc
+camera|máy ảnh; camera|The phone has a great camera.|A2|tc
+app|ứng dụng|Download the app.|A2|tc
+install|cài đặt|Install the latest version.|A2|tc
+log in|đăng nhập|Log in with your email.|A2|tc
+log out|đăng xuất|Always log out on shared computers.|A2|tc
+username|tên đăng nhập|Enter your username.|A2|tc
+account|tài khoản|Create an account.|A2|tc
+website|trang web|Visit our website.|A2|tc
+link|đường liên kết|Click the link.|A2|tc
+click|nhấp chuột|Click on the button.|A2|tc
+search|tìm kiếm|Search for it on Google.|A2|tc
+online|trực tuyến|I study English online.|A2|tc
+offline|ngoại tuyến|The app works offline.|B1|tc
+internet|mạng internet|The internet is down.|A2|tc
+social media|mạng xã hội|She posts on social media every day.|A2|tc
+post (online)|đăng bài|He posted a photo on Facebook.|A2|tc
+share (online)|chia sẻ|Share this video with your friends.|A2|tc
+follow|theo dõi|Follow us on Instagram.|A2|tc
+message|tin nhắn|Send me a message on Zalo.|A2|tc
+video call|cuộc gọi video|Let's have a video call.|A2|tc
+notification|thông báo|Turn off notifications.|B1|tc
+battery|pin|The battery is low.|A2|tc
+charge (phone)|sạc|I need to charge my phone.|A2|tc
+power bank|sạc dự phòng|Bring a power bank on the trip.|A2|tc
+cable|dây cáp|I need a USB cable.|A2|tc
+plug|phích cắm; cắm|Plug it in, please.|A2|tc
+socket|ổ cắm điện|Is there a socket near the desk?|A2|tc
+file|tệp|Save the file.|A2|tc
+folder|thư mục|Put it in this folder.|A2|tc
+save (file)|lưu|Don't forget to save your work.|A2|tc
+delete|xóa|Delete the old photos.|A2|tc
+copy (text)|sao chép|Copy and paste this text.|A2|tc
+paste|dán|Paste it here.|A2|tc
+print|in|Print two copies, please.|A2|tc
+scan|quét|Scan the document and email it.|A2|tc
+attachment|tệp đính kèm|The attachment is too big.|B1|tc
+virus (computer)|vi-rút máy tính|My computer has a virus.|A2|tc
+hacker|tin tặc|Hackers stole the data.|B1|tc
+screenshot|ảnh chụp màn hình|Send me a screenshot.|A2|tc
+selfie|ảnh tự sướng|Let's take a selfie!|A2|tc
+emoji|biểu tượng cảm xúc|She always uses emojis.|A2|tc
+restart|khởi động lại|Try restarting your computer.|A2|tc
+settings|cài đặt (mục)|Go to Settings.|A2|tc
+volume (sound)|âm lượng|Turn the volume down.|A2|tc
+mute|tắt tiếng|You're on mute.|A2|tc

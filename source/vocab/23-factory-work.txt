@@ -1,0 +1,99 @@
+production line|dây chuyền sản xuất|The production line stopped for two hours.|A2|fc
+assembly line|dây chuyền lắp ráp|She works on the assembly line.|A2|fc
+machine|máy móc|Turn off the machine before cleaning it.|A2|fc
+operator|công nhân vận hành|The machine operator checks the settings every hour.|A2|fc
+worker|công nhân|The workers have a break at ten.|A2|fc
+shift leader|trưởng ca|Tell the shift leader if there is a problem.|A2|fc
+supervisor|giám sát|The supervisor checks the output.|A2|fc
+engineer|kỹ sư|The engineer fixed the machine.|A2|fc
+technician|kỹ thuật viên|Call the technician; the robot isn't working.|A2|fc
+maintenance|bảo trì|Maintenance is every Saturday morning.|B1|fc
+preventive maintenance|bảo trì phòng ngừa|Preventive maintenance reduces breakdowns.|B2|fc
+breakdown (machine)|hỏng máy|The machine breakdown stopped production.|B1|fc
+downtime|thời gian dừng máy|Downtime last month was 12 hours.|B1|fc
+output|sản lượng đầu ra|Our daily output is 5,000 units.|B1|fc
+capacity (factory)|công suất|The factory is running at full capacity.|B1|fc
+target output|sản lượng mục tiêu|We reached our target output today.|B1|fc
+raw material|nguyên liệu thô|We are waiting for raw material from Korea.|A2|fc
+part|chi tiết, linh kiện|This part is out of stock.|A2|fc
+tool|dụng cụ|Put the tools back after use.|A2|fc
+equipment|thiết bị|All equipment must be checked daily.|A2|fc
+mould / mold|khuôn|The mould needs cleaning.|B1|fc
+welding|hàn|He is doing welding on the frame.|B1|fc
+cutting|cắt|Wear gloves for cutting.|A2|fc
+drilling|khoan|The drilling machine is very loud.|B1|fc
+painting|sơn|The parts go to the painting line next.|A2|fc
+assemble|lắp ráp|We assemble the phones in Bac Ninh.|A2|fc
+inspect|kiểm tra|Inspect each part before packing.|B1|fc
+inspection (factory)|việc kiểm tra|Final inspection is at the end of the line.|B1|fc
+defective|bị lỗi|Put defective parts in the red box.|B1|fc
+scrap|phế liệu; loại bỏ|The scrap rate is 2%.|B1|fc
+rework|làm lại (sửa lỗi)|These units need rework.|B1|fc
+yield|tỷ lệ đạt|Yield improved to 98%.|B2|fc
+batch|mẻ, lô sản xuất|This batch is ready for inspection.|B1|fc
+specification|thông số kỹ thuật|The size is outside the specification.|B1|fc
+tolerance|dung sai|The tolerance is plus or minus 0.1 mm.|B2|fc
+drawing|bản vẽ|Check the drawing before you start.|A2|fc
+work instruction|hướng dẫn công việc|Follow the work instruction on the board.|B1|fc
+checklist|danh sách kiểm tra|Complete the checklist at the start of the shift.|A2|fc
+production plan|kế hoạch sản xuất|The production plan for next week is ready.|B1|fc
+production order|lệnh sản xuất|We received a new production order.|B1|fc
+cycle time|thời gian chu kỳ|The cycle time is 45 seconds.|B2|fc
+bottleneck (factory)|điểm nghẽn|The painting line is the bottleneck.|B2|fc
+kaizen|cải tiến liên tục|We have a kaizen meeting every Friday.|B1|fc
+lean manufacturing|sản xuất tinh gọn|Lean manufacturing reduces waste.|B2|fc
+waste|lãng phí; rác thải|Waiting is a kind of waste.|B1|fc
+safety helmet|mũ bảo hộ|Wear a safety helmet in the workshop.|A2|fc
+earplugs|nút bịt tai|Wear earplugs near the press.|A2|fc
+safety glasses|kính bảo hộ|Safety glasses are required in this area.|A2|fc
+emergency stop|nút dừng khẩn cấp|Press the emergency stop if anything goes wrong.|A2|fc
+lockout|khóa an toàn (cắt nguồn)|Use lockout before repairing the machine.|B2|fc
+workshop|xưởng|The workshop is next to the warehouse.|A2|fc
+overtime (factory)|tăng ca|We have two hours of overtime tonight.|A2|fc
+day shift|ca ngày|I'm on the day shift this week.|A2|fc
+night shift|ca đêm|The night shift starts at 10 p.m.|A2|fc
+clock in|chấm công vào|Clock in before 7:30.|A2|fc
+clock out|chấm công ra|Don't forget to clock out.|A2|fc
+break time|giờ nghỉ|Break time is 15 minutes.|A2|fc
+canteen|nhà ăn|Lunch is served in the canteen.|A2|fc
+uniform|đồng phục|Workers must wear a uniform.|A2|fc
+salary|lương|Salary is paid on the 5th.|A2|wk
+wage|tiền công (theo giờ/ngày)|The minimum wage went up this year.|B1|wk
+bonus|tiền thưởng|We get a bonus at Tet.|A2|wk
+allowance|phụ cấp|There is a lunch allowance.|B1|wk
+contract (job)|hợp đồng|I signed a one-year contract.|A2|wk
+job|công việc|I like my job.|A2|wk
+career|sự nghiệp|She has a successful career.|B1|wk
+interview|phỏng vấn|I have a job interview tomorrow.|A2|wk
+CV / resume|sơ yếu lý lịch|Please send your CV.|A2|wk
+apply for|nộp đơn xin|I applied for a job at a logistics company.|A2|wk
+hire|thuê, tuyển|They hired ten new workers.|B1|wk
+quit|nghỉ việc|He quit his job last month.|A2|wk
+promotion|sự thăng chức|She got a promotion.|B1|wk
+experience|kinh nghiệm|Do you have any experience?|A2|wk
+skill|kỹ năng|Communication skills are important.|A2|wk
+colleague (work)|đồng nghiệp|My colleagues are friendly.|A2|wk
+boss|sếp|My boss is in a meeting.|A2|wk
+manager|quản lý|The manager approved my leave.|A2|wk
+staff|nhân viên|All staff must attend the meeting.|A2|wk
+department|phòng ban|Which department do you work in?|A2|wk
+office|văn phòng|The office is on the third floor.|A2|wk
+desk|bàn làm việc|Your desk is next to the window.|A2|wk
+computer|máy tính|My computer is very slow.|A2|wk
+printer|máy in|The printer is out of paper.|A2|wk
+email|thư điện tử|I'll send you an email.|A2|wk
+schedule (work)|lịch trình|My schedule is full today.|A2|wk
+task|nhiệm vụ|I have three tasks to finish today.|A2|wk
+project|dự án|The project is behind schedule.|A2|wk
+presentation|bài thuyết trình|I have to give a presentation tomorrow.|B1|wk
+annual leave|nghỉ phép năm|I have 12 days of annual leave.|B1|wk
+sick leave|nghỉ ốm|He is on sick leave.|B1|wk
+day off|ngày nghỉ|Tomorrow is my day off.|A2|wk
+busy|bận|I'm very busy this week.|A2|wk
+on time|đúng giờ|Please be on time for the meeting.|A2|wk
+late|muộn|Sorry I'm late.|A2|wk
+teamwork|làm việc nhóm|Teamwork is the key to success.|B1|wk
+responsibility (job)|trách nhiệm|It's my responsibility to check the reports.|B1|wk
+training (job)|đào tạo|New staff get two weeks of training.|A2|wk
+performance review|đánh giá hiệu suất|My performance review is next month.|B1|wk
+retire|nghỉ hưu|He will retire next year.|B1|wk

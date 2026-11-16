@@ -114,6 +114,17 @@ button.card:hover{border-color:var(--steel)}
 .opt.right{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
 .opt.wrong{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
 .score{font-family:var(--f-display);font-weight:800;font-size:1.2rem}
+.gtable{border-collapse:collapse;width:100%;font-size:.92rem}
+.gtable th,.gtable td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+.gtable th{font-family:var(--f-mono);font-size:.72rem;color:var(--muted);font-weight:500}
+.linkish{background:none;border:0;padding:0;color:var(--ink);font:inherit;text-align:left;cursor:pointer}
+.qwhy{margin:6px 0 0}
+.reading-aloud{font-size:1.15rem;line-height:1.75;max-width:68ch;margin:0}
+.gapline{font-size:1.15rem;line-height:2;margin:0}
+input.gap{font:inherit;font-weight:600;border:0;border-bottom:2px solid var(--accent);background:transparent;color:var(--ink);padding:0 4px;max-width:60vw}
+.dict-in{width:100%;font:inherit;font-size:1.05rem;padding:10px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg);color:var(--ink)}
+.ok-msg{color:var(--ok);font-weight:600;margin:0} .bad-msg{color:var(--bad);font-weight:600;margin:0}
+@media (max-width:560px){.gtable td:nth-child(3),.gtable th:nth-child(3){display:none}}
 .reading{max-width:68ch;display:flex;flex-direction:column;gap:12px;font-size:1rem}
 .gl{display:flex;flex-wrap:wrap;gap:6px}
 .gl span{background:var(--chip);border-radius:3px;padding:2px 8px;font-size:.85rem}
@@ -191,7 +202,7 @@ footer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px soli
 <header class="gate">
   <div class="wrap">
     <div class="gate-top">
-      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><div><h1>Logistics English Dock</h1><small>TIẾNG ANH NGÀNH LOGISTICS · A2 → B2</small></div></div>
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><div><h1>Logistics English Dock</h1><small>LOGISTICS · ĐỜI SỐNG · GIAO TIẾP · A2 → B2</small></div></div>
       <div class="stats" id="stats"></div>
     </div>
     <nav class="tabs" aria-label="Mục học">
@@ -199,7 +210,11 @@ footer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px soli
       <a href="#nghe">Nghe</a>
       <a href="#doc">Đọc</a>
       <a href="#viet">Viết</a>
+      <a href="#ngu-phap">Ngữ pháp</a>
+      <a href="#chinh-ta">Luyện nghe</a>
       <a href="#phat-am">Phát âm</a>
+      <a href="#shadowing">Shadowing</a>
+      <a href="#doc-to">Đọc to</a>
       <a href="#on-tap">Ôn tập</a>
       <a href="#hoi-thoai">Hội thoại</a>
       <a href="#video">Video</a>
@@ -208,7 +223,7 @@ footer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px soli
 </header>
 
 <main class="wrap" id="app"></main>
-<footer class="wrap"><b>Phiên bản 16/11/2026 06:46 · 1031 từ, có IPA UK/US</b> · Âm thanh dùng giọng tiếng Anh có sẵn trên máy bạn; nếu không nghe thấy, hãy kiểm tra âm lượng và chế độ im lặng. Chấm phát âm dựa trên việc máy nhận ra đúng từ bạn đọc, nên đọc chậm, rõ ở nơi yên tĩnh. Tiến độ học lưu trên trình duyệt này. Video mở trên YouTube ở tab mới.</footer>
+<footer class="wrap"><b>Phiên bản 16/11/2026 07:56 · 2311 từ, có IPA UK/US</b> · Âm thanh dùng giọng tiếng Anh có sẵn trên máy bạn; nếu không nghe thấy, hãy kiểm tra âm lượng và chế độ im lặng. Chấm phát âm dựa trên việc máy nhận ra đúng từ bạn đọc, nên đọc chậm, rõ ở nơi yên tĩnh. Tiến độ học lưu trên trình duyệt này. Video mở trên YouTube ở tab mới.</footer>
 
 <script>
 const ICON={
@@ -236,8 +251,25 @@ const TOPICS=[
  {id:"it",code:"IT-16",name:"Hệ thống & theo dõi",en:"Systems & tracking"},
  {id:"ec",code:"EC-17",name:"Thương mại điện tử",en:"E-commerce"},
  {id:"cc",code:"CC-18",name:"Hàng lạnh & hàng nguy hiểm",en:"Cold chain & dangerous goods"},
- {id:"hs",code:"HS-19",name:"An toàn & chất lượng",en:"Safety & quality"}
+ {id:"hs",code:"HS-19",name:"An toàn & chất lượng",en:"Safety & quality"},
+ {id:"dl",code:"DL-20",name:"Nhà cửa, gia đình & sinh hoạt",en:"Home, family & daily life"},
+ {id:"fo",code:"FO-21",name:"Ăn uống",en:"Food & drink"},
+ {id:"hl",code:"HL-22",name:"Sức khỏe & cơ thể",en:"Health & body"},
+ {id:"sp",code:"SP-23",name:"Thể thao",en:"Sports"},
+ {id:"tv",code:"TV-24",name:"Du lịch & đi lại",en:"Travel & getting around"},
+ {id:"ws",code:"WS-25",name:"Thời tiết & thiên nhiên",en:"Weather & nature"},
+ {id:"fc",code:"FC-26",name:"Công xưởng & sản xuất",en:"Factory & production"},
+ {id:"wk",code:"WK-27",name:"Công việc & văn phòng",en:"Work & office"},
+ {id:"cm",code:"CM-28",name:"Giao tiếp & cảm xúc",en:"Communication & feelings"},
+ {id:"sh",code:"SH-29",name:"Mua sắm & tiền bạc",en:"Shopping & money"},
+ {id:"vb",code:"VB-30",name:"Động từ, tính từ, trạng từ thông dụng",en:"Everyday verbs & adjectives"},
+ {id:"tm",code:"TM-31",name:"Thời gian & con số",en:"Time & numbers"},
+ {id:"tc",code:"TC-32",name:"Công nghệ & điện thoại",en:"Technology & phones"},
+ {id:"pp",code:"PP-33",name:"Con người, nơi chốn, quần áo & màu sắc",en:"People, places & clothes"},
+ {id:"gt",code:"GT-34",name:"Giải trí, lễ hội & động vật",en:"Leisure, festivals & animals"},
+ {id:"kn",code:"KN-35",name:"Câu khẩu ngữ thông dụng",en:"Spoken English phrases"}
 ];
+const LOGI_N=19;
 // term | vietnamese | example | level | topic
 const RAW=`supply chain|chuỗi cung ứng|A strong supply chain gets products to customers on time.|A2|sc|/səˈplaɪ ˈtʃeɪn/|/səˈplaɪ ˈtʃeɪn/
 logistics|hậu cần, logistics|She works in logistics for an electronics company.|A2|sc|/ləˈdʒɪstɪks/|/ləˈdʒɪstɪks/
@@ -1269,7 +1301,1287 @@ freight payment|thanh toán cước|We will release the B/L after we receive the
 warehouse fee|phí lưu kho|The warehouse fee is charged from the fourth day.|A2|fi|/ˈweəhaʊs ˈfiː/|/ˈwɛrhaʊs ˈfiː/
 cargo arrival|việc hàng đến|We will notify you two days before cargo arrival.|A2|oc|/ˈkɑːɡəʊ əˈraɪvəl/|/ˈkɑːrɡoʊ əˈraɪvəl/
 port of entry|cảng nhập cảnh (cửa khẩu nhập)|The port of entry for this shipment is Long Beach.|B1|cu|/ˈpɔːt ɒv ˈɛntri/|/ˈpɔːrt ʌv ˈɛntri/
-customs documents|chứng từ hải quan|Please prepare the customs documents before the vessel arrives.|A2|cu|/ˈkʌstəmz ˈdɒkjuːmənts/|/ˈkʌstəmz ˈdɑːkjuːmənts/`;
+customs documents|chứng từ hải quan|Please prepare the customs documents before the vessel arrives.|A2|cu|/ˈkʌstəmz ˈdɒkjuːmənts/|/ˈkʌstəmz ˈdɑːkjuːmənts/
+house|ngôi nhà|They live in a small house near the river.|A2|dl|/ˈhaʊs/|/ˈhaʊs/
+apartment|căn hộ|My apartment is on the tenth floor.|A2|dl|/əˈpɑːtmənt/|/əˈpɑːrtmənt/
+room|phòng|My room is next to the kitchen.|A2|dl|/ˈruːm/|/ˈruːm/
+bedroom|phòng ngủ|The bedroom has a big window.|A2|dl|/ˈbɛdruːm/|/ˈbɛdruːm/
+bathroom|phòng tắm|The bathroom is at the end of the hall.|A2|dl|/ˈbæθruːm/|/ˈbæθruːm/
+kitchen|nhà bếp|We eat breakfast in the kitchen.|A2|dl|/ˈkɪtʃən/|/ˈkɪtʃən/
+living room|phòng khách|The family watches TV in the living room.|A2|dl|/ˈlɪvɪŋ ˈruːm/|/ˈlɪvɪŋ ˈruːm/
+balcony|ban công|I dry my clothes on the balcony.|A2|dl|/ˈbælkəni/|/ˈbælkəni/
+roof|mái nhà|The roof leaks when it rains.|A2|dl|/ˈruːf/|/ˈruːf/
+floor|sàn nhà; tầng|Please don't put your bag on the floor.|A2|dl|/ˈflɔː/|/ˈflɔːr/
+wall|bức tường|There is a clock on the wall.|A2|dl|/ˈwɔːl/|/ˈwɔːl/
+door|cửa ra vào|Please close the door.|A2|dl|/ˈdɔː/|/ˈdɔːr/
+window|cửa sổ|Can you open the window?|A2|dl|/ˈwɪndəʊ/|/ˈwɪndoʊ/
+stairs|cầu thang|Take the stairs; the lift is broken.|A2|dl|/ˈsteəz/|/ˈstɛrz/
+lift / elevator|thang máy|The lift is out of order.|A2|dl|/ˈlɪft/, /ˈɛlɪˌveɪtə/|/ˈlɪft/, /ˈɛlɪˌveɪtər/
+furniture|đồ nội thất|We bought new furniture for the living room.|A2|dl|/ˈfɜːnɪtʃə/|/ˈfɜːrnɪtʃər/
+sofa|ghế sô-pha|The cat is sleeping on the sofa.|A2|dl|/ˈsəʊfə/|/ˈsoʊfə/
+table|cái bàn|Put the plates on the table.|A2|dl|/ˈteɪbəl/|/ˈteɪbəl/
+chair|cái ghế|This chair is very comfortable.|A2|dl|/ˈtʃeə/|/ˈtʃɛr/
+bed|giường|I go to bed at eleven.|A2|dl|/ˈbɛd/|/ˈbɛd/
+pillow|cái gối|I need a softer pillow.|A2|dl|/ˈpɪləʊ/|/ˈpɪloʊ/
+blanket|cái chăn|It's cold; take an extra blanket.|A2|dl|/ˈblæŋkɪt/|/ˈblæŋkɪt/
+wardrobe|tủ quần áo|Hang your shirt in the wardrobe.|A2|dl|/ˈwɔːdrəʊb/|/ˈwɔːrdroʊb/
+shelf (home)|kệ, giá|The books are on the top shelf.|A2|dl|/ˈʃɛlf/|/ˈʃɛlf/
+mirror|gương|She looked in the mirror.|A2|dl|/ˈmɪrə/|/ˈmɪrər/
+lamp|đèn bàn, đèn ngủ|Turn on the lamp, please.|A2|dl|/ˈlæmp/|/ˈlæmp/
+light switch|công tắc đèn|The light switch is by the door.|A2|dl|/ˈlaɪt ˈswɪtʃ/|/ˈlaɪt ˈswɪtʃ/
+fan|quạt|Turn on the fan; it's hot.|A2|dl|/ˈfæn/|/ˈfæn/
+air conditioner|máy điều hòa|The air conditioner is too cold.|A2|dl|/ˈeə kənˈdɪʃənə/|/ˈɛr kənˈdɪʃənər/
+fridge|tủ lạnh|There is milk in the fridge.|A2|dl|/ˈfrɪdʒ/|/ˈfrɪdʒ/
+washing machine|máy giặt|The washing machine is very noisy.|A2|dl|/ˈwɒʃɪŋ məˈʃiːn/|/ˈwɑːʃɪŋ məˈʃiːn/
+microwave|lò vi sóng|Heat the rice in the microwave.|A2|dl|/ˈmaɪkrəʊˌweɪv/|/ˈmaɪkroʊˌweɪv/
+rice cooker|nồi cơm điện|Turn on the rice cooker at six.|A2|dl|/ˈraɪs ˈkʊkə/|/ˈraɪs ˈkʊkər/
+stove|bếp nấu|Don't leave the stove on.|A2|dl|/ˈstəʊv/|/ˈstoʊv/
+sink|bồn rửa|The dishes are in the sink.|A2|dl|/ˈsɪŋk/|/ˈsɪŋk/
+tap / faucet|vòi nước|The tap is dripping.|A2|dl|/ˈtæp/, /ˈfɔːsɪt/|/ˈtæp/, /ˈfɔːsɪt/
+toilet|nhà vệ sinh; bồn cầu|Where is the toilet, please?|A2|dl|/ˈtɔɪlɪt/|/ˈtɔɪlɪt/
+shower|vòi sen; tắm vòi sen|I take a shower every morning.|A2|dl|/ˈʃaʊə/|/ˈʃaʊər/
+towel|khăn tắm|Can I have a clean towel?|A2|dl|/ˈtaʊəl/|/ˈtaʊəl/
+soap|xà phòng|Wash your hands with soap.|A2|dl|/ˈsəʊp/|/ˈsoʊp/
+shampoo|dầu gội|We've run out of shampoo.|A2|dl|/ʃæmˈpuː/|/ʃæmˈpuː/
+toothbrush|bàn chải đánh răng|I need a new toothbrush.|A2|dl|/ˈtuːθbrʌʃ/|/ˈtuːθbrʌʃ/
+toothpaste|kem đánh răng|Buy some toothpaste, please.|A2|dl|/ˈtuːθpeɪst/|/ˈtuːθpeɪst/
+rubbish / trash|rác|Take out the rubbish, please.|A2|dl|/ˈrʌbɪʃ/, /ˈtræʃ/|/ˈrʌbɪʃ/, /ˈtræʃ/
+bin (rubbish)|thùng rác|Put the bottle in the recycling bin.|A2|dl|/ˈbɪn/|/ˈbɪn/
+broom|cái chổi|The broom is behind the door.|A2|dl|/ˈbruːm/|/ˈbruːm/
+mop|cây lau nhà|Use the mop to clean the floor.|A2|dl|/ˈmɒp/|/ˈmɑːp/
+vacuum cleaner|máy hút bụi|The vacuum cleaner is in the cupboard.|A2|dl|/ˈvækjuːm ˈkliːnə/|/ˈvækjuːm ˈkliːnər/
+cupboard|tủ chạn, tủ đựng đồ|The cups are in the cupboard.|A2|dl|/ˈkʌbəd/|/ˈkʌbəd/
+key|chìa khóa|I can't find my keys.|A2|dl|/ˈkiː/|/ˈkiː/
+lock|khóa; khóa lại|Did you lock the door?|A2|dl|/ˈlɒk/|/ˈlɑːk/
+neighbour|hàng xóm|Our neighbours are very friendly.|A2|dl|/ˈneɪbə/|/ˈneɪbər/
+rent|tiền thuê nhà; thuê|The rent is due on the first of the month.|A2|dl|/ˈrɛnt/|/ˈrɛnt/
+landlord|chủ nhà (cho thuê)|Call the landlord about the broken heater.|B1|dl|/ˈlændlɔːd/|/ˈlændlɔːrd/
+electricity bill|hóa đơn tiền điện|The electricity bill was high this month.|A2|dl|/ɪlɛkˈtrɪsɪti ˈbɪl/|/ɪlɛkˈtrɪsɪti ˈbɪl/
+water bill|hóa đơn tiền nước|I paid the water bill online.|A2|dl|/ˈwɔːtə ˈbɪl/|/ˈwɔːtər ˈbɪl/
+internet connection|kết nối internet|The internet connection is slow today.|A2|dl|/ˈɪntəˌnɛt kəˈnɛkʃən/|/ˈɪntərˌnɛt kəˈnɛkʃən/
+Wi-Fi password|mật khẩu Wi-Fi|What's the Wi-Fi password?|A2|dl|/ˈwaɪ ˌfaɪ ˈpæswɜːd/|/ˈwaɪ ˌfaɪ ˈpæswɜːrd/
+housework|việc nhà|We share the housework.|A2|dl|/ˈhaʊswɜːk/|/ˈhaʊswɜːrk/
+do the laundry|giặt đồ|I do the laundry on Sundays.|A2|dl|/ˈduː ðə ˈlɔːndri/|/ˈduː ðə ˈlɔːndri/
+do the dishes|rửa bát|It's your turn to do the dishes.|A2|dl|/ˈduː ðə ˈdɪʃɪz/|/ˈduː ðə ˈdɪʃɪz/
+make the bed|dọn giường|Make your bed before school.|A2|dl|/ˌmeɪk ðə ˈbɛd/|/ˌmeɪk ðə ˈbɛd/
+cook dinner|nấu bữa tối|My husband usually cooks dinner.|A2|dl|/ˈkʊk ˈdɪnə/|/ˈkʊk ˈdɪnər/
+clean the house|dọn nhà|We clean the house every weekend.|A2|dl|/ˈkliːn ðə ˈhaʊs/|/ˈkliːn ðə ˈhaʊs/
+iron (clothes)|là, ủi quần áo|I need to iron my shirt for the meeting.|A2|dl|/ˈaɪən/|/ˈaɪərn/
+water the plants|tưới cây|Can you water the plants while I'm away?|A2|dl|/ˈwɔːtə ðə ˈplænts/|/ˈwɔːtər ðə ˈplænts/
+wake up|thức dậy|I wake up at six every day.|A2|dl|/ˈweɪk ˈʌp/|/ˈweɪk ˈʌp/
+get up|ra khỏi giường|I get up at 6:15.|A2|dl|/ɡɛt ˈʌp/|/ɡɛt ˈʌp/
+go to bed|đi ngủ|What time do you go to bed?|A2|dl|/ˌɡəʊ tə ˈbɛd/|/ˌɡoʊ tə ˈbɛd/
+take a nap|ngủ trưa, chợp mắt|I take a short nap after lunch.|A2|dl|/ˈteɪk ə ˈnæp/|/ˈteɪk ə ˈnæp/
+get dressed|mặc quần áo|Get dressed quickly; we're late.|A2|dl|/ɡɛt ˈdrɛst/|/ɡɛt ˈdrɛst/
+brush your teeth|đánh răng|Brush your teeth twice a day.|A2|dl|/ˈbrʌʃ jɔː ˈtiːθ/|/ˈbrʌʃ jʊr ˈtiːθ/
+have breakfast|ăn sáng|We have breakfast at seven.|A2|dl|/hæv ˈbrɛkfəst/|/hæv ˈbrɛkfəst/
+have lunch|ăn trưa|Let's have lunch together.|A2|dl|/hæv ˈlʌntʃ/|/hæv ˈlʌntʃ/
+commute|đi lại (đi làm hằng ngày)|My commute takes forty minutes.|B1|dl|/kəˈmjuːt/|/kəˈmjuːt/
+traffic|giao thông|The traffic is terrible in the morning.|A2|dl|/ˈtræfɪk/|/ˈtræfɪk/
+motorbike|xe máy|Most people in Hanoi ride a motorbike.|A2|dl|/ˈməʊtəˌbaɪk/|/ˈmoʊtərˌbaɪk/
+helmet|mũ bảo hiểm|Always wear a helmet.|A2|dl|/ˈhɛlmɪt/|/ˈhɛlmɪt/
+bus stop|trạm xe buýt|The bus stop is in front of the bank.|A2|dl|/ˈbʌs ˈstɒp/|/ˈbʌs ˈstɑːp/
+parking lot / car park|bãi đỗ xe|The car park is full.|A2|dl|/ˈpɑːkɪŋ ˈlɒt/, /ˈkɑː ˈpɑːk/|/ˈpɑːrkɪŋ ˈlɑːt/, /ˈkɑːr ˈpɑːrk/
+family|gia đình|I live with my family.|A2|dl|/ˈfæmɪli/|/ˈfæmɪli/
+parents|bố mẹ|My parents live in the countryside.|A2|dl|/ˈpeərənts/|/ˈpɛrənts/
+father|bố|My father is a teacher.|A2|dl|/ˈfɑːðə/|/ˈfɑːðər/
+mother|mẹ|My mother cooks very well.|A2|dl|/ˈmʌðə/|/ˈmʌðər/
+brother|anh/em trai|My brother works in Japan.|A2|dl|/ˈbrʌðə/|/ˈbrʌðər/
+sister|chị/em gái|My sister is a nurse.|A2|dl|/ˈsɪstə/|/ˈsɪstər/
+son|con trai|Their son is five years old.|A2|dl|/ˈsʌn/|/ˈsʌn/
+daughter|con gái|Our daughter goes to kindergarten.|A2|dl|/ˈdɔːtə/|/ˈdɔːtər/
+husband|chồng|Her husband is an engineer.|A2|dl|/ˈhʌsbənd/|/ˈhʌsbənd/
+wife|vợ|His wife works in a bank.|A2|dl|/ˈwaɪf/|/ˈwaɪf/
+grandparents|ông bà|We visit our grandparents at Tet.|A2|dl|/ˈɡrændpeərənts/|/ˈɡrændpɛrənts/
+uncle|chú, bác, cậu|My uncle owns a restaurant.|A2|dl|/ˈʌŋkəl/|/ˈʌŋkəl/
+aunt|cô, dì, bác gái|My aunt lives in Da Nang.|A2|dl|/ˈænt/|/ˈænt/
+cousin|anh chị em họ|My cousin is getting married.|A2|dl|/ˈkʌzən/|/ˈkʌzən/
+relative|họ hàng|Many relatives came to the wedding.|B1|dl|/ˈrɛləˌtɪv/|/ˈrɛləˌtɪv/
+baby|em bé|The baby is sleeping.|A2|dl|/ˈbeɪbi/|/ˈbeɪbi/
+child / children|trẻ em|The children are playing outside.|A2|dl|/ˈtʃaɪld/, /ˈtʃɪldrən/|/ˈtʃaɪld/, /ˈtʃɪldrən/
+teenager|thanh thiếu niên|Teenagers love their phones.|A2|dl|/ˈtiːneɪdʒə/|/ˈtiːneɪdʒər/
+adult|người lớn|Tickets for adults cost 100,000 dong.|A2|dl|/ˈædʌlt/|/əˈdʌlt/
+friend|bạn bè|She's my best friend.|A2|dl|/ˈfrɛnd/|/ˈfrɛnd/
+married|đã kết hôn|Are you married?|A2|dl|/ˈmærid/|/ˈmærid/
+single|độc thân|He is still single.|A2|dl|/ˈsɪŋɡəl/|/ˈsɪŋɡəl/
+birthday|sinh nhật|Happy birthday!|A2|dl|/ˈbɜːθdeɪ/|/ˈbɜːrθdeɪ/
+wedding|đám cưới|We are going to a wedding on Saturday.|A2|dl|/ˈwɛdɪŋ/|/ˈwɛdɪŋ/
+party|bữa tiệc|Are you coming to the party?|A2|dl|/ˈpɑːti/|/ˈpɑːrti/
+holiday|kỳ nghỉ; ngày lễ|Tet is the biggest holiday in Vietnam.|A2|dl|/ˈhɒlɪˌdeɪ/|/ˈhɑːlɪˌdeɪ/
+weekend|cuối tuần|What did you do at the weekend?|A2|dl|/wiːˈkɛnd/|/ˈwiːkɛnd/
+free time (leisure)|thời gian rảnh|What do you do in your free time?|A2|dl|/ˈfriː ˈtaɪm/|/ˈfriː ˈtaɪm/
+hobby|sở thích|My hobby is photography.|A2|dl|/ˈhɒbi/|/ˈhɑːbi/
+pet|thú cưng|Do you have any pets?|A2|dl|/ˈpɛt/|/ˈpɛt/
+dog|con chó|The dog barks at strangers.|A2|dl|/ˈdɒɡ/|/ˈdɑːɡ/
+cat|con mèo|Our cat likes fish.|A2|dl|/ˈkæt/|/ˈkæt/
+gift / present|quà|Thank you for the lovely gift.|A2|dl|/ˈɡɪft/, /ˈprɛzənt/|/ˈɡɪft/, /ˈprɛzənt/
+phone call|cuộc gọi điện thoại|I have to make a phone call.|A2|dl|/ˈfəʊn ˈkɔːl/|/ˈfoʊn ˈkɔːl/
+text message|tin nhắn|Send me a text message when you arrive.|A2|dl|/ˈtɛkst ˈmɛsɪdʒ/|/ˈtɛkst ˈmɛsɪdʒ/
+charger|bộ sạc|Can I borrow your phone charger?|A2|dl|/ˈtʃɑːdʒə/|/ˈtʃɑːrdʒər/
+battery (phone)|pin (điện thoại)|My phone battery is almost dead.|A2|dl|/ˈbætəri/|/ˈbætəri/
+appointment|cuộc hẹn|I have a doctor's appointment at three.|B1|dl|/əˈpɔɪntmənt/|/əˈpɔɪntmənt/
+umbrella|cái ô, dù|Take an umbrella; it might rain.|A2|dl|/ʌmˈbrɛlə/|/ʌmˈbrɛlə/
+wallet|cái ví|I left my wallet at home.|A2|dl|/ˈwɒlɪt/|/ˈwɔlɪt/
+glasses|kính mắt|I can't read without my glasses.|A2|dl|/ˈɡlæsɪz/|/ˈɡlæsɪz/
+watch (clock)|đồng hồ đeo tay|My watch is five minutes fast.|A2|dl|/ˈwɒtʃ/|/ˈwɑːtʃ/
+clothes|quần áo|I need to buy some new clothes.|A2|dl|/ˈkləʊðz/|/ˈkloʊðz/
+shirt|áo sơ mi|He wore a white shirt.|A2|dl|/ˈʃɜːt/|/ˈʃɜːrt/
+T-shirt|áo phông|She wears a T-shirt and jeans.|A2|dl|/ˈtiː ˈʃɜːt/|/ˈtiː ˈʃɜːrt/
+trousers / pants|quần dài|These trousers are too long.|A2|dl|/ˈtraʊsəz/, /ˈpænts/|/ˈtraʊsərz/, /ˈpænts/
+jeans|quần bò|I love these blue jeans.|A2|dl|/ˈdʒiːnz/|/ˈdʒiːnz/
+dress|váy liền|She bought a red dress.|A2|dl|/ˈdrɛs/|/ˈdrɛs/
+skirt|chân váy|The skirt is a bit short.|A2|dl|/ˈskɜːt/|/ˈskɜːrt/
+jacket|áo khoác|Take a jacket; it's cold tonight.|A2|dl|/ˈdʒækɪt/|/ˈdʒækɪt/
+shoes|giày|Take off your shoes, please.|A2|dl|/ˈʃuːz/|/ˈʃuːz/
+sandals|dép quai hậu, xăng-đan|I wear sandals in summer.|A2|dl|/ˈsændəlz/|/ˈsændəlz/
+socks|tất, vớ|I need a pair of socks.|A2|dl|/ˈsɒks/|/ˈsɑːks/
+hat|mũ|Wear a hat in the sun.|A2|dl|/ˈhæt/|/ˈhæt/
+size|cỡ|What size are you?|A2|dl|/ˈsaɪz/|/ˈsaɪz/
+try on|mặc thử|Can I try on this jacket?|A2|dl|/ˈtraɪ ˈɒn/|/ˈtraɪ ˈɔn/
+fit|vừa (kích cỡ)|These shoes don't fit me.|A2|dl|/ˈfɪt/|/ˈfɪt/
+food|đồ ăn|The food here is delicious.|A2|fo|/ˈfuːd/|/ˈfuːd/
+drink|đồ uống; uống|Would you like a drink?|A2|fo|/ˈdrɪŋk/|/ˈdrɪŋk/
+breakfast|bữa sáng|Breakfast is ready.|A2|fo|/ˈbrɛkfəst/|/ˈbrɛkfəst/
+lunch|bữa trưa|What's for lunch?|A2|fo|/ˈlʌntʃ/|/ˈlʌntʃ/
+dinner|bữa tối|Let's have dinner at home tonight.|A2|fo|/ˈdɪnə/|/ˈdɪnər/
+snack|đồ ăn vặt|I have a snack at 3 p.m.|A2|fo|/ˈsnæk/|/ˈsnæk/
+meal|bữa ăn|We have three meals a day.|A2|fo|/ˈmiːl/|/ˈmiːl/
+rice|cơm, gạo|Vietnamese people eat rice every day.|A2|fo|/ˈraɪs/|/ˈraɪs/
+noodles|mì, bún, phở|I'd like a bowl of noodles.|A2|fo|/ˈnuːdəlz/|/ˈnuːdəlz/
+bread|bánh mì|Can you buy some bread?|A2|fo|/ˈbrɛd/|/ˈbrɛd/
+egg|trứng|I had two eggs for breakfast.|A2|fo|/ˈɛɡ/|/ˈɛɡ/
+meat|thịt|I don't eat much meat.|A2|fo|/ˈmiːt/|/ˈmiːt/
+chicken|thịt gà|Chicken soup is good when you're sick.|A2|fo|/ˈtʃɪkɪn/|/ˈtʃɪkɪn/
+beef|thịt bò|Beef pho is my favourite.|A2|fo|/ˈbiːf/|/ˈbiːf/
+pork|thịt lợn|Grilled pork with rice, please.|A2|fo|/ˈpɔːk/|/ˈpɔːrk/
+fish|cá|We eat fish twice a week.|A2|fo|/ˈfɪʃ/|/ˈfɪʃ/
+seafood|hải sản|Da Nang is famous for seafood.|A2|fo|/ˈsiːfuːd/|/ˈsiːfuːd/
+shrimp / prawn|tôm|These prawns are very fresh.|A2|fo|/ˈʃrɪmp/, /ˈprɔːn/|/ˈʃrɪmp/, /ˈprɔːn/
+vegetables|rau củ|Eat more vegetables.|A2|fo|/ˈvɛdʒɪtəbəlz/|/ˈvɛdʒɪtəbəlz/
+fruit|hoa quả|Fruit is cheap at the market.|A2|fo|/ˈfruːt/|/ˈfruːt/
+apple|quả táo|An apple a day keeps the doctor away.|A2|fo|/ˈæpəl/|/ˈæpəl/
+banana|quả chuối|Bananas are good for energy.|A2|fo|/bəˈnɑːnə/|/bəˈnænə/
+orange|quả cam|I drink orange juice every morning.|A2|fo|/ˈɒrɪndʒ/|/ˈɔrɪndʒ/
+mango|quả xoài|Mangoes are sweet in summer.|A2|fo|/ˈmæŋɡəʊ/|/ˈmæŋɡoʊ/
+tomato|cà chua|Add some tomatoes to the salad.|A2|fo|/təˈmɑːtəʊ/|/təˈmeɪtoʊ/
+potato|khoai tây|I like baked potatoes.|A2|fo|/pəˈteɪtəʊ/|/pəˈteɪtoʊ/
+onion|hành tây|Chop the onion first.|A2|fo|/ˈʌniən/|/ˈʌniən/
+garlic|tỏi|This dish has a lot of garlic.|A2|fo|/ˈɡɑːlɪk/|/ˈɡɑːrlɪk/
+chilli|ớt|Is it too much chilli for you?|A2|fo|/ˈtʃɪli/|/ˈtʃɪli/
+salt|muối|Pass me the salt, please.|A2|fo|/ˈsɒlt/|/ˈsɔlt/
+sugar|đường|No sugar in my coffee, please.|A2|fo|/ˈʃʊɡə/|/ˈʃʊɡər/
+pepper|hạt tiêu|Add salt and pepper.|A2|fo|/ˈpɛpə/|/ˈpɛpər/
+fish sauce|nước mắm|Vietnamese food uses a lot of fish sauce.|A2|fo|/ˈfɪʃ ˈsɔːs/|/ˈfɪʃ ˈsɔːs/
+soup|canh, súp|The soup is too hot.|A2|fo|/ˈsuːp/|/ˈsuːp/
+salad|món rau trộn, salad|I'll have a chicken salad.|A2|fo|/ˈsæləd/|/ˈsæləd/
+cake|bánh ngọt|She made a chocolate cake.|A2|fo|/ˈkeɪk/|/ˈkeɪk/
+ice cream|kem|Let's get some ice cream.|A2|fo|/ˈaɪs ˈkriːm/|/ˈaɪs ˈkriːm/
+water|nước|Can I have a glass of water?|A2|fo|/ˈwɔːtə/|/ˈwɔːtər/
+coffee|cà phê|I need coffee in the morning.|A2|fo|/ˈkɒfi/|/ˈkɔfi/
+tea|trà|Would you like green tea?|A2|fo|/ˈtiː/|/ˈtiː/
+milk|sữa|The baby drinks milk.|A2|fo|/ˈmɪlk/|/ˈmɪlk/
+juice|nước ép|Fresh orange juice, please.|A2|fo|/ˈdʒuːs/|/ˈdʒuːs/
+beer|bia|Two beers, please.|A2|fo|/ˈbiə/|/ˈbɪr/
+bottle|chai|A bottle of water, please.|A2|fo|/ˈbɒtəl/|/ˈbɑːtəl/
+glass|cái cốc thủy tinh, ly|Fill the glass with ice.|A2|fo|/ˈɡlæs/|/ˈɡlæs/
+cup|cái cốc, tách|A cup of tea, please.|A2|fo|/ˈkʌp/|/ˈkʌp/
+plate|cái đĩa|Put the food on a plate.|A2|fo|/ˈpleɪt/|/ˈpleɪt/
+bowl|cái bát, tô|A big bowl of pho, please.|A2|fo|/ˈbəʊl/|/ˈboʊl/
+chopsticks|đũa|Can you use chopsticks?|A2|fo|/ˈtʃɒpstɪks/|/ˈtʃɑːpstɪks/
+spoon|cái thìa|I need a spoon for the soup.|A2|fo|/ˈspuːn/|/ˈspuːn/
+fork|cái dĩa, nĩa|Can I have a fork, please?|A2|fo|/ˈfɔːk/|/ˈfɔːrk/
+knife|con dao|Be careful, the knife is sharp.|A2|fo|/ˈnaɪf/|/ˈnaɪf/
+menu|thực đơn|Can I see the menu, please?|A2|fo|/ˈmɛnjuː/|/ˈmɛnjuː/
+order (food)|gọi món|Are you ready to order?|A2|fo|/ˈɔːdə/|/ˈɔːrdər/
+bill / check|hóa đơn (tính tiền)|Can we have the bill, please?|A2|fo|/ˈbɪl/, /ˈtʃɛk/|/ˈbɪl/, /ˈtʃɛk/
+tip|tiền boa|Do people leave a tip here?|A2|fo|/ˈtɪp/|/ˈtɪp/
+waiter / waitress|bồi bàn|The waiter brought our drinks.|A2|fo|/ˈweɪtə/, /ˈweɪtrəs/|/ˈweɪtər/, /ˈweɪtrəs/
+restaurant|nhà hàng|Let's book a table at the restaurant.|A2|fo|/ˈrɛstrɒnt/|/ˈrɛstrɑːnt/
+street food|đồ ăn đường phố|Hanoi has amazing street food.|A2|fo|/ˈstriːt ˈfuːd/|/ˈstriːt ˈfuːd/
+takeaway / takeout|đồ mang đi|Let's get a takeaway tonight.|A2|fo|/ˈteɪkəˌweɪ/, /ˈteɪkaʊt/|/ˈteɪkəˌweɪ/, /ˈteɪkaʊt/
+delicious|ngon|This is delicious!|A2|fo|/dɪˈlɪʃəs/|/dɪˈlɪʃəs/
+spicy|cay|Is this dish spicy?|A2|fo|/ˈspaɪsi/|/ˈspaɪsi/
+sweet|ngọt|This cake is too sweet.|A2|fo|/ˈswiːt/|/ˈswiːt/
+salty|mặn|The soup is a bit salty.|A2|fo|/ˈsɒlti/|/ˈsɔlti/
+sour|chua|Green mangoes are sour.|A2|fo|/ˈsaʊə/|/ˈsaʊər/
+bitter|đắng|Black coffee is bitter.|A2|fo|/ˈbɪtə/|/ˈbɪtər/
+fresh|tươi|The vegetables are very fresh.|A2|fo|/ˈfrɛʃ/|/ˈfrɛʃ/
+hungry|đói|I'm hungry. Let's eat.|A2|fo|/ˈhʌŋɡri/|/ˈhʌŋɡri/
+thirsty|khát|I'm thirsty after running.|A2|fo|/ˈθɜːsti/|/ˈθɜːrsti/
+full (food)|no|No more, thanks. I'm full.|A2|fo|/ˈfʊl/|/ˈfʊl/
+vegetarian|người ăn chay; chay|Do you have vegetarian dishes?|A2|fo|/ˌvɛdʒɪˈteəriən/|/ˌvɛdʒɪˈtɛriən/
+allergic to|dị ứng với|I'm allergic to peanuts.|B1|fo|/əˈlɜːdʒɪk tuː/|/əˈlɜːrdʒɪk tuː/
+boil|luộc, đun sôi|Boil the eggs for eight minutes.|A2|fo|/ˈbɔɪl/|/ˈbɔɪl/
+fry|chiên, rán|Fry the onions in a little oil.|A2|fo|/ˈfraɪ/|/ˈfraɪ/
+grill|nướng (vỉ)|We grilled fish on the beach.|A2|fo|/ˈɡrɪl/|/ˈɡrɪl/
+steam|hấp|Steamed fish is very healthy.|A2|fo|/ˈstiːm/|/ˈstiːm/
+recipe|công thức nấu ăn|Can you give me the recipe?|B1|fo|/ˈrɛsɪˌpiː/|/ˈrɛsɪˌpiː/
+health|sức khỏe|Health is more important than money.|A2|hl|/ˈhɛlθ/|/ˈhɛlθ/
+healthy|khỏe mạnh; tốt cho sức khỏe|Eat healthy food.|A2|hl|/ˈhɛlθi/|/ˈhɛlθi/
+sick / ill|bị ốm|I feel sick today.|A2|hl|/ˈsɪk/, /ˈɪl/|/ˈsɪk/, /ˈɪl/
+headache|đau đầu|I have a terrible headache.|A2|hl|/ˈhɛdeɪk/|/ˈhɛdeɪk/
+stomachache|đau bụng|He has a stomachache after lunch.|A2|hl|/ˈstʌməˌkeɪk/|/ˈstʌməˌkeɪk/
+toothache|đau răng|I need a dentist; I have a toothache.|A2|hl|/ˈtuːθeɪk/|/ˈtuːθeɪk/
+sore throat|đau họng|I've got a sore throat.|A2|hl|/ˈsɔː ˈθrəʊt/|/ˈsɔːr ˈθroʊt/
+fever|sốt|The child has a high fever.|A2|hl|/ˈfiːvə/|/ˈfiːvər/
+cold (illness)|cảm lạnh|I caught a cold last week.|A2|hl|/ˈkəʊld/|/ˈkoʊld/
+flu|cúm|Many people have the flu this month.|A2|hl|/ˈfluː/|/ˈfluː/
+cough|ho|I can't stop coughing.|A2|hl|/ˈkɒf/|/ˈkɔf/
+runny nose|sổ mũi|I have a runny nose.|A2|hl|/ˈrʌni ˈnəʊz/|/ˈrʌni ˈnoʊz/
+pain|cơn đau|Where is the pain?|A2|hl|/ˈpeɪn/|/ˈpeɪn/
+hurt|đau; làm đau|My back hurts.|A2|hl|/ˈhɜːt/|/ˈhɜːrt/
+tired|mệt|I'm tired after work.|A2|hl|/ˈtaɪəd/|/ˈtaɪərd/
+dizzy|chóng mặt|I feel dizzy.|B1|hl|/ˈdɪzi/|/ˈdɪzi/
+medicine|thuốc|Take this medicine three times a day.|A2|hl|/ˈmɛdsən/|/ˈmɛdəsən/
+pill / tablet|viên thuốc|Take one tablet after meals.|A2|hl|/ˈpɪl/, /ˈtæblət/|/ˈpɪl/, /ˈtæblət/
+pharmacy|hiệu thuốc|Is there a pharmacy near here?|A2|hl|/ˈfɑːməsi/|/ˈfɑːrməsi/
+doctor|bác sĩ|You should see a doctor.|A2|hl|/ˈdɒktə/|/ˈdɑːktər/
+nurse|y tá|The nurse took my temperature.|A2|hl|/ˈnɜːs/|/ˈnɜːrs/
+dentist|nha sĩ|I go to the dentist twice a year.|A2|hl|/ˈdɛntɪst/|/ˈdɛntɪst/
+hospital|bệnh viện|She is in hospital.|A2|hl|/ˈhɒspɪtəl/|/ˈhɑːspɪtəl/
+clinic|phòng khám|The clinic opens at eight.|A2|hl|/ˈklɪnɪk/|/ˈklɪnɪk/
+ambulance|xe cứu thương|Call an ambulance!|A2|hl|/ˈæmbjʊləns/|/ˈæmbjʊləns/
+prescription|đơn thuốc|You need a prescription for this medicine.|B1|hl|/prɪˈskrɪpʃən/|/prɪˈskrɪpʃən/
+health insurance|bảo hiểm y tế|Do you have health insurance?|B1|hl|/ˈhɛlθ ɪnˈʃʊərəns/|/ˈhɛlθ ɪnˈʃʊrəns/
+check-up|khám sức khỏe định kỳ|I have an annual check-up next week.|B1|hl|/ˈtʃɛk ˈʌp/|/ˈtʃɛk ˈʌp/
+blood pressure|huyết áp|The nurse checked my blood pressure.|B1|hl|/ˈblʌd ˈprɛʃə/|/ˈblʌd ˈprɛʃər/
+injury (sport)|chấn thương|He missed the match because of an injury.|B1|hl|/ˈɪndʒəri/|/ˈɪndʒəri/
+broken arm|gãy tay|She has a broken arm.|A2|hl|/ˈbrəʊkən ˈɑːm/|/ˈbroʊkən ˈɑːrm/
+rest|nghỉ ngơi|You need to rest for a few days.|A2|hl|/ˈrɛst/|/ˈrɛst/
+get better|khỏe lại|I hope you get better soon.|A2|hl|/ɡɛt ˈbɛtə/|/ɡɛt ˈbɛtər/
+exercise|tập thể dục|I exercise three times a week.|A2|hl|/ˈɛksəˌsaɪz/|/ˈɛksərˌsaɪz/
+diet|chế độ ăn|She's on a diet.|B1|hl|/ˈdaɪət/|/ˈdaɪət/
+weight|cân nặng|He lost five kilos of weight.|A2|hl|/ˈweɪt/|/ˈweɪt/
+sleep|ngủ; giấc ngủ|I need eight hours of sleep.|A2|hl|/ˈsliːp/|/ˈsliːp/
+stress|căng thẳng|Work causes a lot of stress.|B1|hl|/ˈstrɛs/|/ˈstrɛs/
+body|cơ thể|Exercise is good for your body.|A2|hl|/ˈbɒdi/|/ˈbɑːdi/
+head|đầu|He hit his head.|A2|hl|/ˈhɛd/|/ˈhɛd/
+face|khuôn mặt|Wash your face.|A2|hl|/ˈfeɪs/|/ˈfeɪs/
+eye|mắt|My eyes are tired.|A2|hl|/ˈaɪ/|/ˈaɪ/
+ear|tai|My ear hurts.|A2|hl|/ˈiə/|/ˈɪr/
+nose|mũi|He has a big nose.|A2|hl|/ˈnəʊz/|/ˈnoʊz/
+mouth|miệng|Open your mouth, please.|A2|hl|/ˈmaʊθ/|/ˈmaʊθ/
+tooth / teeth|răng|Brush your teeth.|A2|hl|/ˈtuːθ/, /ˈtiːθ/|/ˈtuːθ/, /ˈtiːθ/
+neck|cổ|My neck is stiff.|A2|hl|/ˈnɛk/|/ˈnɛk/
+shoulder|vai|I hurt my shoulder.|A2|hl|/ˈʃəʊldə/|/ˈʃoʊldər/
+arm|cánh tay|He broke his arm.|A2|hl|/ˈɑːm/|/ˈɑːrm/
+hand|bàn tay|Wash your hands.|A2|hl|/ˈhænd/|/ˈhænd/
+finger|ngón tay|I cut my finger.|A2|hl|/ˈfɪŋɡə/|/ˈfɪŋɡər/
+back|lưng|My back hurts from lifting boxes.|A2|hl|/ˈbæk/|/ˈbæk/
+leg|chân (cẳng chân)|My legs are tired.|A2|hl|/ˈlɛɡ/|/ˈlɛɡ/
+knee|đầu gối|I hurt my knee playing football.|A2|hl|/ˈniː/|/ˈniː/
+foot / feet|bàn chân|My feet hurt after walking all day.|A2|hl|/ˈfʊt/, /ˈfiːt/|/ˈfʊt/, /ˈfiːt/
+heart|tim|Exercise is good for your heart.|A2|hl|/ˈhɑːt/|/ˈhɑːrt/
+skin|da|Use sunscreen to protect your skin.|A2|hl|/ˈskɪn/|/ˈskɪn/
+sport|thể thao|What's your favourite sport?|A2|sp|/ˈspɔːt/|/ˈspɔːrt/
+football / soccer|bóng đá|Football is very popular in Vietnam.|A2|sp|/ˈfʊtbɔːl/, /ˈsɒkə/|/ˈfʊtbɔːl/, /ˈsɑːkər/
+badminton|cầu lông|We play badminton after work.|A2|sp|/ˈbædmɪntən/|/ˈbædmɪntən/
+volleyball|bóng chuyền|They play volleyball on the beach.|A2|sp|/ˈvɒlɪˌbɔːl/|/ˈvɑːlɪˌbɔːl/
+basketball|bóng rổ|He is tall, so he plays basketball.|A2|sp|/ˈbæskɪtˌbɔːl/|/ˈbæskɪtˌbɔːl/
+tennis|quần vợt|Do you play tennis?|A2|sp|/ˈtɛnɪs/|/ˈtɛnɪs/
+table tennis|bóng bàn|There's a table tennis table in the office.|A2|sp|/ˈteɪbəl ˈtɛnɪs/|/ˈteɪbəl ˈtɛnɪs/
+swimming|bơi lội|Swimming is good exercise.|A2|sp|/ˈswɪmɪŋ/|/ˈswɪmɪŋ/
+running|chạy bộ|I go running in the park every morning.|A2|sp|/ˈrʌnɪŋ/|/ˈrʌnɪŋ/
+cycling|đạp xe|Cycling to work saves money.|A2|sp|/ˈsaɪklɪŋ/|/ˈsaɪklɪŋ/
+yoga|yoga|She does yoga on Sunday mornings.|A2|sp|/ˈjəʊɡə/|/ˈjoʊɡə/
+gym|phòng tập thể dục|I go to the gym after work.|A2|sp|/ˈdʒɪm/|/ˈdʒɪm/
+work out|tập luyện|I work out three times a week.|A2|sp|/ˈwɜːk ˈaʊt/|/ˈwɜːrk ˈaʊt/
+team|đội|Which team do you support?|A2|sp|/ˈtiːm/|/ˈtiːm/
+player|cầu thủ, người chơi|He is the best player on the team.|A2|sp|/ˈpleɪə/|/ˈpleɪər/
+coach|huấn luyện viên|The coach is very strict.|A2|sp|/ˈkəʊtʃ/|/ˈkoʊtʃ/
+match / game|trận đấu|Did you watch the match last night?|A2|sp|/ˈmætʃ/, /ˈɡeɪm/|/ˈmætʃ/, /ˈɡeɪm/
+score|tỉ số; ghi bàn|What's the score?|A2|sp|/ˈskɔː/|/ˈskɔːr/
+goal|bàn thắng; mục tiêu|What a goal!|A2|sp|/ˈɡəʊl/|/ˈɡoʊl/
+win|thắng|We won 2–1.|A2|sp|/ˈwɪn/|/ˈwɪn/
+lose|thua|They lost the final.|A2|sp|/ˈluːz/|/ˈluːz/
+draw (match)|hòa|The match ended in a draw.|A2|sp|/ˈdrɔː/|/ˈdrɔː/
+champion|nhà vô địch|Vietnam were the champions in 2018.|B1|sp|/ˈtʃæmpiən/|/ˈtʃæmpiən/
+tournament|giải đấu|The tournament starts next week.|B1|sp|/ˈtʊənəmənt/|/ˈtʊrnəmənt/
+stadium|sân vận động|The stadium was full.|A2|sp|/ˈsteɪdiəm/|/ˈsteɪdiəm/
+fan (sport)|cổ động viên|Thousands of fans celebrated in the streets.|A2|sp|/ˈfæn/|/ˈfæn/
+referee|trọng tài|The referee gave a red card.|B1|sp|/ˌrɛfəˈriː/|/ˌrɛfəˈriː/
+half-time|giờ nghỉ giữa hiệp|The score at half-time was 0–0.|B1|sp|/ˈhɑːf ˈtaɪm/|/ˈhæf ˈtaɪm/
+penalty (sport)|phạt đền|He missed the penalty.|B1|sp|/ˈpɛnəlti/|/ˈpɛnəlti/
+training session|buổi tập|We have a training session on Tuesday.|B1|sp|/ˈtreɪnɪŋ ˈsɛʃən/|/ˈtreɪnɪŋ ˈsɛʃən/
+warm up|khởi động|Always warm up before running.|A2|sp|/ˈwɔːm ˈʌp/|/ˈwɔːrm ˈʌp/
+stretch|giãn cơ|Stretch after your workout.|A2|sp|/ˈstrɛtʃ/|/ˈstrɛtʃ/
+marathon|chạy marathon|She ran her first marathon last year.|B1|sp|/ˈmærəθən/|/ˈmærəˌθɑːn/
+fit (healthy)|cân đối, khỏe mạnh|I want to get fit this year.|A2|sp|/ˈfɪt/|/ˈfɪt/
+sweat|đổ mồ hôi|I sweat a lot when I play football.|B1|sp|/ˈswɛt/|/ˈswɛt/
+travel|đi du lịch|I love to travel.|A2|tv|/ˈtrævəl/|/ˈtrævəl/
+trip (travel)|chuyến đi|How was your trip to Da Lat?|A2|tv|/ˈtrɪp/|/ˈtrɪp/
+holiday / vacation|kỳ nghỉ|We are going on holiday next week.|A2|tv|/ˈhɒlɪˌdeɪ/, /veɪˈkeɪʃən/|/ˈhɑːlɪˌdeɪ/, /veɪˈkeɪʃən/
+tourist|khách du lịch|Hoi An is full of tourists.|A2|tv|/ˈtʊərɪst/|/ˈtʊrɪst/
+passport|hộ chiếu|Don't forget your passport.|A2|tv|/ˈpæspɔːt/|/ˈpæspɔːrt/
+visa|thị thực|Do I need a visa for Japan?|A2|tv|/ˈviːzə/|/ˈviːzə/
+ticket|vé|I bought the tickets online.|A2|tv|/ˈtɪkɪt/|/ˈtɪkɪt/
+return ticket|vé khứ hồi|A return ticket to Hue, please.|A2|tv|/rɪˈtɜːn ˈtɪkɪt/|/rɪˈtɜːrn ˈtɪkɪt/
+luggage / baggage|hành lý|How much luggage can I take?|A2|tv|/ˈlʌɡɪdʒ/, /ˈbæɡɪdʒ/|/ˈlʌɡɪdʒ/, /ˈbæɡɪdʒ/
+suitcase|va li|My suitcase is very heavy.|A2|tv|/ˈsuːtkeɪs/|/ˈsuːtkeɪs/
+backpack|ba lô|I travel with just a backpack.|A2|tv|/ˈbækpæk/|/ˈbækpæk/
+check in|làm thủ tục (khách sạn, sân bay)|We can check in after 2 p.m.|A2|tv|/ˈtʃɛk ˈɪn/|/ˈtʃɛk ˈɪn/
+check out|trả phòng|Check-out time is 12 noon.|A2|tv|/ˈtʃɛk ˈaʊt/|/ˈtʃɛk ˈaʊt/
+boarding pass|thẻ lên máy bay|Show your boarding pass at the gate.|A2|tv|/ˈbɔːdɪŋ ˈpæs/|/ˈbɔːrdɪŋ ˈpæs/
+gate|cửa ra máy bay|The flight leaves from gate 12.|A2|tv|/ˈɡeɪt/|/ˈɡeɪt/
+departure lounge|phòng chờ ra máy bay|Wait in the departure lounge.|B1|tv|/dɪˈpɑːtʃə ˈlaʊndʒ/|/dɪˈpɑːrtʃər ˈlaʊndʒ/
+delayed|bị hoãn, trễ|Our flight is delayed by two hours.|A2|tv|/dɪˈleɪd/|/dɪˈleɪd/
+cancelled|bị hủy|The train was cancelled.|A2|tv|/ˈkænsəld/|/ˈkænsəld/
+window seat|ghế cạnh cửa sổ|Can I have a window seat?|A2|tv|/ˈwɪndəʊ ˈsiːt/|/ˈwɪndoʊ ˈsiːt/
+aisle seat|ghế cạnh lối đi|I prefer an aisle seat.|A2|tv|/ˈaɪəl ˈsiːt/|/ˈaɪəl ˈsiːt/
+hotel|khách sạn|The hotel is near the beach.|A2|tv|/həʊˈtɛl/|/hoʊˈtɛl/
+reservation|đặt chỗ, đặt phòng|I have a reservation under the name Nam.|A2|tv|/ˌrɛzəˈveɪʃən/|/ˌrɛzərˈveɪʃən/
+single room|phòng đơn|I'd like a single room for two nights.|A2|tv|/ˈsɪŋɡəl ˈruːm/|/ˈsɪŋɡəl ˈruːm/
+double room|phòng đôi (giường đôi)|A double room with a sea view, please.|A2|tv|/ˈdʌbəl ˈruːm/|/ˈdʌbəl ˈruːm/
+reception|quầy lễ tân|Leave your key at reception.|A2|tv|/rɪˈsɛpʃən/|/rɪˈsɛpʃən/
+receptionist|nhân viên lễ tân|The receptionist was very helpful.|A2|tv|/rɪˈsɛpʃəˌnɪst/|/rɪˈsɛpʃəˌnɪst/
+room service|dịch vụ phòng|Let's order room service.|B1|tv|/ˈruːm ˈsɜːvɪs/|/ˈruːm ˈsɜːrvɪs/
+homestay|nhà dân cho thuê, homestay|We stayed at a homestay in Sapa.|A2|tv|/ˈhəʊmsteɪ/|/ˈhoʊmsteɪ/
+hostel|nhà nghỉ giá rẻ|Backpackers often stay in hostels.|A2|tv|/ˈhɒstəl/|/ˈhɑːstəl/
+map|bản đồ|Can you show me on the map?|A2|tv|/ˈmæp/|/ˈmæp/
+guide|hướng dẫn viên; sách hướng dẫn|Our guide spoke excellent English.|A2|tv|/ˈɡaɪd/|/ˈɡaɪd/
+tour|chuyến tham quan|We booked a boat tour in Ha Long Bay.|A2|tv|/ˈtʊə/|/ˈtʊr/
+sightseeing|tham quan|We went sightseeing in the old town.|A2|tv|/ˈsaɪtsiːɪŋ/|/ˈsaɪtsiːɪŋ/
+souvenir|quà lưu niệm|I bought some souvenirs for my friends.|A2|tv|/ˌsuːvəˈniə/|/ˌsuːvəˈnɪr/
+beach|bãi biển|Let's go to the beach.|A2|tv|/ˈbiːtʃ/|/ˈbiːtʃ/
+mountain|núi|We climbed the mountain at sunrise.|A2|tv|/ˈmaʊntɪn/|/ˈmaʊntɪn/
+island|hòn đảo|Phu Quoc is a beautiful island.|A2|tv|/ˈaɪlənd/|/ˈaɪlənd/
+lake|hồ|There is a lake in the middle of the city.|A2|tv|/ˈleɪk/|/ˈleɪk/
+museum|bảo tàng|The museum is closed on Mondays.|A2|tv|/mjuːˈziəm/|/mjuːˈziəm/
+temple|ngôi chùa, đền|We visited an old temple.|A2|tv|/ˈtɛmpəl/|/ˈtɛmpəl/
+market|chợ|Ben Thanh Market is very busy.|A2|tv|/ˈmɑːkɪt/|/ˈmɑːrkɪt/
+taxi|xe taxi|Let's take a taxi to the airport.|A2|tv|/ˈtæksi/|/ˈtæksi/
+ride-hailing app|ứng dụng gọi xe|I book a car with a ride-hailing app.|B1|tv|/ˈraɪd ˈheɪlɪŋ ˈæp/|/ˈraɪd ˈheɪlɪŋ ˈæp/
+train station|ga tàu|The train station is near the hotel.|A2|tv|/ˈtreɪn ˈsteɪʃən/|/ˈtreɪn ˈsteɪʃən/
+platform|sân ga|The train leaves from platform 3.|A2|tv|/ˈplætfɔːm/|/ˈplætfɔːrm/
+sleeper bus|xe khách giường nằm|We took a sleeper bus to Sapa.|A2|tv|/ˈsliːpə ˈbʌs/|/ˈsliːpər ˈbʌs/
+ferry|phà|We took a ferry to the island.|A2|tv|/ˈfɛri/|/ˈfɛri/
+currency exchange|đổi tiền|Is there a currency exchange at the airport?|B1|tv|/ˈkʌrənsi ɛksˈtʃeɪndʒ/|/ˈkɜːrənsi ɛksˈtʃeɪndʒ/
+ATM|máy rút tiền|Where is the nearest ATM?|A2|tv|/ˌeɪ tiː ˈɛm/|/ˌeɪ tiː ˈɛm/
+cash|tiền mặt|Do you accept cash?|A2|tv|/ˈkæʃ/|/ˈkæʃ/
+credit card|thẻ tín dụng|Can I pay by credit card?|A2|tv|/ˈkrɛdɪt ˈkɑːd/|/ˈkrɛdɪt ˈkɑːrd/
+directions|chỉ đường|Can you give me directions to the museum?|A2|tv|/daɪˈrɛkʃənz/|/dɪˈrɛkʃənz/
+turn left / turn right|rẽ trái / rẽ phải|Turn left at the traffic lights.|A2|tv|/ˈtɜːn ˈlɛft/, /ˈtɜːn ˈraɪt/|/ˈtɜːrn ˈlɛft/, /ˈtɜːrn ˈraɪt/
+go straight|đi thẳng|Go straight for 200 metres.|A2|tv|/ˌɡəʊ ˈstreɪt/|/ˌɡoʊ ˈstreɪt/
+next to|bên cạnh|The bank is next to the post office.|A2|tv|/ˈnɛkst tuː/|/ˈnɛkst tuː/
+opposite|đối diện|The hotel is opposite the park.|A2|tv|/ˈɒpəˌzɪt/|/ˈɑːpəˌzɪt/
+near / far|gần / xa|Is it far from here?|A2|tv|/ˈniə/, /ˈfɑː/|/ˈnɪr/, /ˈfɑːr/
+crossroads / intersection|ngã tư|Turn right at the crossroads.|A2|tv|/ˈkrɒsrəʊdz/, /ˌɪntəˈsɛkʃən/|/ˈkrɔsroʊdz/, /ˌɪntərˈsɛkʃən/
+traffic lights|đèn giao thông|Stop at the traffic lights.|A2|tv|/ˈtræfɪk ˈlaɪts/|/ˈtræfɪk ˈlaɪts/
+lost|bị lạc; bị mất|Excuse me, I'm lost.|A2|tv|/ˈlɒst/|/ˈlɔst/
+travel insurance|bảo hiểm du lịch|Buy travel insurance before you go.|B1|tv|/ˈtrævəl ɪnˈʃʊərəns/|/ˈtrævəl ɪnˈʃʊrəns/
+sunscreen|kem chống nắng|Don't forget sunscreen at the beach.|A2|tv|/ˈsʌnskriːn/|/ˈsʌnskriːn/
+sunny|nắng|It's sunny today.|A2|ws|/ˈsʌni/|/ˈsʌni/
+rainy|mưa|It's rainy in September.|A2|ws|/ˈreɪni/|/ˈreɪni/
+cloudy|nhiều mây|It's cloudy but warm.|A2|ws|/ˈklaʊdi/|/ˈklaʊdi/
+windy|nhiều gió|It's very windy on the boat.|A2|ws|/ˈwɪndi/|/ˈwɪndi/
+hot|nóng|It's very hot in summer.|A2|ws|/ˈhɒt/|/ˈhɑːt/
+cold (weather)|lạnh|It's cold in Hanoi in January.|A2|ws|/ˈkəʊld/|/ˈkoʊld/
+warm|ấm áp|The weather is warm in spring.|A2|ws|/ˈwɔːm/|/ˈwɔːrm/
+cool|mát|It's cool in the evening.|A2|ws|/ˈkuːl/|/ˈkuːl/
+humid|ẩm ướt, nồm|Saigon is hot and humid.|B1|ws|/ˈhjuːmɪd/|/ˈhjuːmɪd/
+storm|cơn bão (giông)|There was a storm last night.|A2|ws|/ˈstɔːm/|/ˈstɔːrm/
+typhoon|bão (nhiệt đới)|The typhoon hit the central coast.|B1|ws|/taɪˈfuːn/|/taɪˈfuːn/
+flood|lũ lụt|The flood closed the road.|B1|ws|/ˈflʌd/|/ˈflʌd/
+weather forecast|dự báo thời tiết|The weather forecast says rain tomorrow.|A2|ws|/ˈwɛðə ˈfɔːkæst/|/ˈwɛðər ˈfɔːrkæst/
+temperature (weather)|nhiệt độ|The temperature is 35 degrees.|A2|ws|/ˈtɛmprɪtʃə/|/ˈtɛmprɪtʃər/
+season|mùa|Autumn is my favourite season.|A2|ws|/ˈsiːzən/|/ˈsiːzən/
+spring|mùa xuân|Flowers bloom in spring.|A2|ws|/ˈsprɪŋ/|/ˈsprɪŋ/
+summer|mùa hè|We go to the beach in summer.|A2|ws|/ˈsʌmə/|/ˈsʌmər/
+autumn / fall|mùa thu|Hanoi is beautiful in autumn.|A2|ws|/ˈɔːtʌm/, /ˈfɔːl/|/ˈɔːtʌm/, /ˈfɔːl/
+winter|mùa đông|Winter in the north is cold.|A2|ws|/ˈwɪntə/|/ˈwɪntər/
+dry season|mùa khô|The dry season is from December to April.|B1|ws|/ˈdraɪ ˈsiːzən/|/ˈdraɪ ˈsiːzən/
+rainy season|mùa mưa|The rainy season starts in May.|A2|ws|/ˈreɪni ˈsiːzən/|/ˈreɪni ˈsiːzən/
+sky|bầu trời|The sky is clear tonight.|A2|ws|/ˈskaɪ/|/ˈskaɪ/
+sun|mặt trời|The sun is very strong at noon.|A2|ws|/ˈsʌn/|/ˈsʌn/
+moon|mặt trăng|The moon is full tonight.|A2|ws|/ˈmuːn/|/ˈmuːn/
+tree|cây|There is a big tree in our garden.|A2|ws|/ˈtriː/|/ˈtriː/
+flower|bông hoa|She gave me some flowers.|A2|ws|/ˈflaʊə/|/ˈflaʊər/
+river|dòng sông|The Red River flows through Hanoi.|A2|ws|/ˈrɪvə/|/ˈrɪvər/
+sea|biển|The sea is calm today.|A2|ws|/ˈsiː/|/ˈsiː/
+countryside|vùng nông thôn|My grandparents live in the countryside.|A2|ws|/ˈkʌntrɪˌsaɪd/|/ˈkʌntrɪˌsaɪd/
+city|thành phố|Ho Chi Minh City is very busy.|A2|ws|/ˈsɪti/|/ˈsɪti/
+pollution|ô nhiễm|Air pollution is a big problem.|B1|ws|/pəˈluːʃən/|/pəˈluːʃən/
+environment|môi trường|We should protect the environment.|B1|ws|/ɛnˈvaɪrənmənt/|/ɛnˈvaɪrənmənt/
+recycle|tái chế|We recycle paper and plastic.|B1|ws|/rɪˈsaɪkəl/|/rɪˈsaɪkəl/
+production line|dây chuyền sản xuất|The production line stopped for two hours.|A2|fc|/prəˈdʌkʃən ˈlaɪn/|/prəˈdʌkʃən ˈlaɪn/
+assembly line|dây chuyền lắp ráp|She works on the assembly line.|A2|fc|/əˈsɛmblɪ ˈlaɪn/|/əˈsɛmbli ˈlaɪn/
+machine|máy móc|Turn off the machine before cleaning it.|A2|fc|/məˈʃiːn/|/məˈʃiːn/
+operator|công nhân vận hành|The machine operator checks the settings every hour.|A2|fc|/ˈɒpəˌreɪtə/|/ˈɑːpəˌreɪtər/
+worker|công nhân|The workers have a break at ten.|A2|fc|/ˈwɜːkə/|/ˈwɜːrkər/
+shift leader|trưởng ca|Tell the shift leader if there is a problem.|A2|fc|/ˈʃɪft ˈliːdə/|/ˈʃɪft ˈliːdər/
+supervisor|giám sát|The supervisor checks the output.|A2|fc|/ˈsuːpəˌvaɪzə/|/ˈsuːpərˌvaɪzər/
+engineer|kỹ sư|The engineer fixed the machine.|A2|fc|/ˌɛndʒɪˈniə/|/ˌɛndʒɪˈnɪr/
+technician|kỹ thuật viên|Call the technician; the robot isn't working.|A2|fc|/tɛkˈnɪʃən/|/tɛkˈnɪʃən/
+maintenance|bảo trì|Maintenance is every Saturday morning.|B1|fc|/ˈmeɪntənəns/|/ˈmeɪntənəns/
+preventive maintenance|bảo trì phòng ngừa|Preventive maintenance reduces breakdowns.|B2|fc|/prɪˈvɛntɪv ˈmeɪntənəns/|/prɪˈvɛntɪv ˈmeɪntənəns/
+breakdown (machine)|hỏng máy|The machine breakdown stopped production.|B1|fc|/ˈbreɪkdaʊn/|/ˈbreɪkdaʊn/
+downtime|thời gian dừng máy|Downtime last month was 12 hours.|B1|fc|/ˈdaʊntaɪm/|/ˈdaʊntaɪm/
+output|sản lượng đầu ra|Our daily output is 5,000 units.|B1|fc|/ˈaʊtpʊt/|/ˈaʊtpʊt/
+capacity (factory)|công suất|The factory is running at full capacity.|B1|fc|/kəˈpæsɪti/|/kəˈpæsɪti/
+target output|sản lượng mục tiêu|We reached our target output today.|B1|fc|/ˈtɑːɡɪt ˈaʊtpʊt/|/ˈtɑːrɡɪt ˈaʊtpʊt/
+raw material|nguyên liệu thô|We are waiting for raw material from Korea.|A2|fc|/ˈrɔː məˈtiəriəl/|/ˈrɔː məˈtɪriəl/
+part|chi tiết, linh kiện|This part is out of stock.|A2|fc|/ˈpɑːt/|/ˈpɑːrt/
+tool|dụng cụ|Put the tools back after use.|A2|fc|/ˈtuːl/|/ˈtuːl/
+equipment|thiết bị|All equipment must be checked daily.|A2|fc|/ɪˈkwɪpmənt/|/ɪˈkwɪpmənt/
+mould / mold|khuôn|The mould needs cleaning.|B1|fc|/ˈməʊld/, /ˈməʊld/|/ˈmoʊld/, /ˈmoʊld/
+welding|hàn|He is doing welding on the frame.|B1|fc|/ˈwɛldɪŋ/|/ˈwɛldɪŋ/
+cutting|cắt|Wear gloves for cutting.|A2|fc|/ˈkʌtɪŋ/|/ˈkʌtɪŋ/
+drilling|khoan|The drilling machine is very loud.|B1|fc|/ˈdrɪlɪŋ/|/ˈdrɪlɪŋ/
+painting|sơn|The parts go to the painting line next.|A2|fc|/ˈpeɪntɪŋ/|/ˈpeɪntɪŋ/
+assemble|lắp ráp|We assemble the phones in Bac Ninh.|A2|fc|/əˈsɛmbəl/|/əˈsɛmbəl/
+inspect|kiểm tra|Inspect each part before packing.|B1|fc|/ɪnˈspɛkt/|/ɪnˈspɛkt/
+inspection (factory)|việc kiểm tra|Final inspection is at the end of the line.|B1|fc|/ɪnˈspɛkʃən/|/ɪnˈspɛkʃən/
+defective|bị lỗi|Put defective parts in the red box.|B1|fc|/dɪˈfɛktɪv/|/dɪˈfɛktɪv/
+scrap|phế liệu; loại bỏ|The scrap rate is 2%.|B1|fc|/ˈskræp/|/ˈskræp/
+rework|làm lại (sửa lỗi)|These units need rework.|B1|fc|/rɪˈwɜːk/|/rɪˈwɜːrk/
+yield|tỷ lệ đạt|Yield improved to 98%.|B2|fc|/ˈjiːld/|/ˈjiːld/
+batch|mẻ, lô sản xuất|This batch is ready for inspection.|B1|fc|/ˈbætʃ/|/ˈbætʃ/
+specification|thông số kỹ thuật|The size is outside the specification.|B1|fc|/ˌspɛsɪfɪˈkeɪʃən/|/ˌspɛsɪfɪˈkeɪʃən/
+tolerance|dung sai|The tolerance is plus or minus 0.1 mm.|B2|fc|/ˈtɒlərəns/|/ˈtɑːlərəns/
+drawing|bản vẽ|Check the drawing before you start.|A2|fc|/ˈdrɔːɪŋ/|/ˈdrɔːɪŋ/
+work instruction|hướng dẫn công việc|Follow the work instruction on the board.|B1|fc|/ˈwɜːk ɪnˈstrʌkʃən/|/ˈwɜːrk ɪnˈstrʌkʃən/
+checklist|danh sách kiểm tra|Complete the checklist at the start of the shift.|A2|fc|/ˈtʃɛklɪst/|/ˈtʃɛklɪst/
+production plan|kế hoạch sản xuất|The production plan for next week is ready.|B1|fc|/prəˈdʌkʃən ˈplæn/|/prəˈdʌkʃən ˈplæn/
+production order|lệnh sản xuất|We received a new production order.|B1|fc|/prəˈdʌkʃən ˈɔːdə/|/prəˈdʌkʃən ˈɔːrdər/
+cycle time|thời gian chu kỳ|The cycle time is 45 seconds.|B2|fc|/ˈsaɪkəl ˈtaɪm/|/ˈsaɪkəl ˈtaɪm/
+bottleneck (factory)|điểm nghẽn|The painting line is the bottleneck.|B2|fc|/ˈbɒtəlˌnɛk/|/ˈbɑːtəlˌnɛk/
+kaizen|cải tiến liên tục|We have a kaizen meeting every Friday.|B1|fc|/ˈkaɪzən/|/ˈkaɪzən/
+lean manufacturing|sản xuất tinh gọn|Lean manufacturing reduces waste.|B2|fc|/ˈliːn ˌmænjuːˈfæktʃərɪŋ/|/ˈliːn ˌmænjuːˈfæktʃərɪŋ/
+waste|lãng phí; rác thải|Waiting is a kind of waste.|B1|fc|/ˈweɪst/|/ˈweɪst/
+safety helmet|mũ bảo hộ|Wear a safety helmet in the workshop.|A2|fc|/ˈseɪfti ˈhɛlmɪt/|/ˈseɪfti ˈhɛlmɪt/
+earplugs|nút bịt tai|Wear earplugs near the press.|A2|fc|/ˈiəplʌɡz/|/ˈɪrplʌɡz/
+safety glasses|kính bảo hộ|Safety glasses are required in this area.|A2|fc|/ˈseɪfti ˈɡlæsɪz/|/ˈseɪfti ˈɡlæsɪz/
+emergency stop|nút dừng khẩn cấp|Press the emergency stop if anything goes wrong.|A2|fc|/ɪˈmɜːdʒənsi ˈstɒp/|/ɪˈmɜːrdʒənsi ˈstɑːp/
+lockout|khóa an toàn (cắt nguồn)|Use lockout before repairing the machine.|B2|fc|/ˈlɒkaʊt/|/ˈlɑːkaʊt/
+workshop|xưởng|The workshop is next to the warehouse.|A2|fc|/ˈwɜːkʃɒp/|/ˈwɜːrkʃɑːp/
+overtime (factory)|tăng ca|We have two hours of overtime tonight.|A2|fc|/ˈəʊvəˌtaɪm/|/ˈoʊvərˌtaɪm/
+day shift|ca ngày|I'm on the day shift this week.|A2|fc|/ˈdeɪ ˈʃɪft/|/ˈdeɪ ˈʃɪft/
+night shift|ca đêm|The night shift starts at 10 p.m.|A2|fc|/ˈnaɪt ˈʃɪft/|/ˈnaɪt ˈʃɪft/
+clock in|chấm công vào|Clock in before 7:30.|A2|fc|/ˈklɒk ˈɪn/|/ˈklɑːk ˈɪn/
+clock out|chấm công ra|Don't forget to clock out.|A2|fc|/ˈklɒk ˈaʊt/|/ˈklɑːk ˈaʊt/
+break time|giờ nghỉ|Break time is 15 minutes.|A2|fc|/ˈbreɪk ˈtaɪm/|/ˈbreɪk ˈtaɪm/
+canteen|nhà ăn|Lunch is served in the canteen.|A2|fc|/kænˈtiːn/|/kænˈtiːn/
+uniform|đồng phục|Workers must wear a uniform.|A2|fc|/ˈjuːnɪˌfɔːm/|/ˈjuːnɪˌfɔːrm/
+salary|lương|Salary is paid on the 5th.|A2|wk|/ˈsæləri/|/ˈsæləri/
+wage|tiền công (theo giờ/ngày)|The minimum wage went up this year.|B1|wk|/ˈweɪdʒ/|/ˈweɪdʒ/
+bonus|tiền thưởng|We get a bonus at Tet.|A2|wk|/ˈbəʊnəs/|/ˈboʊnəs/
+allowance|phụ cấp|There is a lunch allowance.|B1|wk|/əˈlaʊəns/|/əˈlaʊəns/
+contract (job)|hợp đồng|I signed a one-year contract.|A2|wk|/ˈkɒntrækt/|/ˈkɑːntrækt/
+job|công việc|I like my job.|A2|wk|/ˈdʒɒb/|/ˈdʒɑːb/
+career|sự nghiệp|She has a successful career.|B1|wk|/kəˈriə/|/kəˈrɪr/
+interview|phỏng vấn|I have a job interview tomorrow.|A2|wk|/ˈɪntəˌvjuː/|/ˈɪntərˌvjuː/
+CV / resume|sơ yếu lý lịch|Please send your CV.|A2|wk|/ˌsiː ˈviː/, /ˈrɛzjʊmeɪ/|/ˌsiː ˈviː/, /ˈrɛzəmeɪ/
+apply for|nộp đơn xin|I applied for a job at a logistics company.|A2|wk|/əˈplaɪ fɔː/|/əˈplaɪ fɔːr/
+hire|thuê, tuyển|They hired ten new workers.|B1|wk|/ˈhaɪə/|/ˈhaɪər/
+quit|nghỉ việc|He quit his job last month.|A2|wk|/ˈkwɪt/|/ˈkwɪt/
+promotion|sự thăng chức|She got a promotion.|B1|wk|/prəˈməʊʃən/|/prəˈmoʊʃən/
+experience|kinh nghiệm|Do you have any experience?|A2|wk|/ɛkˈspiərɪəns/|/ɛkˈspiərɪəns/
+skill|kỹ năng|Communication skills are important.|A2|wk|/ˈskɪl/|/ˈskɪl/
+colleague (work)|đồng nghiệp|My colleagues are friendly.|A2|wk|/ˈkɒliːɡ/|/ˈkɑːliːɡ/
+boss|sếp|My boss is in a meeting.|A2|wk|/ˈbɒs/|/ˈbɔs/
+manager|quản lý|The manager approved my leave.|A2|wk|/ˈmænɪdʒə/|/ˈmænɪdʒər/
+staff|nhân viên|All staff must attend the meeting.|A2|wk|/ˈstæf/|/ˈstæf/
+department|phòng ban|Which department do you work in?|A2|wk|/dɪˈpɑːtmənt/|/dɪˈpɑːrtmənt/
+office|văn phòng|The office is on the third floor.|A2|wk|/ˈɒfɪs/|/ˈɑːfɪs/
+desk|bàn làm việc|Your desk is next to the window.|A2|wk|/ˈdɛsk/|/ˈdɛsk/
+computer|máy tính|My computer is very slow.|A2|wk|/kəmˈpjuːtə/|/kəmˈpjuːtər/
+printer|máy in|The printer is out of paper.|A2|wk|/ˈprɪntə/|/ˈprɪntər/
+email|thư điện tử|I'll send you an email.|A2|wk|/ˈiːmeɪl/|/ˈiːmeɪl/
+schedule (work)|lịch trình|My schedule is full today.|A2|wk|/ˈʃɛdjuːl/|/ˈskɛdʒuːl/
+task|nhiệm vụ|I have three tasks to finish today.|A2|wk|/ˈtæsk/|/ˈtæsk/
+project|dự án|The project is behind schedule.|A2|wk|/ˈprɒdʒɛkt/|/ˈprɑːdʒɛkt/
+presentation|bài thuyết trình|I have to give a presentation tomorrow.|B1|wk|/ˌprɛzənˈteɪʃən/|/ˌprɛzənˈteɪʃən/
+annual leave|nghỉ phép năm|I have 12 days of annual leave.|B1|wk|/ˈænjuːəl ˈliːv/|/ˈænjuːəl ˈliːv/
+sick leave|nghỉ ốm|He is on sick leave.|B1|wk|/ˈsɪk ˈliːv/|/ˈsɪk ˈliːv/
+day off|ngày nghỉ|Tomorrow is my day off.|A2|wk|/ˈdeɪ ˈɒf/|/ˈdeɪ ˈɔf/
+busy|bận|I'm very busy this week.|A2|wk|/ˈbɪzi/|/ˈbɪzi/
+on time|đúng giờ|Please be on time for the meeting.|A2|wk|/ˌɒn ˈtaɪm/|/ˌɔn ˈtaɪm/
+late|muộn|Sorry I'm late.|A2|wk|/ˈleɪt/|/ˈleɪt/
+teamwork|làm việc nhóm|Teamwork is the key to success.|B1|wk|/ˈtiːmwɜːk/|/ˈtiːmwɜːrk/
+responsibility (job)|trách nhiệm|It's my responsibility to check the reports.|B1|wk|/rɪˌspɒnsəˈbɪlɪti/|/rɪˌspɑːnsəˈbɪlɪti/
+training (job)|đào tạo|New staff get two weeks of training.|A2|wk|/ˈtreɪnɪŋ/|/ˈtreɪnɪŋ/
+performance review|đánh giá hiệu suất|My performance review is next month.|B1|wk|/pəˈfɔːməns rɪˈvjuː/|/pərˈfɔːrməns rɪˈvjuː/
+retire|nghỉ hưu|He will retire next year.|B1|wk|/rɪˈtaɪə/|/rɪˈtaɪər/
+hello|xin chào|Hello, nice to meet you.|A2|cm|/həˈləʊ/|/həˈloʊ/
+goodbye|tạm biệt|Goodbye, see you tomorrow.|A2|cm|/ɡʊdˈbaɪ/|/ɡʊdˈbaɪ/
+please|làm ơn|Two coffees, please.|A2|cm|/ˈpliːz/|/ˈpliːz/
+thank you|cảm ơn|Thank you for your help.|A2|cm|/ˈθæŋk juː/|/ˈθæŋk juː/
+sorry|xin lỗi|Sorry, I didn't hear you.|A2|cm|/ˈsɒri/|/ˈsɑːri/
+excuse me|xin lỗi (gây chú ý)|Excuse me, where is the toilet?|A2|cm|/ɛkˈskjuːs ˌmiː/|/ɛkˈskjuːs ˌmiː/
+introduce|giới thiệu|Let me introduce my colleague, Minh.|A2|cm|/ˌɪntrəˈdjuːs/|/ˌɪntrəˈduːs/
+name|tên|What's your name?|A2|cm|/ˈneɪm/|/ˈneɪm/
+meet|gặp|Nice to meet you.|A2|cm|/ˈmiːt/|/ˈmiːt/
+ask|hỏi|Can I ask you a question?|A2|cm|/ˈæsk/|/ˈæsk/
+answer|trả lời|Please answer the phone.|A2|cm|/ˈænsə/|/ˈænsər/
+explain|giải thích|Could you explain that again?|A2|cm|/ɛkˈspleɪn/|/ɛkˈspleɪn/
+repeat|nhắc lại|Could you repeat that, please?|A2|cm|/rɪˈpiːt/|/rɪˈpiːt/
+understand|hiểu|I don't understand.|A2|cm|/ˌʌndəˈstænd/|/ˌʌndərˈstænd/
+mean|có nghĩa là|What does this word mean?|A2|cm|/ˈmiːn/|/ˈmiːn/
+agree|đồng ý|I agree with you.|A2|cm|/əɡˈriː/|/əɡˈriː/
+disagree|không đồng ý|I'm afraid I disagree.|B1|cm|/ˌdɪsəɡˈriː/|/ˌdɪsəɡˈriː/
+opinion|ý kiến|What's your opinion?|B1|cm|/əˈpɪniən/|/əˈpɪniən/
+suggest|gợi ý, đề xuất|I suggest we take a break.|B1|cm|/səˈdʒɛst/|/səˈdʒɛst/
+invite|mời|They invited us to dinner.|A2|cm|/ɪnˈvaɪt/|/ɪnˈvaɪt/
+accept|chấp nhận|I accept your invitation.|B1|cm|/əkˈsɛpt/|/əkˈsɛpt/
+refuse|từ chối|He refused to help.|B1|cm|/rɪˈfjuːz/|/rɪˈfjuːz/
+promise|hứa|I promise I'll call you.|A2|cm|/ˈprɒmɪs/|/ˈprɑːmɪs/
+apologise|xin lỗi|I apologise for the mistake.|B1|cm|/əˈpɒləˌdʒaɪz/|/əˈpɑːləˌdʒaɪz/
+complain|phàn nàn|She complained about the noise.|B1|cm|/kəmˈpleɪn/|/kəmˈpleɪn/
+thank|cảm ơn (động từ)|I want to thank everyone for coming.|A2|cm|/ˈθæŋk/|/ˈθæŋk/
+congratulate|chúc mừng|We congratulated her on her new job.|B1|cm|/kəŋɡˈrætʃʊˌleɪt/|/kəŋɡˈrætʃʊˌleɪt/
+conversation|cuộc trò chuyện|We had a long conversation.|A2|cm|/kɒnvəˈseɪʃən/|/kɑːnvərˈseɪʃən/
+chat|trò chuyện|Let's chat after the meeting.|A2|cm|/ˈtʃæt/|/ˈtʃæt/
+discuss|thảo luận|We need to discuss the plan.|B1|cm|/dɪˈskʌs/|/dɪˈskʌs/
+argue|tranh cãi|They argued about money.|B1|cm|/ˈɑːɡjuː/|/ˈɑːrɡjuː/
+polite|lịch sự|Be polite to customers.|A2|cm|/pəˈlaɪt/|/pəˈlaɪt/
+rude|thô lỗ|It's rude to interrupt.|B1|cm|/ˈruːd/|/ˈruːd/
+friendly|thân thiện|The staff are very friendly.|A2|cm|/ˈfrɛndli/|/ˈfrɛndli/
+shy|nhút nhát|She is a bit shy.|A2|cm|/ˈʃaɪ/|/ˈʃaɪ/
+confident|tự tin|He speaks English confidently.|B1|cm|/ˈkɒnfɪdənt/|/ˈkɑːnfɪdənt/
+honest|trung thực|Please be honest with me.|B1|cm|/ˈɒnɪst/|/ˈɑːnɪst/
+patient|kiên nhẫn|Be patient; the bus is coming.|B1|cm|/ˈpeɪʃənt/|/ˈpeɪʃənt/
+kind|tốt bụng|It's very kind of you.|A2|cm|/ˈkaɪnd/|/ˈkaɪnd/
+happy|vui|I'm so happy for you!|A2|cm|/ˈhæpi/|/ˈhæpi/
+sad|buồn|She looks sad today.|A2|cm|/ˈsæd/|/ˈsæd/
+angry|tức giận|Don't be angry with me.|A2|cm|/ˈæŋɡri/|/ˈæŋɡri/
+worried|lo lắng|I'm worried about the exam.|A2|cm|/ˈwʌrid/|/ˈwʌrid/
+excited|háo hức|We're excited about the trip.|A2|cm|/ɛkˈsaɪtɪd/|/ɛkˈsaɪtɪd/
+bored|chán|I'm bored. Let's go out.|A2|cm|/ˈbɔːd/|/ˈbɔːrd/
+surprised|ngạc nhiên|I was surprised to see him.|A2|cm|/səˈpraɪzd/|/sərˈpraɪzd/
+nervous|hồi hộp|I'm nervous before interviews.|B1|cm|/ˈnɜːvəs/|/ˈnɜːrvəs/
+relaxed|thư giãn|I feel relaxed on holiday.|A2|cm|/rɪˈlækst/|/rɪˈlækst/
+proud|tự hào|We are proud of you.|B1|cm|/ˈpraʊd/|/ˈpraʊd/
+embarrassed|ngượng|I was embarrassed by my mistake.|B1|cm|/ɛmˈbærəst/|/ɛmˈbærəst/
+language|ngôn ngữ|How many languages do you speak?|A2|cm|/ˈlæŋɡwɪdʒ/|/ˈlæŋɡwɪdʒ/
+fluent|trôi chảy|She is fluent in English.|B1|cm|/ˈfluːənt/|/ˈfluːənt/
+accent|giọng (vùng miền)|He has a British accent.|B1|cm|/ˈæksənt/|/ˈæksənt/
+pronounce|phát âm|How do you pronounce this word?|A2|cm|/prəˈnaʊns/|/prəˈnaʊns/
+vocabulary|từ vựng|I learn ten new vocabulary words a day.|A2|cm|/vəʊˈkæbjʊləri/|/voʊˈkæbjʊˌlɛri/
+grammar|ngữ pháp|English grammar is not too hard.|A2|cm|/ˈɡræmə/|/ˈɡræmər/
+practise|luyện tập|Practise speaking every day.|A2|cm|/ˈpræktɪs/|/ˈpræktɪs/
+mistake|lỗi sai|Don't worry about mistakes.|A2|cm|/mɪˈsteɪk/|/mɪˈsteɪk/
+improve (skill)|cải thiện|I want to improve my English.|A2|cm|/ɪmˈpruːv/|/ɪmˈpruːv/
+shop|cửa hàng; mua sắm|The shop opens at nine.|A2|sh|/ˈʃɒp/|/ˈʃɑːp/
+supermarket|siêu thị|I buy food at the supermarket.|A2|sh|/ˈsuːpəˌmɑːkɪt/|/ˈsuːpərˌmɑːrkɪt/
+convenience store|cửa hàng tiện lợi|There's a convenience store on the corner.|A2|sh|/kənˈviːnɪəns ˈstɔː/|/kənˈviːnɪəns ˈstɔːr/
+shopping mall|trung tâm thương mại|Let's meet at the shopping mall.|A2|sh|/ˈʃɒpɪŋ ˈmæl/|/ˈʃɑːpɪŋ ˈmɔːl/
+price (shop)|giá|What's the price of this bag?|A2|sh|/ˈpraɪs/|/ˈpraɪs/
+cheap|rẻ|This shirt is very cheap.|A2|sh|/ˈtʃiːp/|/ˈtʃiːp/
+expensive|đắt|Rent is expensive in the city.|A2|sh|/ɛkˈspɛnsɪv/|/ɛkˈspɛnsɪv/
+sale|đợt giảm giá|Everything is 50% off in the sale.|A2|sh|/ˈseɪl/|/ˈseɪl/
+bargain|món hời; mặc cả|This jacket was a real bargain.|B1|sh|/ˈbɑːɡɪn/|/ˈbɑːrɡɪn/
+pay|trả tiền|Can I pay by card?|A2|sh|/ˈpeɪ/|/ˈpeɪ/
+cashier|thu ngân|Please pay the cashier.|A2|sh|/kæˈʃiə/|/kæˈʃɪr/
+receipt (shop)|hóa đơn, biên lai|Keep your receipt.|A2|sh|/rɪˈsiːt/|/rɪˈsiːt/
+change (money)|tiền thừa|Here's your change.|A2|sh|/ˈtʃeɪndʒ/|/ˈtʃeɪndʒ/
+discount (shop)|giảm giá|Is there a student discount?|A2|sh|/ˈdɪskaʊnt/|/ˈdɪskaʊnt/
+refund (shop)|hoàn tiền|I'd like a refund, please.|A2|sh|/rɪˈfʌnd/|/rɪˈfʌnd/
+exchange (shop)|đổi hàng|Can I exchange this for a smaller size?|A2|sh|/ɛksˈtʃeɪndʒ/|/ɛksˈtʃeɪndʒ/
+basket|giỏ|Put the items in your basket.|A2|sh|/ˈbæskɪt/|/ˈbæskɪt/
+trolley / cart|xe đẩy|Get a trolley; we need a lot.|A2|sh|/ˈtrɒli/, /ˈkɑːt/|/ˈtrɑːli/, /ˈkɑːrt/
+queue / line|hàng (xếp hàng)|There's a long queue at the checkout.|A2|sh|/ˈkjuː/, /ˈlaɪn/|/ˈkjuː/, /ˈlaɪn/
+checkout|quầy thanh toán|Go to checkout number 5.|A2|sh|/ˈtʃɛkaʊt/|/ˈtʃɛkaʊt/
+online shopping|mua sắm trực tuyến|I do most of my shopping online.|A2|sh|/ˈɒnlaɪn ˈʃɒpɪŋ/|/ˈɑːnlaɪn ˈʃɑːpɪŋ/
+delivery fee|phí giao hàng|The delivery fee is 20,000 dong.|A2|sh|/dɪˈlɪvəri ˈfiː/|/dɪˈlɪvəri ˈfiː/
+money|tiền|I don't have much money.|A2|sh|/ˈmʌni/|/ˈmʌni/
+spend|tiêu (tiền, thời gian)|How much did you spend?|A2|sh|/ˈspɛnd/|/ˈspɛnd/
+save|tiết kiệm|I save 20% of my salary.|A2|sh|/ˈseɪv/|/ˈseɪv/
+borrow|mượn|Can I borrow your pen?|A2|sh|/ˈbɒrəʊ/|/ˈbɑːroʊ/
+lend|cho mượn|Can you lend me 100,000 dong?|A2|sh|/ˈlɛnd/|/ˈlɛnd/
+bank account|tài khoản ngân hàng|I opened a bank account.|A2|sh|/ˈbæŋk əˈkaʊnt/|/ˈbæŋk əˈkaʊnt/
+transfer money|chuyển tiền|I'll transfer the money tonight.|A2|sh|/ˈtrænsfɜː ˈmʌni/|/ˈtrænsfɜːr ˈmʌni/
+QR code|mã QR|You can pay with a QR code.|A2|sh|/ˌkjuː ˈɑː ˈkəʊd/|/ˌkjuː ˈɑːr ˈkoʊd/
+afford|có đủ tiền (mua)|I can't afford a new car.|B1|sh|/əˈfɔːd/|/əˈfɔːrd/
+brand|thương hiệu|What brand is your phone?|A2|sh|/ˈbrænd/|/ˈbrænd/
+quality|chất lượng|The quality is very good.|A2|sh|/ˈkwɒlɪti/|/ˈkwɔlɪti/
+be|thì, là, ở|I am a logistics officer.|A2|vb|/ˈbiː/|/ˈbiː/
+have|có|I have two brothers.|A2|vb|/ˈhæv/|/ˈhæv/
+do|làm|What do you do?|A2|vb|/ˈduː/|/ˈduː/
+make|làm, tạo ra|She makes coffee every morning.|A2|vb|/ˈmeɪk/|/ˈmeɪk/
+go|đi|I go to work by bus.|A2|vb|/ˈɡəʊ/|/ˈɡoʊ/
+come|đến|Come to my house at seven.|A2|vb|/ˈkʌm/|/ˈkʌm/
+get|lấy, nhận, trở nên|I got a message from my boss.|A2|vb|/ˈɡɛt/|/ˈɡɛt/
+take|cầm, lấy, mang đi|Take your umbrella.|A2|vb|/ˈteɪk/|/ˈteɪk/
+give|đưa, cho|Give me the box, please.|A2|vb|/ˈɡɪv/|/ˈɡɪv/
+put|đặt, để|Put your bag here.|A2|vb|/ˈpʊt/|/ˈpʊt/
+bring|mang đến|Bring your ID card tomorrow.|A2|vb|/ˈbrɪŋ/|/ˈbrɪŋ/
+carry|mang, xách|Can you carry this bag?|A2|vb|/ˈkæri/|/ˈkæri/
+hold|cầm, giữ|Hold the door, please.|A2|vb|/ˈhəʊld/|/ˈhoʊld/
+keep|giữ|Keep the change.|A2|vb|/ˈkiːp/|/ˈkiːp/
+leave|rời đi; để lại|I leave home at seven.|A2|vb|/ˈliːv/|/ˈliːv/
+arrive|đến nơi|What time did you arrive?|A2|vb|/əˈraɪv/|/əˈraɪv/
+stay|ở lại|We stayed at home all day.|A2|vb|/ˈsteɪ/|/ˈsteɪ/
+return (go back)|trở lại; trả lại|I'll return the book tomorrow.|A2|vb|/rɪˈtɜːn/|/rɪˈtɜːrn/
+walk|đi bộ|I walk to the market.|A2|vb|/ˈwɔːk/|/ˈwɔːk/
+run|chạy|Don't run in the office.|A2|vb|/ˈrʌn/|/ˈrʌn/
+drive|lái xe|Can you drive a car?|A2|vb|/ˈdraɪv/|/ˈdraɪv/
+ride|đi (xe máy, xe đạp)|I ride my motorbike to work.|A2|vb|/ˈraɪd/|/ˈraɪd/
+sit|ngồi|Please sit down.|A2|vb|/ˈsɪt/|/ˈsɪt/
+stand|đứng|Stand in line, please.|A2|vb|/ˈstænd/|/ˈstænd/
+lie down|nằm xuống|Lie down and rest.|A2|vb|/ˈlaɪ ˈdaʊn/|/ˈlaɪ ˈdaʊn/
+open|mở|Open the window, please.|A2|vb|/ˈəʊpən/|/ˈoʊpən/
+close|đóng|Close the door behind you.|A2|vb|/ˈkləʊz/|/ˈkloʊz/
+start|bắt đầu|The meeting starts at nine.|A2|vb|/ˈstɑːt/|/ˈstɑːrt/
+finish|hoàn thành, kết thúc|I finish work at five.|A2|vb|/ˈfɪnɪʃ/|/ˈfɪnɪʃ/
+stop (verb)|dừng|Stop the car here.|A2|vb|/ˈstɒp/|/ˈstɑːp/
+continue|tiếp tục|Let's continue tomorrow.|A2|vb|/kənˈtɪnjuː/|/kənˈtɪnjuː/
+wait|chờ|Wait for me, please.|A2|vb|/ˈweɪt/|/ˈweɪt/
+hurry|vội, nhanh lên|Hurry up! We're late.|A2|vb|/ˈhʌri/|/ˈhɜːri/
+look|nhìn|Look at this photo.|A2|vb|/ˈlʊk/|/ˈlʊk/
+see|nhìn thấy|I can't see anything.|A2|vb|/ˈsiː/|/ˈsiː/
+watch (verb)|xem|We watched a film last night.|A2|vb|/ˈwɒtʃ/|/ˈwɑːtʃ/
+listen|nghe|Listen to the teacher.|A2|vb|/ˈlɪsən/|/ˈlɪsən/
+hear|nghe thấy|Can you hear me?|A2|vb|/ˈhiə/|/ˈhɪr/
+say|nói|What did he say?|A2|vb|/ˈseɪ/|/ˈseɪ/
+tell|kể, bảo|Tell me about your job.|A2|vb|/ˈtɛl/|/ˈtɛl/
+speak|nói (ngôn ngữ)|Do you speak English?|A2|vb|/ˈspiːk/|/ˈspiːk/
+talk|nói chuyện|Can we talk later?|A2|vb|/ˈtɔːk/|/ˈtɔːk/
+call|gọi điện; gọi|I'll call you tonight.|A2|vb|/ˈkɔːl/|/ˈkɔːl/
+write|viết|Write your name here.|A2|vb|/ˈraɪt/|/ˈraɪt/
+read|đọc|I read the news every morning.|A2|vb|/ˈriːd/|/ˈriːd/
+learn|học|I'm learning English.|A2|vb|/ˈlɜːn/|/ˈlɜːrn/
+study|học (nghiên cứu)|She studies at night.|A2|vb|/ˈstʌdi/|/ˈstʌdi/
+teach|dạy|He teaches maths.|A2|vb|/ˈtiːtʃ/|/ˈtiːtʃ/
+know|biết|I don't know the answer.|A2|vb|/ˈnəʊ/|/ˈnoʊ/
+think|nghĩ|I think it's a good idea.|A2|vb|/ˈθɪŋk/|/ˈθɪŋk/
+believe|tin|I believe you.|A2|vb|/bɪˈliːv/|/bɪˈliːv/
+remember|nhớ|Do you remember me?|A2|vb|/rɪˈmɛmbə/|/rɪˈmɛmbər/
+forget|quên|Don't forget your keys.|A2|vb|/fəˈɡɛt/|/fərˈɡɛt/
+decide|quyết định|We decided to stay home.|A2|vb|/dɪˈsaɪd/|/dɪˈsaɪd/
+choose|chọn|Choose one colour.|A2|vb|/ˈtʃuːz/|/ˈtʃuːz/
+want|muốn|I want a glass of water.|A2|vb|/ˈwɒnt/|/ˈwɔnt/
+need|cần|I need your help.|A2|vb|/ˈniːd/|/ˈniːd/
+like|thích|I like Vietnamese food.|A2|vb|/ˈlaɪk/|/ˈlaɪk/
+love|yêu, rất thích|I love this song.|A2|vb|/ˈlʌv/|/ˈlʌv/
+hate|ghét|I hate waiting.|A2|vb|/ˈheɪt/|/ˈheɪt/
+prefer|thích hơn|I prefer tea to coffee.|A2|vb|/prɪˈfɜː/|/prɪˈfɜːr/
+hope|hy vọng|I hope you feel better.|A2|vb|/ˈhəʊp/|/ˈhoʊp/
+wish|ước|I wish I could fly.|B1|vb|/ˈwɪʃ/|/ˈwɪʃ/
+try|cố gắng; thử|Try again.|A2|vb|/ˈtraɪ/|/ˈtraɪ/
+help|giúp đỡ|Can you help me?|A2|vb|/ˈhɛlp/|/ˈhɛlp/
+find|tìm thấy|I can't find my phone.|A2|vb|/ˈfaɪnd/|/ˈfaɪnd/
+lose (item)|làm mất|I lost my wallet.|A2|vb|/ˈluːz/|/ˈluːz/
+look for|tìm kiếm|I'm looking for my glasses.|A2|vb|/ˈlʊk fɔː/|/ˈlʊk fɔːr/
+buy|mua|I bought a new phone.|A2|vb|/ˈbaɪ/|/ˈbaɪ/
+sell|bán|They sell fruit at the market.|A2|vb|/ˈsɛl/|/ˈsɛl/
+cost (verb)|có giá|How much does it cost?|A2|vb|/ˈkɒst/|/ˈkɔst/
+use|sử dụng|Can I use your phone?|A2|vb|/ˈjuːz/|/ˈjuːz/
+work|làm việc|I work in a warehouse.|A2|vb|/ˈwɜːk/|/ˈwɜːrk/
+play|chơi|The kids are playing outside.|A2|vb|/ˈpleɪ/|/ˈpleɪ/
+eat|ăn|What did you eat for lunch?|A2|vb|/ˈiːt/|/ˈiːt/
+cook|nấu ăn|I cook dinner every day.|A2|vb|/ˈkʊk/|/ˈkʊk/
+wash|rửa, giặt|Wash your hands before eating.|A2|vb|/ˈwɒʃ/|/ˈwɑːʃ/
+clean|lau dọn|I clean my room on Sundays.|A2|vb|/ˈkliːn/|/ˈkliːn/
+build|xây dựng|They are building a new bridge.|A2|vb|/ˈbɪld/|/ˈbɪld/
+break|làm vỡ, làm hỏng|Be careful, don't break it.|A2|vb|/ˈbreɪk/|/ˈbreɪk/
+fix|sửa|Can you fix my bike?|A2|vb|/ˈfɪks/|/ˈfɪks/
+change|thay đổi|I changed my phone number.|A2|vb|/ˈtʃeɪndʒ/|/ˈtʃeɪndʒ/
+move|di chuyển; chuyển nhà|We moved to Hanoi last year.|A2|vb|/ˈmuːv/|/ˈmuːv/
+turn on|bật|Turn on the light.|A2|vb|/ˈtɜːn ˈɒn/|/ˈtɜːrn ˈɔn/
+turn off|tắt|Turn off your phone.|A2|vb|/ˈtɜːn ˈɒf/|/ˈtɜːrn ˈɔf/
+pick up|đón; nhặt lên|I'll pick you up at six.|A2|vb|/ˈpɪk ˈʌp/|/ˈpɪk ˈʌp/
+drop off|thả xuống, đưa đến|Drop me off at the station.|A2|vb|/ˈdrɒp ˈɒf/|/ˈdrɑːp ˈɔf/
+grow|lớn lên; trồng|My son is growing fast.|A2|vb|/ˈɡrəʊ/|/ˈɡroʊ/
+happen|xảy ra|What happened?|A2|vb|/ˈhæpən/|/ˈhæpən/
+feel|cảm thấy|I feel tired.|A2|vb|/ˈfiːl/|/ˈfiːl/
+seem|có vẻ|He seems happy.|B1|vb|/ˈsiːm/|/ˈsiːm/
+become|trở thành|She became a manager.|A2|vb|/bɪˈkʌm/|/bɪˈkʌm/
+let|để, cho phép|Let me help you.|A2|vb|/ˈlɛt/|/ˈlɛt/
+allow|cho phép|Smoking is not allowed here.|B1|vb|/əˈlaʊ/|/əˈlaʊ/
+plan|lên kế hoạch|We plan to visit Hue.|A2|vb|/ˈplæn/|/ˈplæn/
+prepare|chuẩn bị|I'm preparing for the exam.|A2|vb|/prɪˈpeə/|/prɪˈpɛr/
+share|chia sẻ|Let's share the pizza.|A2|vb|/ˈʃeə/|/ˈʃɛr/
+send|gửi|Send me the photo.|A2|vb|/ˈsɛnd/|/ˈsɛnd/
+receive|nhận|Did you receive my email?|A2|vb|/rɪˈsiːv/|/rɪˈsiːv/
+count|đếm|Count the boxes, please.|A2|vb|/ˈkaʊnt/|/ˈkaʊnt/
+fill in|điền vào|Fill in this form.|A2|vb|/ˈfɪl ˈɪn/|/ˈfɪl ˈɪn/
+sign|ký|Sign here, please.|A2|vb|/ˈsaɪn/|/ˈsaɪn/
+win (prize)|đạt được (giải)|She won a prize.|A2|vb|/ˈwɪn/|/ˈwɪn/
+fall|ngã; rơi|He fell off his bike.|A2|vb|/ˈfɔːl/|/ˈfɔːl/
+catch|bắt (xe, bóng)|I caught the last bus.|A2|vb|/ˈkætʃ/|/ˈkætʃ/
+miss|lỡ; nhớ|I missed the bus.|A2|vb|/ˈmɪs/|/ˈmɪs/
+visit|thăm|We visited our grandparents.|A2|vb|/ˈvɪzɪt/|/ˈvɪzɪt/
+enjoy|thích, tận hưởng|Enjoy your meal!|A2|vb|/ɛnˈdʒɔɪ/|/ɛnˈdʒɔɪ/
+celebrate|ăn mừng|We celebrated her birthday.|A2|vb|/ˈsɛləˌbreɪt/|/ˈsɛləˌbreɪt/
+worry|lo lắng|Don't worry about it.|A2|vb|/ˈwʌri/|/ˈwʌri/
+smile|mỉm cười|Smile for the photo!|A2|vb|/ˈsmaɪl/|/ˈsmaɪl/
+laugh|cười|Everyone laughed at the joke.|A2|vb|/ˈlæf/|/ˈlæf/
+cry|khóc|The baby is crying.|A2|vb|/ˈkraɪ/|/ˈkraɪ/
+shout|hét|Don't shout at me.|A2|vb|/ˈʃaʊt/|/ˈʃaʊt/
+knock|gõ cửa|Please knock before you enter.|A2|vb|/ˈnɒk/|/ˈnɑːk/
+push|đẩy|Push the door.|A2|vb|/ˈpʊʃ/|/ˈpʊʃ/
+pull|kéo|Pull the handle.|A2|vb|/ˈpʊl/|/ˈpʊl/
+throw|ném|Don't throw rubbish on the street.|A2|vb|/ˈθrəʊ/|/ˈθroʊ/
+lift|nâng lên|Lift with your legs, not your back.|A2|vb|/ˈlɪft/|/ˈlɪft/
+fit in|vừa (chỗ)|Will the boxes fit in the car?|B1|vb|/ˈfɪt ˈɪn/|/ˈfɪt ˈɪn/
+good|tốt|This is a good idea.|A2|vb|/ˈɡʊd/|/ˈɡʊd/
+bad|xấu, tệ|The weather is bad today.|A2|vb|/ˈbæd/|/ˈbæd/
+big|to|They live in a big house.|A2|vb|/ˈbɪɡ/|/ˈbɪɡ/
+small|nhỏ|This room is too small.|A2|vb|/ˈsmɔːl/|/ˈsmɔːl/
+long|dài|It's a long way.|A2|vb|/ˈlɒŋ/|/ˈlɔŋ/
+short|ngắn; thấp|My hair is short.|A2|vb|/ˈʃɔːt/|/ˈʃɔːrt/
+tall|cao (người)|He is very tall.|A2|vb|/ˈtɔːl/|/ˈtɔːl/
+high|cao (vật, vị trí)|The shelf is too high.|A2|vb|/ˈhaɪ/|/ˈhaɪ/
+low|thấp|The price is very low.|A2|vb|/ˈləʊ/|/ˈloʊ/
+new|mới|I have a new job.|A2|vb|/ˈnjuː/|/ˈnuː/
+old|cũ; già|This is an old building.|A2|vb|/ˈəʊld/|/ˈoʊld/
+young|trẻ|She is young and smart.|A2|vb|/ˈjʌŋ/|/ˈjʌŋ/
+easy|dễ|The test was easy.|A2|vb|/ˈiːzi/|/ˈiːzi/
+difficult|khó|English is not so difficult.|A2|vb|/ˈdɪfɪkəlt/|/ˈdɪfɪkəlt/
+fast|nhanh|This train is very fast.|A2|vb|/ˈfæst/|/ˈfæst/
+slow|chậm|The internet is slow today.|A2|vb|/ˈsləʊ/|/ˈsloʊ/
+quick|nhanh (thời gian ngắn)|Can I ask a quick question?|A2|vb|/ˈkwɪk/|/ˈkwɪk/
+early|sớm|I get up early.|A2|vb|/ˈɜːlɪ/|/ˈɜːrli/
+heavy|nặng|This box is heavy.|A2|vb|/ˈhɛvi/|/ˈhɛvi/
+light (weight)|nhẹ|The bag is light.|A2|vb|/ˈlaɪt/|/ˈlaɪt/
+full|đầy|The bus is full.|A2|vb|/ˈfʊl/|/ˈfʊl/
+empty|trống, rỗng|The fridge is empty.|A2|vb|/ˈɛmpti/|/ˈɛmpti/
+clean (adj)|sạch|Keep your desk clean.|A2|vb|/ˈkliːn/|/ˈkliːn/
+dirty|bẩn|My shoes are dirty.|A2|vb|/ˈdɜːti/|/ˈdɜːrti/
+quiet|yên tĩnh|The library is quiet.|A2|vb|/ˈkwaɪət/|/ˈkwaɪət/
+noisy|ồn ào|The street is very noisy.|A2|vb|/ˈnɔɪzi/|/ˈnɔɪzi/
+beautiful|đẹp|What a beautiful day!|A2|vb|/ˈbjuːtifəl/|/ˈbjuːtifəl/
+ugly|xấu xí|That building is ugly.|A2|vb|/ˈʌɡli/|/ˈʌɡli/
+important|quan trọng|This meeting is important.|A2|vb|/ɪmˈpɔːtənt/|/ɪmˈpɔːrtənt/
+interesting|thú vị|The book is very interesting.|A2|vb|/ˈɪntrɛstɪŋ/|/ˈɪntrɛstɪŋ/
+boring|nhàm chán|The film was boring.|A2|vb|/ˈbɔːrɪŋ/|/ˈbɔːrɪŋ/
+dangerous|nguy hiểm|It's dangerous to swim here.|A2|vb|/ˈdeɪndʒərəs/|/ˈdeɪndʒərəs/
+safe|an toàn|Is this area safe at night?|A2|vb|/ˈseɪf/|/ˈseɪf/
+ready|sẵn sàng|Are you ready?|A2|vb|/ˈrɛdi/|/ˈrɛdi/
+free (no cost)|miễn phí|The coffee is free.|A2|vb|/ˈfriː/|/ˈfriː/
+available (free)|rảnh; có sẵn|Are you available tomorrow?|A2|vb|/əˈveɪləbəl/|/əˈveɪləbəl/
+possible|có thể|Is it possible to change the date?|A2|vb|/ˈpɒsɪbəl/|/ˈpɑːsɪbəl/
+same|giống nhau|We have the same phone.|A2|vb|/ˈseɪm/|/ˈseɪm/
+different|khác nhau|They are very different.|A2|vb|/ˈdɪfrənt/|/ˈdɪfrənt/
+right (correct)|đúng|You're right.|A2|vb|/ˈraɪt/|/ˈraɪt/
+wrong|sai|Sorry, wrong number.|A2|vb|/ˈrɒŋ/|/ˈrɔŋ/
+true|đúng, thật|Is it true?|A2|vb|/ˈtruː/|/ˈtruː/
+real|thật|Is this a real diamond?|A2|vb|/ˈriəl/|/ˈriːəl/
+sure|chắc chắn|Are you sure?|A2|vb|/ˈʃʊə/|/ˈʃʊr/
+strong|khỏe, mạnh|He is very strong.|A2|vb|/ˈstrɒŋ/|/ˈstrɔŋ/
+weak|yếu|I feel weak today.|A2|vb|/ˈwiːk/|/ˈwiːk/
+rich|giàu|He is a rich businessman.|A2|vb|/ˈrɪtʃ/|/ˈrɪtʃ/
+poor|nghèo|They were poor when they were young.|A2|vb|/ˈpʊə/|/ˈpʊr/
+famous|nổi tiếng|Hoi An is famous for its lanterns.|A2|vb|/ˈfeɪməs/|/ˈfeɪməs/
+popular|phổ biến, được yêu thích|This song is very popular.|A2|vb|/ˈpɒpjʊlə/|/ˈpɑːpjʊlər/
+comfortable|thoải mái|These shoes are comfortable.|A2|vb|/ˈkʌmftəbəl/|/ˈkʌmftəbəl/
+convenient|tiện lợi|This location is very convenient.|B1|vb|/kənˈviːnɪənt/|/kənˈviːnɪənt/
+crowded|đông đúc|The market is crowded at weekends.|A2|vb|/ˈkraʊdɪd/|/ˈkraʊdɪd/
+modern|hiện đại|It's a modern city.|A2|vb|/ˈmɒdən/|/ˈmɑːdərn/
+careful|cẩn thận|Be careful!|A2|vb|/ˈkeəfəl/|/ˈkɛrfəl/
+useful|hữu ích|This app is very useful.|A2|vb|/ˈjuːsfəl/|/ˈjuːsfəl/
+wonderful|tuyệt vời|We had a wonderful time.|A2|vb|/ˈwʌndəfəl/|/ˈwʌndərfəl/
+terrible|tồi tệ|The traffic was terrible.|A2|vb|/ˈtɛrɪbəl/|/ˈtɛrɪbəl/
+amazing|đáng kinh ngạc|The view is amazing.|A2|vb|/əˈmeɪzɪŋ/|/əˈmeɪzɪŋ/
+perfect|hoàn hảo|Your English is perfect.|A2|vb|/ˈpɜːfɛkt/|/ˈpɜːrfɛkt/
+always|luôn luôn|I always drink coffee in the morning.|A2|vb|/ˈɔːlweɪz/|/ˈɔːlweɪz/
+usually|thường xuyên|I usually go to bed at eleven.|A2|vb|/ˈjuːʒuːəli/|/ˈjuːʒuːəli/
+often|thường|We often eat out.|A2|vb|/ˈɒfən/|/ˈɔfən/
+sometimes|thỉnh thoảng|Sometimes I walk to work.|A2|vb|/ˈsʌmtaɪmz/|/ˈsʌmtaɪmz/
+rarely|hiếm khi|I rarely watch TV.|B1|vb|/ˈreəli/|/ˈrɛrli/
+never|không bao giờ|I never smoke.|A2|vb|/ˈnɛvə/|/ˈnɛvər/
+already|đã... rồi|I've already eaten.|A2|vb|/ɔːlˈrɛdi/|/ɔːlˈrɛdi/
+yet|chưa (câu hỏi/phủ định)|Have you finished yet?|A2|vb|/ˈjɛt/|/ˈjɛt/
+still|vẫn|I'm still waiting.|A2|vb|/ˈstɪl/|/ˈstɪl/
+soon|sớm, chẳng bao lâu|See you soon.|A2|vb|/ˈsuːn/|/ˈsuːn/
+again|lại, lần nữa|Say it again, please.|A2|vb|/əˈɡɛn/|/əˈɡɛn/
+together|cùng nhau|Let's go together.|A2|vb|/təˈɡɛðə/|/təˈɡɛðər/
+almost|gần như|I'm almost ready.|A2|vb|/ˈɔːlməʊst/|/ˈɔːlmoʊst/
+really|thực sự|I really like it.|A2|vb|/ˈriəlɪ/|/ˈriəli/
+very|rất|It's very hot.|A2|vb|/ˈvɛri/|/ˈvɛri/
+too|quá; cũng|It's too expensive.|A2|vb|/ˈtuː/|/ˈtuː/
+enough|đủ|Do we have enough time?|A2|vb|/ɪˈnʌf/|/ɪˈnʌf/
+maybe|có lẽ|Maybe tomorrow.|A2|vb|/ˈmeɪbiː/|/ˈmeɪbiː/
+probably|có lẽ, chắc là|It will probably rain.|B1|vb|/ˈprɒbəbli/|/ˈprɑːbəbli/
+especially|đặc biệt là|I love fruit, especially mangoes.|B1|vb|/ɪˈspɛʃəli/|/ɪˈspɛʃəli/
+suddenly|đột nhiên|Suddenly the lights went out.|B1|vb|/ˈsʌdənli/|/ˈsʌdənli/
+finally|cuối cùng|Finally, we arrived.|A2|vb|/ˈfaɪnəli/|/ˈfaɪnəli/
+time|thời gian|What time is it?|A2|tm|/ˈtaɪm/|/ˈtaɪm/
+hour|giờ (tiếng)|The trip takes two hours.|A2|tm|/ˈaʊə/|/ˈaʊər/
+minute|phút|Wait a minute.|A2|tm|/ˈmɪnɪt/|/ˈmɪnɪt/
+second (time)|giây|It only takes a second.|A2|tm|/ˈsɛkənd/|/ˈsɛkənd/
+half past|rưỡi (giờ)|It's half past seven.|A2|tm|/ˈhɑːf ˈpæst/|/ˈhæf ˈpæst/
+quarter past|giờ mười lăm|The bus comes at quarter past eight.|A2|tm|/ˈkwɔːtə ˈpæst/|/ˈkwɔːrtər ˈpæst/
+quarter to|kém mười lăm|It's quarter to five.|A2|tm|/ˈkwɔːtə tuː/|/ˈkwɔːrtər tuː/
+o'clock|giờ đúng|The class starts at nine o'clock.|A2|tm|/əˈklɒk/|/əˈklɑːk/
+a.m. / p.m.|sáng / chiều tối|The shop opens at 8 a.m.|A2|tm|/ˌeɪ ˈɛm/, /ˌpiː ˈɛm/|/ˌeɪ ˈɛm/, /ˌpiː ˈɛm/
+morning|buổi sáng|Good morning!|A2|tm|/ˈmɔːnɪŋ/|/ˈmɔːrnɪŋ/
+afternoon|buổi chiều|See you this afternoon.|A2|tm|/ˌæftəˈnuːn/|/ˌæftərˈnuːn/
+evening|buổi tối|We usually relax in the evening.|A2|tm|/ˈiːvnɪŋ/|/ˈiːvnɪŋ/
+night|đêm|I couldn't sleep last night.|A2|tm|/ˈnaɪt/|/ˈnaɪt/
+midnight|nửa đêm|The party ended at midnight.|A2|tm|/ˈmɪdnaɪt/|/ˈmɪdnaɪt/
+noon|buổi trưa (12 giờ)|Let's meet at noon.|A2|tm|/ˈnuːn/|/ˈnuːn/
+day|ngày|Have a nice day!|A2|tm|/ˈdeɪ/|/ˈdeɪ/
+week|tuần|I work five days a week.|A2|tm|/ˈwiːk/|/ˈwiːk/
+month|tháng|My rent is paid every month.|A2|tm|/ˈmʌnθ/|/ˈmʌnθ/
+year|năm|I started working here last year.|A2|tm|/ˈjiə/|/ˈjɪr/
+today|hôm nay|Today is Monday.|A2|tm|/təˈdeɪ/|/təˈdeɪ/
+tomorrow|ngày mai|See you tomorrow.|A2|tm|/təˈmɒrəʊ/|/təˈmɑːroʊ/
+yesterday|hôm qua|I called you yesterday.|A2|tm|/ˈjɛstəˌdeɪ/|/ˈjɛstərˌdeɪ/
+tonight|tối nay|What are you doing tonight?|A2|tm|/təˈnaɪt/|/təˈnaɪt/
+the day after tomorrow|ngày kia|We leave the day after tomorrow.|A2|tm|/ðə ˈdeɪ ˈæftə təˈmɒrəʊ/|/ðə ˈdeɪ ˈæftər təˈmɑːroʊ/
+the day before yesterday|hôm kia|I saw him the day before yesterday.|A2|tm|/ðə ˈdeɪ bɪˌfɔː ˈjɛstəˌdeɪ/|/ðə ˈdeɪ bɪˌfɔːr ˈjɛstərˌdeɪ/
+last week|tuần trước|I was sick last week.|A2|tm|/ˈlæst ˈwiːk/|/ˈlæst ˈwiːk/
+next month|tháng sau|We'll move next month.|A2|tm|/ˈnɛkst ˈmʌnθ/|/ˈnɛkst ˈmʌnθ/
+weekday|ngày thường|I work on weekdays.|A2|tm|/ˈwiːkdeɪ/|/ˈwiːkdeɪ/
+Monday|thứ Hai|The office is closed on Monday.|A2|tm|/ˈmʌndeɪ/|/ˈmʌndeɪ/
+Tuesday|thứ Ba|I have English class on Tuesday.|A2|tm|/ˈtjuːzdeɪ/|/ˈtuːzdeɪ/
+Wednesday|thứ Tư|Let's meet on Wednesday.|A2|tm|/ˈwɛnzdeɪ/|/ˈwɛnzdeɪ/
+Thursday|thứ Năm|The report is due on Thursday.|A2|tm|/ˈθɜːzdeɪ/|/ˈθɜːrzdeɪ/
+Friday|thứ Sáu|Thank God it's Friday!|A2|tm|/ˈfraɪdeɪ/|/ˈfraɪdeɪ/
+Saturday|thứ Bảy|We go shopping on Saturday.|A2|tm|/ˈsætəˌdeɪ/|/ˈsætərˌdeɪ/
+Sunday|Chủ nhật|I rest on Sunday.|A2|tm|/ˈsʌndeɪ/|/ˈsʌndeɪ/
+January|tháng Một|My birthday is in January.|A2|tm|/ˈdʒænjuːəri/|/ˈdʒænjuːˌɛri/
+February|tháng Hai|Tet is usually in February.|A2|tm|/ˈfɛbruːəri/|/ˈfɛbruːˌɛri/
+March|tháng Ba|The project starts in March.|A2|tm|/ˈmɑːtʃ/|/ˈmɑːrtʃ/
+April|tháng Tư|It gets hot in April.|A2|tm|/ˈeɪprəl/|/ˈeɪprəl/
+May|tháng Năm|The rainy season starts in May.|A2|tm|/ˈmeɪ/|/ˈmeɪ/
+June|tháng Sáu|School ends in June.|A2|tm|/ˈdʒuːn/|/ˈdʒuːn/
+July|tháng Bảy|We go to the beach in July.|A2|tm|/dʒuːˈlaɪ/|/dʒuːˈlaɪ/
+August|tháng Tám|August is very hot.|A2|tm|/ˈɔːɡəst/|/ˈɔːɡəst/
+September|tháng Chín|National Day is on 2 September.|A2|tm|/sɛpˈtɛmbə/|/sɛpˈtɛmbər/
+October|tháng Mười|It's cooler in October.|A2|tm|/ɒkˈtəʊbə/|/ɑːkˈtoʊbər/
+November|tháng Mười Một|Teachers' Day is in November.|A2|tm|/nəʊˈvɛmbə/|/noʊˈvɛmbər/
+December|tháng Mười Hai|Christmas is in December.|A2|tm|/dɪˈsɛmbə/|/dɪˈsɛmbər/
+date|ngày tháng|What's the date today?|A2|tm|/ˈdeɪt/|/ˈdeɪt/
+calendar|lịch|Check the calendar.|A2|tm|/ˈkæləndə/|/ˈkæləndər/
+century|thế kỷ|This temple is from the 11th century.|B1|tm|/ˈsɛntʃəri/|/ˈsɛntʃəri/
+past|quá khứ|Forget the past.|A2|tm|/ˈpæst/|/ˈpæst/
+present (time)|hiện tại|Live in the present.|B1|tm|/ˈprɛzənt/|/ˈprɛzənt/
+future|tương lai|What are your plans for the future?|A2|tm|/ˈfjuːtʃə/|/ˈfjuːtʃər/
+ago|cách đây|I moved here two years ago.|A2|tm|/əˈɡəʊ/|/əˈɡoʊ/
+before|trước khi|Wash your hands before eating.|A2|tm|/bɪˈfɔː/|/bɪˈfɔːr/
+after|sau khi|Call me after work.|A2|tm|/ˈæftə/|/ˈæftər/
+during|trong suốt|Don't use your phone during the meeting.|A2|tm|/ˈdjʊərɪŋ/|/ˈdʊrɪŋ/
+until|cho đến khi|Wait until I come back.|A2|tm|/ʌnˈtɪl/|/ʌnˈtɪl/
+since|từ khi|I've lived here since 2020.|B1|tm|/ˈsɪns/|/ˈsɪns/
+recently|gần đây|I haven't seen him recently.|B1|tm|/ˈriːsəntli/|/ˈriːsəntli/
+nowadays|ngày nay|Nowadays everyone has a smartphone.|B1|tm|/ˈnaʊəˌdeɪz/|/ˈnaʊəˌdeɪz/
+in a hurry|đang vội|Sorry, I'm in a hurry.|A2|tm|/ɪn ə ˈhʌri/|/ɪn ə ˈhɜːri/
+number|số|What's your phone number?|A2|tm|/ˈnʌmbə/|/ˈnʌmbər/
+zero|số không|Dial zero for reception.|A2|tm|/ˈziərəʊ/|/ˈziəroʊ/
+hundred|trăm|There are a hundred people here.|A2|tm|/ˈhʌndrɪd/|/ˈhʌndrɪd/
+thousand|nghìn|It costs fifty thousand dong.|A2|tm|/ˈθaʊzənd/|/ˈθaʊzənd/
+million|triệu|My salary is ten million dong.|A2|tm|/ˈmɪliən/|/ˈmɪliən/
+billion|tỷ|The project cost two billion dong.|B1|tm|/ˈbɪliən/|/ˈbɪliən/
+first|thứ nhất|This is my first time in Da Nang.|A2|tm|/ˈfɜːst/|/ˈfɜːrst/
+second (order)|thứ hai|He finished second.|A2|tm|/ˈsɛkənd/|/ˈsɛkənd/
+third|thứ ba|My office is on the third floor.|A2|tm|/ˈθɜːd/|/ˈθɜːrd/
+last|cuối cùng; vừa qua|This is the last bus.|A2|tm|/ˈlæst/|/ˈlæst/
+half|một nửa|Half of the class is absent.|A2|tm|/ˈhɑːf/|/ˈhæf/
+double|gấp đôi|The price has doubled.|A2|tm|/ˈdʌbəl/|/ˈdʌbəl/
+percent|phần trăm|Prices rose by five percent.|A2|tm|/pəˈsɛnt/|/pərˈsɛnt/
+pair|đôi, cặp|I bought a pair of shoes.|A2|tm|/ˈpeə/|/ˈpɛr/
+dozen|tá (12)|A dozen eggs, please.|A2|tm|/ˈdʌzən/|/ˈdʌzən/
+smartphone|điện thoại thông minh|Almost everyone has a smartphone.|A2|tc|/ˈsmɑːtfəʊn/|/ˈsmɑːrtfoʊn/
+laptop|máy tính xách tay|I bring my laptop to work.|A2|tc|/ˈlæptɒp/|/ˈlæptɑːp/
+tablet (device)|máy tính bảng|My son watches cartoons on a tablet.|A2|tc|/ˈtæblət/|/ˈtæblət/
+screen|màn hình|The screen is cracked.|A2|tc|/ˈskriːn/|/ˈskriːn/
+keyboard|bàn phím|The keyboard doesn't work.|A2|tc|/ˈkiːbɔːd/|/ˈkiːbɔːrd/
+mouse (computer)|chuột máy tính|I need a new mouse.|A2|tc|/ˈmaʊs/|/ˈmaʊs/
+headphones|tai nghe|Use headphones on the bus.|A2|tc|/ˈhɛdfəʊnz/|/ˈhɛdfoʊnz/
+camera|máy ảnh; camera|The phone has a great camera.|A2|tc|/ˈkæmrə/|/ˈkæmrə/
+app|ứng dụng|Download the app.|A2|tc|/ˈæp/|/ˈæp/
+install|cài đặt|Install the latest version.|A2|tc|/ɪnˈstɔːl/|/ɪnˈstɔːl/
+log in|đăng nhập|Log in with your email.|A2|tc|/ˈlɒɡ ˈɪn/|/ˈlɔɡ ˈɪn/
+log out|đăng xuất|Always log out on shared computers.|A2|tc|/ˈlɒɡ ˈaʊt/|/ˈlɔɡ ˈaʊt/
+username|tên đăng nhập|Enter your username.|A2|tc|/ˈjuːzəˌneɪm/|/ˈjuːzərˌneɪm/
+account|tài khoản|Create an account.|A2|tc|/əˈkaʊnt/|/əˈkaʊnt/
+website|trang web|Visit our website.|A2|tc|/ˈwɛbsaɪt/|/ˈwɛbsaɪt/
+link|đường liên kết|Click the link.|A2|tc|/ˈlɪŋk/|/ˈlɪŋk/
+click|nhấp chuột|Click on the button.|A2|tc|/ˈklɪk/|/ˈklɪk/
+search|tìm kiếm|Search for it on Google.|A2|tc|/ˈsɜːtʃ/|/ˈsɜːrtʃ/
+online|trực tuyến|I study English online.|A2|tc|/ˈɒnlaɪn/|/ˈɑːnlaɪn/
+offline|ngoại tuyến|The app works offline.|B1|tc|/ˈɒflaɪn/|/ˈɔflaɪn/
+internet|mạng internet|The internet is down.|A2|tc|/ˈɪntəˌnɛt/|/ˈɪntərˌnɛt/
+social media|mạng xã hội|She posts on social media every day.|A2|tc|/ˈsəʊʃəl ˈmiːdiːə/|/ˈsoʊʃəl ˈmiːdiːə/
+post (online)|đăng bài|He posted a photo on Facebook.|A2|tc|/ˈpəʊst/|/ˈpoʊst/
+share (online)|chia sẻ|Share this video with your friends.|A2|tc|/ˈʃeə/|/ˈʃɛr/
+follow|theo dõi|Follow us on Instagram.|A2|tc|/ˈfɒləʊ/|/ˈfɑːloʊ/
+message|tin nhắn|Send me a message on Zalo.|A2|tc|/ˈmɛsɪdʒ/|/ˈmɛsɪdʒ/
+video call|cuộc gọi video|Let's have a video call.|A2|tc|/ˈvɪdɪəʊ ˈkɔːl/|/ˈvɪdɪoʊ ˈkɔːl/
+notification|thông báo|Turn off notifications.|B1|tc|/ˌnəʊtɪfɪˈkeɪʃən/|/ˌnoʊtɪfɪˈkeɪʃən/
+battery|pin|The battery is low.|A2|tc|/ˈbætəri/|/ˈbætəri/
+charge (phone)|sạc|I need to charge my phone.|A2|tc|/ˈtʃɑːdʒ/|/ˈtʃɑːrdʒ/
+power bank|sạc dự phòng|Bring a power bank on the trip.|A2|tc|/ˈpaʊə ˈbæŋk/|/ˈpaʊər ˈbæŋk/
+cable|dây cáp|I need a USB cable.|A2|tc|/ˈkeɪbəl/|/ˈkeɪbəl/
+plug|phích cắm; cắm|Plug it in, please.|A2|tc|/ˈplʌɡ/|/ˈplʌɡ/
+socket|ổ cắm điện|Is there a socket near the desk?|A2|tc|/ˈsɒkɪt/|/ˈsɑːkɪt/
+file|tệp|Save the file.|A2|tc|/ˈfaɪl/|/ˈfaɪl/
+folder|thư mục|Put it in this folder.|A2|tc|/ˈfəʊldə/|/ˈfoʊldər/
+save (file)|lưu|Don't forget to save your work.|A2|tc|/ˈseɪv/|/ˈseɪv/
+delete|xóa|Delete the old photos.|A2|tc|/dɪˈliːt/|/dɪˈliːt/
+copy (text)|sao chép|Copy and paste this text.|A2|tc|/ˈkɒpɪ/|/ˈkɑːpi/
+paste|dán|Paste it here.|A2|tc|/ˈpeɪst/|/ˈpeɪst/
+print|in|Print two copies, please.|A2|tc|/ˈprɪnt/|/ˈprɪnt/
+scan|quét|Scan the document and email it.|A2|tc|/ˈskæn/|/ˈskæn/
+attachment|tệp đính kèm|The attachment is too big.|B1|tc|/əˈtætʃmənt/|/əˈtætʃmənt/
+virus (computer)|vi-rút máy tính|My computer has a virus.|A2|tc|/ˈvaɪrəs/|/ˈvaɪrəs/
+hacker|tin tặc|Hackers stole the data.|B1|tc|/ˈhækə/|/ˈhækər/
+screenshot|ảnh chụp màn hình|Send me a screenshot.|A2|tc|/ˈskriːnʃɒt/|/ˈskriːnʃɑːt/
+selfie|ảnh tự sướng|Let's take a selfie!|A2|tc|/ˈsɛlfi/|/ˈsɛlfi/
+emoji|biểu tượng cảm xúc|She always uses emojis.|A2|tc|/ɪˈməʊdʒi/|/ɪˈmoʊdʒi/
+restart|khởi động lại|Try restarting your computer.|A2|tc|/rɪˈstɑːt/|/rɪˈstɑːrt/
+settings|cài đặt (mục)|Go to Settings.|A2|tc|/ˈsɛtɪŋz/|/ˈsɛtɪŋz/
+volume (sound)|âm lượng|Turn the volume down.|A2|tc|/ˈvɒljuːm/|/ˈvɑːljuːm/
+mute|tắt tiếng|You're on mute.|A2|tc|/ˈmjuːt/|/ˈmjuːt/
+How's it going?|Dạo này thế nào?|Hi Lan! How's it going?|A2|kn|/ˌhaʊz ɪt ˈɡəʊɪŋ/|/ˌhaʊz ɪt ˈɡoʊɪŋ/
+What's up?|Có chuyện gì thế? / Khỏe không?|Hey, what's up?|A2|kn|/ˌwɒts ˈʌp/|/ˌwʌts ˈʌp/
+Long time no see.|Lâu rồi không gặp.|Long time no see! How are you?|A2|kn|/ˈlɒŋ ˈtaɪm ˈnəʊ ˈsiː/|/ˈlɔŋ ˈtaɪm ˈnoʊ ˈsiː/
+Not bad.|Cũng được.|How are you? Not bad, thanks.|A2|kn|/ˌnɒt ˈbæd/|/ˌnɑːt ˈbæd/
+So-so.|Tàm tạm.|How was the film? So-so.|A2|kn|/ˌsəʊ ˈsəʊ/|/ˌsoʊ ˈsoʊ/
+Take care.|Giữ gìn sức khỏe nhé.|Bye, take care!|A2|kn|/ˈteɪk ˈkeə/|/ˈteɪk ˈkɛr/
+See you later.|Hẹn gặp lại sau.|I have to go. See you later.|A2|kn|/ˈsiː juː ˈleɪtə/|/ˈsiː juː ˈleɪtər/
+Have a nice day.|Chúc một ngày tốt lành.|Thanks, have a nice day!|A2|kn|/hæv ə ˈnaɪs ˈdeɪ/|/hæv ə ˈnaɪs ˈdeɪ/
+Have a good weekend.|Cuối tuần vui vẻ.|Bye! Have a good weekend.|A2|kn|/hæv ə ˈɡʊd wiːˈkɛnd/|/hæv ə ˈɡʊd ˈwiːkɛnd/
+Nice to see you again.|Rất vui được gặp lại.|Nice to see you again, Mr Park.|A2|kn|/ˈnaɪs tə ˈsiː juː əˈɡɛn/|/ˈnaɪs tə ˈsiː juː əˈɡɛn/
+Thanks a lot.|Cảm ơn nhiều.|Thanks a lot for your help.|A2|kn|/ˈθæŋks ə ˈlɒt/|/ˈθæŋks ə ˈlɑːt/
+You're welcome.|Không có gì.|Thank you! You're welcome.|A2|kn|/jɔː ˈwɛlkʌm/|/jʊr ˈwɛlkʌm/
+No problem.|Không sao đâu.|Can you help me? No problem.|A2|kn|/ˈnəʊ ˈprɒbləm/|/ˈnoʊ ˈprɑːbləm/
+Don't mention it.|Có gì đâu.|Thanks for the lift. Don't mention it.|B1|kn|/ˈdəʊnt ˈmɛnʃən ɪt/|/ˈdoʊnt ˈmɛnʃən ɪt/
+My pleasure.|Rất hân hạnh.|Thanks for dinner. My pleasure.|B1|kn|/maɪ ˈplɛʒə/|/maɪ ˈplɛʒər/
+It's OK.|Không sao.|Sorry I'm late. It's OK.|A2|kn|/ɪts ˌəʊ ˈkeɪ/|/ɪts ˌoʊ ˈkeɪ/
+Never mind.|Thôi, không sao đâu.|Never mind, I'll do it myself.|A2|kn|/ˈnɛvə ˈmaɪnd/|/ˈnɛvər ˈmaɪnd/
+No worries.|Đừng lo.|Sorry about that. No worries!|A2|kn|/ˈnəʊ ˈwʌriz/|/ˈnoʊ ˈwʌriz/
+I'm so sorry.|Tôi rất xin lỗi.|I'm so sorry for the delay.|A2|kn|/aɪm ˌsəʊ ˈsɒri/|/aɪm ˌsoʊ ˈsɑːri/
+My bad.|Lỗi của tôi.|Oops, my bad. I'll fix it.|B1|kn|/maɪ ˈbæd/|/maɪ ˈbæd/
+Excuse me?|Xin lỗi, bạn nói gì?|Excuse me? Could you say that again?|A2|kn|/ɛkˈskjuːs ˌmiː/|/ɛkˈskjuːs ˌmiː/
+Pardon?|Xin nhắc lại?|Pardon? I didn't catch that.|A2|kn|/ˈpɑːdən/|/ˈpɑːrdən/
+Sorry, I didn't catch that.|Xin lỗi, tôi nghe không rõ.|Sorry, I didn't catch that. Can you repeat it?|B1|kn|/ˈsɒri aɪ ˈdɪdnt ˈkætʃ ˈðæt/|/ˈsɑːri aɪ ˈdɪdnt ˈkætʃ ˈðæt/
+Could you speak more slowly?|Bạn nói chậm hơn được không?|Could you speak more slowly, please?|A2|kn|/kʊd juː ˈspiːk ˈmɔː ˈsləʊli/|/kʊd juː ˈspiːk ˈmɔːr ˈsloʊli/
+What do you mean?|Ý bạn là gì?|What do you mean by "ASAP"?|A2|kn|/ˌwɒt ˈduː juː ˈmiːn/|/ˌwʌt ˈduː juː ˈmiːn/
+I see.|Tôi hiểu rồi.|I see. That makes sense.|A2|kn|/aɪ ˈsiː/|/aɪ ˈsiː/
+Got it.|Hiểu rồi.|Got it. I'll send it today.|A2|kn|/ˈɡɒt ɪt/|/ˈɡɑːt ɪt/
+Makes sense.|Hợp lý đấy.|That makes sense. Thanks.|B1|kn|/ˌmeɪks ˈsɛns/|/ˌmeɪks ˈsɛns/
+Exactly.|Chính xác.|Exactly! That's what I think.|A2|kn|/ɛɡˈzæktli/|/ɛɡˈzæktli/
+I think so.|Tôi nghĩ vậy.|Will it rain? I think so.|A2|kn|/aɪ ˈθɪŋk ˈsəʊ/|/aɪ ˈθɪŋk ˈsoʊ/
+I don't think so.|Tôi không nghĩ vậy.|Is he coming? I don't think so.|A2|kn|/aɪ ˈdəʊnt ˈθɪŋk ˈsəʊ/|/aɪ ˈdoʊnt ˈθɪŋk ˈsoʊ/
+I'm not sure.|Tôi không chắc.|I'm not sure about the time.|A2|kn|/aɪm ˌnɒt ˈʃʊə/|/aɪm ˌnɑːt ˈʃʊr/
+No idea.|Chịu, không biết.|Where's Nam? No idea.|A2|kn|/ˈnəʊ aɪˈdiə/|/ˈnoʊ aɪˈdiə/
+It depends.|Còn tùy.|Will you come? It depends.|B1|kn|/ɪt dɪˈpɛndz/|/ɪt dɪˈpɛndz/
+Sounds good.|Nghe được đấy.|Lunch at twelve? Sounds good.|A2|kn|/ˈsaʊndz ˈɡʊd/|/ˈsaʊndz ˈɡʊd/
+Sounds great!|Nghe tuyệt đấy!|Let's go to the beach. Sounds great!|A2|kn|/ˈsaʊndz ˈɡreɪt/|/ˈsaʊndz ˈɡreɪt/
+Good idea.|Ý hay đấy.|Let's take a taxi. Good idea.|A2|kn|/ˈɡʊd aɪˈdiə/|/ˈɡʊd aɪˈdiə/
+Why not?|Sao lại không?|Coffee after work? Why not?|A2|kn|/ˌwaɪ ˈnɒt/|/ˌwaɪ ˈnɑːt/
+Of course.|Tất nhiên rồi.|Can I sit here? Of course.|A2|kn|/ɒv ˈkɔːs/|/ʌv ˈkɔːrs/
+Sure.|Chắc chắn rồi / Được thôi.|Can you help? Sure.|A2|kn|/ˈʃʊə/|/ˈʃʊr/
+No way!|Không đời nào! / Thật á!|He won the lottery? No way!|B1|kn|/ˈnəʊ ˈweɪ/|/ˈnoʊ ˈweɪ/
+Really?|Thật không?|I'm getting married. Really? Congratulations!|A2|kn|/ˈriəlɪ/|/ˈriəli/
+Are you kidding?|Bạn đùa à?|It costs 10 million? Are you kidding?|B1|kn|/ɑː juː ˈkɪdɪŋ/|/ɑːr juː ˈkɪdɪŋ/
+You're kidding!|Đùa à!|You passed? You're kidding!|B1|kn|/jɔː ˈkɪdɪŋ/|/jʊr ˈkɪdɪŋ/
+I can't believe it.|Tôi không thể tin được.|We won! I can't believe it.|A2|kn|/aɪ ˈkɑːnt bɪˈliːv ɪt/|/aɪ ˈkænt bɪˈliːv ɪt/
+That's great!|Tuyệt quá!|I got the job. That's great!|A2|kn|/ðæts ˈɡreɪt/|/ðæts ˈɡreɪt/
+Well done!|Làm tốt lắm!|You finished early. Well done!|A2|kn|/ˈwɛl ˈdʌn/|/ˈwɛl ˈdʌn/
+Good job!|Giỏi lắm!|Good job, team!|A2|kn|/ˈɡʊd ˈdʒɒb/|/ˈɡʊd ˈdʒɑːb/
+Congratulations!|Chúc mừng!|Congratulations on your new baby!|A2|kn|/kəŋɡˈrætʃʊˈleɪʃənz/|/kəŋɡˈrætʃʊˈleɪʃənz/
+Good luck!|Chúc may mắn!|Good luck with your interview!|A2|kn|/ˈɡʊd ˈlʌk/|/ˈɡʊd ˈlʌk/
+Cheers!|Cạn ly! / Cảm ơn nhé!|Cheers! To our success!|A2|kn|/ˈtʃiəz/|/ˈtʃɪrz/
+Bless you.|Chúc sức khỏe (khi ai hắt hơi).|Atchoo! Bless you.|A2|kn|/ˈblɛs juː/|/ˈblɛs juː/
+What a pity.|Tiếc quá.|You can't come? What a pity.|B1|kn|/ˌwɒt ə ˈpɪti/|/ˌwʌt ə ˈpɪti/
+That's too bad.|Tệ quá / Tiếc thật.|You're sick? That's too bad.|A2|kn|/ðæts ˈtuː ˈbæd/|/ðæts ˈtuː ˈbæd/
+Oh no!|Ôi không!|Oh no! I forgot my wallet.|A2|kn|/ˈəʊ ˈnəʊ/|/ˈoʊ ˈnoʊ/
+Calm down.|Bình tĩnh nào.|Calm down. Everything will be fine.|A2|kn|/ˈkɑːm ˈdaʊn/|/ˈkɑːm ˈdaʊn/
+Take it easy.|Cứ từ từ / Thư giãn đi.|Take it easy. Don't work too hard.|B1|kn|/ˈteɪk ɪt ˈiːzi/|/ˈteɪk ɪt ˈiːzi/
+Don't worry.|Đừng lo.|Don't worry, I'll help you.|A2|kn|/ˈdəʊnt ˈwʌri/|/ˈdoʊnt ˈwʌri/
+Cheer up!|Vui lên nào!|Cheer up! It's not the end of the world.|B1|kn|/ˈtʃiə ˈʌp/|/ˈtʃɪr ˈʌp/
+Hang in there.|Cố lên.|Hang in there, it's almost Friday.|B1|kn|/ˈhæŋ ɪn ˈðeə/|/ˈhæŋ ɪn ˈðɛr/
+You can do it!|Bạn làm được mà!|Come on, you can do it!|A2|kn|/juː kæn ˈduː ɪt/|/juː kæn ˈduː ɪt/
+Hurry up!|Nhanh lên!|Hurry up! The bus is leaving.|A2|kn|/ˈhʌri ˈʌp/|/ˈhɜːri ˈʌp/
+Wait a moment.|Chờ một chút.|Wait a moment, please.|A2|kn|/ˈweɪt ə ˈməʊmənt/|/ˈweɪt ə ˈmoʊmənt/
+Hold on.|Giữ máy / chờ chút.|Hold on, I'll check.|A2|kn|/ˈhəʊld ˈɒn/|/ˈhoʊld ˈɔn/
+Just a second.|Một giây thôi.|Just a second, I'm coming.|A2|kn|/ˈdʒʌst ə ˈsɛkənd/|/ˈdʒʌst ə ˈsɛkənd/
+Here you are.|Của bạn đây.|Here you are, your coffee.|A2|kn|/ˈhiə juː ɑː/|/ˈhɪr juː ɑːr/
+Here we go.|Bắt đầu nào.|Here we go! Let's start.|B1|kn|/ˈhiə wiː ˈɡəʊ/|/ˈhɪr wiː ˈɡoʊ/
+Let's go!|Đi thôi!|Everyone's ready? Let's go!|A2|kn|/ˈlɛts ˈɡəʊ/|/ˈlɛts ˈɡoʊ/
+After you.|Mời bạn đi trước.|After you, please.|A2|kn|/ˈæftə juː/|/ˈæftər juː/
+Help yourself.|Cứ tự nhiên.|There's food on the table. Help yourself.|B1|kn|/ˈhɛlp jɔːˈsɛlf/|/ˈhɛlp jɔːrˈsɛlf/
+Make yourself at home.|Cứ tự nhiên như ở nhà.|Come in. Make yourself at home.|B1|kn|/ˌmeɪk jɔːˈsɛlf æt ˈhəʊm/|/ˌmeɪk jɔːrˈsɛlf æt ˈhoʊm/
+Enjoy your meal.|Chúc ngon miệng.|Here's your pho. Enjoy your meal.|A2|kn|/ɛnˈdʒɔɪ jɔː ˈmiːl/|/ɛnˈdʒɔɪ jʊr ˈmiːl/
+It's on me.|Tôi mời.|Put your money away. It's on me.|B1|kn|/ɪts ˈɒn ˌmiː/|/ɪts ˈɔn ˌmiː/
+Let's split the bill.|Chia tiền nhé.|Let's split the bill.|B1|kn|/ˈlɛts ˈsplɪt ðə ˈbɪl/|/ˈlɛts ˈsplɪt ðə ˈbɪl/
+Keep the change.|Không cần thối lại.|Here's 100,000. Keep the change.|A2|kn|/ˈkiːp ðə ˈtʃeɪndʒ/|/ˈkiːp ðə ˈtʃeɪndʒ/
+How much is it?|Cái này bao nhiêu tiền?|Excuse me, how much is it?|A2|kn|/ˌhaʊ ˈmʌtʃ ɪz ɪt/|/ˌhaʊ ˈmʌtʃ ɪz ɪt/
+Can I have a look?|Tôi xem được không?|Can I have a look at that bag?|A2|kn|/kæn aɪ hæv ə ˈlʊk/|/kæn aɪ hæv ə ˈlʊk/
+I'm just looking.|Tôi chỉ xem thôi.|Can I help you? I'm just looking, thanks.|A2|kn|/aɪm ˈdʒʌst ˈlʊkɪŋ/|/aɪm ˈdʒʌst ˈlʊkɪŋ/
+I'll take it.|Tôi lấy cái này.|It fits well. I'll take it.|A2|kn|/aɪl ˈteɪk ɪt/|/aɪl ˈteɪk ɪt/
+Can you make it cheaper?|Bớt chút được không?|Can you make it cheaper?|A2|kn|/kæn juː ˌmeɪk ɪt ˈtʃiːpə/|/kæn juː ˌmeɪk ɪt ˈtʃiːpər/
+That's a rip-off!|Đắt cắt cổ!|Two hundred dollars? That's a rip-off!|B1|kn|/ðæts ə ˈrɪp ˈɒf/|/ðæts ə ˈrɪp ˈɔf/
+What's wrong?|Có chuyện gì vậy?|You look sad. What's wrong?|A2|kn|/ˌwɒts ˈrɒŋ/|/ˌwʌts ˈrɔŋ/
+What happened?|Chuyện gì đã xảy ra?|What happened to your arm?|A2|kn|/ˌwɒt ˈhæpənd/|/ˌwʌt ˈhæpənd/
+Are you OK?|Bạn ổn chứ?|You fell! Are you OK?|A2|kn|/ɑː juː ˌəʊˈkeɪ/|/ɑːr juː ˌoʊˈkeɪ/
+I'm fine, thanks.|Tôi ổn, cảm ơn.|Are you OK? I'm fine, thanks.|A2|kn|/aɪm ˈfaɪn ˈθæŋks/|/aɪm ˈfaɪn ˈθæŋks/
+I'm exhausted.|Tôi mệt rã rời.|I worked twelve hours. I'm exhausted.|B1|kn|/aɪm ɛɡˈzɔːstɪd/|/aɪm ɛɡˈzɔːstɪd/
+I'm starving.|Tôi đói lả.|Let's eat. I'm starving.|B1|kn|/aɪm ˈstɑːvɪŋ/|/aɪm ˈstɑːrvɪŋ/
+I'm full.|Tôi no rồi.|No more rice, thanks. I'm full.|A2|kn|/aɪm ˈfʊl/|/aɪm ˈfʊl/
+It's up to you.|Tùy bạn.|Pizza or pho? It's up to you.|B1|kn|/ɪts ˈʌp tə juː/|/ɪts ˈʌp tə juː/
+Whatever you like.|Tùy bạn thích.|Where shall we go? Whatever you like.|A2|kn|/wɒˈtɛvə juː ˈlaɪk/|/wʌˈtɛvər juː ˈlaɪk/
+I don't mind.|Tôi sao cũng được.|Tea or coffee? I don't mind.|A2|kn|/aɪ ˈdəʊnt ˈmaɪnd/|/aɪ ˈdoʊnt ˈmaɪnd/
+Me too.|Tôi cũng vậy.|I'm hungry. Me too.|A2|kn|/ˌmiː ˈtuː/|/ˌmiː ˈtuː/
+Me neither.|Tôi cũng không.|I don't like durian. Me neither.|A2|kn|/ˌmiː ˈnaɪðə/|/ˌmiː ˈniːðər/
+Same here.|Tôi cũng thế.|I'm so tired. Same here.|B1|kn|/ˈseɪm ˈhiə/|/ˈseɪm ˈhɪr/
+Fair enough.|Cũng phải.|I'm busy today. Fair enough.|B1|kn|/ˈfeə ɪˈnʌf/|/ˈfɛr ɪˈnʌf/
+That's right.|Đúng vậy.|You live in Hai Phong? That's right.|A2|kn|/ðæts ˈraɪt/|/ðæts ˈraɪt/
+I agree.|Tôi đồng ý.|I agree. Let's do that.|A2|kn|/aɪ əɡˈriː/|/aɪ əɡˈriː/
+I'm afraid not.|E là không.|Is there any coffee? I'm afraid not.|B1|kn|/aɪm əˈfreɪd ˈnɒt/|/aɪm əˈfreɪd ˈnɑːt/
+I'm afraid so.|E là vậy.|Is the flight cancelled? I'm afraid so.|B1|kn|/aɪm əˈfreɪd ˈsəʊ/|/aɪm əˈfreɪd ˈsoʊ/
+I'm on my way.|Tôi đang trên đường đến.|Don't worry, I'm on my way.|A2|kn|/aɪm ˌɒn maɪ ˈweɪ/|/aɪm ˌɔn maɪ ˈweɪ/
+I'll be there in five minutes.|Năm phút nữa tôi đến.|Wait for me. I'll be there in five minutes.|A2|kn|/aɪl biː ðeə ɪn ˈfaɪv ˈmɪnɪts/|/aɪl biː ðɛr ɪn ˈfaɪv ˈmɪnɪts/
+I'm running late.|Tôi đến muộn một chút.|Sorry, I'm running late.|B1|kn|/aɪm ˈrʌnɪŋ ˈleɪt/|/aɪm ˈrʌnɪŋ ˈleɪt/
+I'm stuck in traffic.|Tôi đang bị kẹt xe.|I'm stuck in traffic. Start without me.|B1|kn|/aɪm ˈstʌk ɪn ˈtræfɪk/|/aɪm ˈstʌk ɪn ˈtræfɪk/
+What a coincidence!|Trùng hợp quá!|You're from Hue too? What a coincidence!|B1|kn|/ˌwɒt ə kəʊˈɪnsɪdəns/|/ˌwʌt ə koʊˈɪnsɪdəns/
+Small world!|Trái đất tròn thật!|You know my brother? Small world!|B1|kn|/ˈsmɔːl ˈwɜːld/|/ˈsmɔːl ˈwɜːrld/
+It's not a big deal.|Không có gì to tát đâu.|Don't worry. It's not a big deal.|B1|kn|/ɪts ˌnɒtə ˈbɪɡ ˈdiːl/|/ɪts ˌnɑːtə ˈbɪɡ ˈdiːl/
+Forget it.|Thôi bỏ đi.|Forget it, it doesn't matter.|A2|kn|/fəˈɡɛt ɪt/|/fərˈɡɛt ɪt/
+It doesn't matter.|Không quan trọng đâu.|It doesn't matter if you're late.|A2|kn|/ɪt ˈdʌzənt ˈmætə/|/ɪt ˈdʌzənt ˈmætər/
+Let me think about it.|Để tôi suy nghĩ đã.|Let me think about it and call you.|A2|kn|/ˈlɛt ˌmiː ˈθɪŋk əˈbaʊt ɪt/|/ˈlɛt ˌmiː ˈθɪŋk əˈbaʊt ɪt/
+Let me see.|Để tôi xem.|Let me see... yes, it's on Friday.|A2|kn|/ˈlɛt ˌmiː ˈsiː/|/ˈlɛt ˌmiː ˈsiː/
+By the way.|À nhân tiện.|By the way, did you call Minh?|B1|kn|/baɪ ðə ˈweɪ/|/baɪ ðə ˈweɪ/
+Anyway.|Dù sao thì.|Anyway, let's go back to work.|B1|kn|/ˈɛnɪˌweɪ/|/ˈɛnɪˌweɪ/
+To be honest.|Thành thật mà nói.|To be honest, I don't like it.|B1|kn|/təbi ˈɒnɪst/|/təbi ˈɑːnɪst/
+In my opinion.|Theo ý tôi.|In my opinion, it's too expensive.|B1|kn|/ɪn maɪ əˈpɪniən/|/ɪn maɪ əˈpɪniən/
+As far as I know.|Theo như tôi biết.|As far as I know, he left the company.|B1|kn|/æz ˈfɑː æz aɪ ˈnəʊ/|/æz ˈfɑːr æz aɪ ˈnoʊ/
+Just kidding.|Đùa thôi.|You're fired! Just kidding.|A2|kn|/ˈdʒʌst ˈkɪdɪŋ/|/ˈdʒʌst ˈkɪdɪŋ/
+Good for you!|Tốt cho bạn quá!|You're going to Japan? Good for you!|B1|kn|/ˈɡʊd fɔː juː/|/ˈɡʊd fɔːr juː/
+I'm in.|Tôi tham gia.|Karaoke tonight? I'm in!|B1|kn|/aɪm ˈɪn/|/aɪm ˈɪn/
+Count me in.|Tính cả tôi nữa.|Football on Sunday? Count me in.|B1|kn|/ˈkaʊnt ˌmiː ˈɪn/|/ˈkaʊnt ˌmiː ˈɪn/
+I'll pass.|Tôi xin kiếu.|More beer? I'll pass, thanks.|B1|kn|/aɪl ˈpæs/|/aɪl ˈpæs/
+Maybe next time.|Để lần sau nhé.|I can't today. Maybe next time.|A2|kn|/ˈmeɪbiː ˈnɛkst ˈtaɪm/|/ˈmeɪbiː ˈnɛkst ˈtaɪm/
+It's a deal.|Quyết vậy nhé.|You cook, I wash up. It's a deal.|B1|kn|/ɪts ə ˈdiːl/|/ɪts ə ˈdiːl/
+Deal!|Chốt!|Ten dollars? Deal!|B1|kn|/ˈdiːl/|/ˈdiːl/
+Watch out!|Coi chừng!|Watch out! There's a car.|A2|kn|/ˈwɒtʃ ˈaʊt/|/ˈwɑːtʃ ˈaʊt/
+Be careful!|Cẩn thận!|Be careful, the floor is wet.|A2|kn|/biː ˈkeəfəl/|/biː ˈkɛrfəl/
+Keep in touch.|Giữ liên lạc nhé.|Bye! Keep in touch.|B1|kn|/ˈkiːp ɪn ˈtʌtʃ/|/ˈkiːp ɪn ˈtʌtʃ/
+Say hi to your family.|Gửi lời hỏi thăm gia đình nhé.|Say hi to your family for me.|A2|kn|/ˈseɪ ˈhaɪ tə jɔː ˈfæmɪli/|/ˈseɪ ˈhaɪ tə jʊr ˈfæmɪli/
+Thanks for coming.|Cảm ơn đã đến.|Thanks for coming to my party.|A2|kn|/ˈθæŋks fɔː ˈkʌmɪŋ/|/ˈθæŋks fɔːr ˈkʌmɪŋ/
+Sorry to bother you.|Xin lỗi đã làm phiền.|Sorry to bother you, but where's room 5?|B1|kn|/ˈsɒri tə ˈbɒðə juː/|/ˈsɑːri tə ˈbɑːðər juː/
+Do you have a minute?|Bạn rảnh một chút không?|Do you have a minute? I need to ask you something.|A2|kn|/ˈduː juː hæv ə ˈmɪnɪt/|/ˈduː juː hæv ə ˈmɪnɪt/
+Can you do me a favour?|Bạn giúp tôi một việc được không?|Can you do me a favour and close the window?|B1|kn|/kæn juː ˈduː ˌmiː ə ˈfeɪvə/|/kæn juː ˈduː ˌmiː ə ˈfeɪvər/
+I owe you one.|Tôi nợ bạn một lần.|Thanks for helping. I owe you one.|B1|kn|/aɪ ˈəʊ juː ˌwɒn/|/aɪ ˈoʊ juː ˌwʌn/
+It's getting late.|Muộn rồi.|It's getting late. I should go home.|A2|kn|/ɪts ˌɡɛtɪŋ ˈleɪt/|/ɪts ˌɡɛtɪŋ ˈleɪt/
+Time to go.|Đến giờ đi rồi.|Time to go, everyone.|A2|kn|/ˈtaɪm tə ˈɡəʊ/|/ˈtaɪm tə ˈɡoʊ/
+What a day!|Thật là một ngày dài!|What a day! I'm so tired.|A2|kn|/ˌwɒt ə ˈdeɪ/|/ˌwʌt ə ˈdeɪ/
+Speaking of which...|Nhân nói đến chuyện đó...|Speaking of which, when is the party?|B1|kn|/ˈspiːkɪŋ ɒvˈwɪtʃ/|/ˈspiːkɪŋ ʌvˈwɪtʃ/
+Guess what?|Đoán xem?|Guess what? I passed my test!|A2|kn|/ˈɡɛs ˈwɒt/|/ˈɡɛs ˈwʌt/
+No kidding?|Không đùa chứ?|You quit your job? No kidding?|B1|kn|/ˈnəʊ ˈkɪdɪŋ/|/ˈnoʊ ˈkɪdɪŋ/
+I'm all ears.|Tôi đang nghe đây.|Tell me everything. I'm all ears.|B1|kn|/aɪm ˈɔːl ˈiəz/|/aɪm ˈɔːl ˈɪrz/
+Piece of cake.|Dễ như ăn bánh.|The test? Piece of cake.|B1|kn|/ˈpiːs ɒv ˈkeɪk/|/ˈpiːs ʌv ˈkeɪk/
+It's not my cup of tea.|Không phải sở thích của tôi.|Horror films are not my cup of tea.|B1|kn|/ɪts ˌnɒt maɪ ˈkʌp ɒv ˈtiː/|/ɪts ˌnɑːt maɪ ˈkʌp ʌv ˈtiː/
+I'm broke.|Tôi cháy túi rồi.|I can't go out. I'm broke.|B1|kn|/aɪm ˈbrəʊk/|/aɪm ˈbroʊk/
+Let's call it a day.|Hôm nay đến đây thôi.|It's six o'clock. Let's call it a day.|B1|kn|/ˈlɛts ˈkɔːl ɪt ə ˈdeɪ/|/ˈlɛts ˈkɔːl ɪt ə ˈdeɪ/
+Better late than never.|Muộn còn hơn không.|You finally came! Better late than never.|B1|kn|/ˈbɛtə ˈleɪt ðən ˈnɛvə/|/ˈbɛtər ˈleɪt ðən ˈnɛvər/
+Practice makes perfect.|Có công mài sắt có ngày nên kim.|Keep speaking English. Practice makes perfect.|B1|kn|/ˈpræktɪs ˌmeɪks ˈpɜːfɛkt/|/ˈpræktɪs ˌmeɪks ˈpɜːrfɛkt/
+Easy come, easy go.|Của thiên trả địa.|I lost the money I won. Easy come, easy go.|B1|kn|/ˈiːzi ˈkʌm ˈiːzi ˈɡəʊ/|/ˈiːzi ˈkʌm ˈiːzi ˈɡoʊ/
+No pain, no gain.|Không có khó khăn thì không có thành công.|Training is hard, but no pain, no gain.|B1|kn|/ˈnəʊ ˈpeɪn ˈnəʊ ˈɡeɪn/|/ˈnoʊ ˈpeɪn ˈnoʊ ˈɡeɪn/
+Time flies.|Thời gian trôi nhanh quá.|It's December already? Time flies.|A2|kn|/ˈtaɪm ˈflaɪz/|/ˈtaɪm ˈflaɪz/
+Better safe than sorry.|Cẩn tắc vô áy náy.|Take an umbrella. Better safe than sorry.|B1|kn|/ˈbɛtə ˈseɪf ðən ˈsɒri/|/ˈbɛtər ˈseɪf ðən ˈsɑːri/
+What's the matter?|Có chuyện gì thế?|What's the matter? You look worried.|A2|kn|/ˌwɒts ðə ˈmætə/|/ˌwʌts ðə ˈmætər/
+Never give up.|Đừng bao giờ bỏ cuộc.|Never give up on your dreams.|A2|kn|/ˈnɛvə ˈɡɪv ˈʌp/|/ˈnɛvər ˈɡɪv ˈʌp/
+people|mọi người|Many people work here.|A2|pp|/ˈpiːpəl/|/ˈpiːpəl/
+person|người|She is a very nice person.|A2|pp|/ˈpɜːsən/|/ˈpɜːrsən/
+man|đàn ông|The man in the blue shirt is my boss.|A2|pp|/ˈmæn/|/ˈmæn/
+woman|phụ nữ|The woman at the desk can help you.|A2|pp|/ˈwʊmən/|/ˈwʊmən/
+boy|cậu bé|The boy is playing football.|A2|pp|/ˈbɔɪ/|/ˈbɔɪ/
+girl|cô bé|The girl is reading a book.|A2|pp|/ˈɡɜːl/|/ˈɡɜːrl/
+guy|anh chàng|He's a nice guy.|A2|pp|/ˈɡaɪ/|/ˈɡaɪ/
+stranger|người lạ|Don't talk to strangers.|A2|pp|/ˈstreɪndʒə/|/ˈstreɪndʒər/
+guest|khách|We have guests tonight.|A2|pp|/ˈɡɛst/|/ˈɡɛst/
+customer|khách hàng|The customer is always right.|A2|pp|/ˈkʌstəmə/|/ˈkʌstəmər/
+owner|chủ sở hữu|The owner of the café is my friend.|A2|pp|/ˈəʊnə/|/ˈoʊnər/
+boyfriend|bạn trai|Her boyfriend is a chef.|A2|pp|/ˈbɔɪfrɛnd/|/ˈbɔɪfrɛnd/
+girlfriend|bạn gái|I'm meeting my girlfriend tonight.|A2|pp|/ˈɡɜːlfrɛnd/|/ˈɡɜːrlfrɛnd/
+classmate|bạn cùng lớp|He was my classmate at school.|A2|pp|/ˈklæsmeɪt/|/ˈklæsmeɪt/
+student|học sinh, sinh viên|I'm a university student.|A2|pp|/ˈstjuːdənt/|/ˈstuːdənt/
+teacher|giáo viên|My teacher is very patient.|A2|pp|/ˈtiːtʃə/|/ˈtiːtʃər/
+police officer|cảnh sát|Ask the police officer for help.|A2|pp|/pəˈliːs ˈɒfɪsə/|/pəˈliːs ˈɑːfɪsər/
+firefighter|lính cứu hỏa|The firefighters arrived quickly.|A2|pp|/ˈfaɪəfaɪtə/|/ˈfaɪərfaɪtər/
+farmer|nông dân|My grandfather is a farmer.|A2|pp|/ˈfɑːmə/|/ˈfɑːrmər/
+chef|đầu bếp|The chef cooks amazing food.|A2|pp|/ˈʃɛf/|/ˈʃɛf/
+shop assistant|nhân viên bán hàng|Ask the shop assistant.|A2|pp|/ˈʃɒp əˈsɪstənt/|/ˈʃɑːp əˈsɪstənt/
+security guard|bảo vệ|The security guard checks our bags.|A2|pp|/sɪˈkjʊərɪti ˈɡɑːd/|/sɪˈkjʊrɪti ˈɡɑːrd/
+cleaner|nhân viên vệ sinh|The cleaner comes every morning.|A2|pp|/ˈkliːnə/|/ˈkliːnər/
+lawyer|luật sư|You should talk to a lawyer.|B1|pp|/ˈlɔɪə/|/ˈlɔɪər/
+accountant|kế toán|She works as an accountant.|A2|pp|/əˈkaʊntənt/|/əˈkaʊntənt/
+businessman|doanh nhân|He is a successful businessman.|A2|pp|/ˈbɪznəsmən/|/ˈbɪznəsmən/
+age|tuổi|What's your age?|A2|pp|/ˈeɪdʒ/|/ˈeɪdʒ/
+years old|tuổi|I'm twenty-five years old.|A2|pp|/ˈjiəz ˈəʊld/|/ˈjɪrz ˈoʊld/
+born|được sinh ra|I was born in Nam Dinh.|A2|pp|/ˈbɔːn/|/ˈbɔːrn/
+hometown|quê nhà|My hometown is in Thanh Hoa.|A2|pp|/ˈhəʊmtaʊn/|/ˈhoʊmtaʊn/
+address|địa chỉ|What's your address?|A2|pp|/əˈdrɛs/|/əˈdrɛs/
+nationality|quốc tịch|What's your nationality?|A2|pp|/ˌnæʃəˈnælɪti/|/ˌnæʃəˈnælɪti/
+Vietnamese|người/tiếng Việt|I'm Vietnamese.|A2|pp|/ˌviːɛtnəˈmiːz/|/ˌviːɛtnəˈmiːz/
+foreigner|người nước ngoài|Many foreigners live in Da Nang.|A2|pp|/ˈfɒrənə/|/ˈfɔːrənər/
+country|đất nước|Which country are you from?|A2|pp|/ˈkʌntri/|/ˈkʌntri/
+capital|thủ đô|Hanoi is the capital of Vietnam.|A2|pp|/ˈkæpɪtəl/|/ˈkæpɪtəl/
+province|tỉnh|Quang Ninh province is in the north.|B1|pp|/ˈprɒvɪns/|/ˈprɑːvɪns/
+village|làng|My grandparents live in a small village.|A2|pp|/ˈvɪlɪdʒ/|/ˈvɪlɪdʒ/
+town|thị trấn|It's a quiet little town.|A2|pp|/ˈtaʊn/|/ˈtaʊn/
+street|đường phố|I live on Tran Hung Dao Street.|A2|pp|/ˈstriːt/|/ˈstriːt/
+road|con đường|The road is very busy.|A2|pp|/ˈrəʊd/|/ˈroʊd/
+alley|ngõ, hẻm|My house is in a small alley.|A2|pp|/ˈælɪ/|/ˈæli/
+corner|góc (đường)|The café is on the corner.|A2|pp|/ˈkɔːnə/|/ˈkɔːrnər/
+bridge|cây cầu|Cross the bridge and turn left.|A2|pp|/ˈbrɪdʒ/|/ˈbrɪdʒ/
+park|công viên|Let's walk in the park.|A2|pp|/ˈpɑːk/|/ˈpɑːrk/
+square|quảng trường|There's a concert in the square.|A2|pp|/ˈskweə/|/ˈskwɛr/
+bank|ngân hàng|The bank opens at eight.|A2|pp|/ˈbæŋk/|/ˈbæŋk/
+post office|bưu điện|Where is the post office?|A2|pp|/ˈpəʊst ˈɒfɪs/|/ˈpoʊst ˈɑːfɪs/
+police station|đồn cảnh sát|Report it to the police station.|A2|pp|/pəˈliːs ˈsteɪʃən/|/pəˈliːs ˈsteɪʃən/
+library|thư viện|I study at the library.|A2|pp|/ˈlaɪbrəri/|/ˈlaɪbrɛri/
+school|trường học|My children go to school by bus.|A2|pp|/ˈskuːl/|/ˈskuːl/
+university|trường đại học|She studies at Hanoi University.|A2|pp|/ˌjuːnɪˈvɜːsɪti/|/ˌjuːnɪˈvɜːrsɪti/
+church|nhà thờ|There is an old church in the centre.|A2|pp|/ˈtʃɜːtʃ/|/ˈtʃɜːrtʃ/
+cinema|rạp chiếu phim|Let's go to the cinema tonight.|A2|pp|/ˈsɪnəmə/|/ˈsɪnəmə/
+theatre|nhà hát|The theatre is beautiful.|A2|pp|/ˈθiətə/|/ˈθiətər/
+café|quán cà phê|Let's meet at the café.|A2|pp|/kæˈfeɪ/|/kæˈfeɪ/
+bar|quán bar|They went to a bar after work.|A2|pp|/ˈbɑː/|/ˈbɑːr/
+bakery|tiệm bánh|The bakery sells fresh bread.|A2|pp|/ˈbeɪkəri/|/ˈbeɪkəri/
+hairdresser|tiệm cắt tóc|I go to the hairdresser every month.|A2|pp|/ˈheədrɛsə/|/ˈhɛrdrɛsər/
+petrol station|trạm xăng|Stop at the petrol station.|A2|pp|/ˈpɛtrəl ˈsteɪʃən/|/ˈpɛtrəl ˈsteɪʃən/
+zoo|sở thú|The kids love the zoo.|A2|pp|/ˈzuː/|/ˈzuː/
+building|tòa nhà|Our office is in that tall building.|A2|pp|/ˈbɪldɪŋ/|/ˈbɪldɪŋ/
+entrance|lối vào|The entrance is on the left.|A2|pp|/ˈɛntrəns/|/ˈɛntrəns/
+exit|lối ra|Where is the exit?|A2|pp|/ˈɛɡzɪt/|/ˈɛɡzɪt/
+upstairs|tầng trên|The bathroom is upstairs.|A2|pp|/ʌpˈsteəz/|/ʌpˈstɛrz/
+downstairs|tầng dưới|The kitchen is downstairs.|A2|pp|/ˈdaʊnsteəz/|/ˈdaʊnstɛrz/
+inside|bên trong|Let's wait inside.|A2|pp|/ɪnˈsaɪd/|/ɪnˈsaɪd/
+outside|bên ngoài|It's raining outside.|A2|pp|/aʊtˈsaɪd/|/aʊtˈsaɪd/
+in front of|phía trước|Park in front of the house.|A2|pp|/ɪn ˈfrʌnt ɒv/|/ɪn ˈfrʌnt ʌv/
+behind|phía sau|The garden is behind the house.|A2|pp|/bɪˈhaɪnd/|/bɪˈhaɪnd/
+between|ở giữa|The bank is between the café and the shop.|A2|pp|/bɪˈtwiːn/|/bɪˈtwiːn/
+above|ở trên|There's a fan above the bed.|A2|pp|/əˈbʌv/|/əˈbʌv/
+below|ở dưới|Write your name below.|A2|pp|/bɪˈləʊ/|/bɪˈloʊ/
+under|bên dưới|The cat is under the table.|A2|pp|/ˈʌndə/|/ˈʌndər/
+around|xung quanh|There are shops around the hotel.|A2|pp|/əˈraʊnd/|/əˈraʊnd/
+here|ở đây|Come here.|A2|pp|/ˈhiə/|/ˈhɪr/
+there|ở đó|Put it over there.|A2|pp|/ˈðeə/|/ˈðɛr/
+everywhere|khắp mọi nơi|I looked everywhere for my keys.|A2|pp|/ˈɛvrɪˌweə/|/ˈɛvrɪˌwɛr/
+somewhere|đâu đó|Let's go somewhere quiet.|A2|pp|/ˈsʌmweə/|/ˈsʌmwɛr/
+north|phía bắc|Sapa is in the north.|A2|pp|/ˈnɔːθ/|/ˈnɔːrθ/
+south|phía nam|Can Tho is in the south.|A2|pp|/ˈsaʊθ/|/ˈsaʊθ/
+east|phía đông|The sun rises in the east.|A2|pp|/ˈiːst/|/ˈiːst/
+west|phía tây|The sun sets in the west.|A2|pp|/ˈwɛst/|/ˈwɛst/
+centre|trung tâm|The hotel is in the city centre.|A2|pp|/ˈsɛntə/|/ˈsɛntər/
+appearance|ngoại hình|Don't judge by appearance.|B1|pp|/əˈpiərəns/|/əˈpɪrəns/
+hair|tóc|She has long black hair.|A2|pp|/ˈheə/|/ˈhɛr/
+slim|mảnh mai|She is tall and slim.|A2|pp|/ˈslɪm/|/ˈslɪm/
+fat|béo|My cat is getting fat.|A2|pp|/ˈfæt/|/ˈfæt/
+handsome|đẹp trai|He is very handsome.|A2|pp|/ˈhændsʌm/|/ˈhændsʌm/
+pretty|xinh|What a pretty dress!|A2|pp|/ˈprɪti/|/ˈprɪti/
+cute|dễ thương|Your baby is so cute.|A2|pp|/ˈkjuːt/|/ˈkjuːt/
+smart|thông minh; lịch sự (trang phục)|She is a smart student.|A2|pp|/ˈsmɑːt/|/ˈsmɑːrt/
+clever|lanh lợi|What a clever idea!|A2|pp|/ˈklɛvə/|/ˈklɛvər/
+funny|hài hước|He's very funny.|A2|pp|/ˈfʌni/|/ˈfʌni/
+serious|nghiêm túc|Are you serious?|A2|pp|/ˈsiəriəs/|/ˈsɪriəs/
+lazy|lười|Don't be lazy.|A2|pp|/ˈleɪzi/|/ˈleɪzi/
+hard-working|chăm chỉ|Vietnamese workers are hard-working.|A2|pp|/ˈhɑːd ˈwɜːkɪŋ/|/ˈhɑːrd ˈwɜːrkɪŋ/
+generous|hào phóng|He is very generous with his friends.|B1|pp|/ˈdʒɛnərəs/|/ˈdʒɛnərəs/
+selfish|ích kỷ|Don't be selfish. Share it.|B1|pp|/ˈsɛlfɪʃ/|/ˈsɛlfɪʃ/
+helpful|hay giúp đỡ|The staff were very helpful.|A2|pp|/ˈhɛlpfəl/|/ˈhɛlpfəl/
+calm|bình tĩnh|Stay calm.|A2|pp|/ˈkɑːm/|/ˈkɑːm/
+cheerful|vui vẻ|She is always cheerful.|B1|pp|/ˈtʃiəfəl/|/ˈtʃɪrfəl/
+strict|nghiêm khắc|My father is very strict.|B1|pp|/ˈstrɪkt/|/ˈstrɪkt/
+outgoing|hướng ngoại|He's outgoing and loves parties.|B1|pp|/aʊtˈɡəʊɪŋ/|/aʊtˈɡoʊɪŋ/
+reliable|đáng tin cậy|He is a reliable worker.|B1|pp|/rɪˈlaɪəbəl/|/rɪˈlaɪəbəl/
+lonely|cô đơn|I felt lonely in a new city.|A2|pp|/ˈləʊnli/|/ˈloʊnli/
+jealous|ghen tị|Don't be jealous.|B1|pp|/ˈdʒɛləs/|/ˈdʒɛləs/
+scared|sợ hãi|I'm scared of dogs.|A2|pp|/ˈskeəd/|/ˈskɛrd/
+upset|buồn bực|She was upset about the news.|B1|pp|/ʌpˈsɛt/|/ʌpˈsɛt/
+disappointed|thất vọng|I was disappointed with the result.|B1|pp|/ˌdɪsəˈpɔɪntɪd/|/ˌdɪsəˈpɔɪntɪd/
+satisfied|hài lòng|Are you satisfied with the service?|B1|pp|/ˈsætɪsˌfaɪd/|/ˈsætɪsˌfaɪd/
+grateful|biết ơn|I'm grateful for your help.|B1|pp|/ˈɡreɪtfəl/|/ˈɡreɪtfəl/
+busy (place)|đông người, nhộn nhịp|The market is busy in the morning.|A2|pp|/ˈbɪzi/|/ˈbɪzi/
+peaceful|yên bình|The countryside is peaceful.|B1|pp|/ˈpiːsfəl/|/ˈpiːsfəl/
+clothes shop|cửa hàng quần áo|There's a new clothes shop near here.|A2|pp|/ˈkləʊðz ˈʃɒp/|/ˈkloʊðz ˈʃɑːp/
+coat|áo khoác dài|Wear a coat; it's cold.|A2|pp|/ˈkəʊt/|/ˈkoʊt/
+sweater|áo len|This sweater is warm.|A2|pp|/ˈswɛtə/|/ˈswɛtər/
+shorts|quần soóc|I wear shorts at home.|A2|pp|/ˈʃɔːts/|/ˈʃɔːrts/
+underwear|đồ lót|Pack enough underwear for the trip.|A2|pp|/ˌʌndəˈweə/|/ˌʌndərˈwɛr/
+pyjamas|đồ ngủ|The kids are in their pyjamas.|A2|pp|/pəˈdʒɑːməz/|/pəˈdʒɑːməz/
+raincoat|áo mưa|Take your raincoat; it's raining.|A2|pp|/ˈreɪŋkəʊt/|/ˈreɪŋkoʊt/
+cap|mũ lưỡi trai|He always wears a cap.|A2|pp|/ˈkæp/|/ˈkæp/
+belt|thắt lưng|This belt is too long.|A2|pp|/ˈbɛlt/|/ˈbɛlt/
+tie|cà vạt|You need to wear a tie.|A2|pp|/ˈtaɪ/|/ˈtaɪ/
+scarf|khăn quàng|It's cold; wear a scarf.|A2|pp|/ˈskɑːf/|/ˈskɑːrf/
+boots|ủng, bốt|Wear boots in the rain.|A2|pp|/ˈbuːts/|/ˈbuːts/
+slippers|dép đi trong nhà|Put on your slippers.|A2|pp|/ˈslɪpəz/|/ˈslɪpərz/
+bag|túi|My bag is very heavy.|A2|pp|/ˈbæɡ/|/ˈbæɡ/
+handbag|túi xách tay|She bought a new handbag.|A2|pp|/ˈhændbæɡ/|/ˈhændbæɡ/
+jewellery|trang sức|She doesn't wear much jewellery.|B1|pp|/ˈdʒuːəlri/|/ˈdʒuːəlri/
+ring|nhẫn|He gave her a gold ring.|A2|pp|/ˈrɪŋ/|/ˈrɪŋ/
+necklace|vòng cổ|What a beautiful necklace!|A2|pp|/ˈnɛkləs/|/ˈnɛkləs/
+colour|màu sắc|What's your favourite colour?|A2|pp|/ˈkʌlə/|/ˈkʌlər/
+red|màu đỏ|Red is a lucky colour in Vietnam.|A2|pp|/ˈrɛd/|/ˈrɛd/
+blue|màu xanh dương|The sky is blue.|A2|pp|/ˈbluː/|/ˈbluː/
+green|màu xanh lá|I love green tea.|A2|pp|/ˈɡriːn/|/ˈɡriːn/
+yellow|màu vàng|The taxi is yellow.|A2|pp|/ˈjɛləʊ/|/ˈjɛloʊ/
+black|màu đen|I'd like a black coffee.|A2|pp|/ˈblæk/|/ˈblæk/
+white|màu trắng|She wore a white dress.|A2|pp|/ˈwaɪt/|/ˈwaɪt/
+grey|màu xám|The sky is grey today.|A2|pp|/ˈɡreɪ/|/ˈɡreɪ/
+brown|màu nâu|He has brown eyes.|A2|pp|/ˈbraʊn/|/ˈbraʊn/
+pink|màu hồng|My daughter loves pink.|A2|pp|/ˈpɪŋk/|/ˈpɪŋk/
+purple|màu tím|Hue is famous for purple áo dài.|A2|pp|/ˈpɜːpəl/|/ˈpɜːrpəl/
+dark|tối, sẫm|It gets dark at six.|A2|pp|/ˈdɑːk/|/ˈdɑːrk/
+bright|sáng|The room is bright and clean.|A2|pp|/ˈbraɪt/|/ˈbraɪt/
+music|âm nhạc|What kind of music do you like?|A2|gt|/ˈmjuːzɪk/|/ˈmjuːzɪk/
+song|bài hát|This is my favourite song.|A2|gt|/ˈsɒŋ/|/ˈsɔŋ/
+sing|hát|She sings very well.|A2|gt|/ˈsɪŋ/|/ˈsɪŋ/
+singer|ca sĩ|He is a famous singer.|A2|gt|/ˈsɪŋə/|/ˈsɪŋər/
+dance|nhảy, khiêu vũ|Let's dance!|A2|gt|/ˈdæns/|/ˈdæns/
+concert|buổi hòa nhạc|We went to a concert last night.|A2|gt|/ˈkɒnsət/|/ˈkɑːnsərt/
+karaoke|karaoke|We sing karaoke every Friday.|A2|gt|/ˌkærɪˈəʊki/|/ˌkærɪˈoʊki/
+guitar|đàn ghi-ta|He plays the guitar.|A2|gt|/ɡɪˈtɑː/|/ɡɪˈtɑːr/
+piano|đàn piano|My daughter learns the piano.|A2|gt|/piˈænəʊ/|/piˈænoʊ/
+film / movie|bộ phim|Let's watch a movie.|A2|gt|/ˈfɪlm/, /ˈmuːvi/|/ˈfɪlm/, /ˈmuːvi/
+actor|diễn viên|Who is your favourite actor?|A2|gt|/ˈæktə/|/ˈæktər/
+TV show|chương trình truyền hình|I watch this TV show every week.|A2|gt|/ˌtiː ˈviː ˈʃəʊ/|/ˌtiː ˈviː ˈʃoʊ/
+series|phim bộ|I'm watching a Korean series.|A2|gt|/ˈsiəriz/|/ˈsɪriz/
+news|tin tức|Did you see the news?|A2|gt|/ˈnjuːz/|/ˈnuːz/
+newspaper|tờ báo|My father reads the newspaper.|A2|gt|/ˈnjuːzpeɪpə/|/ˈnuːzpeɪpər/
+magazine|tạp chí|She reads fashion magazines.|A2|gt|/ˌmæɡəˈziːn/|/ˌmæɡəˈziːn/
+book (reading)|cuốn sách|I'm reading a good book.|A2|gt|/ˈbʊk/|/ˈbʊk/
+story|câu chuyện|Tell me a story.|A2|gt|/ˈstɔːri/|/ˈstɔːri/
+novel|tiểu thuyết|This novel is very long.|B1|gt|/ˈnɒvəl/|/ˈnɑːvəl/
+photo|bức ảnh|Can you take a photo of us?|A2|gt|/ˈfəʊtəʊ/|/ˈfoʊtoʊ/
+photography|nhiếp ảnh|Photography is my hobby.|B1|gt|/fəˈtɒɡrəfi/|/fəˈtɑːɡrəfi/
+painting (art)|bức tranh; hội họa|There's a painting on the wall.|A2|gt|/ˈpeɪntɪŋ/|/ˈpeɪntɪŋ/
+draw (picture)|vẽ (bút chì)|My son likes to draw animals.|A2|gt|/ˈdrɔː/|/ˈdrɔː/
+game|trò chơi|Let's play a game.|A2|gt|/ˈɡeɪm/|/ˈɡeɪm/
+video game|trò chơi điện tử|He plays video games all day.|A2|gt|/ˈvɪdɪəʊ ˈɡeɪm/|/ˈvɪdɪoʊ ˈɡeɪm/
+chess|cờ vua|Do you play chess?|A2|gt|/ˈtʃɛs/|/ˈtʃɛs/
+cards|bài (chơi bài)|We play cards at Tet.|A2|gt|/ˈkɑːdz/|/ˈkɑːrdz/
+fishing|câu cá|My dad goes fishing on Sundays.|A2|gt|/ˈfɪʃɪŋ/|/ˈfɪʃɪŋ/
+camping|cắm trại|We went camping by the lake.|A2|gt|/ˈkæmpɪŋ/|/ˈkæmpɪŋ/
+hiking|leo núi đi bộ đường dài|Hiking in Sapa is beautiful.|A2|gt|/ˈhaɪkɪŋ/|/ˈhaɪkɪŋ/
+picnic|dã ngoại|Let's have a picnic in the park.|A2|gt|/ˈpɪknɪk/|/ˈpɪknɪk/
+gardening|làm vườn|My mother loves gardening.|A2|gt|/ˈɡɑːdənɪŋ/|/ˈɡɑːrdənɪŋ/
+shopping|mua sắm|She loves shopping.|A2|gt|/ˈʃɒpɪŋ/|/ˈʃɑːpɪŋ/
+go out|đi chơi|Do you want to go out tonight?|A2|gt|/ˌɡəʊ ˈaʊt/|/ˌɡoʊ ˈaʊt/
+hang out|đi chơi cùng|We often hang out at the mall.|B1|gt|/ˈhæŋ ˈaʊt/|/ˈhæŋ ˈaʊt/
+relax|thư giãn|I relax by listening to music.|A2|gt|/rɪˈlæks/|/rɪˈlæks/
+festival|lễ hội|The Mid-Autumn Festival is fun for kids.|A2|gt|/ˈfɛstɪvəl/|/ˈfɛstɪvəl/
+Lunar New Year|Tết Nguyên Đán|We go home for Lunar New Year.|A2|gt|/ˈluːnə ˈnjuː ˈjiə/|/ˈluːnər ˈnuː ˈjɪr/
+lucky money|tiền lì xì|Children get lucky money at Tet.|A2|gt|/ˈlʌki ˈmʌni/|/ˈlʌki ˈmʌni/
+fireworks|pháo hoa|We watched fireworks at midnight.|A2|gt|/ˈfaɪəwɜːks/|/ˈfaɪərwɜːrks/
+lantern|đèn lồng|Hoi An is full of lanterns.|A2|gt|/ˈlæntən/|/ˈlæntərn/
+tradition|truyền thống|It's a Vietnamese tradition.|B1|gt|/trəˈdɪʃən/|/trəˈdɪʃən/
+culture|văn hóa|I love Vietnamese culture.|A2|gt|/ˈkʌltʃə/|/ˈkʌltʃər/
+invitation|lời mời; thiệp mời|Thanks for the invitation.|A2|gt|/ɪnvɪˈteɪʃən/|/ɪnvɪˈteɪʃən/
+celebration|lễ kỷ niệm|There was a big celebration.|B1|gt|/ˌsɛləˈbreɪʃən/|/ˌsɛləˈbreɪʃən/
+anniversary|ngày kỷ niệm|It's our wedding anniversary.|B1|gt|/ˌænɪˈvɜːsəri/|/ˌænɪˈvɜːrsəri/
+fun|niềm vui; vui|We had a lot of fun.|A2|gt|/ˈfʌn/|/ˈfʌn/
+favourite|yêu thích nhất|What's your favourite food?|A2|gt|/ˈfeɪvrɪt/|/ˈfeɪvrɪt/
+ticket office|quầy bán vé|Buy tickets at the ticket office.|A2|gt|/ˈtɪkɪt ˈɒfɪs/|/ˈtɪkɪt ˈɑːfɪs/
+queue (wait in line)|xếp hàng|We queued for an hour.|A2|gt|/ˈkjuː/|/ˈkjuː/
+animal|động vật|Do you like animals?|A2|gt|/ˈænɪməl/|/ˈænɪməl/
+bird|con chim|Birds are singing.|A2|gt|/ˈbɜːd/|/ˈbɜːrd/
+chicken (animal)|con gà|My grandma keeps chickens.|A2|gt|/ˈtʃɪkɪn/|/ˈtʃɪkɪn/
+cow|con bò|There are cows in the field.|A2|gt|/ˈkaʊ/|/ˈkaʊ/
+pig|con lợn|They raise pigs on the farm.|A2|gt|/ˈpɪɡ/|/ˈpɪɡ/
+buffalo|con trâu|The buffalo is working in the rice field.|A2|gt|/ˈbʌfəˌləʊ/|/ˈbʌfəˌloʊ/
+horse|con ngựa|Can you ride a horse?|A2|gt|/ˈhɔːs/|/ˈhɔːrs/
+mosquito|con muỗi|There are many mosquitoes tonight.|A2|gt|/məˈskiːtəʊ/|/məˈskiːtoʊ/
+monkey|con khỉ|Watch out for the monkeys.|A2|gt|/ˈmʌŋki/|/ˈmʌŋki/
+elephant|con voi|We saw elephants in Dak Lak.|A2|gt|/ˈɛlɪfənt/|/ˈɛlɪfənt/
+snake|con rắn|Be careful, there are snakes.|A2|gt|/ˈsneɪk/|/ˈsneɪk/`;
 const VOCAB=RAW.trim().split("\n").map((l,i)=>{const [term,vi,ex,level,topic,uk,us]=l.split("|");return{id:"w"+i,term,vi,ex,level,topic,uk:uk||"",us:us||""}});
 
 /* ============ LISTENING ============ */
@@ -1384,6 +2696,98 @@ const VIDEOS=[
  {id:"F-ZskaqBshs",ch:"Wendover Productions",level:"B2",title:"Containerization: The Most Influential Invention That You've Never Heard Of",focus:["containerization","stevedore","standardization","global trade"],task:["Đọc bài 'The box that changed the world' trước khi xem.","Ghi lại 3 thay đổi lớn mà container tạo ra cho thương mại.","So sánh: thông tin nào trong video bổ sung cho bài đọc?"]}
 ];
 
+/* ============ MORE LISTENING & READING (daily life) ============ */
+LISTEN.push(
+ {id:"l11",level:"A2",title:"At the pharmacy",vi:"Ở hiệu thuốc",
+  lines:[["Pharmacist","Hello. How can I help you?"],["Customer","Hi. I have a sore throat and a runny nose."],["Pharmacist","Do you have a fever?"],["Customer","No, I don't. But I feel tired."],["Pharmacist","It sounds like a cold. Take these tablets twice a day, after meals."],["Customer","How much are they?"],["Pharmacist","Forty-five thousand dong. And drink a lot of warm water."],["Customer","Thank you. Can I pay by QR code?"],["Pharmacist","Of course. Get well soon!"]],
+  qs:[["What is the customer's problem?",["A headache and a fever","A sore throat and a runny nose","A broken arm"],1],["How often should the customer take the tablets?",["Once a day","Twice a day","Three times a day"],1],["How does the customer want to pay?",["By QR code","In cash","By credit card"],0]]},
+ {id:"l12",level:"A2",title:"Checking in at a hotel",vi:"Nhận phòng khách sạn",
+  lines:[["Receptionist","Good afternoon. Welcome to the Sea View Hotel."],["Guest","Hi. I have a reservation under the name Tran."],["Receptionist","Let me check. Yes, a double room for three nights."],["Guest","That's right. Is breakfast included?"],["Receptionist","Yes, breakfast is from six thirty to nine thirty on the second floor."],["Guest","Great. And what's the Wi-Fi password?"],["Receptionist","It's on your key card. Your room is 512. The lift is on the left."],["Guest","Thank you. What time is check-out?"],["Receptionist","Check-out is at twelve noon. Enjoy your stay!"]],
+  qs:[["How many nights will the guest stay?",["Two","Three","Five"],1],["Where is breakfast?",["On the second floor","In the room","On the fifth floor"],0],["What time is check-out?",["10 a.m.","11 a.m.","12 noon"],2]]},
+ {id:"l13",level:"B1",title:"Shift handover in the factory",vi:"Bàn giao ca ở nhà máy",
+  lines:[["Hung","Hi Mai. Here's the handover for the night shift."],["Mai","Thanks, Hung. How was the day shift?"],["Hung","Not bad. We made four thousand eight hundred units. The target was five thousand."],["Mai","Why did we miss the target?"],["Hung","Machine three had a breakdown at two o'clock. The technician fixed it, but we lost about forty minutes of downtime."],["Mai","Is it working now?"],["Hung","Yes, but please check the temperature every hour. Also, batch 27 is waiting for final inspection."],["Mai","OK. Anything else?"],["Hung","We are low on packing boxes. I already told the warehouse. They will deliver more at ten p.m."],["Mai","Got it. Have a good evening."]],
+  qs:[["How many units did the day shift make?",["4,800","5,000","4,000"],0],["What caused the problem?",["A late delivery","A machine breakdown","Not enough workers"],1],["What will the warehouse deliver at 10 p.m.?",["Raw material","Packing boxes","A new machine"],1]]},
+ {id:"l14",level:"B1",title:"Planning a weekend trip",vi:"Lên kế hoạch đi chơi cuối tuần",
+  lines:[["Linh","Are you free this weekend? Let's go to Ninh Binh."],["Tom","Sounds great! How do we get there?"],["Linh","We can take the bus. It takes about two hours from Hanoi."],["Tom","What can we do there?"],["Linh","We can take a boat tour, visit some temples and ride bicycles through the rice fields."],["Tom","Will it rain?"],["Linh","The weather forecast says it will be sunny but hot, so bring sunscreen and a hat."],["Tom","Should we book a homestay?"],["Linh","Yes, I'll book one tonight. It's about four hundred thousand dong a night."],["Tom","Perfect. Count me in!"]],
+  qs:[["How long does the bus take?",["About one hour","About two hours","About four hours"],1],["What will the weather be like?",["Rainy and cool","Sunny and hot","Windy and cold"],1],["Who will book the homestay?",["Tom","Linh","The tour guide"],1]]}
+);
+READ.push(
+ {id:"r8",level:"A2",title:"My morning routine",vi:"Thói quen buổi sáng của tôi",glossary:["wake up","have breakfast","commute","traffic","on time"],
+  text:["My name is Hoa and I work in an office in Da Nang. On weekdays I wake up at six o'clock. First, I drink a glass of water and do some exercise for fifteen minutes.","Then I take a shower, get dressed and have breakfast with my family. I usually eat a bowl of noodles or a bread roll with egg. My husband makes the coffee.","At seven fifteen I ride my motorbike to work. My commute takes about twenty-five minutes, but the traffic is terrible when it rains. I always wear a helmet and a raincoat in the rainy season.","I arrive at the office at a quarter to eight. I like to be on time, so I can check my emails before the first meeting."],
+  qs:[["What does Hoa do first in the morning?",["Takes a shower","Drinks water and exercises","Checks her emails"],1],["Who makes the coffee?",["Hoa","Her husband","Her children"],1],["How long is her commute?",["About 15 minutes","About 25 minutes","About 45 minutes"],1],["Why does she arrive early?",["To have breakfast","To check emails before the meeting","To park her motorbike"],1]]},
+ {id:"r9",level:"B1",title:"Safety first in the workshop",vi:"An toàn là trên hết trong xưởng",glossary:["safety helmet","earplugs","emergency stop","lockout","supervisor"],
+  text:["Every year, many workers are injured in factories because they forget simple safety rules. At Phuoc An Metal, new staff get two days of safety training before they start work.","In the workshop, everyone must wear a safety helmet, safety glasses and safety shoes. Near the press machines, the noise is very loud, so workers also wear earplugs.","Every machine has a red emergency stop button. If something goes wrong, workers must press it immediately and tell the shift leader. Before a technician repairs a machine, he uses a lockout, so nobody can turn the power on by mistake.","The factory has a simple rule: if you are not sure, stop and ask. The supervisor says the number of accidents fell by half after the new training started."],
+  qs:[["How long is the safety training?",["Two hours","Two days","Two weeks"],1],["Why do workers wear earplugs near the press?",["It is cold","The noise is very loud","It is a uniform rule"],1],["What is a lockout for?",["To lock the warehouse","To stop people turning the power on","To check the workers' time"],1],["What happened after the new training?",["Accidents fell by half","Output doubled","The factory closed"],0]]},
+ {id:"r10",level:"B2",title:"Cashless Vietnam",vi:"Việt Nam không tiền mặt",glossary:["QR code","bank account","transfer money","convenience store","delivery fee"],
+  text:["Only ten years ago, most people in Vietnam paid for almost everything in cash. Today, a street food seller in Hanoi is just as likely to show you a QR code as to give you change.","The change happened quickly. Banks made it free to transfer money between accounts, and almost every adult now has a smartphone. Scanning a code takes a few seconds, and nobody has to worry about counting notes or finding small change.","Online shopping has grown at the same time. Customers can order clothes, food and electronics in an app, pay instantly and track the delivery. Many shops now offer a discount or free delivery to customers who pay online.","However, cash has not disappeared. Older people in the countryside still prefer it, and some small markets do not accept cards. Experts expect both systems to exist side by side for many years."],
+  qs:[["What made the change happen quickly?",["Free bank transfers and smartphones","New laws against cash","Cheaper credit cards"],0],["What do some shops offer online payers?",["A gift","A discount or free delivery","A bank account"],1],["Who still prefers cash?",["Teenagers in big cities","Older people in the countryside","Online shoppers"],1],["What do experts expect?",["Cash will disappear next year","Both systems will exist for many years","QR codes will stop"],1]]}
+);
+
+/* ============ SHADOWING ============ */
+const SHADOW=[
+ {id:"sh1",level:"A2",title:"Small talk every day",vi:"Chào hỏi, nói chuyện hằng ngày",lines:["Hi! How's it going?","Not bad, thanks. And you?","Long time no see. What have you been up to?","I've been really busy at work.","Are you free this weekend?","Sounds great. See you on Saturday!","Take care and say hi to your family.","Thanks a lot. Have a nice day!"]},
+ {id:"sh2",level:"A2",title:"At the café and restaurant",vi:"Ở quán cà phê và nhà hàng",lines:["Can I see the menu, please?","I'd like an iced milk coffee, please.","Not too sweet, please.","Is this dish spicy?","Could we have some more water?","Can we have the bill, please?","Let's split the bill.","Keep the change. Thank you!"]},
+ {id:"sh3",level:"A2",title:"Shopping and prices",vi:"Mua sắm và hỏi giá",lines:["Excuse me, how much is this jacket?","Do you have it in a smaller size?","Can I try it on?","It's a bit expensive. Can you make it cheaper?","I'm just looking, thanks.","Can I pay by QR code?","Could I have a receipt, please?","I'd like to exchange this for a bigger size."]},
+ {id:"sh4",level:"A2",title:"Asking for directions",vi:"Hỏi đường",lines:["Excuse me, I'm lost.","How do I get to the train station?","Go straight and turn left at the traffic lights.","Is it far from here?","It's about ten minutes on foot.","The bank is opposite the park.","Could you show me on the map?","Thank you so much for your help."]},
+ {id:"sh5",level:"B1",title:"At work: phone and meetings",vi:"Công việc: điện thoại và họp",lines:["Hello, this is Nam from the logistics department.","Could I speak to Ms Lan, please?","Sorry, she's in a meeting at the moment.","Can I take a message?","Could you speak more slowly, please?","Let me check and call you back this afternoon.","Let's move on to the next point.","Thanks, everyone. Let's call it a day."]},
+ {id:"sh6",level:"B1",title:"Logistics in action",vi:"Nghiệp vụ logistics",lines:["The shipment left the port this morning.","The container is waiting for customs clearance.","Could you send me the packing list and the invoice?","The truck will arrive at the warehouse at three p.m.","We have twelve pallets ready for loading.","There is a two-day delay because of bad weather.","Please confirm the booking as soon as possible.","I'll update you when the vessel arrives."]},
+ {id:"sh7",level:"B1",title:"Feelings and opinions",vi:"Cảm xúc và ý kiến",lines:["To be honest, I'm a bit worried about the exam.","In my opinion, it's too expensive.","I'm so happy for you. Congratulations!","Don't worry. It's not a big deal.","I see what you mean, but I don't agree.","That makes sense. Let's do it your way.","I can't believe we won the match!","Cheer up! You can do it."]},
+ {id:"sh8",level:"B2",title:"Solving a problem with a customer",vi:"Giải quyết vấn đề với khách hàng",lines:["I'm really sorry for the inconvenience this has caused.","Let me look into it and get back to you by the end of the day.","According to our records, the goods were dispatched on Monday.","It seems that the delay was caused by congestion at the port.","We will cover the extra storage charges this time.","Would it help if we arranged an express delivery?","I'll keep you updated on any progress.","Thank you for your patience and understanding."]}
+];
+
+/* ============ READ ALOUD PASSAGES ============ */
+const PASSAGES=[
+ {id:"p1",level:"A2",title:"About me",vi:"Giới thiệu bản thân",text:"Hello, my name is Minh. I am twenty-six years old and I live in Hai Phong with my parents. I work at a logistics company near the port. In my free time, I like playing football and listening to music. I am learning English because I want to talk with customers from other countries."},
+ {id:"p2",level:"A2",title:"My weekend",vi:"Cuối tuần của tôi",text:"Last weekend was very relaxing. On Saturday morning, I cleaned the house and did the laundry. In the afternoon, I went to the market with my mother and we bought fresh fruit and vegetables. On Sunday, my friends and I went to a café by the lake. We talked for hours and drank a lot of coffee."},
+ {id:"p3",level:"A2",title:"At the supermarket",vi:"Ở siêu thị",text:"The supermarket near my house is open from seven in the morning until ten at night. I usually go there after work. I take a basket and buy bread, milk, eggs and some meat. The checkout is often busy, so I have to queue for a few minutes. I always pay with a QR code because it is quick and easy."},
+ {id:"p4",level:"B1",title:"A day in the warehouse",vi:"Một ngày ở kho",text:"Our warehouse receives about twenty trucks every day. When a truck arrives, the driver gives us the delivery note and we check the number of pallets. Then we scan every pallet and put it away in the racking. In the afternoon we pick and pack orders for our customers. Safety is very important, so everyone wears safety shoes and a high-visibility vest."},
+ {id:"p5",level:"B1",title:"Staying healthy",vi:"Giữ gìn sức khỏe",text:"Working long hours can be stressful, so I try to stay healthy. I go to bed before eleven and get at least seven hours of sleep. I eat a lot of vegetables and drink plenty of water during the day. Three times a week, I go running in the park after work. When I feel tired, I take a short break and stretch my back and shoulders."},
+ {id:"p6",level:"B1",title:"Travelling in Vietnam",vi:"Du lịch Việt Nam",text:"Vietnam is a wonderful country for travellers. In the north, you can see the mountains and rice terraces of Sapa. In the centre, Hoi An is famous for its old town and colourful lanterns. In the south, the Mekong Delta has floating markets and delicious fruit. The best way to travel between cities is by train, sleeper bus or a cheap domestic flight."},
+ {id:"p7",level:"B2",title:"Why shipping costs change",vi:"Vì sao cước vận chuyển thay đổi",text:"Shipping costs can change very quickly. When demand is high, for example before Christmas, shipping lines raise their freight rates because space on the vessels is limited. Fuel prices also play a big role, since a large container ship burns hundreds of tonnes of fuel every day. In addition, port congestion and bad weather can cause delays, which increase costs for everyone in the supply chain."},
+ {id:"p8",level:"B2",title:"Lean manufacturing",vi:"Sản xuất tinh gọn",text:"Lean manufacturing is a way of working that focuses on removing waste. Waste does not only mean rubbish. It also includes waiting time, unnecessary movement, extra stock and defective products. In a lean factory, small teams meet regularly to find problems and suggest improvements. Over time, these small changes reduce costs, improve quality and make the workplace safer."}
+];
+
+/* ============ GRAMMAR ============ */
+// rules: [form, example, vietnamese note] · qs: [question, options, answerIndex, explanation]
+const GRAMMAR=[
+ {id:"g1",level:"A2",title:"Present simple",vi:"Thì hiện tại đơn",intro:"Dùng cho thói quen, việc lặp lại, sự thật và lịch trình cố định. Với he/she/it, thêm -s hoặc -es vào động từ.",
+  rules:[["I/You/We/They + V","I work in a warehouse.","Khẳng định"],["He/She/It + V-s/es","She checks the invoices every day.","Ngôi thứ ba số ít thêm -s/-es"],["do/does + not + V","He doesn't drive to work.","Phủ định"],["Do/Does + S + V?","Do you speak English?","Câu hỏi"],["Từ đi kèm","always, usually, often, sometimes, never, every day","Trạng từ tần suất"]],
+  qs:[["My brother ___ in a factory.",["work","works","working"],1,"Ngôi thứ ba số ít (my brother) nên thêm -s."],["___ you like coffee?",["Do","Does","Are"],0,"Câu hỏi với you dùng Do."],["She ___ eat meat.",["don't","doesn't","isn't"],1,"She dùng doesn't + động từ nguyên mẫu."],["The truck ___ at 8 a.m. every day.",["leave","leaves","is leave"],1,"Lịch trình cố định, ngôi thứ ba số ít: leaves."],["We ___ go out on weekdays.",["usually","usual","are usually"],0,"Trạng từ tần suất đứng trước động từ thường."],["He ___ the dishes after dinner.",["wash","washs","washes"],2,"Động từ tận cùng -sh thêm -es."]]},
+ {id:"g2",level:"A2",title:"Present continuous",vi:"Thì hiện tại tiếp diễn",intro:"Dùng cho việc đang xảy ra lúc nói, hoặc kế hoạch đã sắp xếp trong tương lai gần.",
+  rules:[["am/is/are + V-ing","I am waiting for the bus.","Đang làm"],["am/is/are + not + V-ing","They aren't working today.","Phủ định"],["Am/Is/Are + S + V-ing?","Is it raining?","Câu hỏi"],["Kế hoạch gần","We are meeting the customer tomorrow.","Lịch hẹn đã sắp xếp"],["Từ đi kèm","now, right now, at the moment, today, Look!","Dấu hiệu"]],
+  qs:[["Look! The children ___ in the rain.",["play","are playing","plays"],1,"Look! cho thấy việc đang xảy ra."],["I can't talk now. I ___.",["drive","am driving","drives"],1,"Đang làm lúc nói: am driving."],["___ she working today?",["Is","Does","Are"],0,"She dùng Is."],["We ___ the supplier tomorrow at 10.",["meet","are meeting","meets"],1,"Lịch hẹn đã sắp xếp dùng hiện tại tiếp diễn."],["They ___ watching TV. They're asleep.",["aren't","don't","isn't"],0,"They + aren't + V-ing."],["What ___ you doing?",["do","are","is"],1,"Câu hỏi hiện tại tiếp diễn với you: are."]]},
+ {id:"g3",level:"A2",title:"Past simple",vi:"Thì quá khứ đơn",intro:"Dùng cho việc đã xảy ra và kết thúc trong quá khứ, thường có thời gian cụ thể (yesterday, last week, in 2020, ago).",
+  rules:[["V-ed (có quy tắc)","I worked late yesterday.","Thêm -ed"],["V2 (bất quy tắc)","We went to Da Lat last year.","go → went, buy → bought, see → saw"],["did not + V","She didn't call me.","Phủ định"],["Did + S + V?","Did you receive the email?","Câu hỏi"],["was/were","The shop was closed.","Quá khứ của to be"]],
+  qs:[["I ___ my keys yesterday.",["lose","lost","losed"],1,"lose là động từ bất quy tắc: lost."],["___ you see the match last night?",["Do","Did","Were"],1,"Câu hỏi quá khứ đơn: Did + S + V."],["She didn't ___ to the party.",["came","come","comes"],1,"Sau didn't dùng động từ nguyên mẫu."],["The goods ___ late last week.",["arrive","arrived","arriving"],1,"last week → quá khứ đơn."],["We ___ very tired after the trip.",["was","were","are"],1,"We dùng were."],["He ___ a new phone two days ago.",["buys","buyed","bought"],2,"buy → bought."]]},
+ {id:"g4",level:"B1",title:"Present perfect",vi:"Thì hiện tại hoàn thành",intro:"Dùng cho trải nghiệm, việc vừa xong có kết quả ở hiện tại, hoặc việc kéo dài đến nay. Không dùng với thời gian cụ thể trong quá khứ.",
+  rules:[["have/has + V3","I have finished the report.","Vừa xong, kết quả bây giờ"],["Trải nghiệm","Have you ever been to Japan?","ever / never"],["for / since","She has worked here for five years / since 2020.","Kéo dài đến nay"],["already / yet / just","The truck has just arrived. Has he replied yet?","Dấu hiệu thường gặp"],["Không dùng","✗ I have seen him yesterday.","Có thời gian cụ thể → quá khứ đơn"]],
+  qs:[["I have ___ been to Hue.",["ever","never","yet"],1,"never = chưa từng."],["She has lived here ___ 2019.",["for","since","ago"],1,"since + mốc thời gian."],["Have you finished ___?",["already","yet","just"],1,"yet dùng cuối câu hỏi/phủ định."],["They ___ the container yet.",["haven't loaded","didn't load","don't load"],0,"yet + hiện tại hoàn thành phủ định."],["I ___ him yesterday.",["have seen","saw","see"],1,"yesterday là thời gian cụ thể → quá khứ đơn."],["We have worked together ___ three years.",["since","for","in"],1,"for + khoảng thời gian."]]},
+ {id:"g5",level:"A2",title:"Future: will and going to",vi:"Tương lai: will và be going to",intro:"will: quyết định ngay lúc nói, lời hứa, dự đoán. be going to: kế hoạch đã định trước, dự đoán có dấu hiệu rõ ràng.",
+  rules:[["will + V","I'll call you back.","Quyết định tức thì / lời hứa"],["won't + V","Don't worry, I won't forget.","Phủ định"],["am/is/are going to + V","We're going to visit Hoi An next month.","Kế hoạch đã có"],["Dấu hiệu rõ ràng","Look at those clouds. It's going to rain.","Dự đoán có căn cứ"]],
+  qs:[["The phone is ringing. I ___ answer it.",["will","am going to","going"],0,"Quyết định ngay lúc nói: will."],["We ___ move to a new house next month. We've already bought it.",["will","are going to","go"],1,"Kế hoạch đã định: be going to."],["I promise I ___ be late.",["won't","am not going","don't"],0,"Lời hứa dùng will/won't."],["Look at the sky! It ___ rain.",["will","is going to","goes"],1,"Có dấu hiệu rõ ràng: is going to."],["___ you help me with this box?",["Will","Are","Do"],0,"Lời nhờ: Will you…?"],["She ___ study English next year.",["is going to","going to","will to"],0,"is going to + V."]]},
+ {id:"g6",level:"A2",title:"Comparatives and superlatives",vi:"So sánh hơn và so sánh nhất",intro:"Tính từ ngắn thêm -er / -est. Tính từ dài dùng more / most. Một số từ bất quy tắc.",
+  rules:[["adj-er + than","Air freight is faster than sea freight.","So sánh hơn, tính từ ngắn"],["more + adj + than","This hotel is more expensive than that one.","Tính từ dài"],["the + adj-est","It's the cheapest option.","So sánh nhất"],["the most + adj","She is the most experienced driver.","So sánh nhất, tính từ dài"],["Bất quy tắc","good → better → the best; bad → worse → the worst","Phải học thuộc"]],
+  qs:[["Hanoi is ___ than Hai Phong.",["big","bigger","biggest"],1,"big → bigger (gấp đôi g)."],["This is the ___ restaurant in town.",["better","best","good"],1,"So sánh nhất của good: the best."],["Trucking is ___ than rail.",["more flexible","flexibler","most flexible"],0,"Tính từ dài: more + adj."],["Today is ___ than yesterday.",["hot","hotter","the hottest"],1,"So sánh hơn: hotter."],["It was the ___ day of my life.",["worse","bad","worst"],2,"bad → the worst."],["Sea freight is ___ than air freight.",["cheaper","more cheap","cheapest"],0,"cheap là tính từ ngắn: cheaper."]]},
+ {id:"g7",level:"A2",title:"Modal verbs: can, could, should, must",vi:"Động từ khuyết thiếu",intro:"Sau modal verb luôn dùng động từ nguyên mẫu không có to.",
+  rules:[["can / can't","I can drive a forklift.","Khả năng, xin phép"],["could","Could you help me, please?","Lời nhờ lịch sự; khả năng trong quá khứ"],["should / shouldn't","You should see a doctor.","Lời khuyên"],["must / mustn't","You must wear a helmet. You mustn't smoke here.","Bắt buộc / cấm"],["have to","I have to work on Saturday.","Phải (do hoàn cảnh)"]],
+  qs:[["You look tired. You ___ go to bed early.",["should","must to","can to"],0,"Lời khuyên: should."],["___ you open the window, please?",["Must","Could","Should"],1,"Lời nhờ lịch sự: Could you…?"],["You ___ smoke in the warehouse. It's dangerous.",["mustn't","don't have to","can"],0,"Cấm: mustn't."],["She can ___ three languages.",["speaks","speak","to speak"],1,"Sau can dùng động từ nguyên mẫu."],["I ___ wear a uniform at work. It's the rule.",["have to","should to","can"],0,"Bắt buộc theo quy định: have to."],["When I was young, I ___ swim very fast.",["can","could","must"],1,"Khả năng trong quá khứ: could."]]},
+ {id:"g8",level:"A2",title:"Prepositions of time: in, on, at",vi:"Giới từ chỉ thời gian",intro:"at cho giờ cụ thể, on cho ngày, in cho tháng, năm, mùa và buổi.",
+  rules:[["at + giờ","at 7 o'clock, at noon, at night, at the weekend (UK)","Thời điểm"],["on + ngày","on Monday, on 2 September, on my birthday","Ngày cụ thể"],["in + tháng/năm/mùa","in May, in 2025, in summer","Khoảng dài"],["in + buổi","in the morning, in the afternoon, in the evening","Nhưng: at night"]],
+  qs:[["The meeting is ___ Monday.",["in","on","at"],1,"Ngày trong tuần: on."],["I get up ___ six o'clock.",["at","on","in"],0,"Giờ cụ thể: at."],["We go to the beach ___ summer.",["on","at","in"],2,"Mùa: in."],["The shop is closed ___ night.",["in","at","on"],1,"Cụm cố định: at night."],["My birthday is ___ 15 March.",["in","on","at"],1,"Ngày tháng cụ thể: on."],["She was born ___ 1998.",["on","at","in"],2,"Năm: in."]]},
+ {id:"g9",level:"A2",title:"Countable and uncountable: some, any, much, many",vi:"Danh từ đếm được, không đếm được",intro:"many / a few đi với danh từ đếm được số nhiều; much / a little đi với danh từ không đếm được. some cho câu khẳng định và lời mời, any cho câu hỏi và phủ định.",
+  rules:[["many + N số nhiều","How many pallets are there?","Đếm được"],["much + N không đếm được","How much water do you drink?","Không đếm được"],["some","There is some milk. Would you like some tea?","Khẳng định, lời mời"],["any","Are there any questions? We don't have any boxes.","Hỏi, phủ định"],["a lot of","a lot of people / a lot of money","Dùng được cho cả hai"]],
+  qs:[["How ___ cartons are in the container?",["much","many","any"],1,"cartons đếm được: many."],["We don't have ___ time.",["many","some","much"],2,"time không đếm được, câu phủ định: much."],["Would you like ___ coffee?",["any","some","many"],1,"Lời mời: some."],["Are there ___ messages for me?",["some","any","much"],1,"Câu hỏi: any."],["I have ___ friends in Da Nang.",["a few","a little","much"],0,"friends đếm được: a few."],["There is ___ rice left.",["a few","many","a little"],2,"rice không đếm được: a little."]]},
+ {id:"g10",level:"B1",title:"The passive voice",vi:"Câu bị động",intro:"Dùng khi hành động quan trọng hơn người làm. Rất phổ biến trong email và báo cáo logistics.",
+  rules:[["am/is/are + V3","The goods are packed in cartons.","Bị động hiện tại"],["was/were + V3","The container was loaded yesterday.","Bị động quá khứ"],["will be + V3","The invoice will be sent tomorrow.","Bị động tương lai"],["has/have been + V3","The shipment has been delayed.","Bị động hiện tại hoàn thành"],["by + người làm","The truck was driven by Mr Hai.","Chỉ nói khi cần"]],
+  qs:[["The parcel ___ yesterday.",["delivered","was delivered","is deliver"],1,"Quá khứ bị động: was + V3."],["English ___ all over the world.",["speaks","is spoken","spoken"],1,"Hiện tại bị động: is + V3."],["The report will ___ by Friday.",["finish","be finished","finished"],1,"will be + V3."],["Our flight has ___ cancelled.",["be","been","being"],1,"has been + V3."],["These phones ___ in Vietnam.",["are made","make","are making"],0,"Bị động hiện tại số nhiều: are made."],["The windows ___ cleaned every week.",["is","are","was"],1,"windows số nhiều, hiện tại: are."]]},
+ {id:"g11",level:"B1",title:"First conditional",vi:"Câu điều kiện loại 1",intro:"Nói về điều có thể xảy ra trong tương lai và kết quả của nó. Mệnh đề If dùng hiện tại đơn, mệnh đề chính dùng will.",
+  rules:[["If + hiện tại đơn, will + V","If it rains, we will stay at home.","Cấu trúc chính"],["will + V + if + hiện tại","I'll call you if I have time.","Đảo vị trí, không cần dấu phẩy"],["unless = if not","We'll miss the vessel unless we hurry.","Trừ khi"],["Không dùng will sau If","✗ If it will rain…","Lỗi hay gặp"]],
+  qs:[["If you ___ hard, you will pass.",["study","will study","studied"],0,"Mệnh đề If dùng hiện tại đơn."],["If the truck is late, we ___ the customer.",["call","will call","called"],1,"Mệnh đề chính dùng will."],["I'll be angry ___ you tell the truth.",["if","unless","when"],1,"unless = nếu không."],["If it ___ tomorrow, we'll cancel the trip.",["rains","will rain","rain"],0,"It + rains (hiện tại đơn)."],["She won't come if you ___ her.",["don't invite","won't invite","not invite"],0,"Phủ định hiện tại đơn ở mệnh đề If."],["What ___ you do if you miss the bus?",["do","will","are"],1,"Câu hỏi mệnh đề chính: will."]]},
+ {id:"g12",level:"B1",title:"Polite requests and offers",vi:"Đề nghị và yêu cầu lịch sự",intro:"Trong công việc, câu hỏi gián tiếp và từ lịch sự giúp bạn nghe chuyên nghiệp hơn.",
+  rules:[["Could you + V?","Could you send me the invoice?","Nhờ lịch sự"],["Would you mind + V-ing?","Would you mind closing the door?","Rất lịch sự"],["I'd like + N / to V","I'd like to book a table for two.","Muốn (lịch sự)"],["Shall I / Would you like me to…?","Shall I call a taxi?","Đề nghị giúp"],["Do you know where…?","Do you know where the toilet is?","Câu hỏi gián tiếp: S + V"]],
+  qs:[["Would you mind ___ the window?",["open","opening","to open"],1,"Would you mind + V-ing."],["I'd like ___ a room for two nights.",["book","booking","to book"],2,"I'd like + to V."],["___ I help you with your bags?",["Shall","Will","Do"],0,"Đề nghị giúp: Shall I…?"],["Do you know where ___?",["is the station","the station is","the station"],1,"Câu hỏi gián tiếp: chủ ngữ trước động từ."],["___ you send it again, please?",["Could","Should","Must"],0,"Nhờ lịch sự: Could you…?"],["Would you like ___ tea?",["some","any","many"],0,"Lời mời dùng some."]]}
+];
+
 /* ============ STATE ============ */
 const KEY="logi-eng-v1";
 let S={box:{},star:{},done:{},best:0,drafts:{}};
@@ -1396,8 +2800,8 @@ const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(M
 
 function renderStats(){
   const mastered=VOCAB.filter(w=>(S.box[w.id]||0)>=3).length;
-  const lessons=Object.keys(S.done).length;
-  $("#stats").innerHTML=`<span>Đã thuộc <b>${mastered}/${VOCAB.length}</b> từ</span><span>Bài hoàn thành <b>${lessons}/${LISTEN.length+READ.length+WRITE.length}</b></span><span>Quiz cao nhất <b>${S.best}/10</b></span>`;
+  const ALL=[...LISTEN,...READ,...WRITE,...GRAMMAR,...SHADOW,...PASSAGES];const lessons=ALL.filter(d=>S.done[d.id]).length;
+  $("#stats").innerHTML=`<span>Đã thuộc <b>${mastered}/${VOCAB.length}</b> từ</span><span>Bài hoàn thành <b>${lessons}/${ALL.length}</b></span><span>Quiz cao nhất <b>${S.best}/10</b></span>`;
 }
 
 /* ============ SPEECH ============ */
@@ -1430,9 +2834,9 @@ const lvls=["Tất cả","A2","B1","B2"];
 let vocabFilter={level:"Tất cả",q:"",starred:false,topic:"sc"};
 
 function vocabView(){
-  app.innerHTML=`<div class="view-head"><span class="eyebrow">${VOCAB.length} từ · ${TOPICS.length} chủ đề</span><h2>Từ vựng logistics</h2><p class="lead">Từ thông dụng trong công việc hằng ngày: email với forwarder, hãng tàu, hải quan, kho và khách hàng. Mỗi từ có phiên âm IPA Anh-Anh (UK) và Anh-Mỹ (US), nghĩa tiếng Việt, câu ví dụ và nút phát âm. Đánh sao những từ khó để ôn riêng.</p>
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">${VOCAB.length} từ · ${TOPICS.length} chủ đề</span><h2>Từ vựng tiếng Anh</h2><p class="lead">Từ thông dụng trong công việc logistics (email với forwarder, hãng tàu, hải quan, kho) và đời sống: nhà cửa, ăn uống, sức khỏe, thể thao, du lịch, công xưởng, giao tiếp, mua sắm, cùng các câu khẩu ngữ hay dùng. Mỗi từ có phiên âm IPA Anh-Anh (UK) và Anh-Mỹ (US), nghĩa tiếng Việt, câu ví dụ và nút phát âm. Đánh sao những từ khó để ôn riêng.</p>
   <div class="bar" style="margin:4px 0 0"><button class="btn ghost" id="pdf">Tải bản PDF để in (${VOCAB.length} từ)</button><span class="note" id="pdfmsg"></span></div></div>
-  <div class="bar"><label class="note" for="vt">Chủ đề</label><select id="vt" class="pill"><option value="all">Tất cả chủ đề (${VOCAB.length} từ)</option>${TOPICS.map(t=>`<option value="${t.id}" ${vocabFilter.topic===t.id?"selected":""}>${t.code} · ${esc(t.en)} · ${esc(t.name)} (${VOCAB.filter(w=>w.topic===t.id).length})</option>`).join("")}</select></div>
+  <div class="bar"><label class="note" for="vt">Chủ đề</label><select id="vt" class="pill">${topicOptions(vocabFilter.topic,`<option value="all">Tất cả chủ đề (${VOCAB.length} từ)</option>`)}</select></div>
   <div class="bar">${lvls.map(l=>`<button class="pill" data-l="${l}" aria-pressed="${vocabFilter.level===l}">${l}</button>`).join("")}
   <button class="pill" id="vstar" aria-pressed="${vocabFilter.starred}">★ Từ đã đánh sao</button>
   <input class="search" id="vq" type="search" placeholder="Tìm từ tiếng Anh hoặc tiếng Việt…" value="${esc(vocabFilter.q)}"></div><div id="vlist"></div>`;
@@ -1477,6 +2881,7 @@ function wireQuiz(qs,id){
   app.querySelectorAll(".q").forEach(qe=>{const i=+qe.dataset.q;qe.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
     if(qe.dataset.done)return;qe.dataset.done=1;answered++;const j=+b.dataset.j,ok=j===qs[i][2];if(ok)right++;
     b.classList.add(ok?"right":"wrong");if(!ok)qe.querySelectorAll(".opt")[qs[i][2]].classList.add("right");
+    if(qs[i][3]){const ex=document.createElement("p");ex.className="note qwhy";ex.textContent=(ok?"✓ ":"✗ ")+qs[i][3];qe.appendChild(ex)}
     if(answered===qs.length){const sc=$("#qs-score");sc.hidden=false;sc.textContent=`Kết quả: ${right}/${qs.length} câu đúng`;S.done[id]=`${right}/${qs.length}`;save()}
   })});
 }
@@ -1571,7 +2976,7 @@ function buildFlashQueue(){
 }
 function flashMode(){
   if(!flashQueue.length||flashIdx>=flashQueue.length)buildFlashQueue();
-  const opts=[["due","Từ chưa thuộc"],["star","★ Đã đánh sao"],["all","Tất cả"],...TOPICS.map(t=>[t.id,t.en])];
+  const opts=[["due","Từ chưa thuộc"],["star","★ Đã đánh sao"],["all","Tất cả"],...TOPICS.map(t=>[t.id,t.en+" · "+t.name])];
   const w=flashQueue[flashIdx];
   $("#rv").innerHTML=`<div class="bar"><label class="note" for="fp">Bộ thẻ</label><select id="fp" class="pill">${opts.map(o=>`<option value="${o[0]}" ${o[0]===flashPool?"selected":""}>${esc(o[1])}</option>`).join("")}</select><span class="note">${w?`Thẻ ${flashIdx+1}/${flashQueue.length}`:""}</span></div>
   ${w?`<div class="flash"><div class="flash-inner" id="fc" tabindex="0" role="button" aria-label="Lật thẻ"><span class="flash-code">${TOPICS.find(t=>t.id===w.topic).code} · ngăn ${Math.min(S.box[w.id]||0,3)}</span>
@@ -1689,7 +3094,7 @@ function pronView(){
   <div class="bar">
     <button class="pill" data-pm="word" aria-pressed="${pron.mode==="word"}">Đọc từ</button><button class="pill" data-pm="sent" aria-pressed="${pron.mode==="sent"}">Đọc câu ví dụ</button>
     <select id="pl" class="pill">${lvls.map(l=>`<option ${l===pron.level?"selected":""}>${l}</option>`).join("")}</select>
-    <select id="pt" class="pill"><option value="all">Tất cả chủ đề</option><option value="weak" ${pron.topic==="weak"?"selected":""}>Từ dưới 70 điểm</option>${TOPICS.map(t=>`<option value="${t.id}" ${pron.topic===t.id?"selected":""}>${esc(t.en)}</option>`).join("")}</select>
+    <select id="pt" class="pill"><option value="all">Tất cả chủ đề</option>${topicOptions(pron.topic,`<option value="weak" ${pron.topic==="weak"?"selected":""}>Từ dưới 70 điểm</option>`)}</select>
     <span class="note">Đã chấm ${done} từ · điểm trung bình <b>${avg}</b></span></div>
   <div id="pr"></div>`;
   app.querySelectorAll("[data-pm]").forEach(b=>b.onclick=()=>{pron.mode=b.dataset.pm;pronView()});
@@ -1745,6 +3150,194 @@ function drawPron(){
       else if(c==="unavailable")st.textContent="Chưa nhận được giọng nói tiếng Anh ở trình duyệt này.";
       else if(c!=="stopped")st.textContent="Không mở được micro, thử lại.";});
   };
+}
+
+/* ============ SHARED MIC SCORER ============ */
+const NO_MIC="Phần chấm điểm cần micro. Trên claude.ai hãy dùng Chrome/Edge máy tính hoặc ứng dụng Claude; bản web mở bằng Chrome hoặc Edge. Bạn vẫn nghe mẫu và tự luyện được.";
+function scoreHtml(r,extra){const cls=r.score>=85?"good":r.score>=60?"mid":"low";
+  return `<div class="pron-score ${cls}"><b>${r.score}</b><span>/100 · ${r.score>=85?"Rất tốt":r.score>=60?"Khá, luyện thêm các từ màu đỏ":"Cần luyện lại: nghe chậm rồi đọc theo"}</span></div>${extra||""}
+  <p class="pron-words">${r.words.map(([t,v])=>`<span class="${v>=.95?"ok":v>=.6?"near":"miss"}">${esc(t)}</span>`).join(" ")}</p>`}
+// root has .mic button, .mstate, .heard, .mresult
+function micWire(root,getTarget,onScore,pause=1400){
+  unsub.forEach(f=>{try{f()}catch(e){}});unsub=[];
+  const btn=root.querySelector(".mic"),st=root.querySelector(".mstate"),hd=root.querySelector(".heard"),res=root.querySelector(".mresult");
+  if(!DICT){btn.disabled=true;st.textContent=NO_MIC;return{start(){}}}
+  let heard="",timer=null,t0=0;
+  const finish=()=>{clearTimeout(timer);const txt=heard.trim();if(!txt){st.textContent="Chưa nghe thấy gì. Kiểm tra micro và thử lại.";return}
+    const r=scoreSpeech(getTarget(),txt);r.secs=Math.max(1,(Date.now()-t0)/1000-pause/1000);st.textContent="Đã chấm xong. Bấm micro để thử lại.";res.innerHTML=onScore(r)};
+  unsub.push(DICT.onPartial(({text})=>{hd.textContent="Máy nghe được: "+(heard+" "+text).trim()}));
+  unsub.push(DICT.onFinal(({text})=>{heard+=" "+text;hd.textContent="Máy nghe được: "+heard.trim();clearTimeout(timer);timer=setTimeout(()=>DICT.stop(),pause)}));
+  unsub.push(DICT.onState(({state,reason})=>{
+    if(state==="idle"){btn.textContent="● Bấm để nói";btn.classList.remove("on");
+      if(reason==="not_granted"){st.textContent="Micro chưa được cho phép. Mở menu quyền của trang để bật lại.";btn.disabled=true}
+      else if(reason==="unavailable"){st.textContent="Trình duyệt này chưa hỗ trợ nhận giọng nói tiếng Anh.";btn.disabled=true}
+      else if(reason==="rate_limited"){st.textContent="Đang quá tải, thử lại sau vài giây."}
+      else if(reason==="upstream_error"){st.textContent="Micro hoặc dịch vụ nhận giọng gặp lỗi, thử lại."}
+      else finish()}
+    else if(state==="listening"){btn.textContent="■ Dừng và chấm";btn.classList.add("on");st.textContent="Đang nghe… hãy nói to, rõ."}
+    else if(state==="starting"){st.textContent="Đang mở micro… (trình duyệt có thể hỏi quyền dùng micro)"}}));
+  const start=()=>{heard="";hd.textContent="";res.innerHTML="";t0=Date.now();
+    DICT.start({language:"en"}).catch(e=>{const c=e&&e.code;
+      if(c==="not_granted")st.textContent="Bạn chưa cho phép dùng micro cho trang này.";
+      else if(c==="dismissed")st.textContent="Bạn đã đóng hộp hỏi quyền. Bấm lại nút để thử.";
+      else if(c==="unavailable")st.textContent="Chưa nhận được giọng nói tiếng Anh ở trình duyệt này.";
+      else if(c!=="stopped")st.textContent="Không mở được micro, thử lại."})};
+  btn.onclick=()=>{if(DICT.active()){DICT.stop().catch(()=>{});return}stopSpeech();start()};
+  return{start};
+}
+const stopMic=()=>{try{if(DICT&&DICT.active())DICT.stop()}catch(e){}};
+const micBox=`<div class="bar" style="margin:0"><button class="btn warn mic">● Bấm để nói</button></div><p class="note mstate">Bấm nút micro, nói to rõ ràng; app tự chấm khi bạn ngừng nói.</p><p class="heard"></p><div class="mresult"></div>`;
+function topicOptions(sel,extra=""){
+  const g=(label,list)=>`<optgroup label="${label}">${list.map(t=>`<option value="${t.id}" ${sel===t.id?"selected":""}>${esc(t.en)} · ${esc(t.name)} (${VOCAB.filter(w=>w.topic===t.id).length})</option>`).join("")}</optgroup>`;
+  return extra+g("Logistics",TOPICS.slice(0,LOGI_N))+g("Đời sống, công việc & giao tiếp",TOPICS.slice(LOGI_N));
+}
+
+/* ============ SHADOWING VIEW ============ */
+let shState={set:null,i:0,hide:false,rate:0.9};
+function shadowView(){
+  stopSpeech();stopMic();
+  if(shState.set)return shadowLesson();
+  const kn=VOCAB.filter(w=>w.topic==="kn").length;
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">Shadowing · ${SHADOW.length} bộ câu + ${kn} câu khẩu ngữ</span><h2>Luyện shadowing</h2><p class="lead">Shadowing là nghe câu mẫu rồi nói đuổi theo ngay, bắt chước cả ngữ điệu và tốc độ. Bấm “Nghe rồi nói”: app đọc câu, sau đó tự mở micro để bạn nói lại và chấm điểm. Khi đã quen, bật “Ẩn chữ” để luyện chỉ bằng tai.</p></div>
+  <div class="grid">${SHADOW.map(s=>`<button class="card" data-sh="${s.id}"><div class="meta"><span class="lvl ${s.level}">${s.level}</span><span>${s.lines.length} câu</span>${S.done[s.id]?`<span class="done-tag">✓ ${S.done[s.id]}</span>`:""}</div><h3>${esc(s.title)}</h3><span class="note">${esc(s.vi)}</span></button>`).join("")}
+  <button class="card" data-sh="kn"><div class="meta"><span class="lvl">A2–B1</span><span>10 câu ngẫu nhiên</span></div><h3>Spoken phrases mix</h3><span class="note">Câu khẩu ngữ người bản xứ hay dùng (đổi mỗi lần mở)</span></button></div>`;
+  app.querySelectorAll("[data-sh]").forEach(b=>b.onclick=()=>{const id=b.dataset.sh;
+    shState.set=id==="kn"?{id:"shkn",level:"A2",title:"Spoken phrases mix",vi:"Câu khẩu ngữ",lines:shuffle(VOCAB.filter(w=>w.topic==="kn")).slice(0,10).map(w=>w.ex),vis:null}:SHADOW.find(s=>s.id===id);
+    shState.i=0;shState.scores={};shadowLesson();window.scrollTo(0,0)});
+}
+function shadowLesson(){
+  const s=shState.set,line=s.lines[shState.i];
+  const phr=s.id==="shkn"?VOCAB.find(w=>w.topic==="kn"&&w.ex===line):null;
+  app.innerHTML=`<div class="panel pron"><button class="back" id="bk">← Tất cả bộ shadowing</button>
+  <div class="view-head"><span class="eyebrow">Shadowing · ${s.level} · câu ${shState.i+1}/${s.lines.length}</span><h2>${esc(s.title)}</h2><p class="lead">${esc(s.vi)}</p></div>
+  <div class="bar" style="margin:0"><button class="pill" id="hide" aria-pressed="${shState.hide}">Ẩn chữ</button>
+   <label class="note" for="shr">Tốc độ</label><select id="shr" class="pill"><option value="0.7">Chậm</option><option value="0.9">Vừa</option><option value="1.05">Tự nhiên</option></select></div>
+  <p class="pron-target" id="tgt" ${shState.hide?'style="filter:blur(7px)"':""}>${esc(line)}</p>${phr?`<p class="note">${esc(phr.term)} · ${esc(phr.vi)}</p>`:""}
+  <div class="bar" style="margin:0"><button class="btn" id="go">▶ Nghe rồi nói</button><button class="btn ghost" id="once">▶ Nghe mẫu</button><button class="btn ghost" id="thrice">🔁 Nghe 3 lần</button></div>
+  <div id="mic">${micBox}</div>
+  <div class="bar" style="margin:0"><button class="btn ghost" id="prev" ${shState.i?"":"disabled"}>← Câu trước</button><button class="btn" id="next">${shState.i+1<s.lines.length?"Câu tiếp →":"Hoàn thành"}</button></div>
+  <ol class="note" style="margin:0;padding-left:20px">${s.lines.map((l,k)=>`<li style="${k===shState.i?"color:var(--ink);font-weight:600":""}">${shState.hide&&k>=shState.i?"• • •":esc(l)}${shState.scores[k]!==undefined?` · <b>${shState.scores[k]}</b>`:""}</li>`).join("")}</ol></div>`;
+  $("#shr").value=String(shState.rate);$("#shr").onchange=e=>{shState.rate=+e.target.value};
+  $("#bk").onclick=()=>{stopSpeech();stopMic();shState.set=null;shadowView()};
+  $("#hide").onclick=()=>{shState.hide=!shState.hide;shadowLesson()};
+  $("#tgt").onclick=()=>{$("#tgt").style.filter=""};
+  const mic=micWire($("#mic"),()=>line,r=>{shState.scores[shState.i]=Math.max(shState.scores[shState.i]||0,r.score);$("#tgt").style.filter="";return scoreHtml(r)});
+  $("#once").onclick=()=>{stopMic();stopSpeech();say(line,shState.rate)};
+  $("#thrice").onclick=()=>{stopMic();stopSpeech();let n=0;const nx=()=>{if(n++<3)say(line,shState.rate,0,()=>setTimeout(nx,700))};nx()};
+  $("#go").onclick=()=>{stopMic();stopSpeech();say(line,shState.rate,0,()=>mic.start())};
+  $("#prev").onclick=()=>{stopMic();stopSpeech();shState.i--;shadowLesson()};
+  $("#next").onclick=()=>{stopMic();stopSpeech();
+    if(shState.i+1<s.lines.length){shState.i++;shadowLesson();return}
+    const v=Object.values(shState.scores);if(v.length&&s.id!=="shkn"){S.done[s.id]=`TB ${Math.round(v.reduce((a,b)=>a+b,0)/v.length)} điểm`;save()}
+    shState.set=null;shadowView()};
+}
+
+/* ============ READ ALOUD VIEW ============ */
+function readAloudView(){
+  stopSpeech();stopMic();
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">Đọc to · chấm điểm · ${PASSAGES.length} đoạn + ${READ.length} bài đọc</span><h2>Đọc đoạn văn thành tiếng</h2><p class="lead">Chọn một đoạn, nghe mẫu nếu cần, rồi bấm micro và đọc to cả đoạn. App chấm độ chính xác từng từ (từ đỏ là máy chưa nhận ra) và tính tốc độ đọc theo số từ mỗi phút. Người bản xứ đọc khoảng 130–160 từ/phút.</p></div>
+  <h3 style="margin:8px 0">Đoạn văn luyện đọc</h3>
+  <div class="grid">${PASSAGES.map(p=>`<button class="card" data-p="${p.id}"><div class="meta"><span class="lvl ${p.level}">${p.level}</span><span>${p.text.split(" ").length} từ</span>${S.done[p.id]?`<span class="done-tag">✓ ${S.done[p.id]}</span>`:""}</div><h3>${esc(p.title)}</h3><span class="note">${esc(p.vi)}</span></button>`).join("")}</div>
+  <h3 style="margin:20px 0 8px">Đọc to từng đoạn trong bài đọc</h3>
+  <div class="grid">${READ.map(d=>`<button class="card" data-rd="${d.id}"><div class="meta"><span class="lvl ${d.level}">${d.level}</span><span>${d.text.length} đoạn</span></div><h3>${esc(d.title)}</h3><span class="note">${esc(d.vi)}</span></button>`).join("")}</div>`;
+  app.querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>{const p=PASSAGES.find(x=>x.id===b.dataset.p);readAloud(p.id,p.title,p.level,[p.text],0);window.scrollTo(0,0)});
+  app.querySelectorAll("[data-rd]").forEach(b=>b.onclick=()=>{const d=READ.find(x=>x.id===b.dataset.rd);readAloud(d.id+"-ra",d.title,d.level,d.text,0);window.scrollTo(0,0)});
+}
+function readAloud(id,title,level,paras,k){
+  stopSpeech();stopMic();
+  const text=paras[k];
+  app.innerHTML=`<div class="panel pron"><button class="back" id="bk">← Chọn đoạn khác</button>
+  <div class="view-head"><span class="eyebrow">Đọc to · ${level}${paras.length>1?` · đoạn ${k+1}/${paras.length}`:""}</span><h2>${esc(title)}</h2></div>
+  <p class="reading-aloud" id="txt">${esc(text)}</p>
+  <div class="bar" style="margin:0"><button class="btn ghost" id="model">▶ Nghe mẫu</button><button class="btn ghost" id="slow">▶ Nghe chậm</button><button class="btn ghost" id="st">■ Dừng</button></div>
+  <div id="mic">${micBox}</div>
+  ${paras.length>1?`<div class="bar" style="margin:0"><button class="btn ghost" id="prev" ${k?"":"disabled"}>← Đoạn trước</button><button class="btn" id="next" ${k+1<paras.length?"":"disabled"}>Đoạn tiếp →</button></div>`:""}</div>`;
+  $("#bk").onclick=()=>{stopSpeech();stopMic();readAloudView()};
+  $("#model").onclick=()=>{stopMic();stopSpeech();say(text,0.92)};
+  $("#slow").onclick=()=>{stopMic();stopSpeech();say(text,0.7)};
+  $("#st").onclick=stopSpeech;
+  if(paras.length>1){$("#prev").onclick=()=>readAloud(id,title,level,paras,k-1);$("#next").onclick=()=>readAloud(id,title,level,paras,k+1)}
+  micWire($("#mic"),()=>text,r=>{
+    const n=norm(text).split(" ").length,wpm=Math.round(n/r.secs*60);
+    const sp=wpm<80?"hơi chậm, cố đọc liền mạch hơn":wpm<=170?"tốt, tự nhiên":"hơi nhanh, đọc chậm lại cho rõ";
+    S.done[id]=Math.max(parseInt(S.done[id])||0,r.score)+" điểm";save();
+    return scoreHtml(r,`<p class="note">Tốc độ: <b>${wpm} từ/phút</b> (${sp}) · ${n} từ trong ${Math.round(r.secs)} giây</p>`)},2600);
+}
+
+/* ============ GRAMMAR VIEW ============ */
+let gLevel="Tất cả";
+function grammarView(){
+  stopSpeech();
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">${GRAMMAR.length} chủ điểm · ${GRAMMAR.reduce((a,g)=>a+g.qs.length,0)} câu bài tập</span><h2>Ngữ pháp và bài tập</h2><p class="lead">Mỗi chủ điểm có công thức, ví dụ gần với công việc và đời sống, giải thích bằng tiếng Việt và bài tập chấm điểm ngay. Sai câu nào, app giải thích vì sao.</p></div>
+  <div class="bar">${lvls.map(l=>`<button class="pill" data-l="${l}" aria-pressed="${gLevel===l}">${l}</button>`).join("")}</div>
+  <div class="grid">${GRAMMAR.filter(g=>gLevel==="Tất cả"||g.level===gLevel).map(g=>`<button class="card" data-g="${g.id}"><div class="meta"><span class="lvl ${g.level}">${g.level}</span>${S.done[g.id]?`<span class="done-tag">✓ ${S.done[g.id]}</span>`:""}</div><h3>${esc(g.title)}</h3><span class="note">${esc(g.vi)}</span></button>`).join("")}</div>`;
+  app.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{gLevel=b.dataset.l;grammarView()});
+  app.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>{grammarLesson(GRAMMAR.find(g=>g.id===b.dataset.g));window.scrollTo(0,0)});
+}
+function grammarLesson(g){
+  const qs=shuffle(g.qs).map(q=>{const o=q[1].map((t,j)=>[t,j===q[2]]);const so=shuffle(o);return[q[0],so.map(x=>x[0]),so.findIndex(x=>x[1]),q[3]]});
+  app.innerHTML=`<div class="panel"><button class="back" id="bk">← Tất cả chủ điểm</button>
+  <div class="view-head"><span class="eyebrow">Grammar · ${g.level}</span><h2>${esc(g.title)}</h2><p class="lead">${esc(g.vi)}. ${esc(g.intro)}</p></div>
+  <table class="gtable"><thead><tr><th>Cấu trúc</th><th>Ví dụ</th><th>Ghi chú</th></tr></thead><tbody>${g.rules.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td><button class="linkish" data-say="${esc(r[1])}">${esc(r[1])} 🔊</button></td><td class="note">${esc(r[2])}</td></tr>`).join("")}</tbody></table>
+  <h3>Bài tập</h3>${quizBlock(qs,g.id)}<button class="btn ghost" id="again" style="align-self:flex-start">Làm lại (đảo câu)</button></div>`;
+  $("#bk").onclick=()=>{stopSpeech();grammarView()};
+  $("#again").onclick=()=>{grammarLesson(g);window.scrollTo(0,0)};
+  app.querySelectorAll("[data-say]").forEach(b=>b.onclick=()=>{stopSpeech();say(b.dataset.say.replace(/✗/g,""),0.9)});
+  wireQuiz(qs,g.id);
+}
+
+/* ============ DICTATION / LISTENING PRACTICE ============ */
+let dic={mode:"gap",level:"Tất cả",topic:"lifeall",list:[],i:0,right:0,done:0};
+function dicPool(){
+  return VOCAB.filter(w=>(dic.level==="Tất cả"||w.level===dic.level)&&(dic.topic==="all"||(dic.topic==="lifeall"?TOPICS.findIndex(t=>t.id===w.topic)>=LOGI_N:dic.topic==="logiall"?TOPICS.findIndex(t=>t.id===w.topic)<LOGI_N:w.topic===dic.topic))
+    &&(dic.mode==="dict"||gapOf(w)));
+}
+function gapOf(w){const base=w.term.replace(/\s*\(.*?\)/g,"").split(" / ")[0].trim();if(!base||w.topic==="kn")return null;
+  const re=new RegExp("\\b("+base.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"[a-z]{0,3})\\b","i");const m=w.ex.match(re);return m?{word:m[1],idx:m.index}:null}
+function buildDic(){dic.list=shuffle(dicPool()).slice(0,10);dic.i=0;dic.right=0;dic.done=0}
+function dictView(){
+  stopSpeech();stopMic();
+  if(!dic.list.length)buildDic();
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">Luyện nghe · chép chính tả · điền từ</span><h2>Bài tập luyện nghe</h2><p class="lead">Nghe câu (không nhìn chữ) rồi gõ lại. Chế độ “Điền từ” chỉ cần gõ từ còn thiếu; chế độ “Chép cả câu” khó hơn, app so từng từ và tô màu chỗ sai. Mỗi lượt 10 câu lấy từ kho ${VOCAB.length} câu ví dụ. Muốn luyện hội thoại dài, vào mục Nghe.</p></div>
+  <div class="bar"><button class="pill" data-dm="gap" aria-pressed="${dic.mode==="gap"}">Điền từ còn thiếu</button><button class="pill" data-dm="dict" aria-pressed="${dic.mode==="dict"}">Chép cả câu</button>
+   <select id="dl" class="pill">${lvls.map(l=>`<option ${l===dic.level?"selected":""}>${l}</option>`).join("")}</select>
+   <select id="dt" class="pill">${topicOptions(dic.topic,`<option value="lifeall" ${dic.topic==="lifeall"?"selected":""}>Tất cả chủ đề đời sống</option><option value="logiall" ${dic.topic==="logiall"?"selected":""}>Tất cả chủ đề logistics</option><option value="all" ${dic.topic==="all"?"selected":""}>Tất cả</option>`)}</select>
+   <span class="note">Kỷ lục: <b>${S.dictBest||0}/10</b></span></div>
+  <div id="dx"></div>`;
+  app.querySelectorAll("[data-dm]").forEach(b=>b.onclick=()=>{dic.mode=b.dataset.dm;buildDic();dictView()});
+  $("#dl").onchange=e=>{dic.level=e.target.value;buildDic();dictView()};
+  $("#dt").onchange=e=>{dic.topic=e.target.value;buildDic();dictView()};
+  drawDic();
+}
+function drawDic(){
+  const w=dic.list[dic.i];
+  if(!w){$("#dx").innerHTML=dic.done?`<div class="panel"><p class="pron-score ${dic.right>=8?"good":dic.right>=5?"mid":"low"}"><b>${dic.right}/10</b><span>câu đúng</span></p><button class="btn" id="dnew" style="align-self:flex-start">Lượt mới</button></div>`:`<p class="note">Không có câu nào khớp bộ lọc.</p>`;
+    const n=$("#dnew");if(n)n.onclick=()=>{buildDic();drawDic()};return}
+  const gap=dic.mode==="gap"?gapOf(w):null;
+  const shown=gap?esc(w.ex.slice(0,gap.idx))+`<input id="din" class="gap" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Từ còn thiếu" size="${Math.max(6,gap.word.length+2)}">`+esc(w.ex.slice(gap.idx+gap.word.length)):"";
+  $("#dx").innerHTML=`<div class="panel"><div class="meta note" style="display:flex;gap:8px;flex-wrap:wrap"><span>Câu ${dic.i+1}/${dic.list.length}</span><span class="lvl ${w.level}">${w.level}</span><span>Đúng ${dic.right}/${dic.done}</span></div>
+   <div class="bar" style="margin:0"><button class="btn" id="dplay">▶ Nghe</button><button class="btn ghost" id="dslow">▶ Nghe chậm</button></div>
+   ${gap?`<p class="gapline">${shown}</p><p class="note">Gợi ý nghĩa: ${esc(w.vi)}</p>`:`<textarea id="din" rows="2" class="dict-in" placeholder="Gõ lại câu bạn nghe được…" autocapitalize="off" spellcheck="false"></textarea>`}
+   <div class="bar" style="margin:0"><button class="btn warn" id="dchk">Kiểm tra</button><button class="btn ghost" id="dskip">Bỏ qua →</button></div><div id="dres"></div></div>`;
+  const play=r=>{stopSpeech();say(w.ex,r)};
+  $("#dplay").onclick=()=>play(0.9);$("#dslow").onclick=()=>play(0.65);
+  const nextQ=()=>{dic.i++;drawDic()};
+  $("#dskip").onclick=()=>{if(!$("#dchk").disabled){dic.done++}nextQ()};
+  let checked=false;
+  const check=()=>{
+    if(checked){nextQ();return}
+    const val=$("#din").value.trim();if(!val){$("#din").focus();return}
+    checked=true;dic.done++;let ok,html;
+    if(gap){ok=norm(val)===norm(gap.word);html=`<p class="${ok?"ok-msg":"bad-msg"}">${ok?"✓ Chính xác!":"✗ Đáp án: <b>"+esc(gap.word)+"</b>"}</p>`}
+    else{const r=scoreSpeech(w.ex,val);ok=r.score>=90;html=`<p class="${ok?"ok-msg":"bad-msg"}">${ok?"✓ Rất tốt":"Chưa đúng hết"} · ${r.score}/100</p><p class="pron-words">${r.words.map(([t,v])=>`<span class="${v>=.95?"ok":v>=.6?"near":"miss"}">${esc(t)}</span>`).join(" ")}</p>`}
+    if(ok)dic.right++;
+    $("#dres").innerHTML=html+`<p><b>${esc(w.ex)}</b></p>${ipaHtml(w)}<p class="note">${esc(w.term)} · ${esc(w.vi)}</p>`;
+    $("#dchk").textContent=dic.i+1<dic.list.length?"Câu tiếp →":"Xem kết quả";$("#dskip").disabled=true;$("#dchk").disabled=false;
+    if(dic.i+1>=dic.list.length&&dic.right>(S.dictBest||0)){S.dictBest=dic.right;save()}
+  };
+  $("#dchk").onclick=check;
+  $("#din").onkeydown=e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();check()}};
+  setTimeout(()=>play(0.9),250);
 }
 
 /* ============ DIALOGUE SCENES ============ */
@@ -1868,7 +3461,7 @@ function openScene(s){
 
 /* ============ ROUTER ============ */
 let pendingOpen=null;
-const ROUTES={"tu-vung":vocabView,"nghe":()=>listIndex("nghe"),"doc":()=>listIndex("doc"),"viet":()=>listIndex("viet"),"on-tap":reviewView,"phat-am":pronView,"hoi-thoai":scenesIndex,"video":videoView};
+const ROUTES={"tu-vung":vocabView,"nghe":()=>listIndex("nghe"),"doc":()=>listIndex("doc"),"viet":()=>listIndex("viet"),"on-tap":reviewView,"phat-am":pronView,"hoi-thoai":scenesIndex,"video":videoView,"shadowing":shadowView,"doc-to":readAloudView,"ngu-phap":grammarView,"chinh-ta":dictView};
 function route(){
   stopSpeech();try{if(DICT&&DICT.active())DICT.stop()}catch(e){}
   const h=(location.hash||"#tu-vung").slice(1);const r=ROUTES[h]?h:"tu-vung";

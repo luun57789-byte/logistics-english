@@ -1,0 +1,130 @@
+sport|thể thao|What's your favourite sport?|A2|sp
+football / soccer|bóng đá|Football is very popular in Vietnam.|A2|sp
+badminton|cầu lông|We play badminton after work.|A2|sp
+volleyball|bóng chuyền|They play volleyball on the beach.|A2|sp
+basketball|bóng rổ|He is tall, so he plays basketball.|A2|sp
+tennis|quần vợt|Do you play tennis?|A2|sp
+table tennis|bóng bàn|There's a table tennis table in the office.|A2|sp
+swimming|bơi lội|Swimming is good exercise.|A2|sp
+running|chạy bộ|I go running in the park every morning.|A2|sp
+cycling|đạp xe|Cycling to work saves money.|A2|sp
+yoga|yoga|She does yoga on Sunday mornings.|A2|sp
+gym|phòng tập thể dục|I go to the gym after work.|A2|sp
+work out|tập luyện|I work out three times a week.|A2|sp
+team|đội|Which team do you support?|A2|sp
+player|cầu thủ, người chơi|He is the best player on the team.|A2|sp
+coach|huấn luyện viên|The coach is very strict.|A2|sp
+match / game|trận đấu|Did you watch the match last night?|A2|sp
+score|tỉ số; ghi bàn|What's the score?|A2|sp
+goal|bàn thắng; mục tiêu|What a goal!|A2|sp
+win|thắng|We won 2–1.|A2|sp
+lose|thua|They lost the final.|A2|sp
+draw (match)|hòa|The match ended in a draw.|A2|sp
+champion|nhà vô địch|Vietnam were the champions in 2018.|B1|sp
+tournament|giải đấu|The tournament starts next week.|B1|sp
+stadium|sân vận động|The stadium was full.|A2|sp
+fan (sport)|cổ động viên|Thousands of fans celebrated in the streets.|A2|sp
+referee|trọng tài|The referee gave a red card.|B1|sp
+half-time|giờ nghỉ giữa hiệp|The score at half-time was 0–0.|B1|sp
+penalty (sport)|phạt đền|He missed the penalty.|B1|sp
+training session|buổi tập|We have a training session on Tuesday.|B1|sp
+warm up|khởi động|Always warm up before running.|A2|sp
+stretch|giãn cơ|Stretch after your workout.|A2|sp
+marathon|chạy marathon|She ran her first marathon last year.|B1|sp
+fit (healthy)|cân đối, khỏe mạnh|I want to get fit this year.|A2|sp
+sweat|đổ mồ hôi|I sweat a lot when I play football.|B1|sp
+travel|đi du lịch|I love to travel.|A2|tv
+trip (travel)|chuyến đi|How was your trip to Da Lat?|A2|tv
+holiday / vacation|kỳ nghỉ|We are going on holiday next week.|A2|tv
+tourist|khách du lịch|Hoi An is full of tourists.|A2|tv
+passport|hộ chiếu|Don't forget your passport.|A2|tv
+visa|thị thực|Do I need a visa for Japan?|A2|tv
+ticket|vé|I bought the tickets online.|A2|tv
+return ticket|vé khứ hồi|A return ticket to Hue, please.|A2|tv
+luggage / baggage|hành lý|How much luggage can I take?|A2|tv
+suitcase|va li|My suitcase is very heavy.|A2|tv
+backpack|ba lô|I travel with just a backpack.|A2|tv
+check in|làm thủ tục (khách sạn, sân bay)|We can check in after 2 p.m.|A2|tv
+check out|trả phòng|Check-out time is 12 noon.|A2|tv
+boarding pass|thẻ lên máy bay|Show your boarding pass at the gate.|A2|tv
+gate|cửa ra máy bay|The flight leaves from gate 12.|A2|tv
+departure lounge|phòng chờ ra máy bay|Wait in the departure lounge.|B1|tv
+delayed|bị hoãn, trễ|Our flight is delayed by two hours.|A2|tv
+cancelled|bị hủy|The train was cancelled.|A2|tv
+window seat|ghế cạnh cửa sổ|Can I have a window seat?|A2|tv
+aisle seat|ghế cạnh lối đi|I prefer an aisle seat.|A2|tv
+hotel|khách sạn|The hotel is near the beach.|A2|tv
+reservation|đặt chỗ, đặt phòng|I have a reservation under the name Nam.|A2|tv
+single room|phòng đơn|I'd like a single room for two nights.|A2|tv
+double room|phòng đôi (giường đôi)|A double room with a sea view, please.|A2|tv
+reception|quầy lễ tân|Leave your key at reception.|A2|tv
+receptionist|nhân viên lễ tân|The receptionist was very helpful.|A2|tv
+room service|dịch vụ phòng|Let's order room service.|B1|tv
+homestay|nhà dân cho thuê, homestay|We stayed at a homestay in Sapa.|A2|tv
+hostel|nhà nghỉ giá rẻ|Backpackers often stay in hostels.|A2|tv
+map|bản đồ|Can you show me on the map?|A2|tv
+guide|hướng dẫn viên; sách hướng dẫn|Our guide spoke excellent English.|A2|tv
+tour|chuyến tham quan|We booked a boat tour in Ha Long Bay.|A2|tv
+sightseeing|tham quan|We went sightseeing in the old town.|A2|tv
+souvenir|quà lưu niệm|I bought some souvenirs for my friends.|A2|tv
+beach|bãi biển|Let's go to the beach.|A2|tv
+mountain|núi|We climbed the mountain at sunrise.|A2|tv
+island|hòn đảo|Phu Quoc is a beautiful island.|A2|tv
+lake|hồ|There is a lake in the middle of the city.|A2|tv
+museum|bảo tàng|The museum is closed on Mondays.|A2|tv
+temple|ngôi chùa, đền|We visited an old temple.|A2|tv
+market|chợ|Ben Thanh Market is very busy.|A2|tv
+taxi|xe taxi|Let's take a taxi to the airport.|A2|tv
+ride-hailing app|ứng dụng gọi xe|I book a car with a ride-hailing app.|B1|tv
+train station|ga tàu|The train station is near the hotel.|A2|tv
+platform|sân ga|The train leaves from platform 3.|A2|tv
+sleeper bus|xe khách giường nằm|We took a sleeper bus to Sapa.|A2|tv
+ferry|phà|We took a ferry to the island.|A2|tv
+currency exchange|đổi tiền|Is there a currency exchange at the airport?|B1|tv
+ATM|máy rút tiền|Where is the nearest ATM?|A2|tv
+cash|tiền mặt|Do you accept cash?|A2|tv
+credit card|thẻ tín dụng|Can I pay by credit card?|A2|tv
+directions|chỉ đường|Can you give me directions to the museum?|A2|tv
+turn left / turn right|rẽ trái / rẽ phải|Turn left at the traffic lights.|A2|tv
+go straight|đi thẳng|Go straight for 200 metres.|A2|tv
+next to|bên cạnh|The bank is next to the post office.|A2|tv
+opposite|đối diện|The hotel is opposite the park.|A2|tv
+near / far|gần / xa|Is it far from here?|A2|tv
+crossroads / intersection|ngã tư|Turn right at the crossroads.|A2|tv
+traffic lights|đèn giao thông|Stop at the traffic lights.|A2|tv
+lost|bị lạc; bị mất|Excuse me, I'm lost.|A2|tv
+travel insurance|bảo hiểm du lịch|Buy travel insurance before you go.|B1|tv
+sunscreen|kem chống nắng|Don't forget sunscreen at the beach.|A2|tv
+sunny|nắng|It's sunny today.|A2|ws
+rainy|mưa|It's rainy in September.|A2|ws
+cloudy|nhiều mây|It's cloudy but warm.|A2|ws
+windy|nhiều gió|It's very windy on the boat.|A2|ws
+hot|nóng|It's very hot in summer.|A2|ws
+cold (weather)|lạnh|It's cold in Hanoi in January.|A2|ws
+warm|ấm áp|The weather is warm in spring.|A2|ws
+cool|mát|It's cool in the evening.|A2|ws
+humid|ẩm ướt, nồm|Saigon is hot and humid.|B1|ws
+storm|cơn bão (giông)|There was a storm last night.|A2|ws
+typhoon|bão (nhiệt đới)|The typhoon hit the central coast.|B1|ws
+flood|lũ lụt|The flood closed the road.|B1|ws
+weather forecast|dự báo thời tiết|The weather forecast says rain tomorrow.|A2|ws
+temperature (weather)|nhiệt độ|The temperature is 35 degrees.|A2|ws
+season|mùa|Autumn is my favourite season.|A2|ws
+spring|mùa xuân|Flowers bloom in spring.|A2|ws
+summer|mùa hè|We go to the beach in summer.|A2|ws
+autumn / fall|mùa thu|Hanoi is beautiful in autumn.|A2|ws
+winter|mùa đông|Winter in the north is cold.|A2|ws
+dry season|mùa khô|The dry season is from December to April.|B1|ws
+rainy season|mùa mưa|The rainy season starts in May.|A2|ws
+sky|bầu trời|The sky is clear tonight.|A2|ws
+sun|mặt trời|The sun is very strong at noon.|A2|ws
+moon|mặt trăng|The moon is full tonight.|A2|ws
+tree|cây|There is a big tree in our garden.|A2|ws
+flower|bông hoa|She gave me some flowers.|A2|ws
+river|dòng sông|The Red River flows through Hanoi.|A2|ws
+sea|biển|The sea is calm today.|A2|ws
+countryside|vùng nông thôn|My grandparents live in the countryside.|A2|ws
+city|thành phố|Ho Chi Minh City is very busy.|A2|ws
+pollution|ô nhiễm|Air pollution is a big problem.|B1|ws
+environment|môi trường|We should protect the environment.|B1|ws
+recycle|tái chế|We recycle paper and plastic.|B1|ws

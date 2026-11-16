@@ -1,0 +1,134 @@
+food|đồ ăn|The food here is delicious.|A2|fo
+drink|đồ uống; uống|Would you like a drink?|A2|fo
+breakfast|bữa sáng|Breakfast is ready.|A2|fo
+lunch|bữa trưa|What's for lunch?|A2|fo
+dinner|bữa tối|Let's have dinner at home tonight.|A2|fo
+snack|đồ ăn vặt|I have a snack at 3 p.m.|A2|fo
+meal|bữa ăn|We have three meals a day.|A2|fo
+rice|cơm, gạo|Vietnamese people eat rice every day.|A2|fo
+noodles|mì, bún, phở|I'd like a bowl of noodles.|A2|fo
+bread|bánh mì|Can you buy some bread?|A2|fo
+egg|trứng|I had two eggs for breakfast.|A2|fo
+meat|thịt|I don't eat much meat.|A2|fo
+chicken|thịt gà|Chicken soup is good when you're sick.|A2|fo
+beef|thịt bò|Beef pho is my favourite.|A2|fo
+pork|thịt lợn|Grilled pork with rice, please.|A2|fo
+fish|cá|We eat fish twice a week.|A2|fo
+seafood|hải sản|Da Nang is famous for seafood.|A2|fo
+shrimp / prawn|tôm|These prawns are very fresh.|A2|fo
+vegetables|rau củ|Eat more vegetables.|A2|fo
+fruit|hoa quả|Fruit is cheap at the market.|A2|fo
+apple|quả táo|An apple a day keeps the doctor away.|A2|fo
+banana|quả chuối|Bananas are good for energy.|A2|fo
+orange|quả cam|I drink orange juice every morning.|A2|fo
+mango|quả xoài|Mangoes are sweet in summer.|A2|fo
+tomato|cà chua|Add some tomatoes to the salad.|A2|fo
+potato|khoai tây|I like baked potatoes.|A2|fo
+onion|hành tây|Chop the onion first.|A2|fo
+garlic|tỏi|This dish has a lot of garlic.|A2|fo
+chilli|ớt|Is it too much chilli for you?|A2|fo
+salt|muối|Pass me the salt, please.|A2|fo
+sugar|đường|No sugar in my coffee, please.|A2|fo
+pepper|hạt tiêu|Add salt and pepper.|A2|fo
+fish sauce|nước mắm|Vietnamese food uses a lot of fish sauce.|A2|fo
+soup|canh, súp|The soup is too hot.|A2|fo
+salad|món rau trộn, salad|I'll have a chicken salad.|A2|fo
+cake|bánh ngọt|She made a chocolate cake.|A2|fo
+ice cream|kem|Let's get some ice cream.|A2|fo
+water|nước|Can I have a glass of water?|A2|fo
+coffee|cà phê|I need coffee in the morning.|A2|fo
+tea|trà|Would you like green tea?|A2|fo
+milk|sữa|The baby drinks milk.|A2|fo
+juice|nước ép|Fresh orange juice, please.|A2|fo
+beer|bia|Two beers, please.|A2|fo
+bottle|chai|A bottle of water, please.|A2|fo
+glass|cái cốc thủy tinh, ly|Fill the glass with ice.|A2|fo
+cup|cái cốc, tách|A cup of tea, please.|A2|fo
+plate|cái đĩa|Put the food on a plate.|A2|fo
+bowl|cái bát, tô|A big bowl of pho, please.|A2|fo
+chopsticks|đũa|Can you use chopsticks?|A2|fo
+spoon|cái thìa|I need a spoon for the soup.|A2|fo
+fork|cái dĩa, nĩa|Can I have a fork, please?|A2|fo
+knife|con dao|Be careful, the knife is sharp.|A2|fo
+menu|thực đơn|Can I see the menu, please?|A2|fo
+order (food)|gọi món|Are you ready to order?|A2|fo
+bill / check|hóa đơn (tính tiền)|Can we have the bill, please?|A2|fo
+tip|tiền boa|Do people leave a tip here?|A2|fo
+waiter / waitress|bồi bàn|The waiter brought our drinks.|A2|fo
+restaurant|nhà hàng|Let's book a table at the restaurant.|A2|fo
+street food|đồ ăn đường phố|Hanoi has amazing street food.|A2|fo
+takeaway / takeout|đồ mang đi|Let's get a takeaway tonight.|A2|fo
+delicious|ngon|This is delicious!|A2|fo
+spicy|cay|Is this dish spicy?|A2|fo
+sweet|ngọt|This cake is too sweet.|A2|fo
+salty|mặn|The soup is a bit salty.|A2|fo
+sour|chua|Green mangoes are sour.|A2|fo
+bitter|đắng|Black coffee is bitter.|A2|fo
+fresh|tươi|The vegetables are very fresh.|A2|fo
+hungry|đói|I'm hungry. Let's eat.|A2|fo
+thirsty|khát|I'm thirsty after running.|A2|fo
+full (food)|no|No more, thanks. I'm full.|A2|fo
+vegetarian|người ăn chay; chay|Do you have vegetarian dishes?|A2|fo
+allergic to|dị ứng với|I'm allergic to peanuts.|B1|fo
+boil|luộc, đun sôi|Boil the eggs for eight minutes.|A2|fo
+fry|chiên, rán|Fry the onions in a little oil.|A2|fo
+grill|nướng (vỉ)|We grilled fish on the beach.|A2|fo
+steam|hấp|Steamed fish is very healthy.|A2|fo
+recipe|công thức nấu ăn|Can you give me the recipe?|B1|fo
+health|sức khỏe|Health is more important than money.|A2|hl
+healthy|khỏe mạnh; tốt cho sức khỏe|Eat healthy food.|A2|hl
+sick / ill|bị ốm|I feel sick today.|A2|hl
+headache|đau đầu|I have a terrible headache.|A2|hl
+stomachache|đau bụng|He has a stomachache after lunch.|A2|hl
+toothache|đau răng|I need a dentist; I have a toothache.|A2|hl
+sore throat|đau họng|I've got a sore throat.|A2|hl
+fever|sốt|The child has a high fever.|A2|hl
+cold (illness)|cảm lạnh|I caught a cold last week.|A2|hl
+flu|cúm|Many people have the flu this month.|A2|hl
+cough|ho|I can't stop coughing.|A2|hl
+runny nose|sổ mũi|I have a runny nose.|A2|hl
+pain|cơn đau|Where is the pain?|A2|hl
+hurt|đau; làm đau|My back hurts.|A2|hl
+tired|mệt|I'm tired after work.|A2|hl
+dizzy|chóng mặt|I feel dizzy.|B1|hl
+medicine|thuốc|Take this medicine three times a day.|A2|hl
+pill / tablet|viên thuốc|Take one tablet after meals.|A2|hl
+pharmacy|hiệu thuốc|Is there a pharmacy near here?|A2|hl
+doctor|bác sĩ|You should see a doctor.|A2|hl
+nurse|y tá|The nurse took my temperature.|A2|hl
+dentist|nha sĩ|I go to the dentist twice a year.|A2|hl
+hospital|bệnh viện|She is in hospital.|A2|hl
+clinic|phòng khám|The clinic opens at eight.|A2|hl
+ambulance|xe cứu thương|Call an ambulance!|A2|hl
+prescription|đơn thuốc|You need a prescription for this medicine.|B1|hl
+health insurance|bảo hiểm y tế|Do you have health insurance?|B1|hl
+check-up|khám sức khỏe định kỳ|I have an annual check-up next week.|B1|hl
+blood pressure|huyết áp|The nurse checked my blood pressure.|B1|hl
+injury (sport)|chấn thương|He missed the match because of an injury.|B1|hl
+broken arm|gãy tay|She has a broken arm.|A2|hl
+rest|nghỉ ngơi|You need to rest for a few days.|A2|hl
+get better|khỏe lại|I hope you get better soon.|A2|hl
+exercise|tập thể dục|I exercise three times a week.|A2|hl
+diet|chế độ ăn|She's on a diet.|B1|hl
+weight|cân nặng|He lost five kilos of weight.|A2|hl
+sleep|ngủ; giấc ngủ|I need eight hours of sleep.|A2|hl
+stress|căng thẳng|Work causes a lot of stress.|B1|hl
+body|cơ thể|Exercise is good for your body.|A2|hl
+head|đầu|He hit his head.|A2|hl
+face|khuôn mặt|Wash your face.|A2|hl
+eye|mắt|My eyes are tired.|A2|hl
+ear|tai|My ear hurts.|A2|hl
+nose|mũi|He has a big nose.|A2|hl
+mouth|miệng|Open your mouth, please.|A2|hl
+tooth / teeth|răng|Brush your teeth.|A2|hl
+neck|cổ|My neck is stiff.|A2|hl
+shoulder|vai|I hurt my shoulder.|A2|hl
+arm|cánh tay|He broke his arm.|A2|hl
+hand|bàn tay|Wash your hands.|A2|hl
+finger|ngón tay|I cut my finger.|A2|hl
+back|lưng|My back hurts from lifting boxes.|A2|hl
+leg|chân (cẳng chân)|My legs are tired.|A2|hl
+knee|đầu gối|I hurt my knee playing football.|A2|hl
+foot / feet|bàn chân|My feet hurt after walking all day.|A2|hl
+heart|tim|Exercise is good for your heart.|A2|hl
+skin|da|Use sunscreen to protect your skin.|A2|hl

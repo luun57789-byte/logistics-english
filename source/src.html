@@ -104,6 +104,17 @@ button.card:hover{border-color:var(--steel)}
 .opt.right{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
 .opt.wrong{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
 .score{font-family:var(--f-display);font-weight:800;font-size:1.2rem}
+.gtable{border-collapse:collapse;width:100%;font-size:.92rem}
+.gtable th,.gtable td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+.gtable th{font-family:var(--f-mono);font-size:.72rem;color:var(--muted);font-weight:500}
+.linkish{background:none;border:0;padding:0;color:var(--ink);font:inherit;text-align:left;cursor:pointer}
+.qwhy{margin:6px 0 0}
+.reading-aloud{font-size:1.15rem;line-height:1.75;max-width:68ch;margin:0}
+.gapline{font-size:1.15rem;line-height:2;margin:0}
+input.gap{font:inherit;font-weight:600;border:0;border-bottom:2px solid var(--accent);background:transparent;color:var(--ink);padding:0 4px;max-width:60vw}
+.dict-in{width:100%;font:inherit;font-size:1.05rem;padding:10px;border:1px solid var(--line);border-radius:var(--r);background:var(--bg);color:var(--ink)}
+.ok-msg{color:var(--ok);font-weight:600;margin:0} .bad-msg{color:var(--bad);font-weight:600;margin:0}
+@media (max-width:560px){.gtable td:nth-child(3),.gtable th:nth-child(3){display:none}}
 .reading{max-width:68ch;display:flex;flex-direction:column;gap:12px;font-size:1rem}
 .gl{display:flex;flex-wrap:wrap;gap:6px}
 .gl span{background:var(--chip);border-radius:3px;padding:2px 8px;font-size:.85rem}
@@ -181,7 +192,7 @@ footer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px soli
 <header class="gate">
   <div class="wrap">
     <div class="gate-top">
-      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><div><h1>Logistics English Dock</h1><small>TIẾNG ANH NGÀNH LOGISTICS · A2 → B2</small></div></div>
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><div><h1>Logistics English Dock</h1><small>LOGISTICS · ĐỜI SỐNG · GIAO TIẾP · A2 → B2</small></div></div>
       <div class="stats" id="stats"></div>
     </div>
     <nav class="tabs" aria-label="Mục học">
@@ -189,7 +200,11 @@ footer{font-size:.8rem;color:var(--muted);padding-block:24px;border-top:1px soli
       <a href="#nghe">Nghe</a>
       <a href="#doc">Đọc</a>
       <a href="#viet">Viết</a>
+      <a href="#ngu-phap">Ngữ pháp</a>
+      <a href="#chinh-ta">Luyện nghe</a>
       <a href="#phat-am">Phát âm</a>
+      <a href="#shadowing">Shadowing</a>
+      <a href="#doc-to">Đọc to</a>
       <a href="#on-tap">Ôn tập</a>
       <a href="#hoi-thoai">Hội thoại</a>
       <a href="#video">Video</a>
@@ -226,8 +241,25 @@ const TOPICS=[
  {id:"it",code:"IT-16",name:"Hệ thống & theo dõi",en:"Systems & tracking"},
  {id:"ec",code:"EC-17",name:"Thương mại điện tử",en:"E-commerce"},
  {id:"cc",code:"CC-18",name:"Hàng lạnh & hàng nguy hiểm",en:"Cold chain & dangerous goods"},
- {id:"hs",code:"HS-19",name:"An toàn & chất lượng",en:"Safety & quality"}
+ {id:"hs",code:"HS-19",name:"An toàn & chất lượng",en:"Safety & quality"},
+ {id:"dl",code:"DL-20",name:"Nhà cửa, gia đình & sinh hoạt",en:"Home, family & daily life"},
+ {id:"fo",code:"FO-21",name:"Ăn uống",en:"Food & drink"},
+ {id:"hl",code:"HL-22",name:"Sức khỏe & cơ thể",en:"Health & body"},
+ {id:"sp",code:"SP-23",name:"Thể thao",en:"Sports"},
+ {id:"tv",code:"TV-24",name:"Du lịch & đi lại",en:"Travel & getting around"},
+ {id:"ws",code:"WS-25",name:"Thời tiết & thiên nhiên",en:"Weather & nature"},
+ {id:"fc",code:"FC-26",name:"Công xưởng & sản xuất",en:"Factory & production"},
+ {id:"wk",code:"WK-27",name:"Công việc & văn phòng",en:"Work & office"},
+ {id:"cm",code:"CM-28",name:"Giao tiếp & cảm xúc",en:"Communication & feelings"},
+ {id:"sh",code:"SH-29",name:"Mua sắm & tiền bạc",en:"Shopping & money"},
+ {id:"vb",code:"VB-30",name:"Động từ, tính từ, trạng từ thông dụng",en:"Everyday verbs & adjectives"},
+ {id:"tm",code:"TM-31",name:"Thời gian & con số",en:"Time & numbers"},
+ {id:"tc",code:"TC-32",name:"Công nghệ & điện thoại",en:"Technology & phones"},
+ {id:"pp",code:"PP-33",name:"Con người, nơi chốn, quần áo & màu sắc",en:"People, places & clothes"},
+ {id:"gt",code:"GT-34",name:"Giải trí, lễ hội & động vật",en:"Leisure, festivals & animals"},
+ {id:"kn",code:"KN-35",name:"Câu khẩu ngữ thông dụng",en:"Spoken English phrases"}
 ];
+const LOGI_N=19;
 // term | vietnamese | example | level | topic
 const RAW=`__VOCAB__`;
 const VOCAB=RAW.trim().split("\n").map((l,i)=>{const [term,vi,ex,level,topic,uk,us]=l.split("|");return{id:"w"+i,term,vi,ex,level,topic,uk:uk||"",us:us||""}});
@@ -344,6 +376,98 @@ const VIDEOS=[
  {id:"F-ZskaqBshs",ch:"Wendover Productions",level:"B2",title:"Containerization: The Most Influential Invention That You've Never Heard Of",focus:["containerization","stevedore","standardization","global trade"],task:["Đọc bài 'The box that changed the world' trước khi xem.","Ghi lại 3 thay đổi lớn mà container tạo ra cho thương mại.","So sánh: thông tin nào trong video bổ sung cho bài đọc?"]}
 ];
 
+/* ============ MORE LISTENING & READING (daily life) ============ */
+LISTEN.push(
+ {id:"l11",level:"A2",title:"At the pharmacy",vi:"Ở hiệu thuốc",
+  lines:[["Pharmacist","Hello. How can I help you?"],["Customer","Hi. I have a sore throat and a runny nose."],["Pharmacist","Do you have a fever?"],["Customer","No, I don't. But I feel tired."],["Pharmacist","It sounds like a cold. Take these tablets twice a day, after meals."],["Customer","How much are they?"],["Pharmacist","Forty-five thousand dong. And drink a lot of warm water."],["Customer","Thank you. Can I pay by QR code?"],["Pharmacist","Of course. Get well soon!"]],
+  qs:[["What is the customer's problem?",["A headache and a fever","A sore throat and a runny nose","A broken arm"],1],["How often should the customer take the tablets?",["Once a day","Twice a day","Three times a day"],1],["How does the customer want to pay?",["By QR code","In cash","By credit card"],0]]},
+ {id:"l12",level:"A2",title:"Checking in at a hotel",vi:"Nhận phòng khách sạn",
+  lines:[["Receptionist","Good afternoon. Welcome to the Sea View Hotel."],["Guest","Hi. I have a reservation under the name Tran."],["Receptionist","Let me check. Yes, a double room for three nights."],["Guest","That's right. Is breakfast included?"],["Receptionist","Yes, breakfast is from six thirty to nine thirty on the second floor."],["Guest","Great. And what's the Wi-Fi password?"],["Receptionist","It's on your key card. Your room is 512. The lift is on the left."],["Guest","Thank you. What time is check-out?"],["Receptionist","Check-out is at twelve noon. Enjoy your stay!"]],
+  qs:[["How many nights will the guest stay?",["Two","Three","Five"],1],["Where is breakfast?",["On the second floor","In the room","On the fifth floor"],0],["What time is check-out?",["10 a.m.","11 a.m.","12 noon"],2]]},
+ {id:"l13",level:"B1",title:"Shift handover in the factory",vi:"Bàn giao ca ở nhà máy",
+  lines:[["Hung","Hi Mai. Here's the handover for the night shift."],["Mai","Thanks, Hung. How was the day shift?"],["Hung","Not bad. We made four thousand eight hundred units. The target was five thousand."],["Mai","Why did we miss the target?"],["Hung","Machine three had a breakdown at two o'clock. The technician fixed it, but we lost about forty minutes of downtime."],["Mai","Is it working now?"],["Hung","Yes, but please check the temperature every hour. Also, batch 27 is waiting for final inspection."],["Mai","OK. Anything else?"],["Hung","We are low on packing boxes. I already told the warehouse. They will deliver more at ten p.m."],["Mai","Got it. Have a good evening."]],
+  qs:[["How many units did the day shift make?",["4,800","5,000","4,000"],0],["What caused the problem?",["A late delivery","A machine breakdown","Not enough workers"],1],["What will the warehouse deliver at 10 p.m.?",["Raw material","Packing boxes","A new machine"],1]]},
+ {id:"l14",level:"B1",title:"Planning a weekend trip",vi:"Lên kế hoạch đi chơi cuối tuần",
+  lines:[["Linh","Are you free this weekend? Let's go to Ninh Binh."],["Tom","Sounds great! How do we get there?"],["Linh","We can take the bus. It takes about two hours from Hanoi."],["Tom","What can we do there?"],["Linh","We can take a boat tour, visit some temples and ride bicycles through the rice fields."],["Tom","Will it rain?"],["Linh","The weather forecast says it will be sunny but hot, so bring sunscreen and a hat."],["Tom","Should we book a homestay?"],["Linh","Yes, I'll book one tonight. It's about four hundred thousand dong a night."],["Tom","Perfect. Count me in!"]],
+  qs:[["How long does the bus take?",["About one hour","About two hours","About four hours"],1],["What will the weather be like?",["Rainy and cool","Sunny and hot","Windy and cold"],1],["Who will book the homestay?",["Tom","Linh","The tour guide"],1]]}
+);
+READ.push(
+ {id:"r8",level:"A2",title:"My morning routine",vi:"Thói quen buổi sáng của tôi",glossary:["wake up","have breakfast","commute","traffic","on time"],
+  text:["My name is Hoa and I work in an office in Da Nang. On weekdays I wake up at six o'clock. First, I drink a glass of water and do some exercise for fifteen minutes.","Then I take a shower, get dressed and have breakfast with my family. I usually eat a bowl of noodles or a bread roll with egg. My husband makes the coffee.","At seven fifteen I ride my motorbike to work. My commute takes about twenty-five minutes, but the traffic is terrible when it rains. I always wear a helmet and a raincoat in the rainy season.","I arrive at the office at a quarter to eight. I like to be on time, so I can check my emails before the first meeting."],
+  qs:[["What does Hoa do first in the morning?",["Takes a shower","Drinks water and exercises","Checks her emails"],1],["Who makes the coffee?",["Hoa","Her husband","Her children"],1],["How long is her commute?",["About 15 minutes","About 25 minutes","About 45 minutes"],1],["Why does she arrive early?",["To have breakfast","To check emails before the meeting","To park her motorbike"],1]]},
+ {id:"r9",level:"B1",title:"Safety first in the workshop",vi:"An toàn là trên hết trong xưởng",glossary:["safety helmet","earplugs","emergency stop","lockout","supervisor"],
+  text:["Every year, many workers are injured in factories because they forget simple safety rules. At Phuoc An Metal, new staff get two days of safety training before they start work.","In the workshop, everyone must wear a safety helmet, safety glasses and safety shoes. Near the press machines, the noise is very loud, so workers also wear earplugs.","Every machine has a red emergency stop button. If something goes wrong, workers must press it immediately and tell the shift leader. Before a technician repairs a machine, he uses a lockout, so nobody can turn the power on by mistake.","The factory has a simple rule: if you are not sure, stop and ask. The supervisor says the number of accidents fell by half after the new training started."],
+  qs:[["How long is the safety training?",["Two hours","Two days","Two weeks"],1],["Why do workers wear earplugs near the press?",["It is cold","The noise is very loud","It is a uniform rule"],1],["What is a lockout for?",["To lock the warehouse","To stop people turning the power on","To check the workers' time"],1],["What happened after the new training?",["Accidents fell by half","Output doubled","The factory closed"],0]]},
+ {id:"r10",level:"B2",title:"Cashless Vietnam",vi:"Việt Nam không tiền mặt",glossary:["QR code","bank account","transfer money","convenience store","delivery fee"],
+  text:["Only ten years ago, most people in Vietnam paid for almost everything in cash. Today, a street food seller in Hanoi is just as likely to show you a QR code as to give you change.","The change happened quickly. Banks made it free to transfer money between accounts, and almost every adult now has a smartphone. Scanning a code takes a few seconds, and nobody has to worry about counting notes or finding small change.","Online shopping has grown at the same time. Customers can order clothes, food and electronics in an app, pay instantly and track the delivery. Many shops now offer a discount or free delivery to customers who pay online.","However, cash has not disappeared. Older people in the countryside still prefer it, and some small markets do not accept cards. Experts expect both systems to exist side by side for many years."],
+  qs:[["What made the change happen quickly?",["Free bank transfers and smartphones","New laws against cash","Cheaper credit cards"],0],["What do some shops offer online payers?",["A gift","A discount or free delivery","A bank account"],1],["Who still prefers cash?",["Teenagers in big cities","Older people in the countryside","Online shoppers"],1],["What do experts expect?",["Cash will disappear next year","Both systems will exist for many years","QR codes will stop"],1]]}
+);
+
+/* ============ SHADOWING ============ */
+const SHADOW=[
+ {id:"sh1",level:"A2",title:"Small talk every day",vi:"Chào hỏi, nói chuyện hằng ngày",lines:["Hi! How's it going?","Not bad, thanks. And you?","Long time no see. What have you been up to?","I've been really busy at work.","Are you free this weekend?","Sounds great. See you on Saturday!","Take care and say hi to your family.","Thanks a lot. Have a nice day!"]},
+ {id:"sh2",level:"A2",title:"At the café and restaurant",vi:"Ở quán cà phê và nhà hàng",lines:["Can I see the menu, please?","I'd like an iced milk coffee, please.","Not too sweet, please.","Is this dish spicy?","Could we have some more water?","Can we have the bill, please?","Let's split the bill.","Keep the change. Thank you!"]},
+ {id:"sh3",level:"A2",title:"Shopping and prices",vi:"Mua sắm và hỏi giá",lines:["Excuse me, how much is this jacket?","Do you have it in a smaller size?","Can I try it on?","It's a bit expensive. Can you make it cheaper?","I'm just looking, thanks.","Can I pay by QR code?","Could I have a receipt, please?","I'd like to exchange this for a bigger size."]},
+ {id:"sh4",level:"A2",title:"Asking for directions",vi:"Hỏi đường",lines:["Excuse me, I'm lost.","How do I get to the train station?","Go straight and turn left at the traffic lights.","Is it far from here?","It's about ten minutes on foot.","The bank is opposite the park.","Could you show me on the map?","Thank you so much for your help."]},
+ {id:"sh5",level:"B1",title:"At work: phone and meetings",vi:"Công việc: điện thoại và họp",lines:["Hello, this is Nam from the logistics department.","Could I speak to Ms Lan, please?","Sorry, she's in a meeting at the moment.","Can I take a message?","Could you speak more slowly, please?","Let me check and call you back this afternoon.","Let's move on to the next point.","Thanks, everyone. Let's call it a day."]},
+ {id:"sh6",level:"B1",title:"Logistics in action",vi:"Nghiệp vụ logistics",lines:["The shipment left the port this morning.","The container is waiting for customs clearance.","Could you send me the packing list and the invoice?","The truck will arrive at the warehouse at three p.m.","We have twelve pallets ready for loading.","There is a two-day delay because of bad weather.","Please confirm the booking as soon as possible.","I'll update you when the vessel arrives."]},
+ {id:"sh7",level:"B1",title:"Feelings and opinions",vi:"Cảm xúc và ý kiến",lines:["To be honest, I'm a bit worried about the exam.","In my opinion, it's too expensive.","I'm so happy for you. Congratulations!","Don't worry. It's not a big deal.","I see what you mean, but I don't agree.","That makes sense. Let's do it your way.","I can't believe we won the match!","Cheer up! You can do it."]},
+ {id:"sh8",level:"B2",title:"Solving a problem with a customer",vi:"Giải quyết vấn đề với khách hàng",lines:["I'm really sorry for the inconvenience this has caused.","Let me look into it and get back to you by the end of the day.","According to our records, the goods were dispatched on Monday.","It seems that the delay was caused by congestion at the port.","We will cover the extra storage charges this time.","Would it help if we arranged an express delivery?","I'll keep you updated on any progress.","Thank you for your patience and understanding."]}
+];
+
+/* ============ READ ALOUD PASSAGES ============ */
+const PASSAGES=[
+ {id:"p1",level:"A2",title:"About me",vi:"Giới thiệu bản thân",text:"Hello, my name is Minh. I am twenty-six years old and I live in Hai Phong with my parents. I work at a logistics company near the port. In my free time, I like playing football and listening to music. I am learning English because I want to talk with customers from other countries."},
+ {id:"p2",level:"A2",title:"My weekend",vi:"Cuối tuần của tôi",text:"Last weekend was very relaxing. On Saturday morning, I cleaned the house and did the laundry. In the afternoon, I went to the market with my mother and we bought fresh fruit and vegetables. On Sunday, my friends and I went to a café by the lake. We talked for hours and drank a lot of coffee."},
+ {id:"p3",level:"A2",title:"At the supermarket",vi:"Ở siêu thị",text:"The supermarket near my house is open from seven in the morning until ten at night. I usually go there after work. I take a basket and buy bread, milk, eggs and some meat. The checkout is often busy, so I have to queue for a few minutes. I always pay with a QR code because it is quick and easy."},
+ {id:"p4",level:"B1",title:"A day in the warehouse",vi:"Một ngày ở kho",text:"Our warehouse receives about twenty trucks every day. When a truck arrives, the driver gives us the delivery note and we check the number of pallets. Then we scan every pallet and put it away in the racking. In the afternoon we pick and pack orders for our customers. Safety is very important, so everyone wears safety shoes and a high-visibility vest."},
+ {id:"p5",level:"B1",title:"Staying healthy",vi:"Giữ gìn sức khỏe",text:"Working long hours can be stressful, so I try to stay healthy. I go to bed before eleven and get at least seven hours of sleep. I eat a lot of vegetables and drink plenty of water during the day. Three times a week, I go running in the park after work. When I feel tired, I take a short break and stretch my back and shoulders."},
+ {id:"p6",level:"B1",title:"Travelling in Vietnam",vi:"Du lịch Việt Nam",text:"Vietnam is a wonderful country for travellers. In the north, you can see the mountains and rice terraces of Sapa. In the centre, Hoi An is famous for its old town and colourful lanterns. In the south, the Mekong Delta has floating markets and delicious fruit. The best way to travel between cities is by train, sleeper bus or a cheap domestic flight."},
+ {id:"p7",level:"B2",title:"Why shipping costs change",vi:"Vì sao cước vận chuyển thay đổi",text:"Shipping costs can change very quickly. When demand is high, for example before Christmas, shipping lines raise their freight rates because space on the vessels is limited. Fuel prices also play a big role, since a large container ship burns hundreds of tonnes of fuel every day. In addition, port congestion and bad weather can cause delays, which increase costs for everyone in the supply chain."},
+ {id:"p8",level:"B2",title:"Lean manufacturing",vi:"Sản xuất tinh gọn",text:"Lean manufacturing is a way of working that focuses on removing waste. Waste does not only mean rubbish. It also includes waiting time, unnecessary movement, extra stock and defective products. In a lean factory, small teams meet regularly to find problems and suggest improvements. Over time, these small changes reduce costs, improve quality and make the workplace safer."}
+];
+
+/* ============ GRAMMAR ============ */
+// rules: [form, example, vietnamese note] · qs: [question, options, answerIndex, explanation]
+const GRAMMAR=[
+ {id:"g1",level:"A2",title:"Present simple",vi:"Thì hiện tại đơn",intro:"Dùng cho thói quen, việc lặp lại, sự thật và lịch trình cố định. Với he/she/it, thêm -s hoặc -es vào động từ.",
+  rules:[["I/You/We/They + V","I work in a warehouse.","Khẳng định"],["He/She/It + V-s/es","She checks the invoices every day.","Ngôi thứ ba số ít thêm -s/-es"],["do/does + not + V","He doesn't drive to work.","Phủ định"],["Do/Does + S + V?","Do you speak English?","Câu hỏi"],["Từ đi kèm","always, usually, often, sometimes, never, every day","Trạng từ tần suất"]],
+  qs:[["My brother ___ in a factory.",["work","works","working"],1,"Ngôi thứ ba số ít (my brother) nên thêm -s."],["___ you like coffee?",["Do","Does","Are"],0,"Câu hỏi với you dùng Do."],["She ___ eat meat.",["don't","doesn't","isn't"],1,"She dùng doesn't + động từ nguyên mẫu."],["The truck ___ at 8 a.m. every day.",["leave","leaves","is leave"],1,"Lịch trình cố định, ngôi thứ ba số ít: leaves."],["We ___ go out on weekdays.",["usually","usual","are usually"],0,"Trạng từ tần suất đứng trước động từ thường."],["He ___ the dishes after dinner.",["wash","washs","washes"],2,"Động từ tận cùng -sh thêm -es."]]},
+ {id:"g2",level:"A2",title:"Present continuous",vi:"Thì hiện tại tiếp diễn",intro:"Dùng cho việc đang xảy ra lúc nói, hoặc kế hoạch đã sắp xếp trong tương lai gần.",
+  rules:[["am/is/are + V-ing","I am waiting for the bus.","Đang làm"],["am/is/are + not + V-ing","They aren't working today.","Phủ định"],["Am/Is/Are + S + V-ing?","Is it raining?","Câu hỏi"],["Kế hoạch gần","We are meeting the customer tomorrow.","Lịch hẹn đã sắp xếp"],["Từ đi kèm","now, right now, at the moment, today, Look!","Dấu hiệu"]],
+  qs:[["Look! The children ___ in the rain.",["play","are playing","plays"],1,"Look! cho thấy việc đang xảy ra."],["I can't talk now. I ___.",["drive","am driving","drives"],1,"Đang làm lúc nói: am driving."],["___ she working today?",["Is","Does","Are"],0,"She dùng Is."],["We ___ the supplier tomorrow at 10.",["meet","are meeting","meets"],1,"Lịch hẹn đã sắp xếp dùng hiện tại tiếp diễn."],["They ___ watching TV. They're asleep.",["aren't","don't","isn't"],0,"They + aren't + V-ing."],["What ___ you doing?",["do","are","is"],1,"Câu hỏi hiện tại tiếp diễn với you: are."]]},
+ {id:"g3",level:"A2",title:"Past simple",vi:"Thì quá khứ đơn",intro:"Dùng cho việc đã xảy ra và kết thúc trong quá khứ, thường có thời gian cụ thể (yesterday, last week, in 2020, ago).",
+  rules:[["V-ed (có quy tắc)","I worked late yesterday.","Thêm -ed"],["V2 (bất quy tắc)","We went to Da Lat last year.","go → went, buy → bought, see → saw"],["did not + V","She didn't call me.","Phủ định"],["Did + S + V?","Did you receive the email?","Câu hỏi"],["was/were","The shop was closed.","Quá khứ của to be"]],
+  qs:[["I ___ my keys yesterday.",["lose","lost","losed"],1,"lose là động từ bất quy tắc: lost."],["___ you see the match last night?",["Do","Did","Were"],1,"Câu hỏi quá khứ đơn: Did + S + V."],["She didn't ___ to the party.",["came","come","comes"],1,"Sau didn't dùng động từ nguyên mẫu."],["The goods ___ late last week.",["arrive","arrived","arriving"],1,"last week → quá khứ đơn."],["We ___ very tired after the trip.",["was","were","are"],1,"We dùng were."],["He ___ a new phone two days ago.",["buys","buyed","bought"],2,"buy → bought."]]},
+ {id:"g4",level:"B1",title:"Present perfect",vi:"Thì hiện tại hoàn thành",intro:"Dùng cho trải nghiệm, việc vừa xong có kết quả ở hiện tại, hoặc việc kéo dài đến nay. Không dùng với thời gian cụ thể trong quá khứ.",
+  rules:[["have/has + V3","I have finished the report.","Vừa xong, kết quả bây giờ"],["Trải nghiệm","Have you ever been to Japan?","ever / never"],["for / since","She has worked here for five years / since 2020.","Kéo dài đến nay"],["already / yet / just","The truck has just arrived. Has he replied yet?","Dấu hiệu thường gặp"],["Không dùng","✗ I have seen him yesterday.","Có thời gian cụ thể → quá khứ đơn"]],
+  qs:[["I have ___ been to Hue.",["ever","never","yet"],1,"never = chưa từng."],["She has lived here ___ 2019.",["for","since","ago"],1,"since + mốc thời gian."],["Have you finished ___?",["already","yet","just"],1,"yet dùng cuối câu hỏi/phủ định."],["They ___ the container yet.",["haven't loaded","didn't load","don't load"],0,"yet + hiện tại hoàn thành phủ định."],["I ___ him yesterday.",["have seen","saw","see"],1,"yesterday là thời gian cụ thể → quá khứ đơn."],["We have worked together ___ three years.",["since","for","in"],1,"for + khoảng thời gian."]]},
+ {id:"g5",level:"A2",title:"Future: will and going to",vi:"Tương lai: will và be going to",intro:"will: quyết định ngay lúc nói, lời hứa, dự đoán. be going to: kế hoạch đã định trước, dự đoán có dấu hiệu rõ ràng.",
+  rules:[["will + V","I'll call you back.","Quyết định tức thì / lời hứa"],["won't + V","Don't worry, I won't forget.","Phủ định"],["am/is/are going to + V","We're going to visit Hoi An next month.","Kế hoạch đã có"],["Dấu hiệu rõ ràng","Look at those clouds. It's going to rain.","Dự đoán có căn cứ"]],
+  qs:[["The phone is ringing. I ___ answer it.",["will","am going to","going"],0,"Quyết định ngay lúc nói: will."],["We ___ move to a new house next month. We've already bought it.",["will","are going to","go"],1,"Kế hoạch đã định: be going to."],["I promise I ___ be late.",["won't","am not going","don't"],0,"Lời hứa dùng will/won't."],["Look at the sky! It ___ rain.",["will","is going to","goes"],1,"Có dấu hiệu rõ ràng: is going to."],["___ you help me with this box?",["Will","Are","Do"],0,"Lời nhờ: Will you…?"],["She ___ study English next year.",["is going to","going to","will to"],0,"is going to + V."]]},
+ {id:"g6",level:"A2",title:"Comparatives and superlatives",vi:"So sánh hơn và so sánh nhất",intro:"Tính từ ngắn thêm -er / -est. Tính từ dài dùng more / most. Một số từ bất quy tắc.",
+  rules:[["adj-er + than","Air freight is faster than sea freight.","So sánh hơn, tính từ ngắn"],["more + adj + than","This hotel is more expensive than that one.","Tính từ dài"],["the + adj-est","It's the cheapest option.","So sánh nhất"],["the most + adj","She is the most experienced driver.","So sánh nhất, tính từ dài"],["Bất quy tắc","good → better → the best; bad → worse → the worst","Phải học thuộc"]],
+  qs:[["Hanoi is ___ than Hai Phong.",["big","bigger","biggest"],1,"big → bigger (gấp đôi g)."],["This is the ___ restaurant in town.",["better","best","good"],1,"So sánh nhất của good: the best."],["Trucking is ___ than rail.",["more flexible","flexibler","most flexible"],0,"Tính từ dài: more + adj."],["Today is ___ than yesterday.",["hot","hotter","the hottest"],1,"So sánh hơn: hotter."],["It was the ___ day of my life.",["worse","bad","worst"],2,"bad → the worst."],["Sea freight is ___ than air freight.",["cheaper","more cheap","cheapest"],0,"cheap là tính từ ngắn: cheaper."]]},
+ {id:"g7",level:"A2",title:"Modal verbs: can, could, should, must",vi:"Động từ khuyết thiếu",intro:"Sau modal verb luôn dùng động từ nguyên mẫu không có to.",
+  rules:[["can / can't","I can drive a forklift.","Khả năng, xin phép"],["could","Could you help me, please?","Lời nhờ lịch sự; khả năng trong quá khứ"],["should / shouldn't","You should see a doctor.","Lời khuyên"],["must / mustn't","You must wear a helmet. You mustn't smoke here.","Bắt buộc / cấm"],["have to","I have to work on Saturday.","Phải (do hoàn cảnh)"]],
+  qs:[["You look tired. You ___ go to bed early.",["should","must to","can to"],0,"Lời khuyên: should."],["___ you open the window, please?",["Must","Could","Should"],1,"Lời nhờ lịch sự: Could you…?"],["You ___ smoke in the warehouse. It's dangerous.",["mustn't","don't have to","can"],0,"Cấm: mustn't."],["She can ___ three languages.",["speaks","speak","to speak"],1,"Sau can dùng động từ nguyên mẫu."],["I ___ wear a uniform at work. It's the rule.",["have to","should to","can"],0,"Bắt buộc theo quy định: have to."],["When I was young, I ___ swim very fast.",["can","could","must"],1,"Khả năng trong quá khứ: could."]]},
+ {id:"g8",level:"A2",title:"Prepositions of time: in, on, at",vi:"Giới từ chỉ thời gian",intro:"at cho giờ cụ thể, on cho ngày, in cho tháng, năm, mùa và buổi.",
+  rules:[["at + giờ","at 7 o'clock, at noon, at night, at the weekend (UK)","Thời điểm"],["on + ngày","on Monday, on 2 September, on my birthday","Ngày cụ thể"],["in + tháng/năm/mùa","in May, in 2025, in summer","Khoảng dài"],["in + buổi","in the morning, in the afternoon, in the evening","Nhưng: at night"]],
+  qs:[["The meeting is ___ Monday.",["in","on","at"],1,"Ngày trong tuần: on."],["I get up ___ six o'clock.",["at","on","in"],0,"Giờ cụ thể: at."],["We go to the beach ___ summer.",["on","at","in"],2,"Mùa: in."],["The shop is closed ___ night.",["in","at","on"],1,"Cụm cố định: at night."],["My birthday is ___ 15 March.",["in","on","at"],1,"Ngày tháng cụ thể: on."],["She was born ___ 1998.",["on","at","in"],2,"Năm: in."]]},
+ {id:"g9",level:"A2",title:"Countable and uncountable: some, any, much, many",vi:"Danh từ đếm được, không đếm được",intro:"many / a few đi với danh từ đếm được số nhiều; much / a little đi với danh từ không đếm được. some cho câu khẳng định và lời mời, any cho câu hỏi và phủ định.",
+  rules:[["many + N số nhiều","How many pallets are there?","Đếm được"],["much + N không đếm được","How much water do you drink?","Không đếm được"],["some","There is some milk. Would you like some tea?","Khẳng định, lời mời"],["any","Are there any questions? We don't have any boxes.","Hỏi, phủ định"],["a lot of","a lot of people / a lot of money","Dùng được cho cả hai"]],
+  qs:[["How ___ cartons are in the container?",["much","many","any"],1,"cartons đếm được: many."],["We don't have ___ time.",["many","some","much"],2,"time không đếm được, câu phủ định: much."],["Would you like ___ coffee?",["any","some","many"],1,"Lời mời: some."],["Are there ___ messages for me?",["some","any","much"],1,"Câu hỏi: any."],["I have ___ friends in Da Nang.",["a few","a little","much"],0,"friends đếm được: a few."],["There is ___ rice left.",["a few","many","a little"],2,"rice không đếm được: a little."]]},
+ {id:"g10",level:"B1",title:"The passive voice",vi:"Câu bị động",intro:"Dùng khi hành động quan trọng hơn người làm. Rất phổ biến trong email và báo cáo logistics.",
+  rules:[["am/is/are + V3","The goods are packed in cartons.","Bị động hiện tại"],["was/were + V3","The container was loaded yesterday.","Bị động quá khứ"],["will be + V3","The invoice will be sent tomorrow.","Bị động tương lai"],["has/have been + V3","The shipment has been delayed.","Bị động hiện tại hoàn thành"],["by + người làm","The truck was driven by Mr Hai.","Chỉ nói khi cần"]],
+  qs:[["The parcel ___ yesterday.",["delivered","was delivered","is deliver"],1,"Quá khứ bị động: was + V3."],["English ___ all over the world.",["speaks","is spoken","spoken"],1,"Hiện tại bị động: is + V3."],["The report will ___ by Friday.",["finish","be finished","finished"],1,"will be + V3."],["Our flight has ___ cancelled.",["be","been","being"],1,"has been + V3."],["These phones ___ in Vietnam.",["are made","make","are making"],0,"Bị động hiện tại số nhiều: are made."],["The windows ___ cleaned every week.",["is","are","was"],1,"windows số nhiều, hiện tại: are."]]},
+ {id:"g11",level:"B1",title:"First conditional",vi:"Câu điều kiện loại 1",intro:"Nói về điều có thể xảy ra trong tương lai và kết quả của nó. Mệnh đề If dùng hiện tại đơn, mệnh đề chính dùng will.",
+  rules:[["If + hiện tại đơn, will + V","If it rains, we will stay at home.","Cấu trúc chính"],["will + V + if + hiện tại","I'll call you if I have time.","Đảo vị trí, không cần dấu phẩy"],["unless = if not","We'll miss the vessel unless we hurry.","Trừ khi"],["Không dùng will sau If","✗ If it will rain…","Lỗi hay gặp"]],
+  qs:[["If you ___ hard, you will pass.",["study","will study","studied"],0,"Mệnh đề If dùng hiện tại đơn."],["If the truck is late, we ___ the customer.",["call","will call","called"],1,"Mệnh đề chính dùng will."],["I'll be angry ___ you tell the truth.",["if","unless","when"],1,"unless = nếu không."],["If it ___ tomorrow, we'll cancel the trip.",["rains","will rain","rain"],0,"It + rains (hiện tại đơn)."],["She won't come if you ___ her.",["don't invite","won't invite","not invite"],0,"Phủ định hiện tại đơn ở mệnh đề If."],["What ___ you do if you miss the bus?",["do","will","are"],1,"Câu hỏi mệnh đề chính: will."]]},
+ {id:"g12",level:"B1",title:"Polite requests and offers",vi:"Đề nghị và yêu cầu lịch sự",intro:"Trong công việc, câu hỏi gián tiếp và từ lịch sự giúp bạn nghe chuyên nghiệp hơn.",
+  rules:[["Could you + V?","Could you send me the invoice?","Nhờ lịch sự"],["Would you mind + V-ing?","Would you mind closing the door?","Rất lịch sự"],["I'd like + N / to V","I'd like to book a table for two.","Muốn (lịch sự)"],["Shall I / Would you like me to…?","Shall I call a taxi?","Đề nghị giúp"],["Do you know where…?","Do you know where the toilet is?","Câu hỏi gián tiếp: S + V"]],
+  qs:[["Would you mind ___ the window?",["open","opening","to open"],1,"Would you mind + V-ing."],["I'd like ___ a room for two nights.",["book","booking","to book"],2,"I'd like + to V."],["___ I help you with your bags?",["Shall","Will","Do"],0,"Đề nghị giúp: Shall I…?"],["Do you know where ___?",["is the station","the station is","the station"],1,"Câu hỏi gián tiếp: chủ ngữ trước động từ."],["___ you send it again, please?",["Could","Should","Must"],0,"Nhờ lịch sự: Could you…?"],["Would you like ___ tea?",["some","any","many"],0,"Lời mời dùng some."]]}
+];
+
 /* ============ STATE ============ */
 const KEY="logi-eng-v1";
 let S={box:{},star:{},done:{},best:0,drafts:{}};
@@ -356,8 +480,8 @@ const shuffle=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(M
 
 function renderStats(){
   const mastered=VOCAB.filter(w=>(S.box[w.id]||0)>=3).length;
-  const lessons=Object.keys(S.done).length;
-  $("#stats").innerHTML=`<span>Đã thuộc <b>${mastered}/${VOCAB.length}</b> từ</span><span>Bài hoàn thành <b>${lessons}/${LISTEN.length+READ.length+WRITE.length}</b></span><span>Quiz cao nhất <b>${S.best}/10</b></span>`;
+  const ALL=[...LISTEN,...READ,...WRITE,...GRAMMAR,...SHADOW,...PASSAGES];const lessons=ALL.filter(d=>S.done[d.id]).length;
+  $("#stats").innerHTML=`<span>Đã thuộc <b>${mastered}/${VOCAB.length}</b> từ</span><span>Bài hoàn thành <b>${lessons}/${ALL.length}</b></span><span>Quiz cao nhất <b>${S.best}/10</b></span>`;
 }
 
 /* ============ SPEECH ============ */
@@ -390,9 +514,9 @@ const lvls=["Tất cả","A2","B1","B2"];
 let vocabFilter={level:"Tất cả",q:"",starred:false,topic:"sc"};
 
 function vocabView(){
-  app.innerHTML=`<div class="view-head"><span class="eyebrow">${VOCAB.length} từ · ${TOPICS.length} chủ đề</span><h2>Từ vựng logistics</h2><p class="lead">Từ thông dụng trong công việc hằng ngày: email với forwarder, hãng tàu, hải quan, kho và khách hàng. Mỗi từ có phiên âm IPA Anh-Anh (UK) và Anh-Mỹ (US), nghĩa tiếng Việt, câu ví dụ và nút phát âm. Đánh sao những từ khó để ôn riêng.</p>
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">${VOCAB.length} từ · ${TOPICS.length} chủ đề</span><h2>Từ vựng tiếng Anh</h2><p class="lead">Từ thông dụng trong công việc logistics (email với forwarder, hãng tàu, hải quan, kho) và đời sống: nhà cửa, ăn uống, sức khỏe, thể thao, du lịch, công xưởng, giao tiếp, mua sắm, cùng các câu khẩu ngữ hay dùng. Mỗi từ có phiên âm IPA Anh-Anh (UK) và Anh-Mỹ (US), nghĩa tiếng Việt, câu ví dụ và nút phát âm. Đánh sao những từ khó để ôn riêng.</p>
   <div class="bar" style="margin:4px 0 0"><button class="btn ghost" id="pdf">Tải bản PDF để in (${VOCAB.length} từ)</button><span class="note" id="pdfmsg"></span></div></div>
-  <div class="bar"><label class="note" for="vt">Chủ đề</label><select id="vt" class="pill"><option value="all">Tất cả chủ đề (${VOCAB.length} từ)</option>${TOPICS.map(t=>`<option value="${t.id}" ${vocabFilter.topic===t.id?"selected":""}>${t.code} · ${esc(t.en)} · ${esc(t.name)} (${VOCAB.filter(w=>w.topic===t.id).length})</option>`).join("")}</select></div>
+  <div class="bar"><label class="note" for="vt">Chủ đề</label><select id="vt" class="pill">${topicOptions(vocabFilter.topic,`<option value="all">Tất cả chủ đề (${VOCAB.length} từ)</option>`)}</select></div>
   <div class="bar">${lvls.map(l=>`<button class="pill" data-l="${l}" aria-pressed="${vocabFilter.level===l}">${l}</button>`).join("")}
   <button class="pill" id="vstar" aria-pressed="${vocabFilter.starred}">★ Từ đã đánh sao</button>
   <input class="search" id="vq" type="search" placeholder="Tìm từ tiếng Anh hoặc tiếng Việt…" value="${esc(vocabFilter.q)}"></div><div id="vlist"></div>`;
@@ -437,6 +561,7 @@ function wireQuiz(qs,id){
   app.querySelectorAll(".q").forEach(qe=>{const i=+qe.dataset.q;qe.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
     if(qe.dataset.done)return;qe.dataset.done=1;answered++;const j=+b.dataset.j,ok=j===qs[i][2];if(ok)right++;
     b.classList.add(ok?"right":"wrong");if(!ok)qe.querySelectorAll(".opt")[qs[i][2]].classList.add("right");
+    if(qs[i][3]){const ex=document.createElement("p");ex.className="note qwhy";ex.textContent=(ok?"✓ ":"✗ ")+qs[i][3];qe.appendChild(ex)}
     if(answered===qs.length){const sc=$("#qs-score");sc.hidden=false;sc.textContent=`Kết quả: ${right}/${qs.length} câu đúng`;S.done[id]=`${right}/${qs.length}`;save()}
   })});
 }
@@ -531,7 +656,7 @@ function buildFlashQueue(){
 }
 function flashMode(){
   if(!flashQueue.length||flashIdx>=flashQueue.length)buildFlashQueue();
-  const opts=[["due","Từ chưa thuộc"],["star","★ Đã đánh sao"],["all","Tất cả"],...TOPICS.map(t=>[t.id,t.en])];
+  const opts=[["due","Từ chưa thuộc"],["star","★ Đã đánh sao"],["all","Tất cả"],...TOPICS.map(t=>[t.id,t.en+" · "+t.name])];
   const w=flashQueue[flashIdx];
   $("#rv").innerHTML=`<div class="bar"><label class="note" for="fp">Bộ thẻ</label><select id="fp" class="pill">${opts.map(o=>`<option value="${o[0]}" ${o[0]===flashPool?"selected":""}>${esc(o[1])}</option>`).join("")}</select><span class="note">${w?`Thẻ ${flashIdx+1}/${flashQueue.length}`:""}</span></div>
   ${w?`<div class="flash"><div class="flash-inner" id="fc" tabindex="0" role="button" aria-label="Lật thẻ"><span class="flash-code">${TOPICS.find(t=>t.id===w.topic).code} · ngăn ${Math.min(S.box[w.id]||0,3)}</span>
@@ -634,7 +759,7 @@ function pronView(){
   <div class="bar">
     <button class="pill" data-pm="word" aria-pressed="${pron.mode==="word"}">Đọc từ</button><button class="pill" data-pm="sent" aria-pressed="${pron.mode==="sent"}">Đọc câu ví dụ</button>
     <select id="pl" class="pill">${lvls.map(l=>`<option ${l===pron.level?"selected":""}>${l}</option>`).join("")}</select>
-    <select id="pt" class="pill"><option value="all">Tất cả chủ đề</option><option value="weak" ${pron.topic==="weak"?"selected":""}>Từ dưới 70 điểm</option>${TOPICS.map(t=>`<option value="${t.id}" ${pron.topic===t.id?"selected":""}>${esc(t.en)}</option>`).join("")}</select>
+    <select id="pt" class="pill"><option value="all">Tất cả chủ đề</option>${topicOptions(pron.topic,`<option value="weak" ${pron.topic==="weak"?"selected":""}>Từ dưới 70 điểm</option>`)}</select>
     <span class="note">Đã chấm ${done} từ · điểm trung bình <b>${avg}</b></span></div>
   <div id="pr"></div>`;
   app.querySelectorAll("[data-pm]").forEach(b=>b.onclick=()=>{pron.mode=b.dataset.pm;pronView()});
@@ -690,6 +815,194 @@ function drawPron(){
       else if(c==="unavailable")st.textContent="Chưa nhận được giọng nói tiếng Anh ở trình duyệt này.";
       else if(c!=="stopped")st.textContent="Không mở được micro, thử lại.";});
   };
+}
+
+/* ============ SHARED MIC SCORER ============ */
+const NO_MIC="Phần chấm điểm cần micro. Trên claude.ai hãy dùng Chrome/Edge máy tính hoặc ứng dụng Claude; bản web mở bằng Chrome hoặc Edge. Bạn vẫn nghe mẫu và tự luyện được.";
+function scoreHtml(r,extra){const cls=r.score>=85?"good":r.score>=60?"mid":"low";
+  return `<div class="pron-score ${cls}"><b>${r.score}</b><span>/100 · ${r.score>=85?"Rất tốt":r.score>=60?"Khá, luyện thêm các từ màu đỏ":"Cần luyện lại: nghe chậm rồi đọc theo"}</span></div>${extra||""}
+  <p class="pron-words">${r.words.map(([t,v])=>`<span class="${v>=.95?"ok":v>=.6?"near":"miss"}">${esc(t)}</span>`).join(" ")}</p>`}
+// root has .mic button, .mstate, .heard, .mresult
+function micWire(root,getTarget,onScore,pause=1400){
+  unsub.forEach(f=>{try{f()}catch(e){}});unsub=[];
+  const btn=root.querySelector(".mic"),st=root.querySelector(".mstate"),hd=root.querySelector(".heard"),res=root.querySelector(".mresult");
+  if(!DICT){btn.disabled=true;st.textContent=NO_MIC;return{start(){}}}
+  let heard="",timer=null,t0=0;
+  const finish=()=>{clearTimeout(timer);const txt=heard.trim();if(!txt){st.textContent="Chưa nghe thấy gì. Kiểm tra micro và thử lại.";return}
+    const r=scoreSpeech(getTarget(),txt);r.secs=Math.max(1,(Date.now()-t0)/1000-pause/1000);st.textContent="Đã chấm xong. Bấm micro để thử lại.";res.innerHTML=onScore(r)};
+  unsub.push(DICT.onPartial(({text})=>{hd.textContent="Máy nghe được: "+(heard+" "+text).trim()}));
+  unsub.push(DICT.onFinal(({text})=>{heard+=" "+text;hd.textContent="Máy nghe được: "+heard.trim();clearTimeout(timer);timer=setTimeout(()=>DICT.stop(),pause)}));
+  unsub.push(DICT.onState(({state,reason})=>{
+    if(state==="idle"){btn.textContent="● Bấm để nói";btn.classList.remove("on");
+      if(reason==="not_granted"){st.textContent="Micro chưa được cho phép. Mở menu quyền của trang để bật lại.";btn.disabled=true}
+      else if(reason==="unavailable"){st.textContent="Trình duyệt này chưa hỗ trợ nhận giọng nói tiếng Anh.";btn.disabled=true}
+      else if(reason==="rate_limited"){st.textContent="Đang quá tải, thử lại sau vài giây."}
+      else if(reason==="upstream_error"){st.textContent="Micro hoặc dịch vụ nhận giọng gặp lỗi, thử lại."}
+      else finish()}
+    else if(state==="listening"){btn.textContent="■ Dừng và chấm";btn.classList.add("on");st.textContent="Đang nghe… hãy nói to, rõ."}
+    else if(state==="starting"){st.textContent="Đang mở micro…"}}));
+  const start=()=>{heard="";hd.textContent="";res.innerHTML="";t0=Date.now();
+    DICT.start({language:"en"}).catch(e=>{const c=e&&e.code;
+      if(c==="not_granted")st.textContent="Bạn chưa cho phép dùng micro cho trang này.";
+      else if(c==="dismissed")st.textContent="Bạn đã đóng hộp hỏi quyền. Bấm lại nút để thử.";
+      else if(c==="unavailable")st.textContent="Chưa nhận được giọng nói tiếng Anh ở trình duyệt này.";
+      else if(c!=="stopped")st.textContent="Không mở được micro, thử lại."})};
+  btn.onclick=()=>{if(DICT.active()){DICT.stop().catch(()=>{});return}stopSpeech();start()};
+  return{start};
+}
+const stopMic=()=>{try{if(DICT&&DICT.active())DICT.stop()}catch(e){}};
+const micBox=`<div class="bar" style="margin:0"><button class="btn warn mic">● Bấm để nói</button></div><p class="note mstate">Bấm nút micro, nói to rõ ràng; app tự chấm khi bạn ngừng nói.</p><p class="heard"></p><div class="mresult"></div>`;
+function topicOptions(sel,extra=""){
+  const g=(label,list)=>`<optgroup label="${label}">${list.map(t=>`<option value="${t.id}" ${sel===t.id?"selected":""}>${esc(t.en)} · ${esc(t.name)} (${VOCAB.filter(w=>w.topic===t.id).length})</option>`).join("")}</optgroup>`;
+  return extra+g("Logistics",TOPICS.slice(0,LOGI_N))+g("Đời sống, công việc & giao tiếp",TOPICS.slice(LOGI_N));
+}
+
+/* ============ SHADOWING VIEW ============ */
+let shState={set:null,i:0,hide:false,rate:0.9};
+function shadowView(){
+  stopSpeech();stopMic();
+  if(shState.set)return shadowLesson();
+  const kn=VOCAB.filter(w=>w.topic==="kn").length;
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">Shadowing · ${SHADOW.length} bộ câu + ${kn} câu khẩu ngữ</span><h2>Luyện shadowing</h2><p class="lead">Shadowing là nghe câu mẫu rồi nói đuổi theo ngay, bắt chước cả ngữ điệu và tốc độ. Bấm “Nghe rồi nói”: app đọc câu, sau đó tự mở micro để bạn nói lại và chấm điểm. Khi đã quen, bật “Ẩn chữ” để luyện chỉ bằng tai.</p></div>
+  <div class="grid">${SHADOW.map(s=>`<button class="card" data-sh="${s.id}"><div class="meta"><span class="lvl ${s.level}">${s.level}</span><span>${s.lines.length} câu</span>${S.done[s.id]?`<span class="done-tag">✓ ${S.done[s.id]}</span>`:""}</div><h3>${esc(s.title)}</h3><span class="note">${esc(s.vi)}</span></button>`).join("")}
+  <button class="card" data-sh="kn"><div class="meta"><span class="lvl">A2–B1</span><span>10 câu ngẫu nhiên</span></div><h3>Spoken phrases mix</h3><span class="note">Câu khẩu ngữ người bản xứ hay dùng (đổi mỗi lần mở)</span></button></div>`;
+  app.querySelectorAll("[data-sh]").forEach(b=>b.onclick=()=>{const id=b.dataset.sh;
+    shState.set=id==="kn"?{id:"shkn",level:"A2",title:"Spoken phrases mix",vi:"Câu khẩu ngữ",lines:shuffle(VOCAB.filter(w=>w.topic==="kn")).slice(0,10).map(w=>w.ex),vis:null}:SHADOW.find(s=>s.id===id);
+    shState.i=0;shState.scores={};shadowLesson();window.scrollTo(0,0)});
+}
+function shadowLesson(){
+  const s=shState.set,line=s.lines[shState.i];
+  const phr=s.id==="shkn"?VOCAB.find(w=>w.topic==="kn"&&w.ex===line):null;
+  app.innerHTML=`<div class="panel pron"><button class="back" id="bk">← Tất cả bộ shadowing</button>
+  <div class="view-head"><span class="eyebrow">Shadowing · ${s.level} · câu ${shState.i+1}/${s.lines.length}</span><h2>${esc(s.title)}</h2><p class="lead">${esc(s.vi)}</p></div>
+  <div class="bar" style="margin:0"><button class="pill" id="hide" aria-pressed="${shState.hide}">Ẩn chữ</button>
+   <label class="note" for="shr">Tốc độ</label><select id="shr" class="pill"><option value="0.7">Chậm</option><option value="0.9">Vừa</option><option value="1.05">Tự nhiên</option></select></div>
+  <p class="pron-target" id="tgt" ${shState.hide?'style="filter:blur(7px)"':""}>${esc(line)}</p>${phr?`<p class="note">${esc(phr.term)} · ${esc(phr.vi)}</p>`:""}
+  <div class="bar" style="margin:0"><button class="btn" id="go">▶ Nghe rồi nói</button><button class="btn ghost" id="once">▶ Nghe mẫu</button><button class="btn ghost" id="thrice">🔁 Nghe 3 lần</button></div>
+  <div id="mic">${micBox}</div>
+  <div class="bar" style="margin:0"><button class="btn ghost" id="prev" ${shState.i?"":"disabled"}>← Câu trước</button><button class="btn" id="next">${shState.i+1<s.lines.length?"Câu tiếp →":"Hoàn thành"}</button></div>
+  <ol class="note" style="margin:0;padding-left:20px">${s.lines.map((l,k)=>`<li style="${k===shState.i?"color:var(--ink);font-weight:600":""}">${shState.hide&&k>=shState.i?"• • •":esc(l)}${shState.scores[k]!==undefined?` · <b>${shState.scores[k]}</b>`:""}</li>`).join("")}</ol></div>`;
+  $("#shr").value=String(shState.rate);$("#shr").onchange=e=>{shState.rate=+e.target.value};
+  $("#bk").onclick=()=>{stopSpeech();stopMic();shState.set=null;shadowView()};
+  $("#hide").onclick=()=>{shState.hide=!shState.hide;shadowLesson()};
+  $("#tgt").onclick=()=>{$("#tgt").style.filter=""};
+  const mic=micWire($("#mic"),()=>line,r=>{shState.scores[shState.i]=Math.max(shState.scores[shState.i]||0,r.score);$("#tgt").style.filter="";return scoreHtml(r)});
+  $("#once").onclick=()=>{stopMic();stopSpeech();say(line,shState.rate)};
+  $("#thrice").onclick=()=>{stopMic();stopSpeech();let n=0;const nx=()=>{if(n++<3)say(line,shState.rate,0,()=>setTimeout(nx,700))};nx()};
+  $("#go").onclick=()=>{stopMic();stopSpeech();say(line,shState.rate,0,()=>mic.start())};
+  $("#prev").onclick=()=>{stopMic();stopSpeech();shState.i--;shadowLesson()};
+  $("#next").onclick=()=>{stopMic();stopSpeech();
+    if(shState.i+1<s.lines.length){shState.i++;shadowLesson();return}
+    const v=Object.values(shState.scores);if(v.length&&s.id!=="shkn"){S.done[s.id]=`TB ${Math.round(v.reduce((a,b)=>a+b,0)/v.length)} điểm`;save()}
+    shState.set=null;shadowView()};
+}
+
+/* ============ READ ALOUD VIEW ============ */
+function readAloudView(){
+  stopSpeech();stopMic();
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">Đọc to · chấm điểm · ${PASSAGES.length} đoạn + ${READ.length} bài đọc</span><h2>Đọc đoạn văn thành tiếng</h2><p class="lead">Chọn một đoạn, nghe mẫu nếu cần, rồi bấm micro và đọc to cả đoạn. App chấm độ chính xác từng từ (từ đỏ là máy chưa nhận ra) và tính tốc độ đọc theo số từ mỗi phút. Người bản xứ đọc khoảng 130–160 từ/phút.</p></div>
+  <h3 style="margin:8px 0">Đoạn văn luyện đọc</h3>
+  <div class="grid">${PASSAGES.map(p=>`<button class="card" data-p="${p.id}"><div class="meta"><span class="lvl ${p.level}">${p.level}</span><span>${p.text.split(" ").length} từ</span>${S.done[p.id]?`<span class="done-tag">✓ ${S.done[p.id]}</span>`:""}</div><h3>${esc(p.title)}</h3><span class="note">${esc(p.vi)}</span></button>`).join("")}</div>
+  <h3 style="margin:20px 0 8px">Đọc to từng đoạn trong bài đọc</h3>
+  <div class="grid">${READ.map(d=>`<button class="card" data-rd="${d.id}"><div class="meta"><span class="lvl ${d.level}">${d.level}</span><span>${d.text.length} đoạn</span></div><h3>${esc(d.title)}</h3><span class="note">${esc(d.vi)}</span></button>`).join("")}</div>`;
+  app.querySelectorAll("[data-p]").forEach(b=>b.onclick=()=>{const p=PASSAGES.find(x=>x.id===b.dataset.p);readAloud(p.id,p.title,p.level,[p.text],0);window.scrollTo(0,0)});
+  app.querySelectorAll("[data-rd]").forEach(b=>b.onclick=()=>{const d=READ.find(x=>x.id===b.dataset.rd);readAloud(d.id+"-ra",d.title,d.level,d.text,0);window.scrollTo(0,0)});
+}
+function readAloud(id,title,level,paras,k){
+  stopSpeech();stopMic();
+  const text=paras[k];
+  app.innerHTML=`<div class="panel pron"><button class="back" id="bk">← Chọn đoạn khác</button>
+  <div class="view-head"><span class="eyebrow">Đọc to · ${level}${paras.length>1?` · đoạn ${k+1}/${paras.length}`:""}</span><h2>${esc(title)}</h2></div>
+  <p class="reading-aloud" id="txt">${esc(text)}</p>
+  <div class="bar" style="margin:0"><button class="btn ghost" id="model">▶ Nghe mẫu</button><button class="btn ghost" id="slow">▶ Nghe chậm</button><button class="btn ghost" id="st">■ Dừng</button></div>
+  <div id="mic">${micBox}</div>
+  ${paras.length>1?`<div class="bar" style="margin:0"><button class="btn ghost" id="prev" ${k?"":"disabled"}>← Đoạn trước</button><button class="btn" id="next" ${k+1<paras.length?"":"disabled"}>Đoạn tiếp →</button></div>`:""}</div>`;
+  $("#bk").onclick=()=>{stopSpeech();stopMic();readAloudView()};
+  $("#model").onclick=()=>{stopMic();stopSpeech();say(text,0.92)};
+  $("#slow").onclick=()=>{stopMic();stopSpeech();say(text,0.7)};
+  $("#st").onclick=stopSpeech;
+  if(paras.length>1){$("#prev").onclick=()=>readAloud(id,title,level,paras,k-1);$("#next").onclick=()=>readAloud(id,title,level,paras,k+1)}
+  micWire($("#mic"),()=>text,r=>{
+    const n=norm(text).split(" ").length,wpm=Math.round(n/r.secs*60);
+    const sp=wpm<80?"hơi chậm, cố đọc liền mạch hơn":wpm<=170?"tốt, tự nhiên":"hơi nhanh, đọc chậm lại cho rõ";
+    S.done[id]=Math.max(parseInt(S.done[id])||0,r.score)+" điểm";save();
+    return scoreHtml(r,`<p class="note">Tốc độ: <b>${wpm} từ/phút</b> (${sp}) · ${n} từ trong ${Math.round(r.secs)} giây</p>`)},2600);
+}
+
+/* ============ GRAMMAR VIEW ============ */
+let gLevel="Tất cả";
+function grammarView(){
+  stopSpeech();
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">${GRAMMAR.length} chủ điểm · ${GRAMMAR.reduce((a,g)=>a+g.qs.length,0)} câu bài tập</span><h2>Ngữ pháp và bài tập</h2><p class="lead">Mỗi chủ điểm có công thức, ví dụ gần với công việc và đời sống, giải thích bằng tiếng Việt và bài tập chấm điểm ngay. Sai câu nào, app giải thích vì sao.</p></div>
+  <div class="bar">${lvls.map(l=>`<button class="pill" data-l="${l}" aria-pressed="${gLevel===l}">${l}</button>`).join("")}</div>
+  <div class="grid">${GRAMMAR.filter(g=>gLevel==="Tất cả"||g.level===gLevel).map(g=>`<button class="card" data-g="${g.id}"><div class="meta"><span class="lvl ${g.level}">${g.level}</span>${S.done[g.id]?`<span class="done-tag">✓ ${S.done[g.id]}</span>`:""}</div><h3>${esc(g.title)}</h3><span class="note">${esc(g.vi)}</span></button>`).join("")}</div>`;
+  app.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{gLevel=b.dataset.l;grammarView()});
+  app.querySelectorAll("[data-g]").forEach(b=>b.onclick=()=>{grammarLesson(GRAMMAR.find(g=>g.id===b.dataset.g));window.scrollTo(0,0)});
+}
+function grammarLesson(g){
+  const qs=shuffle(g.qs).map(q=>{const o=q[1].map((t,j)=>[t,j===q[2]]);const so=shuffle(o);return[q[0],so.map(x=>x[0]),so.findIndex(x=>x[1]),q[3]]});
+  app.innerHTML=`<div class="panel"><button class="back" id="bk">← Tất cả chủ điểm</button>
+  <div class="view-head"><span class="eyebrow">Grammar · ${g.level}</span><h2>${esc(g.title)}</h2><p class="lead">${esc(g.vi)}. ${esc(g.intro)}</p></div>
+  <table class="gtable"><thead><tr><th>Cấu trúc</th><th>Ví dụ</th><th>Ghi chú</th></tr></thead><tbody>${g.rules.map(r=>`<tr><td><b>${esc(r[0])}</b></td><td><button class="linkish" data-say="${esc(r[1])}">${esc(r[1])} 🔊</button></td><td class="note">${esc(r[2])}</td></tr>`).join("")}</tbody></table>
+  <h3>Bài tập</h3>${quizBlock(qs,g.id)}<button class="btn ghost" id="again" style="align-self:flex-start">Làm lại (đảo câu)</button></div>`;
+  $("#bk").onclick=()=>{stopSpeech();grammarView()};
+  $("#again").onclick=()=>{grammarLesson(g);window.scrollTo(0,0)};
+  app.querySelectorAll("[data-say]").forEach(b=>b.onclick=()=>{stopSpeech();say(b.dataset.say.replace(/✗/g,""),0.9)});
+  wireQuiz(qs,g.id);
+}
+
+/* ============ DICTATION / LISTENING PRACTICE ============ */
+let dic={mode:"gap",level:"Tất cả",topic:"lifeall",list:[],i:0,right:0,done:0};
+function dicPool(){
+  return VOCAB.filter(w=>(dic.level==="Tất cả"||w.level===dic.level)&&(dic.topic==="all"||(dic.topic==="lifeall"?TOPICS.findIndex(t=>t.id===w.topic)>=LOGI_N:dic.topic==="logiall"?TOPICS.findIndex(t=>t.id===w.topic)<LOGI_N:w.topic===dic.topic))
+    &&(dic.mode==="dict"||gapOf(w)));
+}
+function gapOf(w){const base=w.term.replace(/\s*\(.*?\)/g,"").split(" / ")[0].trim();if(!base||w.topic==="kn")return null;
+  const re=new RegExp("\\b("+base.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"[a-z]{0,3})\\b","i");const m=w.ex.match(re);return m?{word:m[1],idx:m.index}:null}
+function buildDic(){dic.list=shuffle(dicPool()).slice(0,10);dic.i=0;dic.right=0;dic.done=0}
+function dictView(){
+  stopSpeech();stopMic();
+  if(!dic.list.length)buildDic();
+  app.innerHTML=`<div class="view-head"><span class="eyebrow">Luyện nghe · chép chính tả · điền từ</span><h2>Bài tập luyện nghe</h2><p class="lead">Nghe câu (không nhìn chữ) rồi gõ lại. Chế độ “Điền từ” chỉ cần gõ từ còn thiếu; chế độ “Chép cả câu” khó hơn, app so từng từ và tô màu chỗ sai. Mỗi lượt 10 câu lấy từ kho ${VOCAB.length} câu ví dụ. Muốn luyện hội thoại dài, vào mục Nghe.</p></div>
+  <div class="bar"><button class="pill" data-dm="gap" aria-pressed="${dic.mode==="gap"}">Điền từ còn thiếu</button><button class="pill" data-dm="dict" aria-pressed="${dic.mode==="dict"}">Chép cả câu</button>
+   <select id="dl" class="pill">${lvls.map(l=>`<option ${l===dic.level?"selected":""}>${l}</option>`).join("")}</select>
+   <select id="dt" class="pill">${topicOptions(dic.topic,`<option value="lifeall" ${dic.topic==="lifeall"?"selected":""}>Tất cả chủ đề đời sống</option><option value="logiall" ${dic.topic==="logiall"?"selected":""}>Tất cả chủ đề logistics</option><option value="all" ${dic.topic==="all"?"selected":""}>Tất cả</option>`)}</select>
+   <span class="note">Kỷ lục: <b>${S.dictBest||0}/10</b></span></div>
+  <div id="dx"></div>`;
+  app.querySelectorAll("[data-dm]").forEach(b=>b.onclick=()=>{dic.mode=b.dataset.dm;buildDic();dictView()});
+  $("#dl").onchange=e=>{dic.level=e.target.value;buildDic();dictView()};
+  $("#dt").onchange=e=>{dic.topic=e.target.value;buildDic();dictView()};
+  drawDic();
+}
+function drawDic(){
+  const w=dic.list[dic.i];
+  if(!w){$("#dx").innerHTML=dic.done?`<div class="panel"><p class="pron-score ${dic.right>=8?"good":dic.right>=5?"mid":"low"}"><b>${dic.right}/10</b><span>câu đúng</span></p><button class="btn" id="dnew" style="align-self:flex-start">Lượt mới</button></div>`:`<p class="note">Không có câu nào khớp bộ lọc.</p>`;
+    const n=$("#dnew");if(n)n.onclick=()=>{buildDic();drawDic()};return}
+  const gap=dic.mode==="gap"?gapOf(w):null;
+  const shown=gap?esc(w.ex.slice(0,gap.idx))+`<input id="din" class="gap" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Từ còn thiếu" size="${Math.max(6,gap.word.length+2)}">`+esc(w.ex.slice(gap.idx+gap.word.length)):"";
+  $("#dx").innerHTML=`<div class="panel"><div class="meta note" style="display:flex;gap:8px;flex-wrap:wrap"><span>Câu ${dic.i+1}/${dic.list.length}</span><span class="lvl ${w.level}">${w.level}</span><span>Đúng ${dic.right}/${dic.done}</span></div>
+   <div class="bar" style="margin:0"><button class="btn" id="dplay">▶ Nghe</button><button class="btn ghost" id="dslow">▶ Nghe chậm</button></div>
+   ${gap?`<p class="gapline">${shown}</p><p class="note">Gợi ý nghĩa: ${esc(w.vi)}</p>`:`<textarea id="din" rows="2" class="dict-in" placeholder="Gõ lại câu bạn nghe được…" autocapitalize="off" spellcheck="false"></textarea>`}
+   <div class="bar" style="margin:0"><button class="btn warn" id="dchk">Kiểm tra</button><button class="btn ghost" id="dskip">Bỏ qua →</button></div><div id="dres"></div></div>`;
+  const play=r=>{stopSpeech();say(w.ex,r)};
+  $("#dplay").onclick=()=>play(0.9);$("#dslow").onclick=()=>play(0.65);
+  const nextQ=()=>{dic.i++;drawDic()};
+  $("#dskip").onclick=()=>{if(!$("#dchk").disabled){dic.done++}nextQ()};
+  let checked=false;
+  const check=()=>{
+    if(checked){nextQ();return}
+    const val=$("#din").value.trim();if(!val){$("#din").focus();return}
+    checked=true;dic.done++;let ok,html;
+    if(gap){ok=norm(val)===norm(gap.word);html=`<p class="${ok?"ok-msg":"bad-msg"}">${ok?"✓ Chính xác!":"✗ Đáp án: <b>"+esc(gap.word)+"</b>"}</p>`}
+    else{const r=scoreSpeech(w.ex,val);ok=r.score>=90;html=`<p class="${ok?"ok-msg":"bad-msg"}">${ok?"✓ Rất tốt":"Chưa đúng hết"} · ${r.score}/100</p><p class="pron-words">${r.words.map(([t,v])=>`<span class="${v>=.95?"ok":v>=.6?"near":"miss"}">${esc(t)}</span>`).join(" ")}</p>`}
+    if(ok)dic.right++;
+    $("#dres").innerHTML=html+`<p><b>${esc(w.ex)}</b></p>${ipaHtml(w)}<p class="note">${esc(w.term)} · ${esc(w.vi)}</p>`;
+    $("#dchk").textContent=dic.i+1<dic.list.length?"Câu tiếp →":"Xem kết quả";$("#dskip").disabled=true;$("#dchk").disabled=false;
+    if(dic.i+1>=dic.list.length&&dic.right>(S.dictBest||0)){S.dictBest=dic.right;save()}
+  };
+  $("#dchk").onclick=check;
+  $("#din").onkeydown=e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();check()}};
+  setTimeout(()=>play(0.9),250);
 }
 
 /* ============ DIALOGUE SCENES ============ */
@@ -813,7 +1126,7 @@ function openScene(s){
 
 /* ============ ROUTER ============ */
 let pendingOpen=null;
-const ROUTES={"tu-vung":vocabView,"nghe":()=>listIndex("nghe"),"doc":()=>listIndex("doc"),"viet":()=>listIndex("viet"),"on-tap":reviewView,"phat-am":pronView,"hoi-thoai":scenesIndex,"video":videoView};
+const ROUTES={"tu-vung":vocabView,"nghe":()=>listIndex("nghe"),"doc":()=>listIndex("doc"),"viet":()=>listIndex("viet"),"on-tap":reviewView,"phat-am":pronView,"hoi-thoai":scenesIndex,"video":videoView,"shadowing":shadowView,"doc-to":readAloudView,"ngu-phap":grammarView,"chinh-ta":dictView};
 function route(){
   stopSpeech();try{if(DICT&&DICT.active())DICT.stop()}catch(e){}
   const h=(location.hash||"#tu-vung").slice(1);const r=ROUTES[h]?h:"tu-vung";

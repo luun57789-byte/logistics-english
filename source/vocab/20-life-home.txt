@@ -1,0 +1,137 @@
+house|ngôi nhà|They live in a small house near the river.|A2|dl
+apartment|căn hộ|My apartment is on the tenth floor.|A2|dl
+room|phòng|My room is next to the kitchen.|A2|dl
+bedroom|phòng ngủ|The bedroom has a big window.|A2|dl
+bathroom|phòng tắm|The bathroom is at the end of the hall.|A2|dl
+kitchen|nhà bếp|We eat breakfast in the kitchen.|A2|dl
+living room|phòng khách|The family watches TV in the living room.|A2|dl
+balcony|ban công|I dry my clothes on the balcony.|A2|dl
+roof|mái nhà|The roof leaks when it rains.|A2|dl
+floor|sàn nhà; tầng|Please don't put your bag on the floor.|A2|dl
+wall|bức tường|There is a clock on the wall.|A2|dl
+door|cửa ra vào|Please close the door.|A2|dl
+window|cửa sổ|Can you open the window?|A2|dl
+stairs|cầu thang|Take the stairs; the lift is broken.|A2|dl
+lift / elevator|thang máy|The lift is out of order.|A2|dl
+furniture|đồ nội thất|We bought new furniture for the living room.|A2|dl
+sofa|ghế sô-pha|The cat is sleeping on the sofa.|A2|dl
+table|cái bàn|Put the plates on the table.|A2|dl
+chair|cái ghế|This chair is very comfortable.|A2|dl
+bed|giường|I go to bed at eleven.|A2|dl
+pillow|cái gối|I need a softer pillow.|A2|dl
+blanket|cái chăn|It's cold; take an extra blanket.|A2|dl
+wardrobe|tủ quần áo|Hang your shirt in the wardrobe.|A2|dl
+shelf (home)|kệ, giá|The books are on the top shelf.|A2|dl
+mirror|gương|She looked in the mirror.|A2|dl
+lamp|đèn bàn, đèn ngủ|Turn on the lamp, please.|A2|dl
+light switch|công tắc đèn|The light switch is by the door.|A2|dl
+fan|quạt|Turn on the fan; it's hot.|A2|dl
+air conditioner|máy điều hòa|The air conditioner is too cold.|A2|dl
+fridge|tủ lạnh|There is milk in the fridge.|A2|dl
+washing machine|máy giặt|The washing machine is very noisy.|A2|dl
+microwave|lò vi sóng|Heat the rice in the microwave.|A2|dl
+rice cooker|nồi cơm điện|Turn on the rice cooker at six.|A2|dl
+stove|bếp nấu|Don't leave the stove on.|A2|dl
+sink|bồn rửa|The dishes are in the sink.|A2|dl
+tap / faucet|vòi nước|The tap is dripping.|A2|dl
+toilet|nhà vệ sinh; bồn cầu|Where is the toilet, please?|A2|dl
+shower|vòi sen; tắm vòi sen|I take a shower every morning.|A2|dl
+towel|khăn tắm|Can I have a clean towel?|A2|dl
+soap|xà phòng|Wash your hands with soap.|A2|dl
+shampoo|dầu gội|We've run out of shampoo.|A2|dl
+toothbrush|bàn chải đánh răng|I need a new toothbrush.|A2|dl
+toothpaste|kem đánh răng|Buy some toothpaste, please.|A2|dl
+rubbish / trash|rác|Take out the rubbish, please.|A2|dl
+bin (rubbish)|thùng rác|Put the bottle in the recycling bin.|A2|dl
+broom|cái chổi|The broom is behind the door.|A2|dl
+mop|cây lau nhà|Use the mop to clean the floor.|A2|dl
+vacuum cleaner|máy hút bụi|The vacuum cleaner is in the cupboard.|A2|dl
+cupboard|tủ chạn, tủ đựng đồ|The cups are in the cupboard.|A2|dl
+key|chìa khóa|I can't find my keys.|A2|dl
+lock|khóa; khóa lại|Did you lock the door?|A2|dl
+neighbour|hàng xóm|Our neighbours are very friendly.|A2|dl
+rent|tiền thuê nhà; thuê|The rent is due on the first of the month.|A2|dl
+landlord|chủ nhà (cho thuê)|Call the landlord about the broken heater.|B1|dl
+electricity bill|hóa đơn tiền điện|The electricity bill was high this month.|A2|dl
+water bill|hóa đơn tiền nước|I paid the water bill online.|A2|dl
+internet connection|kết nối internet|The internet connection is slow today.|A2|dl
+Wi-Fi password|mật khẩu Wi-Fi|What's the Wi-Fi password?|A2|dl
+housework|việc nhà|We share the housework.|A2|dl
+do the laundry|giặt đồ|I do the laundry on Sundays.|A2|dl
+do the dishes|rửa bát|It's your turn to do the dishes.|A2|dl
+make the bed|dọn giường|Make your bed before school.|A2|dl
+cook dinner|nấu bữa tối|My husband usually cooks dinner.|A2|dl
+clean the house|dọn nhà|We clean the house every weekend.|A2|dl
+iron (clothes)|là, ủi quần áo|I need to iron my shirt for the meeting.|A2|dl
+water the plants|tưới cây|Can you water the plants while I'm away?|A2|dl
+wake up|thức dậy|I wake up at six every day.|A2|dl
+get up|ra khỏi giường|I get up at 6:15.|A2|dl
+go to bed|đi ngủ|What time do you go to bed?|A2|dl
+take a nap|ngủ trưa, chợp mắt|I take a short nap after lunch.|A2|dl
+get dressed|mặc quần áo|Get dressed quickly; we're late.|A2|dl
+brush your teeth|đánh răng|Brush your teeth twice a day.|A2|dl
+have breakfast|ăn sáng|We have breakfast at seven.|A2|dl
+have lunch|ăn trưa|Let's have lunch together.|A2|dl
+commute|đi lại (đi làm hằng ngày)|My commute takes forty minutes.|B1|dl
+traffic|giao thông|The traffic is terrible in the morning.|A2|dl
+motorbike|xe máy|Most people in Hanoi ride a motorbike.|A2|dl
+helmet|mũ bảo hiểm|Always wear a helmet.|A2|dl
+bus stop|trạm xe buýt|The bus stop is in front of the bank.|A2|dl
+parking lot / car park|bãi đỗ xe|The car park is full.|A2|dl
+family|gia đình|I live with my family.|A2|dl
+parents|bố mẹ|My parents live in the countryside.|A2|dl
+father|bố|My father is a teacher.|A2|dl
+mother|mẹ|My mother cooks very well.|A2|dl
+brother|anh/em trai|My brother works in Japan.|A2|dl
+sister|chị/em gái|My sister is a nurse.|A2|dl
+son|con trai|Their son is five years old.|A2|dl
+daughter|con gái|Our daughter goes to kindergarten.|A2|dl
+husband|chồng|Her husband is an engineer.|A2|dl
+wife|vợ|His wife works in a bank.|A2|dl
+grandparents|ông bà|We visit our grandparents at Tet.|A2|dl
+uncle|chú, bác, cậu|My uncle owns a restaurant.|A2|dl
+aunt|cô, dì, bác gái|My aunt lives in Da Nang.|A2|dl
+cousin|anh chị em họ|My cousin is getting married.|A2|dl
+relative|họ hàng|Many relatives came to the wedding.|B1|dl
+baby|em bé|The baby is sleeping.|A2|dl
+child / children|trẻ em|The children are playing outside.|A2|dl
+teenager|thanh thiếu niên|Teenagers love their phones.|A2|dl
+adult|người lớn|Tickets for adults cost 100,000 dong.|A2|dl
+friend|bạn bè|She's my best friend.|A2|dl
+married|đã kết hôn|Are you married?|A2|dl
+single|độc thân|He is still single.|A2|dl
+birthday|sinh nhật|Happy birthday!|A2|dl
+wedding|đám cưới|We are going to a wedding on Saturday.|A2|dl
+party|bữa tiệc|Are you coming to the party?|A2|dl
+holiday|kỳ nghỉ; ngày lễ|Tet is the biggest holiday in Vietnam.|A2|dl
+weekend|cuối tuần|What did you do at the weekend?|A2|dl
+free time (leisure)|thời gian rảnh|What do you do in your free time?|A2|dl
+hobby|sở thích|My hobby is photography.|A2|dl
+pet|thú cưng|Do you have any pets?|A2|dl
+dog|con chó|The dog barks at strangers.|A2|dl
+cat|con mèo|Our cat likes fish.|A2|dl
+gift / present|quà|Thank you for the lovely gift.|A2|dl
+phone call|cuộc gọi điện thoại|I have to make a phone call.|A2|dl
+text message|tin nhắn|Send me a text message when you arrive.|A2|dl
+charger|bộ sạc|Can I borrow your phone charger?|A2|dl
+battery (phone)|pin (điện thoại)|My phone battery is almost dead.|A2|dl
+appointment|cuộc hẹn|I have a doctor's appointment at three.|B1|dl
+umbrella|cái ô, dù|Take an umbrella; it might rain.|A2|dl
+wallet|cái ví|I left my wallet at home.|A2|dl
+glasses|kính mắt|I can't read without my glasses.|A2|dl
+watch (clock)|đồng hồ đeo tay|My watch is five minutes fast.|A2|dl
+clothes|quần áo|I need to buy some new clothes.|A2|dl
+shirt|áo sơ mi|He wore a white shirt.|A2|dl
+T-shirt|áo phông|She wears a T-shirt and jeans.|A2|dl
+trousers / pants|quần dài|These trousers are too long.|A2|dl
+jeans|quần bò|I love these blue jeans.|A2|dl
+dress|váy liền|She bought a red dress.|A2|dl
+skirt|chân váy|The skirt is a bit short.|A2|dl
+jacket|áo khoác|Take a jacket; it's cold tonight.|A2|dl
+shoes|giày|Take off your shoes, please.|A2|dl
+sandals|dép quai hậu, xăng-đan|I wear sandals in summer.|A2|dl
+socks|tất, vớ|I need a pair of socks.|A2|dl
+hat|mũ|Wear a hat in the sun.|A2|dl
+size|cỡ|What size are you?|A2|dl
+try on|mặc thử|Can I try on this jacket?|A2|dl
+fit|vừa (kích cỡ)|These shoes don't fit me.|A2|dl

@@ -1,0 +1,61 @@
+music|âm nhạc|What kind of music do you like?|A2|gt
+song|bài hát|This is my favourite song.|A2|gt
+sing|hát|She sings very well.|A2|gt
+singer|ca sĩ|He is a famous singer.|A2|gt
+dance|nhảy, khiêu vũ|Let's dance!|A2|gt
+concert|buổi hòa nhạc|We went to a concert last night.|A2|gt
+karaoke|karaoke|We sing karaoke every Friday.|A2|gt
+guitar|đàn ghi-ta|He plays the guitar.|A2|gt
+piano|đàn piano|My daughter learns the piano.|A2|gt
+film / movie|bộ phim|Let's watch a movie.|A2|gt
+actor|diễn viên|Who is your favourite actor?|A2|gt
+TV show|chương trình truyền hình|I watch this TV show every week.|A2|gt
+series|phim bộ|I'm watching a Korean series.|A2|gt
+news|tin tức|Did you see the news?|A2|gt
+newspaper|tờ báo|My father reads the newspaper.|A2|gt
+magazine|tạp chí|She reads fashion magazines.|A2|gt
+book (reading)|cuốn sách|I'm reading a good book.|A2|gt
+story|câu chuyện|Tell me a story.|A2|gt
+novel|tiểu thuyết|This novel is very long.|B1|gt
+photo|bức ảnh|Can you take a photo of us?|A2|gt
+photography|nhiếp ảnh|Photography is my hobby.|B1|gt
+painting (art)|bức tranh; hội họa|There's a painting on the wall.|A2|gt
+draw (picture)|vẽ (bút chì)|My son likes to draw animals.|A2|gt
+game|trò chơi|Let's play a game.|A2|gt
+video game|trò chơi điện tử|He plays video games all day.|A2|gt
+chess|cờ vua|Do you play chess?|A2|gt
+cards|bài (chơi bài)|We play cards at Tet.|A2|gt
+fishing|câu cá|My dad goes fishing on Sundays.|A2|gt
+camping|cắm trại|We went camping by the lake.|A2|gt
+hiking|leo núi đi bộ đường dài|Hiking in Sapa is beautiful.|A2|gt
+picnic|dã ngoại|Let's have a picnic in the park.|A2|gt
+gardening|làm vườn|My mother loves gardening.|A2|gt
+shopping|mua sắm|She loves shopping.|A2|gt
+go out|đi chơi|Do you want to go out tonight?|A2|gt
+hang out|đi chơi cùng|We often hang out at the mall.|B1|gt
+relax|thư giãn|I relax by listening to music.|A2|gt
+festival|lễ hội|The Mid-Autumn Festival is fun for kids.|A2|gt
+Lunar New Year|Tết Nguyên Đán|We go home for Lunar New Year.|A2|gt
+lucky money|tiền lì xì|Children get lucky money at Tet.|A2|gt
+fireworks|pháo hoa|We watched fireworks at midnight.|A2|gt
+lantern|đèn lồng|Hoi An is full of lanterns.|A2|gt
+tradition|truyền thống|It's a Vietnamese tradition.|B1|gt
+culture|văn hóa|I love Vietnamese culture.|A2|gt
+invitation|lời mời; thiệp mời|Thanks for the invitation.|A2|gt
+celebration|lễ kỷ niệm|There was a big celebration.|B1|gt
+anniversary|ngày kỷ niệm|It's our wedding anniversary.|B1|gt
+fun|niềm vui; vui|We had a lot of fun.|A2|gt
+favourite|yêu thích nhất|What's your favourite food?|A2|gt
+ticket office|quầy bán vé|Buy tickets at the ticket office.|A2|gt
+queue (wait in line)|xếp hàng|We queued for an hour.|A2|gt
+animal|động vật|Do you like animals?|A2|gt
+bird|con chim|Birds are singing.|A2|gt
+chicken (animal)|con gà|My grandma keeps chickens.|A2|gt
+cow|con bò|There are cows in the field.|A2|gt
+pig|con lợn|They raise pigs on the farm.|A2|gt
+buffalo|con trâu|The buffalo is working in the rice field.|A2|gt
+horse|con ngựa|Can you ride a horse?|A2|gt
+mosquito|con muỗi|There are many mosquitoes tonight.|A2|gt
+monkey|con khỉ|Watch out for the monkeys.|A2|gt
+elephant|con voi|We saw elephants in Dak Lak.|A2|gt
+snake|con rắn|Be careful, there are snakes.|A2|gt

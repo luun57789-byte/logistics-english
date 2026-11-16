@@ -1,0 +1,92 @@
+hello|xin chào|Hello, nice to meet you.|A2|cm
+goodbye|tạm biệt|Goodbye, see you tomorrow.|A2|cm
+please|làm ơn|Two coffees, please.|A2|cm
+thank you|cảm ơn|Thank you for your help.|A2|cm
+sorry|xin lỗi|Sorry, I didn't hear you.|A2|cm
+excuse me|xin lỗi (gây chú ý)|Excuse me, where is the toilet?|A2|cm
+introduce|giới thiệu|Let me introduce my colleague, Minh.|A2|cm
+name|tên|What's your name?|A2|cm
+meet|gặp|Nice to meet you.|A2|cm
+ask|hỏi|Can I ask you a question?|A2|cm
+answer|trả lời|Please answer the phone.|A2|cm
+explain|giải thích|Could you explain that again?|A2|cm
+repeat|nhắc lại|Could you repeat that, please?|A2|cm
+understand|hiểu|I don't understand.|A2|cm
+mean|có nghĩa là|What does this word mean?|A2|cm
+agree|đồng ý|I agree with you.|A2|cm
+disagree|không đồng ý|I'm afraid I disagree.|B1|cm
+opinion|ý kiến|What's your opinion?|B1|cm
+suggest|gợi ý, đề xuất|I suggest we take a break.|B1|cm
+invite|mời|They invited us to dinner.|A2|cm
+accept|chấp nhận|I accept your invitation.|B1|cm
+refuse|từ chối|He refused to help.|B1|cm
+promise|hứa|I promise I'll call you.|A2|cm
+apologise|xin lỗi|I apologise for the mistake.|B1|cm
+complain|phàn nàn|She complained about the noise.|B1|cm
+thank|cảm ơn (động từ)|I want to thank everyone for coming.|A2|cm
+congratulate|chúc mừng|We congratulated her on her new job.|B1|cm
+conversation|cuộc trò chuyện|We had a long conversation.|A2|cm
+chat|trò chuyện|Let's chat after the meeting.|A2|cm
+discuss|thảo luận|We need to discuss the plan.|B1|cm
+argue|tranh cãi|They argued about money.|B1|cm
+polite|lịch sự|Be polite to customers.|A2|cm
+rude|thô lỗ|It's rude to interrupt.|B1|cm
+friendly|thân thiện|The staff are very friendly.|A2|cm
+shy|nhút nhát|She is a bit shy.|A2|cm
+confident|tự tin|He speaks English confidently.|B1|cm
+honest|trung thực|Please be honest with me.|B1|cm
+patient|kiên nhẫn|Be patient; the bus is coming.|B1|cm
+kind|tốt bụng|It's very kind of you.|A2|cm
+happy|vui|I'm so happy for you!|A2|cm
+sad|buồn|She looks sad today.|A2|cm
+angry|tức giận|Don't be angry with me.|A2|cm
+worried|lo lắng|I'm worried about the exam.|A2|cm
+excited|háo hức|We're excited about the trip.|A2|cm
+bored|chán|I'm bored. Let's go out.|A2|cm
+surprised|ngạc nhiên|I was surprised to see him.|A2|cm
+nervous|hồi hộp|I'm nervous before interviews.|B1|cm
+relaxed|thư giãn|I feel relaxed on holiday.|A2|cm
+proud|tự hào|We are proud of you.|B1|cm
+embarrassed|ngượng|I was embarrassed by my mistake.|B1|cm
+language|ngôn ngữ|How many languages do you speak?|A2|cm
+fluent|trôi chảy|She is fluent in English.|B1|cm
+accent|giọng (vùng miền)|He has a British accent.|B1|cm
+pronounce|phát âm|How do you pronounce this word?|A2|cm
+vocabulary|từ vựng|I learn ten new vocabulary words a day.|A2|cm
+grammar|ngữ pháp|English grammar is not too hard.|A2|cm
+practise|luyện tập|Practise speaking every day.|A2|cm
+mistake|lỗi sai|Don't worry about mistakes.|A2|cm
+improve (skill)|cải thiện|I want to improve my English.|A2|cm
+shop|cửa hàng; mua sắm|The shop opens at nine.|A2|sh
+supermarket|siêu thị|I buy food at the supermarket.|A2|sh
+convenience store|cửa hàng tiện lợi|There's a convenience store on the corner.|A2|sh
+shopping mall|trung tâm thương mại|Let's meet at the shopping mall.|A2|sh
+price (shop)|giá|What's the price of this bag?|A2|sh
+cheap|rẻ|This shirt is very cheap.|A2|sh
+expensive|đắt|Rent is expensive in the city.|A2|sh
+sale|đợt giảm giá|Everything is 50% off in the sale.|A2|sh
+bargain|món hời; mặc cả|This jacket was a real bargain.|B1|sh
+pay|trả tiền|Can I pay by card?|A2|sh
+cashier|thu ngân|Please pay the cashier.|A2|sh
+receipt (shop)|hóa đơn, biên lai|Keep your receipt.|A2|sh
+change (money)|tiền thừa|Here's your change.|A2|sh
+discount (shop)|giảm giá|Is there a student discount?|A2|sh
+refund (shop)|hoàn tiền|I'd like a refund, please.|A2|sh
+exchange (shop)|đổi hàng|Can I exchange this for a smaller size?|A2|sh
+basket|giỏ|Put the items in your basket.|A2|sh
+trolley / cart|xe đẩy|Get a trolley; we need a lot.|A2|sh
+queue / line|hàng (xếp hàng)|There's a long queue at the checkout.|A2|sh
+checkout|quầy thanh toán|Go to checkout number 5.|A2|sh
+online shopping|mua sắm trực tuyến|I do most of my shopping online.|A2|sh
+delivery fee|phí giao hàng|The delivery fee is 20,000 dong.|A2|sh
+money|tiền|I don't have much money.|A2|sh
+spend|tiêu (tiền, thời gian)|How much did you spend?|A2|sh
+save|tiết kiệm|I save 20% of my salary.|A2|sh
+borrow|mượn|Can I borrow your pen?|A2|sh
+lend|cho mượn|Can you lend me 100,000 dong?|A2|sh
+bank account|tài khoản ngân hàng|I opened a bank account.|A2|sh
+transfer money|chuyển tiền|I'll transfer the money tonight.|A2|sh
+QR code|mã QR|You can pay with a QR code.|A2|sh
+afford|có đủ tiền (mua)|I can't afford a new car.|B1|sh
+brand|thương hiệu|What brand is your phone?|A2|sh
+quality|chất lượng|The quality is very good.|A2|sh

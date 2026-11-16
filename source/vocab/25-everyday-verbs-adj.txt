@@ -1,0 +1,202 @@
+be|thì, là, ở|I am a logistics officer.|A2|vb
+have|có|I have two brothers.|A2|vb
+do|làm|What do you do?|A2|vb
+make|làm, tạo ra|She makes coffee every morning.|A2|vb
+go|đi|I go to work by bus.|A2|vb
+come|đến|Come to my house at seven.|A2|vb
+get|lấy, nhận, trở nên|I got a message from my boss.|A2|vb
+take|cầm, lấy, mang đi|Take your umbrella.|A2|vb
+give|đưa, cho|Give me the box, please.|A2|vb
+put|đặt, để|Put your bag here.|A2|vb
+bring|mang đến|Bring your ID card tomorrow.|A2|vb
+carry|mang, xách|Can you carry this bag?|A2|vb
+hold|cầm, giữ|Hold the door, please.|A2|vb
+keep|giữ|Keep the change.|A2|vb
+leave|rời đi; để lại|I leave home at seven.|A2|vb
+arrive|đến nơi|What time did you arrive?|A2|vb
+stay|ở lại|We stayed at home all day.|A2|vb
+return (go back)|trở lại; trả lại|I'll return the book tomorrow.|A2|vb
+walk|đi bộ|I walk to the market.|A2|vb
+run|chạy|Don't run in the office.|A2|vb
+drive|lái xe|Can you drive a car?|A2|vb
+ride|đi (xe máy, xe đạp)|I ride my motorbike to work.|A2|vb
+sit|ngồi|Please sit down.|A2|vb
+stand|đứng|Stand in line, please.|A2|vb
+lie down|nằm xuống|Lie down and rest.|A2|vb
+open|mở|Open the window, please.|A2|vb
+close|đóng|Close the door behind you.|A2|vb
+start|bắt đầu|The meeting starts at nine.|A2|vb
+finish|hoàn thành, kết thúc|I finish work at five.|A2|vb
+stop (verb)|dừng|Stop the car here.|A2|vb
+continue|tiếp tục|Let's continue tomorrow.|A2|vb
+wait|chờ|Wait for me, please.|A2|vb
+hurry|vội, nhanh lên|Hurry up! We're late.|A2|vb
+look|nhìn|Look at this photo.|A2|vb
+see|nhìn thấy|I can't see anything.|A2|vb
+watch (verb)|xem|We watched a film last night.|A2|vb
+listen|nghe|Listen to the teacher.|A2|vb
+hear|nghe thấy|Can you hear me?|A2|vb
+say|nói|What did he say?|A2|vb
+tell|kể, bảo|Tell me about your job.|A2|vb
+speak|nói (ngôn ngữ)|Do you speak English?|A2|vb
+talk|nói chuyện|Can we talk later?|A2|vb
+call|gọi điện; gọi|I'll call you tonight.|A2|vb
+write|viết|Write your name here.|A2|vb
+read|đọc|I read the news every morning.|A2|vb
+learn|học|I'm learning English.|A2|vb
+study|học (nghiên cứu)|She studies at night.|A2|vb
+teach|dạy|He teaches maths.|A2|vb
+know|biết|I don't know the answer.|A2|vb
+think|nghĩ|I think it's a good idea.|A2|vb
+believe|tin|I believe you.|A2|vb
+remember|nhớ|Do you remember me?|A2|vb
+forget|quên|Don't forget your keys.|A2|vb
+decide|quyết định|We decided to stay home.|A2|vb
+choose|chọn|Choose one colour.|A2|vb
+want|muốn|I want a glass of water.|A2|vb
+need|cần|I need your help.|A2|vb
+like|thích|I like Vietnamese food.|A2|vb
+love|yêu, rất thích|I love this song.|A2|vb
+hate|ghét|I hate waiting.|A2|vb
+prefer|thích hơn|I prefer tea to coffee.|A2|vb
+hope|hy vọng|I hope you feel better.|A2|vb
+wish|ước|I wish I could fly.|B1|vb
+try|cố gắng; thử|Try again.|A2|vb
+help|giúp đỡ|Can you help me?|A2|vb
+find|tìm thấy|I can't find my phone.|A2|vb
+lose (item)|làm mất|I lost my wallet.|A2|vb
+look for|tìm kiếm|I'm looking for my glasses.|A2|vb
+buy|mua|I bought a new phone.|A2|vb
+sell|bán|They sell fruit at the market.|A2|vb
+cost (verb)|có giá|How much does it cost?|A2|vb
+use|sử dụng|Can I use your phone?|A2|vb
+work|làm việc|I work in a warehouse.|A2|vb
+play|chơi|The kids are playing outside.|A2|vb
+eat|ăn|What did you eat for lunch?|A2|vb
+cook|nấu ăn|I cook dinner every day.|A2|vb
+wash|rửa, giặt|Wash your hands before eating.|A2|vb
+clean|lau dọn|I clean my room on Sundays.|A2|vb
+build|xây dựng|They are building a new bridge.|A2|vb
+break|làm vỡ, làm hỏng|Be careful, don't break it.|A2|vb
+fix|sửa|Can you fix my bike?|A2|vb
+change|thay đổi|I changed my phone number.|A2|vb
+move|di chuyển; chuyển nhà|We moved to Hanoi last year.|A2|vb
+turn on|bật|Turn on the light.|A2|vb
+turn off|tắt|Turn off your phone.|A2|vb
+pick up|đón; nhặt lên|I'll pick you up at six.|A2|vb
+drop off|thả xuống, đưa đến|Drop me off at the station.|A2|vb
+grow|lớn lên; trồng|My son is growing fast.|A2|vb
+happen|xảy ra|What happened?|A2|vb
+feel|cảm thấy|I feel tired.|A2|vb
+seem|có vẻ|He seems happy.|B1|vb
+become|trở thành|She became a manager.|A2|vb
+let|để, cho phép|Let me help you.|A2|vb
+allow|cho phép|Smoking is not allowed here.|B1|vb
+plan|lên kế hoạch|We plan to visit Hue.|A2|vb
+prepare|chuẩn bị|I'm preparing for the exam.|A2|vb
+share|chia sẻ|Let's share the pizza.|A2|vb
+send|gửi|Send me the photo.|A2|vb
+receive|nhận|Did you receive my email?|A2|vb
+count|đếm|Count the boxes, please.|A2|vb
+fill in|điền vào|Fill in this form.|A2|vb
+sign|ký|Sign here, please.|A2|vb
+win (prize)|đạt được (giải)|She won a prize.|A2|vb
+fall|ngã; rơi|He fell off his bike.|A2|vb
+catch|bắt (xe, bóng)|I caught the last bus.|A2|vb
+miss|lỡ; nhớ|I missed the bus.|A2|vb
+visit|thăm|We visited our grandparents.|A2|vb
+enjoy|thích, tận hưởng|Enjoy your meal!|A2|vb
+celebrate|ăn mừng|We celebrated her birthday.|A2|vb
+worry|lo lắng|Don't worry about it.|A2|vb
+smile|mỉm cười|Smile for the photo!|A2|vb
+laugh|cười|Everyone laughed at the joke.|A2|vb
+cry|khóc|The baby is crying.|A2|vb
+shout|hét|Don't shout at me.|A2|vb
+knock|gõ cửa|Please knock before you enter.|A2|vb
+push|đẩy|Push the door.|A2|vb
+pull|kéo|Pull the handle.|A2|vb
+throw|ném|Don't throw rubbish on the street.|A2|vb
+lift|nâng lên|Lift with your legs, not your back.|A2|vb
+fit in|vừa (chỗ)|Will the boxes fit in the car?|B1|vb
+good|tốt|This is a good idea.|A2|vb
+bad|xấu, tệ|The weather is bad today.|A2|vb
+big|to|They live in a big house.|A2|vb
+small|nhỏ|This room is too small.|A2|vb
+long|dài|It's a long way.|A2|vb
+short|ngắn; thấp|My hair is short.|A2|vb
+tall|cao (người)|He is very tall.|A2|vb
+high|cao (vật, vị trí)|The shelf is too high.|A2|vb
+low|thấp|The price is very low.|A2|vb
+new|mới|I have a new job.|A2|vb
+old|cũ; già|This is an old building.|A2|vb
+young|trẻ|She is young and smart.|A2|vb
+easy|dễ|The test was easy.|A2|vb
+difficult|khó|English is not so difficult.|A2|vb
+fast|nhanh|This train is very fast.|A2|vb
+slow|chậm|The internet is slow today.|A2|vb
+quick|nhanh (thời gian ngắn)|Can I ask a quick question?|A2|vb
+early|sớm|I get up early.|A2|vb
+heavy|nặng|This box is heavy.|A2|vb
+light (weight)|nhẹ|The bag is light.|A2|vb
+full|đầy|The bus is full.|A2|vb
+empty|trống, rỗng|The fridge is empty.|A2|vb
+clean (adj)|sạch|Keep your desk clean.|A2|vb
+dirty|bẩn|My shoes are dirty.|A2|vb
+quiet|yên tĩnh|The library is quiet.|A2|vb
+noisy|ồn ào|The street is very noisy.|A2|vb
+beautiful|đẹp|What a beautiful day!|A2|vb
+ugly|xấu xí|That building is ugly.|A2|vb
+important|quan trọng|This meeting is important.|A2|vb
+interesting|thú vị|The book is very interesting.|A2|vb
+boring|nhàm chán|The film was boring.|A2|vb
+dangerous|nguy hiểm|It's dangerous to swim here.|A2|vb
+safe|an toàn|Is this area safe at night?|A2|vb
+ready|sẵn sàng|Are you ready?|A2|vb
+free (no cost)|miễn phí|The coffee is free.|A2|vb
+available (free)|rảnh; có sẵn|Are you available tomorrow?|A2|vb
+possible|có thể|Is it possible to change the date?|A2|vb
+same|giống nhau|We have the same phone.|A2|vb
+different|khác nhau|They are very different.|A2|vb
+right (correct)|đúng|You're right.|A2|vb
+wrong|sai|Sorry, wrong number.|A2|vb
+true|đúng, thật|Is it true?|A2|vb
+real|thật|Is this a real diamond?|A2|vb
+sure|chắc chắn|Are you sure?|A2|vb
+strong|khỏe, mạnh|He is very strong.|A2|vb
+weak|yếu|I feel weak today.|A2|vb
+rich|giàu|He is a rich businessman.|A2|vb
+poor|nghèo|They were poor when they were young.|A2|vb
+famous|nổi tiếng|Hoi An is famous for its lanterns.|A2|vb
+popular|phổ biến, được yêu thích|This song is very popular.|A2|vb
+comfortable|thoải mái|These shoes are comfortable.|A2|vb
+convenient|tiện lợi|This location is very convenient.|B1|vb
+crowded|đông đúc|The market is crowded at weekends.|A2|vb
+modern|hiện đại|It's a modern city.|A2|vb
+careful|cẩn thận|Be careful!|A2|vb
+useful|hữu ích|This app is very useful.|A2|vb
+wonderful|tuyệt vời|We had a wonderful time.|A2|vb
+terrible|tồi tệ|The traffic was terrible.|A2|vb
+amazing|đáng kinh ngạc|The view is amazing.|A2|vb
+perfect|hoàn hảo|Your English is perfect.|A2|vb
+always|luôn luôn|I always drink coffee in the morning.|A2|vb
+usually|thường xuyên|I usually go to bed at eleven.|A2|vb
+often|thường|We often eat out.|A2|vb
+sometimes|thỉnh thoảng|Sometimes I walk to work.|A2|vb
+rarely|hiếm khi|I rarely watch TV.|B1|vb
+never|không bao giờ|I never smoke.|A2|vb
+already|đã... rồi|I've already eaten.|A2|vb
+yet|chưa (câu hỏi/phủ định)|Have you finished yet?|A2|vb
+still|vẫn|I'm still waiting.|A2|vb
+soon|sớm, chẳng bao lâu|See you soon.|A2|vb
+again|lại, lần nữa|Say it again, please.|A2|vb
+together|cùng nhau|Let's go together.|A2|vb
+almost|gần như|I'm almost ready.|A2|vb
+really|thực sự|I really like it.|A2|vb
+very|rất|It's very hot.|A2|vb
+too|quá; cũng|It's too expensive.|A2|vb
+enough|đủ|Do we have enough time?|A2|vb
+maybe|có lẽ|Maybe tomorrow.|A2|vb
+probably|có lẽ, chắc là|It will probably rain.|B1|vb
+especially|đặc biệt là|I love fruit, especially mangoes.|B1|vb
+suddenly|đột nhiên|Suddenly the lights went out.|B1|vb
+finally|cuối cùng|Finally, we arrived.|A2|vb
