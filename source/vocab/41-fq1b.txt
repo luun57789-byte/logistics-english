@@ -1,0 +1,477 @@
+thought|suy nghĩ, ý nghĩ|That's an interesting thought.|B1|f1
+means|phương tiện, cách|Email is the main means of communication.|B1|f1
+matter|vấn đề; quan trọng|It doesn't matter.|A2|f1
+medium|vừa, trung bình|I'd like a medium coffee.|A2|f1
+self|bản thân|Be your true self.|B1|f1
+won|đã thắng (quá khứ của win)|Our team won the game.|A2|f1
+county|hạt, quận (Anh, Mỹ)|He lives in a small county in England.|B2|f1
+felt|đã cảm thấy (quá khứ của feel)|I felt tired yesterday.|A2|f1
+station|nhà ga, trạm|Where's the bus station?|A2|f1
+text|văn bản; nhắn tin|Text me when you arrive.|A2|f1
+treatment|sự điều trị; đối xử|He is getting treatment in hospital.|B1|f1
+western|phương Tây; phía tây|Western food is popular here.|B1|f1
+beginning|sự bắt đầu|At the beginning, it was hard.|A2|f1
+campaign|chiến dịch|The marketing campaign starts next month.|B1|f1
+certainly|chắc chắn|I'll certainly be there.|B1|f1
+completely|hoàn toàn|I completely forgot.|B1|f1
+content|nội dung; hài lòng|Check the contents of the box.|B1|f1
+credit|tín dụng; ghi có|We'll give you a credit for the damaged goods.|B1|f1
+cross|băng qua; dấu chéo|Cross the road carefully.|A2|f1
+describe|mô tả|Can you describe the problem?|A2|f1
+despite|mặc dù|Despite the rain, the truck arrived on time.|B1|f1
+female|nữ|Most of our staff are female.|A2|f1
+focus|tập trung|Focus on your work.|B1|f1
+hi|chào|Hi, I'm Lan.|A2|f1
+ice|đá (nước đá)|Coffee with ice, please.|A2|f1
+individual|cá nhân; riêng lẻ|Each item is packed in an individual bag.|B1|f1
+join|tham gia|Can I join you?|A2|f1
+mile|dặm (1,6 km)|It's about two miles from here.|A2|f1
+nearly|gần như|It's nearly ten o'clock.|A2|f1
+particular|cụ thể, đặc biệt|Are you looking for anything in particular?|B1|f1
+previous|trước đó|See my previous email.|B1|f1
+quickly|nhanh chóng|Please reply quickly.|A2|f1
+region|vùng|The northern region is cold in winter.|B1|f1
+section|phần, mục|Read section 3 of the contract.|B1|f1
+sort|loại; sắp xếp|What sort of music do you like?|A2|f1
+speed|tốc độ|Slow down. Check your speed.|A2|f1
+contact|liên lạc; người liên hệ|Please contact me by email.|A2|f1
+drop|làm rơi; giọt; giảm|Don't drop the box.|A2|f1
+fair|công bằng; hội chợ|That's not fair.|A2|f1
+positive|tích cực; dương tính|Stay positive.|B1|f1
+throughout|suốt, khắp|It rained throughout the day.|B1|f1
+welcome|chào mừng|Welcome to Vietnam!|A2|f1
+absolutely|hoàn toàn, chắc chắn rồi|Absolutely, no problem.|B1|f1
+additional|thêm, bổ sung|There is an additional charge for storage.|B1|f1
+beyond|vượt quá, bên kia|The delay is beyond our control.|B1|f1
+condition|tình trạng; điều kiện|The goods arrived in good condition.|B1|f1
+extra|thêm|Do you need extra boxes?|A2|f1
+immediately|ngay lập tức|Call me immediately.|B1|f1
+nature|thiên nhiên; bản chất|I love nature.|A2|f1
+significant|đáng kể|There was a significant increase in costs.|B1|f1
+unless|trừ khi|Don't call unless it's urgent.|B1|f1
+construction|xây dựng|The road is under construction.|B1|f1
+episode|tập (phim)|Did you watch the last episode?|A2|f1
+favourite / favorite|yêu thích nhất|Pho is my favorite food.|A2|f1
+income|thu nhập|What's your monthly income?|B1|f1
+justice|công lý|They want justice.|B1|f1
+movement|sự chuyển động; phong trào|Track every movement of the container.|B1|f1
+scene|cảnh; hiện trường|The police arrived at the scene.|B1|f1
+statement|tuyên bố; bảng sao kê|Check your bank statement.|B1|f1
+ability|khả năng|She has the ability to lead a team.|B1|f1
+announce|thông báo|They announced a new product.|B1|f1
+collection|bộ sưu tập; việc thu gom|Rubbish collection is on Monday.|B1|f1
+definitely|chắc chắn|I'll definitely come.|B1|f1
+gun|súng|The police officer had a gun.|B1|f1
+knowledge|kiến thức|He has good knowledge of customs rules.|B1|f1
+particularly|đặc biệt là|I particularly like the seafood here.|B1|f1
+subject|môn học; chủ đề|What's the subject of the email?|A2|f1
+wide|rộng|The road is very wide.|A2|f1
+wow|ồ, chà|Wow, that's amazing!|A2|f1
+author|tác giả|Who is the author of this book?|B1|f1
+dad|bố|My dad is a taxi driver.|A2|f1
+fear|nỗi sợ|I have a fear of flying.|B1|f1
+generally|nói chung|Generally, we deliver within two days.|B1|f1
+global|toàn cầu|It's a global company.|B1|f1
+judge|thẩm phán; đánh giá|Don't judge people too quickly.|B1|f1
+lady|quý bà, phụ nữ|Ask the lady at the counter.|A2|f1
+leader|người lãnh đạo|She is a good team leader.|A2|f1
+letter|lá thư; chữ cái|I got a letter from the bank.|A2|f1
+material|vật liệu; tài liệu|What material is this bag made of?|B1|f1
+nobody|không ai|Nobody answered the phone.|A2|f1
+opportunity|cơ hội|It's a great opportunity.|B1|f1
+plus|cộng; thêm vào đó|The price is 100 dollars plus tax.|B1|f1
+regular|thường xuyên; thông thường|He is a regular customer.|B1|f1
+secretary|thư ký|Ask my secretary.|A2|f1
+annual|hằng năm|Our annual meeting is in December.|B1|f1
+anymore|không… nữa|I don't work there anymore.|B1|f1
+battle|trận chiến|It was a long battle.|B1|f1
+brain|não|Use your brain!|A2|f1
+degree|bằng cấp; độ|It's 35 degrees today.|B1|f1
+feature|tính năng|This phone has many features.|B1|f1
+image|hình ảnh|The image is not clear.|B1|f1
+insurance|bảo hiểm|Do we need cargo insurance?|B1|f1
+majority|đa số|The majority of our customers are in Asia.|B1|f1
+physical|thể chất; vật lý|Physical exercise is good for you.|B1|f1
+reach|đến, đạt tới; với tới|The ship will reach Singapore tomorrow.|B1|f1
+seriously|nghiêm túc|Seriously? I can't believe it.|B1|f1
+stupid|ngu ngốc|That was a stupid mistake.|A2|f1
+successful|thành công|The meeting was very successful.|B1|f1
+active|năng động; đang hoạt động|My grandmother is still very active.|B1|f1
+administration|hành chính; chính quyền|She works in administration.|B1|f1
+approach|cách tiếp cận; tiến lại gần|We need a new approach.|B1|f1
+cancer|ung thư|Smoking causes cancer.|B1|f1
+civil|dân sự|He is a civil engineer.|B1|f1
+defence / defense|phòng thủ|Our defense was strong in the second half.|B1|f1
+direction|hướng|Which direction is the airport?|A2|f1
+independent|độc lập|She is very independent.|B1|f1
+master|bậc thầy; thạc sĩ; thành thạo|He has a master's degree.|B1|f1
+none|không ai, không cái nào|None of the boxes were damaged.|B1|f1
+wonder|tự hỏi; kỳ quan|I wonder why he's late.|B1|f1
+awesome|tuyệt vời|That's awesome!|A2|f1
+band|ban nhạc|My favourite band is playing tonight.|A2|f1
+clearly|rõ ràng|Please speak clearly.|B1|f1
+commercial|thương mại; quảng cáo|Please send the commercial invoice.|B1|f1
+compare|so sánh|Compare the two quotes.|B1|f1
+effort|nỗ lực|Thanks for your effort.|B1|f1
+imagine|tưởng tượng|Imagine you are the customer.|B1|f1
+impact|tác động|The strike had a big impact on shipping.|B1|f1
+lack|sự thiếu|There's a lack of trucks this week.|B1|f1
+multiple|nhiều|We have multiple suppliers.|B1|f1
+operation|hoạt động; ca phẫu thuật|She is in charge of warehouse operations.|B1|f1
+organization|tổ chức|It's a non-profit organization.|B1|f1
+protect|bảo vệ|Wear gloves to protect your hands.|B1|f1
+secret|bí mật|Can you keep a secret?|A2|f1
+senior|cấp cao; người cao tuổi|He is a senior manager.|B1|f1
+wear|mặc, đội, đeo|Wear a jacket.|A2|f1
+activity|hoạt động|What activities do you enjoy?|A2|f1
+analysis|sự phân tích|We need a cost analysis.|B2|f1
+anyway|dù sao đi nữa|Anyway, let's start.|B1|f1
+color / colour|màu|What color is it?|A2|f1
+commission|tiền hoa hồng; ủy ban|Sales staff get a commission.|B1|f1
+competition|cuộc thi; sự cạnh tranh|There is a lot of competition in this market.|B1|f1
+detail|chi tiết|Please send me the details.|A2|f1
+direct|trực tiếp|Is it a direct flight?|B1|f1
+dream|giấc mơ; mơ|I had a strange dream.|A2|f1
+easily|dễ dàng|You can easily find it.|A2|f1
+grand|lớn, hoành tráng|It's a grand hotel.|B1|f1
+literally|theo nghĩa đen; thật sự|I literally ran to the station.|B1|f1
+luck|may mắn|Good luck!|A2|f1
+marriage|hôn nhân|They have a happy marriage.|B1|f1
+necessary|cần thiết|Is it necessary to sign here?|B1|f1
+resource|tài nguyên; nguồn lực|We don't have enough resources.|B1|f1
+suppose|cho là, giả sử|I suppose you're right.|B1|f1
+thus|do đó|The road was closed, thus the delay.|B2|f1
+touch|chạm; liên lạc|Don't touch that! Let's keep in touch.|A2|f1
+congress|quốc hội (Mỹ); đại hội|The congress meets in Washington.|B2|f1
+directly|trực tiếp|Contact the supplier directly.|B1|f1
+disease|bệnh tật|Heart disease is common.|B1|f1
+doubt|nghi ngờ|I doubt it.|B1|f1
+establish|thành lập|The company was established in 2005.|B1|f1
+glad|vui mừng|I'm glad you came.|A2|f1
+notice|thông báo; để ý|Did you notice anything strange?|B1|f1
+overall|nhìn chung; tổng thể|Overall, the trip was good.|B1|f1
+professor|giáo sư|She is a professor of economics.|B1|f1
+associate|liên kết; cộng sự|He's a business associate.|B2|f1
+basic|cơ bản|I know some basic English.|A2|f1
+captain|thuyền trưởng; đội trưởng|The captain of the ship is Korean.|B1|f1
+crime|tội phạm|Crime is low in this area.|B1|f1
+effective|hiệu quả|This medicine is very effective.|B1|f1
+fully|đầy đủ, hoàn toàn|The truck is fully loaded.|B1|f1
+highly|rất, cao|I highly recommend this restaurant.|B1|f1
+male|nam|Male workers sleep in building A.|A2|f1
+plant|cây; nhà máy|Water the plants. The plant is in Binh Duong.|A2|f1
+reality|thực tế|In reality, it's harder.|B1|f1
+spot|chỗ, địa điểm; vết|This is a nice spot for a picnic.|B1|f1
+advice|lời khuyên|Can I ask your advice?|A2|f1
+agreement|thỏa thuận; hợp đồng|We signed an agreement.|B1|f1
+award|giải thưởng|She won an award.|B1|f1
+block|khối; chặn; dãy nhà|The road is blocked.|B1|f1
+challenge|thử thách|It's a big challenge.|B1|f1
+comment|bình luận|Any comments?|B1|f1
+eventually|cuối cùng|We eventually found the problem.|B1|f1
+nation|quốc gia|The whole nation celebrated.|B1|f1
+otherwise|nếu không thì|Hurry up, otherwise we'll be late.|B1|f1
+primary|chính; tiểu học|My son is in primary school.|B1|f1
+purpose|mục đích|What's the purpose of your visit?|B1|f1
+responsible|chịu trách nhiệm|Who is responsible for this order?|B1|f1
+theory|lý thuyết|In theory, it should work.|B1|f1
+agency|đại lý; cơ quan|She works for a travel agency.|B1|f1
+avoid|tránh|Avoid the main road at rush hour.|B1|f1
+cell|tế bào; phòng giam|The body has millions of cells.|B1|f1
+coast|bờ biển|We drove along the coast.|B1|f1
+drug|thuốc; ma túy|This drug needs a prescription.|B1|f1
+economy|nền kinh tế|The economy is growing.|B1|f1
+executive|giám đốc điều hành; điều hành|He is a sales executive.|B1|f1
+hall|hội trường; hành lang|The meeting is in the main hall.|A2|f1
+mass|khối lượng; đại chúng|Mass production lowers costs.|B1|f1
+mission|nhiệm vụ|Our mission is to deliver on time.|B1|f1
+nine|chín|The office opens at nine.|A2|f1
+politics|chính trị|I'm not interested in politics.|B1|f1
+pop|nhạc pop; ghé qua|I'll pop in later.|B1|f1
+produce|sản xuất|The factory produces shoes.|B1|f1
+therefore|vì vậy|The road was closed; therefore, we were late.|B1|f1
+trial|thử nghiệm; phiên tòa|Try it for a free trial.|B1|f1
+truly|thực sự|I'm truly sorry.|B1|f1
+weather|thời tiết|How's the weather?|A2|f1
+application|đơn xin; ứng dụng|Send your application by Friday.|B1|f1
+complex|phức tạp; khu phức hợp|It's a complex process.|B1|f1
+division|bộ phận; sự chia|She works in the logistics division.|B1|f1
+flight|chuyến bay|My flight is at nine.|A2|f1
+freedom|tự do|Freedom is important.|B1|f1
+heat|nhiệt; hâm nóng|Heat the soup.|A2|f1
+locate|xác định vị trí; đặt tại|The office is located in District 1.|B1|f1
+murder|vụ giết người|He was arrested for murder.|B1|f1
+queen|nữ hoàng|The queen visited the city.|A2|f1
+sitting|ngồi; buổi|He was sitting at his desk.|A2|f1
+actual|thực tế|The actual weight is 520 kg.|B1|f1
+appear|xuất hiện|A message appeared on the screen.|B1|f1
+attempt|nỗ lực, cố gắng|This is my second attempt.|B1|f1
+broke|hết tiền; đã làm vỡ|I'm broke until payday.|B1|f1
+channel|kênh|Change the channel.|B1|f1
+distance|khoảng cách|What's the distance from here to the port?|A2|f1
+finding|phát hiện, kết quả|The findings of the audit were good.|B2|f1
+mobile|di động|What's your mobile number?|A2|f1
+northern|phía bắc|Northern Vietnam is cold in winter.|B1|f1
+powerful|mạnh mẽ|This is a powerful engine.|B1|f1
+prior|trước|Please call prior to delivery.|B2|f1
+protection|sự bảo vệ|Wear eye protection.|B1|f1
+religious|tôn giáo|It's a religious festival.|B1|f1
+royal|hoàng gia|We visited the royal palace in Hue.|B1|f1
+serve|phục vụ|Breakfast is served from six.|B1|f1
+species|loài|There are many species of birds here.|B2|f1
+speech|bài phát biểu|He gave a short speech.|B1|f1
+versus|đấu với, so với|It's Vietnam versus Thailand tonight.|B1|f1
+whom|người mà (trang trọng)|To whom should I send this?|B2|f1
+benefit|lợi ích|What are the benefits of this job?|B1|f1
+bottom|đáy, dưới cùng|Put heavy boxes at the bottom.|A2|f1
+engine|động cơ|The engine won't start.|A2|f1
+everybody|mọi người|Everybody, please listen.|A2|f1
+investment|sự đầu tư|It's a good investment.|B1|f1
+lie|nói dối; nằm|Don't lie to me.|A2|f1
+partner|đối tác; bạn đời|He is my business partner.|A2|f1
+raise|nâng lên; tăng|Raise your hand if you have a question.|B1|f1
+southern|phía nam|Southern food is sweet.|B1|f1
+structure|cấu trúc|The structure of the report is clear.|B1|f1
+traditional|truyền thống|Ao dai is traditional Vietnamese dress.|B1|f1
+twice|hai lần|I've been there twice.|A2|f1
+wind|gió|The wind is very strong today.|A2|f1
+bus|xe buýt|I take the bus to work.|A2|f1
+cent|xu|It costs fifty cents.|A2|f1
+critical|quan trọng; nguy kịch; chỉ trích|This is a critical part.|B1|f1
+digital|kỹ thuật số|We use digital documents now.|B1|f1
+fourth|thứ tư|It's my fourth time here.|A2|f1
+mental|tinh thần|Mental health is important.|B1|f1
+mention|đề cập|Don't mention it.|B1|f1
+mostly|chủ yếu|We mostly ship to Europe.|B1|f1
+previously|trước đây|I previously worked at a bank.|B1|f1
+realize / realise|nhận ra|I didn't realize it was so late.|B1|f1
+remain|vẫn còn; ở lại|Please remain seated.|B1|f1
+scale|quy mô; cái cân|Put the box on the scale.|B1|f1
+separate|riêng biệt; tách ra|Keep them in separate boxes.|B1|f1
+surface|bề mặt|Clean the surface.|B1|f1
+totally|hoàn toàn|I totally agree.|B1|f1
+acting|diễn xuất; quyền (tạm thời)|He is the acting manager this week.|B2|f1
+estate|bất động sản; khu đất|She works in real estate.|B1|f1
+fail|thất bại; trượt|I failed my driving test.|A2|f1
+faith|niềm tin|Have faith in yourself.|B1|f1
+fashion|thời trang|She loves fashion.|A2|f1
+fund|quỹ|We need funds for the project.|B1|f1
+generation|thế hệ|The younger generation uses smartphones.|B1|f1
+hearing|thính giác; phiên điều trần|My grandfather's hearing is poor.|B1|f1
+hill|đồi|We walked up the hill.|A2|f1
+metal|kim loại|The box is made of metal.|A2|f1
+profile|hồ sơ; tiểu sử|Update your profile picture.|B1|f1
+rose|hoa hồng|He gave her a red rose.|A2|f1
+seat|chỗ ngồi|Is this seat free?|A2|f1
+apply|nộp đơn; áp dụng|This rule applies to everyone.|B1|f1
+authority|chính quyền; thẩm quyền|The port authority closed the terminal.|B1|f1
+basis|cơ sở; nền tảng|We work on a daily basis.|B1|f1
+dude|anh bạn (thân mật, Mỹ)|Hey dude, what's up?|B1|f1
+employee|nhân viên|We have 200 employees.|A2|f1
+enter|đi vào; nhập|Enter your password.|A2|f1
+foundation|nền móng; quỹ|The building has strong foundations.|B1|f1
+gain|đạt được; tăng|I gained three kilos.|B1|f1
+memory|trí nhớ; kỷ niệm|I have a bad memory for names.|B1|f1
+prime|chính, hàng đầu|The prime minister spoke today.|B1|f1
+rise|tăng lên; mọc|Prices are rising.|B1|f1
+silver|bạc|She wore a silver necklace.|A2|f1
+soul|linh hồn|Bless his soul.|B1|f1
+spread|lan rộng; phết|The news spread quickly.|B1|f1
+weird|kỳ lạ|That's weird.|B1|f1
+apparently|hình như, nghe nói|Apparently, the ship is delayed.|B1|f1
+artist|nghệ sĩ|She is a talented artist.|A2|f1
+chairman|chủ tịch|The chairman opened the meeting.|B1|f1
+edition|ấn bản|This is the new edition.|B1|f1
+engineering|kỹ thuật|He studies engineering.|B1|f1
+grade|điểm; lớp; cấp độ|What grade is your son in?|B1|f1
+institute|viện|She works at a research institute.|B1|f1
+method|phương pháp|What payment method do you prefer?|B1|f1
+obviously|rõ ràng|Obviously, we need more time.|B1|f1
+option|lựa chọn|We have two options.|B1|f1
+prison|nhà tù|He spent five years in prison.|B1|f1
+remains|phần còn lại|The remains of the old temple are here.|B2|f1
+senate|thượng viện|The senate voted on the law.|B2|f1
+somebody|ai đó|Somebody called you.|A2|f1
+stone|đá|The wall is made of stone.|A2|f1
+strength|sức mạnh; điểm mạnh|What are your strengths?|B1|f1
+user|người dùng|Each user has a password.|B1|f1
+wild|hoang dã|We saw wild monkeys.|B1|f1
+winner|người chiến thắng|And the winner is…|A2|f1
+bet|cá cược; chắc chắn|I bet he's late again.|B1|f1
+camp|trại; cắm trại|We camped by the lake.|A2|f1
+cast|dàn diễn viên; bó bột|His arm is in a cast.|B1|f1
+correct|đúng; sửa|Is this address correct?|A2|f1
+extremely|cực kỳ|It's extremely hot today.|B1|f1
+firm|công ty; chắc chắn|She works for a law firm.|B1|f1
+indeed|quả thật|It was indeed a great trip.|B1|f1
+negative|tiêu cực; âm tính|Don't be so negative.|B1|f1
+prevent|ngăn chặn|Wrap the glass to prevent damage.|B1|f1
+remove|loại bỏ, tháo|Remove the old labels.|B1|f1
+spirit|tinh thần|Keep your spirits up.|B1|f1
+television|tivi|Turn off the television.|A2|f1
+till|cho đến; máy tính tiền|I work till six.|A2|f1
+trouble|rắc rối|I'm having trouble with my computer.|A2|f1
+advantage|lợi thế|What's the advantage of air freight?|B1|f1
+apart|cách xa; ngoài ra|The two warehouses are 5 km apart.|B1|f1
+aware|nhận thức được|Are you aware of the new rules?|B1|f1
+dollar|đô la|It costs ten dollars.|A2|f1
+eastern|phía đông|The eastern side of the city is new.|B1|f1
+fifth|thứ năm|This is my fifth year here.|A2|f1
+function|chức năng|What's the function of this button?|B1|f1
+herself|chính cô ấy|She made it herself.|A2|f1
+impossible|không thể|It's impossible to finish today.|A2|f1
+influence|ảnh hưởng|He has a lot of influence.|B1|f1
+item|món hàng, mục|How many items are in the order?|A2|f1
+marketing|tiếp thị|She works in marketing.|B1|f1
+nor|cũng không|Neither he nor I knew.|B1|f1
+progress|tiến bộ, tiến độ|What's the progress on the project?|B1|f1
+shoot|bắn; quay phim|They are shooting a film here.|B1|f1
+shut|đóng lại|Shut the door, please.|A2|f1
+wood|gỗ|The pallet is made of wood.|A2|f1
+background|lý lịch; nền|What's your background?|B1|f1
+birth|sự sinh ra|What's your date of birth?|A2|f1
+concept|khái niệm|The concept is simple.|B1|f1
+dear|thân mến|Dear Mr Smith,|A2|f1
+garden|vườn|We grow vegetables in our garden.|A2|f1
+host|chủ nhà; dẫn chương trình|Thank you to our host.|B1|f1
+housing|nhà ở|Housing is expensive in big cities.|B1|f1
+journal|tạp chí; nhật ký|I keep a journal.|B1|f1
+labour / labor|lao động|Labor costs are rising.|B1|f1
+leadership|khả năng lãnh đạo|She has strong leadership skills.|B1|f1
+length|chiều dài|What's the length of the box?|A2|f1
+lucky|may mắn|You're so lucky!|A2|f1
+neither|không cái nào; cũng không|Neither of them came.|B1|f1
+onto|lên trên|Load the boxes onto the truck.|B1|f1
+possibly|có thể|Could you possibly help me?|B1|f1
+prove|chứng minh|Can you prove it?|B1|f1
+rare|hiếm|It's very rare.|B1|f1
+setting|bối cảnh; cài đặt|Change the settings.|B1|f1
+software|phần mềm|We use new software.|A2|f1
+tough|khó khăn; dai|It was a tough week.|B1|f1
+ad|quảng cáo|I saw an ad for the job online.|A2|f1
+alive|còn sống|Is he still alive?|A2|f1
+balance|sự cân bằng; số dư|Check your account balance.|B1|f1
+connection|kết nối|The connection is slow.|B1|f1
+fellow|đồng nghiệp; bạn|My fellow workers are great.|B1|f1
+magic|phép thuật|It works like magic.|A2|f1
+manage|quản lý; xoay xở|I managed to finish on time.|B1|f1
+net|lưới; ròng (khối lượng)|What's the net weight?|B1|f1
+stick|cây gậy; dán; dính|Stick the label on the box.|A2|f1
+vehicle|phương tiện, xe|Park your vehicle here.|B1|f1
+wake|thức dậy|Wake me up at six.|A2|f1
+aid|sự giúp đỡ, viện trợ|Do you have a first aid kit?|B1|f1
+beauty|vẻ đẹp|The beauty of Ha Long Bay is amazing.|B1|f1
+buying|việc mua|Buying online is easy.|A2|f1
+concern|mối lo ngại; liên quan|Thank you for your concern.|B1|f1
+criminal|tội phạm|The criminal was arrested.|B1|f1
+cultural|văn hóa|There are cultural differences.|B1|f1
+develop|phát triển|We developed a new system.|B1|f1
+exist|tồn tại|Does this file exist?|B1|f1
+farm|nông trại|My uncle has a farm.|A2|f1
+fly|bay; con ruồi|I'm flying to Ho Chi Minh City.|A2|f1
+frank|thẳng thắn|To be frank, I don't like it.|B1|f1
+investigation|cuộc điều tra|There will be an investigation.|B1|f1
+operate|vận hành|Can you operate a forklift?|B1|f1
+roll|cuộn; lăn|A roll of tape, please.|A2|f1
+slightly|hơi, một chút|The price is slightly higher.|B1|f1
+surprise|sự ngạc nhiên|What a surprise!|A2|f1
+technical|kỹ thuật|We have a technical problem.|B1|f1
+treat|đối xử; chiêu đãi|It's my treat.|B1|f1
+unique|độc đáo|Each code is unique.|B1|f1
+variety|sự đa dạng|There's a variety of food.|B1|f1
+violence|bạo lực|There is too much violence on TV.|B1|f1
+weapon|vũ khí|Weapons are not allowed on the plane.|B1|f1
+yours|của bạn|Is this yours?|A2|f1
+youth|tuổi trẻ; thanh niên|In my youth, I played football.|B1|f1
+appreciate|đánh giá cao, cảm kích|I appreciate your help.|B1|f1
+discover|khám phá|We discovered a nice café.|B1|f1
+dry|khô; làm khô|Keep the goods dry.|A2|f1
+edge|cạnh, mép|Don't stand near the edge.|B1|f1
+evil|xấu xa, cái ác|Good and evil.|B1|f1
+excite|làm phấn khích|The news excited everyone.|B1|f1
+forever|mãi mãi|I'll remember this forever.|A2|f1
+lovely|đáng yêu, tuyệt|What a lovely day!|A2|f1
+mad|điên; tức giận|Are you mad at me?|A2|f1
+parliament|quốc hội|The parliament passed a new law.|B1|f1
+reference|tham khảo; mã tham chiếu|What's the reference number?|B1|f1
+religion|tôn giáo|What is your religion?|B1|f1
+strategy|chiến lược|We need a new strategy.|B1|f1
+web|mạng; web|Search the web.|A2|f1
+wine|rượu vang|A glass of red wine, please.|A2|f1
+audience|khán giả|The audience loved the show.|B1|f1
+bay|vịnh|Ha Long Bay is beautiful.|A2|f1
+blog|blog|She writes a travel blog.|A2|f1
+closer|gần hơn|Come closer.|A2|f1
+core|cốt lõi|Logistics is our core business.|B1|f1
+description|sự mô tả|Write a short description of the goods.|B1|f1
+excellent|xuất sắc|Your work is excellent.|A2|f1
+guard|bảo vệ; người gác|Ask the guard at the gate.|A2|f1
+nuclear|hạt nhân|Nuclear power is controversial.|B2|f1
+presence|sự hiện diện|Thank you for your presence.|B1|f1
+reaction|phản ứng|What was his reaction?|B1|f1
+solid|rắn; chắc chắn|It's a solid plan.|B1|f1
+taste|vị; nếm|It tastes good.|A2|f1
+victory|chiến thắng|It was a great victory.|B1|f1
+assistant|trợ lý|She is my assistant.|A2|f1
+citizen|công dân|He is a Vietnamese citizen.|B1|f1
+classic|cổ điển, kinh điển|It's a classic film.|B1|f1
+electric|điện|I want an electric bike.|A2|f1
+entirely|hoàn toàn|It's entirely my fault.|B1|f1
+failure|sự thất bại; hỏng hóc|There was a power failure.|B1|f1
+flat|bằng phẳng; căn hộ (UK)|I have a flat tyre.|A2|f1
+fuel|nhiên liệu|Fuel prices went up.|B1|f1
+initial|ban đầu|The initial cost is high.|B1|f1
+kick|đá|He kicked the ball.|A2|f1
+mail|thư từ|Is there any mail for me?|A2|f1
+massive|to lớn|There was a massive traffic jam.|B1|f1
+plane|máy bay|The plane landed safely.|A2|f1
+plenty|nhiều, dư dả|We have plenty of time.|A2|f1
+prince|hoàng tử|The prince visited Vietnam.|A2|f1
+proper|đúng cách, phù hợp|Use the proper tools.|B1|f1
+quarter|một phần tư; quý|Sales were good in the first quarter.|A2|f1
+regional|khu vực|He is the regional manager.|B1|f1
+session|buổi, phiên|The training session starts at two.|B1|f1
+shape|hình dạng|What shape is it?|A2|f1
+toward|về phía|He walked toward me.|B1|f1
+upper|phía trên|The upper floor is the office.|B1|f1
+valley|thung lũng|The village is in a valley.|A2|f1
+willing|sẵn lòng|I'm willing to help.|B1|f1
+zone|khu vực|This is a no-parking zone.|B1|f1
+advance|trước; tiến bộ|Please pay in advance.|B1|f1
+alternative|lựa chọn khác|Is there an alternative route?|B1|f1
+anywhere|bất cứ đâu|You can sit anywhere.|A2|f1
+bear|con gấu; chịu đựng|I can't bear the noise.|B1|f1
+boat|thuyền|We took a boat to the island.|A2|f1
+climate|khí hậu|Vietnam has a tropical climate.|B1|f1
+discussion|cuộc thảo luận|We had a long discussion.|B1|f1
+duty|nhiệm vụ; thuế (nhập khẩu)|How much import duty do we pay?|B1|f1
+fantastic|tuyệt vời|The food was fantastic.|A2|f1
+governor|thống đốc|The governor visited the factory.|B1|f1
+industrial|công nghiệp|The factory is in an industrial zone.|B1|f1
+joint|chung; khớp (xương)|It's a joint venture.|B1|f1
+mix|trộn; hỗn hợp|Mix the flour and water.|A2|f1
+path|lối đi|Follow the path to the beach.|A2|f1
+propose|đề xuất|I propose a new plan.|B1|f1
+purchase|mua; giao dịch mua|Thank you for your purchase.|B1|f1
+rain|mưa|It's going to rain.|A2|f1
+steel|thép|The container is made of steel.|B1|f1
+tyre / tire|lốp xe|The truck has a flat tire.|A2|f1
+vice|phó (vice president)|She is the vice president.|B1|f1
+afraid|sợ; e rằng|I'm afraid of dogs.|A2|f1
+border|biên giới|The truck is waiting at the border.|B1|f1
+command|mệnh lệnh; ra lệnh|Type the command and press Enter.|B1|f1
+crew|phi hành đoàn; thủy thủ đoàn|The crew of the ship are Filipino.|B1|f1
+crowd|đám đông|There was a big crowd.|A2|f1
+element|yếu tố; nguyên tố|Price is an important element.|B1|f1
+enemy|kẻ thù|He has no enemies.|B1|f1
+ensure|đảm bảo|Please ensure the boxes are sealed.|B1|f1
+environmental|thuộc môi trường|Environmental rules are strict.|B1|f1
+fill|làm đầy, điền|Fill the bottle with water.|A2|f1
+forest|rừng|They walked through the forest.|A2|f1
+intelligence|trí thông minh; tình báo|Artificial intelligence is changing work.|B1|f1
+intend|dự định|I intend to stay for a week.|B1|f1
+ocean|đại dương|The Pacific Ocean is huge.|A2|f1
+profit|lợi nhuận|The company made a big profit.|B1|f1
+proof|bằng chứng|Do you have proof of delivery?|B1|f1
+soldier|người lính|My grandfather was a soldier.|A2|f1
+suit|bộ com lê; hợp|This suit fits you well.|A2|f1

@@ -272,7 +272,15 @@ const TOPICS=[
  {id:"tc",code:"TC-32",name:"Công nghệ & điện thoại",en:"Technology & phones"},
  {id:"pp",code:"PP-33",name:"Con người, nơi chốn, quần áo & màu sắc",en:"People, places & clothes"},
  {id:"gt",code:"GT-34",name:"Giải trí, lễ hội & động vật",en:"Leisure, festivals & animals"},
- {id:"kn",code:"KN-35",name:"Câu khẩu ngữ thông dụng",en:"Spoken English phrases"}
+ {id:"kn",code:"KN-35",name:"Câu khẩu ngữ thông dụng",en:"Spoken English phrases"},
+ {id:"f1",code:"FQ-36",name:"Từ phổ biến nhất · nhóm 1",en:"Most common words · set 1"},
+ {id:"f2",code:"FQ-37",name:"Từ phổ biến nhất · nhóm 2",en:"Most common words · set 2"},
+ {id:"f3",code:"FQ-38",name:"Từ phổ biến nhất · nhóm 3",en:"Most common words · set 3"},
+ {id:"f4",code:"FQ-39",name:"Từ phổ biến nhất · nhóm 4",en:"Most common words · set 4"},
+ {id:"f5",code:"FQ-40",name:"Từ phổ biến nhất · nhóm 5",en:"Most common words · set 5"},
+ {id:"f6",code:"FQ-41",name:"Từ phổ biến nhất · nhóm 6",en:"Most common words · set 6"},
+ {id:"f7",code:"FQ-42",name:"Từ phổ biến nhất · nhóm 7",en:"Most common words · set 7"},
+ {id:"f8",code:"FQ-43",name:"Từ phổ biến nhất · nhóm 8",en:"Most common words · set 8"}
 ];
 const LOGI_N=19;
 // term | vietnamese | example | level | topic
@@ -722,7 +730,7 @@ function buildFlashQueue(){
 }
 function flashMode(){
   if(!flashQueue.length||flashIdx>=flashQueue.length)buildFlashQueue();
-  const opts=[["due","Từ chưa thuộc"],["star","★ Đã đánh sao"],["all","Tất cả"],...TOPICS.map(t=>[t.id,t.en+" · "+t.name])];
+  const opts=[["due","Từ chưa thuộc"],["star","★ Đã đánh sao"],["all","Tất cả"],...TOPICS.filter(t=>VOCAB.some(w=>w.topic===t.id)).map(t=>[t.id,t.en+" · "+t.name])];
   const w=flashQueue[flashIdx];
   $("#rv").innerHTML=`<div class="bar"><label class="note" for="fp">Bộ thẻ</label><select id="fp" class="pill">${opts.map(o=>`<option value="${o[0]}" ${o[0]===flashPool?"selected":""}>${esc(o[1])}</option>`).join("")}</select><span class="note">${w?`Thẻ ${flashIdx+1}/${flashQueue.length}`:""}</span></div>
   ${w?`<div class="flash"><div class="flash-inner" id="fc" tabindex="0" role="button" aria-label="Lật thẻ"><span class="flash-code">${TOPICS.find(t=>t.id===w.topic).code} · ngăn ${Math.min(S.box[w.id]||0,3)}</span>
@@ -921,7 +929,7 @@ const stopMic=()=>{try{if(DICT&&DICT.active())DICT.stop()}catch(e){}};
 const micBox=`<div class="bar" style="margin:0"><button class="btn warn mic">● Bấm để nói</button></div><p class="note mstate">Bấm nút micro, nói to rõ ràng; app tự chấm khi bạn ngừng nói.</p><p class="heard"></p><div class="mresult"></div>`;
 function topicOptions(sel,extra=""){
   const g=(label,list)=>`<optgroup label="${label}">${list.map(t=>`<option value="${t.id}" ${sel===t.id?"selected":""}>${esc(t.en)} · ${esc(t.name)} (${VOCAB.filter(w=>w.topic===t.id).length})</option>`).join("")}</optgroup>`;
-  return extra+g("Logistics",TOPICS.slice(0,LOGI_N))+g("Đời sống, công việc & giao tiếp",TOPICS.slice(LOGI_N));
+  const F=TOPICS.findIndex(t=>t.id==="f1");return extra+g("Logistics",TOPICS.slice(0,LOGI_N))+g("Đời sống, công việc & giao tiếp",TOPICS.slice(LOGI_N,F))+g("Từ phổ biến nhất (theo tần suất dùng)",TOPICS.slice(F).filter(t=>VOCAB.some(w=>w.topic===t.id)));
 }
 
 /* ============ SHADOWING VIEW ============ */
@@ -1074,7 +1082,7 @@ function drawDic(){
 
 /* ============ AI CHAT PARTNER ============ */
 const CHAT_SCEN=[
- {id:"free",t:"Free conversation",vi:"Nói chuyện tự do",role:"a friendly native English speaker who is the learner's new friend",open:"Hey! Nice to meet you. How's your day going?"},
+ {id:"free",t:"Free talk: any topic",vi:"Nói chuyện tự do, mọi chủ đề, hỏi gì cũng được",free:true,role:"a friendly, curious native English speaker and good friend who is happy to chat about absolutely anything (daily life, work, news, sport, travel, food, feelings, science, culture, jokes) and to answer any question the learner asks",open:"Hey! Good to see you. What's on your mind today? We can talk about anything you like."},
  {id:"small",t:"Small talk with a colleague",vi:"Tán gẫu với đồng nghiệp",role:"a friendly British colleague chatting in the office kitchen during a coffee break",open:"Morning! Did you have a good weekend?"},
  {id:"cust",t:"Customer call: late shipment",vi:"Khách hỏi về lô hàng trễ",role:"an American customer calling a Vietnamese freight forwarder because their shipment to Los Angeles is late; you are polite but want clear answers about the new ETA and costs",open:"Hi, this is Sarah from Bright Home in LA. Our container was supposed to arrive yesterday. What's going on?"},
  {id:"fwd",t:"Booking with a forwarder",vi:"Đặt chỗ với forwarder",role:"a sales person at a freight forwarder in Singapore; the learner is a shipper who wants to book a container; ask about cargo, volume, dates and Incoterms",open:"Hello, thanks for calling Lion Freight. How can I help you today?"},
@@ -1088,9 +1096,9 @@ const CHAT_SCEN=[
 let chat={scen:"free",level:"B1",turns:[],busy:false,voice:true,ctl:null,showVi:false};
 function chatRules(){const sc=CHAT_SCEN.find(s=>s.id===chat.scen);
   return `You are an English conversation partner inside a language-learning app for Vietnamese adults who work in logistics.
-Role-play: you are ${sc.role}. Stay in this role and talk like a real native speaker: natural, warm, everyday spoken English with common contractions and idioms, never robotic.
+Role-play: you are ${sc.role}. ${sc.free?"This is open conversation: follow the learner wherever they go, change topic whenever they do, share your own opinions and small stories like a real person, and give a real, correct answer to any question (facts, advice, explanations, how-to). Never refuse a normal topic and never say you are only here to practise.":"Stay in this role."} Talk like a real native speaker: natural, warm, everyday spoken English with common contractions and idioms, never robotic, never like a teacher.
 The learner's level is ${chat.level} (CEFR). ${chat.level==="A2"?"Use short simple sentences and very common words.":chat.level==="B1"?"Use clear everyday English, 1-3 sentences.":"Speak naturally at normal native level, with some idioms."}
-Keep each reply short (1-3 sentences, under 45 words) because it will be spoken aloud, and usually end with a question to keep the conversation going.
+Replies are spoken aloud, so keep them conversational: usually 1-3 sentences (under 50 words); if the learner asks a real question that needs explaining, you may use up to about 90 words. Ask a follow-up question only when it feels natural, like a real friend would. If the learner writes in Vietnamese or mixes languages, understand it, answer in English, and help them by putting how to say it in English in "fix".
 The learner may speak through a microphone, so ignore small speech-recognition errors and missing punctuation.
 Reply with only a JSON object: {"reply": your spoken reply in English, "reply_vi": a natural Vietnamese translation of your reply, "fix": a corrected, natural version of the learner's LAST message if it had a grammar or word-choice mistake, otherwise "", "tip_vi": if fix is not empty, one short explanation in Vietnamese of the mistake, otherwise ""}.`}
 let chatEls=null;
@@ -1155,7 +1163,7 @@ async function chatSend(text){
   const me={role:"user",content:text};chat.turns.push(me);
   const bot={role:"assistant",content:"",pending:true};chat.turns.push(bot);drawChat();
   $("#cstop").hidden=false;$("#csend").disabled=true;
-  const hist=chat.turns.filter(t=>!t.pending).slice(-16).map(t=>({role:t.role,content:t.content}));
+  const hist=chat.turns.filter(t=>!t.pending).slice(-30).map(t=>({role:t.role,content:t.content}));
   while(hist.length&&hist[0].role!=="user")hist.shift();
   const input=[{role:"user",content:chatRules()+"\n\nThe conversation starts now. Your opening line was: \""+chat.turns[0].content+"\""},...hist];
   chat.ctl=new AbortController();
