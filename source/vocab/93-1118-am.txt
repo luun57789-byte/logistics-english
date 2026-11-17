@@ -1,0 +1,58 @@
+order backlog|lượng đơn hàng tồn đọng|We have an order backlog after the holiday.|B1|sc
+supply shortage|thiếu hụt nguồn cung|There's a supply shortage of cartons.|B1|sc
+racking system|hệ thống kệ|The new racking system holds 2,000 pallets.|B1|wh
+reefer plug-in|cắm điện container lạnh|The reefer plug-in fee is charged per day.|B2|cc
+gate-in|hạ container vào cảng|The gate-in deadline is Wednesday at 5 p.m.|B1|oc
+packing instruction|hướng dẫn đóng gói|Follow the packing instruction from the buyer.|B1|mt
+certificate of origin request|yêu cầu C/O|We sent the certificate of origin request today.|B2|dc
+door-to-door service|dịch vụ giao tận nơi|We offer a door-to-door service to Japan.|B1|in
+pickup confirmation|xác nhận lấy hàng|Did you get the pickup confirmation?|A2|op
+missed pickup|lỡ lịch lấy hàng|The driver had a missed pickup yesterday.|A2|op
+airport transfer (cargo)|trung chuyển hàng ra sân bay|The airport transfer takes about an hour.|B1|af
+proforma invoice|hóa đơn chiếu lệ|Please send a proforma invoice first.|B1|fi
+purchase request|đề nghị mua hàng|Submit a purchase request to the manager.|B1|pu
+order tracking page|trang theo dõi đơn hàng|Check the order tracking page for updates.|A2|ec
+first aid kit|hộp sơ cứu|The first aid kit is next to the door.|A2|hs
+dustpan|đồ hốt rác|Where's the dustpan?|A2|dl
+ironing board|bàn để ủi đồ|Put the ironing board away.|A2|dl
+broken rice|cơm tấm|Let's have broken rice for lunch.|A1|fo
+fish sauce dip|nước chấm|This fish sauce dip is a bit too salty.|A2|fo
+back pain|đau lưng|Lifting boxes gave me back pain.|A2|hl
+eye drops|thuốc nhỏ mắt|Use eye drops if your eyes are dry.|A2|hl
+yoga mat|thảm tập yoga|I bought a new yoga mat.|A2|sp
+morning walk|đi bộ buổi sáng|My parents go for a morning walk every day.|A1|sp
+travel agency|công ty du lịch|We booked the trip through a travel agency.|A2|tv
+day trip|chuyến đi trong ngày|Let's take a day trip to Ninh Binh.|A2|tv
+heat wave|đợt nắng nóng|There's a heat wave in the north.|B1|ws
+sunny spells|nắng từng đợt|Expect sunny spells in the afternoon.|B1|ws
+quality inspector|nhân viên kiểm tra chất lượng|The quality inspector rejected two cartons.|A2|fc
+overtime shift|ca tăng ca|I'm doing an overtime shift on Saturday.|A2|fc
+staff canteen|nhà ăn nhân viên|Lunch is free in the staff canteen.|A2|wk
+make small talk|nói chuyện xã giao|It's polite to make small talk before a meeting.|B1|cm
+get along with|hòa hợp với|I get along with my coworkers.|A2|cm
+receipt printer|máy in hóa đơn|The receipt printer is out of paper.|A2|sh
+price check|kiểm tra giá|Can I get a price check on this?|A2|sh
+hand in|nộp|Hand in your timesheet by Friday.|A2|vb
+fill up|đổ đầy|Fill up the tank before the trip.|A2|vb
+every other day|cách ngày|I go swimming every other day.|B1|tm
+twice a week|hai lần một tuần|We have meetings twice a week.|A1|tm
+group video call|gọi video nhóm|Let's do a group video call at eight.|A2|tc
+low signal|sóng yếu|Sorry, I have a low signal here.|A2|tc
+uniform shirt|áo đồng phục|Wear your uniform shirt on Monday.|A1|pp
+football match|trận bóng đá|Are you watching the football match tonight?|A1|gt
+lantern festival|lễ hội đèn lồng|Hoi An has a lantern festival every month.|A2|gt
+Every now and then.|Thỉnh thoảng.|Do you cook? Every now and then.|B1|kn
+Once in a while.|Đôi khi, lâu lâu.|I eat fast food once in a while.|B1|kn
+Same as usual.|Như mọi khi.|What would you like? Same as usual.|A2|kn
+Hardly ever.|Hầu như không bao giờ.|Do you go out late? Hardly ever.|B1|kn
+You're telling me!|Còn phải nói!|It's so hot today! You're telling me!|B1|kn
+I'll pass, thanks.|Mình xin phép không tham gia nhé.|More cake? I'll pass, thanks.|A2|kn
+What's new?|Có gì mới không?|Hey Lan, what's new?|A2|kn
+Nice catch!|Phát hiện hay đấy!|You found the wrong date? Nice catch!|B1|kn
+Have a safe trip!|Đi đường an toàn nhé!|Leaving for Hue tonight? Have a safe trip!|A2|kn
+stock report|báo cáo tồn kho|Send the weekly stock report on Monday.|B1|wh
+pallet count|số lượng pallet|The pallet count doesn't match the invoice.|A2|wh
+carton label|nhãn thùng|Each carton label shows the order number.|A2|mt
+declaration number|số tờ khai|Write the declaration number on the form.|B1|cu
+yearly review|đánh giá cuối năm|My yearly review went well.|B1|wk
+second cousin|anh chị em họ xa|She's my second cousin.|B1|pp
