@@ -1,0 +1,60 @@
+receiving report|biên bản nhận hàng|Please sign the receiving report.|B1|wh
+stretch film|màng PE quấn pallet|Wrap the pallet with stretch film.|A2|mt
+crushed carton|thùng bị móp|Take a photo of every crushed carton.|A2|mt
+container yard|bãi container|The empty box is at the container yard.|B1|oc
+vessel delay|tàu bị trễ|The vessel delay is about two days.|A2|oc
+original documents|chứng từ gốc|The original documents were sent by courier.|B1|dc
+service failure|lỗi dịch vụ|We are sorry for the service failure.|B1|op
+air cargo terminal|nhà ga hàng hóa sân bay|Collect the goods at the air cargo terminal.|B1|af
+driver's phone number|số điện thoại tài xế|Can you send me the driver's phone number?|A2|td
+invoice due date|hạn thanh toán hóa đơn|The invoice due date is the end of the month.|B1|fi
+barcode scanner|máy quét mã vạch|The barcode scanner is not working.|A2|it
+fire drill|diễn tập phòng cháy|We have a fire drill on Friday.|A2|hs
+washing line|dây phơi quần áo|Hang the clothes on the washing line.|A2|dl
+sticky rice|xôi|I had sticky rice for breakfast.|A1|fo
+iced tea|trà đá|Two iced teas, please.|A1|fo
+headache tablet|thuốc đau đầu|Do you have a headache tablet?|A2|hl
+pharmacy counter|quầy thuốc|Ask at the pharmacy counter.|A2|hl
+gym membership|thẻ tập gym|My gym membership ends next month.|A2|sp
+extra time|hiệp phụ|The match went to extra time.|A2|sp
+cold snap|đợt rét đột ngột|A cold snap is coming this weekend.|B1|ws
+safety briefing|buổi nhắc nhở an toàn|There's a safety briefing at the start of the shift.|B1|fc
+team meeting|họp nhóm|We have a team meeting every Monday.|A2|wk
+out of office|vắng mặt khỏi văn phòng|I'm out of office until Thursday.|B1|wk
+compliment someone|khen ai đó|It's nice to compliment someone's work.|B1|cm
+change your mind|đổi ý|Call me if you change your mind.|A2|cm
+cash back|hoàn tiền|This card gives two percent cash back.|B1|sh
+buy one get one free|mua một tặng một|It's buy one get one free today.|A2|sh
+figure out|tìm ra, hiểu ra|I can't figure out this form.|B1|vb
+set up|cài đặt; thiết lập|Can you help me set up the printer?|A2|vb
+early morning|sáng sớm|The truck leaves early in the morning.|A1|tm
+by the end of the day|trước cuối ngày|I'll send it by the end of the day.|B1|tm
+phone charger|sạc điện thoại|Can I borrow your phone charger?|A1|tc
+dark mode|chế độ nền tối|I always use dark mode.|A2|tc
+best friend|bạn thân|She's my best friend.|A1|pp
+sneakers (trainers)|giày thể thao|I need new trainers.|A1|pp
+movie night|buổi xem phim|Let's have a movie night at home.|A2|gt
+water puppet show|múa rối nước|Tourists love the water puppet show.|A2|gt
+Leave it to me.|Cứ để mình lo.|Don't worry about the booking, leave it to me.|A2|kn
+Good to know.|Biết vậy cũng tốt.|The office closes early on Friday? Good to know.|A2|kn
+That's a relief.|Thật nhẹ cả người.|The goods arrived safely? That's a relief.|B1|kn
+Bless you!|Chúc bạn khỏe (khi ai hắt hơi).|Achoo! Bless you!|A2|kn
+Let's keep in touch.|Giữ liên lạc nhé.|It was great meeting you. Let's keep in touch.|A2|kn
+Hold on a second.|Chờ mình một chút.|Hold on a second, I'll check.|A2|kn
+I couldn't agree more.|Mình hoàn toàn đồng ý.|We need more staff? I couldn't agree more.|B1|kn
+Not a big deal.|Chuyện nhỏ thôi.|You forgot the pen? Not a big deal.|A2|kn
+Speak of the devil!|Vừa nhắc đã tới!|Speak of the devil! We were just talking about you.|B1|kn
+damage report|biên bản hư hỏng|Write a damage report and send it to the carrier.|B1|op
+replacement goods|hàng gửi bù|The replacement goods will arrive next week.|B1|op
+broken seal|niêm phong bị hỏng|The driver found a broken seal on the truck.|B1|oc
+delivery photo|ảnh giao hàng|Check the delivery photo in the app.|A2|ec
+pickup point|điểm nhận hàng|Your order is at the pickup point.|A2|ec
+duty rate|thuế suất|What's the duty rate for this product?|B1|cu
+copy documents|bản sao chứng từ|Send me the copy documents first.|B1|dc
+socket (power)|ổ cắm điện|Is there a socket near the bed?|A2|dl
+coach ticket|vé xe khách|I booked a coach ticket to Ha Long.|A2|tv
+overcast|u ám|It's overcast this morning.|B1|ws
+work shift|ca làm việc|My work shift ends at 6.|A2|fc
+Thanks a million.|Cảm ơn rất nhiều.|You fixed it? Thanks a million.|A2|kn
+I've got this.|Mình lo được.|Don't worry, I've got this.|A2|kn
+Mind your step.|Cẩn thận bước chân.|Mind your step, the floor is wet.|A2|kn
