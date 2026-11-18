@@ -1,0 +1,59 @@
+dock assignment|phân cửa dock|Check the dock assignment on the board.|B1|wh
+put away|cất hàng lên kệ|Put away the pallets before lunch.|A2|wh
+aisle number|số dãy kệ|The aisle number is on the floor.|A2|wh
+over-shipment|giao thừa hàng|Report any over-shipment to purchasing.|B1|op
+pallet height limit|giới hạn chiều cao pallet|The pallet height limit is 1.6 metres.|B1|mt
+forklift charging|sạc xe nâng|The forklift charging area is at the back.|B1|hs
+shipping line agent|đại lý hãng tàu|Call the shipping line agent about the release.|B1|oc
+container pickup|lấy container|The container pickup is booked for 8 a.m.|A2|oc
+release note|giấy cho phép lấy hàng|We need the release note before collection.|B1|dc
+duty receipt|biên lai nộp thuế|Keep the duty receipt for your records.|B1|cu
+order total|tổng tiền đơn hàng|The order total includes shipping.|A2|ec
+airport handling fee|phí xử lý tại sân bay|The airport handling fee is charged per kilo.|B1|af
+driver checklist|danh sách kiểm tra của tài xế|Fill in the driver checklist before you leave.|B1|td
+credit limit|hạn mức tín dụng|This customer has reached the credit limit.|B1|fi
+supplier contact|đầu mối liên hệ nhà cung cấp|Who is the supplier contact for this order?|A2|pu
+system downtime|thời gian hệ thống ngừng|There will be system downtime on Sunday night.|B1|it
+ice pack|túi đá giữ lạnh|Put an ice pack in the box.|A2|cc
+spare room|phòng trống cho khách|You can stay in our spare room.|A2|dl
+hot water heater|bình nóng lạnh|The hot water heater is broken.|A2|dl
+grilled pork|thịt nướng|I'd like rice with grilled pork.|A1|fo
+spring rolls|nem rán, chả giò|We ordered a plate of spring rolls.|A1|fo
+dentist appointment|lịch hẹn nha sĩ|I have a dentist appointment at four.|A2|hl
+blood test|xét nghiệm máu|The doctor ordered a blood test.|A2|hl
+badminton court|sân cầu lông|Let's book a badminton court for Sunday.|A2|sp
+home team|đội nhà|The home team won 2-0.|A2|sp
+tour guide|hướng dẫn viên du lịch|Our tour guide speaks good English.|A1|tv
+check-out time|giờ trả phòng|Check-out time is at noon.|A2|tv
+chilly morning|buổi sáng se lạnh|It's a chilly morning, wear a jacket.|A2|ws
+flooded street|đường ngập nước|The flooded street is closed to traffic.|A2|ws
+machine breakdown|máy hỏng|A machine breakdown stopped production.|B1|fc
+safety gloves|găng tay bảo hộ|Wear safety gloves when you cut the straps.|A2|fc
+lunch meeting|họp trong bữa trưa|I have a lunch meeting with a client.|A2|wk
+monthly report|báo cáo tháng|The monthly report is due on the fifth.|A2|wk
+give feedback|góp ý, phản hồi|Please give feedback on my presentation.|B1|cm
+get to know|làm quen, tìm hiểu|I want to get to know my new team.|A2|cm
+shopping list|danh sách đồ cần mua|Don't forget the shopping list.|A1|sh
+plug in|cắm điện|Plug in the charger, please.|A2|vb
+carry on|tiếp tục|Carry on, I'm listening.|B1|vb
+right away|ngay lập tức|I'll do it right away.|A2|tm
+from time to time|thỉnh thoảng|I check my emails from time to time.|B1|tm
+phone storage|bộ nhớ điện thoại|My phone storage is full.|A2|tc
+QR scanner|máy quét mã QR|Open the QR scanner in the app.|A2|tc
+coworker (colleague)|đồng nghiệp|My colleague is from Da Nang.|A1|pp
+rain boots|ủng đi mưa|Wear rain boots in the flood season.|A1|pp
+birthday party|tiệc sinh nhật|I'm invited to a birthday party.|A1|gt
+concert ticket|vé ca nhạc|I got two concert tickets.|A2|gt
+Watch your back!|Cẩn thận phía sau!|Watch your back, the forklift is coming!|A2|kn
+Coming through!|Cho qua với!|Coming through! Heavy boxes!|A2|kn
+Give me a hand.|Giúp mình một tay.|Can you give me a hand with this pallet?|A2|kn
+Almost done.|Gần xong rồi.|Are you finished? Almost done.|A2|kn
+Good job, everyone!|Mọi người làm tốt lắm!|We finished early. Good job, everyone!|A2|kn
+Easy does it.|Từ từ, cẩn thận.|Easy does it, the glass is fragile.|B1|kn
+I'm on it.|Mình làm ngay đây.|Can you check the stock? I'm on it.|A2|kn
+Back in five.|Năm phút nữa mình quay lại.|I'm going to the canteen, back in five.|A2|kn
+Safety first!|An toàn là trên hết!|Wear your helmet. Safety first!|A2|kn
+See you tomorrow.|Hẹn gặp lại ngày mai.|Bye, see you tomorrow.|A1|kn
+missing pallet|pallet bị thiếu|There is one missing pallet on the truck.|A2|op
+quote expiry date|ngày hết hạn báo giá|The quote expiry date is next Friday.|B1|in
+pallet wrap|màng quấn pallet|We're out of pallet wrap.|A2|mt
