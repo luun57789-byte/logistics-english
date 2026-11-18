@@ -1,0 +1,60 @@
+peak season surcharge|phụ phí mùa cao điểm|The peak season surcharge starts in October.|B1|in
+space allocation|phân bổ chỗ trên tàu|Our space allocation is full this week.|B2|oc
+empty pickup|lấy container rỗng|The empty pickup is at Cat Lai depot.|B1|oc
+stuffing time|thời gian đóng hàng vào container|Stuffing time is about three hours.|B1|oc
+cargo photos|ảnh chụp hàng hóa|Please send cargo photos after loading.|A2|op
+holiday schedule|lịch làm việc ngày lễ|Here is our Tet holiday schedule.|A2|op
+last shipment before Tet|chuyến hàng cuối trước Tết|The last shipment before Tet leaves on the 20th.|B1|sc
+pre-holiday rush|đợt cao điểm trước lễ|The pre-holiday rush starts next week.|B1|sc
+stock count sheet|phiếu kiểm kê|Fill in the stock count sheet.|B1|wh
+return to sender|trả lại người gửi|The parcel was marked return to sender.|A2|ec
+invoice copy|bản sao hóa đơn|Can you send an invoice copy?|A2|dc
+cargo volume|khối lượng hàng|Cargo volume always goes up before Tet.|B1|sc
+cash advance|tạm ứng|I need a cash advance for the trip.|B1|fi
+purchase approval|phê duyệt mua hàng|We're waiting for purchase approval.|B1|pu
+user account|tài khoản người dùng|Create a user account for the new driver.|A2|it
+cool chain|chuỗi giữ lạnh|Keep the cool chain from farm to shop.|B2|cc
+safety vest|áo phản quang|Wear a safety vest in the yard.|A2|hs
+rice cake|bánh chưng, bánh tét|We wrap rice cakes before Tet.|A2|fo
+red envelope|bao lì xì|Put the money in a red envelope.|A1|gt
+peach blossom|hoa đào|We bought peach blossoms at the market.|A2|gt
+apricot blossom|hoa mai|Apricot blossoms are popular in the south.|B1|gt
+spring cleaning|tổng vệ sinh nhà cửa|We do spring cleaning before Tet.|A2|dl
+family reunion dinner|bữa cơm tất niên|The family reunion dinner is on New Year's Eve.|B1|dl
+relatives|họ hàng|We visit our relatives on the second day.|A2|pp
+Happy New Year!|Chúc mừng năm mới!|Happy New Year! Wishing you good health.|A1|kn
+traffic on the way home|kẹt xe về quê|Traffic on the way home is terrible at Tet.|A2|tv
+train ticket|vé tàu|Book your train ticket early.|A1|tv
+bus station|bến xe|Meet me at the bus station.|A1|tv
+mild weather|thời tiết dễ chịu|The weather is mild today.|B1|ws
+foggy|nhiều sương mù|It's foggy this morning, drive slowly.|A2|ws
+year-end bonus|thưởng cuối năm|We get a year-end bonus in January.|B1|wk
+holiday leave|nghỉ lễ|How many days of holiday leave do we get?|A2|wk
+last working day|ngày làm việc cuối|Friday is our last working day before the holiday.|A2|wk
+production stop|dừng sản xuất|There's a production stop during Tet.|B1|fc
+restart production|khởi động lại sản xuất|We restart production on the 8th.|B1|fc
+send best wishes|gửi lời chúc|Send my best wishes to your family.|A2|cm
+keep in contact|giữ liên lạc|Let's keep in contact after you move.|A2|cm
+crowded market|chợ đông người|The market is crowded before Tet.|A2|sh
+gift basket|giỏ quà|We sent a gift basket to each customer.|A2|sh
+dried fruit|mứt, trái cây sấy|Have some dried fruit.|A2|fo
+wrap up|gói lại; kết thúc|Let's wrap up the meeting.|B1|vb
+look after|chăm sóc|Can you look after my cat?|A2|vb
+New Year's Eve|đêm giao thừa|We watch fireworks on New Year's Eve.|A1|tm
+the first day of the year|mùng một|We visit grandparents on the first day of the year.|A2|tm
+video greeting|lời chúc qua video|Send a video greeting to your family abroad.|A2|tc
+group photo app|ứng dụng ảnh nhóm|Share the pictures in the group photo app.|A2|tc
+Wishing you good health.|Chúc bạn sức khỏe.|Happy New Year, wishing you good health.|A2|kn
+All the best!|Chúc mọi điều tốt đẹp!|Good luck with the new job. All the best!|A2|kn
+Same to you!|Bạn cũng vậy nhé!|Happy holidays! Same to you!|A2|kn
+Enjoy your holiday!|Nghỉ lễ vui vẻ nhé!|See you next year. Enjoy your holiday!|A2|kn
+It's been a long year.|Một năm dài vất vả.|It's been a long year, let's relax.|B1|kn
+Let's catch up soon.|Sớm gặp nhau trò chuyện nhé.|I miss you! Let's catch up soon.|A2|kn
+Drive safely!|Lái xe cẩn thận nhé!|Going home tonight? Drive safely!|A2|kn
+Cheers to that!|Nâng ly vì điều đó!|A great year ahead? Cheers to that!|B1|kn
+Welcome back!|Chào mừng trở lại!|Welcome back! How was your holiday?|A1|kn
+Thanks for everything.|Cảm ơn vì tất cả.|You helped me so much. Thanks for everything.|A2|kn
+spring cleaning|dọn nhà đón Tết|We do spring cleaning a week before Tet.|A2|dl
+peach blossom|hoa đào|My mother bought a peach blossom branch.|A2|dl
+delivery cut-off|giờ chốt giao hàng|The delivery cut-off before the holiday is Friday.|B1|sc
+family reunion|đoàn tụ gia đình|Tet is a time for family reunion.|B1|dl
