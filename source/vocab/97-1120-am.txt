@@ -1,0 +1,48 @@
+cross-dock|kho trung chuyển (cross-dock)|Goods stay at the cross-dock for only a few hours.|B1|wh
+handheld scanner|máy quét cầm tay|Charge the handheld scanner before your shift.|A2|wh
+problem shelf|kệ hàng lỗi|Put parcels with bad labels on the problem shelf.|B1|wh
+sorting cage|lồng phân loại|Each route has its own sorting cage.|B1|wh
+parcel count|số lượng kiện|The parcel count does not match the manifest.|B1|wh
+route code|mã tuyến|Write the route code on the cage.|B1|tr
+linehaul truck|xe tải chạy tuyến trục|The linehaul truck leaves for Hanoi at 8 p.m.|B2|tr
+delivery van|xe tải nhỏ giao hàng|The delivery van is full.|A2|tr
+night shift allowance|phụ cấp ca đêm|The night shift allowance is paid every month.|B1|wk
+peak volume|sản lượng cao điểm|Peak volume starts in December.|B1|sc
+ship-to address|địa chỉ nhận hàng|Please check the ship-to address.|B1|dc
+fragile sticker|nhãn dễ vỡ|Put a fragile sticker on the box.|A2|wh
+oversize parcel|kiện quá khổ|Oversize parcels go on a separate pallet.|B1|wh
+motorbike taxi|xe ôm|Let's take a motorbike taxi.|A2|tv
+parking fee|phí gửi xe|The parking fee is five thousand dong.|A2|tv
+fuel up|đổ xăng|I need to fuel up before the trip.|B1|tv
+breakfast stall|quầy ăn sáng|There is a breakfast stall near my office.|A2|fo
+iced coffee|cà phê đá|I'd like an iced coffee with milk.|A1|fo
+takeaway box|hộp mang đi|Can I have a takeaway box?|A2|fo
+spicy food|đồ ăn cay|Do you like spicy food?|A1|fo
+work gloves|găng tay lao động|Put on your work gloves.|A2|ws
+free shipping|miễn phí vận chuyển|Orders over 300,000 dong get free shipping.|A2|sh
+discount code|mã giảm giá|I used a discount code.|A2|sh
+souvenir shop|cửa hàng lưu niệm|We bought gifts at a souvenir shop.|A2|tv
+hotel check-in|nhận phòng khách sạn|Hotel check-in is at 2 p.m.|A2|tv
+unloading fee|phí bốc dỡ|Who pays the unloading fee?|B1|wh
+shrink-wrapped|được quấn màng co|All pallets must be shrink-wrapped.|B1|wh
+cage trolley|xe lồng|Push the cage trolley to dock 2.|B1|wh
+delivery slot|khung giờ giao|Choose a delivery slot that suits you.|B1|tr
+driver's signature|chữ ký tài xế|We need the driver's signature here.|B1|tr
+truck waiting time|thời gian xe chờ|Truck waiting time was three hours.|B1|tr
+order number|số đơn hàng|What is your order number?|A2|sc
+delivery delay|giao hàng chậm trễ|We are sorry for the delivery delay.|A2|sc
+urgent order|đơn hàng gấp|This is an urgent order, please ship today.|A2|sc
+motorbike helmet|mũ bảo hiểm xe máy|Don't forget your motorbike helmet.|A2|tv
+flat tyre|xẹp lốp|I got a flat tyre on the way to work.|A2|tv
+bus fare|giá vé xe buýt|The bus fare is seven thousand dong.|A2|tv
+milk tea|trà sữa|Let's get some milk tea.|A1|fo
+fried rice|cơm chiên|I'll have fried rice with egg.|A1|fo
+the bill, please|tính tiền giúp tôi|Excuse me, the bill, please.|A1|fo
+work schedule|lịch làm việc|Check the work schedule for next week.|A2|wk
+pay slip|phiếu lương|I got my pay slip by email.|A2|wk
+five-a-side|bóng đá 5 người|We play five-a-side every Thursday.|B1|sp
+fitting room|phòng thử đồ|The fitting room is over there.|A2|sh
+washing powder|bột giặt|We need more washing powder.|A2|dl
+Hang on a second.|Chờ một chút.|Hang on a second, I'll check.|A2|kn
+Long time no see!|Lâu rồi không gặp!|Long time no see! How have you been?|A1|kn
+I can't make it.|Tôi không đến được.|Sorry, I can't make it tonight.|A2|kn
