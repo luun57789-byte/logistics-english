@@ -1,0 +1,54 @@
+walk-in patient|bệnh nhân đến khám không hẹn trước|The clinic takes walk-in patients in the morning.|B1|hl
+health insurance card|thẻ bảo hiểm y tế|Please bring your health insurance card.|A2|hl
+stuffy nose|nghẹt mũi|I can't sleep with a stuffy nose.|A2|hl
+take your temperature|đo nhiệt độ|The nurse will take your temperature.|A2|hl
+after meals|sau bữa ăn|Take two tablets after meals.|A2|hl
+cough syrup|siro ho|This cough syrup tastes sweet.|A2|hl
+waiting room|phòng chờ|Please sit in the waiting room.|A2|hl
+feel dizzy|cảm thấy chóng mặt|I feel dizzy when I stand up.|A2|hl
+sprained ankle|bong gân mắt cá chân|He has a sprained ankle from football.|B1|sp
+warm-up|khởi động|Don't skip the warm-up before you run.|A2|sp
+swimming lesson|buổi học bơi|My son has a swimming lesson on Sunday.|A2|sp
+grocery list|danh sách đồ cần mua|Did you write the grocery list?|A2|sh
+on special offer|đang khuyến mãi|Rice is on special offer this week.|B1|sh
+self-checkout|quầy tự thanh toán|The self-checkout is faster.|B1|sh
+leaking tap|vòi nước bị rỉ|Can you fix the leaking tap?|B1|dl
+take out the rubbish|đổ rác|It's your turn to take out the rubbish.|A2|dl
+night bus|xe buýt đêm|We took the night bus to Da Lat.|A2|tv
+pick ticket|phiếu lấy hàng|Print the pick tickets for the morning orders.|B1|wh
+short pick|lấy thiếu hàng|We had two short picks today.|B1|wh
+route plan|kế hoạch tuyến đường|The driver checks the route plan every morning.|B1|tr
+pickup request|yêu cầu lấy hàng|I sent a pickup request for tomorrow.|B1|tr
+weight ticket|phiếu cân|The driver brought the weight ticket.|B1|tr
+lost in transit|thất lạc trong quá trình vận chuyển|The parcel was lost in transit.|B1|tr
+late shipment|lô hàng trễ|We apologise for the late shipment.|B1|sc
+clinic hours|giờ làm việc của phòng khám|Clinic hours are 7 a.m. to 5 p.m.|A2|hl
+sore muscles|đau cơ|I have sore muscles after the gym.|A2|hl
+take a day off sick|nghỉ ốm một ngày|I need to take a day off sick.|A2|wk
+jogging track|đường chạy bộ|There is a jogging track in the park.|A2|sp
+team jersey|áo đấu của đội|Everyone wore the team jersey.|A2|sp
+fresh market|chợ tươi sống|I buy fish at the fresh market.|A2|sh
+bus stop announcement|thông báo trạm dừng|Listen for the bus stop announcement.|B1|tv
+hand truck|xe đẩy hàng hai bánh|Use the hand truck for these boxes.|A2|wh
+putaway|cất hàng lên kệ|Putaway must finish before noon.|B1|wh
+outbound dock|cửa xuất hàng|The truck is waiting at the outbound dock.|B1|wh
+inbound delivery|lô hàng nhập kho|The inbound delivery is two hours late.|B1|wh
+driver app|ứng dụng tài xế|The driver uploads photos in the driver app.|B1|tr
+packing slip|phiếu kèm hàng|The packing slip is inside the box.|A2|dc
+throat lozenge|viên ngậm đau họng|Take a throat lozenge for your sore throat.|B1|hl
+face mask|khẩu trang|Wear a face mask on the bus.|A2|hl
+heat rash|rôm sảy|The baby has heat rash.|B1|hl
+sports drink|nước uống thể thao|He drinks a sports drink after the match.|A2|sp
+shopping bag|túi đựng đồ|Do you need a shopping bag?|A2|sh
+overflow area|khu chứa hàng tràn|Put extra pallets in the overflow area.|B1|wh
+COD amount|số tiền thu hộ|Check the COD amount before you hand over the parcel.|B1|tr
+Get well soon!|Mau khỏe nhé!|I heard you're sick. Get well soon!|A1|kn
+How are you feeling?|Bạn thấy trong người thế nào?|How are you feeling today? Better?|A1|kn
+I'm feeling under the weather.|Tôi thấy hơi mệt trong người.|I'm feeling under the weather, so I'll stay home.|B1|kn
+Take care of yourself.|Giữ gìn sức khỏe nhé.|Take care of yourself and rest well.|A2|kn
+I need to lie down.|Tôi cần nằm nghỉ.|I feel dizzy. I need to lie down.|A2|kn
+Is it serious?|Có nghiêm trọng không?|You have a fever? Is it serious?|A2|kn
+Don't push yourself.|Đừng cố quá sức.|You're still sick. Don't push yourself.|B1|kn
+I'll be back on Monday.|Tôi sẽ đi làm lại vào thứ Hai.|I'm off sick, but I'll be back on Monday.|A2|kn
+It's going around.|Đang có dịch (bệnh lây lan quanh đây).|Lots of people have a cold. It's going around.|B1|kn
+I'm off sick today.|Hôm nay tôi nghỉ ốm.|Sorry, I'm off sick today. I'll answer emails tomorrow.|A2|kn
