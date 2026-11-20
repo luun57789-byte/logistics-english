@@ -1,0 +1,48 @@
+release the goods|giải phóng hàng|Customs will release the goods tomorrow.|B1|cc
+import tax|thuế nhập khẩu|Import tax on this item is 10 percent.|B1|cc
+payment receipt|biên lai thanh toán|Send me the payment receipt, please.|A2|dc
+original bill|vận đơn gốc|The original bill is with the bank.|B1|dc
+delivery order|lệnh giao hàng|Collect the delivery order from the shipping line.|B1|oc
+demurrage charge|phí lưu container tại bãi|Pick up the container soon to avoid a demurrage charge.|B1|oc
+detention charge|phí lưu container ngoài bãi|Return the empty quickly to avoid detention charges.|B1|oc
+loading list|danh sách xếp hàng|Send the loading list to the driver.|B1|wh
+unloading time|thời gian dỡ hàng|Unloading time is about one hour.|A2|wh
+stock check|kiểm tra hàng tồn|We do a stock check on Fridays.|A2|wh
+damaged goods|hàng hư hỏng|Put the damaged goods on the side.|A2|wh
+storage fee|phí lưu kho|The storage fee is charged per pallet per day.|B1|wh
+warehouse manager|quản lý kho|Ask the warehouse manager to sign.|A2|wh
+pickup time|giờ lấy hàng|What's the pickup time tomorrow?|A2|tr
+delivery time|thời gian giao hàng|Delivery time is two to three days.|A2|tr
+pickup address|địa chỉ lấy hàng|Please send me the pickup address.|A2|tr
+toll fee|phí cầu đường|The price includes toll fees.|B1|tr
+late fee|phí trả chậm|There's a late fee if you pay after the 10th.|B1|sc
+alarm clock|đồng hồ báo thức|My alarm clock didn't go off.|A1|dl
+hair dryer|máy sấy tóc|Is there a hair dryer in the room?|A1|dl
+dish soap|nước rửa chén|We need more dish soap.|A2|dl
+fridge door|cửa tủ lạnh|Close the fridge door, please.|A1|dl
+floor mop|cây lau nhà|The floor mop is behind the door.|A2|dl
+rubbish bin|thùng rác|Put it in the rubbish bin.|A1|dl
+bowl of pho|tô phở|I had a bowl of pho for breakfast.|A1|fo
+sugarcane juice|nước mía|A glass of sugarcane juice, please.|A2|fo
+lunch box|hộp cơm|I bring a lunch box to work.|A1|fo
+pain relief|thuốc giảm đau|Do you have anything for pain relief?|B1|hl
+eye check|khám mắt|I need an eye check.|A2|hl
+weekend league|giải đấu cuối tuần|Our team plays in a weekend league.|B1|sp
+bus terminal|bến xe|The bus terminal is very busy before Tet.|A2|tv
+city tour|chuyến tham quan thành phố|We took a city tour on the first day.|A2|tv
+work email|email công việc|Don't check work email on holiday.|A2|cm
+phone number|số điện thoại|Can I have your phone number?|A1|cm
+start time|giờ bắt đầu|The start time is 7:30.|A2|wk
+finish time|giờ kết thúc|What's your finish time today?|A2|wk
+staff meeting|họp nhân viên|There's a staff meeting at 9.|A2|wk
+time sheet|bảng chấm công|Please fill in your time sheet.|B1|wk
+I'll call you when I get there.|Tôi đến nơi sẽ gọi bạn.|Okay, I'll call you when I get there.|A2|kn
+Let me know as soon as you can.|Báo tôi sớm nhất có thể nhé.|Is the truck ready? Let me know as soon as you can.|A2|kn
+Wait until I get back.|Đợi tôi quay lại nhé.|Don't start yet. Wait until I get back.|A2|kn
+I'm almost done.|Tôi sắp xong rồi.|Give me five minutes. I'm almost done.|A1|kn
+Are you free now?|Bây giờ bạn rảnh không?|Are you free now? I need some help.|A1|kn
+I'll be right there.|Tôi tới ngay.|Hold on, I'll be right there.|A2|kn
+That's a good point.|Ý đó hay đấy.|That's a good point. Let's ask the driver.|B1|kn
+Let's get started.|Bắt đầu thôi.|Everyone is here. Let's get started.|A2|kn
+Just a moment.|Chờ một lát.|Just a moment, I'll check the system.|A1|kn
+See you then.|Hẹn gặp lúc đó.|Monday at 9? See you then.|A1|kn
