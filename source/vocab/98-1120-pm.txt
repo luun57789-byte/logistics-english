@@ -1,0 +1,48 @@
+landlord's number|số điện thoại chủ nhà|Do you have the landlord's number?|A2|dl
+broken light|đèn bị hỏng|The broken light in the bathroom needs a new bulb.|A2|dl
+light bulb|bóng đèn|Can you change the light bulb?|A1|dl
+blocked sink|bồn rửa bị tắc|We have a blocked sink in the kitchen.|B1|dl
+plumber|thợ sửa ống nước|I called a plumber this morning.|A2|dl
+electrician|thợ điện|The electrician will come at 3.|A2|dl
+moving day|ngày chuyển nhà|Moving day is next Sunday.|A2|dl
+door lock|ổ khóa cửa|The door lock is broken.|A2|dl
+wifi password|mật khẩu wifi|What's the wifi password?|A1|dl
+mosquito net|màn chống muỗi|We sleep under a mosquito net.|A2|dl
+water heater|bình nóng lạnh|Turn on the water heater before your shower.|A2|dl
+cooking oil|dầu ăn|We're out of cooking oil.|A1|fo
+home-cooked meal|bữa cơm nhà nấu|Nothing beats a home-cooked meal.|A2|fo
+food delivery app|ứng dụng giao đồ ăn|I ordered lunch on a food delivery app.|A2|fo
+order in|gọi đồ ăn về|Let's order in tonight.|B1|fo
+cold drink|đồ uống lạnh|Would you like a cold drink?|A1|fo
+stomach ache|đau bụng|I have a stomach ache.|A1|hl
+jump rope|nhảy dây|Jump rope is a good warm-up.|A2|sp
+running shoes|giày chạy bộ|I need new running shoes.|A2|sp
+luggage|hành lý|How much luggage do you have?|A2|tv
+reply all|trả lời tất cả|Don't reply all to this email.|B1|cm
+shift swap|đổi ca|Can we do a shift swap on Friday?|B1|wk
+new starter|nhân viên mới|We have two new starters on Monday.|B1|wk
+toolbox talk|họp an toàn đầu ca|We have a toolbox talk at 7 a.m.|B1|ws
+wet floor sign|biển sàn ướt|Put out the wet floor sign.|A2|ws
+quality check|kiểm tra chất lượng|Every batch has a quality check.|A2|fc
+receipt|hóa đơn mua hàng|Keep the receipt in case you need to return it.|A2|sh
+out of stock|hết hàng|Sorry, this size is out of stock.|A2|sh
+change room|phòng thay đồ|The change room is next to the lockers.|A2|ws
+inbound schedule|lịch nhận hàng nhập|Check the inbound schedule for today.|B1|wh
+put on hold|tạm giữ (hàng/đơn)|Put this order on hold until payment arrives.|B1|sc
+partial delivery|giao hàng một phần|We accept partial delivery.|B1|sc
+purchase order|đơn đặt hàng|Please send a purchase order first.|B1|sc
+pallet height|chiều cao pallet|Pallet height must not be over 1.6 metres.|B1|wh
+stacking limit|giới hạn chồng tầng|Don't go over the stacking limit.|B1|wh
+truck driver|tài xế xe tải|The truck driver called from the gate.|A1|tr
+freight cost|chi phí vận chuyển|Freight cost went up 10 percent.|B1|sc
+certificate of origin|giấy chứng nhận xuất xứ|The certificate of origin is ready.|B1|dc
+It's not working.|Nó không chạy./Nó bị hỏng.|The printer? It's not working.|A1|kn
+What's wrong with it?|Nó bị sao vậy?|Your phone? What's wrong with it?|A2|kn
+I'll fix it.|Để tôi sửa.|Don't worry, I'll fix it.|A1|kn
+It's been ages.|Lâu lắm rồi.|It's been ages since we met!|B1|kn
+That makes sense.|Hợp lý đấy.|Ship it on Monday? That makes sense.|A2|kn
+I'm not sure yet.|Tôi chưa chắc.|Will you come? I'm not sure yet.|A2|kn
+What do you think?|Bạn nghĩ sao?|Let's go by bus. What do you think?|A1|kn
+I'll let you know.|Tôi sẽ báo bạn.|I'll let you know tomorrow.|A2|kn
+Keep it up!|Cứ thế phát huy nhé!|Your English is better. Keep it up!|A2|kn
+Don't worry about it.|Đừng lo chuyện đó.|Sorry I'm late. Don't worry about it.|A2|kn
