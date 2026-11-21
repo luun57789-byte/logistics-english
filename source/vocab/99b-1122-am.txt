@@ -1,0 +1,42 @@
+year-end rush|cao điểm cuối năm|The year-end rush starts in December.|B1|sc
+temporary worker|công nhân thời vụ|We hired ten temporary workers for Tet.|B1|wk
+extra boxes|thêm thùng carton|Please order extra boxes for next week.|A2|wh
+truck loading|xếp hàng lên xe|Truck loading starts at 5 a.m.|A2|wh
+last truck|chuyến xe cuối|The last truck leaves at 10 p.m.|A2|tr
+closing date|ngày nghỉ (đóng cửa)|Our closing date for Tet is 10 February.|B1|wk
+reopening date|ngày làm việc lại|The reopening date is 18 February.|B1|wk
+stock up|tích trữ hàng|Shops stock up before Tet.|B1|sc
+pick rate|năng suất lấy hàng|His pick rate is 120 lines an hour.|B1|wh
+tape gun|súng dán băng keo|The tape gun is empty.|A2|wh
+packing tape|băng keo đóng hàng|We need more packing tape.|A2|wh
+box size|kích cỡ hộp|Use the smallest box size.|A2|wh
+filler paper|giấy chèn hàng|Put filler paper in the box.|B1|wh
+order picker|nhân viên lấy hàng|We need two more order pickers.|B1|wh
+container booking|đặt chỗ container|Make the container booking today.|B1|oc
+port closing|cảng ngừng nhận hàng|Port closing is on Thursday.|B1|oc
+shipping schedule|lịch tàu chạy|Here is the shipping schedule for December.|B1|oc
+air shipment|lô hàng air|This is an urgent air shipment.|B1|af
+express parcel|bưu kiện chuyển phát nhanh|The express parcel arrives tomorrow.|A2|tr
+year-end party|tiệc cuối năm|Are you going to the year-end party?|A2|gt
+Tet bonus|thưởng Tết|We get our Tet bonus in January.|A2|wk
+flower market|chợ hoa|Let's go to the flower market.|A2|gt
+sticky rice cake|bánh chưng|My grandmother makes sticky rice cakes.|A2|fo
+candied fruit|mứt|We bought candied fruit for Tet.|A2|fo
+watermelon seeds|hạt dưa|The kids love watermelon seeds.|A2|fo
+go back home|về quê|Many people go back home for Tet.|A2|tv
+bus ticket|vé xe khách|Bus tickets sell out before Tet.|A1|tv
+sold out|bán hết|The train tickets are sold out.|A2|sh
+new clothes|quần áo mới|The children wear new clothes on Tet.|A1|sh
+family photo|ảnh gia đình|We take a family photo every Tet.|A1|dl
+visit relatives|thăm họ hàng|We visit relatives on the second day.|A2|gt
+make a wish|ước một điều|Close your eyes and make a wish.|A2|gt
+feel proud|cảm thấy tự hào|We feel proud of our team.|A2|wk
+safety rules|nội quy an toàn|Everyone must follow the safety rules.|A2|ws
+Happy holidays!|Chúc kỳ nghỉ vui vẻ!|See you next year. Happy holidays!|A1|kn
+We made it!|Chúng ta làm được rồi!|The last truck left on time. We made it!|A2|kn
+Good luck with that.|Chúc may mắn nhé.|You have 500 orders today? Good luck with that.|A2|kn
+It's been a long day.|Hôm nay dài thật.|It's been a long day. Let's go home.|A2|kn
+Let's call it a night.|Tối nay đến đây thôi.|It's midnight. Let's call it a night.|B1|kn
+Well done, everyone!|Mọi người làm tốt lắm!|Well done, everyone! All orders shipped.|A2|kn
+I can't wait.|Tôi nóng lòng quá.|Tet is next week. I can't wait.|A2|kn
+Thanks for your hard work.|Cảm ơn bạn đã vất vả.|Thanks for your hard work this year.|A2|kn
