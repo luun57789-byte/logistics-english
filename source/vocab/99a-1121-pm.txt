@@ -1,0 +1,46 @@
+booking under the name|đặt phòng dưới tên|I have a booking under the name Tran.|A2|tv
+late checkout|trả phòng muộn|Can I have a late checkout?|A2|tv
+early check-in|nhận phòng sớm|Is early check-in possible?|A2|tv
+room key card|thẻ khóa phòng|My room key card doesn't work.|A2|tv
+front desk|quầy lễ tân|Please ask at the front desk.|A2|tv
+twin room|phòng hai giường đơn|Is there a twin room available?|A2|tv
+sea view|hướng biển|I'd like a room with a sea view.|A2|tv
+breakfast included|bao gồm bữa sáng|Is breakfast included?|A2|tv
+left luggage|nơi gửi hành lý|Is there a left luggage room?|B1|tv
+extra towel|khăn tắm thêm|Could I have an extra towel?|A2|tv
+airport shuttle|xe đưa đón sân bay|The hotel has a free airport shuttle.|B1|tv
+entrance ticket|vé vào cửa|How much is the entrance ticket?|A2|tv
+beach towel|khăn đi biển|Don't forget your beach towel.|A2|tv
+mosquito spray|xịt chống muỗi|Bring some mosquito spray.|A2|hl
+pick-up truck|xe bán tải|He drives a pick-up truck.|A2|tv
+swimming pool|hồ bơi|The swimming pool opens at 6 a.m.|A1|sp
+gym towel|khăn tập gym|Bring a gym towel.|A2|sp
+grab a coffee|đi uống cà phê|Let's grab a coffee after work.|A2|fo
+set menu|thực đơn cố định|The set menu is 150,000 dong.|A2|fo
+vegetarian dish|món chay|Do you have a vegetarian dish?|A2|fo
+cash or card|tiền mặt hay thẻ|Cash or card?|A1|sh
+card machine|máy quẹt thẻ|The card machine isn't working.|A2|sh
+change money|đổi tiền|Where can I change money?|A2|sh
+weekend shift|ca cuối tuần|I'm on the weekend shift this week.|A2|wk
+work phone|điện thoại công việc|I left my work phone in the office.|A2|wk
+meeting room|phòng họp|The meeting room is booked.|A2|wk
+hotel booking|đặt phòng khách sạn|I made a hotel booking online.|A2|tv
+booking reference|mã đặt chỗ|What's your booking reference?|B1|tr
+shipping quote|báo giá vận chuyển|Can you send a shipping quote for 2 pallets?|B1|sc
+port to port|từ cảng đến cảng|The price is port to port only.|B1|oc
+pickup charge|phí lấy hàng|There is a pickup charge of 500,000 dong.|B1|tr
+loading fee|phí xếp hàng|Who pays the loading fee?|B1|wh
+pallet rack|kệ pallet|The pallet rack is full.|A2|wh
+net weight|trọng lượng tịnh|What is the net weight?|B1|dc
+carton size|kích thước thùng|Please send the carton size.|A2|wh
+cubic metre|mét khối|The shipment is 15 cubic metres.|B1|sc
+shipping date|ngày giao hàng lên tàu|What's the shipping date?|A2|sc
+full container|container hàng đầy|The full container is at the port.|A2|oc
+Could you say that again?|Bạn nói lại được không?|Sorry, could you say that again?|A1|kn
+Enjoy your stay!|Chúc bạn có kỳ nghỉ vui vẻ!|Here's your key. Enjoy your stay!|A2|kn
+That sounds like fun.|Nghe vui đấy.|A boat trip? That sounds like fun.|A2|kn
+How was your trip?|Chuyến đi thế nào?|Welcome back! How was your trip?|A1|kn
+It was worth it.|Rất đáng.|The trip was expensive, but it was worth it.|B1|kn
+Is this seat taken?|Ghế này có ai ngồi chưa?|Excuse me, is this seat taken?|A2|kn
+Can you keep an eye on my bag?|Trông giúp tôi cái túi được không?|Can you keep an eye on my bag for a minute?|B1|kn
+Can I pay by card?|Tôi trả bằng thẻ được không?|Can I pay by card here?|A1|kn
