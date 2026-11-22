@@ -1,0 +1,48 @@
+open an account|mở tài khoản|I want to open an account at this bank.|A2|sh
+debit card|thẻ ghi nợ|I pay with my debit card.|A2|sh
+monthly fee|phí hàng tháng|Is there a monthly fee?|A2|sh
+account number|số tài khoản|Please send me your account number.|A2|sh
+bank app|ứng dụng ngân hàng|I pay my bills with the bank app.|A2|sh
+pay bills|thanh toán hóa đơn|I pay bills on my phone.|A2|sh
+ATM card|thẻ ATM|I lost my ATM card.|A1|sh
+withdraw cash|rút tiền mặt|I need to withdraw cash.|A2|sh
+PIN code|mã PIN|Don't share your PIN code.|A2|sh
+bank statement|sao kê ngân hàng|I need a bank statement for my visa.|B1|sh
+work contract|hợp đồng lao động|Bring your work contract.|B1|wk
+ID card|căn cước công dân|Please show your ID card.|A1|cm
+working days|ngày làm việc|It takes five working days.|A2|wk
+savings account|tài khoản tiết kiệm|I opened a savings account.|B1|sh
+mobile top-up|nạp tiền điện thoại|I need a mobile top-up.|A2|cm
+SIM card|thẻ SIM|Where can I buy a SIM card?|A1|cm
+data plan|gói dữ liệu|My data plan runs out on Friday.|A2|cm
+screen protector|miếng dán màn hình|The screen protector is cracked.|A2|sh
+hair salon|tiệm làm tóc|There's a hair salon near my house.|A2|sh
+laundry service|dịch vụ giặt ủi|The laundry service is 20,000 dong a kilo.|A2|dl
+dry cleaning|giặt khô|This jacket needs dry cleaning.|B1|dl
+parcel counter|quầy gửi bưu kiện|Go to the parcel counter.|A2|dl
+building security|bảo vệ tòa nhà|Leave it with building security.|A2|dl
+car park|bãi đậu xe (Anh-Anh)|The car park is behind the hotel.|A2|tv
+gas station|cây xăng|Stop at the next gas station.|A1|tv
+noodle soup|món bún, phở nước|I'll have the noodle soup.|A1|fo
+no sugar|không đường|Coffee with no sugar, please.|A1|fo
+less ice|ít đá|Less ice, please.|A1|fo
+evening class|lớp học buổi tối|I take an English evening class.|A2|wk
+job interview|phỏng vấn xin việc|I have a job interview tomorrow.|A2|wk
+CV|sơ yếu lý lịch|Please send your CV.|A2|wk
+payment proof|chứng từ thanh toán|Please send the payment proof.|B1|sc
+outstanding invoice|hóa đơn chưa thanh toán|You have two outstanding invoices.|B1|sc
+terminal handling charge|phí xếp dỡ tại cảng (THC)|The terminal handling charge is 120 dollars.|B1|oc
+cargo release|giải phóng hàng|Cargo release takes one day after payment.|B1|oc
+inland transport|vận chuyển nội địa|Inland transport is by truck.|B1|tr
+truck rental|thuê xe tải|Truck rental is 2 million dong a day.|A2|tr
+pallet return|trả pallet|Arrange the pallet return with the driver.|B1|wh
+empty pallets|pallet rỗng|Stack the empty pallets by the wall.|A2|wh
+rack label|nhãn kệ|The rack label is missing.|A2|wh
+Can you help me with this?|Bạn giúp tôi việc này được không?|Excuse me, can you help me with this?|A1|kn
+What's the fee?|Phí là bao nhiêu?|What's the fee for a transfer?|A2|kn
+I'll think about it.|Để tôi suy nghĩ thêm.|Thanks, I'll think about it.|A2|kn
+Can I have a receipt?|Cho tôi xin hóa đơn.|Can I have a receipt, please?|A1|kn
+Where do I sign?|Tôi ký ở đâu?|Okay, where do I sign?|A2|kn
+Is that everything?|Còn gì nữa không?|Two coffees. Is that everything?|A2|kn
+That's all, thanks.|Vậy thôi, cảm ơn.|That's all, thanks.|A1|kn
+It's my first time here.|Lần đầu tôi đến đây.|Sorry, it's my first time here.|A2|kn
