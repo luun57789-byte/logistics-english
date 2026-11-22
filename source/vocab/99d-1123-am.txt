@@ -1,0 +1,46 @@
+sea shipment|lô hàng đường biển|The sea shipment will arrive in March.|B1|oc
+40-foot container|container 40 feet|We need a 40-foot container.|A2|oc
+20-foot container|container 20 feet|One 20-foot container is enough.|A2|oc
+high cube|container cao (HC)|Book a 40-foot high cube, please.|B1|oc
+port of loading|cảng xếp hàng|The port of loading is Cat Lai.|B1|oc
+port of discharge|cảng dỡ hàng|The port of discharge is Rotterdam.|B1|oc
+sailing date|ngày tàu chạy|The sailing date is 5 December.|B1|oc
+vessel name|tên tàu|What's the vessel name?|B1|oc
+volume weight|trọng lượng thể tích|Volume weight is higher than actual weight.|B1|af
+airport warehouse|kho sân bay|The goods are at the airport warehouse.|B1|af
+dangerous goods|hàng nguy hiểm|Batteries are dangerous goods.|B1|af
+size limit|giới hạn kích thước|There is a size limit for air cargo.|B1|af
+spare part order|đơn hàng phụ tùng|This spare part order is urgent.|B1|sc
+furniture parts|linh kiện nội thất|We export furniture parts to Japan.|B1|sc
+cheapest option|lựa chọn rẻ nhất|Sea is the cheapest option.|A2|sc
+fastest option|lựa chọn nhanh nhất|Air is the fastest option.|A2|sc
+keep costs down|giảm chi phí|We need to keep costs down.|B1|sc
+customer complaint|khiếu nại của khách|We had a customer complaint about the delay.|B1|sc
+weekly shipment|lô hàng hằng tuần|We have a weekly shipment to Osaka.|B1|sc
+bad weather|thời tiết xấu|Bad weather delayed the ship.|A2|tv
+flooded road|đường ngập|The truck can't pass the flooded road.|A2|tv
+typhoon warning|cảnh báo bão|There's a typhoon warning for Da Nang.|B1|tv
+hot weather|trời nóng|In hot weather, drink lots of water.|A1|dl
+cold weather|trời lạnh|I don't like cold weather.|A1|dl
+air purifier|máy lọc không khí|We bought an air purifier.|B1|dl
+go for a walk|đi dạo|Let's go for a walk after dinner.|A1|sp
+ride a bike|đạp xe|I ride a bike to work.|A1|sp
+morning run|chạy bộ buổi sáng|I do a morning run three times a week.|A2|sp
+sports centre|trung tâm thể thao|There is a new sports centre near my house.|A2|sp
+family dinner|bữa tối gia đình|We have a family dinner every Sunday.|A1|fo
+fruit shake|sinh tố|A mango fruit shake, please.|A2|fo
+banh mi stall|xe bánh mì|I buy breakfast at the banh mi stall.|A2|fo
+bring lunch|mang cơm trưa|I bring lunch from home.|A2|fo
+office party|tiệc công ty|The office party is on Friday.|A2|wk
+team lunch|bữa trưa cả nhóm|We have a team lunch today.|A2|wk
+sales team|đội bán hàng|Ask the sales team for the price.|A2|wk
+email reply|trả lời email|I'm waiting for an email reply.|A2|cm
+online meeting|họp trực tuyến|We have an online meeting at 3.|A2|cm
+It's worth a try.|Đáng để thử.|Maybe they have space. It's worth a try.|B1|kn
+That's too expensive.|Đắt quá.|Air freight? That's too expensive.|A1|kn
+Is there a cheaper way?|Có cách nào rẻ hơn không?|Is there a cheaper way to send it?|A2|kn
+How long will it take?|Mất bao lâu?|How long will it take by sea?|A1|kn
+It's not my fault.|Không phải lỗi của tôi.|The ship was late. It's not my fault.|A2|kn
+So far, so good.|Đến giờ vẫn ổn.|How's the new job? So far, so good.|B1|kn
+Let's wait and see.|Cứ chờ xem sao.|Will it rain tomorrow? Let's wait and see.|A2|kn
+Here's the thing.|Vấn đề là thế này.|Here's the thing: the ship is full.|B1|kn
