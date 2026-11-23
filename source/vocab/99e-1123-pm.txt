@@ -1,0 +1,50 @@
+birthday dinner|bữa tối sinh nhật|We had a birthday dinner for Mum.|A2|gt
+birthday cake|bánh sinh nhật|I ordered a birthday cake.|A1|gt
+blow out the candles|thổi nến|Make a wish and blow out the candles.|A2|gt
+surprise party|tiệc bất ngờ|We're planning a surprise party for Lan.|A2|gt
+book a table|đặt bàn|I'll book a table for eight.|A2|fo
+table for two|bàn cho hai người|A table for two, please.|A1|fo
+hotpot|lẩu|Let's have hotpot tonight.|A2|fo
+split the bill|chia tiền|Let's split the bill.|B1|fo
+my treat|tôi mời|Dinner is my treat.|B1|fo
+guest list|danh sách khách|Is Tuan on the guest list?|B1|gt
+wedding party|tiệc cưới|I'm going to a wedding party on Sunday.|A2|gt
+wedding gift|quà cưới|We gave money as a wedding gift.|A2|gt
+housewarming party|tiệc tân gia|They invited us to their housewarming party.|B1|gt
+karaoke room|phòng karaoke|We booked a karaoke room.|A2|gt
+weekend plans|kế hoạch cuối tuần|Do you have any weekend plans?|A2|gt
+catch up|hàn huyên, cập nhật tin tức|Let's meet for coffee and catch up.|B1|gt
+cinema ticket|vé xem phim|Two cinema tickets, please.|A1|gt
+parking space|chỗ đỗ xe|There's no parking space here.|A2|tv
+taxi fare|tiền taxi|The taxi fare was 80,000 dong.|A2|tv
+get a lift|đi nhờ xe|Can I get a lift home?|B1|tv
+pick you up|đón bạn|I'll pick you up at seven.|A2|tv
+drop you off|thả bạn xuống|I can drop you off at the station.|B1|tv
+on the way|trên đường|There's a pharmacy on the way.|A2|tv
+dress code|quy định trang phục|Is there a dress code?|B1|sh
+gift wrap|gói quà|Can you gift wrap it, please?|A2|sh
+work anniversary|kỷ niệm ngày vào công ty|Today is my fifth work anniversary.|B1|wk
+team building|hoạt động gắn kết đội|Our team building trip is next month.|B1|wk
+leaving party|tiệc chia tay đồng nghiệp|We had a leaving party for Hung.|B1|wk
+reply by|trả lời trước (ngày)|Please reply by Thursday.|A2|cm
+group message|tin nhắn nhóm|I sent a group message.|A2|cm
+customer visit|chuyến thăm khách hàng|We have a customer visit on Tuesday.|B1|sc
+warehouse tour|tham quan kho|We gave the customer a warehouse tour.|B1|wh
+site visit|khảo sát hiện trường|The site visit is at 9 a.m.|B1|sc
+supplier meeting|họp với nhà cung cấp|The supplier meeting went well.|B1|sc
+sample shipment|lô hàng mẫu|The sample shipment arrived today.|B1|sc
+trial order|đơn hàng thử|They placed a trial order.|B1|sc
+repeat order|đơn hàng lặp lại|We got a repeat order from Japan.|B1|sc
+first shipment|lô hàng đầu tiên|The first shipment leaves next week.|A2|sc
+new customer|khách hàng mới|We have a new customer in Korea.|A2|sc
+truck schedule|lịch xe|Check the truck schedule for tomorrow.|B1|tr
+customs paperwork|giấy tờ hải quan|The customs paperwork is ready.|B1|cc
+warehouse staff|nhân viên kho|All warehouse staff must wear vests.|A2|wh
+Would you like to come?|Bạn có muốn đến không?|We're having dinner. Would you like to come?|A1|kn
+I'd love to!|Tôi rất muốn!|Dinner on Saturday? I'd love to!|A1|kn
+Count me out.|Không tính tôi nhé.|Karaoke? Count me out, I'm tired.|B1|kn
+What time should I come?|Tôi nên đến lúc mấy giờ?|Thanks! What time should I come?|A1|kn
+Do I need to bring anything?|Tôi có cần mang gì không?|Do I need to bring anything?|A2|kn
+Happy birthday!|Chúc mừng sinh nhật!|Happy birthday! Here's a small gift.|A1|kn
+I had a great time.|Tôi đã rất vui.|Thanks for dinner. I had a great time.|A1|kn
+Let's do this again.|Lần sau lại đi nhé.|That was fun. Let's do this again.|A2|kn
