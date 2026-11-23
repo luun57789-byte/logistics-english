@@ -1,0 +1,58 @@
+lost and found|nơi giữ đồ thất lạc|Ask at the lost and found.|A2|dl
+reception desk|quầy lễ tân|Leave it at the reception desk.|A2|wk
+sign-in sheet|sổ ký tên|Write your name on the sign-in sheet.|B1|wk
+locker room|phòng tủ đồ|Leave your bag in the locker room.|A2|ws
+water dispenser|cây nước|The water dispenser is empty.|A2|wk
+printer paper|giấy in|We're out of printer paper.|A2|wk
+sticky notes|giấy ghi chú dán|Pass me the sticky notes.|A2|wk
+whiteboard|bảng trắng|Write it on the whiteboard.|A2|wk
+lunch order|đặt cơm trưa|Who's doing the lunch order today?|A2|fo
+snack bar|quầy đồ ăn vặt|There's a snack bar on the ground floor.|A2|fo
+bottled water|nước đóng chai|Can I have some bottled water?|A1|fo
+something to drink|đồ gì đó để uống|Would you like something to drink?|A1|fo
+anything else|gì nữa không|Anything else, sir?|A1|sh
+nothing else|không gì nữa|Nothing else, thanks.|A1|sh
+everyone else|mọi người khác|Everyone else has gone home.|A2|cm
+someone else|người khác|Can someone else do it?|A2|cm
+nobody else|không ai khác|Nobody else knows the password.|A2|cm
+somewhere quiet|chỗ nào yên tĩnh|Let's find somewhere quiet to talk.|A2|cm
+lost wallet|ví bị mất|I reported my lost wallet.|A2|dl
+shoe rack|kệ giày|Put your shoes on the shoe rack.|A2|dl
+key ring|móc chìa khóa|My key ring has three keys.|A2|dl
+doorbell|chuông cửa|The doorbell is ringing.|A1|dl
+power socket|ổ cắm điện|Is there a power socket near the bed?|A2|dl
+extension cord|dây nối điện|We need an extension cord.|B1|dl
+sunglasses|kính râm|Don't forget your sunglasses.|A1|tv
+travel bag|túi du lịch|My travel bag is too heavy.|A1|tv
+passport photo|ảnh hộ chiếu|I need two passport photos.|A2|tv
+visa application|đơn xin visa|My visa application was approved.|B1|tv
+foot massage|massage chân|Let's get a foot massage.|A2|hl
+yoga class|lớp yoga|I go to a yoga class on Mondays.|A2|sp
+badminton racket|vợt cầu lông|I bought a new badminton racket.|A2|sp
+wrong item|giao sai hàng|The customer received the wrong item.|A2|sc
+nobody home|không có ai ở nhà|The driver says nobody was home.|A2|tr
+leave with neighbour|gửi hàng xóm|Can we leave it with a neighbour?|B1|tr
+safe place|chỗ an toàn (để hàng)|Leave the parcel in a safe place.|A2|tr
+signature required|yêu cầu ký nhận|This delivery has signature required.|B1|tr
+contactless delivery|giao hàng không tiếp xúc|We offer contactless delivery.|B1|tr
+delivery instructions|hướng dẫn giao hàng|Add delivery instructions, please.|B1|tr
+parcel tracking|theo dõi bưu kiện|Parcel tracking is available in the app.|A2|tr
+sender name|tên người gửi|What's the sender name?|A2|tr
+receiver name|tên người nhận|Write the receiver name clearly.|A2|tr
+phone confirmation|xác nhận qua điện thoại|We need a phone confirmation before delivery.|B1|tr
+unclaimed parcel|bưu kiện không người nhận|Unclaimed parcels go back after 7 days.|B1|tr
+warehouse address|địa chỉ kho|Send the driver the warehouse address.|A2|wh
+storage area|khu lưu trữ|Move the boxes to the storage area.|A2|wh
+loading area|khu vực xếp hàng|No parking in the loading area.|A2|wh
+stock room|kho chứa hàng (cửa hàng)|Check the stock room.|A2|wh
+inventory count|kiểm đếm tồn kho|The inventory count is on Saturday.|B1|wh
+item code|mã hàng|What's the item code?|A2|wh
+Is anybody there?|Có ai ở đó không?|Hello? Is anybody there?|A1|kn
+Nothing much.|Không có gì nhiều.|What's new? Nothing much.|A2|kn
+Everything's fine.|Mọi thứ ổn.|Don't worry, everything's fine.|A1|kn
+It's nothing.|Không có gì đâu.|Thanks for helping! It's nothing.|A2|kn
+Nobody's perfect.|Không ai hoàn hảo cả.|You made a mistake? Nobody's perfect.|A2|kn
+Somebody help!|Ai đó giúp với!|Somebody help! He fell down.|A1|kn
+Anyone want coffee?|Có ai uống cà phê không?|I'm going out. Anyone want coffee?|A2|kn
+I've got nothing to do.|Tôi chẳng có gì làm.|It's Sunday and I've got nothing to do.|A2|kn
+Something's wrong.|Có gì đó không ổn.|Something's wrong with my phone.|A2|kn
