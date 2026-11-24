@@ -1,0 +1,55 @@
+sleep in|ngủ nướng|I like to sleep in on Sundays.|A2|dl
+iron clothes|ủi quần áo|I iron my clothes for the week.|A2|dl
+tidy up|dọn dẹp|Please tidy up your room.|A2|dl
+feed the cat|cho mèo ăn|Don't forget to feed the cat.|A1|dl
+walk the dog|dắt chó đi dạo|I walk the dog every evening.|A1|dl
+go shopping|đi mua sắm|Let's go shopping on Saturday.|A1|sh
+grocery shopping|đi chợ, mua đồ ăn|I do grocery shopping on Saturday morning.|A2|sh
+eat out|ăn ngoài|We eat out once a week.|A2|fo
+quiet day|ngày yên tĩnh|Sunday is a quiet day for me.|A2|dl
+lazy Sunday|Chủ nhật lười biếng|It was a lazy Sunday at home.|A2|dl
+watch TV|xem TV|We watch TV after dinner.|A1|dl
+TV series|phim truyền hình dài tập|I'm watching a Korean TV series.|A2|gt
+play games|chơi game|My son plays games on his phone.|A1|gt
+read a book|đọc sách|I read a book before bed.|A1|gt
+visit my parents|thăm bố mẹ|I visit my parents every weekend.|A1|gt
+call my mum|gọi điện cho mẹ|I call my mum every Sunday.|A1|cm
+meet friends|gặp bạn bè|I meet friends at a café.|A1|gt
+go to the gym|đi tập gym|I go to the gym three times a week.|A1|sp
+play badminton|chơi cầu lông|We play badminton on Saturdays.|A1|sp
+go swimming|đi bơi|Let's go swimming this afternoon.|A1|sp
+go jogging|đi chạy bộ|I go jogging in the park.|A1|sp
+go fishing|đi câu cá|My dad likes to go fishing.|A2|sp
+go camping|đi cắm trại|We went camping last weekend.|A2|tv
+go to the beach|đi biển|We go to the beach in summer.|A1|tv
+weekend trip|chuyến đi cuối tuần|We took a weekend trip to Vung Tau.|A2|tv
+long weekend|kỳ nghỉ cuối tuần dài|Next week is a long weekend.|A2|tv
+public holiday|ngày lễ|Monday is a public holiday.|A2|wk
+get ready for work|chuẩn bị đi làm|I get ready for work at six.|A1|wk
+next week's schedule|lịch tuần tới|Check next week's schedule.|A2|wk
+Monday morning|sáng thứ Hai|Monday morning is always busy.|A1|wk
+Monday meeting|họp đầu tuần|The Monday meeting starts at 8.|A2|wk
+weekly plan|kế hoạch tuần|Send me your weekly plan.|A2|wk
+weekend staff|nhân viên làm cuối tuần|We have fewer weekend staff.|B1|wh
+Sunday delivery|giao hàng Chủ nhật|We don't do Sunday delivery.|A2|tr
+Saturday pickup|lấy hàng thứ Bảy|Can you arrange a Saturday pickup?|B1|tr
+weekend surcharge|phụ phí cuối tuần|There is a weekend surcharge.|B1|tr
+closed on Sundays|đóng cửa Chủ nhật|The warehouse is closed on Sundays.|A2|wh
+opening hours|giờ mở cửa|What are your opening hours?|A2|wh
+working hours|giờ làm việc|Our working hours are 8 to 5.|A2|wk
+office hours|giờ hành chính|Please call during office hours.|A2|wk
+after hours|ngoài giờ|After hours, call the duty manager.|B1|wk
+duty manager|quản lý trực|The duty manager is Mr Long.|B1|wh
+on call|trực điện thoại|I'm on call this weekend.|B1|wk
+emergency number|số khẩn cấp|Call the emergency number.|A2|wk
+shipment arrival|hàng về|The shipment arrival is Monday.|B1|sc
+What are you up to?|Bạn đang làm gì đó?|Hi! What are you up to this weekend?|A2|kn
+Nothing special.|Không có gì đặc biệt.|Any plans? Nothing special.|A2|kn
+I'm staying in.|Tôi ở nhà thôi.|I'm tired, so I'm staying in tonight.|B1|kn
+Let's hang out.|Đi chơi đi.|Are you free? Let's hang out.|A2|kn
+How was your weekend?|Cuối tuần của bạn thế nào?|Morning! How was your weekend?|A1|kn
+It was relaxing.|Rất thư giãn.|My weekend? It was relaxing.|A2|kn
+I can't complain.|Cũng ổn cả.|How are things? I can't complain.|B1|kn
+Have a nice weekend!|Cuối tuần vui vẻ!|See you on Monday. Have a nice weekend!|A1|kn
+Back to work!|Quay lại làm việc thôi!|The weekend is over. Back to work!|A1|kn
+Thank God it's Friday!|Ơn trời, thứ Sáu rồi!|Thank God it's Friday! Any plans?|A2|kn
