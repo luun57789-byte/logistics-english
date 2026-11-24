@@ -1,0 +1,44 @@
+back the truck in|lùi xe vào|Back the truck in slowly.|B1|tr
+turn off the engine|tắt máy|Please turn off the engine.|A2|tr
+reverse alarm|còi lùi|The reverse alarm is too quiet.|B1|tr
+wheel chock|chèn bánh xe|Put the wheel chock under the tyre.|B1|wh
+dock leveller|cầu dẫn dock|Lower the dock leveller.|B2|wh
+truck bed|thùng xe|The truck bed is wet.|B1|tr
+tail lift|bửng nâng|The truck has a tail lift.|B1|tr
+driver's licence|bằng lái xe|Can I see your driver's licence?|A2|tr
+waiting area|khu vực chờ|Drivers must stay in the waiting area.|A2|wh
+unloading bay|khu dỡ hàng|Go to unloading bay 2.|B1|wh
+time in|giờ vào|Write the time in on the form.|A2|wh
+time out|giờ ra|Time out was 3:40 p.m.|A2|wh
+delivery remarks|ghi chú giao hàng|Write the damage in the delivery remarks.|B1|wh
+received in good condition|nhận hàng trong tình trạng tốt|All goods were received in good condition.|B1|wh
+wet carton|thùng bị ướt|One wet carton was rejected.|B1|wh
+reject a delivery|từ chối nhận hàng|We had to reject a delivery today.|B1|wh
+count the cartons|đếm thùng|Let's count the cartons together.|A2|wh
+drive safely|lái xe an toàn|Thanks. Drive safely!|A1|tr
+truck ban|cấm xe tải|There's a truck ban in the city centre.|B1|tr
+rush-hour ban|cấm giờ cao điểm|Trucks can't enter during the rush-hour ban.|B1|tr
+coffee break|giờ nghỉ uống cà phê|Let's take a coffee break.|A2|wk
+toilet break|nghỉ đi vệ sinh|Can I take a toilet break?|A2|wk
+first day at work|ngày đầu đi làm|How was your first day at work?|A1|wk
+work uniform|đồng phục|Wear your work uniform every day.|A2|wk
+name badge|thẻ tên|Don't forget your name badge.|A2|wk
+motorbike repair shop|tiệm sửa xe máy|There's a motorbike repair shop nearby.|A2|tv
+oil change|thay nhớt|My motorbike needs an oil change.|A2|tv
+tyre pressure|áp suất lốp|Check the tyre pressure.|B1|tv
+traffic light|đèn giao thông|Turn left at the traffic light.|A1|tv
+speeding ticket|phạt quá tốc độ|He got a speeding ticket.|B1|tv
+seat belt|dây an toàn|Fasten your seat belt.|A2|tv
+road trip|chuyến đi đường dài bằng xe|We went on a road trip to Da Lat.|A2|tv
+energy drink|nước tăng lực|He drinks an energy drink every morning.|A2|fo
+cup of tea|tách trà|Would you like a cup of tea?|A1|fo
+sore back|đau lưng|I have a sore back after driving.|A2|hl
+get some sleep|ngủ một chút|You look tired. Get some sleep.|A1|hl
+Which company are you from?|Anh/chị từ công ty nào?|Hi, which company are you from?|A2|kn
+Can I see your ID?|Cho tôi xem giấy tờ.|Can I see your ID, please?|A1|kn
+Wait here, please.|Vui lòng đợi ở đây.|Wait here, please. I'll call the supervisor.|A1|kn
+Slow down!|Chậm lại!|Slow down! There are people here.|A1|kn
+You're good to go.|Anh/chị đi được rồi.|Everything's signed. You're good to go.|B1|kn
+Sorry for the wait.|Xin lỗi đã để đợi.|Sorry for the wait. We're ready now.|A2|kn
+How long will you be?|Anh/chị mất bao lâu?|How long will you be? I have another delivery.|A2|kn
+I'll be quick.|Tôi sẽ làm nhanh.|Don't worry, I'll be quick.|A2|kn
