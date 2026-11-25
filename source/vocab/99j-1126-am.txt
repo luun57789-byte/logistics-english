@@ -1,0 +1,48 @@
+get paid|nhận lương|I get paid on the 5th.|A2|wk
+pay rise|tăng lương|I asked my boss for a pay rise.|B1|wk
+monthly budget|ngân sách hàng tháng|I keep a monthly budget.|B1|sh
+save up|để dành|I'm saving up for a new phone.|A2|sh
+spend money|tiêu tiền|I spend too much money on coffee.|A1|sh
+waste money|phí tiền|Don't waste money on that.|A2|sh
+second-hand|đồ cũ|I bought a second-hand desk.|A2|sh
+good deal|món hời|That's a good deal.|A2|sh
+too expensive|quá đắt|It's too expensive for me.|A1|sh
+half price|nửa giá|Everything is half price today.|A2|sh
+pay in cash|trả tiền mặt|Can I pay in cash?|A1|sh
+pay later|trả sau|You can buy now and pay later.|A2|sh
+borrow money|vay tiền|Can I borrow some money?|A2|sh
+lend money|cho vay tiền|I lent him some money.|A2|sh
+pay back|trả lại tiền|I'll pay you back tomorrow.|A2|sh
+piggy bank|heo đất|My son puts coins in his piggy bank.|A2|sh
+petrol price|giá xăng|The petrol price went up again.|A2|tv
+rent money|tiền nhà|I pay the rent money on the 1st.|A2|dl
+cheap meal|bữa ăn rẻ|You can get a cheap meal near the office.|A2|fo
+cook at home|nấu ăn ở nhà|We save money when we cook at home.|A1|fo
+warehouse clerk|nhân viên văn phòng kho|She works as a warehouse clerk.|B1|wh
+stock clerk|nhân viên quản lý hàng|The stock clerk checks every delivery.|B1|wh
+monthly target|chỉ tiêu tháng|We hit our monthly target.|B1|wk
+budget plan|kế hoạch ngân sách|We need a budget plan for next year.|B1|sc
+price increase|tăng giá|There will be a price increase in January.|B1|sc
+price drop|giảm giá|There was a price drop in freight rates.|B1|sc
+cheaper rate|giá rẻ hơn|Can you give us a cheaper rate?|A2|sc
+volume discount|giảm giá theo số lượng|We get a volume discount for 10 containers.|B1|sc
+special price|giá đặc biệt|This is a special price for you.|A2|sc
+best price|giá tốt nhất|Is this your best price?|A2|sc
+price per pallet|giá mỗi pallet|What's the price per pallet?|A2|wh
+monthly invoice|hóa đơn hàng tháng|We send a monthly invoice.|B1|dc
+invoice date|ngày hóa đơn|The invoice date is 30 November.|B1|dc
+payment date|ngày thanh toán|What's the payment date?|A2|sc
+pay on time|thanh toán đúng hạn|Please pay on time.|A2|sc
+late payment|thanh toán trễ|Late payment has a 2 percent fee.|B1|sc
+extra cost|chi phí phát sinh|Is there any extra cost?|A2|sc
+hidden fee|phí ẩn|There are no hidden fees.|B1|sc
+total cost|tổng chi phí|What's the total cost?|A2|sc
+It's a bargain.|Rẻ quá / Món hời đấy.|Only 50,000? It's a bargain.|B1|kn
+Can you give me a discount?|Bớt cho tôi được không?|Can you give me a discount if I buy two?|A2|kn
+I can't afford it.|Tôi không đủ tiền mua.|It's nice, but I can't afford it.|B1|kn
+Money is tight.|Đang eo hẹp tiền bạc.|Money is tight this month.|B1|kn
+It's worth the money.|Đáng đồng tiền.|The course is expensive, but it's worth the money.|B1|kn
+Put it on my bill.|Tính vào hóa đơn của tôi.|Two more beers. Put it on my bill.|B1|kn
+I'll pay you back.|Tôi sẽ trả lại bạn.|Thanks for lunch. I'll pay you back.|A2|kn
+What a waste!|Phí quá!|You threw it away? What a waste!|A2|kn
+That's a rip-off.|Chặt chém quá.|100,000 for a coffee? That's a rip-off.|B1|kn
