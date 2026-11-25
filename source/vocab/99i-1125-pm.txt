@@ -1,0 +1,44 @@
+book a truck|đặt xe tải|I need to book a truck for tomorrow.|A2|tr
+ten-ton truck|xe tải 10 tấn|We need a ten-ton truck.|B1|tr
+plate number|biển số xe|Send me the plate number.|A2|tr
+including tolls|đã bao gồm phí cầu đường|The price is including tolls.|B1|tr
+not stackable|không xếp chồng được|These pallets are not stackable.|B1|wh
+long bed|thùng xe dài|We need a truck with a long bed.|B1|tr
+pickup location|địa điểm lấy hàng|What's the pickup location?|A2|tr
+drop-off point|điểm trả hàng|The drop-off point is the port gate.|B1|tr
+one-way trip|một chiều|A one-way trip costs less.|A2|tr
+truck size|cỡ xe tải|What truck size do you need?|A2|tr
+cargo weight|trọng lượng hàng|What's the total cargo weight?|A2|tr
+dispatch office|phòng điều xe|The dispatch office opens at 6.|B1|tr
+driver schedule|lịch tài xế|Check the driver schedule.|B1|tr
+truck availability|tình trạng xe trống|Is there truck availability tomorrow?|B1|tr
+confirm the booking|xác nhận đặt chỗ|Please confirm the booking by email.|A2|tr
+cancel the booking|hủy đặt chỗ|We need to cancel the booking.|A2|tr
+cancellation fee|phí hủy|Is there a cancellation fee?|B1|tr
+waiting charge|phí chờ|After two hours there's a waiting charge.|B1|tr
+overnight parking|đỗ xe qua đêm|Overnight parking is not allowed.|B1|tr
+gate guard|bảo vệ cổng|Show the gate guard your pass.|A2|wh
+traffic report|tin giao thông|Check the traffic report first.|A2|tv
+turn right|rẽ phải|Turn right at the corner.|A1|tv
+roundabout|vòng xoay|Go around the roundabout.|A2|tv
+pin location|ghim vị trí|Send me a pin location.|A2|cm
+share location|chia sẻ vị trí|Can you share your location?|A2|cm
+navigation app|ứng dụng chỉ đường|Use the navigation app.|A2|tv
+busy line|máy bận|The line is busy.|A2|cm
+bad signal|sóng yếu|Sorry, I have a bad signal.|A2|cm
+late at night|khuya|He works late at night.|A1|dl
+rice paper|bánh tráng|We bought rice paper for spring rolls.|A2|fo
+coconut water|nước dừa|A fresh coconut water, please.|A1|fo
+tired eyes|mỏi mắt|I have tired eyes from the screen.|A2|hl
+neck pain|đau cổ|I have neck pain from driving.|A2|hl
+stay hydrated|uống đủ nước|Stay hydrated in hot weather.|B1|hl
+football boots|giày đá bóng|I need new football boots.|A2|sp
+score a goal|ghi bàn|He scored a goal in the last minute.|A2|sp
+Where are you now?|Bạn đang ở đâu?|Hi, where are you now?|A1|kn
+I'm outside.|Tôi ở ngoài rồi.|I'm outside. Can you open the gate?|A1|kn
+I can't hear you.|Tôi không nghe rõ.|Sorry, I can't hear you. Bad signal.|A1|kn
+You're breaking up.|Tiếng bị đứt quãng.|You're breaking up. Can you call back?|B1|kn
+Text me the address.|Nhắn địa chỉ cho tôi.|Text me the address, please.|A2|kn
+I'm five minutes away.|Tôi còn năm phút nữa tới.|Don't worry, I'm five minutes away.|A2|kn
+Which way should I go?|Tôi nên đi đường nào?|Which way should I go to the port?|A2|kn
+You can't miss it.|Dễ thấy lắm.|It's next to the bank. You can't miss it.|A2|kn
