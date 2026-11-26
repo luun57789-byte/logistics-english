@@ -1,0 +1,40 @@
+no smoking area|khu vực cấm hút thuốc|This is a no smoking area.|A2|ws
+smoking area|khu vực hút thuốc|The smoking area is outside.|A2|ws
+fuel tank|bồn nhiên liệu|Keep away from the fuel tank.|B1|ws
+high-vis vest|áo phản quang|Wear a high-vis vest in the yard.|B1|ws
+walkway|lối đi bộ|Stay on the walkway.|A2|ws
+forklift zone|khu vực xe nâng|Don't walk in the forklift zone.|B1|ws
+assembly point|điểm tập trung|Go to the assembly point.|B1|ws
+accident report|báo cáo tai nạn|Fill in the accident report.|B1|ws
+safety training|huấn luyện an toàn|New staff have safety training first.|A2|ws
+ID check|kiểm tra giấy tờ|There's an ID check at the gate.|A2|wh
+by hand|bằng tay|We unloaded it by hand.|A2|wh
+manual handling|bốc vác thủ công|Manual handling can hurt your back.|B1|ws
+lifting limit|giới hạn nâng|The lifting limit is 25 kilos per person.|B1|ws
+two-person lift|hai người khiêng|This box is a two-person lift.|B1|ws
+pay in advance|trả trước|You have to pay in advance.|A2|sc
+company rule|quy định công ty|It's a company rule.|A2|wk
+dress properly|ăn mặc đúng quy định|You have to dress properly at work.|A2|wk
+be on time|đúng giờ|You have to be on time.|A1|wk
+ask permission|xin phép|You have to ask permission first.|A2|wk
+wash your hands|rửa tay|Wash your hands before lunch.|A1|hl
+hand sanitiser|nước rửa tay khô|There's hand sanitiser at the door.|A2|hl
+take off your shoes|cởi giày|Please take off your shoes.|A1|dl
+house rules|nội quy nhà|These are the house rules.|A2|dl
+quiet hours|giờ giữ yên lặng|Quiet hours are from 10 p.m.|B1|dl
+no pets allowed|không nuôi thú cưng|No pets allowed in this building.|A2|dl
+visitors' parking|chỗ đỗ xe cho khách|Use the visitors' parking.|A2|tv
+library card|thẻ thư viện|You need a library card.|A2|gt
+membership fee|phí thành viên|The membership fee is 200,000 a month.|A2|sp
+changing room|phòng thay đồ|The changing room is downstairs.|A2|sp
+swimming cap|mũ bơi|You have to wear a swimming cap.|A2|sp
+age limit|giới hạn tuổi|There's an age limit for this ride.|B1|gt
+opening time|giờ mở cửa|What's the opening time?|A2|sh
+closing time|giờ đóng cửa|Closing time is 10 p.m.|A2|sh
+You have to.|Bạn phải làm vậy.|Do I have to sign? Yes, you have to.|A1|kn
+You don't have to.|Bạn không cần đâu.|Thanks for the gift, but you don't have to.|A2|kn
+You're not allowed to.|Bạn không được phép.|Sorry, you're not allowed to park here.|A2|kn
+Rules are rules.|Quy định là quy định.|I know it's annoying, but rules are rules.|B1|kn
+Is it allowed?|Có được phép không?|Can I take photos here? Is it allowed?|A2|kn
+Do I need to?|Tôi có cần không?|Book a table? Do I need to?|A2|kn
+That's not allowed.|Việc đó không được phép.|Smoking here? That's not allowed.|A2|kn
