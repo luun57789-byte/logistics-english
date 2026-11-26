@@ -1,0 +1,40 @@
+shipment update|cập nhật lô hàng|Can you send me a shipment update?|B1|sc
+production status|tình trạng sản xuất|What's the production status?|B1|fc
+ready for loading|sẵn sàng xếp hàng|The goods are ready for loading.|B1|wh
+expected date|ngày dự kiến|What's the expected date?|A2|sc
+purchasing officer|nhân viên mua hàng|She is our purchasing officer.|B1|wk
+year-end sale|đợt giảm giá cuối năm|The year-end sale starts next week.|A2|sh
+store opening|khai trương cửa hàng|The store opening is on 1 December.|B1|sh
+factory closing|nhà máy nghỉ|The factory closing for New Year is 30 December.|B1|fc
+mass production|sản xuất hàng loạt|Mass production starts in January.|B1|fc
+packing photos|ảnh đóng gói|Please send packing photos.|B1|wh
+delay notice|thông báo chậm trễ|We sent a delay notice to the customer.|B1|sc
+revised ETD|ngày tàu chạy mới|The revised ETD is 12 December.|B1|oc
+revised ETA|ngày tàu đến mới|What's the revised ETA?|B1|oc
+missing documents|thiếu chứng từ|There are missing documents.|B1|dc
+signed copy|bản có chữ ký|Please send a signed copy.|A2|dc
+scanned copy|bản scan|A scanned copy is fine.|A2|dc
+hard copy|bản cứng|We need the hard copy by courier.|A2|dc
+reminder email|email nhắc|I sent a reminder email.|A2|cm
+auto reply|trả lời tự động|I got an auto reply.|A2|cm
+in copy|đồng gửi (cc)|Please keep me in copy.|B1|cm
+time difference|chênh lệch múi giờ|There's a one-hour time difference with China.|A2|cm
+business trip|chuyến công tác|I'm on a business trip next week.|A2|tv
+check-in desk|quầy làm thủ tục|Go to check-in desk 12.|A2|tv
+window or aisle|ghế cửa sổ hay lối đi|Window or aisle?|A1|tv
+jet lag|lệch múi giờ|I still have jet lag.|B1|tv
+dinner with clients|ăn tối với khách|We have dinner with clients tonight.|B1|wk
+afternoon tea|trà chiều|Let's have afternoon tea.|A2|fo
+fruit plate|đĩa trái cây|We ordered a fruit plate.|A2|fo
+feel better|thấy khỏe hơn|Do you feel better today?|A1|hl
+indoor sports|thể thao trong nhà|Badminton is a popular indoor sport.|A2|sp
+Any news?|Có tin gì chưa?|Any news about the shipment?|A1|kn
+Just checking in.|Chỉ hỏi thăm tình hình thôi.|Just checking in. Is everything on track?|B1|kn
+Is everything on track?|Mọi thứ đúng tiến độ chứ?|Is everything on track for Friday?|B1|kn
+I'll chase them.|Tôi sẽ hối họ.|They haven't replied? I'll chase them.|B1|kn
+Sorry for the delay.|Xin lỗi vì sự chậm trễ.|Sorry for the delay in replying.|A2|kn
+Thanks for the update.|Cảm ơn đã cập nhật.|Thanks for the update, Linh.|A2|kn
+Noted with thanks.|Đã ghi nhận, cảm ơn.|Noted with thanks. I'll inform the team.|B1|kn
+Please advise.|Vui lòng cho ý kiến.|The container is overweight. Please advise.|B1|kn
+I'll look into it.|Tôi sẽ xem xét việc này.|There's a mistake on the invoice? I'll look into it.|B1|kn
+Safe travels!|Thượng lộ bình an!|Safe travels! See you next month.|A2|kn
