@@ -1,0 +1,39 @@
+half a kilo|nửa ký|Can I have half a kilo of pork?|A1|sh
+bunch of bananas|nải chuối|I bought a bunch of bananas.|A2|sh
+fresh vegetables|rau tươi|The market has fresh vegetables every morning.|A1|fo
+fresh fish|cá tươi|Is this fish fresh?|A1|fo
+plastic bag|túi ni lông|Do you need a plastic bag?|A1|sh
+reusable bag|túi dùng nhiều lần|I bring a reusable bag to the market.|B1|sh
+market stall|sạp chợ|My aunt has a market stall.|A2|sh
+street vendor|người bán hàng rong|The street vendor sells bread in the morning.|B1|sh
+haggle|mặc cả|Tourists often haggle at the market.|B1|sh
+fixed price|giá cố định|The supermarket has fixed prices.|A2|sh
+pork belly|thịt ba chỉ|I'll take half a kilo of pork belly.|A2|fo
+chicken breast|ức gà|Chicken breast is good for the gym.|A2|fo
+shrimp|tôm|These shrimp are very fresh.|A1|fo
+tofu|đậu phụ|Two pieces of tofu, please.|A1|fo
+herbs|rau thơm|Add some fresh herbs.|A2|fo
+spring onion|hành lá|Put some spring onion on top.|A2|fo
+dragon fruit|thanh long|Dragon fruit is cheap this month.|A1|fo
+rambutan|chôm chôm|Rambutan is in season now.|A2|fo
+in season|đúng mùa|Mangoes are in season now.|A2|fo
+cooking|nấu ăn|I love cooking on Sundays.|A1|fo
+frying pan|chảo|Heat the frying pan.|A2|dl
+chopping board|thớt|Use a clean chopping board.|A2|dl
+kitchen knife|dao làm bếp|Be careful with the kitchen knife.|A2|dl
+gas stove|bếp ga|Turn off the gas stove.|A2|dl
+chilled goods|hàng mát|Chilled goods stay at 2 to 8 degrees.|B1|wh
+frozen goods|hàng đông lạnh|Frozen goods are kept at minus 18.|B1|wh
+cold room|kho lạnh|Put the fish in the cold room.|B1|wh
+temperature check|kiểm tra nhiệt độ|Do a temperature check every two hours.|B1|wh
+best before|sử dụng tốt nhất trước|Best before 30 December.|A2|wh
+first in, first out|nhập trước xuất trước|We use first in, first out for food.|B1|wh
+food safety|an toàn thực phẩm|Food safety is very important.|B1|wh
+refrigerated truck|xe tải lạnh|We need a refrigerated truck.|B1|tr
+How much are these?|Mấy cái này bao nhiêu?|How much are these?|A1|kn
+Just a little, please.|Một ít thôi.|Chilli? Just a little, please.|A1|kn
+Is it fresh?|Có tươi không?|This fish, is it fresh?|A1|kn
+That's enough, thanks.|Đủ rồi, cảm ơn.|That's enough, thanks.|A1|kn
+See you next time!|Hẹn lần sau!|Thank you. See you next time!|A1|kn
+Smells good!|Thơm quá!|What are you cooking? Smells good!|A1|kn
+It's delicious.|Ngon lắm.|Try this. It's delicious.|A1|kn
