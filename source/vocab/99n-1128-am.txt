@@ -1,0 +1,32 @@
+correct the mistake|sửa lỗi|Please correct the mistake on the invoice.|A2|dc
+amend the declaration|sửa tờ khai|We need to amend the declaration.|B1|cc
+book an inspection|đặt lịch kiểm hóa|We booked an inspection for 8 a.m.|B1|cc
+document inspection|kiểm tra hồ sơ|It's a document inspection only.|B1|cc
+customs system|hệ thống hải quan|The customs system is down.|B1|cc
+submit the declaration|nộp tờ khai|We submit the declaration online.|B1|cc
+import licence|giấy phép nhập khẩu|Do we need an import licence?|B1|cc
+tax refund|hoàn thuế|We applied for a tax refund.|B1|cc
+sample check|kiểm tra mẫu|They did a sample check of 5 cartons.|B1|cc
+customs seal|niêm phong hải quan|Don't break the customs seal.|B1|cc
+container scanner|máy soi container|The container went through the scanner.|B1|cc
+apology email|email xin lỗi|I sent an apology email to the customer.|B1|cm
+lesson learned|bài học rút ra|That was a lesson learned.|B1|wk
+double check|kiểm tra lại|Always double check the documents.|A2|wk
+common mistake|lỗi thường gặp|This is a common mistake.|A2|wk
+on the phone|đang nghe điện thoại|She's on the phone with the broker.|A1|cm
+call me back|gọi lại cho tôi|Please call me back.|A1|cm
+wrong number|nhầm số|Sorry, wrong number.|A1|cm
+local shop|cửa hàng gần nhà|I buy milk at the local shop.|A2|sh
+corner shop|tiệm tạp hóa đầu ngõ|The corner shop opens early.|A2|sh
+cough medicine|thuốc ho|I need some cough medicine.|A2|hl
+early night|đi ngủ sớm|I'm having an early night.|B1|hl
+football pitch|sân bóng đá|We rent a football pitch on Fridays.|A2|sp
+tennis court|sân tennis|The tennis court is next to the pool.|A2|sp
+team captain|đội trưởng|He's our team captain.|A2|sp
+What went wrong?|Có chuyện gì sai vậy?|The container was stopped. What went wrong?|A2|kn
+It won't happen again.|Sẽ không xảy ra lần nữa.|I'm sorry. It won't happen again.|A2|kn
+These things happen.|Chuyện này vẫn xảy ra mà.|Don't worry, these things happen.|B1|kn
+Let's sort it out.|Mình giải quyết đi.|There's a problem? Let's sort it out.|B1|kn
+Hold on, please.|Vui lòng chờ máy.|Hold on, please. I'll get her.|A1|kn
+It's taken care of.|Đã xử lý xong.|Don't worry, it's taken care of.|B1|kn
+No harm done.|Không sao cả.|You fixed it. No harm done.|B1|kn
