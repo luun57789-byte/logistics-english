@@ -1,0 +1,48 @@
+rent a motorbike|thuê xe máy|We rented a motorbike in Da Lat.|A2|tv
+automatic scooter|xe tay ga|An automatic scooter is easier to ride.|A2|tv
+manual bike|xe số|I can't ride a manual bike.|A2|tv
+per day|mỗi ngày|It's 150,000 dong per day.|A1|tv
+cash deposit|tiền cọc|They asked for a cash deposit.|A2|tv
+full tank|bình xăng đầy|Bring it back with a full tank.|A2|tv
+break down|bị hỏng (xe)|My motorbike broke down on the way.|A2|tv
+puncture|thủng lốp|I got a puncture this morning.|B1|tv
+tyre repair|vá lốp|There's a tyre repair shop on the corner.|A2|tv
+side mirror|gương chiếu hậu|The side mirror is broken.|A2|tv
+headlight|đèn pha|Turn on your headlight.|A2|tv
+mountain road|đường đèo|The mountain road is very beautiful.|A2|tv
+pine forest|rừng thông|Da Lat has many pine forests.|A2|tv
+cool weather|thời tiết mát mẻ|I love the cool weather in Da Lat.|A1|tv
+warm jacket|áo ấm|Bring a warm jacket.|A1|tv
+short haircut|cắt tóc ngắn|I'd like a short haircut.|A1|sh
+hair wash|gội đầu|A hair wash is 50,000.|A2|sh
+nail salon|tiệm làm móng|My sister works at a nail salon.|A2|sh
+phone repair shop|tiệm sửa điện thoại|Take it to a phone repair shop.|A2|sh
+cracked screen|màn hình bị nứt|My phone has a cracked screen.|A2|sh
+battery replacement|thay pin|I need a battery replacement.|B1|sh
+warranty card|phiếu bảo hành|Keep the warranty card.|B1|sh
+under warranty|còn bảo hành|Is it still under warranty?|B1|sh
+spare parts shop|cửa hàng phụ tùng|Ask at the spare parts shop.|B1|sh
+key cutting|làm chìa khóa|There's a key cutting stall at the market.|B1|sh
+shoe repair|sửa giày|I took my boots for shoe repair.|A2|sh
+fleet manager|quản lý đội xe|The fleet manager checks every truck.|B1|tr
+vehicle check|kiểm tra xe|Do a vehicle check before you leave.|B1|tr
+roadside assistance|cứu hộ trên đường|Call roadside assistance.|B1|tr
+tow truck|xe cứu hộ|We need a tow truck.|A2|tr
+spare tyre|lốp dự phòng|Is there a spare tyre?|A2|tr
+service the truck|bảo dưỡng xe tải|We service the truck every 10,000 km.|B1|tr
+truck maintenance|bảo trì xe tải|Truck maintenance is on Saturday.|B1|tr
+fuel card|thẻ nhiên liệu|Use the fuel card at the station.|B1|tr
+fuel receipt|hóa đơn đổ xăng|Keep the fuel receipt.|A2|tr
+GPS tracker|thiết bị định vị|Every truck has a GPS tracker.|B1|tr
+dash cam|camera hành trình|The dash cam recorded the accident.|B1|tr
+rest break|giờ nghỉ của tài xế|Drivers need a rest break every four hours.|B1|tr
+How much per day?|Bao nhiêu một ngày?|How much per day for this bike?|A1|kn
+Is it included?|Có bao gồm không?|The helmet? Is it included?|A2|kn
+It broke down.|Nó bị hỏng rồi.|My bike? It broke down near the lake.|A2|kn
+Can you fix it?|Bạn sửa được không?|The screen is cracked. Can you fix it?|A1|kn
+How long will it take to fix?|Sửa mất bao lâu?|How long will it take to fix?|A2|kn
+Just a little shorter.|Cắt ngắn một chút thôi.|Just a little shorter, please.|A2|kn
+Not too short.|Đừng ngắn quá.|Not too short, please.|A1|kn
+What a view!|Cảnh đẹp quá!|Look at the mountains. What a view!|A2|kn
+Let's take a break.|Nghỉ một chút đi.|I'm tired. Let's take a break.|A1|kn
+Drive carefully.|Lái cẩn thận nhé.|It's raining. Drive carefully.|A1|kn
